@@ -7,9 +7,9 @@ import "./styles.css";
 
 
 export default function Character(
-    prop:{
-        prop: React.ReactNode
-    }
+    // prop:{
+    //     prop: React.ReactNode
+    // }
 ) {
     const char: Characters[] = characters;
     return (
