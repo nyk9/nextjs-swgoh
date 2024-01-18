@@ -21,7 +21,7 @@ export default function Character(
             <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left p-4">
                 {char.map((char) => {
                     return (
-                        <div className="border border-gray-300 rounded m-1">
+                        <div className="border border-gray-300 rounded m-1" key={char.name}>
                             <h1 className="text-yellow-900">{char.name}</h1>
                             <Image alt={char.name} src={char.src}></Image>
                             <span>{char.property}</span>
