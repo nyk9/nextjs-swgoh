@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 import sorty from "./charui/tex.charui_50rt.png";
 import aaylasecura from "./charui/tex.charui_aaylasecura.png";
 import gialackbar from "./charui/tex.charui_ackbaradmiral.png";
+import trench from "./charui/tex.charui_admiraltrench.png";
 import ahsokatano from "./charui/tex.charui_ahsoka.png";
 import atf from "./charui/tex.charui_ahsokaadult.png";
 import jka from "./charui/tex.charui_anakinknight.png";
@@ -11,8 +12,16 @@ import aurrasing from "./charui/tex.charui_aurrasing.png";
 import b1 from "./charui/tex.charui_b1.png";
 import b2 from "./charui/tex.charui_b2.png";
 import omega from "./charui/tex.charui_badbatchomega.png";
+import barriss from "./charui/tex.charui_barriss_light.png";
+import bastila from "./charui/tex.charui_bastilashan.png";
+import bsf from "./charui/tex.charui_bastilashan_dark.png";
+import bazemalbus from "./charui/tex.charui_bazemalbus.png";
 import bb8 from "./charui/tex.charui_bb8.png";
 import echobb from "./charui/tex.charui_bb_echo.png";
+import hunter from "./charui/tex.charui_bb_hunter.png";
+import tech from "./charui/tex.charui_bb_tech.png";
+import bistan from "./charui/tex.charui_bistan.png";
+import boushh from "./charui/tex.charui_boushh.png";
 import bt1 from "./charui/tex.charui_bt1.png";
 import c3po from "./charui/tex.charui_c3p0.png";
 import cadbane from "./charui/tex.charui_cadbane.png";
@@ -24,8 +33,12 @@ import caradune from "./charui/tex.charui_caradune.png";
 import carthonasi from "./charui/tex.charui_carth.png";
 import cassianandor from "./charui/tex.charui_cassian.png";
 import cere from "./charui/tex.charui_cerejunda.png";
+import chewbacca from "./charui/tex.charui_chewbacca.png";
 import chewpio from "./charui/tex.charui_chewbacca_c3po.png";
 import vandorchewy from "./charui/tex.charui_chewbacca_vandor.png";
+import chirpa from "./charui/tex.charui_chirpa.png";
+import chiruut from "./charui/tex.charui_chirrut.png";
+import chopper from "./charui/tex.charui_chopper.png";
 import clonechewy from "./charui/tex.charui_clonewarschewbacca.png";
 import colstarck from "./charui/tex.charui_colonel_stark.png";
 import cat from "./charui/tex.charui_commanderahsokatano.png";
@@ -37,6 +50,10 @@ import malak from "./charui/tex.charui_darthmalak.png";
 import malgus from "./charui/tex.charui_darthmalgus.png";
 import talon from "./charui/tex.charui_darthtalon.png";
 import dash from "./charui/tex.charui_dashrendar.png";
+import denger from "./charui/tex.charui_dengar.png";
+import aphra from "./charui/tex.charui_doctoraphra.png";
+import dooku from "./charui/tex.charui_dooku.png";
+import droideka from "./charui/tex.charui_droideka.png";
 import eethkoth from "./charui/tex.charui_eethkoth.png";
 import eighthbrother from "./charui/tex.charui_eighthbrother.png";
 import embo from "./charui/tex.charui_embo.png";
@@ -45,11 +62,20 @@ import SEE from "./charui/tex.charui_espalpatine_post.png";
 import ewokelder from "./charui/tex.charui_ewok_chief.png";
 import ewokscout from "./charui/tex.charui_ewok_scout.png";
 import wicket from "./charui/tex.charui_ewok_wicket.png";
+import executinor from "./charui/tex.charui_executor_turnorder.png";
 import ezra from "./charui/tex.charui_ezra_s3.png";
+import fennec from "./charui/tex.charui_fennec.png";
+import fifthbrother from "./charui/tex.charui_fifthbrother.png";
+import finn from "./charui/tex.charui_finnjakku.png";
+import fosftp from "./charui/tex.charui_firstorder_pilot.png";
 import sithtrooper from "./charui/tex.charui_firstorder_sithtrooper.png";
+import fost from "./charui/tex.charui_firstorderofficer.png";
+import foo from "./charui/tex.charui_firstordersnowtrooper_officer.png";
+import fotp from "./charui/tex.charui_firstordertiepilot.png";
 import gamorreanguard from "./charui/tex.charui_gamorreanguard.png";
 import garsaxon from "./charui/tex.charui_gar_saxon.png";
 import gas from "./charui/tex.charui_generalanakin.png";
+import hux from "./charui/tex.charui_generalhux.png";
 import gba from "./charui/tex.charui_geonosian_broodalpha.png";
 import geosoldier from "./charui/tex.charui_geonosian_soldier.png";
 import geospy from "./charui/tex.charui_geonosian_spy.png";
@@ -73,6 +99,7 @@ import jangofett from "./charui/tex.charui_jangofett.png";
 import dathcha from "./charui/tex.charui_jawa_dathcha.png";
 import jawaengineer from "./charui/tex.charui_jawa_engineer.png";
 import jawa from "./charui/tex.charui_jawa_jawa.png";
+import nebit from "./charui/tex.charui_jawa_nebit.png";
 import jawascavenger from "./charui/tex.charui_jawa_scavenger.png";
 import jediconsular from "./charui/tex.charui_jedi_consular_03.png";
 import jediguardian from "./charui/tex.charui_jedi_guardian_01.png";
@@ -95,18 +122,34 @@ import kyloren from "./charui/tex.charui_kyloren.png";
 import slkr from "./charui/tex.charui_kyloren_tros.png";
 import l337 from "./charui/tex.charui_l337.png";
 import skiffguard from "./charui/tex.charui_lando_jabbaguard.png";
+import lv from "./charui/tex.charui_lordvader.png";
 import jkl from "./charui/tex.charui_luke_jediknight.png";
 import jml from "./charui/tex.charui_luke_jml.png";
 import magunaguard from "./charui/tex.charui_magnaguard.png";
 import darthmaul from "./charui/tex.charui_maul.png";
+import nightsisteracolyte from "./charui/tex.charui_nightsister_acolyte.png";
+import nightsisterinitiate from "./charui/tex.charui_nightsister_initiate.png";
 import talia from "./charui/tex.charui_nightsister_talia.png";
+import nightsisterwraith from "./charui/tex.charui_nightsisters_wraith.png";
+import zombie from "./charui/tex.charui_nightsisters_zombie.png";
 import nihilus from "./charui/tex.charui_nihilus.png";
+import ninthsister from "./charui/tex.charui_ninthsister.png";
+import gunray from "./charui/tex.charui_nutegunray.png";
 import oldben from "./charui/tex.charui_obiwanep4.png";
 import generalkenobi from "./charui/tex.charui_obiwangeneral.png";
+import padme from "./charui/tex.charui_padme_geonosis.png";
+import palpatine from "./charui/tex.charui_palpatineemperor.png";
+import pao from "./charui/tex.charui_pao.png";
+import paploo from "./charui/tex.charui_paploo.png";
+import pazvizsla from "./charui/tex.charui_pazvizsla.png";
 import phasma from "./charui/tex.charui_phasma.png";
+import piett from "./charui/tex.charui_piett.png";
+import plokoon from "./charui/tex.charui_plokoon.png";
+import kneesaa from "./charui/tex.charui_princesskneesaa.png";
 import qira from "./charui/tex.charui_qira.png";
 import qgj from "./charui/tex.charui_quigon.png";
 import scarifpathfinder from "./charui/tex.charui_rebel_scarif.png";
+import biggs from "./charui/tex.charui_rebelpilot_biggs.png";
 import wedge from "./charui/tex.charui_rebelpilot_wedge.png";
 import sabine from "./charui/tex.charui_sabine_s3-2.png";
 import sanastarros from "./charui/tex.charui_sanastarros.png";
@@ -126,6 +169,7 @@ import t3m4 from "./charui/tex.charui_t3m4.png";
 import tarfful from "./charui/tex.charui_tarfful.png";
 import tarkin from "./charui/tex.charui_tarkinadmiral.png";
 import tronmalicos from "./charui/tex.charui_taronmalicos.png";
+import teebo from "./charui/tex.charui_teebo.png";
 import smugglerchewy from "./charui/tex.charui_tfa_chewbacca.png";
 import smugglerhan from "./charui/tex.charui_tfa_han.png";
 import reva from "./charui/tex.charui_thirdsister.png";
@@ -139,10 +183,12 @@ import echo5 from "./charui/tex.charui_trooperclone_echo.png";
 import fives from "./charui/tex.charui_trooperclone_fives.png";
 import rex from "./charui/tex.charui_trooperclone_rex.png";
 import clonesergent1 from "./charui/tex.charui_trooperclonegreen.png";
+import deathtrooper from "./charui/tex.charui_trooperdeath.png";
 import scouttrooper from "./charui/tex.charui_trooperscout.png";
 import shoretrooper from "./charui/tex.charui_troopershore.png";
 import snowtrooper from "./charui/tex.charui_troopersnow.png";
 import stormtrooper from "./charui/tex.charui_trooperstorm.png";
+import sthan from "./charui/tex.charui_trooperstorm_han.png";
 import tuskenchief from "./charui/tex.charui_tuskenchief.png";
 import tuskenwarrior from "./charui/tex.charui_tuskenhuntress.png";
 import tuskenraider from "./charui/tex.charui_tuskenraider.png";
@@ -158,6 +204,7 @@ import zaalbar from "./charui/tex.charui_zaalbar.png";
 import zam from "./charui/tex.charui_zamwesell.png";
 import zeb from "./charui/tex.charui_zeb_s3.png";
 import zorii from "./charui/tex.charui_zoriibliss.png";
+
 
 export type Characters = {
     name: string;
@@ -779,7 +826,7 @@ const characters: Characters[] = [
     },{
         name: "タスケン・シャーマン",
         property: "ダークサイド、ヒーラー、タスケン",
-        src: tuskenshaman, 
+        src: tuskenshaman,
     },{
         name: "タスケン・レイダー",
         property: "ダークサイド、アタッカー、タスケン",
@@ -804,7 +851,191 @@ const characters: Characters[] = [
         name: "タロン・マリコス",
         property: "ダークサイド、アタッカー、非同盟のフォースの使い手",
         src: tronmalicos,
-    },
+    },{
+        name: "チアルート・イムウェ",
+        property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター、ローグ・ワン",
+        src: chiruut,
+    },{
+        name: "チャーパ族長",
+        property: "ライトサイド、サポート、リーダー、イウォーク",
+        src: chirpa,
+    },{
+        name: "チューバッカ",
+        property: "ライトサイド、アタッカー、反乱軍、ならず者、スマグラー、ウーキー",
+        src: chewbacca,
+    },{
+        name: "チョッパー",
+        property: "ライトサイド、サポーター、ドロイド、フェニックス、反乱軍",
+        src: chopper,
+    },{
+        name: "ティーボ",
+        property: "ライトサイド、タンク、リーダー、イウォーク",
+        src: teebo,
+    },{
+        name: "デス・トルーパー",
+        property: "ダークサイド、アタッカー、帝国軍、インペリアル・レムナント、帝国軍トルーパー",
+        src: deathtrooper,
+    },{
+        name: "テック",
+        property: "ライトサイド、サポート、バッド・バッチ、クローン・トルーパー、銀河共和国",
+        src: tech,
+    },{
+        name: "デンガー",
+        property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
+        src: denger,
+    },{
+        name: "ドゥークー伯爵",
+        property: "ダークサイド、アタッカー、リーダー、分離主義者、シス",
+        src: dooku,
+    },{
+        name: "ドクター・アフラ",
+        property: "ークサイド、サポート、リーダー、ならず者",
+        src: aphra,
+    },{
+        name: "トレンチ提督",
+        property: "ダークサイド、サポート、リーダー、分離主義者",
+        src: trench,
+    },{
+        name: "ドロイデカ",
+        property: "ダークサイド、アタッカー、ドロイド、分離主義者",
+        src: droideka,
+    },{
+        name: "ナイトシスター・アコライト",
+        property: "ダークサイド、アタッカー、ナイトシスター",
+        src: nightsisteracolyte,
+    },{
+        name: "ナイトシスター・イニシエート",
+        property: "ダークサイド、アタッカー、ナイトシスター",
+        src: nightsisterinitiate,
+    },{
+        name: "ナイトシスター・スピリット",
+        property: "ダークサイド、アタッカー、ナイトシスター",
+        src: nightsisterwraith,
+    },{
+        name: "ナイトシスター・ゾンビ",
+        property: "ダークサイド、タンク、ナイトシスター",
+        src: zombie,
+    },{
+        name: "ナインス・シスター",
+        property: "ダークサイド、タンク、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
+        src: ninthsister,
+    },{
+        name: "ヌート・ガンレイ",
+        property: "ダークサイド、サポート、リーダー、ならず者、分離主義者",
+        src: gunray,
+    },{
+        name: "ネビット長老",
+        property: "ライトサイド、タンク、リーダー、ジャワ",
+        src: nebit,
+    },{
+        name: "パオ",
+        property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター、ローグ・ワン",
+        src: pao,
+    },{
+        name: "パズ・ウィズラ",
+        property: "ライトサイド、タンク、マンダロリアン",
+        src: pazvizsla,
+    },{
+        name: "バスティラ・シャン",
+        property: "ライトサイド、サポート、リーダー、ジェダイ、旧共和国",
+        src: bastila,
+    },{
+        name: "バスティラ・シャン(フォールン)",
+        property: "ダークサイド、サポート、シス、シス帝国",
+        src: bsf,
+    },{
+        name: "ハックス将軍",
+        property: "ダークサイド、サポート、リーダー、ファースト・オーダー、艦隊司令官",
+        src: hux,
+    },{
+        name: "パドメ・アミダラ",
+        property: "ライトサイド、サポート、リーダー、銀河共和国",
+        src: padme,
+    },{
+        name: "パプルー",
+        property: "ライトサイド、タンク、イウォーク",
+        src: paploo,
+    },{
+        name: "バリス・オフィー",
+        property: "ライトサイド、ヒーラー、リーダー、銀河共和国、ジェダイ",
+        src: barriss,
+    },{
+        name: "パルパティーン皇帝",
+        property: "ダークサイド、サポート、リーダー、帝国軍、シス",
+        src: palpatine,
+    },{
+        name: "ハン(ストームトルーパー)",
+        property: "ライトサイド、タンク、リーダー、反乱軍、ならず者",
+        src: sthan,
+    },{
+        name: "ハンター",
+        property: "ライトサイド、アタッカー、リーダー、バッド・バッチ、クローン・トルーパー",
+        src: hunter,
+    },{
+        name: "ピエット提督",
+        property: "ダークサイド、サポート、リーダー、帝国軍、帝国軍トルーパー、艦隊司令官",
+        src: piett,
+    },{
+        name: "ビスタン",
+        property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター、ローグ・ワン",
+        src: bistan,
+    },{
+        name: "ビッグス・ダークライダー",
+        property: "ライトサイド、サポート、反乱軍、反乱軍ファイター",
+        src: biggs,
+    },{
+        name: "ファースト・オーダー・エクセキューショナー",
+        property: "ダークサイド、アタッカー、ファースト・オーダー",
+        src: executinor,
+    },{
+        name: "ファースト・オーダー・オフィサー",
+        property: "ダークサイド、サポート、ファースト・オーダー",
+        src: foo,
+    },{
+        name: "ファースト・オーダー・ストームトルーパー",
+        property: "ダークサイド、タンク、ファースト・オーダー",
+        src: fost,
+    },{
+        name: "ファースト・オーダーTIEパイロット",
+        property: "ダークサイド、アタッカー、ファースト・オーダー",
+        src: fotp,
+    },{
+        name: "ファースト・オーダー特殊部隊TIEパイロット",
+        property: "ダークサイド、アタッカー、ファースト・オーダー",
+        src: fosftp,
+    },{
+        name: "フィフス・ブラザー",
+        property: "ダークサイド、サポート、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
+        src: fifthbrother,
+    },{
+        name: "フィン",
+        property: "ライトサイド、タンク、リーダー、レジスタンス",
+        src: finn,
+    },{
+        name: "ブーシ(レイア・オーガナ)",
+        property: "ライトサイド、アタッカー、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
+        src: boushh,
+    },{
+        name: "フェネック・シャンド",
+        property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
+        src: fennec,
+    },{
+        name: "プリンセス・ニーサ",
+        property: "ライトサイド、アタッカー、イウォーク",
+        src: kneesaa,
+    },{
+        name: "プロ・クーン",
+        property: "ライトサイド、タンク、リーダー、銀河共和国、ジェダイ",
+        src: plokoon,
+    },{
+        name: "ベイズ・マルバス",
+        property: "ライトサイド、タンク、反乱軍、反乱軍ファイター、ローグ・ワン",
+        src: bazemalbus,
+    },{
+        name: "ベイダー卿",
+        property: "銀河の伝説、ダークサイド、アタッカー、リーダー、帝国軍、シス",
+        src: lv,
+    }
 
 ];
 
