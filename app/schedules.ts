@@ -4,7 +4,7 @@ const schedules: Updates[] =[
     {
         ver: 1,
         title: "キャラ一覧の完成",
-        date: "2024/1/13",
+        date: "2024/1/24",
         detaill: "全キャラクターの情報を載せる",
     },{
         ver: 2,
