@@ -9,17 +9,20 @@ export default function Character(
     // prop:{
     //     prop: React.ReactNode
     // }
-) {
+) { 
+    // char:各キャラクターの情報をまとめた配列
     const char: Characters[] = characters;
+    // 絞り込み検索に必要なもの
     const [searchTerm, setSearchTerm] = useState<string>('');
     const [searchResults, setSearchResults] = useState<Characters[]>(char);
+    // 絞り込み検索の関数
     const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
         const term = e.target.value;
         setSearchTerm(term);
 
         const results = char.filter((item) =>
             // item.name.toLowerCase().includes(term.toLowerCase())
-            new RegExp(term, 'i').test(item.name) || new RegExp(term, 'i').test(item.property)
+            new RegExp(term, 'i').test(item.name) || new RegExp(term, 'i').test(item.property) || new RegExp(term, 'i').test(item.abbreviation)
         );
         setSearchResults(results);
     };
@@ -35,7 +38,7 @@ export default function Character(
             <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left p-4">
                 {searchResults.map((char) => {
                     return (
-                        <div className="border border-gray-300 rounded m-1" key={char.name}>
+                        <div className="border border-gray-300 rounded m-1" key={char.abbreviation}>
                             <h1 className="text-yellow-900">{char.name}</h1>
                             <Image alt={char.name} src={char.src}></Image>
                             <span>{char.property}</span>

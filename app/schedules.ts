@@ -15,7 +15,7 @@ const schedules: Updates[] =[
         ver: 3,
         title: "2024/2/28",
         date: "2024/2/28",
-        detaill: "キャラ一覧で属性・スキル効果での絞り込み検索を実装する",
+        detaill: "キャラ一覧で属性・スキル効果、略語での絞り込み検索を実装する",
     },{
         ver: 4,
         title: "tailwind cssを含む UI部分を完璧に仕上げる",
