@@ -139,6 +139,14 @@ export default function Home() {
             })}
         </div>
       </div>
+      <div>
+        <a 
+          href="/privacy-policy"
+          className='text-center'
+          >
+          プライバシーポリシー・免責事項
+        </a>
+      </div>
     </main>
   )
 }

@@ -22,7 +22,7 @@ export default function Character(
 
         const results = char.filter((item) =>
             // item.name.toLowerCase().includes(term.toLowerCase())
-            new RegExp(term, 'i').test(item.name) || new RegExp(term, 'i').test(item.property) || new RegExp(term, 'i').test(item.abbreviation)
+            new RegExp(term, 'i').test(item.name) || new RegExp(term, 'i').test(item.property) || new RegExp(`^${term}$`, 'i').test(item.abbreviation)
         );
         setSearchResults(results);
     };
