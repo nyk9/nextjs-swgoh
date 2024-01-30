@@ -6,9 +6,6 @@ import characters, { Characters } from "./characters";
 import "./styles.css";
 
 export default function Character(
-    // prop:{
-    //     prop: React.ReactNode
-    // }
 ) {
     // char:各キャラクターの情報をまとめた配列
     const char: Characters[] = characters;
@@ -16,39 +13,38 @@ export default function Character(
     const [searchTerm, setSearchTerm] = useState<string>('');
     const [searchResults, setSearchResults] = useState<Characters[]>(char);
     const [selectedProperty, setSelectedProperty] = useState<string[]>([]);
+    const [selectedSkill, setSelectedSkill] = useState<string[]>([]);
     const propertyButtons: string[] = [
         'イウォーク', 'インペリアル・レムナント', 'ウーキー', 'クローン・トルーパー', 'ジェダイ', 'ジオノージアン', 'シス', 'シス帝国', 'タスケン', 'ドロイド', 'ナイトシスター',
         'ならず者', 'ハット・カルテル', 'バッド・バッチ', 'ファースト・オーダー', 'フェニックス', 'マンダロリアン', 'レジスタンス', 'ローグ・ワン', '艦隊司令官', '旧共和国',
         '銀河共和国', '賞金稼ぎ', '尋問官', '第501軍団', '帝国軍', '帝国軍トルーパー', '反乱軍', '反乱軍ファイター', '非同盟のフォースの使い手', '分離主義者'
     ];
     const skillButtons: string[] = [
-        'スキルブロック', '精度上昇',  '精度低下', 'アドバンテージ', '全体攻撃', 'アーマー破壊', 'アシスト', '暗闇', 'ボーナス攻撃', '強化無効', '炎上', 'カウンター', 'カウンター率低下', 'カウンター不可', '報復', 'クリティカル率減少',
+        'スキルブロック', '精度上昇', '精度低下', 'アドバンテージ', '全体攻撃', 'アーマー破壊', 'アシスト', '暗闇', 'ボーナス攻撃', '強化無効', '炎上', 'カウンター', 'カウンター率低下', 'カウンター不可', '報復', 'クリティカル率減少',
         'クリティカル率上昇', 'クリティカルダメージ低下', 'クリティカルダメージ上昇', 'クリティカルヒット無効', '攻撃無効', 'めまい', 'デスマーク', '防御力低下', '防御突破力上昇',
         '防御力上昇', '強化解除', '弱体解除', '味方全体-弱体解除', '敵全体-強化解除', '時間経過ダメージ', '疑心', '回避力低下', '回避力上昇', '回避不可', 'エクスポーズ', '恐怖', 'フォアサイト', 'フレンジー',
         'ターンメーター上昇', 'ターンメーター入れ替え', '回復', '回復無効', 'ヘルススティール上昇', '最大HP上昇', '即戦闘不能耐性', '触発', 'リーダー：クリティカル率上昇', 'リーダー：防御力上昇',
         'リーダー：最大HP上昇', 'リーダー：スピード上昇', 'リーダー：抵抗力上昇', 'リーダー：アシスト', 'リーダー：フォアサイト', 'リーダー：回復', 'リーダー：HP上昇', 'リーダー：プロテクション上昇',
-        '攻撃力低下', '攻撃力上昇', '感染', '有効性上昇', '有効性減少', 'プロテクション上昇', '粛清', 'ターンメーター減少', 'クールダウン減少', '復活', '復活不可', '切り返し','クールダウンリセット',
+        '攻撃力低下', '攻撃力上昇', '感染', '有効性上昇', '有効性減少', 'プロテクション上昇', '粛清', 'ターンメーター減少', 'クールダウン減少', '復活', '復活不可', '切り返し', 'クールダウンリセット',
         'ショック', 'スピード低下', 'スピード上昇', 'よろめき', 'ステルス', 'スタン', 'ターゲットロック', '挑発', '抵抗力低下', '抵抗力上昇', 'サーマル・デトネーター', '準備万端', 'ベスカー・インゴット', 'ベスカー・アーマー',
         '拷問', '無防備' , '軍略の天才', 'シエン・フォーム', '即戦闘不能', '標的', '射撃訓練', 'フォースの酔い', 'フォースの繋がり', 'ジェダイ・ナイト', 'サイフォン', '不屈', 'パダワンの訓戒', 'セカンドウィンド', '知略', 'メカニックの知識', '武装解除',
         '憎悪', '疑惑', 'スタンス - ダブルブレード', '向こう見ず', 'スタンス - デュアルブレード', 'スタンス - クロスガード', 'ジェダイの意志', '有利', 'ステルス解除', 'ジェダイの訓戒', '招集', '集団意識', '欺瞞', '連帯', '用心棒', '好みの悪党',
         '賞金稼ぎの決意', '救済', '帝国の罠', '潜伏', '信頼できるエージェント', 'フォースエネルギー', '解放', '破砕', '起爆トラップ', 'ロイヤルハンド'
     ];
-
+// 
 
     // 絞り込み検索の関数
     const handleSearch = useCallback(() => {
         // console.log('検索したもの', searchTerm); // デバック用
         // console.log('選んだボタン', selectedProperty); // デバック用
         const results = char.filter((item) =>
-            (new RegExp(searchTerm, 'i').test(item.name) || new RegExp(searchTerm, 'i').test(item.property) 
-            || new RegExp(searchTerm, 'i').test(item.abbreviation)) &&
-            (selectedProperty.every(prop => item.property.includes(prop)) &&
-            selectedProperty.every(prop => item.skill.includes(prop))) 
+            (new RegExp(searchTerm, 'i').test(item.name) || new RegExp(searchTerm, 'i').test(item.property)
+                || new RegExp(searchTerm, 'i').test(item.abbreviation)) &&
+            (selectedProperty.length === 0 || selectedProperty.some(prop => item.property.includes(prop))) &&
+            (selectedSkill.length === 0 || selectedSkill.some(skill => item.skill.includes(skill)))
         );
-        // console.log('results', results); // デバック用
         setSearchResults(results);
-        // console.log(selectedProperty);
-    },[char, searchTerm, selectedProperty]);
+    }, [char, searchTerm, selectedProperty, selectedSkill]);
     const handlePropertyChange = (property: string) => {
         const isSelected = selectedProperty.includes(property);
         const updateProperty = isSelected
@@ -56,10 +52,18 @@ export default function Character(
             : [...selectedProperty, property];
         // console.log('updateProperty:',updateProperty); // デバック用
         setSelectedProperty(updateProperty);
-        // handleSearch();
+        handleSearch();
     };
     const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(e.target.value);
+        handleSearch();
+    };
+    const handleSkillChange = (skill: string) => {
+        const isSelected = selectedSkill.includes(skill);
+        const updateSkill = isSelected
+            ? selectedSkill.filter(s => s !== skill)
+            : [...selectedSkill, skill];
+        setSelectedSkill(updateSkill);
         handleSearch();
     };
     useEffect(() => {
@@ -71,13 +75,13 @@ export default function Character(
     // フィルターボタンでタグボタン等を表示
     const [isButtonVisibleAttribute, setIsButtonVisibleAttribute] = useState(true);
     const toggleButtonVisibilityAttribute = () => {
-        console.log(isButtonVisibleAttribute);
+        // console.log(isButtonVisibleAttribute);
         setIsButtonVisibleAttribute(!isButtonVisibleAttribute);
 
     };
     const [isButtonVisibleSkill, setIsButtonVisibleSkill] = useState(true);
     const toggleButtonVisibilitySkill = () => {
-        console.log(isButtonVisibleSkill);
+        // console.log(isButtonVisibleSkill);
         setIsButtonVisibleSkill(!isButtonVisibleSkill);
 
     };
@@ -162,14 +166,14 @@ export default function Character(
                             />
                         ))}
                     </div>
-                )} <br/>
+                )} <br />
                 {isButtonVisibleSkill && (
                     <div className="border h-20 overflow-y-auto bg-orange-300">
                         {skillButtons.map((property, index) => (
                             <input
                                 key={index}
                                 type="button"
-                                onClick={() => handlePropertyChange(property)}
+                                onClick={() => handleSkillChange(property)}
                                 value={property}
                                 className="m-1 border bg-indigo-300"
                             />
@@ -178,7 +182,7 @@ export default function Character(
                 )}
             </div>
             <div>
-                <p>押したボタン： {selectedProperty} </p>
+                <p>押したボタン： 属性:{selectedProperty} ,スキル効果:{selectedSkill} </p>
             </div>
             <div className="mb-32 grid text-center lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left p-4">
                 {searchResults.map((char) => {
@@ -192,7 +196,6 @@ export default function Character(
                             <small>{char.property}</small>
                         </div>
                     )
-
                 })}
             </div>
         </div>
