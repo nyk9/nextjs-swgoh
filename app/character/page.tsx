@@ -30,18 +30,13 @@ export default function Character(
         '攻撃力低下', '攻撃力上昇', '感染', '有効性上昇', '有効性減少', 'プロテクション上昇', '粛清', 'ターンメーター減少', 'クールダウン減少', '復活', '復活不可', '切り返し','クールダウンリセット',
         'ショック', 'スピード低下', 'スピード上昇', 'よろめき', 'ステルス', 'スタン', 'ターゲットロック', '挑発', '抵抗力低下', '抵抗力上昇', 'サーマル・デトネーター', '準備万端', 'ベスカー・インゴット', 'ベスカー・アーマー',
         '拷問', '無防備' , '軍略の天才', 'シエン・フォーム', '即戦闘不能', '標的', '射撃訓練', 'フォースの酔い', 'フォースの繋がり', 'ジェダイ・ナイト', 'サイフォン', '不屈', 'パダワンの訓戒', 'セカンドウィンド', '知略', 'メカニックの知識', '武装解除',
-        '憎悪', '疑惑'
+        '憎悪', '疑惑', 'スタンス - ダブルブレード', '向こう見ず', 'スタンス - デュアルブレード', 'スタンス - クロスガード', 'ジェダイの意志', '有利', 'ステルス解除', 'ジェダイの訓戒', '招集', '集団意識', '欺瞞', '連帯', '用心棒', '好みの悪党',
+        '賞金稼ぎの決意', '救済', '帝国の罠', '潜伏', '信頼できるエージェント', 'フォースエネルギー', '解放', '破砕', '起爆トラップ', 'ロイヤルハンド'
     ];
 
 
     // 絞り込み検索の関数
     const handleSearch = useCallback(() => {
-        // const results = char.filter((item) =>
-        //     // item.name.toLowerCase().includes(term.toLowerCase())
-        //     (new RegExp(searchTerm, 'i').test(item.name) || new RegExp(searchTerm, 'i').test(item.property) || 
-        //     new RegExp(searchTerm, 'i').test(item.abbreviation)) &&
-        //     (item.property === selectedProperty || selectedProperty === 'ALL')
-        // );
         // console.log('検索したもの', searchTerm); // デバック用
         // console.log('選んだボタン', selectedProperty); // デバック用
         const results = char.filter((item) =>

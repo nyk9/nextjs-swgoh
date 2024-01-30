@@ -481,7 +481,7 @@ const characters: Characters[] = [
         src: asajjventress,
         abbreviation: "Asajj Ventress asajj ventress AV ",
         skill: `スタン  回復  強化解除  敵全体-強化解除  ターンメーター減少  クールダウンリセット
-            防御力低下  リーダー：スピード上昇  リーダー：攻撃力上昇  ターンメーター上昇  
+            防御力低下  リーダー：スピード上昇  リーダー：攻撃力上昇  ターンメーター上昇
             最大HP上昇`
     }, {
         name: "アソーカ・タノ",
@@ -829,7 +829,7 @@ const characters: Characters[] = [
         abbreviation: "Krrsantan krrsantan",
         skill: `有効性低下  ショック  防御力上昇  挑発  回復  武装解除  クールダウン増加  スキルブロック  最大HP上昇
             リーダー：ヘルススティール上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  攻撃力上昇  挑発
-            スピード上昇  復活  クールダウンリセット  スキルブロック無効化  クールダウン上昇無効化  クリティカル回避力上昇  
+            スピード上昇  復活  クールダウンリセット  スキルブロック無効化  クールダウン上昇無効化  クリティカル回避力上昇
             ダメージ耐性`
     }, {
         name: "クレニック長官",
@@ -903,313 +903,356 @@ const characters: Characters[] = [
         property: "ライトサイド、アタッカー、マンダロリアン、フェニックス、反乱軍",
         src: sabine,
         abbreviation: "Sabine Wren sabine wren",
-        skill: ``
+        skill: `アーマー破壊  全体攻撃  よろめき  エクスポーズ  クリティカル率上昇  攻撃力上昇  カウンター不可  回避不可  クールダウン減少`
     }, {
         name: "ザム・ウェセル",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: zam,
         abbreviation: "Zam Wesell zam wesell",
-        skill: ``
+        skill: `ターンメーター上昇  スピード上昇  全体攻撃  サーマル・デトネーター  回避力低下  回復  回避不可  リーダー：有効性上昇  弱体解除  ステルス  最大プロテクション上昇`
     }, {
         name: "ザルバー",
         property: "ライトサイド、タンク、旧共和国、ならず者、ウーキー",
         src: zaalbar,
         abbreviation: "Zaalbar",
-        skill: ``
+        skill: `時間経過ダメージ  回復  全体攻撃  挑発  アーマー破壊  防御力上昇  報復効果  `
     }, {
         name: "サン・ファク",
         property: "ダークサイド、タンク、ジオノージアン、分離主義者",
         src: sunfac,
         abbreviation: "Sun Fac sun fac 蟲",
-        skill: ``
+        skill: `強化解除  回復  挑発  攻撃力低下  ターンメーター減少  回避不可  よろめき  暗闇  めまい  カウンター  防御力上昇  HP上昇  ヘルススティール上昇`
     }, {
         name: "シア・ジュンダ",
         property: "ライトサイド、サポート、リーダー、ならず者、非同盟のフォースの使い手",
         src: cere,
         abbreviation: "Cere Junda cere junda",
-        skill: ``
+        skill: `抵抗力上昇  精度上昇  ボーナスプロテクション  防御力上昇  ダメージ耐性  クールダウン状態から開始  防御突破力上昇  クールダウン増加  クールダウン減少`
     }, {
         name: "ジェダイ・コンシュラー",
         property: "ライトサイド、ヒーラー、銀河共和国、ジェダイ",
         src: jediconsular,
         abbreviation: "Jedi Consular jedi consular",
-        skill: ``
+        skill: `クールダウン減少  回復  ターンメーター上昇  アーマー無効化`
     }, {
         name: "ジェダイ・ナイト・アナキン",
         property: "ライトサイド、アタッカー、リーダー、銀河共和国、ジェダイ",
         src: jka,
         abbreviation: "JKA jka Jedi Knight Anakin jedi knight anakin",
-        skill: ``
+        skill: `回避不可  強化無効  リーダー：攻撃力上昇  全体攻撃  リーダー：クリティカルダメージ上昇  アドバンテージ  ボーナスターン  `
     }, {
         name: "ジェダイ・ナイト・カル・ケスティス",
         property: "ライトサイド、アタッカー、リーダー、ジェダイ",
         src: jkck,
         abbreviation: "JKCK JKC jkck jkc Jedi Knight Cal Kestis jedi knight cal kestis",
-        skill: ``
+        skill: `強化解除  ボーナスターン  挑発無効化  スタンス - ダブルブレード  向こう見ず  スピード低下  スタン  アーマー破壊  めまい
+            全体攻撃  回復  プロテクション上昇  スタンス - デュアルブレード  弱体解除  味方全体-弱体解除  アシスト  切り返し  報復効果
+            攻撃力低下  スタンス - クロスガード  即戦闘不能  スキルブロック  よろめき  フォースの酔い  防御突破力上昇  プロテクション無効化
+            リーダー：カウンター率上昇  リーダー：防御力上昇  リーダー：攻撃力上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇
+            リーダー：防御力上昇  ターンメーター上昇  フレンジー  スキルブロック無効化  恐怖無効化  スタン無効化  クールダウン操作無効化
+            ダメージ耐性`
     }, {
         name: "ジェダイ・ナイト・ガーディアン",
         property: "ライトサイド、タンク、銀河共和国、ジェダイ",
         src: jediguardian,
         abbreviation: "Jedi Knight Guardian jedi knight guardian ",
-        skill: ``
+        skill: `攻撃力低下  全体攻撃  スキルブロック  防御力上昇  回復  抵抗力上昇`
     }, {
         name: "ジェダイ・ナイト・ルーク・スカイウォーカー",
         property: "ライトサイド、アタッカー、リーダー、ジェダイ",
         src: jkl,
         abbreviation: "JKL jkl Jedi Knight Luke Skywalker jedi knight kuke skywalker",
-        skill: ``
+        skill: `強化解除  固定ダメージ  最大プロテクション上昇  カウンター不可  アシスト  暗闇  ジェダイの意志  カウンター  スピード上昇
+            無防備  スタン  全体攻撃  最大HP減少  最大プロテクション減少  リーダー：クリティカル率上昇  リーダー：クリティカルダメージ上昇
+            スピード減少  英雄の覚醒  味方全体-弱体解除  弱体解除  回復  ターンメーター上昇  スタン無効化  恐怖無効化  `
     }, {
         name: "ジェダイ・ナイト・レヴァン",
         property: "ライトサイド・アタッカー、リーダー、ジェダイ、旧共和国",
         src: jkr,
         abbreviation: "JKR jkr Jedi Knight Revan jedi knight revan 白レヴァン ",
-        skill: ``
+        skill: `ターンメーター上昇  全体攻撃  弱体解除  クリティカルダメージ上昇  フォアサイト  ターンメーター入れ替え  マーク  クールダウン増加
+            スタン  リーダー：スピード上昇  抵抗力上昇  回復  最大HP減少  戦略的アドバンテージ  挑発無効化  クリティカルヒット耐性  ボーナスターン
+            スタン無効化  スキルブロック無効化  `
     }, {
         name: "ジェダイ・マスター・ケノービ",
         property: "銀河の伝説、ライトサイド、アタッカー、リーダー、銀河共和国、ジェダイ",
         src: jmk,
         abbreviation: "JMK jmk Jedi Master Kenobi jedi master kenobi GL ",
-        skill: ``
+        skill: `スキルブロック  防御突破力上昇  無防備  回復無効  アシスト  回復  フォアサイト  抵抗力上昇  プロテクション上昇  ダメージ耐性
+            クールダウンリセット  リーダー：マスター上昇  リーダー：スピード上昇  リーダー：最大HP上昇  挑発無効化  耐性発揮  挑発  弱体解除
+            有利  ステルス解除  マスター上昇  HP割合ダメージ軽減  大ダメージ軽減  プロテクション無効化  味方全体-弱体解除  カウンター`
     }, {
         name: "ジェダイ・マスター・ルーク・スカイウォーカー",
         property: "銀河の伝説、ライトサイド、タンク、リーダー、ジェダイ",
         src: jml,
         abbreviation: "JML jml Jedi Master Luke Skywalker jedi master luke skywalker",
-        skill: ``
+        skill: `強化無効  最大HP上昇  カウンター不可  抵抗力低下  めまい  クールダウン増加  抵抗力低下  エクスポーズ  アシスト  アドバンテージ
+            クリティカルダメージ上昇  ジェダイの訓戒  耐性発揮不可  回避不可  全体攻撃  ターンメーター減少  スキルブロック  破損  ジェダイの意志
+            クリティカルヒット耐性  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：攻撃力上昇  リーダー：スピード上昇  挑発
+            弱体解除  防御力上昇  抵抗力上昇  固定ダメージ  ターンメーター上昇  クールダウン減少  HP割合ダメージ軽減  大ダメージ軽減  `
     }, {
         name: "ジオノージアン・スパイ",
         property: "ダークサイド、アタッカー、ジオノージアン、分離主義者",
         src: geospy,
         abbreviation: "Geonosian Spy geo Geo geonosian spy 蟲",
-        skill: ``
+        skill: `クリティカル率上昇  回避不可  強化解除  回避力低下  有効性上昇  エクスポーズ  ステルス  ターンメーター上昇`
     }, {
         name: "ジオノージアン、ブルード、アルファ",
         property: "ダークサイド、サポート、リーダー、ジオノージアン、分離主義者",
         src: gba,
         abbreviation: "GBA gba Geonosian Brood Alpha geo Geo geonosian brood alpha 蟲",
-        skill: ``
+        skill: `強化解除  全体攻撃  エクスポーズ   ターンメーター減少  弱体解除  味方全体-弱体解除  招集  クリティカルダメージ上昇  攻撃力上昇
+            ターンメーター上昇  回復  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：ヘルススティール上昇  アシスト  集団意識
+            挑発  カウンター  `
     }, {
         name: "ジオノージアン兵士",
         property: "ダークサイド、アタッカー、ジオノージアン、分離主義者",
         src: geosoldier,
         abbreviation: "Geonosian Soldier geonosian soldier 蟲",
-        skill: ``
+        skill: `抵抗力低下  アシスト  ターンメーター上昇`
     }, {
         name: "シス・アサシン",
         property: "ダークサイド、アタッカー、シス、シス帝国",
         src: sithassassin,
         abbreviation: "Sass Sith Assassin sith assassin",
-        skill: ``
+        skill: `回避力低下  攻撃力上昇  ステルス  プロテクション無効化  弱体解除  フォアサイト  スピード上昇  抵抗力上昇  ターンメーター上昇  スタン
+            強化解除  `
     }, {
         name: "シス・エターナルの皇帝",
         property: "銀河の伝説、アタッカー、リーダー、シス",
         src: SEE,
         abbreviation: "SEE see Sith Eternal Emperor sith eternal eternal",
-        skill: ``
+        skill: `欺瞞  コピー不可  解除不可  耐性発揮不可  スピード上昇  カウンター不可  アシスト  回復  復活不可  報復効果  挑発  連帯  ボーナスターン
+            リーダー：マスター上昇  リーダー：有効性上昇  リーダー：スピード上昇  ターンメーター上昇  弱体解除  復活不可  挑発無効化  ターンメーター減少無効化
+            エクスポーズ  HP割合ダメージ軽減  大ダメージ軽減  `
     }, {
         name: "シス・トルーパー",
         property: "ダークサイド、アタッカー、ファースト・オーダー、シス",
         src: sithtrooper,
         abbreviation: "SiT SithT Sith Trooper sith trooper シストル",
-        skill: ``
+        skill: `クリティカルヒット耐性  全体攻撃  弱体解除  味方全体-弱体解除  アドバンテージ  アシスト  クールダウンリセット  ボーナスターン`
     }, {
         name: "シス・マローダー",
         property: "ダークサイド、アタッカー、シス、シス帝国",
         src: sithmarauder,
         abbreviation: "Sith Marauder sith marauder",
-        skill: ``
+        skill: `攻撃力低下  有効性上昇  最大HP減少  アーマー無効化  ターンメーター上昇`
     }, {
         name: "シス帝国トルーパー",
         property: "ダークサイド、タンク、シス、シス帝国",
         src: sithempiretrooper,
         abbreviation: "Sith Empire Troper sith empire trooper SE SET",
-        skill: ``
+        skill: `防御力低下  プロテクション無効化  攻撃力低下  プロテクション上昇  挑発  防御力上昇  報復効果  `
     }, {
         name: "シャアク・ティ",
         property: "ライトサイド、サポート、リーダー、銀河共和国、ジェダイ",
         src: shaakti,
         abbreviation: "釈 Shaak Ti shaak ti",
-        skill: ``
+        skill: `強化解除  攻撃力上昇  弱体解除  味方全体-弱体解除  アシスト  ターンメーター上昇  ステルス  クリティカル率上昇  スピード上昇  挑発
+            クリティカルヒット耐性  リーダー：スピード上昇  回復  報復効果`
     }, {
         name: "ジャバ・ザ・ハット",
         property: "銀河の伝説、ダークサイド、サポート、リーダー、賞金稼ぎ、ハット・カルテル、スマグラー",
         src: jabba,
         abbreviation: "Jabba jabba The Hutt the hutt GL",
-        skill: ``
+        skill: `アシスト  プロテクション上昇  暗闇  回復  弱体解除  味方全体-弱体解除  スピード低下  用心棒  クリティカルヒット耐性  防御突破力上昇
+            スピード上昇  アドバンテージ  強化解除  強化無効  解除不可  サーマル・デトネーター  リーダー：スピード上昇  リーダー：最大HP上昇
+            好みの悪党  挑発無効化  クリティカルダメージ上昇  ダメージ耐性  攻撃力上昇  コピー不可  解除不可  阻止不可  クールダウンリセット
+            復活  挑発無効化  ステルス解除  スタン解除  攻撃力上昇  ターンメーター上昇  ボーナスプロテクション  HP割合ダメージ軽減  大ダメージ軽減
+            即戦闘不能  固定ダメージ  カウンター不可  回避不可`
     }, {
         name: "ジャワ",
         property: "ライトサイド、アタッカー、ジャワ",
         src: jawa,
         abbreviation: "Jawa jawa",
-        skill: ``
+        skill: `スピード低下  全体攻撃  スタン  ターンメーター上昇  `
     }, {
         name: "ジャワ・エンジニア",
         property: "ライトサイド、ヒーラー、ジャワ",
         src: jawaengineer,
         abbreviation: "Jawa Engineer jawa engineer",
-        skill: ``
+        skill: `デトネーター  復活  回復  クリティカル率上昇  ターンメーター上昇  スピード上昇`
     }, {
         name: "ジャワ・スカベンジャー",
         property: "ライトサイド、サポート、ジャワ",
         src: jawascavenger,
         abbreviation: "Jawa Scavenger jawa scavenger ジャワスカ",
-        skill: ``
+        skill: `攻撃力低下  サーマル・デトネーター  防御力低下  回復無効  抵抗力低下  ステルス  防御力上昇  攻撃力上昇`
     }, {
         name: "ジャンゴ・フェット",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、マンダロリアン、ならず者、分離主義者",
         src: jangofett,
         abbreviation: "Jango Fett jango fett ﾌｪｯ!!",
-        skill: ``
+        skill: `回復無効  よろめき  炎上  全体攻撃  回避不可  最大HP減少  抵抗力低下  リーダー：スピード上昇  有効性上昇  攻撃力上昇  賞金稼ぎの決意
+            復活不可  回復  復活  挑発無効化  解除不可  阻止不可  スタック不可  ダメージ耐性`
     }, {
         name: "ジュアニ",
         property: "ライトサイド、タンク、ジェダイ、旧共和国",
         src: juhani,
         abbreviation: "Juhani juhani",
-        skill: ``
+        skill: `弱体解除  挑発  スタン  回避不可  回復  全体攻撃  ステルス  よろめき  カウンター  攻撃力上昇  ヘルススティール上昇  救済  アシスト
+            ターンメーター上昇`
     }, {
         name: "ショアトルーパー",
         property: "ダークサイド、タンク、帝国軍、帝国軍トルーパー",
         src: shoretrooper,
         abbreviation: "Shore Trooper shore trooper",
-        skill: ``
+        skill: `クリティカル率減少  回復  クリティカルヒット耐性  挑発  クールダウン減少  ターンメーター上昇  最大HP上昇`
     }, {
         name: "ジョリー・ビンド",
         property: "ライトサイド、ヒーラー、ジェダイ、旧共和国",
         src: joleebindo,
         abbreviation: "Jolee Bindo jolee bindo どうあがいてもジョリービンド",
-        skill: ``
+        skill: `クールダウン減少  アシスト  回復  弱体解除  復活  クリティカルヒット耐性  ターンメーター減少耐性  プロテクション上昇`
     }, {
         name: "ジン・アーソ",
         property: "ライトサイド、アタッカー、リーダー、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: jynerso,
         abbreviation: "Jyn Erso jyn erso",
-        skill: ``
+        skill: `アドバンテージ  ターンメーター上昇  復活  スタン  エクスポーズ  耐性発揮不可  強化無効無効化  スタン無効  クリティカルダメージ上昇
+            攻撃力上昇  クリティカルヒット耐性  挑発  回避力上昇  スピード上昇`
     }, {
         name: "スカイウォーカー将軍",
         property: "ライトサイド、アタッカー、リーダー、第501軍団、銀河共和国、ジェダイ",
         src: gas,
         abbreviation: "GAS gas General Anakin Skywalker general anakin skywalker スカぴょん",
-        skill: ``
+        skill: `回避不可  防御突破力上昇  アーマー破壊  めまい  全体攻撃  復活不可  アドバンス  カバー  挑発  ターンメーター上昇  クールダウン増加
+            弱体解除  クリティカルヒット不可  最大HP減少  耐性発揮不可  カウンター`
     }, {
         name: "スカウト・トルーパー",
         property: "ダークサイド、サポート、帝国軍、インペリアル・レムナント、帝国軍トルーパー",
         src: scouttrooper,
         abbreviation: "Scout Trooper scout trooper",
-        skill: ``
+        skill: `精度低下  有効性上昇  攻撃力上昇  強化解除  スピード低下  耐性発揮不可  回避不可  弱体解除  味方全体-弱体解除  クリティカルダメージ上昇
+            スピード上昇  アシスト  エクスポーズ  よろめき  アドバンテージ  ステルス  回復  ターンメーター上昇  帝国の罠`
     }, {
         name: "スカリフ同盟軍パスファインダー",
         property: "ライトサイド、タンク、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: scarifpathfinder,
         abbreviation: "Scarif Path Finder scarif path finder",
-        skill: ``
+        skill: `攻撃力上昇  精度上昇  挑発  全体攻撃  復活  ターンメーター上昇  スピード上昇`
     }, {
         name: "スキッフ・ガード(ランド・カルリジアン)",
         property: "ライトサイド、アタッカー、ハット・カルテル、ならず者、スマグラー",
         src: skiffguard,
         abbreviation: "Skiff Guard Lando Calrissian skiff guard lando calrissian ",
-        skill: ``
+        skill: `潜伏  時間経過ダメージ  アーマー破壊  クールダウンリフレッシュ  弱体解除  報復効果  スピード上昇  防御力上昇  HP上昇  有効性上昇  ステルス上昇
+            アシスト  信頼できるエージェント`
     }, {
         name: "スターキラー",
         property: "ダークサイド、アタッカー、非同盟のフォースの使い手",
         src: SK,
         abbreviation: "SK sk Starkiller sterkiller ギャレン・マレック Galen Marek galen marek",
-        skill: ``
+        skill: `ショック  全体攻撃  カウンター不可  クールダウン減少  めまい  無防備  フォースエネルギー  回避不可  強化無効  回復無効  耐性発揮不可  味方全体-弱体解除
+            コピー不可  解除不可  強化解除  敵全体-強化解除  カウンター  恐怖無効化  解放  弱体解除  ボーナスターン  クールダウンリセット  スタン  挑発  アシスト
+            クリティカルヒット耐性  ダメージ耐性  挑発`
     }, {
         name: "スターク大佐",
         property: "ダークサイド、サポート、帝国軍、帝国軍トルーパー",
         src: colstarck,
         abbreviation: "Col.  Colonel Starck colonel starck",
-        skill: ``
+        skill: `防御力低下  クリティカル率上昇  クリティカルダメージ上昇  ターンメーター上昇  全体攻撃  よろめき  強化解除  クールダウン減少  回復`
     }, {
         name: "ストームトルーパー",
         property: "ダークサイド、タンク、帝国軍、インペリアル、レムナント、帝国軍トルーパー",
         src: stormtrooper,
         abbreviation: "Storm Trooper storm trooper",
-        skill: ``
+        skill: `エクスポーズ  挑発  防御力上昇  ターンメーター減少  プロテクション上昇`
     }, {
         name: "スノートルーパー",
         property: "ダークサイド、アタッカー、帝国軍、帝国軍トルーパー",
         src: snowtrooper,
         abbreviation: "Snow trooper snow trooper",
-        skill: ``
+        skill: `スキルブロック  全体攻撃  クリティカルダメージ上昇  クールダウン減少  ターンメーター上昇`
     }, {
         name: "スマグラー・チューバッカ",
         property: "ライトサイド・アタッカー・レジスタンス・ならず者・ウーキー・スマグラー",
         src: smugglerchewy,
         abbreviation: "Vets Veteran Smuggler Chewbacca Chew vets veteran smuggler chewbacca",
-        skill: ``
+        skill: `めまい  スタン  スピード低下  ターンメーター上昇  クールダウンリセット  ボーナスターン  `
     }, {
         name: "スマグラー・ハン",
         property: "ライトサイド・アタッカー、レジスタンス、ならず者、スマグラー",
         src: smugglerhan,
         abbreviation: "Vets vets veteran smuggler han solo Veteran Smuggler Han Solo",
-        skill: ``
+        skill: `よろめき  スタン  スキルブロック  ターンメーター上昇  クールダウンリセット  ボーナスターン  `
     }, {
         name: "スローン大提督",
         property: "ダークサイド、サポート、リーダー、帝国軍、艦隊司令官",
         src: thrawn,
         abbreviation: "GAT gat Grand Admiral Thrawn grand admiral thrawn",
-        skill: ``
+        skill: `スピード上昇  スキルブロック  スタン  耐性発揮不可  防御力低下  強化解除  ターンメーター減少  破砕  ターンメーター交換  回復  弱体解除  ターンメーター上昇
+            カウンター  `
     }, {
         name: "セカンド・シスター",
         property: "ダークサイド、アタッカー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: trilla,
         abbreviation: "2s 2S Second Sister second sister 2女 トリラ Trilla trilla",
-        skill: ``
+        skill: `粛清  耐性発揮不可  クリティカルダメージ上昇  スタン  ターンメーター減少  ターンメーター上昇  マーク  回避不可  ターンメーター上昇`
     }, {
         name: "セブンス・シスター",
         property: "ダークサイド、ヒーラー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: seventhsister,
         abbreviation: "Seventh Sister seventh sister 7S 7s",
-        skill: ``
+        skill: `攻撃力低下  粛清  耐性発揮不可  強化解除  ターンメーター減少  スキルブロック  めまい  回避不可  耐性発揮不可  回復  クリティカルヒット耐性  フォアサイト
+            回避力上昇  クールダウン減少  リーダー：回避力上昇  アドバンテージ  アシスト  スピード低下  命中率低下  回復無効  ターンメーター上昇`
     }, {
         name: "ソウ・ゲレラ",
         property: "ライトサイド、サポート、リーダー、反乱軍、反乱軍ファイター",
         src: sawgerrera,
         abbreviation: "Saw Gerrera saw gerrera",
-        skill: ``
+        skill: `防御力低下  クールダウン減少  ターンメーター減少  攻撃力減少  回避不可  耐性発揮不可  強化解除  敵全体-強化解除  回復  暗闇  リーダー：最大HP上昇
+            リーダー：クリティカルダメージ上昇  リーダー：防御力上昇  リーダー：スピード上昇  スピード上昇  クリティカルダメージ上昇  時間経過回復  抵抗力上昇
+            攻撃力上昇  挑発  ターンメーター上昇  起爆トラップ  コピー不可  解除不可  クリティカルダメージ低下  スタン  炎上  よろめき  ボーナスターン
+            クールダウン増加  マーク  ステルス  クリティカル回避力上昇`
     }, {
         name: "ゾリ・ブリス",
         property: "ライトサイド、サポーター、レジスタンス、ならず者、スマグラー",
         src: zorii,
         abbreviation: "Zorri Bliss zorri bliss",
-        skill: ``
+        skill: `ステルス  回避不可  強化解除  回復  弱体解除  ターンメーター上昇  挑発  プロテクション上昇  アシスト  エクスポーズ  回復無効  スタン  耐性発揮不可
+            報復効果  クリティカルヒット耐性  スピード低下  抵抗力上昇  最大HP上昇  ダメージ耐性  クリティカルダメージ上昇  スピード上昇`
     }, {
         name: "ダーク・トルーパー",
         property: "ダークサイド、アタッカー、ドロイド、帝国軍、インペリアル・レムナント、帝国軍トルーパー",
         src: darktrooper,
         abbreviation: "Dark Trooper dark trooper",
-        skill: ``
+        skill: `全体攻撃  アドバンテージ  ダーク・トルーパー部隊  ターンメーター上昇  攻撃力上昇  弱体解除  回復`
     }, {
         name: "ダース・サイオン",
         property: "ダークサイド、タンク、シス",
         src: sion,
         abbreviation: "Darth Sion darth sion",
-        skill: ``
+        skill: `ペイン  弱体解除  全体攻撃  強化解除  クールダウン減少  回避不可  回復  増悪  弱体解除  ターンメーター上昇  クールダウン状態から開始  クールダウン減少
+            挑発  `
     }, {
         name: "ダース・シディアス",
         property: "ダークサイド、アタッカー、リーダー、シス",
         src: sidious,
         abbreviation: "Darth Sidious darth sidious ",
-        skill: ``
+        skill: `回復無効  防御力無効化  時間経過ダメージ  エクスポーズ  全体攻撃  リーダー：クリティカル率上昇  リーダー：クリティカルダメージ上昇  回復  ターンメーター上昇
+            クールダウン減少  スピード上昇`
     }, {
         name: "ダース・タロン",
         property: "ダークサイド、アタッカー、シス",
         src: talon,
         abbreviation: "Darth Talon darth talon",
-        skill: ``
+        skill: `スキルブロック  クールダウン減少  ステルス  ターンメーター上昇  全体攻撃  ロイヤルハンド  クールダウン状態から開始  コピー不可  阻止不可  解除不可  弱体解除
+            クールダウンリフレッシュ  報復効果  挑発  強化無効  `
     }, {
         name: "ダース・トレイヤ",
         property: "ダークサイド、サポート、リーダー、シス",
         src: traya,
         abbreviation: "Darth Traya darth traya",
-        skill: ``
+        skill: `めまい  クールダウン減少  抵抗力低下  スキルブロック  回復無効  回避不可  リーダー：クリティカル回避力上昇  リーダー：有効性上昇  回復  攻撃力低下
+            ボーナスプロテクション上昇  弱体解除  クールダウンリセット`
     }, {
         name: "ダース・ナイアリス",
         property: "ダークサイド、サポート、リーダー、シス",
         src: nihilus,
         abbreviation: "Darth Nihilus darth nihilus",
-        skill: ``
+        skill: `強化解除  クールダウン減少  クールダウン増加  全体攻撃  則戦闘不能  クールダウン状態から開始  リーダー：攻撃力上昇  リーダー：ヘルススティール上昇
+            リーダー：最大HP上昇  リーダー：クリティカルヒット無効  時間経過ダメージ  最大HP低下  ターンメーター上昇  最大HP上昇　`
     }, {
         name: "ダース・ベイダー",
         property: "ダークサイド、アタッカー、リーダー、帝国軍",
