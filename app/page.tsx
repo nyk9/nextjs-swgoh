@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image';
 import schedules from './schedules';
 import updates, { Updates } from './update';
 
@@ -7,7 +6,7 @@ export default function Home() {
   const update: Updates[] = updates;
   const schedule: Updates[] = schedules;
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-10">
+    <main className="flex min-h-screen flex-col items-center justify-between p-10 dark:bg-gray-300">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex m-10" >
         {/* <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
@@ -39,7 +38,7 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1] mb-20">
+      {/* <div className="flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1] mb-20">
         <Image
           className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
@@ -48,12 +47,12 @@ export default function Home() {
           height={37}
           priority
         />
-      </div>
+      </div> */}
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="mb-32 grid center text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href='https://swgoh.gg/'
-          className='group rounded-lg border border-transparent px-5 py-4 mx-5 my-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-red-900 hover:light:border-neutral-700'
+          className='group rounded-lg border border-transparent px-5 py-4 mx-5 my-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-red-900 hover:light:border-neutral-700 bg-red-200'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -70,7 +69,7 @@ export default function Home() {
 
         <a
           href='/character'
-          className='group rounded-lg border border-transparent px-5 py-4 mx-5 my-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700'
+          className='group rounded-lg border border-transparent px-5 py-4 mx-5 my-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-300'
           // target='_blank'
           rel='noopener noreferrer'
         >
@@ -87,7 +86,7 @@ export default function Home() {
 
         <a
           href="https://discord.gg/yX3pS2WemD"
-          className="'group rounded-lg border border-transparent px-5 py-4 mx-5 my-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700"
+          className="'group rounded-lg border border-transparent px-5 py-4 mx-5 my-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-200"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -104,8 +103,8 @@ export default function Home() {
 
       </div>
       <div className='border-y-2 border-double w-full text-center mb-10'>
-        <div className='left-0 bottom-5 bg-red-400'>
-          <h1 className='text-green-300'>アプデ：ログ</h1>
+        <div className='left-0 bottom-5 bg-teal-400'>
+          <h1 className='text-black'>アプデ：ログ</h1>
           {update.map((update)=>{
             return(
               <div 
@@ -123,7 +122,7 @@ export default function Home() {
       </div>
       <div className='border-y-2 border-double w-full text-center mb-1'>
         <div className='left-0 bottom-5 bg-sky-400'>
-          <h1 className='text-green-700'>実装予定</h1>
+          <h1 className='text-black'>実装予定</h1>
           {schedule.map((schedule)=>{
               return(
                 <div
@@ -138,6 +137,14 @@ export default function Home() {
               );
             })}
         </div>
+      </div>
+      <div>
+        <a 
+          href="/privacy-policy"
+          className='text-center'
+          >
+          プライバシーポリシー・免責事項
+        </a>
       </div>
     </main>
   )
