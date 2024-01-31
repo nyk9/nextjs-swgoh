@@ -1258,73 +1258,88 @@ const characters: Characters[] = [
         property: "ダークサイド、アタッカー、リーダー、帝国軍",
         src: vader,
         abbreviation: "Darth Vader darth vader",
-        skill: ``
+        skill: `スキルブロック  時間経過ダメージ  全体攻撃  弱体解除  回避不可  耐性発揮不可  カウンター不可  スピード低下  ターンメーター上昇  無慈悲
+            ボーナスターン  無慈悲な標的  恐怖無効化  スタン無効化  ターンメーター操作無効  挑発無視  リーダー：攻撃力上昇  ターンメーター減少
+            ターンメーター減少無効化  回復  ステルス解除`
     }, {
         name: "ダース・ベイン",
         property: "ダークサイド、アタッカー、リーダー、シス",
         src: bane,
         abbreviation: "Darth Bane darth bane",
-        skill: ``
+        skill: `攻撃力減少  攻撃力上昇  耐性発揮不可  サイフォン  復活不可  強化解除  敵全体-強化解除  全体攻撃  回復無効  クールダウン増加  ヘルススティール上昇
+            防御突破力上昇  スピード上昇  ターンメーター減少  ターンメーター上昇  防御力減少  抵抗力減少  リーダー：攻撃力上昇  リーダー：スピード上昇  復活不可
+            スピード低下  防御力上昇  回避力上昇  HP上昇  クールダウンリセット  回復  HP割合ダメージ軽減  スキルブロック無効化  クールダウン増加無効化
+            スタン無効化  ターンメーター減少無効化  最大プロテクション上昇  挑発無効化  弱体解除  味方全体-弱体解除  `
     }, {
         name: "ダース・マラック",
         property: "ダークサイド、タンク、シス、シス帝国",
         src: malak,
         abbreviation: "Darth Malak darth malak",
-        skill: ``
+        skill: `抵抗力  強化解除  ショック  スタン  ダーク・インフュージョン  コピー不可  解除不可  阻止不可  回復  クールダウン状態から開始  回復無効  挑発
+            ボーナスターン不可  恐怖  耐性発揮不可  回避不可  HP割合ダメージ軽減  ボーナスターン  クールダウンリセット`
     }, {
         name: "ダース・マルガス",
         property: "ダークサイド、タンク、リーダー、シス、シス帝国",
         src: malgus,
         abbreviation: "Darth Malgus darth malgus",
-        skill: ``
+        skill: `最大HP上昇  カウンター不可  回避不可  クリティカルダメージ上昇  暗闇  ショック  スキルブロック  挑発  耐性発揮不可  クリティカル率上昇
+            ターンメーター上昇  疑心  プロテクション上昇  ターンメーター減少無効化  リーダー：クリティカル率上昇  リーダー：最大HP上昇  リーダー：スピード上昇
+            恐怖  解除不可  帰ってきたぞ  スタン無効化  恐怖無効化  リーダー：マスター上昇  リーダー：クリティカル回避力上昇  エクスポーズ  HP割合ダメージ軽減
+            回復無効無効化  カウンター  `
     }, {
         name: "ダース・モール",
         property: "ダークサイド、タンク、リーダー、シス",
         src: darthmaul,
         abbreviation: "Darth Maul darth maul",
-        skill: ``
+        skill: `ターンメーター上昇  攻撃力上昇  全体攻撃  めまい  リーダー：回避力上昇  ステルス  `
     }, {
         name: "ダース・レヴァン",
         property: "ダークサイド、アタッカー、リーダー、シス、シス帝国",
         src: dr,
         abbreviation: "DR dr 黒レヴァン Darth Revan darth revan",
-        skill: ``
+        skill: `強化無効  クールダウン減少  全体攻撃  ショック  回避不可  獰猛  恐怖  コピー不可  解除不可  耐性発揮不可  ターンメーター減少無効化
+            リーダー：クリティカル率上昇  リーダー：スピード上昇  リーダー：クリティカルダメージ上昇  デスマーク  フォアサイト解除  強化解除`
     }, {
         name: "ターフル",
         property: "ライトサイド、サポート、リーダー、ウーキー",
         src: tarfful,
         abbreviation: "Tarfful tarfful",
-        skill: ``
+        skill: `強化解除  防御突破力上昇  防御力上昇  プロテクション上昇  アシスト  スタン  クリティカルダメージ上昇  スピード上昇  挑発
+            味方全体-弱体解除  有効性上昇  抵抗力上昇  最大HP上昇  誘発  回避不可  リーダー：防御力上昇  リーダー：最大HP上昇
+            回復  プロテクション上昇  抵抗力上昇  フォアサイト  報復効果  クールダウンリセット  ターンメーター上昇  アドバンテージ
+            時間経過ダメージ`
     }, {
         name: "タスケン・ウォーリアー",
         property: "ダークサイド、アタッカー、タスケン",
         src: tuskenwarrior,
         abbreviation: "Tusken Warrior tusken warrior",
-        skill: ``
+        skill: `時間経過ダメージ  モメンタム  クリティカルダメージ上昇  防御力低下  強化解除  敵全体-強化解除  カウンター不可
+            回避不可  弱体解除  クールダウンリセット  ボーナスターン`
     }, {
         name: "タスケン・シャーマン",
         property: "ダークサイド、ヒーラー、タスケン",
         src: tuskenshaman,
         abbreviation: "Tusken Shaman tusken shaman",
-        skill: ``
+        skill: `時間経過ダメージ  攻撃力上昇  回復  ターンメーター上昇`
     }, {
         name: "タスケン・レイダー",
         property: "ダークサイド、アタッカー、タスケン",
         src: tuskenraider,
         abbreviation: "Tusken Raider tusken raider",
-        skill: ``
+        skill: `ターンメーター減少  アシスト  挑発  復活  クールダウン減少  弱体解除  味方全体-弱体解除  招集`
     }, {
         name: "タスケン族長",
         property: "ダークサイド、サポート、リーダー、タスケン",
         src: tuskenchief,
         abbreviation: "Tusken Chief tusken chief",
-        skill: ``
+        skill: `アシスト  モメンタム  プロテクション上昇  弱体解除  味方全体-弱体解除  クールダウン減少  スタン
+            ボーナスターン  時間経過ダメージ  回復  時間経過ダメージ無効化`
     }, {
         name: "ダスチャ",
         property: "ライトサイド、サポート、リーダー、ジャワ",
         src: dathcha,
         abbreviation: "Dathcha dathcha",
-        skill: ``
+        skill: `ステルス  スキルブロック  スタン  防御力低下  ターンメーター減少  `
     }, {
         name: "ダッシュ・レイダー",
         property: "ライトサイド、サポート、リーダー、ならず者",
