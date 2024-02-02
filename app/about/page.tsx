@@ -1,3 +1,8 @@
+// export async function getStaticProps(){
+//     return {
+//         revalidate: 600,
+//     };
+// }
 export default function About() {
     return(
         <div className="bg-purple-200">
@@ -23,7 +28,7 @@ export default function About() {
                             GitHub : <a href="http://github.com/nyk9/nextjs-swgoh">リンク</a> <br/>
                         </p>
                     </div>
-                    連絡先：<a href="https://discord.gg/yX3pS2WemD">Discordサーバー</a>
+                    主な連絡先：<a href="https://discord.gg/yX3pS2WemD">公式Discordサーバー</a>
                 </div>
             </div>
         </div>

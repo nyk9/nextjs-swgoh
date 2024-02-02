@@ -63,7 +63,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            外部リンク：swgoh.gg
+            参考にしたサイト (外部リンク：swgoh.gg)
           </p>
         </a>
 
@@ -98,6 +98,23 @@ export default function Home() {
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             公式 Discord サーバー
+          </p>
+        </a>
+
+        <a
+          href="https://github.com/nyk9/nextjs-swgoh"
+          className="'group rounded-lg border border-transparent px-5 py-4 mx-5 my-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-200"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            GitHub{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            ソースコード
           </p>
         </a>
 

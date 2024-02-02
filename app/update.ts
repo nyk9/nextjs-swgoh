@@ -8,6 +8,11 @@ export type Updates = {
 const updates: Updates[] = [
     // 最新の情報を一番上に持っていきたいので、配列の追加は上に記述する。
     {
+        ver: 1.2,
+        title: "キャラ一覧(簡易)-実装",
+        date: "2024/01/31",
+        detaill: "ボタンでの絞り込み検索を実装"
+    },{
         ver: 1.1,
         title: "キャラ一覧(簡易)-実装",
         date: "2024/01/24",
