@@ -64,12 +64,12 @@ export default function Home() {
 
         <a
           href="https://discord.gg/yX3pS2WemD"
-          className="'group rounded-lg border border-transparent px-5 py-4 mx-5 my-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-200"
+          className="group rounded-lg border border-transparent px-5 py-4 mx-5 my-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-200"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Discord{' '}
+            Discord {' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
