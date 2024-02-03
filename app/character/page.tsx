@@ -33,8 +33,6 @@ export default function Character(
         '通訳', 'チャージ', '強要', '恩恵', 'ヒート', 'オーバーヒート', '強靭な防御', '伝説の戦闘瞑想', '邪悪な戦闘瞑想', '優位', '勇気', '決意', 'デッドリーブラフ', '過小評価', '共和国の灰', '予備プラン', 'ジオノージアン・ブルード', '有用なコマ', 'ホイッスリング・バード',
         'マジックステルス', '苦悩', 'マンダロア', 'マスターの訓練', '行動喚起', '洞察', '怒り', 'チーワプ社製医療パック', 'バクトイド社製シールド発生器', 'ブラステック社製ウェポンモッド' 
     ];
-// 
-
     // 絞り込み検索の関数
     const handleSearch = useCallback(() => {
         // console.log('検索したもの', searchTerm); // デバック用
@@ -93,23 +91,23 @@ export default function Character(
         >
             <Link
                 href={"/"}
-                className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-2 lg:dark:bg-zinc-800/30"
+                className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-6 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-2 lg:dark:bg-zinc-800/30"
             >  Home  </Link>
             <div>
-                <div className="flex items-center">
+                <div className="flex flex-wrap items-center">
                     <input
                         type="text"
                         placeholder="キャラ名"
-                        className=" mt-20 text-black "
+                        className="mt-20 text-black w-64 "
                         value={searchTerm}
                         onChange={handleTextChange}
                         onInput={() => handleSearch()}
                     />
-                    <button onClick={toggleButtonVisibilityAttribute} className="mt-20 mx-1 border bg-purple-400">フィルター：属性</button>
-                    <button onClick={toggleButtonVisibilitySkill} className="mt-20 mx-1 border bg-orange-300">フィルター：スキル効果</button>
+                    <button onClick={toggleButtonVisibilityAttribute} className="border mt-1 px-5 sm:mt-20 w-64 bg-purple-400">フィルター：属性</button>
+                    <button onClick={toggleButtonVisibilitySkill} className="border mt-1 px-5 sm:mt-20 w-64 bg-orange-300">フィルター：スキル効果</button>
                 </div>
                 {isButtonVisibleAttribute && (
-                    <div className="border bg-purple-400 h-20 overflow-y-auto">
+                    <div className="border mt-2 h-20 bg-purple-400 overflow-y-auto">
                         <input
                             type="button"
                             onClick={() => handlePropertyChange('ライトサイド')}
@@ -170,7 +168,7 @@ export default function Character(
                     </div>
                 )} <br />
                 {isButtonVisibleSkill && (
-                    <div className="border h-20 overflow-y-auto bg-orange-300">
+                    <div className="border h-20 mt-2 bg-orange-300 overflow-y-auto ">
                         {skillButtons.map((property, index) => (
                             <input
                                 key={index}
