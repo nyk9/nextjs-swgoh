@@ -44,8 +44,8 @@ export default function Character(
         const results = char.filter((item) =>
             (new RegExp(searchTerm, 'i').test(item.name) || new RegExp(searchTerm, 'i').test(item.property)
                 || new RegExp(searchTerm, 'i').test(item.abbreviation)) &&
-            (selectedProperty.length === 0 || selectedProperty.some(prop => item.property.includes(prop))) &&
-            (selectedSkill.length === 0 || selectedSkill.some(skill => item.skill.includes(skill)))
+            (selectedProperty.length === 0 || selectedProperty.every(prop => item.property.includes(prop))) &&
+            (selectedSkill.length === 0 || selectedSkill.every(skill => item.skill.includes(skill)))
         );
         setSearchResults(results);
     }, [char, searchTerm, selectedProperty, selectedSkill]);
@@ -102,16 +102,16 @@ export default function Character(
                     <input
                         type="text"
                         placeholder="キャラ名等を入力してください"
-                        className="mt-20 text-black w-64 "
+                        className="mt-20 m-1 lg:mt-1 w-full md:w-1/3 xl:py-2 text-black"
                         value={searchTerm}
                         onChange={handleTextChange}
                         onInput={() => handleSearch()}
                     />
-                    <button onClick={toggleButtonVisibilityAttribute} className="border mt-1 px-5 sm:mt-20 w-64 bg-purple-400">フィルター：属性</button>
-                    <button onClick={toggleButtonVisibilitySkill} className="border mt-1 px-5 sm:mt-20 w-64 bg-orange-300">フィルター：スキル効果</button>
+                    <button onClick={toggleButtonVisibilityAttribute} className="border m-1 px-1 sm:mt-20 lg:mt-1 w-full md:w-1/4 xl:py-2 bg-purple-400">フィルター：属性</button>
+                    <button onClick={toggleButtonVisibilitySkill} className="border m-1 px-1 md:mt-20 lg:mt-1 w-full md:w-1/4 xl:py-2 bg-orange-300">フィルター：スキル効果</button>
                 </div>
-                {isButtonVisibleAttribute && (
-                    <div className="border mt-2 h-20 bg-purple-400 overflow-y-auto">
+                {!isButtonVisibleAttribute && (
+                    <div className="border mt-2 m-1 h-20 bg-purple-400 overflow-y-auto">
                         <input
                             type="button"
                             onClick={() => handlePropertyChange('ライトサイド')}
@@ -166,20 +166,20 @@ export default function Character(
                                 type="button"
                                 onClick={() => handlePropertyChange(property)}
                                 value={property}
-                                className="m-1 border bg-indigo-300"
+                                className="border m-1 bg-indigo-300"
                             />
                         ))}
                     </div>
                 )} <br />
-                {isButtonVisibleSkill && (
-                    <div className="border h-20 mt-2 bg-orange-300 overflow-y-auto ">
+                {!isButtonVisibleSkill && (
+                    <div className="center border mt-2 m-1 p-1 h-20 bg-orange-300 overflow-y-auto ">
                         {skillButtons.map((property, index) => (
                             <input
                                 key={index}
                                 type="button"
                                 onClick={() => handleSkillChange(property)}
                                 value={property}
-                                className="m-1 border bg-indigo-300"
+                                className="border m-1 w-4/5 md:w-1/3 bg-indigo-300"
                             />
                         ))}
                     </div>
@@ -195,9 +195,19 @@ export default function Character(
                             className="border border-gray-300 rounded m-1 bg-black"
                             key={`${char.abbreviation}-${char.skill}`}
                         >
-                            <h1 className="text-yellow-900">{char.name}</h1>
-                            <Image alt={char.name} src={char.src}></Image>
-                            <small>{char.property}</small>
+                            <h1 className="text-2xl text-center text-white">{char.name}</h1>
+                            <div
+                                className="flex grid"
+                            >
+                                <Image
+                                    alt={char.name}
+                                    src={char.src}
+                                    className="group"
+                                ></Image>
+                                <small
+                                    className="group"
+                                >{char.property}</small>
+                            </div>
                         </div>
                     )
                 })}
