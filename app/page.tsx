@@ -15,10 +15,10 @@ export default function Home() {
           About me
         </a>
       </div>
-      <div className="w-full grid center text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className=" grid center text-center w-full md:w-2xl md:grid-cols-3 xl:grid-cols-4  lg:w-full lg:mb-0 lg:text-left">
         <a
           href='https://swgoh.gg/'
-          className='group rounded-lg border border-transparent px-1 py-4 mx-5 transition-colors hover:border-gray-300 hover:scale-110 hover:bg-orange-700 hover:light:border-neutral-700 bg-orange-200'
+          className='group rounded-lg border border-transparent px-1 py-4 mx-5 md:mt-5 transition-colors hover:border-gray-300 hover:scale-110 hover:bg-orange-700 hover:light:border-neutral-700 bg-orange-200'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -35,7 +35,7 @@ export default function Home() {
 
         <a
           href='/character'
-          className='group rounded-lg border border-transparent px-2 py-4 mx-5 mt-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-300'
+          className='group rounded-lg border border-transparent px-2 py-4 mx-5 mt-8 md:mt-5 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-300'
           // target='_blank'
           rel='noopener noreferrer'
         >
@@ -52,7 +52,7 @@ export default function Home() {
 
         <a
           
-          className='group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-300'
+          className='group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 md:mt-5 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-300'
           // target='_blank'
           rel='noopener noreferrer'
         >
@@ -69,7 +69,7 @@ export default function Home() {
 
         <a
           href="https://discord.gg/yX3pS2WemD"
-          className="group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-teal-200"
+          className="group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 md:mt-5  transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-teal-200"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -86,7 +86,7 @@ export default function Home() {
 
         <a
           href="https://github.com/nyk9/nextjs-swgoh"
-          className="group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-teal-200"
+          className="group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 md:mt-5 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-teal-200"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -141,7 +141,7 @@ export default function Home() {
       <div>
         <a
           href="/privacy-policy"
-          className='text-center'
+          className='text-center mt-2'
         >
           プライバシーポリシー・免責事項
         </a>
