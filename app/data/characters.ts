@@ -1,261 +1,265 @@
+import sorty from "@/public/charui/tex.charui_50rt.png";
+import aaylasecura from "@/public/charui/tex.charui_aaylasecura.png";
+import gialackbar from "@/public/charui/tex.charui_ackbaradmiral.png";
+import admiralraddus from "@/public/charui/tex.charui_admiralraddus.png";
+import trench from "@/public/charui/tex.charui_admiraltrench.png";
+import ahsokatano from "@/public/charui/tex.charui_ahsoka.png";
+import atf from "@/public/charui/tex.charui_ahsokaadult.png";
+import jka from "@/public/charui/tex.charui_anakinknight.png";
+import armorer from "@/public/charui/tex.charui_armorer.png";
+import r2d2 from "@/public/charui/tex.charui_astromech_r2d2.png";
+import aurrasing from "@/public/charui/tex.charui_aurrasing.png";
+import b1 from "@/public/charui/tex.charui_b1.png";
+import b2 from "@/public/charui/tex.charui_b2.png";
+import omega from "@/public/charui/tex.charui_badbatchomega.png";
+import barriss from "@/public/charui/tex.charui_barriss_light.png";
+import bastila from "@/public/charui/tex.charui_bastilashan.png";
+import bsf from "@/public/charui/tex.charui_bastilashan_dark.png";
+import bazemalbus from "@/public/charui/tex.charui_bazemalbus.png";
+import bb8 from "@/public/charui/tex.charui_bb8.png";
+import echobb from "@/public/charui/tex.charui_bb_echo.png";
+import hunter from "@/public/charui/tex.charui_bb_hunter.png";
+import tech from "@/public/charui/tex.charui_bb_tech.png";
+import wrecker from "@/public/charui/tex.charui_bb_wrecker.png";
+import bensolo from "@/public/charui/tex.charui_bensolo.png";
+import bistan from "@/public/charui/tex.charui_bistan.png";
+import boba from "@/public/charui/tex.charui_bobafett.png";
+import bfsoj from "@/public/charui/tex.charui_bobafettold.png";
+import bodhirook from "@/public/charui/tex.charui_bodhi.png";
+import bokatan from "@/public/charui/tex.charui_bokatan.png";
+import bossk from "@/public/charui/tex.charui_bossk.png";
+import boushh from "@/public/charui/tex.charui_boushh.png";
+import bt1 from "@/public/charui/tex.charui_bt1.png";
+import c3po from "@/public/charui/tex.charui_c3p0.png";
+import cadbane from "@/public/charui/tex.charui_cadbane.png";
+import calkestis from "@/public/charui/tex.charui_calkestis.png";
+import canderous from "@/public/charui/tex.charui_canderous.png";
+import drogan from "@/public/charui/tex.charui_captaindrogan.png";
+import trex from "@/public/charui/tex.charui_captainrex.png";
+import caradune from "@/public/charui/tex.charui_caradune.png";
+import carthonasi from "@/public/charui/tex.charui_carth.png";
+import cassianandor from "@/public/charui/tex.charui_cassian.png";
+import cere from "@/public/charui/tex.charui_cerejunda.png";
+import chewbacca from "@/public/charui/tex.charui_chewbacca.png";
+import chewpio from "@/public/charui/tex.charui_chewbacca_c3po.png";
+import vandorchewy from "@/public/charui/tex.charui_chewbacca_vandor.png";
+import chirpa from "@/public/charui/tex.charui_chirpa.png";
+import chiruut from "@/public/charui/tex.charui_chirrut.png";
+import chopper from "@/public/charui/tex.charui_chopper.png";
+import clonechewy from "@/public/charui/tex.charui_clonewarschewbacca.png";
+import colstarck from "@/public/charui/tex.charui_colonel_stark.png";
+import cat from "@/public/charui/tex.charui_commanderahsokatano.png";
+import cup from "@/public/charui/tex.charui_coruscantpolice.png";
+import olddaka from "@/public/charui/tex.charui_daka.png";
+import darktrooper from "@/public/charui/tex.charui_darktrooper.png";
+import bane from "@/public/charui/tex.charui_darthbane.png";
+import malak from "@/public/charui/tex.charui_darthmalak.png";
+import malgus from "@/public/charui/tex.charui_darthmalgus.png";
+import talon from "@/public/charui/tex.charui_darthtalon.png";
+import dash from "@/public/charui/tex.charui_dashrendar.png";
+import denger from "@/public/charui/tex.charui_dengar.png";
+import aphra from "@/public/charui/tex.charui_doctoraphra.png";
+import dooku from "@/public/charui/tex.charui_dooku.png";
+import droideka from "@/public/charui/tex.charui_droideka.png";
+import eethkoth from "@/public/charui/tex.charui_eethkoth.png";
+import eighthbrother from "@/public/charui/tex.charui_eighthbrother.png";
+import embo from "@/public/charui/tex.charui_embo.png";
+import nest from "@/public/charui/tex.charui_enfys.png";
+import SEE from "@/public/charui/tex.charui_espalpatine_post.png";
+import ewokelder from "@/public/charui/tex.charui_ewok_chief.png";
+import logray from "@/public/charui/tex.charui_ewok_logray.png";
+import ewokscout from "@/public/charui/tex.charui_ewok_scout.png";
+import wicket from "@/public/charui/tex.charui_ewok_wicket.png";
+import ezra from "@/public/charui/tex.charui_ezra_s3.png";
+import fennec from "@/public/charui/tex.charui_fennec.png";
+import fifthbrother from "@/public/charui/tex.charui_fifthbrother.png";
+import herofinn from "@/public/charui/tex.charui_finn.png";
+import finn from "@/public/charui/tex.charui_finnjakku.png";
+import executinor from "@/public/charui/tex.charui_firstorder_executioner.png";
+import fosftp from "@/public/charui/tex.charui_firstorder_pilot.png";
+import sithtrooper from "@/public/charui/tex.charui_firstorder_sithtrooper.png";
+import foo from "@/public/charui/tex.charui_firstorderofficer.png";
+import fotp from "@/public/charui/tex.charui_firstordertiepilot.png";
+import fost from "@/public/charui/tex.charui_firstordertrooper.png";
+import gamorreanguard from "@/public/charui/tex.charui_gamorreanguard.png";
+import garsaxon from "@/public/charui/tex.charui_gar_saxon.png";
+import gas from "@/public/charui/tex.charui_generalanakin.png";
+import hux from "@/public/charui/tex.charui_generalhux.png";
+import gba from "@/public/charui/tex.charui_geonosian_broodalpha.png";
+import poggle from "@/public/charui/tex.charui_geonosian_poggle.png";
+import geosoldier from "@/public/charui/tex.charui_geonosian_soldier.png";
+import geospy from "@/public/charui/tex.charui_geonosian_spy.png";
+import sunfac from "@/public/charui/tex.charui_geonosian_sunfac.png";
+import jmk from "@/public/charui/tex.charui_globiwan.png";
+import gi from "@/public/charui/tex.charui_grandinquisitor.png";
+import greedo from "@/public/charui/tex.charui_greedo.png";
+import greefkarga from "@/public/charui/tex.charui_greefkarga.png";
+import gg from "@/public/charui/tex.charui_grievous.png";
+import hansolo from "@/public/charui/tex.charui_han.png";
+import younghan from "@/public/charui/tex.charui_han_young.png";
+import hera from "@/public/charui/tex.charui_hera_s3.png";
+import hk47 from "@/public/charui/tex.charui_hk47.png";
+import holdo from "@/public/charui/tex.charui_holdo.png";
+import hondo from "@/public/charui/tex.charui_hondoohnaka.png";
+import hothhan from "@/public/charui/tex.charui_hoth_han.png";
+import iden from "@/public/charui/tex.charui_idenversioempire.png";
+import ig11 from "@/public/charui/tex.charui_ig11_nurse.png";
+import ig12Grogu from "@/public/charui/tex.charui_ig12.png";
+import ig86 from "@/public/charui/tex.charui_ig86.png";
+import ig88 from "@/public/charui/tex.charui_ig88.png";
+import imagundi from "@/public/charui/tex.charui_imagundi.png";
+import imperialsupercommando from "@/public/charui/tex.charui_imperial_super_commando.png";
+import jabba from "@/public/charui/tex.charui_jabbathehutt.png";
+import jangofett from "@/public/charui/tex.charui_jangofett.png";
+import dathcha from "@/public/charui/tex.charui_jawa_dathcha.png";
+import jawaengineer from "@/public/charui/tex.charui_jawa_engineer.png";
+import jawa from "@/public/charui/tex.charui_jawa_jawa.png";
+import nebit from "@/public/charui/tex.charui_jawa_nebit.png";
+import jawascavenger from "@/public/charui/tex.charui_jawa_scavenger.png";
+import jediconsular from "@/public/charui/tex.charui_jedi_consular_03.png";
+import jediguardian from "@/public/charui/tex.charui_jedi_guardian_01.png";
+import jkck from "@/public/charui/tex.charui_jediknightcal.png";
+import jkr from "@/public/charui/tex.charui_jedirevan.png";
+import joleebindo from "@/public/charui/tex.charui_joleebindo.png";
+import juhani from "@/public/charui/tex.charui_juhani.png";
+import jynerso from "@/public/charui/tex.charui_jyn.png";
+import k2so from "@/public/charui/tex.charui_k2so.png";
+import kanan from "@/public/charui/tex.charui_kanan_s3.png";
+import kelleranbeq from "@/public/charui/tex.charui_kelleranbeq.png";
+import kiadimundi from "@/public/charui/tex.charui_kiadimundi.png";
+import kitfisto from "@/public/charui/tex.charui_kitfisto.png";
+import doctorkrennic from "@/public/charui/tex.charui_krennic.png";
+import krrsantan from "@/public/charui/tex.charui_krrsantan.png";
+import kuiil from "@/public/charui/tex.charui_kuiil.png";
+import kylekatarn from "@/public/charui/tex.charui_kylekatarn.png";
+import kru from "@/public/charui/tex.charui_kylo_unmasked.png";
+import kyloren from "@/public/charui/tex.charui_kyloren.png";
+import slkr from "@/public/charui/tex.charui_kyloren_tros.png";
+import l337 from "@/public/charui/tex.charui_l337.png";
+import skiffguard from "@/public/charui/tex.charui_lando_jabbaguard.png";
+import lando from "@/public/charui/tex.charui_landobespin.png";
+import princessleia from "@/public/charui/tex.charui_leia_princess.png";
+import leia from "@/public/charui/tex.charui_leiaendor.png";
+import rolo from "@/public/charui/tex.charui_leiahoth.png";
+import lobot from "@/public/charui/tex.charui_lobot.png";
+import lv from "@/public/charui/tex.charui_lordvader.png";
+import ep4luke from "@/public/charui/tex.charui_luke_ep4.png";
+import jkl from "@/public/charui/tex.charui_luke_jediknight.png";
+import jml from "@/public/charui/tex.charui_luke_jml.png";
+import cls from "@/public/charui/tex.charui_lukebespin.png";
+import luminara from "@/public/charui/tex.charui_luminara.png";
+import mace from "@/public/charui/tex.charui_macewindu.png";
+import magunaguard from "@/public/charui/tex.charui_magnaguard.png";
+import bokatanmandalor from "@/public/charui/tex.charui_mandalorbokatan.png";
+import mando from "@/public/charui/tex.charui_mandalorian.png";
+import beskar from "@/public/charui/tex.charui_mandobeskar.png";
+import mj from "@/public/charui/tex.charui_marajade.png";
+import darthmaul from "@/public/charui/tex.charui_maul.png";
+import maul from "@/public/charui/tex.charui_maul_cyborg.png";
+import merrin from "@/public/charui/tex.charui_merrin.png";
+import vao from "@/public/charui/tex.charui_mission.png";
+import mobenforcer from "@/public/charui/tex.charui_mob_enforcer.png";
+import moffgideon from "@/public/charui/tex.charui_moffgideon.png";
+import darkmoff from "@/public/charui/tex.charui_moffgideons3.png";
+import monmothma from "@/public/charui/tex.charui_monmothma.png";
+import nightsisteracolyte from "@/public/charui/tex.charui_nightsister_acolyte.png";
+import nightsisterinitiate from "@/public/charui/tex.charui_nightsister_initiate.png";
+import talia from "@/public/charui/tex.charui_nightsister_talia.png";
+import mothertalzin from "@/public/charui/tex.charui_nightsisters_talzin.png";
+import nightsisterwraith from "@/public/charui/tex.charui_nightsisters_wraith.png";
+import zombie from "@/public/charui/tex.charui_nightsisters_zombie.png";
+import nihilus from "@/public/charui/tex.charui_nihilus.png";
+import ninthsister from "@/public/charui/tex.charui_ninthsister.png";
+import gunray from "@/public/charui/tex.charui_nutegunray.png";
+import oldben from "@/public/charui/tex.charui_obiwanep4.png";
+import generalkenobi from "@/public/charui/tex.charui_obiwangeneral.png";
+import padme from "@/public/charui/tex.charui_padme_geonosis.png";
+import palpatine from "@/public/charui/tex.charui_palpatineemperor.png";
+import pao from "@/public/charui/tex.charui_pao.png";
+import paploo from "@/public/charui/tex.charui_paploo.png";
+import pazvizsla from "@/public/charui/tex.charui_pazvizsla.png";
+import phasma from "@/public/charui/tex.charui_phasma.png";
+import piett from "@/public/charui/tex.charui_piett.png";
+import plokoon from "@/public/charui/tex.charui_plokoon.png";
+import poe from "@/public/charui/tex.charui_poe.png";
+import heropoe from "@/public/charui/tex.charui_poe_tros.png";
+import kneesaa from "@/public/charui/tex.charui_princesskneesaa.png";
+import ipb from "@/public/charui/tex.charui_probedroid.png";
+import qira from "@/public/charui/tex.charui_qira.png";
+import qgj from "@/public/charui/tex.charui_quigon.png";
+import scarifpathfinder from "@/public/charui/tex.charui_rebel_scarif.png";
+import rebelhoth from "@/public/charui/tex.charui_rebelhoth.png";
+import hothscout from "@/public/charui/tex.charui_rebelhothscout.png";
+import biggs from "@/public/charui/tex.charui_rebelpilot_biggs.png";
+import wedge from "@/public/charui/tex.charui_rebelpilot_wedge.png";
+import resistancepilot from "@/public/charui/tex.charui_resistancepilot.png";
+import resistancetrooper from "@/public/charui/tex.charui_resistancetrooper.png";
+import rjt from "@/public/charui/tex.charui_rey_tlj.png";
+import rey from "@/public/charui/tex.charui_rey_tros.png";
+import reyscavenger from "@/public/charui/tex.charui_reyjakku.png";
+import rose from "@/public/charui/tex.charui_rose.png";
+import royal from "@/public/charui/tex.charui_royalguard.png";
+import sabine from "@/public/charui/tex.charui_sabine_s3-2.png";
+import sanastarros from "@/public/charui/tex.charui_sanastarros.png";
+import savage from "@/public/charui/tex.charui_savageopress.png";
+import sawgerrera from "@/public/charui/tex.charui_sawgerrera.png";
+import trilla from "@/public/charui/tex.charui_secondsister.png";
+import seventhsister from "@/public/charui/tex.charui_seventhsister.png";
+import shaakti from "@/public/charui/tex.charui_shaakti.png";
+import sidious from "@/public/charui/tex.charui_sidious.png";
+import sion from "@/public/charui/tex.charui_sion.png";
+import sithassassin from "@/public/charui/tex.charui_sithassassin.png";
+import sithmarauder from "@/public/charui/tex.charui_sithmarauder.png";
+import dr from "@/public/charui/tex.charui_sithrevan.png";
+import sithempiretrooper from "@/public/charui/tex.charui_sithtrooper.png";
+import SK from "@/public/charui/tex.charui_starkiller.png";
+import t3m4 from "@/public/charui/tex.charui_t3m4.png";
+import tarfful from "@/public/charui/tex.charui_tarfful.png";
+import tarkin from "@/public/charui/tex.charui_tarkinadmiral.png";
+import tronmalicos from "@/public/charui/tex.charui_taronmalicos.png";
+import teebo from "@/public/charui/tex.charui_teebo.png";
+import smugglerchewy from "@/public/charui/tex.charui_tfa_chewbacca.png";
+import smugglerhan from "@/public/charui/tex.charui_tfa_han.png";
+import reva from "@/public/charui/tex.charui_thirdsister.png";
+import thrawn from "@/public/charui/tex.charui_thrawn.png";
+import tiepilot from "@/public/charui/tex.charui_tiepilot.png";
+import traya from "@/public/charui/tex.charui_traya.png";
+import OOO from "@/public/charui/tex.charui_triplezero.png";
+import arc from "@/public/charui/tex.charui_trooperclone_arc.png";
+import cody from "@/public/charui/tex.charui_trooperclone_cody.png";
+import echo5 from "@/public/charui/tex.charui_trooperclone_echo.png";
+import fives from "@/public/charui/tex.charui_trooperclone_fives.png";
+import rex from "@/public/charui/tex.charui_trooperclone_rex.png";
+import clonesergent1 from "@/public/charui/tex.charui_trooperclonegreen.png";
+import deathtrooper from "@/public/charui/tex.charui_trooperdeath.png";
+import rengetrooper from "@/public/charui/tex.charui_trooperranger.png";
+import scouttrooper from "@/public/charui/tex.charui_trooperscout.png";
+import shoretrooper from "@/public/charui/tex.charui_troopershore.png";
+import snowtrooper from "@/public/charui/tex.charui_troopersnow.png";
+import stormtrooper from "@/public/charui/tex.charui_trooperstorm.png";
+import sthan from "@/public/charui/tex.charui_trooperstorm_han.png";
+import magmatrooper from "@/public/charui/tex.charui_trooperstorm_magma.png";
+import tuskenchief from "@/public/charui/tex.charui_tuskenchief.png";
+import tuskenwarrior from "@/public/charui/tex.charui_tuskenhuntress.png";
+import tuskenraider from "@/public/charui/tex.charui_tuskenraider.png";
+import tuskenshaman from "@/public/charui/tex.charui_tuskenshaman.png";
+import ugnaught from "@/public/charui/tex.charui_ugnaught.png";
+import urorrurrr from "@/public/charui/tex.charui_urorrurrr.png";
+import vader from "@/public/charui/tex.charui_vader.png";
+import verrs from "@/public/charui/tex.charui_veers.png";
+import asajjventress from "@/public/charui/tex.charui_ventress.png";
+import visasmarr from "@/public/charui/tex.charui_visas.png";
+import wampa from "@/public/charui/tex.charui_wampa.png";
+import watt from "@/public/charui/tex.charui_wattambor.png";
+import gmyoda from "@/public/charui/tex.charui_yodagrandmaster.png";
+import hoda from "@/public/charui/tex.charui_yodahermit.png";
+import younglando from "@/public/charui/tex.charui_younglando.png";
+import zaalbar from "@/public/charui/tex.charui_zaalbar.png";
+import zam from "@/public/charui/tex.charui_zamwesell.png";
+import zeb from "@/public/charui/tex.charui_zeb_s3.png";
+import zorii from "@/public/charui/tex.charui_zoriibliss.png";
 import { StaticImageData } from "next/image";
-import sorty from "./charui/tex.charui_50rt.png";
-import aaylasecura from "./charui/tex.charui_aaylasecura.png";
-import gialackbar from "./charui/tex.charui_ackbaradmiral.png";
-import admiralraddus from "./charui/tex.charui_admiralraddus.png";
-import trench from "./charui/tex.charui_admiraltrench.png";
-import ahsokatano from "./charui/tex.charui_ahsoka.png";
-import atf from "./charui/tex.charui_ahsokaadult.png";
-import jka from "./charui/tex.charui_anakinknight.png";
-import armorer from "./charui/tex.charui_armorer.png";
-import r2d2 from "./charui/tex.charui_astromech_r2d2.png";
-import aurrasing from "./charui/tex.charui_aurrasing.png";
-import b1 from "./charui/tex.charui_b1.png";
-import b2 from "./charui/tex.charui_b2.png";
-import omega from "./charui/tex.charui_badbatchomega.png";
-import barriss from "./charui/tex.charui_barriss_light.png";
-import bastila from "./charui/tex.charui_bastilashan.png";
-import bsf from "./charui/tex.charui_bastilashan_dark.png";
-import bazemalbus from "./charui/tex.charui_bazemalbus.png";
-import bb8 from "./charui/tex.charui_bb8.png";
-import echobb from "./charui/tex.charui_bb_echo.png";
-import hunter from "./charui/tex.charui_bb_hunter.png";
-import tech from "./charui/tex.charui_bb_tech.png";
-import wrecker from "./charui/tex.charui_bb_wrecker.png";
-import bistan from "./charui/tex.charui_bistan.png";
-import boba from "./charui/tex.charui_bobafett.png";
-import bfsoj from "./charui/tex.charui_bobafettold.png";
-import bodhirook from "./charui/tex.charui_bodhi.png";
-import bokatan from "./charui/tex.charui_bokatan.png";
-import bossk from "./charui/tex.charui_bossk.png";
-import boushh from "./charui/tex.charui_boushh.png";
-import bt1 from "./charui/tex.charui_bt1.png";
-import c3po from "./charui/tex.charui_c3p0.png";
-import cadbane from "./charui/tex.charui_cadbane.png";
-import calkestis from "./charui/tex.charui_calkestis.png";
-import canderous from "./charui/tex.charui_canderous.png";
-import drogan from "./charui/tex.charui_captaindrogan.png";
-import trex from "./charui/tex.charui_captainrex.png";
-import caradune from "./charui/tex.charui_caradune.png";
-import carthonasi from "./charui/tex.charui_carth.png";
-import cassianandor from "./charui/tex.charui_cassian.png";
-import cere from "./charui/tex.charui_cerejunda.png";
-import chewbacca from "./charui/tex.charui_chewbacca.png";
-import chewpio from "./charui/tex.charui_chewbacca_c3po.png";
-import vandorchewy from "./charui/tex.charui_chewbacca_vandor.png";
-import chirpa from "./charui/tex.charui_chirpa.png";
-import chiruut from "./charui/tex.charui_chirrut.png";
-import chopper from "./charui/tex.charui_chopper.png";
-import clonechewy from "./charui/tex.charui_clonewarschewbacca.png";
-import colstarck from "./charui/tex.charui_colonel_stark.png";
-import cat from "./charui/tex.charui_commanderahsokatano.png";
-import cup from "./charui/tex.charui_coruscantpolice.png";
-import olddaka from "./charui/tex.charui_daka.png";
-import darktrooper from "./charui/tex.charui_darktrooper.png";
-import bane from "./charui/tex.charui_darthbane.png";
-import malak from "./charui/tex.charui_darthmalak.png";
-import malgus from "./charui/tex.charui_darthmalgus.png";
-import talon from "./charui/tex.charui_darthtalon.png";
-import dash from "./charui/tex.charui_dashrendar.png";
-import denger from "./charui/tex.charui_dengar.png";
-import aphra from "./charui/tex.charui_doctoraphra.png";
-import dooku from "./charui/tex.charui_dooku.png";
-import droideka from "./charui/tex.charui_droideka.png";
-import eethkoth from "./charui/tex.charui_eethkoth.png";
-import eighthbrother from "./charui/tex.charui_eighthbrother.png";
-import embo from "./charui/tex.charui_embo.png";
-import nest from "./charui/tex.charui_enfys.png";
-import SEE from "./charui/tex.charui_espalpatine_post.png";
-import ewokelder from "./charui/tex.charui_ewok_chief.png";
-import logray from "./charui/tex.charui_ewok_logray.png";
-import ewokscout from "./charui/tex.charui_ewok_scout.png";
-import wicket from "./charui/tex.charui_ewok_wicket.png";
-import ezra from "./charui/tex.charui_ezra_s3.png";
-import fennec from "./charui/tex.charui_fennec.png";
-import fifthbrother from "./charui/tex.charui_fifthbrother.png";
-import herofinn from "./charui/tex.charui_finn.png";
-import finn from "./charui/tex.charui_finnjakku.png";
-import executinor from "./charui/tex.charui_firstorder_executioner.png";
-import fosftp from "./charui/tex.charui_firstorder_pilot.png";
-import sithtrooper from "./charui/tex.charui_firstorder_sithtrooper.png";
-import foo from "./charui/tex.charui_firstorderofficer.png";
-import fotp from "./charui/tex.charui_firstordertiepilot.png";
-import fost from "./charui/tex.charui_firstordertrooper.png";
-import gamorreanguard from "./charui/tex.charui_gamorreanguard.png";
-import garsaxon from "./charui/tex.charui_gar_saxon.png";
-import gas from "./charui/tex.charui_generalanakin.png";
-import hux from "./charui/tex.charui_generalhux.png";
-import gba from "./charui/tex.charui_geonosian_broodalpha.png";
-import poggle from "./charui/tex.charui_geonosian_poggle.png";
-import geosoldier from "./charui/tex.charui_geonosian_soldier.png";
-import geospy from "./charui/tex.charui_geonosian_spy.png";
-import sunfac from "./charui/tex.charui_geonosian_sunfac.png";
-import jmk from "./charui/tex.charui_globiwan.png";
-import gi from "./charui/tex.charui_grandinquisitor.png";
-import greedo from "./charui/tex.charui_greedo.png";
-import greefkarga from "./charui/tex.charui_greefkarga.png";
-import gg from "./charui/tex.charui_grievous.png";
-import younghan from "./charui/tex.charui_han_young.png";
-import hera from "./charui/tex.charui_hera_s3.png";
-import hk47 from "./charui/tex.charui_hk47.png";
-import holdo from "./charui/tex.charui_holdo.png";
-import hondo from "./charui/tex.charui_hondoohnaka.png";
-import hothhan from "./charui/tex.charui_hoth_han.png";
-import iden from "./charui/tex.charui_idenversioempire.png";
-import ig11 from "./charui/tex.charui_ig11_nurse.png";
-import ig12Grogu from "./charui/tex.charui_ig12.png";
-import ig86 from "./charui/tex.charui_ig86.png";
-import ig88 from "./charui/tex.charui_ig88.png";
-import imagundi from "./charui/tex.charui_imagundi.png";
-import imperialsupercommando from "./charui/tex.charui_imperial_super_commando.png";
-import jabba from "./charui/tex.charui_jabbathehutt.png";
-import jangofett from "./charui/tex.charui_jangofett.png";
-import dathcha from "./charui/tex.charui_jawa_dathcha.png";
-import jawaengineer from "./charui/tex.charui_jawa_engineer.png";
-import jawa from "./charui/tex.charui_jawa_jawa.png";
-import nebit from "./charui/tex.charui_jawa_nebit.png";
-import jawascavenger from "./charui/tex.charui_jawa_scavenger.png";
-import jediconsular from "./charui/tex.charui_jedi_consular_03.png";
-import jediguardian from "./charui/tex.charui_jedi_guardian_01.png";
-import jkck from "./charui/tex.charui_jediknightcal.png";
-import jkr from "./charui/tex.charui_jedirevan.png";
-import joleebindo from "./charui/tex.charui_joleebindo.png";
-import juhani from "./charui/tex.charui_juhani.png";
-import jynerso from "./charui/tex.charui_jyn.png";
-import k2so from "./charui/tex.charui_k2so.png";
-import kanan from "./charui/tex.charui_kanan_s3.png";
-import kelleranbeq from "./charui/tex.charui_kelleranbeq.png";
-import kiadimundi from "./charui/tex.charui_kiadimundi.png";
-import kitfisto from "./charui/tex.charui_kitfisto.png";
-import doctorkrennic from "./charui/tex.charui_krennic.png";
-import krrsantan from "./charui/tex.charui_krrsantan.png";
-import kuiil from "./charui/tex.charui_kuiil.png";
-import kylekatarn from "./charui/tex.charui_kylekatarn.png";
-import kru from "./charui/tex.charui_kylo_unmasked.png";
-import kyloren from "./charui/tex.charui_kyloren.png";
-import slkr from "./charui/tex.charui_kyloren_tros.png";
-import l337 from "./charui/tex.charui_l337.png";
-import skiffguard from "./charui/tex.charui_lando_jabbaguard.png";
-import lando from "./charui/tex.charui_landobespin.png";
-import princessleia from "./charui/tex.charui_leia_princess.png";
-import leia from "./charui/tex.charui_leiaendor.png";
-import lobot from "./charui/tex.charui_lobot.png";
-import lv from "./charui/tex.charui_lordvader.png";
-import ep4luke from "./charui/tex.charui_luke_ep4.png";
-import jkl from "./charui/tex.charui_luke_jediknight.png";
-import jml from "./charui/tex.charui_luke_jml.png";
-import cls from "./charui/tex.charui_lukebespin.png";
-import luminara from "./charui/tex.charui_luminara.png";
-import mace from "./charui/tex.charui_macewindu.png";
-import magunaguard from "./charui/tex.charui_magnaguard.png";
-import bokatanmandalor from "./charui/tex.charui_mandalorbokatan.png";
-import mando from "./charui/tex.charui_mandalorian.png";
-import beskar from "./charui/tex.charui_mandobeskar.png";
-import mj from "./charui/tex.charui_marajade.png";
-import darthmaul from "./charui/tex.charui_maul.png";
-import maul from "./charui/tex.charui_maul_cyborg.png";
-import merrin from "./charui/tex.charui_merrin.png";
-import vao from "./charui/tex.charui_mission.png";
-import mobenforcer from "./charui/tex.charui_mob_enforcer.png";
-import moffgideon from "./charui/tex.charui_moffgideon.png";
-import darkmoff from "./charui/tex.charui_moffgideons3.png";
-import monmothma from "./charui/tex.charui_monmothma.png";
-import nightsisteracolyte from "./charui/tex.charui_nightsister_acolyte.png";
-import nightsisterinitiate from "./charui/tex.charui_nightsister_initiate.png";
-import talia from "./charui/tex.charui_nightsister_talia.png";
-import mothertalzin from "./charui/tex.charui_nightsisters_talzin.png";
-import nightsisterwraith from "./charui/tex.charui_nightsisters_wraith.png";
-import zombie from "./charui/tex.charui_nightsisters_zombie.png";
-import nihilus from "./charui/tex.charui_nihilus.png";
-import ninthsister from "./charui/tex.charui_ninthsister.png";
-import gunray from "./charui/tex.charui_nutegunray.png";
-import oldben from "./charui/tex.charui_obiwanep4.png";
-import generalkenobi from "./charui/tex.charui_obiwangeneral.png";
-import padme from "./charui/tex.charui_padme_geonosis.png";
-import palpatine from "./charui/tex.charui_palpatineemperor.png";
-import pao from "./charui/tex.charui_pao.png";
-import paploo from "./charui/tex.charui_paploo.png";
-import pazvizsla from "./charui/tex.charui_pazvizsla.png";
-import phasma from "./charui/tex.charui_phasma.png";
-import piett from "./charui/tex.charui_piett.png";
-import plokoon from "./charui/tex.charui_plokoon.png";
-import poe from "./charui/tex.charui_poe.png";
-import heropoe from "./charui/tex.charui_poe_tros.png";
-import kneesaa from "./charui/tex.charui_princesskneesaa.png";
-import ipb from "./charui/tex.charui_probedroid.png";
-import qira from "./charui/tex.charui_qira.png";
-import qgj from "./charui/tex.charui_quigon.png";
-import scarifpathfinder from "./charui/tex.charui_rebel_scarif.png";
-import rebelhoth from "./charui/tex.charui_rebelhoth.png";
-import hothscout from "./charui/tex.charui_rebelhothscout.png";
-import biggs from "./charui/tex.charui_rebelpilot_biggs.png";
-import wedge from "./charui/tex.charui_rebelpilot_wedge.png";
-import resistancepilot from "./charui/tex.charui_resistancepilot.png";
-import resistancetrooper from "./charui/tex.charui_resistancetrooper.png";
-import rjt from "./charui/tex.charui_rey_tlj.png";
-import rey from "./charui/tex.charui_rey_tros.png";
-import reyscavenger from "./charui/tex.charui_reyjakku.png";
-import rose from "./charui/tex.charui_rose.png";
-import royal from "./charui/tex.charui_royalguard.png";
-import sabine from "./charui/tex.charui_sabine_s3-2.png";
-import sanastarros from "./charui/tex.charui_sanastarros.png";
-import savage from "./charui/tex.charui_savageopress.png";
-import sawgerrera from "./charui/tex.charui_sawgerrera.png";
-import trilla from "./charui/tex.charui_secondsister.png";
-import seventhsister from "./charui/tex.charui_seventhsister.png";
-import shaakti from "./charui/tex.charui_shaakti.png";
-import sidious from "./charui/tex.charui_sidious.png";
-import sion from "./charui/tex.charui_sion.png";
-import sithassassin from "./charui/tex.charui_sithassassin.png";
-import sithmarauder from "./charui/tex.charui_sithmarauder.png";
-import dr from "./charui/tex.charui_sithrevan.png";
-import sithempiretrooper from "./charui/tex.charui_sithtrooper.png";
-import SK from "./charui/tex.charui_starkiller.png";
-import t3m4 from "./charui/tex.charui_t3m4.png";
-import tarfful from "./charui/tex.charui_tarfful.png";
-import tarkin from "./charui/tex.charui_tarkinadmiral.png";
-import tronmalicos from "./charui/tex.charui_taronmalicos.png";
-import teebo from "./charui/tex.charui_teebo.png";
-import smugglerchewy from "./charui/tex.charui_tfa_chewbacca.png";
-import smugglerhan from "./charui/tex.charui_tfa_han.png";
-import reva from "./charui/tex.charui_thirdsister.png";
-import thrawn from "./charui/tex.charui_thrawn.png";
-import tiepilot from "./charui/tex.charui_tiepilot.png";
-import traya from "./charui/tex.charui_traya.png";
-import OOO from "./charui/tex.charui_triplezero.png";
-import arc from "./charui/tex.charui_trooperclone_arc.png";
-import cody from "./charui/tex.charui_trooperclone_cody.png";
-import echo5 from "./charui/tex.charui_trooperclone_echo.png";
-import fives from "./charui/tex.charui_trooperclone_fives.png";
-import rex from "./charui/tex.charui_trooperclone_rex.png";
-import clonesergent1 from "./charui/tex.charui_trooperclonegreen.png";
-import deathtrooper from "./charui/tex.charui_trooperdeath.png";
-import rengetrooper from "./charui/tex.charui_trooperranger.png";
-import scouttrooper from "./charui/tex.charui_trooperscout.png";
-import shoretrooper from "./charui/tex.charui_troopershore.png";
-import snowtrooper from "./charui/tex.charui_troopersnow.png";
-import stormtrooper from "./charui/tex.charui_trooperstorm.png";
-import sthan from "./charui/tex.charui_trooperstorm_han.png";
-import magmatrooper from "./charui/tex.charui_trooperstorm_magma.png";
-import tuskenchief from "./charui/tex.charui_tuskenchief.png";
-import tuskenwarrior from "./charui/tex.charui_tuskenhuntress.png";
-import tuskenraider from "./charui/tex.charui_tuskenraider.png";
-import tuskenshaman from "./charui/tex.charui_tuskenshaman.png";
-import ugnaught from "./charui/tex.charui_ugnaught.png";
-import urorrurrr from "./charui/tex.charui_urorrurrr.png";
-import vader from "./charui/tex.charui_vader.png";
-import verrs from "./charui/tex.charui_veers.png";
-import asajjventress from "./charui/tex.charui_ventress.png";
-import visasmarr from "./charui/tex.charui_visas.png";
-import wampa from "./charui/tex.charui_wampa.png";
-import watt from "./charui/tex.charui_wattambor.png";
-import gmyoda from "./charui/tex.charui_yodagrandmaster.png";
-import hoda from "./charui/tex.charui_yodahermit.png";
-import younglando from "./charui/tex.charui_younglando.png";
-import zaalbar from "./charui/tex.charui_zaalbar.png";
-import zam from "./charui/tex.charui_zamwesell.png";
-import zeb from "./charui/tex.charui_zeb_s3.png";
-import zorii from "./charui/tex.charui_zoriibliss.png";
+
 
 export type Characters = {
     name: string;
@@ -279,8 +283,8 @@ const characters: Characters[] = [
         property: "ライトサイド、サポート、リーダー、ドロイド、旧共和国",
         src: sorty,
         abbreviation: "shorty Shorty 50RT Sortie",
-        skill: `アドバンテージ  全体攻撃  カウンター  ダメージ無効  防御力減少  防御力上昇  
-            強化解除  弱体解除  フォアサイト  ターンメーター上昇  ヘルススティール上昇  
+        skill: `アドバンテージ  全体攻撃  カウンター  ダメージ無効  防御力減少  防御力上昇
+            強化解除  弱体解除  フォアサイト  ターンメーター上昇  ヘルススティール上昇
             即戦闘不能耐性  リーダー：クリティカル率上昇  リーダー：防御力上昇 リーダー：最大HP上昇  
             リーダー：スピード上昇  リーダー：フォアサイト  リーダー：プロテクション上昇  攻撃力上昇  
             プロテクション上昇  ターンメーター減少  蘇生  スピード低下  スピード上昇
@@ -396,7 +400,7 @@ const characters: Characters[] = [
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ドロイド、ならず者",
         src: ig88,
         abbreviation: "IG88 ig-88 ig88",
-        skill: `回復無効  ターゲットロック  スキルブロック  防御力低下  全体攻撃  
+        skill: `回復無効  ターゲットロック  スキルブロック  防御力低下  全体攻撃
             リーダー：クリティカル率上昇  時間経過ダメージ`
     }, {
         name: "K-2SO",
@@ -496,7 +500,7 @@ const characters: Characters[] = [
         src: cat,
         abbreviation: "CAT Commander Ahsoka Tano ahsoka tano ",
         skill: `アドバンテージ  回避力上昇  ターンメーター入れ替え  シエン・フォーム  即戦闘不能
-            クールダウン減少  アーマー破壊  アシスト  `
+            クールダウン減少  アーマー破壊  アシスト  クールダウン状態から開始`
     }, {
         name: "アソーカ・タノ(フルクラム)",
         property: "ライトサイド、アタッカー、反乱軍、非同盟のフォースの使い手",
@@ -654,7 +658,7 @@ const characters: Characters[] = [
         src: kylekatarn,
         abbreviation: "Kyle Katarn kyle katarn",
         skill: `スキルブロック  フォースの酔い  クリティカル率上昇  有効性上昇  回復
-            弱体解除  味方全体-弱体解除  防御力上昇  スピード上昇  全体攻撃  ターンメーター上昇
+            弱体解除  味方全体-弱体解除  防御力上昇  スピード上昇  全体攻撃  ターンメーター上昇  ジェダイ・ナイト
             ボーナスプロテクション`
     }, {
         name: "カイロ・レン",
@@ -883,7 +887,7 @@ const characters: Characters[] = [
         abbreviation: "Reva reva リーヴァ 3s 3S Third Sister third sister 3rd",
         skill: `粛清  スキルブロック  弱体解除  回復  アーマー破壊  全体攻撃  防御力低下  回復無効  解除不可  リーダー：攻撃力上昇  リーダー：スピード上昇  スタン無効化
             回避不可  耐性発揮不可  ターンメーター上昇  クリティカルダメージ上昇  クールダウン減少  リーダー：最大HP上昇  防御突破力上昇  デスマーク  憎悪  挑発  
-            クールダウンリセット  挑発無効化  `  
+            クールダウンリセット  挑発無効化  `
     }, {
         name: "サヴァージ・オプレス",
         property: "ダークサイド、アタッカー、リーダー、シス",
@@ -1345,620 +1349,744 @@ const characters: Characters[] = [
         property: "ライトサイド、サポート、リーダー、ならず者",
         src: dash,
         abbreviation: "Dash Rendar dash rander",
-        skill: ``
+        skill: `アシスト  強化解除  スタン  全体攻撃  ステルス解除  めまい  防御力低下  クリティカルダメージ低下
+            回避不可  耐性発揮不可  準備万端  クリティカルダメージ上昇  攻撃力上昇  ターンメーター上昇`
     }, {
         name: "タリア",
         property: "ダークサイド、ヒーラー、リーダー、ナイトシスター",
         src: talia,
         abbreviation: "Talia talia",
-        skill: ``
+        skill: `回復  弱体解除  ターンメーター上昇  時間経過ダメージ  よろめき`
     }, {
         name: "タロン・マリコス",
         property: "ダークサイド、アタッカー、非同盟のフォースの使い手",
         src: tronmalicos,
         abbreviation: "Tron Malicos tron malicos",
-        skill: ``
+        skill: `狂気の刃  コピー不可  解除不可  阻止不可  カウンター不可  切り返し  ボーナスターン
+            溢れる狂気  クールダウンリセット  全体攻撃  無防備  スタン  耐性発揮不可  クールダウン増加  強化無効
+            回復無効  回避不可  復活不可  カウンター 挑発無効化  クールダウン減少  クリティカルヒット耐性
+            プロテクション上昇`
     }, {
         name: "チアルート・イムウェ",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: chiruut,
         abbreviation: "Chiruut Îmwe chiruut imwe",
-        skill: ``
+        skill: `時間経過回復  HP均一化  弱体無効  味方全体-弱体無効  抵抗力上昇  アシスト  回復`
     }, {
         name: "チャーパ族長",
         property: "ライトサイド、サポート、リーダー、イウォーク",
         src: chirpa,
         abbreviation: "Chief Chirpa chief chirpa",
-        skill: ``
+        skill: `ターンメーター上昇  回復  時間経過回復  報復効果  スピード上昇  アシスト  リーダー：スピード上昇`
     }, {
         name: "チューバッカ",
         property: "ライトサイド、アタッカー、反乱軍、ならず者、スマグラー、ウーキー",
         src: chewbacca,
         abbreviation: "Chewbacca chewbacca チューイ",
-        skill: ``
+        skill: `抵抗力低下  強化解除  全体攻撃  敵全体-強化解除  攻撃力上昇  防御力無効化  クリティカル率上昇
+            スタン  クールダウンリセット  回避不可  ガード  アシスト  回復  スキルブロック無効化
+            クールダウン増加無効化  ボーナスダメージ  クールダウン減少`
     }, {
         name: "チョッパー",
         property: "ライトサイド、サポーター、ドロイド、フェニックス、反乱軍",
         src: chopper,
         abbreviation: "Chopper chopper",
-        skill: ``
+        skill: `防御力上昇  攻撃力上昇  スピード上昇  クールダウン減少  挑発  強化解除  ターンメーター減少
+            プロテクション上昇  スタン  回避不可  回復  プロテクション上昇  アシスト`
     }, {
         name: "ティーボ",
         property: "ライトサイド、タンク、リーダー、イウォーク",
         src: teebo,
         abbreviation: "Teebo teebo",
-        skill: ``
+        skill: `ターンメーター減少  ステルス  ターンメーター上昇  強化解除`
     }, {
         name: "デス・トルーパー",
         property: "ダークサイド、アタッカー、帝国軍、インペリアル・レムナント、帝国軍トルーパー",
         src: deathtrooper,
         abbreviation: "Death Trooper death trooper",
-        skill: ``
+        skill: `めまい  スタン  全体攻撃  強化解除  敵全体-強化解除  回復無効  クールダウン増加  耐性発揮不可
+            デスマーク  復活不可  回復  ターンメーター上昇`
     }, {
         name: "テック",
         property: "ライトサイド、サポート、バッド・バッチ、クローン・トルーパー、銀河共和国",
         src: tech,
         abbreviation: "Tech tech Bad Batch BB bad batch bb",
-        skill: ``
+        skill: `ターゲットロック  回復  有効性上昇  ステルス  通訳  弱体解除  味方全体-弱体解除  フォアサイト
+            抵抗力上昇  スタン  コピー不可  クールダウン減少`
     }, {
         name: "デンガー",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: denger,
         abbreviation: "Denger denger",
-        skill: ``
+        skill: `アシスト  スピード低下  スタン  抵抗力低下  時間経過ダメージ  ステルス  ターンメーター減少  サーマル・デトネーター
+            カウンター不可  リーダー：ヘルススティール上昇  クリティカルダメージ低下  ターンメータ増加  抵抗力上昇  回復`
     }, {
         name: "ドゥークー伯爵",
         property: "ダークサイド、アタッカー、リーダー、分離主義者、シス",
         src: dooku,
         abbreviation: "Count Dooku cout dooku ウィリウォンカ",
-        skill: ``
+        skill: `スタン  スキルブロック  カウンター不可  回避不可  ショック  スタン  切り返し  ステルス  弱体解除
+            リーダー：抵抗力上昇  リーダー：カウンター率上昇  カウンター  抵抗力低下  回復無効  耐性発揮不可  ターンメーター上昇
+            クリティカルヒット耐性`
 
     }, {
         name: "ドクター・アフラ",
         property: "ダークサイド、サポート、リーダー、ならず者",
         src: aphra,
         abbreviation: "Doctor Apra doctor aphra",
-        skill: ``
+        skill: `スタン  最大プロテクション上昇  サイフォン  精度低下  有効性上昇  ターンメーター上昇  クリティカルダメージ上昇
+            攻撃力上昇  回復  復活  招集  破損  ターゲットロック  全体攻撃  クールダウン増加  疑心  カウンター不可  強化無効
+            回復無効  よろめき  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  エクスポーズ  スピード低下  回避不可
+            耐性発揮不可  リーダー：クリティカル回避力上昇  リーダー：スピード上昇  プロテクション上昇  ダメージ耐性
+            時間経過ダメージ  スキルブロック無効化  回復無効無効化  アーマー破壊  復活不可`
     }, {
         name: "トレンチ提督",
         property: "ダークサイド、サポート、リーダー、分離主義者",
         src: trench,
         abbreviation: "Admiral Trench admiral trench",
-        skill: ``
+        skill: `ショック  スタン  時間経過回復  時間経過プロテクション  スキルブロック  解除不可  耐性発揮不可
+            クリティカルダメージ減少  ターンメーター減少  回復  強化解除  よろめき  アシスト  戦術的優位性  プロテクション上昇
+            アドバンテージ  フォアサイト  リーダー：最大HP上昇  リーダー：有効性上昇  リーダー：スピード上昇  攻撃力上昇
+            ステルス解除  ステルス無効化  カウンター  アシスト不可  カウンター不可  ボーナスターン不可  ターンメーター減少無効化
+            ターンメーター上昇  強化無効無効化  回復無効無効化  恐怖  `
     }, {
         name: "ドロイデカ",
         property: "ダークサイド、アタッカー、ドロイド、分離主義者",
         src: droideka,
         abbreviation: "DDk ddk Droideka droideka",
-        skill: ``
+        skill: `固定ダメージ  防御力無効化  クリティカルヒット不可  ターゲットロック  回避不可  弱体解除  ダメージ耐性  コピー不可
+            抵抗力上昇  回復  チャージ  アシスト  解除不可  阻止不可  最大HP上昇  めまい無効化  スタン無効化  復活`
     }, {
         name: "ナイトシスター・アコライト",
         property: "ダークサイド、アタッカー、ナイトシスター",
         src: nightsisteracolyte,
         abbreviation: "Nightsister Acolyte nightsister acolyte",
-        skill: ``
+        skill: `ステルス  ターンメーター上昇  弱体解除  クールダウン減少`
     }, {
         name: "ナイトシスター・イニシエート",
         property: "ダークサイド、アタッカー、ナイトシスター",
         src: nightsisterinitiate,
         abbreviation: "Nightsister Initiate nightsister initiate",
-        skill: ``
+        skill: `時間経過ダメージ  クリティカル率上昇  強化無効  カウンター`
     }, {
         name: "ナイトシスター・スピリット",
         property: "ダークサイド、アタッカー、ナイトシスター",
         src: nightsisterwraith,
         abbreviation: "Nightsister Spirit nightsister spirit",
-        skill: ``
+        skill: `スピード低下  ターンメーター減少  ターンメーター上昇  強化解除  スタン  フォアサイト  アーマー無効化`
     }, {
         name: "ナイトシスター・ゾンビ",
         property: "ダークサイド、タンク、ナイトシスター",
         src: zombie,
         abbreviation: "Nightsister Zombie nightsister zombie",
-        skill: ``
+        skill: `抵抗力低下  弱体解除  回復  挑発  復活  阻止不可  スピード上昇  スピード低下  復活不可  復活`
     }, {
         name: "ナインス・シスター",
         property: "ダークサイド、タンク、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: ninthsister,
         abbreviation: "9s 9S Ninth Sister ninth sister マサナ・タイド Masana Tide masana ",
-        skill: ``
+        skill: `粛清  耐性発揮不可  時間経過ダメージ  時間経過回復  強化解除  めまい  防御力低下  有効性低下  全体攻撃  挑発
+            防御力上昇  スピード制限無効化  スキルブロック無効化  スタン無効化  クリティカル回避力上昇  回復  ターンメーター上昇`
     }, {
         name: "ヌート・ガンレイ",
         property: "ダークサイド、サポート、リーダー、ならず者、分離主義者",
         src: gunray,
         abbreviation: "Nute Gunray nute gunray",
-        skill: ``
+        skill: `クールダウン減少  強要  恩恵  スピード低下  回避不可  強化解除  クールダウン増加  アシスト  リーダー：スピード上昇
+            リーダー：有効性上昇  スピード減少  復活  ステルス`
     }, {
         name: "ネビット長老",
         property: "ライトサイド、タンク、リーダー、ジャワ",
         src: nebit,
         abbreviation: "Chief Nebit chief nebit",
-        skill: ``
+        skill: `プロテクション上昇  時間経過回復  クールダウン減少  挑発  アシスト  ステルス  リーダー：クリティカル率上昇
+            クリティカル率低下  強化解除  サーマル・デトネーター  解除不可  阻止不可  耐性発揮不可  回復`
     }, {
         name: "パオ",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: pao,
         abbreviation: "Pao pao",
-        skill: ``
+        skill: `攻撃力上昇  ターンメーター上昇  全体攻撃  防御力減少  クールダウン減少`
     }, {
         name: "パズ・ウィズラ",
         property: "ライトサイド、タンク、マンダロリアン",
         src: pazvizsla,
         abbreviation: "Paz Vizsla paz vizsla",
-        skill: ``
+        skill: `ヒート  オーバーヒート  コピー不可  解除不可  阻止不可  強靭な防御  固定ダメージ  回避不可  全体攻撃
+            破損  クリティカルダメージ低下  回復  クリティカル回避力上昇  めまい  ターンメーター減少  炎上  エクスポーズ
+            よろめき  プロテクション上昇  報復効果  フレンジー  弱体解除  ダメージ耐性  ボーナスターン  クールダウンリセット`
     }, {
         name: "バスティラ・シャン",
         property: "ライトサイド、サポート、リーダー、ジェダイ、旧共和国",
         src: bastila,
         abbreviation: "Bastila bastila Shan shan BS bs Bast bast",
-        skill: ``
+        skill: `スキルブロック  弱体解除  攻撃力上昇  防御力上昇  スピード上昇  精度上昇  クリティカル率上昇  アシスト
+            強化解除  スタン  強化無効  プロテクション上昇  ターンメーター上昇  挑発  回復  伝説の戦闘瞑想  解除不可
+            アドバンテージ  報復効果`
     }, {
         name: "バスティラ・シャン(フォールン)",
         property: "ダークサイド、サポート、シス、シス帝国",
         src: bsf,
         abbreviation: "BSF bsf 闇バス Bastila Shan (Fallen) bastila shan fallen ",
-        skill: ``
+        skill: `スキルブロック  ショック  全体攻撃  カウンタ不可  回避不可  恐怖  コピー不可  解除不可  攻撃力低下
+            クリティカルダメージ低下  回避力低下  スピード低下  エクスポーズ  よろめき  耐性発揮不可  クールダウン増加
+            邪悪な戦闘瞑想  ターンメーター減少  回復  フォアサイト  アドバンテージ  フォアサイト`
     }, {
         name: "ハックス将軍",
         property: "ダークサイド、サポート、リーダー、ファースト・オーダー、艦隊司令官",
         src: hux,
         abbreviation: "General Hux general hux ハグス将軍 Hugs",
-        skill: ``
+        skill: `ターンメーター上昇  アドバンテージ  ターンメーター上昇  強化解除  回避不可  アシスト  弱体解除  ボーナスターン
+            クールダウンリセット  ダメージ上昇  優位  カウンター  ボーナスターン不可`
     }, {
         name: "パドメ・アミダラ",
         property: "ライトサイド、サポート、リーダー、銀河共和国",
         src: padme,
         abbreviation: "Padme Padmé Amidala padme amidala padmé PA pa",
-        skill: ``
+        skill: `回避不可  プロテクション上昇  弱体解除  味方全体-弱体解除  プロテクション上昇  スタン  コピー不可  解除不可
+            アシスト  リーダー：最大HP上昇  耐性発揮  クリティカルヒット不可  勇気  阻止不可  ボーナスダメージ`
     }, {
         name: "パプルー",
         property: "ライトサイド、タンク、イウォーク",
         src: paploo,
         abbreviation: "Paploo paploo",
-        skill: ``
+        skill: `強化解除  防御力上昇  スピード低下  挑発  弱体解除  ターンメーター上昇  回復`
     }, {
         name: "バリス・オフィー",
         property: "ライトサイド、ヒーラー、リーダー、銀河共和国、ジェダイ",
         src: barriss,
         abbreviation: "Barriss Offee barriss offee",
-        skill: ``
+        skill: `回復  HP均一化  防御力上昇  リーダー：最大HP上昇  弱体解除  ターンメーター上昇`
     }, {
         name: "パルパティーン皇帝",
         property: "ダークサイド、サポート、リーダー、帝国軍、シス",
         src: palpatine,
         abbreviation: "Emperor Palpatine emperor palpatine EP ep",
-        skill: ``
+        skill: `ショック  ターンメーター上昇  スタン  全体攻撃  攻撃力上昇  回復  ヘルススティール上昇  リーダー：有効性上昇
+            リーダー：最大HP上昇  リーダー：有効性低下  リーダー：回避力低下`
     }, {
         name: "ハン(ストームトルーパー)",
         property: "ライトサイド、タンク、リーダー、反乱軍、ならず者",
         src: sthan,
         abbreviation: "STハン Stormtrooper Han stormtrooper han solo Solo ソロ",
-        skill: ``
+        skill: `ターンメーター上昇  挑発  リーダー：防御力上昇  リーダー：攻撃力上昇  ターンメーター減少  回復`
+    }, {
+        name: "ハン・ソロ",
+        property: "ライトサイド、アタッカー、反乱軍、ならず者、スマグラー",
+        src: hansolo,
+        abbreviation: "Han Solo han solo",
+        skill: `ターンメーター減少  回避不可  スタン  ターンメーター上昇  クリティカル率上昇  回避力上昇  クリティカルダメージ上昇  ボーナスターン
+            挑発無効化`
     }, {
         name: "ハンター",
         property: "ライトサイド、アタッカー、リーダー、バッド・バッチ、クローン・トルーパー",
         src: hunter,
         abbreviation: "Bad Batch BB bad batch Hunter hunter",
-        skill: ``
+        skill: `エクスポーズ  回避力上昇  ステルス  全体攻撃  クリティカル率上昇  攻撃力上昇  回避不可  ターンメータ入れ替え  挑発無効化
+            スタン  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：有効性上昇  固定ダメージ  カウンター不可
+            ターンメーター減少  耐性発揮不可`
     }, {
         name: "ピエット提督",
         property: "ダークサイド、サポート、リーダー、帝国軍、帝国軍トルーパー、艦隊司令官",
         src: piett,
         abbreviation: "Admiral Piett admiral piett",
-        skill: ``
+        skill: `アシスト  攻撃力上昇  ステルス  マーク  失敗不可避  コピー不可  解除不可  耐性発揮不可  全体攻撃  強化解除  めまい
+            恐怖  コピー不可  解除不可  耐性発揮不可  リーダー：攻撃力上昇  リーダー：有効性上昇  リーダー：スピード減少  リーダー：抵抗力減少
+            防御力上昇  カウンター  皇帝の罠  阻止不可`
     }, {
         name: "ビスタン",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: bistan,
         abbreviation: "Bistan bistan",
-        skill: ``
+        skill: `時間経過ダメージ  フレンジー  ターンメーター上昇  ターンメーター減少`
     }, {
         name: "ビッグス・ダークライダー",
         property: "ライトサイド、サポート、反乱軍、反乱軍ファイター",
         src: biggs,
         abbreviation: "Biggs Darklighter biggs darklighter",
-        skill: ``
+        skill: `クリティカル率上昇  クリティカルダメージ上昇  アシスト  ターンメーター上昇  回避力上昇`
     }, {
         name: "ファースト・オーダー・エクセキューショナー",
         property: "ダークサイド、アタッカー、ファースト・オーダー",
         src: executinor,
         abbreviation: "First Order Executioner first order executioner FOE foe FOX fox",
-        skill: ``
+        skill: `HP上昇  アドバンテージ  ターンメータ減少  強化解除  ターンメーター上昇  クールダウンリセット  最大HP上昇`
     }, {
         name: "ファースト・オーダー・オフィサー",
         property: "ダークサイド、サポート、ファースト・オーダー",
         src: foo,
         abbreviation: "First Order Officer FOO foo first order officer",
-        skill: ``
+        skill: `ターンメーター上昇  アドバンテージ  攻撃力上昇  弱体解除  抵抗力上昇  ターンメータ減少  クールダウン減少`
     }, {
         name: "ファースト・オーダー・ストームトルーパー",
         property: "ダークサイド、タンク、ファースト・オーダー",
         src: fost,
         abbreviation: "First Order Stormtrooper first order stormtrooper FOST fost",
-        skill: ``
+        skill: `スピード低下  強化解除  ターンメーター上昇  防御力上昇  弱体解除  アドバンテージ  挑発  カウンター  アシスト`
     }, {
         name: "ファースト・オーダーTIEパイロット",
         property: "ダークサイド、アタッカー、ファースト・オーダー",
         src: fotp,
         abbreviation: "First Order TIE Pilot first order tie pilot FOTP fotp",
-        skill: ``
+        skill: `アドバンテージ  攻撃力低下  強化無効  HP低下  アドバンテージ  フォアサイト  回復`
     }, {
         name: "ファースト・オーダー特殊部隊TIEパイロット",
         property: "ダークサイド、アタッカー、ファースト・オーダー",
         src: fosftp,
         abbreviation: "First Order SF TIE Pilot first order sf tie pilot special force",
-        skill: ``
+        skill: `防御力低下  アドバンテージ  全体攻撃  スピード上昇  アシスト   スタン`
     }, {
         name: "フィフス・ブラザー",
         property: "ダークサイド、サポート、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: fifthbrother,
         abbreviation: "Fifth Brother 5b 5B fifth brother",
-        skill: ``
+        skill: `粛清  耐性発揮不可  強化解除  全体攻撃  防御力低下  エクスポーズ  有効性上昇  無防備  プロテクション上昇  ダメージ耐性
+            スタン  恐怖  コピー不可  解除不可  回避不可  リーダー：防御力上昇  リーダー：最大HP上昇  スピード減少  エクスポーズ
+            カウンター  誘発  破損  スタン解除  ターンメーター上昇`
     }, {
         name: "フィン",
         property: "ライトサイド、タンク、リーダー、レジスタンス",
         src: finn,
         abbreviation: "Finn finn ジョン・ボイエガ",
-        skill: ``
+        skill: `回復  アドバンテージ  防御力上昇  挑発  決意  報復効果  エクスポーズ  スタン  リーダー：防御力上昇  リーダー：攻撃力上昇
+            リーダー：有効性上昇  ターンメーター上昇  ターンメーター減少  クールダウン減少  リーダー：最大HP上昇  リーダー：プロテクション上昇
+            復活  プロテクション上昇  解除不可  阻止不可  クリティカルヒット無効化  カウンター  強化解除  回避不可  耐性発揮不可
+            固定ダメージ`
     }, {
         name: "ブーシ(レイア・オーガナ)",
         property: "ライトサイド、アタッカー、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
         src: boushh,
         abbreviation: "Boushh (Leia Organa) boushh leia organa",
-        skill: ``
+        skill: `サーマル・デトネーター  回避不可  防御力低下  全体攻撃  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  強化解除
+            スタン無効化  復活不可  恐怖無効化  好みの悪党  コピー不可  解除不可  阻止不可  デッドリーブラフ  ターン外攻撃不可 スピード減少
+            ターンメーター操作無効化  アシスト  スキルブロック無効化  最大クールダウン減少 クールダウンリセット`
     }, {
         name: "フェネック・シャンド",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: fennec,
         abbreviation: "Fennec Shand fennec shand",
-        skill: ``
+        skill: `攻撃力上昇 熟練兵  全体攻撃  アーマー破壊  自信過剰  コピー不可  耐性発揮不可  回避不可  リーダー：最大HP上昇
+            リーダー：最大プロテクション上昇  リーダー：防御力上昇  リーダー：攻撃力上昇  賞金稼ぎの決意  ターンメーター上昇`
     }, {
         name: "プリンセス・ニーサ",
         property: "ライトサイド、アタッカー、イウォーク",
         src: kneesaa,
         abbreviation: "Princess Kneesaa princess knersaa",
-        skill: ``
+        skill: `ボーナスターンメーター上昇無効化  攻撃力上昇  有効性低下  弱体解除  味方全体-弱体解除  アシスト  スピード低下  クリティカル率上昇
+            回復  スタン  ターンメーター減少  クリティカルダメージ上昇  時間経過ダメージ  固定ダメージ  アシスト  報復効果  フォアサイト
+            プロテクション上昇  めまい無効化  スタン無効化  ターンメーター上昇  クールダウン減少`
     }, {
         name: "プロ・クーン",
         property: "ライトサイド、タンク、リーダー、銀河共和国、ジェダイ",
         src: plokoon,
         abbreviation: "Plo Koon plo koon",
-        skill: ``
+        skill: `強化解除  防御力上昇  全体攻撃  攻撃力低下  ターンメーター上昇  ステルス解除  攻撃力上昇`
     }, {
         name: "ベイズ・マルバス",
         property: "ライトサイド、タンク、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: bazemalbus,
         abbreviation: "Baze Malbus baze malbus",
-        skill: ``
+        skill: `スピード低下  ターンメーター上昇  強化解除  アシスト  挑発  報復効果  `
     }, {
         name: "ベイダー卿",
         property: "銀河の伝説、ダークサイド、アタッカー、リーダー、帝国軍、シス",
         src: lv,
         abbreviation: "Lord Vader load vader GL gl Galactic Legend LV lv",
-        skill: ``
+        skill: `強化無効  回復無効  過小評価  回復  全体攻撃  めまい  時間経過ダメージ  耐性発揮不可  スキルブロック   解除不可
+            クールダウン増加  リーダー：スピード上昇  リーダー：マスター上昇  リーダー：最大HP上昇  プロテクション失う  恐怖無効化
+            挑発  マーク  阻止不可  最大HP減少無効化  時間経過ダメージ無効化  サーマル・デトネーター無効化  クリティカルヒット無効化
+            ターンメーター操作無効化  回避不可  スピード上昇  ステルス  ボーナスターンメーター無効化  HP割合ダメージ軽減
+            大ダメージ軽減  スタン無効化  ボーナスターン  クールダウン減少  コピー不可  共和国の灰`
     }, {
         name: "ヘラ・シンドゥーラ",
         property: "ライトサイド、サポート、リーダー、フェニックス、反乱軍",
         src: hera,
         abbreviation: "Hera Syndulla hera syndulla",
-        skill: ``
+        skill: `エクスポーズ  アシスト  弱体解除  クールダウン減少  ターンメーター上昇  予備プラン  復活  カウンター`
+    }, {
+        name: "ベン・ソロ",
+        property: "ライトサイド、アタッカー、非同盟のフォースの使い手",
+        src: bensolo,
+        abbreviation: "Ben Solo ben solo ",
+        skill: `防御力低下  攻撃力低下  有効性低下  スピード低下  ターンメーター減少  暗闇  攻撃力上昇  クールダウン減少  固定ダメージ
+            回復無効  コピー不可  解除不可  回避不可  耐性発揮不可  アーマー破壊  強化解除  敵全体-強化解除  ターンメーター上昇  挑発無効化
+            プロテクション無効化  即戦闘不能耐性  復活`
     }, {
         name: "ボ=カターン(マンダロア)",
         property: "ライトサイド、アタッカー、リーダー、マンダロリアン",
         src: bokatanmandalor,
         abbreviation: "Bo-Katan (Mand'alor) bo-katan mand'alor bokatan ",
-        skill: ``
+        skill: `固定ダメージ  回避不可  強化解除  スピード上昇  アーマー破壊  クールダウン減少  弱体解除  味方全体-弱体解除  アシスト
+            先祖の決意  コピー不可  解除不可  阻止不可  ボーナスターン  リーダー：最大HP上昇  リーダー：防御力上昇  リーダー：攻撃力上昇
+            挑発  復活  HP割合ダメージ軽減  回復  めまい無効化  挑発無効化  `
     }, {
         name: "ボ＝カターン・クライズ",
         property: "ライトサイド・アタッカー・リーダー、マンダロリアン、ならず者",
         src: bokatan,
         abbreviation: "Bo-Katan Kryze bo-katan kryze bokatan",
-        skill: ``
+        skill: `脆弱  強化解除  敵全体-強化解除  アシスト  弱体解除  挑発  防御力上昇  抵抗力上昇  回復`
     }, {
         name: "ポー・ダメロン",
         property: "ライトサイド、タンク、リーダー、レジスタンス",
         src: poe,
         abbreviation: "Poe Dameron poe dameron",
-        skill: ``
+        skill: `攻撃力低下  挑発  ターンメーター減少  エクスポーズ  強化無効  リーダー：攻撃力上昇  リーダー：有効性上昇  回復`
     }, {
         name: "ボーディー・ルック",
         property: "ライトサイド、サポート、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: bodhirook,
         abbreviation: "Bodhi Rook bodhi rook",
-        skill: ``
+        skill: `回避力低下  回避不可  攻撃力上昇  有効性上昇  ターンメーター上昇  ターンメーター減少`
     }, {
         name: "ポグル",
         property: "ダークサイド、サポート、リーダー、ジオノージアン、分離主義者",
         src: poggle,
         abbreviation: "Poggle poggle",
-        skill: ``
+        skill: `スキルブロック  弱体解除  味方全体-弱体解除  ターンメーター上昇  攻撃力上昇  アシスト  リーダー：攻撃力上昇  回復
+            ターンメーター減少  ジオノージアン・ブルード  コピー不可  解除不可  阻止不可  復活`
     }, {
         name: "ボスク",
         property: "ダークサイド、タンク、リーダー、賞金稼ぎ、ならず者",
         src: bossk,
         abbreviation: "Bossk bossk お喋りトカゲ",
-        skill: ``
+        skill: `スタン  アシスト  クールダウン減少  弱体解除  回復  フレンジー  挑発  攻撃力上昇  リーダー：最大プロテクション上昇  リーダー：抵抗力上昇`
     }, {
         name: "ホス反乱軍スカウト",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター",
         src: hothscout,
         abbreviation: "Hoth Rebel Scout hoth rebel scout",
-        skill: ``
+        skill: `ターンメーター上昇  スタン  `
     }, {
         name: "ホス反乱軍兵士",
         property: "ライトサイド、サポーター、反乱軍、反乱軍ファイター",
         src: rebelhoth,
         abbreviation: "Hoth Rebel Soldier hoth rebel soldier",
-        skill: ``
+        skill: `攻撃力低下  挑発  防御力上昇  HP上昇  防御力上昇  回復  カウンター`
     }, {
         name: "ボバ・フェット",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
         src: boba,
         abbreviation: "Boba Fett BF boba fett ﾌｪｯ!!",
-        skill: ``
+        skill: `時間経過ダメージ  全体攻撃  スキルブロック  強化解除  弱体解除  復活不可  クールダウン減少  回復無効  回避不可
+            リーダー：クリティカルダメージ上昇  リーダー：クリティカル率上昇  ターンメーター上昇  賞金稼ぎの決意`
     }, {
         name: `ボバ・フェット(ジャンゴの "息子" )`,
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: bfsoj,
         abbreviation: "大名 Daimyo BFSoJ SOJ SoJ soj bfsoj Boba Fett, Scion of Jango boba fett scion jango  ﾌｪｯ!!",
-        skill: ``
+        skill: `モメンタム  解除不可  阻止不可  抵抗力上昇  コピー不可  プロテクション破壊  耐性発揮不可  プロテクション無効化
+            全体攻撃  時間経過ダメージ  抵抗力低下  有効性低下  破損  リーダー：クリティカル回避力上昇  挑発無効化  固定ダメージ
+            賞金稼ぎの決意  ターンメーター上昇  スキルブロック無効化  スタン無効化  回復`
     }, {
         name: "ホンドー・オナカ",
         property: "ニュートラル、サポート、ならず者、スマグラー",
         src: hondo,
         abbreviation: "Hondo Ohnaca hondo ohnaca",
-        skill: ``
-
+        skill: `身代金  コピー不可  解除不可  阻止不可  ターンメーター減少  ターンメーター上昇  勝利戦術  人質  耐性発揮不可
+            スピード0  ボーナスアタック不可  ボーナスターン不可  防御力上昇  弱体解除  味方全体-弱体解除  アシスト  スキルブロック
+            強化無効  クールダウン増加  逃走  エクスポート  フォアサイト  クリティカルヒット無効化  回復  ボーナスターンメーター`
     }, {
         name: "マグマトルーパー",
         property: "ダークサイド、アタッカー、帝国軍、帝国軍トルーパー",
         src: magmatrooper,
         abbreviation: "Magmatrooper magmatrooper",
-        skill: ``
-
+        skill: `全体攻撃  ターンメーター減少  アーマー無効化  ターンメーター上昇`
     }, {
         name: "マザー・タルジン",
         property: "ダークサイド、サポート、リーダー、ナイトシスター",
         src: mothertalzin,
         abbreviation: "Mother Talzin mother talzin",
-        skill: ``
-
+        skill: `感染  カウンター不可  プロテクション無効化  アシスト  復活  回復 リーダー：有効性上昇  リーダー：スピード上昇  回避不可
+            ターンメーター上昇  即戦闘不能  耐性発揮不可`
     }, {
         name: "マラ・ジェイド(皇帝の手)",
         property: "ダークサイド、アタッカー、帝国軍、非同盟のフォースの使い手",
         src: mj,
         abbreviation: "MJ mj Mara Jade, The Empeor's Hand mara jade the emprors hand",
-        skill: ``
-
+        skill: `めまい  アシスト 全体攻撃  強化解除  スタン  無防備  抵抗力低下  攻撃力低下  ショック  よろめき  ステルス  ターンメーター上昇
+            有用なコマ  コピー不可  解除不可  ロイヤルハンド  暗闇  回避不可  耐性発揮不可  プロテクション減少  最大プロテクション減少`
     }, {
         name: "マンダロリアン",
         property: "ライトサイド、アタッカー、リーダー、賞金稼ぎ、マンダロリアン、ならず者",
         src: mando,
         abbreviation: "The Mandalorian the mandalorian Mando mando This is the way",
-        skill: ``
-
+        skill: `クリティカル率上昇  アシスト  クリティカルダメージ上昇  リーダー：スピード上昇  リーダー：抵抗力上昇  リーダー：クリティカル率上昇
+            ターンメーター上昇  賞金稼ぎの決意  即戦闘不能  回避不可  復活不可`
     }, {
         name: "マンダロリアン(ベスカー・アーマー)",
         property: "ライトサイド、アタッカー、リーダー、マンダロリアン、ならず者",
         src: beskar,
         abbreviation: "BAM bam The Mandalorian (Beskar Armor) the mandalorian beskar armor",
-        skill: ``
-
+        skill: `時間経過ダメージ  ホイッスリング・バード  アシスト不可  カウンター不可 ステルス無視  挑発無効化  弱体解除  味方全体-弱体解除
+            プロテクション均一化  回復  ターンメーター減少  回避不可  ダメージ耐性  コピー不可  解除不可  阻止不可  抵抗力上昇  クールダウンから開始
+            固定ダメージ  復活不可  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：攻撃力上昇  スキルブロック無効化
+            クールダウンリセット`
     }, {
         name: "ミッション・ヴァオ",
         property: "ライトサイド、アタッカー、旧共和国、ならず者",
         src: vao,
         abbreviation: "MV Mission Vao mission vao",
-        skill: ``
-
+        skill: `めまい  ターンメーター上昇  弱体解除  ステルス  プロテクション上昇  暗闇  時間経過ダメージ  回避不可  アシスト  回復`
     }, {
         name: "メイス・ウィンドゥ",
         property: "ライトサイド、タンク、リーダー、銀河共和国、ジェダイ、艦隊司令官",
         src: mace,
         abbreviation: "Mace Windu mace windu",
-        skill: ``
-
+        skill: `スキルブロック  ターンメーター上昇  回復  強化解除  スタン  ターンメーター減少  アシスト   ターンメーター入れ替え
+            強靭な防御  リーダー：最大HP上昇  リーダー：攻撃力  リーダー：クリティカル率上昇  カウンター  ステルス解除
+            スピード低下  シャッターポイント  回避不可  耐性発揮不可  フォアサイト`
     }, {
         name: "メリン",
         property: "ダークサイド、サポート、ナイトシスター",
         src: merrin,
         abbreviation: "Merrin merrin",
-        skill: ``
-
+        skill: `感染  回復  強化解除  弱体解除  マジックステルス  味方全体-弱体解除  復活  ターンメーター上昇不可
+            阻止不可  ターンメーター操作無効化  即戦闘不能耐性  コピー不可  解除不可  阻止不可`
     }, {
         name: "モール",
         property: "ダークサイド、アタッカー、リーダー、マンダロリアン、非同盟のフォースの使い手",
         src: maul,
         abbreviation: "Maul maul",
-        skill: ``
-
+        skill: `苦悩  強化解除  敵全体-強化解除  全体攻撃  攻撃力低下  ターンメーター上昇  固定ダメージ  強化無効
+            クールダウン増加  カウンター不可  リーダー：最大HP上昇  リーダー：攻撃力上昇  マンダロア  コピー不可
+            解除不可  阻止不可  アシスト  弱体解除  挑発  回避不可  フレンジー  報復効果  スタン無効化  スキルブロック無効化
+            挑発無効化`
     }, {
         name: "モブ・エンフォーサー",
         property: "ダークサイド、サポート、ハット・カルテル、ならず者",
         src: mobenforcer,
         abbreviation: "Mob Enforcer mob enforcer",
-        skill: ``
+        skill: `防御力低下  めまい  エクスポーズ  無防備  サーマル・デトネーター  ターンメーター上昇  ボーナスターン
+            クールダウン減少`
     }, {
         name: "モフ・ギデオン",
         property: "ダークサイド、サポート、リーダー、帝国軍、インペリアル・レムナント、帝国軍トルーパー",
         src: moffgideon,
         abbreviation: "Moff Gideon moff gideon Long Live the Empire",
-        skill: ``
+        skill: `洞察  コピー不可  解除不可  阻止不可  全体攻撃  めまい  耐性発揮不可  アーマー破壊  アシスト  ターンメーター減少
+            ターンメーター増加  挑発  攻撃力上昇  プロテクション上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇
+            リーダー：攻撃力上昇  戦意喪失`
     }, {
         name: "モフ・ギデオン(ダーク・トルーパー)",
         property: "ダークサイド、タンク、リーダー、帝国軍、インペリアル・レムナント",
         src: darkmoff,
         abbreviation: "Dark Trooper Moff Gideon dark trooper moff gideon Long Live the Empire",
-        skill: ``
+        skill: `洞察  めまい  攻撃力低下  よろめき  スタン  ターンメーター減少  固定ダメージ  回復無効  解除不可  耐性発揮不可
+            精度上昇  防御力上昇  挑発  阻止不可  アシスト  ステルス  復活  報復効果  リーダー：クリティカル率上昇  リーダー：防御力上昇
+            リーダー：攻撃力上昇  回復  リーダー：マスター上昇  リーダー：スピード上昇  味方全体-弱体解除  敵全体-強化解除
+            ボーナスターン  `
     }, {
         name: "モン・モスマ",
         property: "ライトサイド、サポート、リーダー、反乱軍",
         src: monmothma,
         abbreviation: "MM mm Mon Mothma mon mothma",
-        skill: ``
+        skill: `弱体解除  回復  復活  HP均一化  挑発  クリティカルヒット耐性  アシスト  招集  クールダウン減少
+            挑発無効化  逃走  防御突破力上昇`
     }, {
         name: "ヤング・ハン・ソロ",
         property: "ライトサイド、アタッカー、ならず者、スマグラー",
         src: younghan,
         abbreviation: "Yolo yolo Young Han Solo young han solo",
-        skill: ``
+        skill: `スピード低下  準備万端  プロテクション上昇  報復効果  回復  クリティカルダメージ上昇  アシスト`
     }, {
         name: "ヤング・ランド・カルリジアン",
         property: "ライトサイド、アタッカー、ならず者、スマグラー",
         src: younglando,
         abbreviation: "Young Lando Calrissian young lando calrissian",
-        skill: ``
+        skill: `有効性上昇  カウンター不可  ボーナスターン不可  スキルブロック  クールダウン減少  弱体解除  ステルス
+            ターンメーター上昇  スピード上昇  `
     }, {
         name: "ヨーダ(ハーミット)",
         property: "ライトサイド、サポート、ジェダイ",
         src: hoda,
         abbreviation: "Hoda HYoda HY hoda hyoda hy 隠者 Hermit Yoda hermit yoda",
-        skill: ``
+        skill: `回復  ターンメーター上昇  マスターの訓練  アシスト  HP均一化  フォアサイト  ステルス  逃走  クールダウンリセット`
     }, {
         name: "ラダス提督",
         property: "ライトサイド、サポート、リーダー、反乱軍、ローグ・ワン、艦隊司令官",
         src: admiralraddus,
         abbreviation: "Admiral Raddus admiral raddus AdRad",
-        skill: ``
+        skill: `プロテクション上昇  回復  挑発  反乱の口火  アシスト  クールダウン増加  復活不可  ターンメーター上昇
+            弱体解除  味方全体-弱体解除  リーダー：スピード上昇  リーダー：HP上昇  リーダー：有効性上昇  めまい  耐性発揮不可
+            エクスポーズ  リーダー：最大HP上昇  クリティカル率上昇  クリティカルダメージ上昇  防御力上昇  HP上昇  攻撃力上昇
+            有効性上昇  戦闘不能不可  ボーナスターン  固定ダメージ  プロテクション破壊  回復無効  解除不可`
     }, {
         name: "ランド・カルリジアン",
         property: "ライトサイド、アタッカー、リーダー、反乱軍、反乱軍ファイター、ならず者",
         src: lando,
         abbreviation: "Lando Calrissian lando calrissian ランド・カルリジアンからのお別れの挨拶",
-        skill: ``
+        skill: `クールダウンリセット  全体攻撃  リーダー：スピード上昇  リーダー：クリティカルダメージ上昇  クリティカル率上昇`
     }, {
         name: "ルーク・スカイウォーカー(農民)",
         property: "ライトサイド、アタッカー、リーダー、反乱軍",
         src: ep4luke,
         abbreviation: "Luke Skywalker (Farmboy) luke skywalker farmboy 農民ルーク",
-        skill: ``
+        skill: `ターンメーター上昇  時間経過ダメージ  防御力上昇  スピード低下  スタン  強化解除  リーダー：抵抗力上昇
+            アドバンテージ  クリティカルダメージ上昇  攻撃力上昇  回復`
     }, {
         name: "ルーク・スカイウォーカー中佐",
         property: "ライトサイド、アタッカー、リーダー、反乱軍、非同盟のフォースの使い手",
         src: cls,
         abbreviation: "CLS cls Commander Luke Skywalker commander luke skywalker",
-        skill: ``
+        skill: `スピード低下  防御力低下  ターンメーター減少  スタン  強化解除  強化無効  抵抗力低下  クールダウン減少
+            リーダー：防御力上昇  リーダー：攻撃力上昇  カウンター  ターンメーター上昇  行動喚起`
     }, {
         name: "ルミナーラ・アンドゥリ",
         property: "ライトサイド、ヒーラー、リーダー、銀河共和国、ジェダイ",
         src: luminara,
         abbreviation: "LuminaraUnduli luminara unduli",
-        skill: ``
+        skill: `回避力上昇  スキルブロック  回復  時間経過回復  弱体解除  味方全体-弱体解除  抵抗力上昇
+            ターンメーター減少無効化  クールダウン減少  リーダー：回避力上昇`
     }, {
         name: "レイ",
         property: "銀河の伝説、ライトサイド、アタッカー、リーダー、レジスタンス、非同盟のフォースの使い手",
         src: rey,
         abbreviation: "GL Rey rey Garactic Legends garactic legends",
-        skill: ``
+        skill: `アーマー無視  ボーナスプロテクション  クリティカルヒット耐性  活力源  コピー不可  解除不可  阻止不可  大ダメージ
+            復活不可  カウンター不可  回避不可  リーダー：最大HP上昇  リーダー：マスター上昇  リーダー：スピード上昇  ダメージ耐性
+            触発  弱体解除  ターンメーター減少無効化  HP割合ダメージ軽減  大ダメージ軽減  スタン無効化  固定ダメージ  カウンター不可
+            防御力無効化  クリティカルヒット不可`
     }, {
         name: "レイ(ジェダイ・トレーニング)",
         property: "ライトサイド、タンク、リーダー、レジスタンス、非同盟のフォースの使い手",
         src: rjt,
         abbreviation: "RJT JTR 修行中レイ rjt jtr Rey(Jedi Trainig) rey jedi training",
-        skill: ``
+        skill: `回復無効  コピー不可  解除不可  耐性発揮不可  アシスト  弱体解除  フォアサイト  強化解除  スキルブロック  めまい  攻撃力低下
+            スピード低下 ターンメーター減少  ターンメーター上昇  回避不可  リーダー：クリティカル率上昇  リーダー：クリティカルダメージ上昇
+            エクスポーズ  クールダウン減少  回復  フォアサイト  クリティカルダメージ上昇`
     }, {
         name: "レイ(スカベンジャー)",
         property: "ライトサイド、アタッカー、レジスタンス、非同盟のフォースの使い手",
         src: reyscavenger,
         abbreviation: "Rey (Scavenger) rey scavenger",
-        skill: ``
+        skill: `フォアサイト  攻撃力上昇  めまい  耐性発揮不可`
     }, {
         name: "レイア・オーガナ",
         property: "銀河の伝説、ライトサイド、タンク、リーダー、反乱軍",
         src: leia,
         abbreviation: "GL GLレイア gl Geractic Legends garactic legends Leia Organa leia organa",
-        skill: ``
+        skill: `報復効果  固定ダメージ  強化解除  弱体解除  味方全体-弱体解除  回復  アシスト  ターンメーター減少  待ち伏せ  コピー不可
+            解除不可  阻止不可  回避不可  耐性発揮不可  解除不可  めまい  よろめき  強化無効  不意打ち  プロテクション無効化
+            ステルス  クリティカル率低下  クリティカルダメージ低下  有効性低下  抵抗力低下  防御力低下  無防備  リーダー：スピード上昇
+            リーダー：マスター上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  防御力上昇  プロテクション上昇  最大HP低下無効化
+            感染無効化  フォアサイト解除  ステルス解除  ダメージ耐性  セカンドウィンド  クールダウン操作無効化  恐れ知らず   ボーナスプロテクション
+            エクスポーズ無効化  恐怖無効化  HP割合ダメージ軽減  大ダメージ軽減  スタン無効化  破砕  抵抗力上昇  復活  カウンター不可`
+    }, {
+        name: "レイア・オーガナ(反乱軍オフィサー)",
+        property: "ライトサイド、アタッカー、リーダー、反乱軍",
+        src: rolo,
+        abbreviation: "ROLO rolo ホスレイア",
+        skill: `強化無効  ターンメーター上昇  全体攻撃  スキルブロック  クールダウン減少  カウンター不可  リーダー：抵抗力上昇
+            リーダー：クリティカル率上昇  フォアサイト  リーダー：スピード上昇  回復`
     }, {
         name: "レイア姫",
         property: "ライトサイド、アタッカー、リーダー、反乱軍",
         src: princessleia,
         abbreviation: "Princess Leia princess leia",
-        skill: ``
+        skill: `ターンメーター上昇  ステルス  クリティカルダメージ上昇  攻撃力上昇  フォアサイト  リーダー：クリティカル率上昇
+            報復効果  抵抗力上昇`
     }, {
         name: "レジスタンス・トルーパー",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: resistancetrooper,
         abbreviation: "Resistance Trooper rasistance trooper レジトル",
-        skill: ``
+        skill: `エクスポーズ  強化解除  スピード低下  クールダウン減少  ターンメーター上昇`
     }, {
         name: "レジスタンス・パイロット",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: resistancepilot,
         abbreviation: "Resistance Pilot resistane pilot レジパイ",
-        skill: ``
+        skill: `ターンメーター上昇  エクスポーズ  フォアサイト`
     }, {
         name: "レジスタンスの英雄フィン",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: herofinn,
         abbreviation: "Resistance Hero Finn resistance hero finn",
-        skill: ``
+        skill: `回復  触発  クールダウン減少  回避不可  ターンメーター入れ替え  挑発  クリティカルヒット耐性  アシスト  カウンター
+            ターンメーター上昇`
     }, {
         name: "レジスタンスの英雄ポー",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: heropoe,
         abbreviation: "Resistance Hero Poe resistance hero poe",
-        skill: ``
+        skill: `無防備  めまい  よろめき  時間経過ダメージ  スタン  強化解除  回避不可  プロテクション減少  触発`
     }, {
         name: "レッカー",
         property: "ライトサイド、タンク、バッド・バッチ、クローン・トルーパー、銀河共和国",
         src: wrecker,
         abbreviation: "Wrecker wrecker Bad Batch bad batch BB bb",
-        skill: ``
+        skill: `スピード低下  回復  逆上  ステルス解除  ターンメーター上昇  挑発  防御力上昇  抵抗力上昇  スタン  全体攻撃
+            怒り  コピー不可  解除不可  阻止不可`
     }, {
         name: "レンジ・トルーパー",
         property: "ダークサイド、サポート、帝国軍、帝国軍トルーパー",
         src: rengetrooper,
         abbreviation: "Renge Trooper renge trooper",
-        skill: ``
+        skill: `プロテクション上昇  報復効果  アシスト`
     }, {
         name: "ロイヤル・ガード",
         property: "ダークサイド、タンク、帝国軍",
         src: royal,
         abbreviation: "Royal Guard royal guard RG",
-        skill: ``
+        skill: `スピード低下  スタン  防御力上昇  時間経過回復  HP上昇  報復効果  挑発  回復  `
     }, {
         name: "ローズ・ティコ",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: rose,
         abbreviation: "Rose Tico rose tico",
-        skill: ``
+        skill: `抵抗力上昇  防御力上昇  ターンメーター上昇  ターンメーター減少  回避不可  スタン  めまい  耐性発揮不可`
     }, {
         name: "ログレイ",
         property: "ライトサイド、サポート、イウォーク",
         src: logray,
         abbreviation: "Logray logray",
-        skill: ``
+        skill: `抵抗力上昇  強化解除  ターンメーター減少  めまい  回避不可  ターンメーター上昇  フォアサイト  アドバンテージ  攻撃力上昇
+            HP上昇  回復`
     }, {
         name: "ロボト",
         property: "ライトサイド、サポート、リーダー、反乱軍",
         src: lobot,
         abbreviation: "Lobot lobot",
-        skill: ``
+        skill: `防御力低下  フォアサイト  防御力上昇  ターゲットロック  味方全体-弱体解除  回復  ターンメーター上昇  リーダー：有効性上昇
+            リーダー：スピード上昇  スピード上昇  ターンメーター減少  耐性発揮不可  スピード低下  アシスト`
     }, {
         name: "ワット・タンバー",
         property: "ダークサイド、サポート、分離主義者",
         src: watt,
         abbreviation: "Wat Tambor wat tambor",
-        skill: ``
+        skill: `弱体解除  時間経過回復  時間経過ダメージ  回避不可  ターンメーター減少  復活  時間経過プロテクション  アシスト  逃走
+            ボーナスターン  コピー不可  解除不可  阻止不可  チーワプ社製医療パック  バクトイド社製シールド発生器
+            ブラステック社製ウェポンモッド 挑発  復活不可  ターンメーター上昇`
     }, {
         name: "ワンパ",
         property: "ダークサイド、アタッカー",
         src: wampa,
         abbreviation: "Wampa wampa DE WANNA WANGA",
-        skill: ``
+        skill: `時間経過ダメージ  スタン  ターンメーター上昇  回避不可  全体攻撃  弱体解除  めまい  プロテクション上昇  解除不可  阻止不可
+            回復無効  クールダウン状態から開始  カウンター  クールダウン減少`
     }, {
         name: "大尋問官",
         property: "ダークサイド、アタッカー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: gi,
         abbreviation: "GI gi Grand Inquisitor grand inquisitor Ready to Die?",
-        skill: ``
+        skill: `粛清  耐性発揮不可  固定ダメージ  回避不可  弱体解除  味方全体-弱体解除  HP均一化  プロテクション均一化  スキルブロック
+            脆弱  回復  クリティカルダメージ上昇  ターンメーター減少  拷問  解除不可  耐性発揮不可  攻撃力上昇  スピード上昇
+            抵抗力上昇  攻撃力上昇  スピード上昇  抵抗力上昇  ボーナスターン不可  クールダウンリセット  強化無効  阻止不可
+            即戦闘不能  復活不可  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：スピード上昇  スキルブロック無効化
+            防御突破力上昇  攻撃力上昇  アドバンテージ  フォアサイト  挑発  挑発無効化  フォアサイト解除  ボーナスターン ターンメーター上昇 `
     }, {
         name: "帝国軍偵察ドロイド",
         property: "ダークサイド、サポート、ドロイド、帝国軍",
         src: ipb,
         abbreviation: "Imperial Probe Droid",
-        skill: ``
+        skill: `エクスポーズ  強化解除  敵全体-強化解除  ターゲットロック  ターンメーター減少  回避不可  即戦闘不能  復活不可
+            大ダメージ  挑発無効化  復活`
     }
 
 ];
 
 export default characters;
+
+// export default function handler( req: NextApiRequest, res: NextApiResponse<Characters[]>){
+//     res.status(200).json(characters)
+// }
