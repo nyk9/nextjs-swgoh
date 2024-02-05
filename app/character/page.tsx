@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useCallback, useEffect, useState } from "react";
-import characters, { Characters } from "./characters";
+import characters, { Characters } from "../data/characters";
 import "./styles.css";
 
 export default function Character(

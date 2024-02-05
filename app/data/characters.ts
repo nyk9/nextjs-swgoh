@@ -260,6 +260,7 @@ import zam from "./charui/tex.charui_zamwesell.png";
 import zeb from "./charui/tex.charui_zeb_s3.png";
 import zorii from "./charui/tex.charui_zoriibliss.png";
 
+
 export type Characters = {
     name: string;
     // tag: string;
@@ -282,8 +283,8 @@ const characters: Characters[] = [
         property: "ライトサイド、サポート、リーダー、ドロイド、旧共和国",
         src: sorty,
         abbreviation: "shorty Shorty 50RT Sortie",
-        skill: `アドバンテージ  全体攻撃  カウンター  ダメージ無効  防御力減少  防御力上昇  
-            強化解除  弱体解除  フォアサイト  ターンメーター上昇  ヘルススティール上昇  
+        skill: `アドバンテージ  全体攻撃  カウンター  ダメージ無効  防御力減少  防御力上昇
+            強化解除  弱体解除  フォアサイト  ターンメーター上昇  ヘルススティール上昇
             即戦闘不能耐性  リーダー：クリティカル率上昇  リーダー：防御力上昇 リーダー：最大HP上昇  
             リーダー：スピード上昇  リーダー：フォアサイト  リーダー：プロテクション上昇  攻撃力上昇  
             プロテクション上昇  ターンメーター減少  蘇生  スピード低下  スピード上昇
@@ -399,7 +400,7 @@ const characters: Characters[] = [
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ドロイド、ならず者",
         src: ig88,
         abbreviation: "IG88 ig-88 ig88",
-        skill: `回復無効  ターゲットロック  スキルブロック  防御力低下  全体攻撃  
+        skill: `回復無効  ターゲットロック  スキルブロック  防御力低下  全体攻撃
             リーダー：クリティカル率上昇  時間経過ダメージ`
     }, {
         name: "K-2SO",
@@ -2085,3 +2086,7 @@ const characters: Characters[] = [
 ];
 
 export default characters;
+
+// export default function handler( req: NextApiRequest, res: NextApiResponse<Characters[]>){
+//     res.status(200).json(characters)
+// }
