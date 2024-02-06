@@ -1,21 +1,15 @@
-import Link from "next/link";
 // export async function getStaticProps(){
 //     return {
 //         revalidate: 600,
 //     };
 // } 
-
+import Home from "@/components/layouts/header/header";
 
 export default function About() {
     return (
         <div className="bg-purple-200 min-h-screen">
             <div className="w-full text-center border-b border-black bg-gradient-to-b backdrop-blur-2xl">
-                <Link
-                    href={"/"}
-                    className=""
-                >
-                    Home
-                </Link>
+                <Home />
             </div>
 
             <div className="bg-blue-500 mx-2 mt-2 text-center">
