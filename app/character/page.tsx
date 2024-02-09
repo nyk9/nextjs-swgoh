@@ -8,7 +8,15 @@ import { IoCloseOutline } from "react-icons/io5";
 import characters from "../data/characters";
 import { useButtonVisibility, usePropertyChange, useSearchResults, useSearchTerm, useSkillChange } from "../utils/serchFilter";
 import "./styles.css";
-export default function Character() {
+
+export default  function Character() {
+    // const res = await fetch('/api',{
+    //     next: {
+    //         revalidate: 5
+    //     }
+    // });
+    // const data: string = await res.json();
+
     const { searchTerm, setSearchTerm } = useSearchTerm();
     const { selectedProperty, handlePropertyChange } = usePropertyChange();
     const { selectedSkill, handleSkillChange } = useSkillChange();
