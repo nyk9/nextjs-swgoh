@@ -212,6 +212,7 @@ import sithassassin from "@/public/charui/tex.charui_sithassassin.png";
 import sithmarauder from "@/public/charui/tex.charui_sithmarauder.png";
 import dr from "@/public/charui/tex.charui_sithrevan.png";
 import sithempiretrooper from "@/public/charui/tex.charui_sithtrooper.png";
+import stap from "@/public/charui/tex.charui_stap.png";
 import SK from "@/public/charui/tex.charui_starkiller.png";
 import t3m4 from "@/public/charui/tex.charui_t3m4.png";
 import tarfful from "@/public/charui/tex.charui_tarfful.png";
@@ -259,7 +260,6 @@ import zam from "@/public/charui/tex.charui_zamwesell.png";
 import zeb from "@/public/charui/tex.charui_zeb_s3.png";
 import zorii from "@/public/charui/tex.charui_zoriibliss.png";
 import { StaticImageData } from "next/image";
-
 
 export type Characters = {
     name: string;
@@ -420,6 +420,13 @@ const characters: Characters[] = [
         src: r2d2,
         abbreviation: "R2D2 r2d2 d2-d2",
         skill: `スタン付与  炎上  フォアサイト  アドバンテージ  ターンメーター上昇  弱体解除  回避不可`
+    }, {
+        name: "STAP",
+        property: "ダークサイト、アタッカー、ドロイド、分離主義者",
+        src: stap,
+        abbreviation: "stap STAP細胞はあります",
+        skill: `ターゲットロック  固定状態  コピー不可  解除不可  阻止不可  回避不可  全体攻撃  誘発  アシスト
+            オーバーチャージ  ターンメーター減少付与  ボーナスターン  回復  ボーナスダメージ  `
     }, {
         name: "T3-M4",
         property: "ライトサイド、サポート、ドロイド、旧共和国",
