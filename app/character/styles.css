@@ -5,3 +5,7 @@
 body {
     font-family: 'UD ShinGo NT';
 }
+
+.closeline :hover {
+    color: red;
+}
