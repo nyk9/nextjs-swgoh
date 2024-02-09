@@ -1,3 +1,5 @@
+import { NextApiRequest, NextApiResponse } from "next";
+
 import sorty from "@/public/charui/tex.charui_50rt.png";
 import aaylasecura from "@/public/charui/tex.charui_aaylasecura.png";
 import gialackbar from "@/public/charui/tex.charui_ackbaradmiral.png";
@@ -2092,8 +2094,7 @@ const characters: Characters[] = [
 
 ];
 
-export default characters;
 
-// export default function handler( req: NextApiRequest, res: NextApiResponse<Characters[]>){
-//     res.status(200).json(characters)
-// }
+export default function handler(req: NextApiRequest, res:NextApiResponse) {
+    res.status(200).json(characters);
+}

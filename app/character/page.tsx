@@ -4,6 +4,7 @@ import propertyButtons from "@/features/characterlist/constants/property";
 import skillButtons from "@/features/characterlist/constants/skillEffect";
 import Image from "next/image";
 import React from "react";
+import { IoCloseOutline } from "react-icons/io5";
 import characters from "../data/characters";
 import { useButtonVisibility, usePropertyChange, useSearchResults, useSearchTerm, useSkillChange } from "../utils/serchFilter";
 import "./styles.css";
@@ -12,16 +13,19 @@ export default function Character() {
     const { selectedProperty, handlePropertyChange } = usePropertyChange();
     const { selectedSkill, handleSkillChange } = useSkillChange();
     const searchResults = useSearchResults(characters, searchTerm, selectedProperty, selectedSkill);
-    const { isButtonVisibleAttribute, isButtonVisibleSkill, toggleButtonVisibilityAttribute, toggleButtonVisibilitySkill } = useButtonVisibility();
+    const { isButtonVisibleAttribute, toggleButtonVisibilityAttribute,
+        isButtonVisibleSkill, toggleButtonVisibilitySkill,
+        isOpen, toggleButtonOpen
+    } = useButtonVisibility();
 
     const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(e.target.value);
     };
 
     return (
-        <div className="bg-neutral-700 min-h-screen">
+        <div className="relative bg-neutral-700 min-h-screen ">
             <Home />
-            <div>
+            <div className="">
                 <div className="flex flex-wrap items-center">
                     <input
                         type="text"
@@ -30,81 +34,129 @@ export default function Character() {
                         value={searchTerm}
                         onChange={handleTextChange}
                     />
-                    <button onClick={toggleButtonVisibilityAttribute} className="border m-1 px-1 sm:mt-20 lg:mt-1 w-full md:w-1/4 xl:py-2 bg-purple-400">フィルター：属性</button>
-                    <button onClick={toggleButtonVisibilitySkill} className="border m-1 px-1 md:mt-20 lg:mt-1 w-full md:w-1/4 xl:py-2 bg-orange-300">フィルター：スキル効果</button>
+                    <button
+                        onClick={toggleButtonOpen}
+                        className="border m-1 px-1 sm:mt-20 lg:mt-1 w-full md:w-1/4 xl:py-2 bg-green-400"
+                    >
+                        フィルター
+                    </button>
+
                 </div>
-                {!isButtonVisibleAttribute && (
-                    <div className="border mt-2 m-1 h-20 bg-purple-400 overflow-y-auto">
-                        <input
-                            type="button"
-                            onClick={() => handlePropertyChange('ライトサイド')}
-                            value={'ライトサイド'}
-                            className="m-1 border border-2 text-blue-700 bg-indigo-300"
-                        />
-                        <input
-                            type="button"
-                            onClick={() => handlePropertyChange('ダークサイド')}
-                            value={'ダークサイド'}
-                            className="m-1 border-2 text-red-700 bg-indigo-300"
-                        />
-                        <input
-                            type="button"
-                            onClick={() => handlePropertyChange('ニュートラル')}
-                            value={'ニュートラル'}
-                            className="m-1 border-2 bg-indigo-300"
-                        /> <br />
-                        <input
-                            type="button"
-                            onClick={() => handlePropertyChange('リーダー')}
-                            value={'リーダー'}
-                            className="m-1 border bg-indigo-300"
-                        /> <br />
-                        <input
-                            type="button"
-                            onClick={() => handlePropertyChange('アタッカー')}
-                            value={'アタッカー'}
-                            className="m-1 border text-green-300 bg-indigo-300"
-                        />
-                        <input
-                            type="button"
-                            onClick={() => handlePropertyChange('サポート')}
-                            value={'サポート'}
-                            className="m-1 border text-green-300 bg-indigo-300"
-                        />
-                        <input
-                            type="button"
-                            onClick={() => handlePropertyChange('タンク')}
-                            value={'タンク'}
-                            className="m-1 border text-green-300 bg-indigo-300"
-                        />
-                        <input
-                            type="button"
-                            onClick={() => handlePropertyChange('ヒーラー')}
-                            value={'ヒーラー'}
-                            className="m-1 border text-green-300 bg-indigo-300"
-                        /> <br />
-                        {propertyButtons.map((property, index) => (
-                            <input
-                                key={index}
-                                type="button"
-                                onClick={() => handlePropertyChange(property)}
-                                value={property}
-                                className="border m-1 bg-indigo-300"
-                            />
-                        ))}
-                    </div>
-                )}
-                {!isButtonVisibleSkill && (
-                    <div className="center border mt-2 m-1 p-1 h-20 bg-orange-300 overflow-y-auto ">
-                        {skillButtons.map((property, index) => (
-                            <input
-                                key={index}
-                                type="button"
-                                onClick={() => handleSkillChange(property)}
-                                value={property}
-                                className="border m-1 w-4/5 md:w-1/3 bg-indigo-300"
-                            />
-                        ))}
+                {!isOpen && (
+                    <div
+                        className="absolute top-0 left-0 h-full w-full bg-gray-900 bg-opacity-50"
+                    >
+                        <button
+                            onClick={toggleButtonOpen}
+                            className="absolute top-0 right-3 border m-1 bg-red-400 hover:bg-white closeline"
+                        >
+                            <IoCloseOutline />
+                        </button>
+
+                        <div className="flex justify-center items-center ">
+                            <div className="">
+                                <div className="flexd border h-12 bg-gray-600 ">
+                                    <button
+                                        onClick={toggleButtonVisibilityAttribute}
+                                        className="border m-1 px-1 w-[1/2-1] xl:py-2 bg-purple-400"
+                                    >
+                                        属性
+                                    </button>
+                                    <button
+                                        onClick={toggleButtonVisibilitySkill}
+                                        className="border m-1 px-1 w-[1/2-1] xl:py-2 bg-orange-300"
+                                    >
+                                        スキル効果
+                                    </button>
+                                </div>
+                                <div className="h-80 overflow-y-auto overflow-x-auto">
+                                    {isButtonVisibleAttribute && (
+                                        <div className="">
+                                            <div className="flex justify-center">
+                                                <div className="grid grid-cols-2 border w-[40rem] px-auto bg-purple-400 overflow-y-auto">
+                                                    <input
+                                                        type="button"
+                                                        onClick={() => handlePropertyChange('ライトサイド')}
+                                                        value={'ライトサイド'}
+                                                        className="m-1 border border-2 text-blue-700 bg-indigo-300"
+                                                    />
+                                                    <input
+                                                        type="button"
+                                                        onClick={() => handlePropertyChange('ダークサイド')}
+                                                        value={'ダークサイド'}
+                                                        className="m-1 border-2 text-red-700 bg-indigo-300"
+                                                    />
+                                                    <input
+                                                        type="button"
+                                                        onClick={() => handlePropertyChange('ニュートラル')}
+                                                        value={'ニュートラル'}
+                                                        className="m-1 border-2 bg-indigo-300"
+                                                    />
+                                                    <input
+                                                        type="button"
+                                                        onClick={() => handlePropertyChange('リーダー')}
+                                                        value={'リーダー'}
+                                                        className="m-1 border bg-indigo-300"
+                                                    />
+                                                    <input
+                                                        type="button"
+                                                        onClick={() => handlePropertyChange('アタッカー')}
+                                                        value={'アタッカー'}
+                                                        className="m-1 border text-green-300 bg-indigo-300"
+                                                    />
+                                                    <input
+                                                        type="button"
+                                                        onClick={() => handlePropertyChange('サポート')}
+                                                        value={'サポート'}
+                                                        className="m-1 border text-green-300 bg-indigo-300"
+                                                    />
+                                                    <input
+                                                        type="button"
+                                                        onClick={() => handlePropertyChange('タンク')}
+                                                        value={'タンク'}
+                                                        className="m-1 border text-green-300 bg-indigo-300"
+                                                    />
+                                                    <input
+                                                        type="button"
+                                                        onClick={() => handlePropertyChange('ヒーラー')}
+                                                        value={'ヒーラー'}
+                                                        className="m-1 border text-green-300 bg-indigo-300"
+                                                    />
+                                                    {propertyButtons.map((property, index) => (
+                                                        <input
+                                                            key={index}
+                                                            type="button"
+                                                            onClick={() => handlePropertyChange(property)}
+                                                            value={property}
+                                                            className="border m-1 bg-indigo-300"
+                                                        />
+                                                    ))}
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
+                                    {isButtonVisibleSkill && (
+                                        <div className="justify-center ">
+                                            <div
+                                                className="grid border w-[40rem] px-auto grid-cols-2 bg-orange-300 overflow-y-auto"
+                                            >
+                                                {skillButtons.map((property, index) => (
+                                                    <input
+                                                        key={index}
+                                                        type="button"
+                                                        onClick={() => handleSkillChange(property)}
+                                                        value={property}
+                                                        className="grid border m-1 bg-indigo-300"
+                                                    />
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 )}
             </div>

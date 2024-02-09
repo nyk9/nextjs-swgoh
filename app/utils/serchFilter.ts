@@ -17,7 +17,7 @@ export const useSearchResults = (char: Characters[], searchTerm: string, selecte
                 || new RegExp(searchTerm, 'i').test(item.abbreviation)) &&
             (selectedProperty.length === 0 || selectedProperty.every(prop => item.property.includes(prop))) &&
             (selectedSkill.length === 0 || selectedSkill.every(skill => item.skill.includes(skill))
-        ));
+            ));
         setSearchResults(results);
     }, [char, searchTerm, selectedProperty, selectedSkill]);
 
@@ -56,15 +56,31 @@ export const useSkillChange = () => {
 
 export const useButtonVisibility = () => {
     const [isButtonVisibleAttribute, setIsButtonVisibleAttribute] = useState(true);
-    const [isButtonVisibleSkill, setIsButtonVisibleSkill] = useState(true);
+    const [isButtonVisibleSkill, setIsButtonVisibleSkill] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const toggleButtonVisibilityAttribute = () => {
-        setIsButtonVisibleAttribute(!isButtonVisibleAttribute);
+        setIsButtonVisibleAttribute(true);
+        setIsButtonVisibleSkill(false);
     };
 
     const toggleButtonVisibilitySkill = () => {
-        setIsButtonVisibleSkill(!isButtonVisibleSkill);
+        setIsButtonVisibleSkill(true);
+        setIsButtonVisibleAttribute(false);
+    };
+    const toggleButtonOpen = () => {
+        setIsOpen(!isOpen);
+            if (isOpen){
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+
     };
 
-    return { isButtonVisibleAttribute, isButtonVisibleSkill, toggleButtonVisibilityAttribute, toggleButtonVisibilitySkill };
+    return {
+        isButtonVisibleAttribute, toggleButtonVisibilityAttribute,
+        isButtonVisibleSkill, toggleButtonVisibilitySkill,
+        isOpen, toggleButtonOpen
+    };
 };
