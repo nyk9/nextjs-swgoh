@@ -8,7 +8,9 @@ import { IoCloseOutline } from "react-icons/io5";
 import characters from "../data/characters";
 import { useButtonVisibility, usePropertyChange, useSearchResults, useSearchTerm, useSkillChange } from "../utils/serchFilter";
 import "./styles.css";
+
 export default function Character() {
+
     const { searchTerm, setSearchTerm } = useSearchTerm();
     const { selectedProperty, handlePropertyChange } = usePropertyChange();
     const { selectedSkill, handleSkillChange } = useSkillChange();
@@ -69,11 +71,11 @@ export default function Character() {
                                         スキル効果
                                     </button>
                                 </div>
-                                <div className="h-80 overflow-y-auto overflow-x-auto">
+                                <div className="text-xs h-80 w-full overflow-y-auto overflow-x-auto">
                                     {isButtonVisibleAttribute && (
                                         <div className="">
                                             <div className="flex justify-center">
-                                                <div className="grid grid-cols-2 border w-[40rem] px-auto bg-purple-400 overflow-y-auto">
+                                                <div className="grid grid-cols-2 border md:w-[40rem] px-auto mx-auto bg-purple-400 overflow-y-auto">
                                                     <input
                                                         type="button"
                                                         onClick={() => handlePropertyChange('ライトサイド')}
@@ -139,7 +141,7 @@ export default function Character() {
                                     {isButtonVisibleSkill && (
                                         <div className="justify-center ">
                                             <div
-                                                className="grid border w-[40rem] px-auto grid-cols-2 bg-orange-300 overflow-y-auto"
+                                                className="grid border md:w-[40rem] px-auto grid-cols-2 bg-orange-300 overflow-y-auto"
                                             >
                                                 {skillButtons.map((property, index) => (
                                                     <input

@@ -1,4 +1,4 @@
-// serchFilter.ts
+"use client"
 
 import { useEffect, useState } from "react";
 import { Characters } from "../data/characters";
