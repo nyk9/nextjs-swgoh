@@ -3,6 +3,7 @@ import Home from "@/components/layouts/header/header";
 import propertyButtons from "@/features/characterlist/constants/property";
 import skillButtons from "@/features/characterlist/constants/skillEffect";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import characters from "../data/characters";
@@ -168,16 +169,23 @@ export default function Character() {
             <div className="mb-32 grid text-center lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left p-4">
                 {searchResults.map((char) => {
                     return (
-                        <div
+                        <Link
                             className="border border-gray-300 rounded m-1 bg-black"
                             key={`${char.abbreviation}-${char.skill}`}
+                            href={`${char.url}`}
                         >
                             <h1 className="text-2xl text-center text-white">{char.name}</h1>
                             <div className="flex grid">
-                                <Image alt={char.name} src={char.src} className="group" />
+                                <Image
+                                    alt={char.name}
+                                    src={char.src}
+                                    className="group"
+                                    width={75}
+                                    height={75}
+                                />
                                 <small className="group">{char.property}</small>
                             </div>
-                        </div>
+                        </Link>
                     );
                 })}
             </div>
