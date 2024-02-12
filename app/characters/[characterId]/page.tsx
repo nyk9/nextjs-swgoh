@@ -6,7 +6,7 @@ export default function characterDetail({ params }: {
 }) {
     return (
         <div
-            className="pb-1 min-h-screen w-full bg-neutral-700"
+            className="pb-1 min-h-screen w-full bg-neutral-500"
         >
             <Home />
             <div className="pt-20 lg:pt-0 mx-1">
