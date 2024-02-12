@@ -747,7 +747,7 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_globiwan.png',
         abbreviation: "JMK jmk Jedi Master Kenobi jedi master kenobi GL Hello There",
         skill: `スキルブロック付与 防御突破力上昇  無防備  回復無効  アシスト  回復  フォアサイト  抵抗力上昇  プロテクション上昇  ダメージ耐性  クールダウンリセット  リーダー：マスター上昇  リーダー：スピード上昇  リーダー：最大HP上昇  挑発無視  耐性発揮  挑発付与 弱体解除  有利  ステルス解除  マスター上昇  HP割合ダメージ軽減  大ダメージ軽減  プロテクション無効化  味方全体-弱体解除  カウンター  スタン無効化 `,
-        url: '/characters/'
+        url: '/characters/Jedi-Master-Kenobi'
     }, {
         name: "ジェダイ・マスター・ルーク・スカイウォーカー",
         property: "銀河の伝説、ライトサイド、タンク、リーダー、ジェダイ",
