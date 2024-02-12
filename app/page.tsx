@@ -34,7 +34,7 @@ export default function Home() {
         </a>
 
         <a
-          href='/character'
+          href='/characters'
           className='group rounded-lg border border-transparent px-2 py-4 mx-5 mt-8 md:mt-5 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-300'
           // target='_blank'
           rel='noopener noreferrer'
