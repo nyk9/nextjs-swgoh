@@ -14,13 +14,20 @@ export type Abilities = {
 export type characterAbilities = {
     id: string,
     character_name: string,
+    character_image: string,
     ability: Abilities[]
 }
 
 const characterAbilities: characterAbilities[] = [
     {
+        id: '',
+        character_name: '',
+        character_image: '',
+        ability: []
+    },{
         id: 'General-Kenobi',
         character_name: "ケノービ将軍",
+        character_image: '/charui/tex.charui_obiwangeneral.png',
         ability: [
             {
                 ability_type: '通常攻撃',
@@ -85,9 +92,9 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            }
-        ]
-    }
+            },
+        ],
+    },
 ]
 
 export default characterAbilities;

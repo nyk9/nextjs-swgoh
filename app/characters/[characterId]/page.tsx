@@ -1,24 +1,17 @@
-// import CharacterSkills from "@/components/elements/characterSkills/characterSkills";
+import CharacterSkills from "@/components/elements/characterSkills/characterSkills";
 import Home from "@/components/layouts/header/header";
-import Image from "next/image";
 
 export default function characterDetail({ params }: {
-    params: { characterId: number }
+    params: { characterId: string }
 }) {
     return (
         <div
-            className="min-h-screen bg-neutral-700"
+            className="pb-1 min-h-screen w-full bg-neutral-700"
         >
             <Home />
-            <h1 className="pt-20">ダイナミックルーティング</h1>
-            <p>URL: https://swgoh4jp.com/characters/{params.characterId}</p>
-            <Image
-                alt="a"
-                src='/charui/tex.charui_obiwangeneral.png'
-                width={100}
-                height={100}
-            />
-            {/* <CharacterSkills /> */}
+            <div className="pt-20 lg:pt-0 mx-1">
+                <CharacterSkills url={params.characterId} />
+            </div>
         </div>
     );
 };
