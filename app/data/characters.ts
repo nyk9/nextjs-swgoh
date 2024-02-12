@@ -411,6 +411,13 @@ const characters: Characters[] = [
         skill: ` 時間経過ダメージ  攻撃力上昇  全体攻撃  ターンメーター上昇  回復  リーダー：有効性上昇  リーダー：抵抗力上昇  アシスト  クールダウンリセット `,
         url: '/characters/'
     }, {
+        name: "ガーモリアン・ガード",
+        property: "ダークサイド、タンク、ハット・カルテル、ならず者",
+        src: '/charui/tex.charui_gamorreanguard.png',
+        abbreviation: "Gamorrean Guard gamorrean guard",
+        skill: `時間経過ダメージ  挑発付与 報復効果  エクスポーズ  ターンメーター減少付与  防御力上昇  クリティカル回避力上昇  回復  プロテクション上昇  抵抗力上昇  ダメージ耐性  アシスト `,
+        url: '/characters/'
+    }, {
         name: "カーラ・デューン",
         property: "ライトサイド、タンク、反乱軍、反乱軍ファイター、ならず者",
         src: '/charui/tex.charui_caradune.png',
@@ -444,13 +451,6 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_kyloren_tros.png',
         abbreviation: "SLKR slkr GL Galactic Legends galactic legends Supreme Leader Kylo Ren supreme leader kylo ren",
         skill: `強化無効  アドバンテージ  サイフォン  スタン付与  マスター上昇  リーダー：スピード上昇  リーダー：クリティカルダメージ上昇  挑発付与 ターンメーター上昇  復活不可 全体攻撃  スタン無効化 `,
-        url: '/characters/'
-    }, {
-        name: "ガ―モリアン・ガード",
-        property: "ダークサイド、タンク、ハット・カルテル、ならず者",
-        src: '',
-        abbreviation: "Gamorrean Guard gamorrean guard",
-        skill: `時間経過ダメージ  挑発付与 報復効果  エクスポーズ  ターンメーター減少付与  防御力上昇  クリティカル回避力上昇  回復  プロテクション上昇  抵抗力上昇  ダメージ耐性  アシスト `,
         url: '/characters/'
     }, {
         name: `ガラゼブ・ "ゼブ" ・オレリオス`,

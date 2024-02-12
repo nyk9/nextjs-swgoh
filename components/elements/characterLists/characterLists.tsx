@@ -39,7 +39,7 @@ const CharacterLists = (props: {
     );
 }
 
-export default CharacterLists;
+// export default CharacterLists;
 
 // export async function Name() {
 //     const res = await fetch('https://swgoh4jp.com/api/characters', {
