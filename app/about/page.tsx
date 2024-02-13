@@ -3,7 +3,7 @@
 //         revalidate: 600,
 //     };
 // } 
-import Home from "@/components/layouts/header/header";
+import Home from "@/components/layouts/header/Home";
 
 export default function About() {
     return (

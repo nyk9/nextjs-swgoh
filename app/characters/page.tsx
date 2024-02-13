@@ -1,5 +1,5 @@
 "use client"
-import Home from "@/components/layouts/header/header";
+import Home from "@/components/layouts/header/Home";
 import propertyButtons from "@/features/characterlist/constants/property";
 import skillButtons from "@/features/characterlist/constants/skillEffect";
 import Image from "next/image";

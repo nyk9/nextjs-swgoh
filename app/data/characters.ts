@@ -719,7 +719,7 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_jediknightcal.png',
         abbreviation: "JKCK JKC jkck jkc Jedi Knight Cal Kestis jedi knight cal kestis",
         skill: `強化解除  ボーナスターン  挑発無視  スタンス - ダブルブレード  向こう見ず  スピード低下  スタン付与  アーマー破壊  めまい  全体攻撃  回復  プロテクション上昇  スタンス - デュアルブレード  弱体解除  味方全体-弱体解除  アシスト  切り返し  報復効果  攻撃力低下  スタンス - クロスガード  即戦闘不能  スキルブロック付与 よろめき  フォースの酔い  防御突破力上昇  プロテクション無効化  リーダー：カウンター率上昇  リーダー：防御力上昇  リーダー：攻撃力上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：防御力上昇  ターンメーター上昇  フレンジー  スキルブロック無効化  恐怖無効化  スタン無効化  クールダウン操作無効化  ダメージ耐性 `,
-        url: '/characters/'
+        url: '/characters/Jedi-Knight-Cal-Kestis'
     }, {
         name: "ジェダイ・ナイト・ガーディアン",
         property: "ライトサイド、タンク、銀河共和国、ジェダイ",
@@ -733,7 +733,7 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_luke_jediknight.png',
         abbreviation: "JKL jkl Jedi Knight Luke Skywalker jedi knight kuke skywalker",
         skill: `強化解除  固定ダメージ  最大プロテクション上昇  カウンター不可  アシスト  暗闇  ジェダイの意志  カウンター  スピード上昇  無防備  スタン付与  全体攻撃  最大HP減少  最大プロテクション減少  リーダー：クリティカル率上昇  リーダー：クリティカルダメージ上昇  スピード減少  英雄の覚醒  味方全体-弱体解除  弱体解除  回復  ターンメーター上昇  スタン無効化  恐怖無効化  `,
-        url: '/characters/'
+        url: '/characters/Jedi-Knight-Luke-Skywalker/'
     }, {
         name: "ジェダイ・ナイト・レヴァン",
         property: "ライトサイド・アタッカー、リーダー、ジェダイ、旧共和国",

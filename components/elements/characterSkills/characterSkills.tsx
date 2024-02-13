@@ -11,7 +11,7 @@ export default async function CharacterSkills(params: {
     });
     // const res = await fetch('http://localhost:3000/api/characterAbilities', {
     //     next: {
-    //         revalidate: 3,
+    //         revalidate: 10,
     //     },
     // });
     if (!res.ok) {
@@ -39,7 +39,7 @@ export default async function CharacterSkills(params: {
         }
         return (
             <>
-                <h1 className="grid grid-cols-4 text-2xl">
+                <h1 className="grid grid-cols-2 text-2xl">
                     {data[abilityIndex].character_name}
                     <Image
                         alt={data[abilityIndex].character_name}
