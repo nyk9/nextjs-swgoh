@@ -26,7 +26,7 @@ export default function Character() {
     };
 
     return (
-        <div className="relative bg-neutral-700 min-h-screen ">
+        <div className="relative bg-neutral-500 min-h-screen ">
             <Home />
             <div className="">
                 <div className="flex flex-wrap items-center">
@@ -170,7 +170,7 @@ export default function Character() {
                 {searchResults.map((char) => {
                     return (
                         <Link
-                            className="border border-gray-300 rounded m-1 bg-black"
+                            className="border border-gray-300 rounded m-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
                             key={`${char.abbreviation}-${char.skill}`}
                             href={`${char.url}`}
                         >

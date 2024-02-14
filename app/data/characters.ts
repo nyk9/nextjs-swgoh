@@ -15,35 +15,35 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_triplezero.png',
         abbreviation: "卵  タマゴ  000  triple-zero triple zero Triple Zero",
         skill: `全体攻撃  カウンター  解除  ターンメーター上昇  攻撃力上昇  クールダウン減少  ショック  スタン付与  ターゲットロック  拷問`,
-        url: '/'
+        url: '/characters/0-0-0'
     }, {
         name: "50R-T",
         property: "ライトサイド、サポート、リーダー、ドロイド、旧共和国",
         src: '/charui/tex.charui_50rt.png',
         abbreviation: "shorty Shorty 50RT Sortie",
         skill: `アドバンテージ  全体攻撃  カウンター  ダメージ無効  防御力減少  防御力上昇  強化解除  弱体解除  フォアサイト  ターンメーター上昇  ヘルススティール上昇  即戦闘不能耐性  リーダー：クリティカル率上昇  リーダー：防御力上昇  リーダー：最大HP上昇  リーダー：スピード上昇  リーダー：フォアサイト  リーダー：プロテクション上昇  攻撃力上昇  プロテクション上昇  ターンメーター減少付与 蘇生  スピード低下  スピード上昇  ステルス  ターゲットロック  抵抗力上昇 `,
-        url: '/characters/'
+        url: '/characters/50R-T'
     }, {
         name: "ARCトルーパー",
         property: "ライトサイド、アタッカー、第501軍団、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_trooperclone_arc.png',
         abbreviation: "ARC アーク",
         skill: `アシスト  カウンター  招集  指令  回避不可  強化解除  固定ダメージ  `,
-        url: '/characters/'
+        url: '/characters/ARC-Trooper'
     }, {
         name: "B1バトル・ドロイド",
         property: "ダークサイド、アタッカー、ドロイド、分離主義者",
         src: '/charui/tex.charui_b1.png',
         abbreviation: "b1 ",
         skill: `全体攻撃  アシスト  弱体解除 ターゲットロック  ターンメーター上昇 回復  ドロイド大隊  時間経過ダメージ無効化  `,
-        url: '/characters/'
+        url: '/characters/B1-Battle-Droid'
     }, {
         name: "B2スーパー・バトル・ドロイド",
         property: "ダークサイド、タンク、ドロイド、分離主義者",
         src: '/charui/tex.charui_b2.png',
         abbreviation: "b2 ",
         skill: `全体攻撃  強化無効  強化解除  クリティカルダメージ低下  敵全体-強化解除  ターンメーター上昇  クールダウン減少  ターゲットロック `,
-        url: '/characters/'
+        url: '/characters/B2-Super-Battle-Droid'
     }, {
         name: "BB-8",
         property: "ライトサイド、サポート、ドロイド、レジスタンス",
