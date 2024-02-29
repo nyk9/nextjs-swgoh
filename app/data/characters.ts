@@ -71,14 +71,14 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_chewbacca_c3po.png',
         abbreviation: "3Bacca 3bacca Chewpio 3バカ ３バカ 3バッカ チューピオ",
         skill: `アドバンテージ  全体攻撃  アシスト  暗闇  カウンター  強化解除  敵全体-強化解除  弱体解除  回避力低下  復活  `,
-        url: '/characters/'
+        url: '/characters/Threepio-Chewie'
     }, {
         name: `CC-2224 "コーディ"`,
         property: "ライトサイド、アタッカー、リーダー、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_trooperclone_cody.png',
         abbreviation: "Cody cody",
         skill: `アシスト  ターンメーター上昇  リーダー：クリティカル率上昇  リーダー：防御力上昇  回復  クールダウン減少  スタン付与 `,
-        url: '/characters/'
+        url: '/characters/CC-2224-Cody'
     }, {
         name: `CT-21-0408 "エコー"`,
         property: "ライトサイド、サポート、第501軍団、クローン・トルーパー、銀河共和国",
