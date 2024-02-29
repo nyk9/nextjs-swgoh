@@ -10,9 +10,7 @@ export default async function CharacterSkills(params: {
         },
     });
     // const res = await fetch('http://localhost:3000/api/characterAbilities', {
-    //     next: {
-    //         revalidate: 1,
-    //     },
+    //     cache: 'no-cache'
     // });
     if (!res.ok) {
         throw new Error('Error!!!');
@@ -55,6 +53,13 @@ export default async function CharacterSkills(params: {
                             className="border border-blue-300 mt-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
                         >
                             <h1 className="flex text-2xl text-sky-300">
+                                <Image
+                                    src={item.image}
+                                    alt={item.name_jp}
+                                    width={50}
+                                    height={50}
+                                    className="object-cover px-1"
+                                />
                                 {item.name_jp}:
                                 <span className="text-sky-700">
                                     ({item.ability_type})
@@ -71,13 +76,6 @@ export default async function CharacterSkills(params: {
                                 {/* {item.is_ultimate && (
                                     <p>ultimate</p>
                                 )} */}
-                                <Image
-                                    src={item.image}
-                                    alt={item.name_jp}
-                                    width={50}
-                                    height={50}
-                                    className="object-cover px-1"
-                                />
                             </h1>
                             <div className="flex">
                                 <p className="whitespace-pre-wrap px-1">{item.description_jp}</p>

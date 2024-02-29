@@ -50,21 +50,21 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_bb8.png',
         abbreviation: "bb-8 bb8",
         skill: `アドバンテージ  アシスト  カウンター  クリティカル率上昇  クリティカルダメージ上昇  めまい付与  弱体解除  味方全体-弱体解除  エクスポーズ  フォアサイト  ターンメーター上昇  攻撃力上昇  スピード上昇  挑発付与  抵抗力低下 `,
-        url: '/characters/'
+        url: '/characters/BB-8'
     }, {
         name: "BT-1",
         property: "ダークサイド、アタッカー、ドロイド、ならず者",
         src: '/charui/tex.charui_bt1.png',
         abbreviation: "BT1 bt-1",
         skill: `全体攻撃  アシスト  炎上  時間経過ダメージ  エクスポーズ  ターンメーター上昇  ターゲットロック  クールダウンリセット  ボーナスターン  `,
-        url: '/characters/'
+        url: '/characters/BT-1'
     }, {
         name: "C-3PO",
         property: "ライトサイド、サポート、ドロイド、銀河共和国、反乱軍、レジスタンス",
         src: '/charui/tex.charui_c3p0.png',
         abbreviation: "3PO c3po",
         skill: `アシスト  カウンター不可  防御力低下  エクスポーズ  ターンメーター上昇  ステルス  攻撃力低下  有効性上昇  プロテクション上昇  クールダウン減少 クールダウンリセット  通訳  逃走  混乱状態  カウンター不可  ボーナスターンメーター不可  クールダウン増加  耐性発揮不可  `,
-        url: '/characters/'
+        url: '/characters/C-3PO'
     }, {
         name: "C-3PO&チューイ",
         property: "ライトサイド、サポート、リーダー、ドロイド、旧共和国",
@@ -1514,6 +1514,13 @@ const characters: Characters[] = [
         skill: `スキルブロック付与 弱体解除  味方全体-弱体解除  ターンメーター上昇  攻撃力上昇  アシスト  リーダー：攻撃力上昇  回復
             ターンメーター減少付与 ジオノージアン・ブルード  コピー不可  解除不可  阻止不可  復活 `,
         url: '/characters/'
+    }, {
+        name: "ボス・ナス",
+        property: 'ライトサイド、サポート、リーダー、グンガン',
+        src: '/charui/tex.charui_bossnass.png',
+        abbreviation: 'Boss Nass',
+        skill: `攻撃力低下  アシスト  弱体解除  ターンメーター上昇  報復効果  回復  シールド発生装置  クリティカルダメージ上昇  挑発  スピード上昇   敵全体-強化解除  ターンメーター減少  エクスポーズ  防御力低下  時間経過ダメージ  回復無効  リーダー：最大プロテクション上昇  リーダー：攻撃力上昇  リーダー：スピード上昇  スピード低下  ボーナスプロテクション  リチャージ  召集  時間経過プロテクション  固定ダメージ  クールダウン減少  プラズマシールド  `,
+        url: '/characters/Boss-Nass'
     }, {
         name: "ボスク",
         property: "ダークサイド、タンク、リーダー、賞金稼ぎ、ならず者",

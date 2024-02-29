@@ -292,7 +292,157 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             },
         ],
-    },{
+    }, {
+        id: 'BB-8',
+        character_name: 'BB-8',
+        character_image: '/charui/tex.charui_bb8.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'アーク・ウェルダー',
+                name_eng: 'Arc Welder',
+                image: '/ability/tex.ability_bb8_tfa_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間抵抗力を低下させる。ターゲットが既に抵抗力を低下させられている場合、2ターンの間めまい状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '秘匿データ転送',
+                name_eng: 'Covert Data Transfer',
+                image: '/ability/tex.ability_bb8_tfa_special01.png',
+                description_jp: `3ターンの間、ユニーク強化「機密情報」がBB-8およびこの効果を受けていないランダムな味方1体に発生する。さらに機密情報効果が発生している味方1体ごとに、BB-8のターンメーターが8%上昇する。アクティブな味方が全てドロイドの場合、BB-8が1ターンの挑発を行う。
+                
+                機密情報: 有効性が25%上昇し、他の味方が特殊スキルを使用するとそのユニットに3ターンの間機密情報効果が発生する。また、機密情報効果の発生している味方1体ごとに「イルミネート・デスティニー」のクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'イルミネート・デスティニー',
+                name_eng: 'Illuminated Destiny',
+                image: '/ability/tex.ability_bb8_tfa_special02.png',
+                description_jp: `味方全体から全ての弱体を解除し、敵全体を2ターンの間エクスポーズ状態にする。味方全体のターンメーターが80%上昇し、4 ターンの間アドバンテージが発生してクリティカル率、クリティカルダメージ、攻撃力、スピードが上昇する。味方ドロイドおよびレジスタンスのプロテクションが20%回復する。このスキルはクールダウン状態から開始し、回避できない。味方ドロイドがクリティカルヒットを決めると、このスキルのクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '危機順応',
+                name_eng: 'Roll with the Punches',
+                image: '/abilityui/tex.abilityui_passive_counterattack.png',
+                description_jp: `BB-8に80%のカウンター率が発生する。BB-8がターン外に攻撃を行うと、ランダムな味方レジスタンス1体がアシストに呼ばれる。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '自己防衛プロトコル',
+                name_eng: 'Self-Preservation Protocol',
+                image: '/abilityui/tex.abilityui_passive_foresight.png',
+                description_jp: `BB-8がダメージを受けると、50%の確率で2ターンの間フォアサイトが発生する。各遭遇開始時、BB-8がアクティブな場合、味方ドロイドのターンメーターがアクティブな味方ドロイド1体につき8%上昇する。BB-8が回避に成功すると、味方ドロイドのHPが8%、プロテクションが8%回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false,
+            },
+        ],
+    }, {
+        id: 'BT-1',
+        character_name: 'BT-1',
+        character_image: '/charui/tex.charui_bt1.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'オーバーチャージ・レーザー',
+                name_eng: 'Overcharged Lasers',
+                image: '/ability/tex.ability_bt1_basic.png',
+                description_jp: `ターゲットに物理ダメージを3回与え、2ターンの間、時間経過ダメージのスタックを発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '破壊工作',
+                name_eng: 'Agent of Destruction',
+                image: '/ability/tex.ability_bt1_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、2ターンの時間経過ダメージのスタックと1ターンのエクスポーズを発生させる。ターゲットにターゲットロックが発生している場合、炎上を与え、さらに2ターンの時間経過ダメージのスタックを発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '殺りくの相棒',
+                name_eng: 'Homicidal Counterpart',
+                image: '/abilityui/tex.abilityui_passive_homicidalcounterpart.png',
+                description_jp: `バトル開始時、味方ドロイドごとにBT-1のクリティカルダメージが10%、味方ダークサイドごとに有効性が10%、味方ならず者ごとにスピードが5上昇する。0-0-0がアクティブな味方の場合、付与スキル「すべて抹殺せよ」を得る。0-0-0が特殊スキルを使用するたび、BT-1がアシストを行う(ダメージは40%減少)。
+                
+                3対3のグランドアリーナの場合: BT-1または0-0-0は敵を倒すたび、そのクールダウンがリフレッシュされ、ターンメーターが30%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false,
+            }, {
+                ability_type: '付与スキル',
+                name_jp: 'すべて抹殺せよ',
+                name_eng: 'Kill Them All',
+                image: '/ability/tex.ability_bt1_special02.png',
+                description_jp: `敵全体に物理ダメージを与え、0-0-0をアシストに呼ぶ。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ブラストメクプロトタイプ',
+                name_eng: 'Blastomech Prototype',
+                image: '/abilityui/tex.abilityui_passive_dumpygunboy.png',
+                description_jp: `バトル開始時、BT-1の攻撃力が100%上昇する。BT-1は敵を倒すたび、付与スキル「めちゃくちゃ」とボーナスターンを得る。このボーナスターン中、BT-1は自身のスキルブロックを取り除いて「めちゃくちゃ」のみを使用できる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '付与スキル',
+                name_jp: 'めちゃくちゃ',
+                name_eng: 'Haywire',
+                image: '/ability/tex.ability_bt1_special03.png',
+                description_jp: `他のユニット全体に物理ダメージを与える(味方全体は75%軽減)。このダメージで味方や敵は戦闘不能にならない。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            },
+        ],
+    }, {
+        id: 'C-3PO',
+        character_name: 'C-3PO',
+        character_image: '/charui/tex.charui_c3p0.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'バッフリング・トリック',
+                name_eng: 'Baffling Trick',
+                image: '/ability/tex.ability_c3p0_basic.png',
+                description_jp: `C-3POは3ターンの混乱(ユニーク弱体)を発生させる(最大3回スタック可能、回避/コピー不可)。ターゲットが既に混乱状態の場合、現在のスタックの全ての持続時間が3ターンにリセットされる。ターゲットのターンメーターが6%減少し、C-3POの通訳効果のスタックごとにさらに3%減少する(詳細はプロトコル・ドロイドの通訳の説明を確認)。
+                
+                混乱 - 状態異常は、累積のスタック数によって増えていく:
+                1: 強化効果不可
+                2: カウンター、アシスト、ボーナスターンメーター不可(レイドボスと銀河の伝説: カウンター率が30%低下)
+                3: ユニットが通常スキル使用時、クールダウンを1増加させる。耐性発揮不可(レイドボスと銀河の伝説: 防御力50%低下、防御力低下はスタックしない)`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }
+        ],
+    }, {
         id: 'General-Kenobi',
         character_name: "ケノービ将軍",
         character_image: '/charui/tex.charui_obiwangeneral.png',
