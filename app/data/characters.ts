@@ -15,56 +15,56 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_triplezero.png',
         abbreviation: "卵  タマゴ  000  triple-zero triple zero Triple Zero",
         skill: `全体攻撃  カウンター  解除  ターンメーター上昇  攻撃力上昇  クールダウン減少  ショック  スタン付与  ターゲットロック  拷問`,
-        url: '/'
+        url: '/characters/0-0-0'
     }, {
         name: "50R-T",
         property: "ライトサイド、サポート、リーダー、ドロイド、旧共和国",
         src: '/charui/tex.charui_50rt.png',
         abbreviation: "shorty Shorty 50RT Sortie",
         skill: `アドバンテージ  全体攻撃  カウンター  ダメージ無効  防御力減少  防御力上昇  強化解除  弱体解除  フォアサイト  ターンメーター上昇  ヘルススティール上昇  即戦闘不能耐性  リーダー：クリティカル率上昇  リーダー：防御力上昇  リーダー：最大HP上昇  リーダー：スピード上昇  リーダー：フォアサイト  リーダー：プロテクション上昇  攻撃力上昇  プロテクション上昇  ターンメーター減少付与 蘇生  スピード低下  スピード上昇  ステルス  ターゲットロック  抵抗力上昇 `,
-        url: '/characters/'
+        url: '/characters/50R-T'
     }, {
         name: "ARCトルーパー",
         property: "ライトサイド、アタッカー、第501軍団、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_trooperclone_arc.png',
         abbreviation: "ARC アーク",
         skill: `アシスト  カウンター  招集  指令  回避不可  強化解除  固定ダメージ  `,
-        url: '/characters/'
+        url: '/characters/ARC-Trooper'
     }, {
         name: "B1バトル・ドロイド",
         property: "ダークサイド、アタッカー、ドロイド、分離主義者",
         src: '/charui/tex.charui_b1.png',
         abbreviation: "b1 ",
         skill: `全体攻撃  アシスト  弱体解除 ターゲットロック  ターンメーター上昇 回復  ドロイド大隊  時間経過ダメージ無効化  `,
-        url: '/characters/'
+        url: '/characters/B1-Battle-Droid'
     }, {
         name: "B2スーパー・バトル・ドロイド",
         property: "ダークサイド、タンク、ドロイド、分離主義者",
         src: '/charui/tex.charui_b2.png',
         abbreviation: "b2 ",
         skill: `全体攻撃  強化無効  強化解除  クリティカルダメージ低下  敵全体-強化解除  ターンメーター上昇  クールダウン減少  ターゲットロック `,
-        url: '/characters/'
+        url: '/characters/B2-Super-Battle-Droid'
     }, {
         name: "BB-8",
         property: "ライトサイド、サポート、ドロイド、レジスタンス",
         src: '/charui/tex.charui_bb8.png',
         abbreviation: "bb-8 bb8",
         skill: `アドバンテージ  アシスト  カウンター  クリティカル率上昇  クリティカルダメージ上昇  めまい付与  弱体解除  味方全体-弱体解除  エクスポーズ  フォアサイト  ターンメーター上昇  攻撃力上昇  スピード上昇  挑発付与  抵抗力低下 `,
-        url: '/characters/'
+        url: '/characters/BB-8'
     }, {
         name: "BT-1",
         property: "ダークサイド、アタッカー、ドロイド、ならず者",
         src: '/charui/tex.charui_bt1.png',
         abbreviation: "BT1 bt-1",
         skill: `全体攻撃  アシスト  炎上  時間経過ダメージ  エクスポーズ  ターンメーター上昇  ターゲットロック  クールダウンリセット  ボーナスターン  `,
-        url: '/characters/'
+        url: '/characters/BT-1'
     }, {
         name: "C-3PO",
         property: "ライトサイド、サポート、ドロイド、銀河共和国、反乱軍、レジスタンス",
         src: '/charui/tex.charui_c3p0.png',
         abbreviation: "3PO c3po",
         skill: `アシスト  カウンター不可  防御力低下  エクスポーズ  ターンメーター上昇  ステルス  攻撃力低下  有効性上昇  プロテクション上昇  クールダウン減少 クールダウンリセット  通訳  逃走  混乱状態  カウンター不可  ボーナスターンメーター不可  クールダウン増加  耐性発揮不可  `,
-        url: '/characters/'
+        url: '/characters/C-3PO'
     }, {
         name: "C-3PO&チューイ",
         property: "ライトサイド、サポート、リーダー、ドロイド、旧共和国",
@@ -719,7 +719,7 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_jediknightcal.png',
         abbreviation: "JKCK JKC jkck jkc Jedi Knight Cal Kestis jedi knight cal kestis",
         skill: `強化解除  ボーナスターン  挑発無視  スタンス - ダブルブレード  向こう見ず  スピード低下  スタン付与  アーマー破壊  めまい  全体攻撃  回復  プロテクション上昇  スタンス - デュアルブレード  弱体解除  味方全体-弱体解除  アシスト  切り返し  報復効果  攻撃力低下  スタンス - クロスガード  即戦闘不能  スキルブロック付与 よろめき  フォースの酔い  防御突破力上昇  プロテクション無効化  リーダー：カウンター率上昇  リーダー：防御力上昇  リーダー：攻撃力上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：防御力上昇  ターンメーター上昇  フレンジー  スキルブロック無効化  恐怖無効化  スタン無効化  クールダウン操作無効化  ダメージ耐性 `,
-        url: '/characters/'
+        url: '/characters/Jedi-Knight-Cal-Kestis'
     }, {
         name: "ジェダイ・ナイト・ガーディアン",
         property: "ライトサイド、タンク、銀河共和国、ジェダイ",
@@ -733,7 +733,7 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_luke_jediknight.png',
         abbreviation: "JKL jkl Jedi Knight Luke Skywalker jedi knight kuke skywalker",
         skill: `強化解除  固定ダメージ  最大プロテクション上昇  カウンター不可  アシスト  暗闇  ジェダイの意志  カウンター  スピード上昇  無防備  スタン付与  全体攻撃  最大HP減少  最大プロテクション減少  リーダー：クリティカル率上昇  リーダー：クリティカルダメージ上昇  スピード減少  英雄の覚醒  味方全体-弱体解除  弱体解除  回復  ターンメーター上昇  スタン無効化  恐怖無効化  `,
-        url: '/characters/'
+        url: '/characters/Jedi-Knight-Luke-Skywalker/'
     }, {
         name: "ジェダイ・ナイト・レヴァン",
         property: "ライトサイド・アタッカー、リーダー、ジェダイ、旧共和国",
@@ -1514,6 +1514,13 @@ const characters: Characters[] = [
         skill: `スキルブロック付与 弱体解除  味方全体-弱体解除  ターンメーター上昇  攻撃力上昇  アシスト  リーダー：攻撃力上昇  回復
             ターンメーター減少付与 ジオノージアン・ブルード  コピー不可  解除不可  阻止不可  復活 `,
         url: '/characters/'
+    }, {
+        name: "ボス・ナス",
+        property: 'ライトサイド、サポート、リーダー、グンガン',
+        src: '/charui/tex.charui_bossnass.png',
+        abbreviation: 'Boss Nass',
+        skill: `攻撃力低下  アシスト  弱体解除  ターンメーター上昇  報復効果  回復  シールド発生装置  クリティカルダメージ上昇  挑発  スピード上昇   敵全体-強化解除  ターンメーター減少  エクスポーズ  防御力低下  時間経過ダメージ  回復無効  リーダー：最大プロテクション上昇  リーダー：攻撃力上昇  リーダー：スピード上昇  スピード低下  ボーナスプロテクション  リチャージ  召集  時間経過プロテクション  固定ダメージ  クールダウン減少  プラズマシールド  `,
+        url: '/characters/Boss-Nass'
     }, {
         name: "ボスク",
         property: "ダークサイド、タンク、リーダー、賞金稼ぎ、ならず者",
