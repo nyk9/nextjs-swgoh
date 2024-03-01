@@ -11,7 +11,6 @@ import { useButtonVisibility, usePropertyChange, useSearchResults, useSearchTerm
 import "./styles.css";
 
 export default function Character() {
-
     const { searchTerm, setSearchTerm } = useSearchTerm();
     const { selectedProperty, handlePropertyChange } = usePropertyChange();
     const { selectedSkill, handleSkillChange } = useSkillChange();

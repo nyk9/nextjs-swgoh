@@ -85,49 +85,49 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_trooperclone_echo.png',
         abbreviation: "Echo echo",
         skill: `全体攻撃  アシスト  ターンメーター上昇  スタン付与  強化解除  敵全体-強化解除 `,
-        url: '/characters/'
+        url: '/characters/CT-21-0408-Echo'
     }, {
         name: `CT-5555 "ファイブス"`,
         property: "ライトサイド、タンク、リーダー、第501軍団、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_trooperclone_fives.png',
         abbreviation: "Fives fives 5s",
         skill: `アシスト  カウンター  ターンメーター上昇  リーダー：防御力上昇  スピード低下  挑発 `,
-        url: '/characters/'
+        url: '/characters/CT-5555-Fives'
     }, {
         name: `CT-7567 "レックス"`,
         property: "ライトサイド、サポート、リーダー、第501軍団、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_trooperclone_rex.png',
         abbreviation: "Rex rex",
         skill: `クリティカルヒット耐性  弱体解除  味方全体-弱体解除  クールダウン減少  ターンメーター上昇  ターンメーター減少付与 リーダー：最大HP上昇  有効性上昇  抵抗力上昇 クールダウン状態から開始  `,
-        url: '/characters/'
+        url: '/characters/CT-7567-Rex'
     }, {
         name: "HK-47",
         property: "ダークサイド、アタッカー、リーダー、ドロイド、シス帝国",
         src: '/charui/tex.charui_hk47.png',
         abbreviation: "hk47 HK47 hk-47",
         skill: `全体攻撃  カウンター不可  強化解除  クールダウン減少  クールダウンリセット  回避不可  攻撃力上昇  抵抗力低下  固定ダメージ  クールダウン状態から開始  リーダー:クリティカル率上昇  リーダー:クリティカルダメージ上昇  ターンメーター上昇  `,
-        url: '/characters/'
+        url: '/characters/HK-47'
     }, {
         name: "IG-100マグナガード",
         property: "ダークサイド、タンク、ドロイド、分離主義者",
         src: '/charui/tex.charui_magnaguard.png',
         abbreviation: "magunaguard Magunaguard",
         skill: `全体攻撃  カウンター  弱体解除  スピード上昇  味方全体-弱体解除  強化解除  クールダウンリセット  ターゲットロック  スタン  挑発  ステルス  ボーナスターン  `,
-        url: '/characters/'
+        url: '/characters/IG-100-MagnaGuard'
     }, {
         name: "IG-11",
         property: "ライトサイド、ヒーラー、ドロイド、ならず者",
         src: '/charui/tex.charui_ig11_nurse.png',
         abbreviation: "IG11 ig11",
         skill: `全体攻撃  抵抗力低下  挑発付与  回復  ヘルススティール上昇  報復効果  フォアサイト  弱体解除  アシスト  時間経過ダメージ  挑発  `,
-        url: '/characters/'
+        url: '/characters/IG-11'
     }, {
         name: "IG-12 & グローグー",
         property: "ライトサイド、ヒーラー、マンダロリアン",
         src: '/charui/tex.charui_ig12.png',
         abbreviation: "IG12 ig-12 Grogu grogu",
         skill: `回復無効  スキルブロック付与  アシスト  回復  暗闇  めまい付与  強化解除  敵全体-強化解除  スタン付与  カウンター  クールダウン減少  クールダウンリセット  攻撃力上昇  プロテクション上昇  回避不可  耐性発揮不可  アシスト  防御力上昇  `,
-        url: '/characters/'
+        url: '/characters/IG-12-Grogu'
     }, {
         name: "IG-86歩哨ドロイド",
         property: "ダークサイド、アタッカー、ドロイド",
