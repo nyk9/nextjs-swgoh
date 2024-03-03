@@ -134,7 +134,7 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_ig86.png',
         abbreviation: "IG86 ig-86 ig86 Sentinel Droid sentinel droid",
         skill: `アシスト  `,
-        url: '/characters/'
+        url: '/characters/IG-86-Sntinel-Droid'
     }, {
         name: "IG-88",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ドロイド、ならず者",
@@ -142,49 +142,49 @@ const characters: Characters[] = [
         abbreviation: "IG88 ig-88 ig88",
         skill: `回復無効  ターゲットロック  スキルブロック付与  防御力低下  全体攻撃
             リーダー：クリティカル率上昇  時間経過ダメージ  `,
-        url: '/characters/'
+        url: '/characters/IG-88'
     }, {
         name: "K-2SO",
         property: "ライトサイド、タンク、ドロイド、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_k2so.png',
         abbreviation: "K2SO k2so k-2so ",
         skill: `攻撃力低下  アシスト  めまい付与  挑発付与 アシスト カウンター `,
-        url: '/characters/'
+        url: '/characters/K-2SO'
     }, {
         name: "L3-37",
         property: "ライトサイド、タンク、ならず者、ドロイド、スマグラー",
         src: '/charui/tex.charui_l337.png',
         abbreviation: "L337 l3-37 l337",
         skill: `防御力低下  準備万端  挑発付与 ターンメーター上昇  弱体解除  カウンター  クールダウン減少  抵抗力上昇  `,
-        url: '/characters/'
+        url: '/characters/L3-37'
     }, {
         name: "R2-D2",
         property: "ライトサイド、サポート、ドロイド・、銀河共和国、反乱軍、レジスタンス",
         src: '/charui/tex.charui_astromech_r2d2.png',
         abbreviation: "R2D2 r2d2 d2-d2",
         skill: `スタン付与  炎上  フォアサイト  アドバンテージ  ターンメーター上昇  弱体解除  回避不可  ステルス  全体攻撃 `,
-        url: '/characters/'
+        url: '/characters/R2-D2'
     }, {
         name: "STAP",
         property: "ダークサイト、アタッカー、ドロイド、分離主義者",
         src: '/charui/tex.charui_stap.png',
         abbreviation: "stap STAP細胞はあります",
         skill: `ターゲットロック  固定状態  コピー不可  解除不可  阻止不可  回避不可  全体攻撃  誘発  アシスト  オーバーチャージ  ターンメーター減少付与  ボーナスターン  回復  ボーナスダメージ  `,
-        url: '/characters/'
+        url: '/characters/STAP'
     }, {
         name: "T3-M4",
         property: "ライトサイド、サポート、ドロイド、旧共和国",
         src: '/charui/tex.charui_t3m4.png',
         abbreviation: "T3M4 t3-m4 t3m4",
         skill: `スキルブロック付与 弱体解除  回復  クリティカルヒット耐性  攻撃力上昇  強化解除  敵全体-強化解除  クリティカル率低下  攻撃力低下  ターンメーター減少付与 ターゲットロック 耐性発揮不可  `,
-        url: '/characters/'
+        url: '/characters/T3-M4'
     }, {
         name: "TIEファイター・パイロット",
         property: "ダークサイド、アタッカー、帝国軍",
         src: '/charui/tex.charui_tiepilot.png',
         abbreviation: "タイファイターパイロット tie TIE Fighter Pilot",
         skill: `抵抗力低下  強化無効  スキルブロック付与 フォアサイト `,
-        url: '/characters/'
+        url: '/characters/TIE-Fighter-Pilot'
     }, {
         name: "アーマラー",
         property: "ライトサイド、サポート、リーダー、マンダロリアン",

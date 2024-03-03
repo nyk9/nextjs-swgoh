@@ -8,15 +8,15 @@ export type Abilities = {
     is_omega: boolean,
     is_zeta: boolean,
     is_omicron: boolean,
-    is_ultimate: boolean,
-}
+    is_ultimate: boolean
+};
 
 export type characterAbilities = {
     id: string,
     character_name: string,
     character_image: string,
-    ability: Abilities[],
-}
+    ability: Abilities[]
+};
 
 const characterAbilities: characterAbilities[] = [
     {
@@ -73,7 +73,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ],
+        ]
     }, {
         id: '50R-T',
         character_name: "50R-T",
@@ -138,7 +138,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ],
+        ]
     }, {
         id: 'ARC-Trooper',
         character_name: 'ARCトルーパー',
@@ -191,7 +191,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             }
-        ],
+        ]
     }, {
         id: 'B1-Battle-Droid',
         character_name: 'B1バトル・ドロイド',
@@ -244,7 +244,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ],
+        ]
     }, {
         id: 'B2-Super-Battle-Droid',
         character_name: 'B2スーパー・バトル・ドロイド',
@@ -291,7 +291,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ],
+        ]
     }, {
         id: 'BB-8',
         character_name: 'BB-8',
@@ -350,7 +350,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ],
+        ]
     }, {
         id: 'BT-1',
         character_name: 'BT-1',
@@ -419,7 +419,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ],
+        ]
     }, {
         id: 'C-3PO',
         character_name: 'C-3PO',
@@ -508,7 +508,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ],
+        ]
     }, {
         id: 'Threepio-Chewie',
         character_name: 'C-3PO&チューイ',
@@ -1021,6 +1021,450 @@ const characterAbilities: characterAbilities[] = [
             },
         ]
     }, {
+        id: 'IG-86-Sntinel-Droid',
+        character_name: 'IG-86歩哨ドロイド',
+        character_image: '/charui/tex.charui_ig86.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'プリサイス・ストライク',
+                name_eng: 'Precision Strike',
+                image: '/ability/tex.ability_ig86sentineldroid_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、クリティカルヒット率が50%上昇する。(=この攻撃のクリティカル率が50%上昇する。?)`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'アサシン・ドロイドの戦術',
+                name_eng: 'Assassin Droid Tactics',
+                image: '/ability/tex.ability_ig86sentineldroid_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、ランダムな味方をアシストに呼ぶ。アシストがドロイドの場合、両攻撃者のクリティカルダメージが75%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ドロイドチーム戦術',
+                name_eng: 'Droid Squad Tactics',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `生存している味方ドロイド1体ごとに、IG-86歩哨ドロイドのクリティカル率が4.5%上昇する。さらにクリティカルダメージが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }
+        ]
+    }, {
+        id: 'IG-88',
+        character_name: 'IG-88',
+        character_image: '/charui/tex.charui_ig88.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '致命傷',
+                name_eng: 'Mortal Wound',
+                image: '/ability/tex.ability_ig88_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、60%の確率で2ターンの回復無効を発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'ラピッド・ファイア',
+                name_eng: 'Rapid Fire',
+                image: '/ability/tex.ability_ig88_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、55%の確率で1ターンのスキルブロックを発生させ、50%の確率で2ターンの間防御力を低下させる。クリティカルヒットした敵には3ターンの間ターゲットロックを発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '機略に優れた追跡者',
+                name_eng: 'Resourceful Pursuer',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `味方全体のクリティカル率が20%上昇する。クリティカルヒットを与えると、時間経過ダメージ効果を発生させる。IG-88がリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可):
+                
+                契約: 弱体化効果発生中の敵にクリティカルヒットを10回与える。回数をカウントするには、攻撃を始める前に敵に弱体化効果が発生している必要がある(契約達成には味方賞金稼ぎのみ参加可能)。
+                
+                報酬: バトル終了まで、味方賞金稼ぎ全体の攻撃力と有効性が25上昇し、ボーナス効果が発動する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '適応型エイムアルゴリズム',
+                name_eng: 'Adaptive Aim Algorithm',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `ターゲットロック状態の敵にダメージを与えると、IG-88のクリティカルダメージが45%上昇し、HPが50%回復する。さらに、弱体発生中の敵1体ごとに攻撃力が20%上昇し、ターゲットロック状態の敵に対する回避力が50%上昇する。IG-88がアクティブな間、ターゲットロック状態の敵はHPとプロテクションを回復できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'IG-88のボーナス',
+                name_eng: "IG-88's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `IG-88は契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                ボーナス: バトル終了まで、IG-88はクリスタルヒットを与えた敵の抵抗力が10%低下させ(スタック可能)、ターゲットロック状態の敵の防御力を50%無力化し、ターゲットロック状態の敵が1体でもいる場合、攻撃力が25%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            },
+        ]
+    }, {
+        id: 'K-2SO',
+        character_name: 'K-2SO',
+        character_image: '/charui/tex.charui_k2so.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'カーボプラスト複合材フィスト',
+                name_eng: 'Carboplast Composite Fist',
+                image: '/ability/tex.ability_k2so_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、70%の確率で2ターンの間攻撃力を低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'コンダクティブ・チャージ',
+                name_eng: 'Conductive Charge',
+                image: '/ability/tex.ability_k2so_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンのめまい効果を発生させる。キャシアン・アンドーがいる場合、キャシアンをアシストに呼ぶ。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '執行者',
+                name_eng: 'Enforcer',
+                image: '/abilityui/tex.abilityui_passive_taunt.png',
+                description_jp: `K-2Soがスキルを使用すると75%の確率で1ターンの挑発を行う(強化効果発生中は100%)。この挑発はK-2SOがダメージを受けると終了する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '再プログラム済み帝国軍ドロイド',
+                name_eng: 'Reprogrammed Imperial Droid',
+                image: '/abilityui/tex.abilityui_passive_counterattack.png',
+                description_jp: `K-2SOのカウンター率が97.6%上昇する。K-2SOに弱体が発生している間は、この確率が半分になる。さらにK-2SOがダメージを受けると最大プロテクションが1%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false,
+            },
+        ]
+    }, {
+        id: 'L3-37',
+        character_name: 'L3-37',
+        character_image: '/charui/tex.charui_l337.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '猛進',
+                name_eng: 'Daring Advance',
+                image: '/ability/tex.ability_l337_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの防御力を低下させる。
+                
+                準備万端: L3-37が準備万端状態の場合、遭遇終了まで最大HPが10%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '希望の灯',
+                name_eng: 'Spark of Hope',
+                image: '/ability/tex.ability_l337_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間挑発を行う。
+                
+                準備万端: 味方ならず者および味方ドロイド全体をL3の最大HPの50%分回復させ、準備万端状態の味方全体の抵抗力を2ターンの間上昇させる。準備万端状態の味方が1体でもいる場合、このスキルのクールダウンが1減少する。L3-37の準備万端は解除される。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ドロイドのために',
+                name_eng: 'For the Droids',
+                image: '/abilityui/tex.abilityui_passive_removeharmful.png',
+                description_jp: `L3-37のターン開始時、前ターン以降に敵からダメージを受けていない場合、L3-37は準備万端状態になる。他の味方ドロイドあるいは味方ならず者がダメージを受けると、L3-37のターンメーターが15%上昇する。L3-37が攻撃ダメージを受けると、弱体発生中のランダムな味方ならず者1体から弱体が解除される。各味方ドロイドはHPが1%まで減少すると、1度だけL3-37と同量のHPまで回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '自己書き換え',
+                name_eng: 'Self Modificationl',
+                image: '/abilityui/tex.abilityui_passive_heal.png',
+                description_jp: `L3-37の最大プロテクションが25%上昇する。L3-37は準備万端状態になると、1ターンの挑発を行う。各戦闘を開始する時にL3-37は準備万端状態になる。遭遇開始時(=バトル開始時?)に特殊スキル「アップグレードMk I」が使用可能になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '付与スキル',
+                name_jp: 'アップグレードMk I',
+                name_eng: 'Enhance (MK I)',
+                image: '/ability/tex.ability_l337_special02.png',
+                description_jp: `バトル終了までL3-37のクリティカル率が50%上昇し、準備万端状態になる。使用するとこのスキルは「アップグレードMk II」に強化される。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '付与スキル',
+                name_jp: 'アップグレードMk II',
+                name_eng: 'Enhance (MK II)',
+                image: '/ability/tex.ability_l337_special02.png',
+                description_jp: `L3-37のクリティカル回避力が30%上がり、バトル終了まで防御力が100%上昇、さらに準備万端状態になる。使用するとこのスキルはMk IIIに強化される`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }, {
+                ability_type: '付与スキル',
+                name_jp: 'アップグレードMk III',
+                name_eng: 'Enhance (MK III)',
+                image: '/ability/tex.ability_l337_special02.png',
+                description_jp: `L3-37のカウンター率がバトル終了まで50%上昇し、準備万端状態になる。このスキルは一度しか使用できない。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false,
+            }
+        ]
+    }, {
+        id: 'R2-D2',
+        character_name: 'R2-D2',
+        character_image: '/charui/tex.charui_astromech_r2d2.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '電気ショック・プロッド',
+                name_eng: "Electroshock Prod",
+                image: '/ability/tex.ability_r2d2_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、80%の確率で1ターンの間スタン状態にする。この攻撃は炎上状態の敵に対してダメージが30%増加する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '煙幕',
+                name_eng: 'Smoke Screen',
+                image: '/ability/tex.ability_r2d2_special01.png',
+                description_jp: `指定した味方が2ターンのフォアサイトおよびアドバンテージを得る。他の味方全体が2ターンのステルス効果を得る。R2-D2のターンメーターが40%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '臨機応変',
+                name_eng: 'Improvise',
+                image: '/ability/tex.ability_r2d2_special02.png',
+                description_jp: `敵全体に特殊ダメージを与え、3ターンの炎上効果を発生させる。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '戦闘分析',
+                name_eng: 'Combat Analysis',
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `R2-D2がアクティブな間、味方全体のクリティカル率が10%、精度が10%上昇する。R2-D2がアクティブな間、味方ライトサイドユニットはクリティカルヒットを決めると弱体が全て解除される。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '計算処理',
+                name_eng: 'Number Crunch',
+                image: '/abilityui/tex.abilityui_passive_extraturn.png',
+                description_jp: `バトル開始時に、R2-D2の最大プロテクションが味方ドロイド1体につき10%、攻撃力が味方銀河共和国1体につき10%、最大HPが味方反乱軍1体につき10%、有効性が味方レジスタンス1体につき10%上昇する。
+                
+                バトル開始時およびR2-D2の復活時に、他の味方ドロイド、銀河共和国、反乱軍、レジスタンスはR2-D2の最大プロテクション、攻撃力、最大HP、有効性の10%分をR2-D2が戦闘不能になるまで得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ]
+    }, {
+        id: 'STAP',
+        character_name: 'STAP',
+        character_image: '/charui/tex.charui_stap.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '検問所制圧！',
+                name_eng: 'Checkpoint Secure!',
+                image: '/ability/tex.ability_stap_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンのターゲットロックを発生させる。既にターゲットロック状態の場合、代わりに2ターンの間固定状態にする(コピー不可、解除、阻止不可。この攻撃は回避できない)。
+                
+                固定: ボーナスターンメーターを獲得できず、スピードが25%低下する。破損やスピード低下とはスタックしない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '死ね、ジェダイの犬め！',
+                name_eng: 'Die, Jedi Dogs!',
+                image: '/ability/tex.ability_stap_special01.png',
+                description_jp: `敵全体に物理ダメージを与える(ジェダイは回避不可)。敵全体を2ターンの間、誘発状態にする。固定状態の敵に再度ダメージを与える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'リチャージが必要だ！',
+                name_eng: 'We Need to Recharge!',
+                image: '/ability/tex.ability_stap_special02.png',
+                description_jp: `HPとプロテクションが20%回復し、オーバーチャージのスタックを5得る(最大5。コピー、解除、阻止不可)。指定した味方が攻撃を行い、STAPがアシストを行う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'シングル・トルーパー・エアリアル・プラットフォーム',
+                name_eng: 'Single Trooper Aerial Platform',
+                image: '/abilityui/tex.abilityui_passive_singletrooperaerialplatform.png',
+                description_jp: `STAPは自身のオーバーチャージのスタックごとにスピードが10上昇する。
+                
+                バトル開始時、味方全員が分離主義者ドロイドの場合、味方は敵に固定またはターゲットロックを発生させるたび、その敵の最大HP10%分のボーナスダメージをその敵に与える。
+                
+                STAPは「リチャージが必要だ！」以外のスキルを使用するたび、オーバーチャージのスタックを1失う。
+                
+                STAPまたは味方の分離主義者ドロイドタンクが敵から固定ダメージを受ける度、味方全ての分離主義者ドロイドはターンメーターを15%失う(敵1体につき1ターン1回まで)。
+                
+                グランドアリーナかつ味方全体が分離主義者ドロイドの場合: STAPはバトル開始時にボーナスターンを得て、敵が最初のターンを開始すると追加のボーナスターンを得る。
+                
+                STAPがオーバーチャージを得ると、味方全体の最大HPがバトル終了まで20%(スタック可能)上昇し、HPとプロテクションが10%回復する。
+                
+                敵クローン・トルーパーの攻撃力が30%低下し、固定またはターゲットロック状態になると、その敵は自身の最大HP10%分のボーナスダメージを受ける(回避不可)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ]
+    }, {
+        id: 'T3-M4',
+        character_name: 'T3-M4',
+        character_image: '/charui/tex.charui_t3m4.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '無力化',
+                name_eng: 'Disable',
+                image: '/ability/tex.ability_t3m4_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、75%の確率で1ターンの間スキルブロック状態にする。敵が破損状態の場合、スキルブロックは耐性発揮されない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '修理キット',
+                name_eng: 'Repair Kit',
+                image: '/ability/tex.ability_t3m4_special01.png',
+                description_jp: `指定した味方の弱体効果を全て解除する。その味方がドロイドの場合、さらにHPを50%、プロテクションを50%回復させ、2ターンのクリティカルヒット耐性および攻撃力上昇が発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'カーボナイトプロジェクター',
+                name_eng: 'Carbonite Projector',
+                image: '/ability/tex.ability_t3m4_special02.png',
+                description_jp: `敵全体の強化効果を全て解除し、特殊ダメージを与える。2ターンのクリティカル率低下と攻撃力低下を発生させ、敵全体のターンメーターを20%減少させる。ターゲットロック状態の敵はこれら弱体効果を耐性発揮できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '戦闘ロジック強化',
+                name_eng: 'Combat Logic Upgrade',
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `T3-M4がスキルを使用する毎に、味方ドロイドの有効性とクリティカルヒット率が8%上昇する。また弱体発生中の敵ごとに味方ドロイドのクリティカルダメージが8%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'マスターギアヘッド',
+                name_eng: 'Master Gearhead',
+                image: '/abilityui/tex.abilityui_passive_penetration.png',
+                description_jp: `T3-M4の防御突破力が100%上昇し、味方ドロイドはT3-M4の防御突破力の100%を得る。さらに、T3-M4がターンを開始するたび、75%の確率で効果が発生していないランダムな敵に2ターンのターゲットロックを発生させる。このターゲットロックは回避できない。
+                
+                テリトリーウォーズの場合: 遭遇開始時、T3-M4に2ターンのステルス効果が発生し、味方ドロイドのアーマー突破力が15、最大HPが30%上昇する。味方ドロイドはターゲットロック状態の敵ごとに防御力が20%、弱体化効果発生中に防御力が20%、強化効果発生中に防御力が20%上昇する。T3-M4のターン開始時、効果が発生していないランダムな敵に2ターンのターゲットロックを発生させ(回避不可)、ターゲットロック状態の敵ごとに味方全体のHPとプロテクションを5%回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ]
+    }, {
+        id: 'TIE-Fighter-Pilot',
+        character_name: 'TIEファイター・パイロット',
+        character_image: '/charui/tex.charui_tiepilot.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '照準コンピューター',
+                name_eng: 'Targeting Computer',
+                image: '/ability/tex.ability_tiepilot_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、弱体の発生している敵1体ごとにダメージが35%上昇する。クリティカルヒット時には2ターンの間抵抗力を低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'TIEストライク',
+                name_eng: 'TIE Sreike',
+                image: '/ability/tex.ability_tiepilot_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、80%の確率で2ターンの強化無効を発生させる。メインターゲットを1ターンの間スキルブロック状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '回避行動',
+                name_eng: 'Evasive Maneuvers',
+                image: '/abilityui/tex.abilityui_passive_foresight.png',
+                description_jp: `各ターンの最後に、TIEファイター・パイロットのターンメーターが弱体を受けている敵1体ごとに10%上昇し、35%の確率で1ターンのフォアサイトが発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ]
+    }, {
         id: 'General-Kenobi',
         character_name: "ケノービ将軍",
         character_image: '/charui/tex.charui_obiwangeneral.png',
@@ -1080,7 +1524,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ],
+        ]
     }, {
         id: 'Jedi-Knight-Cal-Kestis',
         character_name: 'ジェダイ・ナイト・カル・ケスティス',
@@ -1198,7 +1642,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             }
-        ],
+        ]
     }, {
         id: 'Jedi-Knight-Luke-Skywalker',
         character_name: 'ジェダイ・ナイト・ルーク・スカイウォーカー',
@@ -1285,7 +1729,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ],
+        ]
     }, {
         id: 'Jedi-Master-Kenobi',
         character_name: 'ジェダイ・マスター・ケノービ',
@@ -1388,8 +1832,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ],
-    },
+        ]
+    }
 ];
 
 export default characterAbilities;
