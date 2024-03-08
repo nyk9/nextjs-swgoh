@@ -1,6 +1,5 @@
 export type Characters = {
     name: string;
-    // tag: string;
     src: string;
     property: string;
     abbreviation: string;
@@ -71,70 +70,70 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_chewbacca_c3po.png',
         abbreviation: "3Bacca 3bacca Chewpio 3バカ ３バカ 3バッカ チューピオ",
         skill: `アドバンテージ  全体攻撃  アシスト  暗闇  カウンター  強化解除  敵全体-強化解除  弱体解除  回避力低下  復活  `,
-        url: '/characters/'
+        url: '/characters/Threepio-Chewie'
     }, {
         name: `CC-2224 "コーディ"`,
         property: "ライトサイド、アタッカー、リーダー、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_trooperclone_cody.png',
         abbreviation: "Cody cody",
         skill: `アシスト  ターンメーター上昇  リーダー：クリティカル率上昇  リーダー：防御力上昇  回復  クールダウン減少  スタン付与 `,
-        url: '/characters/'
+        url: '/characters/CC-2224-Cody'
     }, {
         name: `CT-21-0408 "エコー"`,
         property: "ライトサイド、サポート、第501軍団、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_trooperclone_echo.png',
         abbreviation: "Echo echo",
         skill: `全体攻撃  アシスト  ターンメーター上昇  スタン付与  強化解除  敵全体-強化解除 `,
-        url: '/characters/'
+        url: '/characters/CT-21-0408-Echo'
     }, {
         name: `CT-5555 "ファイブス"`,
         property: "ライトサイド、タンク、リーダー、第501軍団、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_trooperclone_fives.png',
         abbreviation: "Fives fives 5s",
         skill: `アシスト  カウンター  ターンメーター上昇  リーダー：防御力上昇  スピード低下  挑発 `,
-        url: '/characters/'
+        url: '/characters/CT-5555-Fives'
     }, {
         name: `CT-7567 "レックス"`,
         property: "ライトサイド、サポート、リーダー、第501軍団、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_trooperclone_rex.png',
         abbreviation: "Rex rex",
         skill: `クリティカルヒット耐性  弱体解除  味方全体-弱体解除  クールダウン減少  ターンメーター上昇  ターンメーター減少付与 リーダー：最大HP上昇  有効性上昇  抵抗力上昇 クールダウン状態から開始  `,
-        url: '/characters/'
+        url: '/characters/CT-7567-Rex'
     }, {
         name: "HK-47",
         property: "ダークサイド、アタッカー、リーダー、ドロイド、シス帝国",
         src: '/charui/tex.charui_hk47.png',
         abbreviation: "hk47 HK47 hk-47",
         skill: `全体攻撃  カウンター不可  強化解除  クールダウン減少  クールダウンリセット  回避不可  攻撃力上昇  抵抗力低下  固定ダメージ  クールダウン状態から開始  リーダー:クリティカル率上昇  リーダー:クリティカルダメージ上昇  ターンメーター上昇  `,
-        url: '/characters/'
+        url: '/characters/HK-47'
     }, {
         name: "IG-100マグナガード",
         property: "ダークサイド、タンク、ドロイド、分離主義者",
         src: '/charui/tex.charui_magnaguard.png',
         abbreviation: "magunaguard Magunaguard",
         skill: `全体攻撃  カウンター  弱体解除  スピード上昇  味方全体-弱体解除  強化解除  クールダウンリセット  ターゲットロック  スタン  挑発  ステルス  ボーナスターン  `,
-        url: '/characters/'
+        url: '/characters/IG-100-MagnaGuard'
     }, {
         name: "IG-11",
         property: "ライトサイド、ヒーラー、ドロイド、ならず者",
         src: '/charui/tex.charui_ig11_nurse.png',
         abbreviation: "IG11 ig11",
         skill: `全体攻撃  抵抗力低下  挑発付与  回復  ヘルススティール上昇  報復効果  フォアサイト  弱体解除  アシスト  時間経過ダメージ  挑発  `,
-        url: '/characters/'
+        url: '/characters/IG-11'
     }, {
         name: "IG-12 & グローグー",
         property: "ライトサイド、ヒーラー、マンダロリアン",
         src: '/charui/tex.charui_ig12.png',
         abbreviation: "IG12 ig-12 Grogu grogu",
         skill: `回復無効  スキルブロック付与  アシスト  回復  暗闇  めまい付与  強化解除  敵全体-強化解除  スタン付与  カウンター  クールダウン減少  クールダウンリセット  攻撃力上昇  プロテクション上昇  回避不可  耐性発揮不可  アシスト  防御力上昇  `,
-        url: '/characters/'
+        url: '/characters/IG-12-Grogu'
     }, {
         name: "IG-86歩哨ドロイド",
         property: "ダークサイド、アタッカー、ドロイド",
         src: '/charui/tex.charui_ig86.png',
         abbreviation: "IG86 ig-86 ig86 Sentinel Droid sentinel droid",
         skill: `アシスト  `,
-        url: '/characters/'
+        url: '/characters/IG-86-Sntinel-Droid'
     }, {
         name: "IG-88",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ドロイド、ならず者",
@@ -142,49 +141,49 @@ const characters: Characters[] = [
         abbreviation: "IG88 ig-88 ig88",
         skill: `回復無効  ターゲットロック  スキルブロック付与  防御力低下  全体攻撃
             リーダー：クリティカル率上昇  時間経過ダメージ  `,
-        url: '/characters/'
+        url: '/characters/IG-88'
     }, {
         name: "K-2SO",
         property: "ライトサイド、タンク、ドロイド、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_k2so.png',
         abbreviation: "K2SO k2so k-2so ",
         skill: `攻撃力低下  アシスト  めまい付与  挑発付与 アシスト カウンター `,
-        url: '/characters/'
+        url: '/characters/K-2SO'
     }, {
         name: "L3-37",
         property: "ライトサイド、タンク、ならず者、ドロイド、スマグラー",
         src: '/charui/tex.charui_l337.png',
         abbreviation: "L337 l3-37 l337",
         skill: `防御力低下  準備万端  挑発付与 ターンメーター上昇  弱体解除  カウンター  クールダウン減少  抵抗力上昇  `,
-        url: '/characters/'
+        url: '/characters/L3-37'
     }, {
         name: "R2-D2",
         property: "ライトサイド、サポート、ドロイド・、銀河共和国、反乱軍、レジスタンス",
         src: '/charui/tex.charui_astromech_r2d2.png',
         abbreviation: "R2D2 r2d2 d2-d2",
         skill: `スタン付与  炎上  フォアサイト  アドバンテージ  ターンメーター上昇  弱体解除  回避不可  ステルス  全体攻撃 `,
-        url: '/characters/'
+        url: '/characters/R2-D2'
     }, {
         name: "STAP",
         property: "ダークサイト、アタッカー、ドロイド、分離主義者",
         src: '/charui/tex.charui_stap.png',
         abbreviation: "stap STAP細胞はあります",
         skill: `ターゲットロック  固定状態  コピー不可  解除不可  阻止不可  回避不可  全体攻撃  誘発  アシスト  オーバーチャージ  ターンメーター減少付与  ボーナスターン  回復  ボーナスダメージ  `,
-        url: '/characters/'
+        url: '/characters/STAP'
     }, {
         name: "T3-M4",
         property: "ライトサイド、サポート、ドロイド、旧共和国",
         src: '/charui/tex.charui_t3m4.png',
         abbreviation: "T3M4 t3-m4 t3m4",
         skill: `スキルブロック付与 弱体解除  回復  クリティカルヒット耐性  攻撃力上昇  強化解除  敵全体-強化解除  クリティカル率低下  攻撃力低下  ターンメーター減少付与 ターゲットロック 耐性発揮不可  `,
-        url: '/characters/'
+        url: '/characters/T3-M4'
     }, {
         name: "TIEファイター・パイロット",
         property: "ダークサイド、アタッカー、帝国軍",
         src: '/charui/tex.charui_tiepilot.png',
         abbreviation: "タイファイターパイロット tie TIE Fighter Pilot",
         skill: `抵抗力低下  強化無効  スキルブロック付与 フォアサイト `,
-        url: '/characters/'
+        url: '/characters/TIE-Fighter-Pilot'
     }, {
         name: "アーマラー",
         property: "ライトサイド、サポート、リーダー、マンダロリアン",
@@ -192,77 +191,77 @@ const characters: Characters[] = [
         abbreviation: "Armorer armorer",
         skill: `ベスカー・インゴット  ベスカー・アーマー  アシスト  プロテクション上昇
             クリティカルヒット耐性  `,
-        url: '/characters/'
+        url: '/characters/THE-Armorer'
     }, {
         name: "アイデン・ヴェルシオ",
         property: "ダークサイド、アタッカー、リーダー、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_idenversioempire.png',
         abbreviation: "Iden iden Versio versio アイポン",
         skill: `回復  無防備  強化解除  回復無効  スタン付与  アシスト  弱体解除  敵全体-弱体解除  プロテクション上昇  受け入れるか死か  リーダー：クリティカル率上昇  リーダー：攻撃力上昇  リーダー：スピード上昇  カウンター  ターンメーター上昇  復活  `,
-        url: '/characters/'
+        url: '/characters/Iden-Versio'
     }, {
         name: "アイマ＝ガン・ダイ",
         property: "ライトサイド、サポート、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_imagundi.png',
         abbreviation: "アイマガンダイ Ima-Gun Di ",
         skill: `防御力低下  防御力上昇  リーダー:カウンター率上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Ima-Gun-Di'
     }, {
         name: "アイラ・セキュラ",
         property: "ライトサイド、サポート、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_aaylasecura.png',
         abbreviation: "Aayla Secura aayla secura",
         skill: `アシスト  回復  カウンター  スタン付与 `,
-        url: '/characters/'
+        url: '/characters/Aayla-Secura'
     }, {
         name: "ア゛ウァア゛ゥア゛ウウ",
         property: "ダークサイド・サポート・リーダー・タスケン",
         src: '/charui/tex.charui_urorrurrr.png',
-        abbreviation: "URoRRuR'R'R urorrurrr ",
+        abbreviation: "URoRRuR'R'R urorrurrr アウァアゥアウウ あうぁあぅあうう ",
         skill: `スタン付与  スピード上昇  ターンメーター上昇  攻撃力上昇 `,
-        url: '/characters/'
+        url: '/characters/URoRRuRRR'
     }, {
         name: "アグノート",
         property: "ライトサイド、サポート",
         src: '/charui/tex.charui_ugnaught.png',
         abbreviation: "Ugnaught ugnaught",
         skill: `防御力低下  スタン付与  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Ugnaught'
     }, {
         name: "アクバー提督",
         property: "ライトサイド、サポート、リーダー、反乱軍、艦隊司令官",
         src: '/charui/tex.charui_ackbaradmiral.png',
         abbreviation: "Admiral Ackbar admiral ackbar AA ギアル・アクバー It's a trap",
         skill: `ターンメーター上昇  弱体解除  味方全体-弱体解除  回復  軍略の天才  リーダー：スピード上昇  リーダー：抵抗力上昇  アシスト  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Admiral-Ackbar'
     }, {
         name: "アサージ・ヴェントレス",
         property: "ダークサイド、サポート、リーダー、ナイトシスター、分離主義者、非同盟のフォースの使い手",
         src: '/charui/tex.charui_ventress.png',
         abbreviation: "Asajj Ventress asajj ventress AV ",
         skill: `スタン付与  回復  強化解除  敵全体-強化解除  ターンメーター減少付与 クールダウンリセット  防御力低下  リーダー：スピード上昇  リーダー：攻撃力上昇  ターンメーター上昇  最大HP上昇 `,
-        url: '/characters/'
+        url: '/characters/Asajj-Ventress'
     }, {
         name: "アソーカ・タノ",
         property: "ライトサイド、アタッカー、リーダー、第501軍団、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_ahsoka.png',
         abbreviation: "Ahsoka Tano ahsoka tano Snips",
         skill: `強化解除  弱体解除  回避不可  回復  プロテクション上昇  リーダー：回避力上昇  クリティカルヒット耐性  アシスト `,
-        url: '/characters/'
+        url: '/characters/Ahsoka-Tano'
     }, {
         name: "アソーカ・タノ(コマンダー)",
         property: "ライトサイド、アタッカー、銀河共和国、ならず者、非同盟のフォースの使い手",
         src: '/charui/tex.charui_commanderahsokatano.png',
         abbreviation: "CAT Commander Ahsoka Tano ahsoka tano ",
         skill: `アドバンテージ  回避力上昇  ターンメーター入れ替え  シエン・フォーム  即戦闘不能  クールダウン減少  アーマー破壊  アシスト  クールダウン状態から開始 コピー不可  解除不可  阻止不可  ターンメーター上昇  回避不可`,
-        url: '/characters/'
+        url: '/characters/Commander-Ahsoka-Tano'
     }, {
         name: "アソーカ・タノ(フルクラム)",
         property: "ライトサイド、アタッカー、反乱軍、非同盟のフォースの使い手",
         src: '/charui/tex.charui_ahsokaadult.png',
         abbreviation: "ATF Ahsoka Tano Fulcrum ahsoka tano fulcrum atf",
         skill: `プロテクション上昇  フォアサイト  報復効果  強化解除  弱体解除  回復  復活不可  挑発無視  ターンメーター上昇  回避不可  `,
-        url: '/characters/'
+        url: '/characters/Ahsoka-Tano-Fulcrum'
     }, {
         name: "アミリン・ホルド",
         property: "ライトサイド、タンク、レジスタンス、艦隊司令官",
