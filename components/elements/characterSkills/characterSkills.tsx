@@ -44,14 +44,16 @@ export default async function CharacterSkills(params: {
         }
         return (
             <>
-                <h1 className="grid grid-cols-2 text-2xl">
-                    {data[abilityIndex].character_name}
+                <h1 className="flex text-2xl">
                     <Image
                         alt={data[abilityIndex].character_name}
                         src={data[abilityIndex].character_image}
                         width={50}
                         height={50}
                     />
+                    <span>
+                        {data[abilityIndex].character_name}
+                    </span>
                 </h1>
                 {data[abilityIndex].ability.map((item: Abilities) => {
                     return (
@@ -59,8 +61,8 @@ export default async function CharacterSkills(params: {
                             key={item.name_jp}
                             className="border border-blue-300 mt-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
                         >
-                            <h1 className="flex text-2xl text-sky-300">
-                                <div className="image">
+                            <h1 className="xs:flex text-2xl ">
+                                {/* <div className="image"> */}
                                     <Image
                                         src={item.image}
                                         alt={item.name_jp}
@@ -68,8 +70,8 @@ export default async function CharacterSkills(params: {
                                         height={50}
                                         className="object-cover px-1"
                                     />
-                                </div>
-                                <span>
+                                {/* </div> */}
+                                <span className="text-sky-300">
                                     {item.name_jp}:
                                 </span>
                                 <span className="text-sky-700">

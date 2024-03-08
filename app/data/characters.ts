@@ -1,6 +1,5 @@
 export type Characters = {
     name: string;
-    // tag: string;
     src: string;
     property: string;
     abbreviation: string;
@@ -192,77 +191,77 @@ const characters: Characters[] = [
         abbreviation: "Armorer armorer",
         skill: `ベスカー・インゴット  ベスカー・アーマー  アシスト  プロテクション上昇
             クリティカルヒット耐性  `,
-        url: '/characters/'
+        url: '/characters/THE-Armorer'
     }, {
         name: "アイデン・ヴェルシオ",
         property: "ダークサイド、アタッカー、リーダー、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_idenversioempire.png',
         abbreviation: "Iden iden Versio versio アイポン",
         skill: `回復  無防備  強化解除  回復無効  スタン付与  アシスト  弱体解除  敵全体-弱体解除  プロテクション上昇  受け入れるか死か  リーダー：クリティカル率上昇  リーダー：攻撃力上昇  リーダー：スピード上昇  カウンター  ターンメーター上昇  復活  `,
-        url: '/characters/'
+        url: '/characters/Iden-Versio'
     }, {
         name: "アイマ＝ガン・ダイ",
         property: "ライトサイド、サポート、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_imagundi.png',
         abbreviation: "アイマガンダイ Ima-Gun Di ",
         skill: `防御力低下  防御力上昇  リーダー:カウンター率上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Ima-Gun-Di'
     }, {
         name: "アイラ・セキュラ",
         property: "ライトサイド、サポート、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_aaylasecura.png',
         abbreviation: "Aayla Secura aayla secura",
         skill: `アシスト  回復  カウンター  スタン付与 `,
-        url: '/characters/'
+        url: '/characters/Aayla-Secura'
     }, {
         name: "ア゛ウァア゛ゥア゛ウウ",
         property: "ダークサイド・サポート・リーダー・タスケン",
         src: '/charui/tex.charui_urorrurrr.png',
-        abbreviation: "URoRRuR'R'R urorrurrr ",
+        abbreviation: "URoRRuR'R'R urorrurrr アウァアゥアウウ あうぁあぅあうう ",
         skill: `スタン付与  スピード上昇  ターンメーター上昇  攻撃力上昇 `,
-        url: '/characters/'
+        url: '/characters/URoRRuRRR'
     }, {
         name: "アグノート",
         property: "ライトサイド、サポート",
         src: '/charui/tex.charui_ugnaught.png',
         abbreviation: "Ugnaught ugnaught",
         skill: `防御力低下  スタン付与  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Ugnaught'
     }, {
         name: "アクバー提督",
         property: "ライトサイド、サポート、リーダー、反乱軍、艦隊司令官",
         src: '/charui/tex.charui_ackbaradmiral.png',
         abbreviation: "Admiral Ackbar admiral ackbar AA ギアル・アクバー It's a trap",
         skill: `ターンメーター上昇  弱体解除  味方全体-弱体解除  回復  軍略の天才  リーダー：スピード上昇  リーダー：抵抗力上昇  アシスト  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Admiral-Ackbar'
     }, {
         name: "アサージ・ヴェントレス",
         property: "ダークサイド、サポート、リーダー、ナイトシスター、分離主義者、非同盟のフォースの使い手",
         src: '/charui/tex.charui_ventress.png',
         abbreviation: "Asajj Ventress asajj ventress AV ",
         skill: `スタン付与  回復  強化解除  敵全体-強化解除  ターンメーター減少付与 クールダウンリセット  防御力低下  リーダー：スピード上昇  リーダー：攻撃力上昇  ターンメーター上昇  最大HP上昇 `,
-        url: '/characters/'
+        url: '/characters/Asajj-Ventress'
     }, {
         name: "アソーカ・タノ",
         property: "ライトサイド、アタッカー、リーダー、第501軍団、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_ahsoka.png',
         abbreviation: "Ahsoka Tano ahsoka tano Snips",
         skill: `強化解除  弱体解除  回避不可  回復  プロテクション上昇  リーダー：回避力上昇  クリティカルヒット耐性  アシスト `,
-        url: '/characters/'
+        url: '/characters/Ahsoka-Tano'
     }, {
         name: "アソーカ・タノ(コマンダー)",
         property: "ライトサイド、アタッカー、銀河共和国、ならず者、非同盟のフォースの使い手",
         src: '/charui/tex.charui_commanderahsokatano.png',
         abbreviation: "CAT Commander Ahsoka Tano ahsoka tano ",
         skill: `アドバンテージ  回避力上昇  ターンメーター入れ替え  シエン・フォーム  即戦闘不能  クールダウン減少  アーマー破壊  アシスト  クールダウン状態から開始 コピー不可  解除不可  阻止不可  ターンメーター上昇  回避不可`,
-        url: '/characters/'
+        url: '/characters/Commander-Ahsoka-Tano'
     }, {
         name: "アソーカ・タノ(フルクラム)",
         property: "ライトサイド、アタッカー、反乱軍、非同盟のフォースの使い手",
         src: '/charui/tex.charui_ahsokaadult.png',
         abbreviation: "ATF Ahsoka Tano Fulcrum ahsoka tano fulcrum atf",
         skill: `プロテクション上昇  フォアサイト  報復効果  強化解除  弱体解除  回復  復活不可  挑発無視  ターンメーター上昇  回避不可  `,
-        url: '/characters/'
+        url: '/characters/Ahsoka-Tano-Fulcrum'
     }, {
         name: "アミリン・ホルド",
         property: "ライトサイド、タンク、レジスタンス、艦隊司令官",
