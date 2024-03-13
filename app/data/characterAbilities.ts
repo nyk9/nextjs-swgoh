@@ -2737,6 +2737,258 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月13日'
     }, {
+        id: 'Enfys-Nest',
+        character_name: 'エンフィス・ネスト',
+        character_image: '/charui/tex.charui_enfys.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'カットスルー',
+                name_eng: 'Cut Thruough',
+                image: '/ability/tex.ability_enfys_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間エクスポーズ状態にする。ターゲットに防御系強化が発生している場合、その効果を解除する。この攻撃は回避できない。
+                
+                (防御系強化には防御力、HP、プロテクション、回避力、抵抗力上昇に加え、挑発、ステルス、フォアサイト、時間経過回復、クリティカル耐性が含まれる。)`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'サドンインパクト',
+                name_eng: 'Sudden Impact',
+                image: '/ability/tex.ability_enfys_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間スタン状態にし、3ターンの強化無効を発生させる。ターゲットにプロテクションがある場合、50%の追加ダメージを与え、アーマーを無効化する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'キネタイトチャージ',
+                name_eng: 'Kinetite Charge',
+                image: '/ability/tex.ability_enfys_special02.png',
+                description_jp: `敵全体に特殊ダメージを与え、2ターンのめまい効果を発生させ、HPが最大値の敵のターンメーターを20%減少させる。さらにHPが最大値を下回っている敵1体ごとに、ターンメーターが40%上昇する。この攻撃はカウンターおよび回避ができない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '闘争本能',
+                name_eng: 'Fighting Instinct',
+                image: '/abilityui/tex.abilityui_passive_enfys.png',
+                description_jp: `ネストのカウンター率が80%上昇し、自ターン中は挑発を無効化する。
+                
+                攻撃ダメージを受けると、クリティカル率30%およびボーナスプロテクション40%を得る(スタック可能)。ボーナスプロテクションは毎回40%ずつ上昇する。ボーナスはどちらも、次ターン終了時に解除およびリセットされる。
+                
+                敵が強化あるいは弱体を失うと、遭遇終了までネストのクリティカルダメージとヘルス・スティールが2%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Embo',
+        character_name: 'エンボ',
+        character_image: '/charui/tex.charui_embo.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '分解ショット',
+                name_eng: 'Dismantling Shot',
+                image: '/ability/tex.ability_embo_basic.png',
+                description_jp: `強化効果を全て解除し、ターゲットに物理ダメージを与える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'キューゾ戦闘ヘルメット',
+                name_eng: 'Kyuzo War Helmet',
+                image: '/ability/tex.ability_embo_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。この攻撃はエンボの最大プロテクションの35%に等しい分のボーナスダメージを与える。その後、エンボはプロテクションを50%失う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '寡黙なアサシン',
+                name_eng: 'The Quiet Assassin',
+                image: '/abilityui/tex.abilityui_passive_seizetheday.png',
+                description_jp: `賞金稼ぎ全体のカウンター率が50%、ヘルス・スティールが50%上昇する。エンボがリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可)
+                
+                契約: 強化なしで敵にダメージを15回与える(契約達成には味方賞金稼ぎのみが参加可能)
+                
+                報酬: 味方賞金稼ぎ全体の攻撃力が50%上昇する。味方賞金稼ぎが通常スキルを使うと、ターゲットの最大プロテクションの7%分ボーナスダメージを与える`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'キューゾ流',
+                name_eng: 'Way of the Kyuzo',
+                image: '/abilityui/tex.abilityui_passive_embo.png',
+                description_jp: `エンボがクリティカルヒットを受けなくなる。エンボにプロテクションがある場合はエンボの攻撃力が30%上昇し、プロテクションが無い場合はクリスタル率が30%上昇する。敵1体から攻撃ダメージを受けた際にプロテクションがない場合は、エンボに2ターンのフォアサイトが発生する。
+                
+                テリトリーウォーズの場合: 味方賞金稼ぎの最大プロテクションが40%上昇する。エンボのターン終了時、味方賞金稼ぎのプロテクションがエンボの最大プロテクションの25%分回復(エンボの場合は2倍)。エンボにプロテクションが発生している間、味方賞金稼ぎが弱体化効果発生中にダメージを受けると、賞金稼ぎの味方全体の防御力が30%、ターンメーターが5%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'エンボのボーナス',
+                name_eng: "Embo's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `エンボは契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                ボーナス: エンボクリティカルヒットを決めた後にボーナスヒットを決めた跡にボーナスターンを得る。ボーナスターンは連続では得られない。エンボは新しい特殊スキル「エルーシブ・ストライク」を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'エルーシブ・ストライク',
+                name_eng: "Embo's Payout",
+                image: '/ability/tex.ability_embo_special02.png',
+                description_jp: `物理ダメージを与え、与えたダメージと等しい分のプロテクションを回復させる。この攻撃はプロテクションを無効化する。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Aurra-Sing',
+        character_name: 'オーラ・シング',
+        character_image: '/charui/tex.charui_aurrasing.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '弱体ショット',
+                name_eng: 'Weakening Shot',
+                image: '/ability/tex.ability_aurrasing_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、70%の確率で1ターンの間スタン状態にする。ターゲットが弱体効果を受けている場合、オーラ・シングのターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '活性化',
+                name_eng: 'Hustle',
+                image: '/ability/tex.ability_aurrasing_special01.png',
+                description_jp: `オーラ・シングのクリティカル率と攻撃力が3ターン上昇し、次のスキル使用時のダメージが35%上昇する。オーラ・シングが既にステルス状態の場合、ボーナスターンを得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'スナイパーの技術',
+                name_eng: 'Snipers Expertise',
+                image: '/ability/tex.ability_aurrasing_special02.png',
+                description_jp: `ターゲットに物理ダメージを与える。ターゲットが転倒状態の場合、この攻撃によるダメージが200%になり、このスキルのクールダウンがリセットされる(レイドボスのみ転倒状態にできる)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: 'ゲームプラン',
+                name_eng: 'Game Plan',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `ステルス状態の間、味方賞金稼ぎとならず者の攻撃力が30%上昇する。バトル開始時および味方賞金稼ぎが敵に倒されると、味方賞金稼ぎアタッカー全体に2ターンのステルス効果が発生する。オーラ・シングがリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可):
+                
+                契約: 強化発生中にスキル1つを10回使用する(契約達成には味方賞金稼ぎのみが参加可能)
+                
+                報酬: 味方賞金稼ぎ全体のカウンター率が50%上昇し、ボーナス効果が発動する。敵が倒れると、味方賞金稼ぎのプロテクションが25%回復し、ターンメーターが25%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '冷酷な殺し屋',
+                name_eng: 'Relentless Killer',
+                image: '/abilityui/tex.abilityui_passive_stealth.png',
+                description_jp: `オーラ・シングのクリティカルダメージが40%上昇する。このボーナス効果はステルス状態の間2倍になる。味方賞金稼ぎが敵に倒されると、バトル終了までオーラ・シングのクリティカル率が10%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'オーラ・シングのボーナス',
+                name_eng: "Aurra Sing's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `オーラ・シングは契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                ボーナス: オーラ・シングの攻撃力が25%、ヘルス・スティールが50%上昇する。特殊スキルを使用すると1ターンの間オーラ・シングがステルス状態になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Old-Daka',
+        character_name: 'オールド・ダカ',
+        character_image: '/charui/tex.charui_daka.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'インサイトフル・ブロー',
+                name_eng: 'Insightful Blow',
+                image: '/ability/tex.ability_daka_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、75%の確率で1ターンの間スタン状態にする。ランダムな敵1体に物理ダメージを与え、55%の確率で1ターンの間スタン状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '復活の詠唱',
+                name_eng: 'Chant of Resurrection',
+                image: '/ability/tex.ability_daka_special01.png',
+                description_jp: `戦闘不能になったランダムな味方ナイトシスター1体をHP1で復活させ、35%の確率(ナイトシスターは成功率2倍)で戦闘不能になった他の味方もHP1で復活させる。味方全体のHPがオールド・ダカの最大HPの50%分回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: 'ナイトシスター・エルダー',
+                name_eng: 'Nightsister Elder',
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `味方ナイトシスターのHPが50%、防御力が50%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'サーブ・アゲイン',
+                name_eng: 'Serve Again',
+                image: '/abilityui/tex.abilityui_passive_heal_buff.png',
+                description_jp: `他の味方が戦闘不能になると、オールド・ダカのターンメーターが50%上昇し、「復活の詠唱」のクールダウンが1減少する。オールド・ダカがアクティブな間に他の味方が復活すると、復活した味方はターンメーターが20%上昇し、2ターンの間攻撃力と防御力が上昇する。さらに、遭遇終了までオールド・ダカの最大HPが10%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
         id: 'General-Kenobi',
         character_name: "ケノービ将軍",
         character_image: '/charui/tex.charui_obiwangeneral.png',

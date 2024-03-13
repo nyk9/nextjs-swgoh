@@ -359,28 +359,28 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_enfys.png',
         abbreviation: "Enfys Nest enfys nest",
         skill: `エクスポーズ  強化解除  回避不可  スタン付与  強化無効  カウンター  ボーナスプロテクション  クリティカルダメージ上昇  挑発無視 `,
-        url: '/characters/'
+        url: '/characters/Enfys-Nest'
     }, {
         name: "エンボ",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
         src: '/charui/tex.charui_embo.png',
         abbreviation: "Embo",
         skill: `強化解除  カウンター  攻撃力上昇  フォアサイト  回復 `,
-        url: '/characters/'
+        url: '/characters/Embo'
     }, {
         name: "オーラ・シング",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: '/charui/tex.charui_aurrasing.png',
         abbreviation: "Aurra Sing aurra sing",
         skill: `スタン付与  ターンメーター上昇  クリティカル率上昇  攻撃力上昇  ステルス  カウンター  `,
-        url: '/characters/'
+        url: '/characters/Aurra-Sing'
     }, {
         name: "オールド・ダカ",
         property: "ダークサイド、ヒーラー、リーダー、ナイトシスター",
         src: '/charui/tex.charui_daka.png',
         abbreviation: "Old Daka old daka ",
         skill: `スタン付与  復活  回復  リーダー：HP上昇  リーダー：防御力上昇  ターンメーター上昇  クールダウン減少  攻撃力上昇  防御力上昇  最大HP上昇 `,
-        url: '/characters/'
+        url: '/characters/Old-Daka'
     }, {
         name: "オビ＝ワン・ケノービ(ベン爺)",
         property: "ライトサイド、タンク、リーダー、ジェダイ、反乱軍",
