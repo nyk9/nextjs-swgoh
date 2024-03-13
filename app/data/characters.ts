@@ -268,91 +268,91 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_holdo.png',
         abbreviation: "Amilyn Holdo amilyn holdo 中将",
         skill: `フォアサイト  回復  めまい付与  防御力低下  回避力低下  弱体解除  挑発  `,
-        url: '/characters/'
+        url: '/characters/Amilyn-Holdo'
     }, {
         name: "イース・コス",
         property: "ライトサイド、サポート、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_eethkoth.png',
         abbreviation: "Eeth Koth eeth koth",
         skill: `防御力低下  スタン付与  スキルブロック付与 リーダー：防御力上昇  `,
-        url: '/characters/'
+        url: '/characters/Eeth-Koth'
     }, {
         name: "イウォーク・エルダー",
         property: "ライトサイド、ヒーラー、イウォーク",
         src: '/charui/tex.charui_ewok_chief.png',
         abbreviation: "Ewok Elder ewok elder",
         skill: `ターンメーター上昇  回復  復活   アシスト  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Ewoke-Elder'
     }, {
         name: "イウォーク・スカウト",
         property: "ライトサイド、アタッカー、イウォーク",
         src: '/charui/tex.charui_ewok_scout.png',
         abbreviation: "Ewok Scout ewok scout",
         skill: `ターンメーター減少付与 アシスト  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Ewoke-Scout'
     }, {
         name: "インペリアル・スーパー・コマンドー",
         property: "ダークサイド、アタッカー、帝国軍、マンダロリアン",
         src: '/charui/tex.charui_imperial_super_commando.png',
         abbreviation: "Imperial Super Commando imperial super commando",
         skill: `攻撃力低下  強化無効  強化解除  カウンター  固定ダメージ  回復  攻撃力上昇  ダメージ耐性 `,
-        url: '/characters/'
+        url: '/characters/Imperial-Super-Commando'
     }, {
         name: "ヴァンドア・チューバッカ",
         property: "ライトサイド、タンク、ならず者、スマグラー、ウーキー",
         src: '/charui/tex.charui_chewbacca_vandor.png',
         abbreviation: "Vandor Chewbacca ",
         skill: `アドバンテージ  プロテクション上昇  準備万端  クールダウン減少  プロテクション上昇  カウンター  復活  防御力無効化  回復  `,
-        url: '/characters/'
+        url: '/characters/Vandor-Chewbacca'
     }, {
         name: "ヴィアーズ将軍",
         property: "ダークサイド、サポート、リーダー、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_veers.png',
         abbreviation: "General Veers general veers",
         skill: `スピード上昇  アシスト  スキルブロック付与 リーダー：スピード上昇  攻撃力上昇  ターンメーター上昇  クリティカル率上昇 `,
-        url: '/characters/'
+        url: '/characters/General-Veers'
     }, {
         name: "ウィケット",
         property: "ライトサイド、アタッカー、イウォーク",
         src: '/charui/tex.charui_ewok_wicket.png',
         abbreviation: "Wicket wicket",
         skill: `クリティカル率上昇  アシスト  ターンメーター上昇  ステルス  クリティカルダメージ上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Wicket'
     }, {
         name: "ヴィサス・マー",
         property: "ライトサイド、ヒーラー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_visas.png',
         abbreviation: "Visas marr visas marr ",
         skill: `弱体解除  回復  クールダウン減少  ヘルススティール上昇  復活  防御突破力上昇  カウンター  アシスト `,
-        url: '/characters/'
+        url: '/characters/Visas-Marr'
     }, {
         name: "ウェッジ・アンティリーズ",
         property: "ライトサイド、アタッカー、リーダー、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_rebelpilot_wedge.png',
         abbreviation: "Wedge Antilles wedge antilles",
         skill: `防御力低下  全体攻撃  リーダー：攻撃力上昇  回復  スピード上昇 `,
-        url: '/characters/'
+        url: '/characters/Wedge-Antilles'
     }, {
         name: "エイス・ブラザー",
         property: "ダークサイド、アタッカー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_eighthbrother.png',
         abbreviation: "8B 8b Eighth Brother eighth brother",
         skill: `ステルス  粛清  精度低下  炎上  暗闇  無防備  回復  精度上昇  有効性上昇  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Eight-Brother'
     }, {
         name: "エコー",
         property: "ライトサイド、サポート、バッド・バッチ、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_bb_echo.png',
         abbreviation: "Echo echo Bad Batch BB",
         skill: `防御力上昇  回避力上昇  エクスポーズ  アシスト  強化無効  クールダウン増加付与  強化解除  敵全体-強化解除  めまい付与  回復無効  ターンメーター上昇  攻撃力上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Echo'
     }, {
         name: "エズラ・ブリッジャー",
         property: "ライトサイド、アタッカー、ジェダイ、フェニックス、反乱軍",
         src: '/charui/tex.charui_ezra_s3.png',
         abbreviation: "Ezra Bridger ezra bridger",
         skill: `強化解除  クールダウン減少  ターンメーター上昇  防御力上昇  プロテクション上昇  攻撃力上昇 アシスト `,
-        url: '/characters/'
+        url: '/characters/Ezra-Bridger'
     }, {
         name: "エンフィス・ネスト",
         property: "ライトサイド、アタッカー、ならず者、スマグラー",
