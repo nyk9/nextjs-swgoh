@@ -15,7 +15,8 @@ export type characterAbilities = {
     id: string,
     character_name: string,
     character_image: string,
-    ability: Abilities[]
+    ability: Abilities[],
+    last_updated: string
 };
 
 const characterAbilities: characterAbilities[] = [
@@ -73,7 +74,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: '50R-T',
         character_name: "50R-T",
@@ -138,7 +140,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'ARC-Trooper',
         character_name: 'ARCトルーパー',
@@ -191,7 +194,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'B1-Battle-Droid',
         character_name: 'B1バトル・ドロイド',
@@ -244,7 +248,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'B2-Super-Battle-Droid',
         character_name: 'B2スーパー・バトル・ドロイド',
@@ -291,7 +296,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'BB-8',
         character_name: 'BB-8',
@@ -350,7 +356,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'BT-1',
         character_name: 'BT-1',
@@ -419,7 +426,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'C-3PO',
         character_name: 'C-3PO',
@@ -508,7 +516,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Threepio-Chewie',
         character_name: 'C-3PO&チューイ',
@@ -559,7 +568,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'CC-2224-Cody',
         character_name: 'CC-2224 "コーディ"',
@@ -606,7 +616,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'CT-21-0408-Echo',
         character_name: 'CT-21-0408 "エコー"',
@@ -655,7 +666,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'CT-5555-Fives',
         character_name: 'CT-5555 "ファイブス"',
@@ -717,7 +729,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: true,
                 is_ultimate: true,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'CT-7567-Rex',
         character_name: 'CT-7567 "レックス"',
@@ -777,7 +790,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'HK-47',
         character_name: 'HK-47',
@@ -854,7 +868,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'IG-100-MagnaGuard',
         character_name: 'IG-100マグナガード',
@@ -907,7 +922,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'IG-11',
         character_name: 'IG-11',
@@ -958,7 +974,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'IG-12-Grogu',
         character_name: 'IG-12 & グローグー',
@@ -1019,7 +1036,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: true,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'IG-86-Sntinel-Droid',
         character_name: 'IG-86歩哨ドロイド',
@@ -1056,7 +1074,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'IG-88',
         character_name: 'IG-88',
@@ -1119,7 +1138,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'K-2SO',
         character_name: 'K-2SO',
@@ -1166,7 +1186,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'L3-37',
         character_name: 'L3-37',
@@ -1247,7 +1268,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'R2-D2',
         character_name: 'R2-D2',
@@ -1306,7 +1328,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'STAP',
         character_name: 'STAP',
@@ -1367,7 +1390,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: true,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'T3-M4',
         character_name: 'T3-M4',
@@ -1426,7 +1450,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: true,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'TIE-Fighter-Pilot',
         character_name: 'TIEファイター・パイロット',
@@ -1463,7 +1488,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'THE-Armorer',
         character_name: 'アーマラー',
@@ -1527,7 +1553,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Iden-Versio',
         character_name: 'アイデン・ヴェルシオ',
@@ -1594,7 +1621,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Ima-Gun-Di',
         character_name: 'アイマ=ガン・ダイ',
@@ -1641,7 +1669,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Aayla-Secura',
         character_name: 'アイラ・セキュラ',
@@ -1688,7 +1717,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'URoRRuRRR',
         character_name: 'ア゛ウァア゛ゥア゛ウウ',
@@ -1735,7 +1765,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Ugnaught',
         character_name: 'アグノート',
@@ -1772,7 +1803,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Admiral-Ackbar',
         character_name: 'アクバー提督',
@@ -1821,7 +1853,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: true,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Asajj-Ventress',
         character_name: 'アサージ・ヴェントレス',
@@ -1880,7 +1913,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: true,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Ahsoka-Tano',
         character_name: 'アソーカ・タノ',
@@ -1931,7 +1965,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Commander-Ahsoka-Tano',
         character_name: 'アソーカ・タノ(コマンダー)',
@@ -1990,7 +2025,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Ahsoka-Tano-Fulcrum',
         character_name: 'アソーカ・タノ(フルクラム)',
@@ -2039,7 +2075,667 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: true,
                 is_ultimate: false
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Amilyn-Holdo',
+        character_name: 'アミリン・ホルド',
+        character_image: '/charui/tex.charui_holdo.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'メジャーショット',
+                name_eng: 'Measured Shot',
+                image: '/ability/tex.ability_holdo_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、最もコンディションの悪い他の味方レジスタンスに2ターンのフォアサイト効果が切れると、その味方のHPが10%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '通常スキル',
+                name_jp: 'バンカーバスター',
+                name_eng: 'Bunker Buster',
+                image: '/ability/tex.ability_holdo_special01.png',
+                description_jp: `敵全体に特殊ダメージを与え、2ターンのめまい効果を発生させる。メインターゲットの防御力と回避力を2ターンの間低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '救済',
+                name_eng: 'Reprieve',
+                image: '/ability/tex.ability_holdo_special02.png',
+                description_jp: `指定した他の味方1体の弱体を全て解除し、そのユニットはHPが40%、プロテクションが20%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '秘めたる自身',
+                name_eng: 'Quiet Confidence',
+                image: '/abilityui/tex.abilityui_passive_uniqueability.png',
+                description_jp: `他の味方レジスタンスのフォアサイト効果が失われると、アミリン・ホルドは1ターンの挑発を行い、HPが10%回復する。挑発が発生していない間は、アミリン・ホルドのスピードが50上昇し、他の味方レジスタンス全員のクリティカル回避力が20%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Eeth-Koth',
+        character_name: 'イース・コス',
+        character_image: '/charui/tex.charui_eethkoth.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'ブリーチ・ストライク',
+                name_eng: 'Breaching Strike',
+                image: '/ability/tex.ability_eethkoth_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、50%の確率で3ターンの間防御力を低下させる。相手がドロイドの場合、確率は100%になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'フォースプッシュ',
+                name_eng: 'Force Pushl',
+                image: '/ability/tex.ability_eethkoth_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、75%の確率で1ターンの間スタン状態にする。ターゲットがドロイドの場合、さらに100%の確率で3ターンの間スキルブロック状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '熱心なジェダイのディフェンダー',
+                name_eng: 'Stalwart Jedi Defender',
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `味方ジェダイの防御力が60上昇する。`,
+                is_omega: false,
+                is_omicron: false,
+                is_ultimate: false,
+                is_zeta: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '対ドロイド・スペシャリスト',
+                name_eng: 'Anti-Droid Specialist',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `ドロイド攻撃時、イース・コスのクリティカル率が35%、クリティカルダメージが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Ewoke-Elder',
+        character_name: 'イウォーク・エルダー',
+        character_image: '/charui/tex.charui_ewok_chief.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'ガイド・ストライク',
+                name_eng: 'Guiding Strike',
+                image: '/ability/tex.ability_ewok_elder_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、60%の確率でターンメーターが50%上昇する。さらに他の味方イウォークはその半分量、その他の味方は10%ターンメーターが上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '部族の癒し手',
+                name_eng: 'Tribial Healer',
+                image: '/ability/tex.ability_ewok_elder_special01.png',
+                description_jp: `味方全体から弱体を全て解除する。味方全体のHPがイウォーク・エルダーの最大HPの30%分回復し、35%の確率で戦闘不能になった味方がHP15%で復活する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '森の力',
+                name_eng: 'Power of the Forest',
+                image: '/ability/tex.ability_ewok_elder_special02.png',
+                description_jp: `戦闘不能になった味方をランダムに1体、HP40%で復活させる。イウォーク・エルダーは55%の確率でターンメーターが45%上昇する。復活した味方がイウォークの場合、そのユニットをアシストに呼ぶ。味方イウォークが戦闘不能になると、このスキルのクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Ewoke-Scout',
+        character_name: 'イウォーク・スカウト',
+        character_image: '/charui/tex.charui_ewok_scout.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'イウォークの奇襲',
+                name_eng: 'Ewoke Ambush',
+                image: '/ability/tex.ability_ewok_scout_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、55%の確率でターンメーターを50%減少させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'ラッシュ・アタック',
+                name_eng: 'Rushing Attack',
+                image: '/ability/tex.ability_ewok_scout_special01.png',
+                description_jp: `クリティカルヒット率が50%上昇した攻撃でターゲットに物理ダメージを与え、ランダムな味方1体をアシストに呼ぶ。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '種族の戦術',
+                name_eng: 'Tribal Tactics',
+                image: '/abilityui/tex.abilityui_passive_dodge.png',
+                description_jp: `生存している味方イウォーク1体ごとに、イウォーク・スカウトの回避力が5%上昇する。さらに攻撃を回避するかクリティカルヒットを決めるとターンメーターが30%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Imperial-Super-Commando',
+        character_name: 'インペリアル・スーパー・コマンドー',
+        character_image: '/charui/tex.charui_imperial_super_commando.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'アドバンテージ確保',
+                name_eng: 'Seize the Advantage',
+                image: '/ability/tex.ability_imperial_super_commando_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、70%の確率で2ターンの間攻撃力を低下させる。ターゲットのターンメーターが50%を下回る場合、再攻撃を行う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '高度戦略',
+                name_eng: 'Superior tactics',
+                image: '/ability/tex.ability_imperial_super_commando_special01.png',
+                description_jp: `ターゲットに物理ダメージを与えて強化を全て解除し、2ターンの強化無効を発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '優位確保',
+                name_eng: 'Upper Hand',
+                image: '/abilityui/tex.abilityui_passive_counterattack.png',
+                description_jp: `インペリアル・スーパー・コマンドーのカウンター率が100%上昇し、強化効果が発生していない敵ごとに攻撃力が15%上昇する。
+                
+                バトル開始時、味方全体がダークサイドのマンダロリアンまたは帝国だった場合: 
+                
+                - ダークサイドの味方マンダロリアンはターン外に攻撃するたび、追加の固定ダメージを与え、プロテクションが10%回復する
+                
+                - インペリアル・スーパー・コマンドーまたはガー・サクソンがターン外に攻撃するたび、他のもう一体も同様に攻撃する(1ターンに1回限り)`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'スーパー・コマンドー・ベスカー・アーマー',
+                name_eng: 'Super Commando Beskar Armor',
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `インペリアル・スーパー・コマンドーとガー・サクソンの防御力が30%、クリティカル回避力が50%、最大HPと最大プロテクションが20%上昇する。
+                
+                インペリアル・スーパー・コマンドーまたはガー・サクソンが初めて戦闘不能になった場合、代わりに2ターンのダメージ体制を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Vandor-Chewbacca',
+        character_name: 'ヴァンドア・チューバッカ',
+        character_image: '/charui/tex.charui_chewbacca_vandor.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'アンチェインド',
+                name_eng: 'Unchained',
+                image: '/ability/tex.ability_chewbacca_vandor_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。チューバッカのターンである場合、2ターンのアドバンテージを得る。この攻撃は防御力を無効化する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '自由の戦士',
+                name_eng: 'Freedom Fighter',
+                image: '/ability/tex.ability_chewbacca_vandor_special01.png',
+                description_jp: `攻撃力ではなくチューバッカの最大HPに応じた物理ダメージをターゲットに2回与える。指定した味方のHPが、そのダメージの50%分回復する。さらに、チューバッカとその味方は2ターンのプロテクション上昇(30%)を得る。
+                
+                準備万端: チューバッカが準備万端状態の時、この攻撃のダメージが2倍になり、与えたダメージの50%分チューバッカのHPが回復し、このスキルのクールダウンが2減少し、準備万端状態の味方全てに2ターンのプロテクション上昇(30%)が発生する。その後、チューバッカの準備万端状態は解除される。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ザ・ビースト',
+                name_eng: 'The Beast',
+                image: '/abilityui/tex.abilityui_passive_firstaid.png',
+                description_jp: `チューバッカの最大プロテクションが40%減少する代わりに、最大HPが80%上昇する。さらに、チューバッカに強化効果が発生している間、敵全体の与えるダメージが25%減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '凶暴な守護者',
+                name_eng: 'Ferocious Protector',
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `強化発生中、チューバッカの100%のカウンター率が発生する。強化発生中の各ターン終了時、いずれかの味方が攻撃ダメージを受けてチューバッカが攻撃ダメージを受けなかった場合、チューバッカのプロテクションが最大HPの10%分回復し、他のならず者はその半分量回復する。この方法でチューバッカのプロテクションが最大まで回復すると、チューバッカが準備万端状態になる。チューバッカが準備万端状態の時にライトサイドの味方ライトサイドが戦闘不能になると、HP60%の状態で復活させる。その後、チューバッカの準備万端状態は解除される。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'General-Veers',
+        character_name: 'ヴィアーズ将軍',
+        character_image: '/charui/tex.charui_veers.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '大胆な攻撃',
+                name_eng: 'Daring Attack',
+                image: '/ability/tex.ability_veers_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、それぞれ70%の確率で2ターンのスピード上昇をヴィアーズ将軍とランダムな味方帝国軍トルーパー1体に発生させる(この効果を受けていない場合)。`,
+                is_omega: true,
+                is_omicron: false,
+                is_ultimate: false,
+                is_zeta: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '無慈悲な襲撃',
+                name_eng: 'Ruthless Assault',
+                image: '/ability/tex.ability_veers_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、55%の確率で1ターンの間スキルブロック状態にする。生存している敵反乱軍1体ごとにダメージが10%増加する。全ての味方帝国軍トルーパーをアシストに呼ぶ(ダメージは40%減少)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '帝国アサルト・コマンダー',
+                name_eng: 'Imperial Assault Commander',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `味方帝国軍の攻撃力が30%上昇する。味方帝国軍トルーパーはスピードが20上昇し、強化を得るとターンメーターが10%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '攻撃的戦術家',
+                name_eng: 'Aggressive Tectician',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `ヴィアーズ将軍がアクティブな間に敵が戦闘不能になると、味方帝国軍トルーパーは2ターンの間攻撃力上昇、ターンメーターは50%上昇し、プロテクションが10%回復する。
+                
+                ヴィアーズ将軍がアクティブな間、味方帝国軍トルーパーはクリティカル率が15%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Wicket',
+        character_name: 'ウィケット',
+        character_image: '/charui/tex.charui_ewok_wicket.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '探究者の一突き',
+                name_eng: 'Inquisitive Jab',
+                image: '/ability/tex.ability_ewok_wicket_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間クリティカル率が上昇する。味方イウォークがウィケットをアシストに呼ぶと、そのユニットも2ターンの間クリティカル率が上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '森林奇襲',
+                name_eng: 'Forest Ambush',
+                image: '/ability/tex.ability_ewok_wicket_special01.png',
+                description_jp: `敵全体に物理ダメージを与える。クリティカルヒット1回ごとに味方イウォークのターンメーターが10%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'ゲリラ奇襲',
+                name_eng: 'Guerrilla Strike',
+                image: '/ability/tex.ability_ewok_wicket_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、指定した味方をアシストに呼ぶ。指定した味方がイウォークの場合、ウィケットとそのユニットに2ターンのステルス効果の発生とクリティカルダメージが上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '隠密作戦',
+                name_eng: 'Furtive Tactics',
+                image: '/abilityui/tex.abilityui_passive_extraturn.png',
+                description_jp: `生存している味方イウォークおよびステルス状態の味方1体ごとに、ウィケットのクリティカルダメージが10%上昇する。ウィケットは自ターン終了時に50%の確率で追加ターンを開始する。前のターンでこの効果が発動している場合、この確率は10%に減少する。ウィケットのクリティカルヒット時に、全味方イウォークのHPが4%、プロテクションが2%回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Visas-Marr',
+        character_name: 'ヴィサス・マー',
+        character_image: '/charui/tex.charui_visas.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'テレキネシスブラスト',
+                name_eng: 'Telekinetic Blast',
+                image: '/ability/tex.ability_visas_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、ヴィサスと弱体を受けているランダムな味方1体の弱体を全て解除する。ターゲットがシスの場合、ヴィサス・マーとHPが最も低い味方の最大HPが25%回復する。弱体が1つでも解除された場合、ダークヒーリングのクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'ダークヒーリング',
+                name_eng: 'Dark Healing',
+                image: '/ability/tex.ability_visas_special01.png',
+                description_jp: `敵全体に物理ダメージを与える。味方全体のヘルス・スティールが1ターン上昇し、ヴィサス・マーの最大HPの35%分HPが回復する。スキル使用後にヴィサス・マーのHPが最大値である場合、ランダムな戦闘不能の味方をHP50%の状態で復活させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '貫通ストライク',
+                name_eng: 'Piercing Strike',
+                image: '/ability/tex.ability_visas_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間味方全体の防御突破力が上昇する。この攻撃はプロテクションを無効化する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '光への回帰',
+                name_eng: 'Returned to the Light',
+                image: '/abilityui/tex.abilityui_passive_counterattack.png',
+                description_jp: `弱体が発生していない間、ヴィサス・マーのカウンター率が100%上昇し、他の味方が敵シスを攻撃すると1ターンに1度60%の確率でアシストする。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Wedge-Antilles',
+        character_name: 'ウェッジ・アンティリーズ',
+        character_image: '/charui/tex.charui_rebelpilot_wedge.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '集中攻撃',
+                name_eng: 'Focused Fire',
+                image: '/ability/tex.ability_wedge_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、ウェッジの次のターンの終わりまで防御力を低下させる。防御力低下が発生している敵に対して、この攻撃のダメージは50%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'レッド中隊ストライク',
+                name_eng: 'Red Squadron Strike',
+                image: '/ability/tex.ability_wedge_special01.png',
+                description_jp: `敵全体に物理ダメージを与える。帝国軍またはHPが半分以上の敵に対して、この攻撃のダメージは50%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '反乱軍の勇壮',
+                name_eng: 'Rebel Heroism',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `味方反乱軍の攻撃力が30%上昇し、クリティカルヒット時には最大HPの15%回復、ターンメーターが10%上昇する。さらに、敵を倒すと最大HPの25%が回復する。`,
+                is_omega: false,
+                is_omicron: false,
+                is_ultimate: false,
+                is_zeta: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'レッド・リーダー',
+                name_eng: 'Red Leader',
+                image: '/abilityui/tex.abilityui_leader_default.png',
+                description_jp: `HP最大状態の味方1体ごとにウェッジの攻撃力が12%、スピードが9上昇する。さらに、HPが最大でない味方(戦闘不能を含む)1体ごとにスピードが15上昇する。ビッグズ・ダークライダーがいる場合、彼もこれらのボーナスが発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Eight-Brother',
+        character_name: 'エイス・ブラザー',
+        character_image: '/charui/tex.charui_eighthbrother.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '回転攻撃',
+                name_eng: 'Whirling Strike',
+                image: '/ability/tex.ability_eighthbrother_basic.png',
+                description_jp: `このターン、エイス・ブラザーにステルス効果が発生していない場合、3ターンのステルス効果が発生する。その後、ターゲットに物理ダメージを与え、ターゲットがジェダイの場合、遭遇終了まで「粛清」のスタックを1発生させる(最大6、コピー、体制発揮不可)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'フォトン・グレネード',
+                name_eng: 'Photon Grenades',
+                image: '/ability/tex.ability_eighthbrother_special01.png',
+                description_jp: `このターン、エイス・ブラザーにステルス効果が発生していない場合、3ターンのステルス効果が発生する。敵全体に物理ダメージを与え、2ターンの間、精度低下と炎上を発生させる。このスキルによるダメージを受けた敵ジェダイには、代わりに2ターンの間、暗闇と炎上を発生させる(耐性発揮不可)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'ブレード・ヒルト',
+                name_eng: 'Bladed Hilt',
+                image: '/ability/tex.ability_eighthbrother_special02.png',
+                description_jp: `このターン、エイス・ブラザーにステルス効果が発生していない場合、3ターンのステルス効果が発生する。物理ダメージを与え、「粛清」のスタックを最大5消費する。以降、「粛清」のスタックがこの方法で消費されるたび、再度物理ダメージを与える。
+                
+                - スタック消費1以上: 2ターンの回復無効
+                - スタック消費2以上: 2ターンのスピード低下
+                - スタック消費3以上: 1ターンのスキルブロック
+                - スタック消費4以上: 2ターンの強化無効
+                - スタック5消費: バトル終了までアーマー破壊
+                
+                敵ジェダイはこれらの弱体化効果を耐性発揮できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: 'もうたくさんだ',
+                name_eng: 'More Than Enough',
+                image: '/abilityui/tex.abilityui_leader_inquisitor.png',
+                description_jp: `味方帝国軍の精度と有効性が5%上昇する。尋問官はさらに30%上昇する。また、ジェダイのユニークスキルでフォアサイトを得た敵ジェダイは、2ターンの間、暗闇状態になる(回避、耐性発揮不可)。味方尋問官が通常スキルを使用するたび、30%の確率で遭遇終了まで「粛清」のスタックを1発生させる(最大6。コピー、回避、耐性発揮不可)。
+                
+                テリトリーウォーズの場合: 敵ジェダイがジェダイのユニークスキルで挑発を行うたび、敵全体は自身の最大HP20%分のダメージを受ける。このダメージでは敵を戦闘不能にできない。敵ジェダイがジェダイのユニークスキルでクリティカルヒット耐性を得るたび、敵はクリスタルヒット耐性を解除し、代わりに1ターンの無防備状態になる(耐性発揮不可)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'シャドウハント',
+                name_eng: 'Hunting A Shadow',
+                image: '/abilityui/tex.abilityui_passive_stealth.png',
+                description_jp: `バトル開始時、エイス・ブラザーに3ターンのステルス効果が発生する。エイス・ブラザーはステルス効果を得るたび、HPが20%、プロテクションが20%回復する。
+                
+                エイス・ブラザーがターン中にスキルを使用するたび、そのターン開始時にステルス状態だった場合、ステルス効果を失い、2ターンの間、精度と有効性が上昇する。そのスキルが「回転攻撃」または「フォトン・グレネード」だった場合、これらのスキルによるダメージを受けた敵に「粛清」のスタックを1発生させる(最大6)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '忍耐',
+                name_eng: 'Patience',
+                image: '/abilityui/tex.abilityui_passive_jediwillneverbevictorious.png',
+                description_jp: `味方全体(3体以上)が尋問官の場合、このユニットの最大HP、最大プロテクション、有効性が20%上昇する。ターン開始時にこのユニットがステルス状態の場合、ステルス状態の間、このユニットの防御突破力と攻撃力が40%上昇する。敵がターン外に攻撃するたび、その敵は「粛清」のスタックを1得る(最大6。回避、耐性発揮不可)。敵に発生している「粛清」が消費または解除されるたび、このユニットのターンメーターが3%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Echo',
+        character_name: 'エコー',
+        character_image: '/charui/tex.charui_bb_echo.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '攻撃的防御',
+                name_eng: 'Daring Defense',
+                image: '/ability/tex.ability_bbecho_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。最弱の味方クローン・トルーパーに2ターンの防御力上昇と回避力上昇を与える(この効果を受けていない場合)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '先回り',
+                name_eng: 'One Step Ahead',
+                image: '/ability/tex.ability_bbecho_special01.png',
+                description_jp: `ターゲットに2ターンの強化無効を発生させ、敵全体を2ターンの間エクスポーズ状態にする。
+                指定した味方クローン・トルーパーの弱体化効果を全て解除してアシストに呼ぶ。その味方がバッド・バッチの場合、エコーは敵ターゲットのクールダウンを1増加させる(銀河の伝説を除く)。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '疑う余地なし',
+                name_eng: 'Never Any Doubt',
+                image: '/ability/tex.ability_bbecho_special02.png',
+                description_jp: `味方クローン・トルーパーに2ターンの回避力上昇を与える。敵全体の強化効果を全て解除し、2ターンのめまいと回復無効を発生させる。
+                
+                解除された強化効果1つにつき、味方クローン・トルーパーの攻撃力が次のターン終了まで10%上昇し、味方バッド・バッチのターンメーターが5%上昇する。この攻撃は回避または耐性発揮できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '生き延びるために',
+                name_eng: 'One That Survives',
+                image: '/abilityui/tex.abilityui_passive_bbecho.png',
+                description_jp: `味方クローン・トルーパーが強化効果を得るまたは失うたび、その味方のHPとプロテクションが4%回復する(味方バッド・バッチはその2場合)。
+                
+                味方バッド・バッチが敵に弱体化効果を与えるたび、その敵のプロテクションが8%減少する。その敵のプロテクションが50%を下回り、かつHPが50%を上回ている場合は、さらにHPも8%減少する。この効果はレイドボスや銀河の伝説には適用されない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Ezra-Bridger',
+        character_name: 'エズラ・ブリッジャー',
+        character_image: '/charui/tex.charui_ezra_s3.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'ラッシュ・ストライク',
+                name_eng: 'Rushing Strike',
+                image: '/ability/tex.ability_ezra_s3_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、40%の確率で再攻撃を行う。エズラが弱体を受けていない場合、この確率は２倍になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'フラリッシュ',
+                name_eng: 'Flourish',
+                image: '/ability/tex.ability_ezra_s3_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、強化を全て解除する。強化が発生していない場合、この攻撃のクールダウンが1減少し、エズラのターンメーターが75%上昇する。エズラの防御力が2ターンの間上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'ウォッチ&ラーン',
+                name_eng: 'Watch and Learn',
+                image: '/ability/tex.ability_ezra_s3_special02.png',
+                description_jp: `指定した味方が攻撃を行い、エズラがアシストする(ダメージが20%増加)。選択した味方のタイプに応じて、両攻撃者は以下のボーナス効果を得る:
+                
+                - アタッカー: 可能な場合この攻撃がクリティカルヒットになる
+                
+                - タンク: 2ターンのプロテクション上昇(40%)
+                
+                - サポート: ターンメーターが40%上昇する`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '完遂',
+                name_eng: 'Push Through',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `遭遇終了まで、エズラはターン終了時に攻撃力が10%上昇する(スタック可能、最大40%)。戦闘不能になるとリセットされる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'General-Kenobi',
         character_name: "ケノービ将軍",
@@ -2100,7 +2796,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Jedi-Knight-Cal-Kestis',
         character_name: 'ジェダイ・ナイト・カル・ケスティス',
@@ -2218,7 +2915,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             }
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Jedi-Knight-Luke-Skywalker',
         character_name: 'ジェダイ・ナイト・ルーク・スカイウォーカー',
@@ -2305,7 +3003,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }, {
         id: 'Jedi-Master-Kenobi',
         character_name: 'ジェダイ・マスター・ケノービ',
@@ -2408,7 +3107,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false,
             },
-        ]
+        ],
+        last_updated: '2024年3月13日'
     }
 ];
 

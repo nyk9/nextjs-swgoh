@@ -40,7 +40,7 @@ export default async function CharacterSkills(params: {
     } else {
         for (let i: number = 0; i < data[abilityIndex].ability.length; i++) {
             let str: string = data[abilityIndex].ability[i].description_jp;
-            data[abilityIndex].ability[i].description_jp = str.replace(/                /g, ' ');
+            data[abilityIndex].ability[i].description_jp = str.replace(/                /g, '');
         }
         return (
             <>
@@ -96,6 +96,9 @@ export default async function CharacterSkills(params: {
                         </div>
                     );
                 })}
+                <footer>
+                    最終更新日: {data[abilityIndex].last_updated}
+                </footer>
             </>
         );
     }
