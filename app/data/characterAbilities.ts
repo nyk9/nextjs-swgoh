@@ -2078,6 +2078,114 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月13日'
     }, {
+        id: 'Queen-Amidala',
+        character_name: 'アミダラ女王',
+        character_image: '/charui/tex.charui_queenamidala.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'S-5ヘビー・ブラスター・ピストル',
+                name_eng: "S-5 Heavy Blaster Pistol",
+                image: '/ability/tex.ability_queenamidala_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間エクスポーズ状態にする(アクティブな味方侍女(おとり)がいる場合は回避不可)。銀河共和国の味方全体は2ターンの時間経過回復および時間経過プロテクションのスタックを3得る。
+                
+                アクティブな味方侍女(おとり)がいる場合、味方銀河共和国のHPとプロテクションが5%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '私がアミダラ女王です',
+                name_eng: 'I am Queen Amidala',
+                image: '/ability/tex.ability_queenamidala_special01.png',
+                description_jp: `敵全体の強化効果を全て解除し、物理ダメージを与える。味方全体が2ターンの精度上昇を得る。
+                
+                アクティブな味方侍女(おとり)がいる場合、ターゲットを2ターンのよろめき状態にする(回避、耐性発揮不可)。銀河共和国の味方全体が、2ターンの間、防御突破力上昇と、時間経過回復および時間経過プロテクションのスタックを3得る。この攻撃は回避できない。
+                
+                グランドアリーナで、味方に銀河の伝説がいない場合:この攻撃は敵のプロテクションを無効化し、味方全体がクリティカルダメージ上昇と、時間経過回復および時間経過プロテクションのスタック4を2ターンの間得る。アクティブな味方銀河共和国ごとに、敵全体に時間経過ダメージのスタック1とスピード低下、そして無防備状態が2ターン発生し、クールダウンが1増加する(耐性発揮不可)。アクティブな味方侍女(おとり)がいる場合、これらの効果は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'アセンション・ガン',
+                name_eng: 'Ascension Gun',
+                image: '/ability/tex.ability_queenamidala_special02.png',
+                description_jp: `味方全体の弱体化効果を全て解除する。銀河の伝説以外の銀河共和国の味方全体をアシストに呼び、その味方とアミダラ女王のHPとプロテクションが20%回復する。ターゲットのターンメーターを50%減少させる(耐性発揮不可)。
+                
+                味方全体が銀河共和国で、味方に銀河の伝説やならず者がいない場合、同盟スロットが使用可能であれば味方侍女(おとり)をバトルに召集する。
+                
+                味方侍女(おとり)が既に存在する場合、銀河共和国の味方全体が2ターンの間、防御力上昇、スピード上昇、抵抗力上昇を得て、タンク以外の味方銀河共和国が2ターンの間ステルス状態になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '民と共に',
+                name_eng: 'My Place is with My Peole',
+                image: '/abilityui/tex.abilityui_passive_myplaceiswithmypeople.png',
+                description_jp: `味方全体の防御力が20%、最大HPと最大プロテクションが15%上昇する。
+                
+                バトル開始時、味方全体が銀河共和国で、味方に銀河の伝説の伝説がいない場合:
+                
+                - 敵はターン外に攻撃するたび、1ターンの時間経過ダメージが発生し(回避、耐性発揮不可)、敵全体のターンメーターが10%減少する(耐性発揮不可)。
+                - 各味方はターン開始時、ターン終了まで、自身の時間経過回復のスタックごとにクリティカルダメージが3%上昇し(スタック可能)、自身の時間経過プロテクションのスタックごとに攻撃力が3%上昇する(スタック可能)。
+                - 敵はクリスタルヒットを与えるたび、遭遇終了まで、クリティカルダメージ、防御力、攻撃力が5%低下する(スタック可能、最大-50%、耐性発揮不可)。
+                
+                グランドアリーナで、味方に銀河の伝説が存在せず、味方全体が銀河共和国の場合: 味方は特殊スキルを使用するたび、役割に応じたボーナスを得る:
+                
+                - アタッカー: 2ターンの攻撃力上昇を得て、別のランダムな味方をアシストに呼び、20%の増加ダメージを与える
+                - ヒーラーとサポート: プロテクション城所(50%、スタック可能)とスピード上昇を3ターンの間得る
+                - タンク: HPとプロテクションが25%回復する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '忠実な護衛',
+                name_eng: 'Loyal Bodyguard',
+                image: '/abilityui/tex.abilityui_passive_handmaidendecoy.png',
+                description_jp: `アミダラ女王の最大HPと最大プロテクションが20%、クリティカル率とクリティカルダメージが10%上昇し、味方全体がクールダウン操作を無効化する。
+                
+                味方侍女(おとり)は召集されるたび、戦闘不能になるまで挑発を行う(解除、阻止不可)。侍女(おとり)は他の全ての強化効果と弱体化効果を無効化し、ターンを開始しない。侍女(おとり)が戦闘不能になるたび、彼女を戦闘不能にした敵は2ターンの間疑心状態になり(回避、耐性発揮不可)、アミダラ女王がボーナスターンと2ターンのダメージ耐性を得る(コピー、解除、阻止不可)。
+                
+                アクティブな味方侍女(おとり)がいる場合:
+                
+                - 味方銀河共和国の時間経過回復または時間経過プロテクションが切れるたび、その味方のHPとプロテクションが5%回復する。
+                - アミダラ女王の時間経過回復または時間経過プロテクションが切れるたび、バトル終了までアミダラ女王は女王の保護のスタックを1得る(最大10。コピー、解除、阻止不可)。アミダラ女王の女王の保護のスタックごとに、銀河共和国の味方全体がその2倍のステータスを得る。味方侍女(おとり)はこれらの効果を無効化し、おとりが戦闘不能になってもその効果は持続するが、アミダラ女王が戦闘不能になると解除される。
+                
+                女王の保護:
+                最大HPと最大プロテクションが3%、有効性と抵抗力が5%、スピードが5上昇する(スタックごと)
+                
+                グランドアリーナで、味方に銀河の伝説またはならず者がおらず、味方全体が銀河共和国の場合: 味方全体のクリティカルダメージが25%、マスターが40%上昇し、恐怖と回復無効を無効化する。
+                味方は時間経過ダメージのスタックが発生するたび、それを解除し、味方全体が2ターンの時間経過回復および時間経過プロテクションのスタックを1得る。
+                各遭遇開始時、味方侍女(おとり)1体を招集する。味方のおとりがクリティカルヒットを受けるたび、敵全体に2ターンの間、有効性低下と抵抗力低下が発生する(回避不可)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '侍女(おとり)',
+                name_eng: 'Handmaiden Decoy',
+                image: '/charui/tex.charui_queenamidala_decoy.png',
+                description_jp: `ライトサイド、タンク、銀河共和国
+                
+                [通常] ボディーガード: 味方銀河共和国のHPとプロテクションが10%回復する。アドバンテージがまだ発生していないランダムな敵に、1ターンのアドバンテージを与える(回避、耐性発揮不可)。
+                
+                [ユニーク] 召集: このユニットのステータスは召集者のステータスによって変化する。特定のレイドではこのユニットを召集できない。このユニットは復活できない。効果で戦闘不能のユニットを数える場合、このユニットは数に含めない。味方戦闘ユニットがいなくなった場合、このユニットはバトルから逃走する。この召集ユニットがスロットにいる場合、ユニットは復活できない。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
         id: 'Amilyn-Holdo',
         character_name: 'アミリン・ホルド',
         character_image: '/charui/tex.charui_holdo.png',
@@ -2988,6 +3096,660 @@ const characterAbilities: characterAbilities[] = [
             }
         ],
         last_updated: '2024年3月13日'
+    }, {
+        id: 'Obi-Wan-Kenobi-Old-Ben',
+        character_name: 'オビ=ワン・ケノービ(ベン爺)',
+        character_image: '/charui/tex.charui_obiwanep4.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'エレガントフォーム',
+                name_eng: 'Elegant Form',
+                image: '/ability/tex.ability_obiwankenobioldhermit_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの回避力低下を発生させ、2ターンの間有効性が上昇する。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'マインド・トリック',
+                name_eng: 'Mind Tricks',
+                image: '/ability/tex.ability_obiwankenobioldhermit_special01.png',
+                description_jp: `敵全体を1ターンの間スキルブロック状態にし、2ターンの間攻撃力を低下させる。さらに80%の確率でターンメーターを60%減少させる。味方ジェダイおよび反乱軍は、耐性発揮した効果1つごとにターンメーターが3%上昇する。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '真なる守護者',
+                name_eng: 'Devoted Protector',
+                image: '/ability/tex.ability_obiwankenobioldhermit_event01.png',
+                description_jp: `ベン爺が2ターンの挑発を行う。この挑発が終わると、ベン爺は1ターンの挑発を行う。味方全体の防御力が2ターンの間上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: 'ジェダイの老騎士',
+                name_eng: 'Old Jedi Knight',
+                image: '/abilityui/tex.abilityui_passive_dodge.png',
+                description_jp: `味方全体の回避力が15%上昇する。さらに攻撃を回避するとターンメーターが30%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '不屈の心',
+                name_eng: 'If You Strike Me Down',
+                image: '/abilityui/tex.abilityui_passive_removeharmful.png',
+                description_jp: `味方ジェダイまたは反乱軍がダメージを受けると、ベン爺のターンメーターが5%上昇する。ベン爺が初めて戦闘不能になった時に味方全体が2ターンの攻撃力上昇とスピード上昇を得て、HPが50%、プロテクションが50%回復し、ターンメーターが25%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: "2024年3月15日"
+    }, {
+        id: 'Omega',
+        character_name: 'オメガ',
+        character_image: '/charui/tex.charui_badbatchomega.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '鎮圧射撃',
+                name_eng: 'Disarming Shot',
+                image: '/ability/tex.ability_badbatchomega_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。オメガに回避力上昇が発生している場合、1ターンの暗闇とめまいを発生させる。
+                
+                オメガに解除可能な強化効果が発生しており、かつオメガのターンである場合、オメガは再びダメージを与える(ダメージは50%減少)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'アダプティブラーナー',
+                name_eng: 'Adaptive Learner',
+                image: '/ability/tex.ability_badbatchomega_special01.png',
+                description_jp: `物理ダメージを与え、ターゲットを標的状態にする。他の全ての敵から標的を解除し、オメガは射撃訓練のスタックを1得る。これらの効果はコピー、解除、阻止、耐性発揮できず、遭遇が終了するか敵から標的効果が取り除かれるかオメガが戦闘不能になるまで継続する。
+                
+                ターゲットがエクスポーズ状態の場合、この攻撃で敵に2ターンのターゲットロックが発生し、ターンメーターが10%減少する。
+                
+                標的: ユニットがこの効果を受けている間、オメガに射撃訓練の効果が発生する。オメガは挑発を無視してこの敵をターゲットにできる
+                
+                射撃訓練: スタックごとに、クリティカル率と攻撃力が5%、クリティカルダメージが10%上昇する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '共感力',
+                name_eng: 'Empathy First',
+                image: '/ability/tex.ability_badbatchomega_special02.png',
+                description_jp: `オメガは自身の弱体化効果を全て解除し、2ターンのステルス効果を得る。味方バッド・バッチが2ターンのプロテクション上昇(40%)と防御突破力上昇、10%のターンメーターを得る。
+                
+                オメガにクリティカル率上昇が発生している場合、味方バッド・バッチのターンメーターがさらに20%上昇し、2ターンの時間経過プロテクション(20%)を得る。
+                
+                オメガが既にステルス状態かつ敵に標的効果が発生している場合、オメガは射撃訓練のスタックを1つ得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'チームの一員',
+                name_eng: 'Part of the Squad',
+                image: '/abilityui/tex.abilityui_passive_badbatchomega.png',
+                description_jp: `遭遇開始時に味方全員がバッド・バッチの場合、味方リーダーがターンを開始するたび、遭遇終了までオメガのスピードが5、攻撃力が2%上昇する(スタック可能、最大でスピード50、攻撃力20%)。
+                
+                オメガはステルス状態の間、クリティカルダメージが10%上昇する。味方バッド・バッチが特殊スキルを使用すると、オメガがアシストする(ダメージは60%減少)。オメガは防御突破力上昇中、クリティカル率が10%上昇する。
+                
+                オメガの攻撃は、オメガに発生している強化ごとに与えるダメージが5%、敵に発生している弱体化効果ごとにダメージが5%増加する。
+                
+                テリトリーバトルの場合: バトル開始時、バッド・バッチの味方全体の最大HPが、その味方のレリックアンプレベルごとに最大プロテクションの10%分上昇する(最大100%)。その後、プロテクションを全て失う。味方バッド・バッチがHP割合ダメージ効果で受けるダメージが減少する。これらのボーナスはオメガが初めて戦闘不能になるまで持続する。
+                
+                各遭遇開始時、オメガのレリックアンプレベルごとに、味方バッド・バッチは2ターンの間、10%のボーナスプロテクションを得る(最大100%)。オメガは通常スキルを使用するたび、味方バッド・バッチごとに再度ダメージを与える(ダメージ50%減少)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Gar-Saxon',
+        character_name: 'ガー・サクソン',
+        character_image: '/charui/tex.charui_gar_saxon.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'オン・ザ・ハント',
+                name_eng: 'On the Hunt',
+                image: '/ability/tex.ability_gar_saxon_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、70%の確率で2ターンの間スピードを低下させる。ターゲットが既にスピード低下を受けている場合、ガー・サクソンのクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '精密奇襲',
+                name_eng: 'Calculated Ambush',
+                image: '/ability/tex.ability_gar_saxon_special01.png',
+                description_jp: `敵全体に物理ダメージを与える。ターンメーターが50%以下の敵に対してはダメージが2倍になる。ターンメーターが50%以上ある敵はターンメーターが30%減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: 'マンダロリアンの報復',
+                name_eng: 'Mandalorian Retaliation',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `味方帝国軍のカウンター率が50%、防御力が40%上昇する。味方帝国軍が通常攻撃を使用すると、そのユニットはHPが5%回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '総督の復讐',
+                name_eng: "Viceroy's Vengeance",
+                image: '/abilityui/tex.abilityui_passive_assist.png',
+                description_jp: `敵のターン中に他の味方が攻撃を行うと、ガー・サクソンが100%の確率でアシストする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Carth-Onasi',
+        character_name: 'カース・オナシ',
+        character_image: '/charui/tex.charui_carth.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'ラピッドショット',
+                name_eng: 'Rapid Shot',
+                image: '/ability/tex.ability_carth_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの時間経過ダメージ効果を発生させる。敵に発生している時間経過ダメージ効果ごとに、攻撃ダメージがさらに10%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '撃ち続けるのみ',
+                name_eng: 'Just Keep Shooting',
+                image: '/ability/tex.ability_carth_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、2ターンの間攻撃力が上昇する。この攻撃がクリティカルヒットになるごとに、カースのターンメーターが15%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '旧共和国の兵士',
+                name_eng: 'Soldier of the Old Republic',
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `味方旧共和国の有効性、抵抗力、クリティカル回避力が30%上昇する。敵に時間経過ダメージ効果が発生するたび、旧共和国の味方全体のHPとプロテクションが3%回復する。
+                
+                味方旧共和国がターン中に通常スキルを使用すると、80%の確率で他の味方旧共和国をアシストに呼び、50%の減少ダメージを与える(1ターンに一度のみ)。
+                
+                テリトリーバトルの場合: 旧共和国の味方1体につき、カウンター率、防御力、最大HPが20%上昇する。味方旧共和国が特殊スキルを使用するたび、ターゲット時間経過ダメージ効果を4つ発生させ(回避不可)、カースをアシストに呼ぶ。味方旧共和国はターン外に攻撃するたび、HPとプロテクションが5%回復し、遭遇終了まで攻撃力が25%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '兵士の訓練',
+                name_eng: "Soldier's Training",
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `攻撃中、アクティブな各敵および味方旧共和国ユニットごとにカースの攻撃力が10%上昇する。カースが敵を倒すと、クリティカル率とクリティカルダメージが10%上昇し(スタック可能)、「撃ち続けるのみ」のクールダウンがリセットされる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Cara-Dune',
+        character_name: 'カーラ・デューン',
+        character_image: '/charui/tex.charui_caradune.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'バールーム・ブロウラー',
+                name_eng: 'Bar Room Brawler',
+                image: '/ability/tex.ability_caradune_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。リーダースロットに設定されている味方がならず者の場合、カーラ・デューンは次のターン終了までステルス状態になる。リーダースロットに設定されている味方が反乱軍の場合、カーラ・デューンはステルス効果を失い、2ターンの間挑発する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '即興戦術',
+                name_eng: 'Improvised Strategy',
+                image: '/ability/tex.ability_caradune_special01.png',
+                description_jp: `カーラ・デューンの有効性が1ターン上昇し、敵全体に物理ダメージを与え、ターンメーターを50%減少させる。敵帝国軍は1ターンの間スタン状態になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '潜入者',
+                name_eng: 'Infiltrator',
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `ステルス状態の間、カーラ・デューンのクリティカル率が100%、クリティカルダメージが50%上昇する。カーラ・デューンは挑発効果を失うと、次のターン開始時に1ターンのステルス効果を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '元反乱軍ショック・トルーパー',
+                name_eng: 'Ex-Rebel Shock Trooper',
+                image: '/abilityui/tex.abilityui_passive_shocktrooper.png',
+                description_jp: `カーラ・デューンは、敵帝国軍が戦闘不能になると、2ターンのクリティカルヒット耐性を獲得し、ターンメーターが100%上昇する。帝国軍以外の敵の場合はその半分量上昇する。カーラ・デューンが倒れた時に有効性上昇の効果が発生していた場合、最大体力の50%で復活し、1ターンの間有効性が上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Kyle-Katarn',
+        character_name: 'カイル・カターン',
+        character_image: '/charui/tex.charui_kylekatarn.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '面白くなってきた',
+                name_eng: 'This Should Be Interesting',
+                image: '/ability/tex.ability_kylekatarn_basic.png',
+                description_jp: `ターゲットに物理ダメージを2回与える。カイル・カターンのターンの場合、1ターンのスキルブロックを発生させる。それ以外の場合は、3回目のダメージを与える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'ただのライトセーバー使い',
+                name_eng: 'Just a Guy With a Lightsaber',
+                image: '/ability/tex.ability_kylekatarn_special01.png',
+                description_jp: `ターゲットに物理ダメージを2回与える。ターゲットにフォースの酔いの効果が発生している場合、2回目に与えるダメージが75%増加する。2ターンの間、味方全体がクリティカル率上昇と有効性上昇を得る。
+                
+                ジェダイ・ナイト: 最初に与えるダメージが75%増加する。味方反乱軍ファイター全体のHPとプロテクションが50%回復する`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '谷の力',
+                name_eng: 'Power of the Valley',
+                image: '/ability/tex.ability_kylekatarn_special02.png',
+                description_jp: `味方反乱軍ファイター全体の弱体化効果を全て解除する。2ターンの間、反乱軍ファイターが防御力上昇とスピード上昇を得る。敵全体に物理ダメージを与え、ターゲットに2ターンの間フォース酔いの効果を発生させる(コピー不可)。
+                
+                ジェダイ・ナイト: 2ターンの間、敵全体にフォース酔いの効果を発生させる
+                
+                フォース酔い: アシスト、カウンター、強化効果の獲得不可(レイドボスと銀河の伝説: カウンター率30%減少)`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ブルー・ミルク・ラン',
+                name_eng: 'Blue Milk Run',
+                image: '/abilityui/tex.abilityui_passive_jediknight.png',
+                description_jp: `各遭遇開始時、味方反乱軍ファイター1体ごとにカイル・カターンのターンメーターが10%上昇する。
+                
+                味方反乱軍ファイターがターン外に攻撃するたび、その味方の攻撃力が次のターン終了時まで12%上昇する(スタック可能、最大60%)。
+                
+                カイル・カターンはターン外に攻撃するたび、バトル終了までフォースの繋がりのスタックを得る(コピー、解除、阻止不可)(スタック可能、最大10スタック)。
+                カイル・カターンは「フォースの繋がり」のスタックが10溜まると、クールダウンをリセットして「フォースの繋がり」のスタックを全て失い、バトル終了までジェダイ・ナイトの効果を得る(コピー、解除、阻止不可)。
+                
+                遭遇開始時、敵のリーダーがシスだった場合、遭遇終了まで味方反乱軍ファイターの防御力と抵抗力が50%上昇し、最大HPが25%上昇する。
+                
+                フォースの繋がり: 防御力と攻撃力が2%上昇する
+                
+                ジェダイ・ナイト: カイル・カターンおよび味方反乱軍ファイターの防御力と攻撃力が50%上昇する。「フォースの繋がり」は得られない。テリトリーバトルではこのボーナスが味方ジェダイにも適用される
+                
+                テリトリーバトル中: 敵はボーナスターンメーターを得られず、「フォース酔い」の効果を耐性発揮できない。カイル・カターンがターン外に攻撃すると、「フォースの繋がり」のスタックを得て、他の味方ジェダイにも「ジェダイ・ナイト」の効果によるボーナスが適用される。各バトル開始時、ジェダイおよび反乱軍ファイターの味方全体がバトル終了まで75%のボーナスプロテクションを得る。各バトル開始時、味方ジェダイ1体ごとにカイル・カターンのターンメーターが10%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Kylo-Ren',
+        character_name: 'カイロ・レン',
+        character_image: '/charui/tex.charui_kyloren.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'ラフ・カット',
+                name_eng: 'Ragged Cut',
+                image: '/ability/tex.ability_kyloren_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。さらに75%の確率で2ターンの回復無効と、75%の確率で3ターンの時間経過ダメージを発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '猛撃',
+                name_eng: 'Lash Out',
+                image: '/ability/tex.ability_kyloren_special02.png',
+                description_jp: `敵全体に物理ダメージを与え、2ターンの報復効果が発生する。この攻撃はクリスタルヒットすることがなく、カイロ・レンのクリティカルダメージの50%に相当するボーナスダメージが発生する。味方ファースト・オーダーおよびアドバンテージ発生中の味方のターンメーターが25%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'アウトレイジ',
+                name_eng: 'Outrage',
+                image: '/ability/tex.ability_kyloren_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間スタン状態にする。カイロのHPが最大値を下回ると、この攻撃のダメージは75%上昇する。与えたダメージと同量のプロテクションが回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'アンストッパブル',
+                name_eng: 'Unstoppable',
+                image: '/abilityui/tex.abilityui_passive_counterattack.png',
+                description_jp: `カイロがダメージを受けた時、1ターンの間防御力が50%(スタック可能)、攻撃力が15%(スタック可能)上昇する。さらに、50%の確率でクールダウンがリセットされる。カイロの受けるHP割合ダメージの効果が軽減され、カイロに発生している弱体1つごとにスピードが10上昇する。カイロは特殊スキル使用時に2ターンの時間経過ダメージを得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Kylo-Ren-Unmasked',
+        character_name: 'カイロ・レン(マスクなし)',
+        character_image: '/charui/tex.charui_kylo_unmasked.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '強硬ストライク',
+                name_eng: 'Aggressive Strike',
+                image: '/ability/tex.ability_kylo_unmasked_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間抵抗力を低下させる。ターゲットが既に弱体を受けていてカイロのターン中である場合、カイロが1ターンの間挑発を行う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '強制停止',
+                name_eng: 'Halt',
+                image: '/ability/tex.ability_kylo_unmasked_special01.png',
+                description_jp: `ターゲットの強化を全て解除し、2ターンの間スタン状態にする。カイロのHPが10%回復し、1ターンの間挑発を行う。この攻撃は回避または耐性発揮できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'フォーカス・レイジ',
+                name_eng: 'Focused Rage',
+                image: '/ability/tex.ability_kylo_unmasked_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、与えたダメージ分HPが回復する。ターゲットがスタン状態の場合、ダメージが2倍になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '冷徹なる追撃',
+                name_eng: 'Merciless Pursuit',
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `味方ファースト・オーダーのクリティカルダメージが40%、スピードが30上昇する。味方ファースト・オーダーがクリティカルヒットを決めると、そのユニットのターンメーターが20%上昇する。味方ファースト・オーダーがステータス効果を得ると、そのユニットはHPが5%、プロテクションが5%回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '傷跡',
+                name_eng: 'Scarred',
+                image: '/abilityui/tex.abilityui_passive_counterattack.png',
+                description_jp: `ダメージを受けるとカイロのHPが8%回復し、この効果を受けていないランダムな味方ファースト・オーダー1体に2ターンのアドバンテージが発生する。カイロのカウンター率が50%上昇する(挑発中は上昇量2倍)。HP割合ダメージの効果が減少し、各遭遇開始時に1ターンの間挑発を行う。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Supreme-Leader-kylo-Ren',
+        character_name: 'カイロ・レン最高指導者',
+        character_image: '/charui/tex.charui_kyloren_tros.png',
+        ability: [
+            {
+                ability_type: 'アルティメットスキル',
+                name_jp: '底知れぬ激情',
+                name_eng: 'Depths of Rage',
+                image: '/ability/tex.ability_kyloren_tros_ultimate.png',
+                description_jp: `使用するにはアルティメットチャージが少なくとも60%必要
+                
+                アルティメットチャージ: カイロ・レン最高指導者は味方ダークサイドが物理または特殊ダメージを敵に与えた際に2%のアルティメットチャージを獲得する。クリティカルヒットの場合は5%獲得する。
+                
+                カイロ・レンは自身の弱体化効果を全て解除し、攻撃態勢に入り、敵全体に物理ダメージを与える(回避不可)。この態勢の間、カイロ・レンはダメージおよび状態異常が無効になり、戦闘不能にならない。またサイフォンが倍になり、スキルのクールダウンが0になる。
+                
+                - アルティメットチャージ60%: 攻撃態勢が1ターン持続する
+                - アルティメットチャージ85%: 攻撃態勢が2ターン持続する
+                - アルティメットチャージ100%: 攻撃態勢が3ターン持続する`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: true
+            }, {
+                ability_type: '通常スキル',
+                name_jp: 'ブルータル・アサルト',
+                name_eng: 'Brutal Assault',
+                image: '/ability/tex.ability_kyloren_tros_basic.png',
+                description_jp: `ターゲットに2ターンの強化無効を発生させ、物理ダメージを2回与える。ターゲットがスタン状態だった場合、再度ダメージを与えて2ターンのアドバンテージを得る。カイロ・レンのターンでは、遭遇終了までサイフォンが10発生する。
+                
+                サイフォン: スタック1つにつき、このユニットはステータスの1%を得て、ターゲットは同じ分を失う`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'ステイシス・ストライク',
+                name_eng: 'Stasis Strike',
+                image: '/ability/tex.ability_kyloren_tros_special01.png',
+                description_jp: `敵全体の強化を全て解除し、ターゲットを2ターンのスタン状態にする(コピー、解除、耐性発揮不可)。その後ターゲットに物理ダメージを与え、カイロ・レンは遭遇終了まで20のサイフォンを得る。クリティカルヒットになると代わりに40のサイフォンを得る。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '荒ぶる猛攻',
+                name_eng: 'Furious Onslaught',
+                image: '/ability/tex.ability_kyloren_tros_special02.png',
+                description_jp: `敵全体に物理ダメージを与え、サイフォン・マスターでターゲットのマスターを吸収する(耐性発揮不可)。ターゲットがスタン状態だった場合、吸収量は2倍になる。その後、味方ダークサイド全体の弱体化効果を全て解除し、2ターンのアドバンテージを付与する。
+                
+                サイフォン・マスター: 遭遇終了まで、このユニットに発生しているサイフォンと同じ割合のマスターを獲得する。ターゲットは同量のマスターを失う(スタック可能。ただし、レイドボスおよび銀河の伝説ユニットは除く)`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '最高指導者',
+                name_eng: 'Supreme Leader',
+                image: '/abilityui/tex.abilityui_passive_kyloren_tros.png',
+                description_jp: `味方ダークサイドのスピードが30、マスターが40%、クリティカルダメージが50%上昇する。
+                
+                味方ダークサイドがクリティカルヒットを与えずにアドバンテージを失うと、ターン終了時にその味方に1ターンのアドバンテージが発生する。
+                
+                味方ダークサイドにまだアドバンテージが発生していない状態でアドバンテージが発生すると、その味方は役割に応じたボーナスを得る:
+                - タンクは2ターン挑発する
+                - アタッカーは2ターンのクリティカルダメージ上昇を得る
+                - サポートとヒーラーはターンメーターが20%上昇する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '攻勢での追撃',
+                name_eng: 'Press the Advantage',
+                image: '/abilityui/tex.abilityui_press_advantage.png',
+                description_jp: `カイロ・レン最高指導者はよろめきを無効化し、挑発効果を得られない。カイロのターン中に戦闘不能になった敵は復活できない。
+                
+                味方ダークサイドはターンメーターを失うと、現在の最大HPと最大プロテクションの10%を得る(スタック可能)。
+                
+                味方ダークサイドはボーナスターンを得ると、現在の最大HPと最大プロテクションの10%を失う(スタック可能)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '銀河の伝説',
+                name_eng: 'Galactic Legend',
+                image: '/abilityui/tex.abilityui_passive_galacticlegend.png',
+                description_jp: `このユニットはHP割合ダメージと大ダメージ効果によるダメージを軽減する。破壊効果から大ダメージを受け(レイドボスは除く)、スタン効果を無効化する。
+                
+                このユニットの最大HPと最大プロテクションがレリックアンプのレベルごとに10%上昇し、受けるダメージが30%減少する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Gamorrean-Guard',
+        character_name: 'ガモーリアン・ガード',
+        character_image: '/charui/tex.charui_gamorreanguard.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'ハック&スラッシュ',
+                name_eng: 'Hack and Slash',
+                image: '/ability/tex.ability_gamorrguard_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、3ターンの時間経過ダメージを2つ発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '強行突破',
+                name_eng: 'Muscle In',
+                image: '/ability/tex.ability_gamorrguard_special01.png',
+                description_jp: `ガモーリアン・ガードが2ターンの挑発を行い、2ターンの報復効果が発生する。挑発中、ガモーリアン・ガードに最大HPの20%に相当するプロテクションが発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'パンチ・スルー',
+                name_eng: 'Punch Through',
+                image: '/ability/tex.ability_gamorrguard_special02.png',
+                description_jp: `ターゲットの強化効果を解除し、物理ダメージを与え、2ターンの間エクスポーズ状態にする。
+                
+                リーダースロットの味方がハット・カルテルで、ターゲットに時間経過ダメージまたはサーマルデトネーターが発生している場合、ターンメーターを２０％減少させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '忠実なエンフォーサー',
+                name_eng: 'Loyal Enforcer',
+                image: '/abilityui/tex.abilityui_passive_taunt.png',
+                description_jp: `バトル開始時、味方ハット・カルテルごとにガモーリアン・ガードの最大HPが10%上昇し、「好みの悪党」のスタックを1得る。ガモーリアン・ガードがアクティブな間、敵の抵抗力が20%減少する。
+                
+                リーダースロットの味方がジャバ・ザ・ハットの場合: ガモーリアン・ガードのクリティカル回避力が50%上昇する。ガモーリアン・ガードは挑発効果を失うたび、2ターンの防御力上昇を得て、ジャバが特殊スキルを使用かつガモーリアン・ガードが挑発中の場合、HPが20%回復する。
+                
+                リーダースロットの味方がハット・カルテルの場合、ガモーリアン・ガードの防御力上昇中に味方ハット・カルテルのHPが70%を下回るたび、ガモーリアン・ガードは挑発を行い、2ターンのプロテクション上昇(100%)を得る。
+                
+                テリトリーバトルの場合: ガモーリアン・ガードのクリティカル回避力、防御力、抵抗力が50%上昇する。他の味方ハット・カルテルの最大HPと最大プロテクションが50%上昇する。味方ハット・カルテルのHPが初めて50%を下回ると、その味方は1ターンのダメージ耐性を得る(コピー、解除、阻止不可)。リーダースロットの味方がハット・カルテルでガモーリアン・ガードではない場合、味方がアビリティを使用するたびに、ガモーリアン・ガードがアシストする。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Garazeb-Zeb-Orrelios',
+        character_name: 'ガラゼブ・"ゼブ"・オレリオス',
+        character_image: '/charui/tex.charui_zeb_s3.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'バッシュ',
+                name_eng: 'Bash',
+                image: '/ability/tex.ability_zeb_s3_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンのめまい効果を発生させる。その敵が既にめまい、エクスポーズ、よろめき状態の場合は、1ターンのスタンを発生させる。この攻撃は弱体発生中の敵に対してダメージが30%増加する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: 'スタッガー・スイーフ',
+                name_eng: 'Staggering Sweep',
+                image: '/ability/tex.ability_zeb_s3_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンのよろめき効果を発生させる。アクティブな味方フェニックス1体ごとに、ゼブのターンメーターが10%上昇する。ターゲットに弱体が発生していない場合、この攻撃は耐性発揮不可となり、ダメージが2倍になり、ターゲットの最大HPの20%分のボーナスダメージが発生する。ターゲットに強化が発生している場合、ターゲットのアーマーを無効化する。ターゲットに弱体が発生している場合、この攻撃のクリティカルダメージは50%増加する。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                name_jp: '儀仗兵',
+                name_eng: 'Honor Guard',
+                image: '/abilityui/tex.abilityui_passive_hp.png',
+                description_jp: `2ターンの間、ゼブと指定した味方がプロテクション上昇(50%)を得る。ゼブまたは指定した味方は、弱体化効果が発生している場合は2ターンの間報復状態になり、それ以外の場合は、2ターンの抵抗力上昇を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '受け流し',
+                name_eng: 'Shrung Off',
+                image: '/abilityui/tex.abilityui_passive_hp.png',
+                description_jp: `ゼブの最大HP+40%分、最大プロテクションが上昇する。ターン開始時にはプロテクションが15%回復する。ゼブが弱体を受けている場合、この回復量が2倍になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
     }, {
         id: 'General-Kenobi',
         character_name: "ケノービ将軍",

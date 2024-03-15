@@ -394,77 +394,77 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_obiwanep4.png',
         abbreviation: "OB ob Obi-Wan Kenobi (Old Ben) Obi Wan obi wan obi-wan Hello There ベン・ケノービ Ben ben ",
         skill: `回避力低下  有効性上昇  回避不可  スキルブロック付与  攻撃力低下  ターンメーター減少付与  ターンメーター上昇  挑発付与 防御力上昇  回避力上昇  回復  攻撃力上昇  スピード上昇 `,
-        url: '/characters/'
+        url: '/characters/Obi-Wan-Kenobi-Old-Ben'
     }, {
         name: "オメガ",
         property: "ライトサイド、アタッカー、バッド・バッチ、クローン・トルーパー",
         src: '/charui/tex.charui_badbatchomega.png',
         abbreviation: "Omega Bad Batch BB",
         skill: `めまい付与  暗闇  標的  射撃訓練  ターゲットロック  ターンメーター減少付与 弱体解除  ステルス  プロテクション上昇  防御突破力上昇  ターンメーター上昇  時間経過プロテクション  アシスト  ボーナスプロテクション `,
-        url: '/characters/'
+        url: '/characters/Omega'
     }, {
         name: "ガー・サクソン",
         property: "ダークサイド、タンク、リーダー、帝国軍、マンダロリアン",
         src: '/charui/tex.charui_gar_saxon.png',
         abbreviation: "Gar Saxon gar saxon",
         skill: `スピード低下  クールダウン減少  ターンメーター減少付与 リーダー：防御力上  カウンター  アシスト  全体攻撃 `,
-        url: '/characters/'
+        url: '/characters/Gar-Saxon'
     }, {
         name: "カース・オナシ",
         property: "ライトサイド、アタッカー、リーダー、旧共和国",
         src: '/charui/tex.charui_carth.png',
         abbreviation: "Carth Onasi carth onasi",
         skill: ` 時間経過ダメージ  攻撃力上昇  全体攻撃  ターンメーター上昇  回復  リーダー：有効性上昇  リーダー：抵抗力上昇  アシスト  クールダウンリセット `,
-        url: '/characters/'
-    }, {
-        name: "ガーモリアン・ガード",
-        property: "ダークサイド、タンク、ハット・カルテル、ならず者",
-        src: '/charui/tex.charui_gamorreanguard.png',
-        abbreviation: "Gamorrean Guard gamorrean guard",
-        skill: `時間経過ダメージ  挑発付与 報復効果  エクスポーズ  ターンメーター減少付与  防御力上昇  クリティカル回避力上昇  回復  プロテクション上昇  抵抗力上昇  ダメージ耐性  アシスト `,
-        url: '/characters/'
+        url: '/characters/Carth-Onasi'
     }, {
         name: "カーラ・デューン",
         property: "ライトサイド、タンク、反乱軍、反乱軍ファイター、ならず者",
         src: '/charui/tex.charui_caradune.png',
         abbreviation: "Cara Dune cara dune",
         skill: `ステルス  挑発付与 有効性上昇  スタン付与  ターンメーター減少付与 クリティカル率上昇  クリティカルダメージ上昇  クリティカルヒット耐性  ターンメーター上昇  復活  全体攻撃 `,
-        url: '/characters/'
+        url: '/characters/Cara-Dune'
     }, {
         name: "カイル・カターン",
         property: "ライトサイド、アタッカー、ジェダイ、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_kylekatarn.png',
         abbreviation: "Kyle Katarn kyle katarn",
         skill: `スキルブロック付与 フォースの酔い  クリティカル率上昇  有効性上昇  回復  弱体解除  味方全体-弱体解除  防御力上昇  スピード上昇  全体攻撃  ターンメーター上昇  ジェダイ・ナイト  ボーナスプロテクション `,
-        url: '/characters/'
+        url: '/characters/Kyle-Katarn'
     }, {
         name: "カイロ・レン",
         property: "ダークサイド、アタッカー、ファースト・オーダー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_kyloren.png',
         abbreviation: "Kylo Ren kylo ren",
         skill: `回復無効  時間経過ダメージ  報復  ターンメーター上昇  全体攻撃  スタン付与  クールダウンリセット `,
-        url: '/characters/'
+        url: '/characters/Kylo-Ren'
     }, {
         name: "カイロ・レン(マスクなし)",
         property: "ダークサイド、タンク、リーダー、ファースト・オーダー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_kylo_unmasked.png',
         abbreviation: "KRU マスク無し Kylo Ren Unmasked unmasked kylo ren ",
         skill: `抵抗力低下  挑発付与 スタン付与  回復  回避不可  リーダー：クリティカルダメージ上昇  リーダー：スピード上昇  ターンメーター上昇  アドバンテージ  カウンター  `,
-        url: '/characters/'
+        url: '/characters/Kylo-Ren-Unmasked'
     }, {
         name: "カイロレン最高指導者",
         property: "銀河の伝説、ダークサイド、アタッカー、リーダー、ファースト・オーダー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_kyloren_tros.png',
         abbreviation: "SLKR slkr GL Galactic Legends galactic legends Supreme Leader Kylo Ren supreme leader kylo ren",
         skill: `強化無効  アドバンテージ  サイフォン  スタン付与  マスター上昇  リーダー：スピード上昇  リーダー：クリティカルダメージ上昇  挑発付与 ターンメーター上昇  復活不可 全体攻撃  スタン無効化 `,
-        url: '/characters/'
+        url: '/characters/Supreme-Leader-kylo-Ren'
+    }, {
+        name: "ガモーリアン・ガード",
+        property: "ダークサイド、タンク、ハット・カルテル、ならず者",
+        src: '/charui/tex.charui_gamorreanguard.png',
+        abbreviation: "Gamorrean Guard gamorrean guard",
+        skill: `時間経過ダメージ  挑発付与 報復効果  エクスポーズ  ターンメーター減少付与  防御力上昇  クリティカル回避力上昇  回復  プロテクション上昇  抵抗力上昇  ダメージ耐性  アシスト `,
+        url: '/characters/Gamorrean-Guard'
     }, {
         name: `ガラゼブ・ "ゼブ" ・オレリオス`,
         property: "ライトサイド、タンク、反乱軍、フェニックス",
         src: '/charui/tex.charui_zeb_s3.png',
         abbreviation: 'Garazeb "Zeb" Orrelios garazeb zeb orrelios',
         skill: `めまい付与  よろめき  スタン付与  ターンメーター上昇  プロテクション上昇  報復効果  抵抗力上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Garazeb-Zeb-Orrelios'
     }, {
         name: "カル・ケスティス",
         property: "ライトサイド、サポート、非同盟のフォースの使い手",
