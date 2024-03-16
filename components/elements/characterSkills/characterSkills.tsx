@@ -4,7 +4,8 @@ import Image from "next/image";
 export default async function CharacterSkills(params: {
     url: string
 }) {
-    const res: globalThis.Response = await fetch('https://swgoh4jp.com/api/characterAbilities', {
+    const apilink: string = 'https://swgoh4jp.com/api/characterAbilities';
+    const res: globalThis.Response = await fetch(apilink, {
         next: {
             revalidate: 3600,
         },
@@ -40,7 +41,7 @@ export default async function CharacterSkills(params: {
     } else {
         for (let i: number = 0; i < data[abilityIndex].ability.length; i++) {
             let str: string = data[abilityIndex].ability[i].description_jp;
-            data[abilityIndex].ability[i].description_jp = str.replace(/                /g, '');
+            data[abilityIndex].ability[i].description_jp = str.replaceAll('\n', '&&');
         }
         return (
             <>
@@ -62,36 +63,73 @@ export default async function CharacterSkills(params: {
                             className="border border-blue-300 mt-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
                         >
                             <h1 className="xs:flex text-2xl ">
-                                {/* <div className="image"> */}
-                                    <Image
-                                        src={item.image}
-                                        alt={item.name_jp}
-                                        width={50}
-                                        height={50}
-                                        className="object-cover px-1"
-                                    />
-                                {/* </div> */}
+                                <Image
+                                    src={item.image}
+                                    alt={item.name_jp}
+                                    width={50}
+                                    height={50}
+                                    className="object-cover px-1"
+                                />
                                 <span className="text-sky-300">
                                     {item.name_jp}:
                                 </span>
                                 <span className="text-sky-700">
                                     ({item.ability_type})
                                 </span>
-                                {/* {item.is_zeta && (
-                                    <p>zeta</p>
-                                )} */}
-                                {/* {item.is_omega && (
-                                    <p>omega</p>
-                                )} */}
-                                {/* {item.is_omicron && (
-                                    <p>omicron</p>
-                                )} */}
-                                {/* {item.is_ultimate && (
-                                    <p>ultimate</p>
-                                )} */}
                             </h1>
-                            <div className="flex">
-                                <p className="whitespace-pre-wrap px-1">{item.description_jp}</p>
+                            <div className="">
+                                {item.description_jp.includes('&') || item.description_jp.includes('*') || item.description_jp.includes('$') || item.description_jp.includes('#') ? (
+                                    item.description_jp.split('&').map((line: string, lineIndex: number) => {
+                                        if (lineIndex % 2 !== 0 && lineIndex !== 0) {
+                                            return (<span key={lineIndex}><br /></span>);
+                                        } else if (line.includes('*')) {
+                                            return line.split('*').map((yellow: string, yellowIndex: number) => {
+                                                if (yellowIndex % 2 !== 0) {
+                                                    return (
+                                                        <span className="text-yellow-200" key={yellowIndex}>{yellow}</span>
+                                                    );
+                                                } else {
+                                                    return (<span key={yellowIndex}>{yellow}</span>);
+                                                }
+                                            });
+                                        } else if (line.includes('$')) {
+                                            return line.split('$').map((omicron: string, omicronIndex: number) => {
+                                                if (omicronIndex % 2 !== 0) {
+                                                    return (
+                                                        <span
+                                                            key={omicronIndex}
+                                                            className="font-bold text-lg drop-shadow">
+                                                            {omicron}
+                                                        </span>
+                                                    );
+                                                } else {
+                                                    return (<span key={omicron}>{omicron}</span>);
+                                                }
+                                            });
+                                        } else if (line.includes('#')) {
+                                            return line.split('#').map((ult: string, ultIndex: number) => {
+                                                if (ultIndex % 2 !== 0) {
+                                                    return (
+                                                        <span
+                                                            key={ultIndex}
+                                                            className="text-orange-400"
+                                                        >
+                                                            {ult}
+                                                        </span>
+                                                    );
+                                                } else {
+                                                    return (
+                                                        <span key={ult}>{ult}</span>
+                                                    );
+                                                }
+                                            });
+                                        } else {
+                                            return (<span key={line}>{line}</span>);
+                                        }
+                                    })
+                                ) : (
+                                    <span>{item.description_jp}</span>
+                                )}
                             </div>
                         </div>
                     );

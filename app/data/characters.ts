@@ -471,14 +471,14 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_calkestis.png',
         abbreviation: "Cal Kestis cal kestis CK ck",
         skill: `防御力低下  スピード低下  ヘルス・スティール上昇  クリティカル率低下  めまい付与  回復  クリティカル耐性  精度上昇  回避力低下  スピード低下  抵抗力低下  クリティカルだめ  ターンメーター上昇  スタン付与  プロテクション上昇  不屈  フォアサイト  防御力上昇  スキルブロック付与 強化無効  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Cal-Kestis'
     }, {
         name: "カレラン・ベク",
         property: "ライトサイド、アタッカー、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_kelleranbeq.png',
         abbreviation: "Kelleran Beq kelleran beq",
         skill: `フォアサイト  攻撃力上昇  アシスト  回復  リーダー：防御力上昇  リーダー：スピード上昇  リーダー：抵抗力上昇  パダワンの訓戒  カウンター  プロテクション上昇  ターンメーター上昇  セカンドウィンド `,
-        url: '/characters/'
+        url: '/characters/Kelleran-Beq'
     }, {
         name: "カンデラス・オルド",
         property: "ダークサイド、アタッカー、マンダロリアン、旧共和国、ならず者",
