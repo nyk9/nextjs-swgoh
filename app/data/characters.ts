@@ -485,14 +485,14 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_canderous.png',
         abbreviation: "Canderous Ordo canderous ordo",
         skill: `抵抗力低下  攻撃力低下  時間経過ダメージ  ターンメーター上昇  クリティカル率上昇  クリティカルダメージ上昇 `,
-        url: '/characters/'
+        url: '/characters/Canderous-Ordo'
     }, {
         name: "キ＝アディ＝ムンディ",
         property: "ライトサイド、アタッカー、ジェダイ、銀河共和国",
         src: '/charui/tex.charui_kiadimundi.png',
         abbreviation: "KAM kam Ki- Adi-Mundi Ki Adi Mundi ki-adi-mundi ki adi mundi",
         skill: `アタル・フォーム  マカシ・フォーム  ターンメーター上昇  回復  クールダウンリセット  弱体解除  味方全体-弱体解除  スピード上昇  最大HP上昇  攻撃力上昇  挑発  アーマー破壊  めまい付与  回避不可 `,
-        url: '/characters/'
+        url: '/characters/Ki-Adi-Mundi'
     }, {
         name: "キーラ",
         property: "ライトサイド、サポート、リーダー、ならず者、スマグラー",
@@ -500,28 +500,28 @@ const characters: Characters[] = [
         abbreviation: "Qira qira",
         skill: `攻撃力低下  カウンター不可  めまい付与  強化解除  よろめき  敵全体-強化解除  アシスト
             エクスポーズ  リーダー：クリティカル率上昇  回復  準備万端  ヘルススティール上昇  全体攻撃`,
-        url: '/characters/'
+        url: '/characters/Qira'
     }, {
         name: "キット・フィストー",
         property: "ライトサイド、アタッカー、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_kitfisto.png',
         abbreviation: "Kit Fisto kit fisto",
         skill: `ターンメーター上昇 全体攻撃  有効性上昇  リーダー：抵抗力上昇  リーダー：防御力上昇  カウンター `,
-        url: '/characters/'
+        url: '/characters/Kit-Fisto'
     }, {
         name: "キャシアン・アンドー",
         property: "ライトサイド、サポート、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_cassian.png',
         abbreviation: "Cassian Andor cassian andor",
         skill: `強化無効  スキルブロック付与 防御力低下  回復無効  攻撃力低下  スピード低下  エクスポーズ  アシスト  ターンメーター上昇  プロテクション上昇  防御力上昇  有効性上昇  抵抗力上昇 `,
-        url: '/characters/'
+        url: '/characters/Cassian-Andor'
     }, {
         name: "キャド・ベイン",
         property: "ダークサイド、サポート、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
         src: '/charui/tex.charui_cadbane.png',
         abbreviation: "Cad Bane cad bane",
         skill: `精度低下  ターンメーター上昇  強化解除  スタン付与  ターンメーター減少付与 最大プロテクション低下  リーダー：有効性上昇  アドバンテージ  抵抗力低下  クールダウン減少  回復  サーマル・デトネーター `,
-        url: '/characters/'
+        url: '/characters/Cad-Bane'
     }, {
         name: "キャプテン・ターパルス",
         property: "ライトサイド、アタッカー、グンガン",

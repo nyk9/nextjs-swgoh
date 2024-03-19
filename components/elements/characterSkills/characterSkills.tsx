@@ -25,7 +25,8 @@ export default async function CharacterSkills(params: {
         }
     }
     // 現在の進捗状況確認用
-    // const a: globalThis.Response = await fetch('https://swgoh4jp.com/api/characters',{
+    // const allCharacters: string = 'http://localhost:3000/api/characters';
+    // const a: globalThis.Response = await fetch(allCharacters ,{
     //     cache: 'no-cache'
     // });
     // const charLength = await a.json();
@@ -46,6 +47,7 @@ export default async function CharacterSkills(params: {
         return (
             <>
                 <h1 className="flex text-2xl">
+
                     <Image
                         alt={data[abilityIndex].character_name}
                         src={data[abilityIndex].character_image}
@@ -62,7 +64,7 @@ export default async function CharacterSkills(params: {
                             key={item.name_jp}
                             className="border border-blue-300 mt-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
                         >
-                            <h1 className="xs:flex text-2xl ">
+                            <h1 className="">
                                 <Image
                                     src={item.image}
                                     alt={item.name_jp}
@@ -70,15 +72,80 @@ export default async function CharacterSkills(params: {
                                     height={50}
                                     className="object-cover px-1"
                                 />
-                                <span className="text-sky-300">
+                                <span className="text-sky-300 text-2xl">
                                     {item.name_jp}:
                                 </span>
-                                <span className="text-sky-700">
+                                <span className="text-sky-700 text-2xl">
                                     ({item.ability_type})
                                 </span>
+                                <div className="flex">
+                                    <span className="text-xs">
+                                        {item.cooldown !== null ? (
+                                            <span className="text-sky-100">
+                                                クールダウン: {item.cooldown}
+                                            </span>
+                                        ) : (
+                                            <></>
+                                        )}
+                                    </span>
+                                    {item.ability_type !== '付与スキル' ? (
+                                        item.is_ultimate === true ? (
+                                            <Image
+                                                src={'/skill/tex.skill_abilitymaterial_ultimate.png'}
+                                                alt="ultimate"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        ) : (item.is_omicron === true && item.is_zeta === true ? (
+                                            <>
+                                                <Image
+                                                    src={'/skill/tex.skill_hexagon_white.png'}
+                                                    alt="ultimate"
+                                                    width={15}
+                                                    height={15}
+                                                />
+                                                <Image
+                                                    src={'/skill/tex.skill_zeta.png'}
+                                                    alt="ultimate"
+                                                    width={15}
+                                                    height={15}
+                                                />
+                                            </>
+                                        ) : (item.is_omicron === true ? (
+                                            <Image
+                                                src={'/skill/tex.skill_hexagon_white.png'}
+                                                alt="ultimate"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        ) : (item.is_zeta === true ? (
+                                            <Image
+                                                src={'/skill/tex.skill_zeta.png'}
+                                                alt="ultimate"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        ) : (item.is_omega === true ? (
+                                            <Image
+                                                src={'/skill/tex.skill_pentagon_gold.png'}
+                                                alt="ultimate"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        ) : (
+                                            <Image
+                                                src={'/skill/tex.skill_pentagon_white.png'}
+                                                alt="ultimate"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        )))))) : (<></>)}
+                                </div>
                             </h1>
                             <div className="">
-                                {item.description_jp.includes('&') || item.description_jp.includes('*') || item.description_jp.includes('$') || item.description_jp.includes('#') ? (
+                                {item.description_jp.includes('&') || item.description_jp.includes('*')
+                                    || item.description_jp.includes('$') || item.description_jp.includes('#')
+                                    || item.description_jp.includes('+') ? (
                                     item.description_jp.split('&').map((line: string, lineIndex: number) => {
                                         if (lineIndex % 2 !== 0 && lineIndex !== 0) {
                                             return (<span key={lineIndex}><br /></span>);
@@ -103,7 +170,7 @@ export default async function CharacterSkills(params: {
                                                         </span>
                                                     );
                                                 } else {
-                                                    return (<span key={omicron}>{omicron}</span>);
+                                                    return (<span key={omicronIndex}>{omicron}</span>);
                                                 }
                                             });
                                         } else if (line.includes('#')) {
@@ -119,12 +186,29 @@ export default async function CharacterSkills(params: {
                                                     );
                                                 } else {
                                                     return (
-                                                        <span key={ult}>{ult}</span>
+                                                        <span key={ultIndex}>{ult}</span>
+                                                    );
+                                                }
+                                            });
+                                        } else if (line.includes('+')) {
+                                            return line.split('+').map((role: string, roleIndex: number) => {
+                                                if (roleIndex % 2 !== 0) {
+                                                    return (
+                                                        <span
+                                                            key={roleIndex}
+                                                            className="text-sky-200"
+                                                        >
+                                                            {role}
+                                                        </span>
+                                                    );
+                                                } else {
+                                                    return (
+                                                        <span key={roleIndex}>{role}</span>
                                                     );
                                                 }
                                             });
                                         } else {
-                                            return (<span key={line}>{line}</span>);
+                                            return (<span key={lineIndex}>{line}</span>);
                                         }
                                     })
                                 ) : (
