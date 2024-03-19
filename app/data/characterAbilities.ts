@@ -4,8 +4,10 @@
 // ## : 囲まれたところはオレンジ色(アルティメットチャージが該当)
 // ++ : 囲まれたところは薄水色(ロールなど)
 
+
 export type Abilities = {
     ability_type: string,
+    cooldown: number | null,
     name_jp: string,
     name_eng: string,
     image: string,
@@ -32,6 +34,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'フェイタルショック',
                 name_eng: 'Fatale Shock',
                 image: '/ability/tex.ability_000_basic.png',
@@ -42,6 +45,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: '拷問特化',
                 name_eng: 'Specialized in Torture',
                 image: '/ability/tex.ability_000_special01.png',
@@ -55,6 +59,7 @@ const characterAbilities: characterAbilities[] = [
             }, {
                 ability_type: 'ユニークスキル',
                 name_jp: '尋問プロトコル',
+                cooldown: null,
                 name_eng: 'Interrogation Protocol',
                 image: '/abilityui/tex.abilityui_passive_translation.png',
                 description_jp: `ダークサイドの味方全体の(=味方全員の?)クリティカルダメージが20%上昇する。味方ダークサイドは「拷問」が発生している敵にスキルを使用するたび、3ターンの間「通訳」のスタックを1得る(最大3)。味方ダークサイドは、自身の「通訳」のスタックごとに有効性が5%上昇する(ドロイドは2倍)。
@@ -71,6 +76,7 @@ const characterAbilities: characterAbilities[] = [
             }, {
                 ability_type: 'ユニークスキル',
                 name_jp: '血液収集',
+                cooldown: null,
                 name_eng: 'Drain Organics',
                 image: '/abilityui/tex.abilityui_passive_drainorganics.png',
                 description_jp: `0-0-0とBT-1のどちらかが「通訳」のスタックを得るたび、もう片方も「通訳」のスタックを得る(1ターンにつき1回限り)。0-0-0のターン開始時、まだターゲットロックが発生していないランダムなドロイド以外の敵に、1ターンのターゲットロックを発生させる。ドロイド以外の敵が戦闘不能になるたび、攻撃した味方のHPとプロテクションが30%回復する。攻撃した味方がダークサイドのドロイドだった場合、2ターンの攻撃力上昇と、15%のターンメーターを得る。攻撃した味方がBT-1の場合、2ターンの攻撃力上昇と、30%のターンメーターを代わりに得る。`,
@@ -78,7 +84,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -88,6 +94,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '緻密な勝算',
                 name_eng: 'Calculated Odds',
                 image: '/ability/tex.ability_50rt_basic.png',
@@ -98,6 +105,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'サバック・シャッフル',
                 name_eng: 'Sabacc Shuffle',
                 image: '/ability/tex.ability_50rt_special01.png',
@@ -110,6 +118,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'タクティカル・アドバンテージ',
                 name_eng: 'Tactical Advantage',
                 image: '/ability/tex.ability_50rt_special02.png',
@@ -120,6 +129,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'スペアパーツ',
                 name_eng: 'Spare Parts',
                 image: '/abilityui/tex.abilityui_leader_spareparts.png',
@@ -134,6 +144,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'VIP待遇',
                 name_eng: 'VIP Treatment',
                 image: '/abilityui/tex.abilityui_passive_viptreatment.png',
@@ -144,7 +155,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -154,6 +165,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'クロスファイア',
                 name_eng: 'Crossfire',
                 image: '/ability/tex.ability_trooperclone_arc_basic.png',
@@ -164,6 +176,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '指令を与える',
                 name_eng: 'Assign Command',
                 image: '/ability/tex.ability_trooperclone_arc_special01.png',
@@ -176,6 +189,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ARCアーセナル',
                 name_eng: 'ARC Arsenal',
                 image: '/abilityui/tex.abilityui_passive_commandoassault.png',
@@ -186,6 +200,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ブラスター・タレット',
                 name_eng: 'Blaster Turret',
                 image: '/ability/tex.ability_trooperclone_arc_special02.png',
@@ -208,6 +223,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'B1集中攻撃',
                 name_eng: 'B1 Barrage',
                 image: '/ability/tex.ability_b1_basic.png',
@@ -218,6 +234,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: '撃て!',
                 name_eng: 'Blast Them!',
                 image: '/ability/tex.ability_b1_special01.png',
@@ -228,6 +245,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ラジャー ラジャー',
                 name_eng: 'Roger Roger',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -238,6 +256,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ドロイド大隊',
                 name_eng: 'Droid Battalion',
                 image: '/abilityui/tex.abilityui_passive_mechanicalmenace.png',
@@ -252,7 +271,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -262,6 +281,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ヘビーアーム',
                 name_eng: 'Heavy Arms',
                 image: '/ability/tex.ability_b2_basic.png',
@@ -272,6 +292,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '一掃',
                 name_eng: 'Mow Down',
                 image: '/ability/tex.ability_b2_special01.png',
@@ -282,6 +303,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '容赦なき集中砲火',
                 name_eng: 'Relentless Barrage',
                 image: '/abilityui/tex.abilityui_passive_targetlock.png',
@@ -292,6 +314,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'リアクティブ・プロトコル',
                 name_eng: 'Reactive Protocol',
                 image: '/abilityui/tex.abilityui_passive_faction_separatist.png',
@@ -300,7 +323,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -310,6 +333,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'アーク・ウェルダー',
                 name_eng: 'Arc Welder',
                 image: '/ability/tex.ability_bb8_tfa_basic.png',
@@ -320,6 +344,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: '秘匿データ転送',
                 name_eng: 'Covert Data Transfer',
                 image: '/ability/tex.ability_bb8_tfa_special01.png',
@@ -332,6 +357,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 70,
                 name_jp: 'イルミネート・デスティニー',
                 name_eng: 'Illuminated Destiny',
                 image: '/ability/tex.ability_bb8_tfa_special02.png',
@@ -342,6 +368,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '危機順応',
                 name_eng: 'Roll with the Punches',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -352,6 +379,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '自己防衛プロトコル',
                 name_eng: 'Self-Preservation Protocol',
                 image: '/abilityui/tex.abilityui_passive_foresight.png',
@@ -360,7 +388,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -370,6 +398,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'オーバーチャージ・レーザー',
                 name_eng: 'Overcharged Lasers',
                 image: '/ability/tex.ability_bt1_basic.png',
@@ -380,6 +409,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '破壊工作',
                 name_eng: 'Agent of Destruction',
                 image: '/ability/tex.ability_bt1_special01.png',
@@ -390,6 +420,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '殺りくの相棒',
                 name_eng: 'Homicidal Counterpart',
                 image: '/abilityui/tex.abilityui_passive_homicidalcounterpart.png',
@@ -402,6 +433,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: 5,
                 name_jp: 'すべて抹殺せよ',
                 name_eng: 'Kill Them All',
                 image: '/ability/tex.ability_bt1_special02.png',
@@ -412,6 +444,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ブラストメクプロトタイプ',
                 name_eng: 'Blastomech Prototype',
                 image: '/abilityui/tex.abilityui_passive_dumpygunboy.png',
@@ -422,6 +455,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: null,
                 name_jp: 'めちゃくちゃ',
                 name_eng: 'Haywire',
                 image: '/ability/tex.ability_bt1_special03.png',
@@ -430,7 +464,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -440,6 +474,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'バッフリング・トリック',
                 name_eng: 'Baffling Trick',
                 image: '/ability/tex.ability_c3p0_basic.png',
@@ -455,6 +490,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'なんですって！',
                 name_eng: 'Oh My Goodness!',
                 image: '/ability/tex.ability_c3p0_special01.png',
@@ -467,6 +503,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'プロトコル・ドロイド',
                 name_eng: 'Protocol Droid',
                 image: '/abilityui/tex.abilityui_passive_translation.png',
@@ -482,6 +519,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '置いて行かないで！',
                 name_eng: 'Wait for Me!',
                 image: '/abilityui/tex.abilityui_passive_stealth.png',
@@ -492,6 +530,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '仲裁',
                 name_eng: 'Intermediary',
                 image: '/abilityui/tex.abilityui_passive_sootheall.png',
@@ -502,6 +541,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'サイボーグ関係',
                 name_eng: 'Cyborg Relations',
                 image: '/abilityui/tex.abilityui_passive_uniqueability.png',
@@ -512,6 +552,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '苛立たしい仲裁',
                 name_eng: 'Fretful Medator',
                 image: '/abilityui/tex.abilityui_passive_soothe.png',
@@ -520,7 +561,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -530,6 +571,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'フランティックショット',
                 name_eng: 'Frantic Shot',
                 image: '/ability/tex.ability_chew3po_basic.png',
@@ -540,6 +582,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: 'キラキラのおとり',
                 name_eng: 'Shining Distraction',
                 image: '/ability/tex.ability_chew3po_special01.png',
@@ -550,6 +593,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'チューイの怒り',
                 name_eng: "Chewie's Rage",
                 image: '/ability/tex.ability_chew3po_special02.png',
@@ -560,6 +604,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'みなさんに伝えないと',
                 name_eng: 'I Must Tell The Others',
                 image: '/abilityui/tex.abilityui_passive_c3po.png',
@@ -572,7 +617,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -582,6 +627,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'アルファストライク',
                 name_eng: 'Alpha Strike',
                 image: '/ability/tex.ability_commandercody_basic.png',
@@ -592,6 +638,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'AT-TEマスドライバーキャノン',
                 name_eng: 'AT-TE Mass-Driver Cannon',
                 image: '/ability/tex.ability_commandercody_special01.png',
@@ -602,6 +649,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 6,
                 name_jp: '第212攻撃',
                 name_eng: 'The 212th Attack',
                 image: '/ability/tex.ability_commandercody_special02.png',
@@ -612,6 +660,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ゴースト・カンパニー・コマンダー',
                 name_eng: 'Ghost Company Commander',
                 image: '/abilityui/tex.abilityui_passive_crit_buff.png',
@@ -620,7 +669,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -630,6 +679,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '援護攻撃',
                 name_eng: 'Supporting Fire',
                 image: '/ability/tex.ability_echo_basic.png',
@@ -640,6 +690,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'EMPグレネード',
                 name_eng: 'EMP Grenade',
                 image: '/ability/tex.ability_echo_special01.png',
@@ -650,6 +701,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '了解',
                 name_eng: 'Copy That',
                 image: '/abilityui/tex.abilityui_leader_default.png',
@@ -660,6 +712,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ドミノ分隊',
                 name_eng: 'Domino Squad',
                 image: '/abilityui/tex.abilityui_passive_501.png',
@@ -670,7 +723,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -680,6 +733,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'デュアルDC-17ブラスター',
                 name_eng: 'Dual DC-17 Blasters',
                 image: '/ability/tex.ability_ct5555_basic.png',
@@ -690,6 +744,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '支援攻撃',
                 name_eng: 'Cover Fire',
                 image: '/ability/tex.ability_ct5555_special01.png',
@@ -700,6 +755,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '熟練クローン・トルーパー',
                 name_eng: 'Veteran Clone Trooper',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -710,6 +766,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ドミノ分隊',
                 name_eng: 'Domino Squad',
                 image: '/abilityui/tex.abilityui_passive_501.png',
@@ -722,6 +779,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'タクティカル・アウェアネス',
                 name_eng: 'Tactical Awareness',
                 image: '/abilityui/tex.abilityui_passive_heal.png',
@@ -733,7 +791,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: true,
                 is_ultimate: true,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -743,6 +801,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '妨害ショット',
                 name_eng: 'Impeding Shot',
                 image: '/ability/tex.ability_rex_basic.png',
@@ -753,6 +812,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '編隊形成',
                 name_eng: 'Form Up',
                 image: '/ability/tex.ability_rex_special01.png',
@@ -763,6 +823,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'エアリアル・アドバンテージ',
                 name_eng: 'Aerial Advantage',
                 image: '/ability/tex.ability_rex_special02.png',
@@ -774,6 +835,7 @@ const characterAbilities: characterAbilities[] = [
 
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '戦友',
                 name_eng: 'Brothers in Arms',
                 image: '/abilityui/tex.abilityui_passive_hp.png',
@@ -784,6 +846,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '第501軍団のキャプテン',
                 name_eng: 'Captain of the 501st',
                 image: '/abilityui/tex.abilityui_passive_501.png',
@@ -794,7 +857,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -804,6 +867,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'リクエスト: タオレロ、ミートバッグ！',
                 name_eng: 'Request: Die, Meatbag!',
                 image: '/ability/tex.ability_hk47_basic.png',
@@ -814,6 +878,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ハボック',
                 name_eng: 'Havoc',
                 image: '/ability/tex.ability_hk47_special01.png',
@@ -824,6 +889,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 9,
                 name_jp: 'アサシネーション・プロトコル',
                 name_eng: 'Assassination Protocl',
                 image: '/ability/tex.ability_hk47_special02.png',
@@ -836,6 +902,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ターゲット排除',
                 name_eng: 'Target Elimination',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -846,6 +913,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '自己再生',
                 name_eng: 'Self-Reconstruction',
                 image: '/abilityui/tex.abilityui_passive_heal_buff.png',
@@ -856,6 +924,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '設計者への忠誠',
                 name_eng: 'Loyalty to the Maker',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -872,7 +941,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -882,6 +951,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'エレクトロスタッフ・アサルト',
                 name_eng: 'Electrostaff Assault',
                 image: '/ability/tex.ability_magnaguard_basic.png',
@@ -894,6 +964,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ディスラプション',
                 name_eng: 'Disruption',
                 image: '/ability/tex.ability_magnaguard_special01.png',
@@ -904,6 +975,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'スタニング・ストライク',
                 name_eng: 'Stunning Strike',
                 image: '/ability/tex.ability_magnaguard_special02.png',
@@ -914,6 +986,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '容赦なき襲撃',
                 name_eng: 'Relentless Assault',
                 image: '/abilityui/tex.abilityui_passive_taunt.png',
@@ -936,6 +1009,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'センサリーアドバンテージ',
                 name_eng: 'Sensory Advantage',
                 image: '/ability/tex.ability_ig11_nurse_basic.png',
@@ -946,6 +1020,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '機能: プロテクト',
                 name_eng: 'FUNCTION: PROTECT',
                 image: '/ability/tex.ability_ig11_nurse_special01.png',
@@ -956,6 +1031,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ナースドロイド・プロトコル',
                 name_eng: 'Nurse Droid Protocol',
                 image: '/ability/tex.ability_ig11_nurse_special02.png',
@@ -966,6 +1042,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '世話好き',
                 name_eng: "Child's Favor",
                 image: '/abilityui/tex.abilityui_passive_ig11.png',
@@ -988,6 +1065,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'いいえ',
                 name_eng: 'No.',
                 image: '/ability/tex.ability_ig12_basic.png',
@@ -998,6 +1076,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: 'はい',
                 name_eng: 'Yes.',
                 image: '/ability/tex.ability_ig12_special01.png',
@@ -1008,6 +1087,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'いいえ。いいえ。いいえ。',
                 name_eng: 'No. No. No.',
                 image: '/ability/tex.ability_ig12_special02.png',
@@ -1018,6 +1098,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'はい。はい。はい。',
                 name_eng: 'Yes. Yes. Yes.',
                 image: '/abilityui/tex.abilityui_passive_yesyesyes.png',
@@ -1040,7 +1121,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: true,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -1050,6 +1131,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'プリサイス・ストライク',
                 name_eng: 'Precision Strike',
                 image: '/ability/tex.ability_ig86sentineldroid_basic.png',
@@ -1060,6 +1142,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: 'アサシン・ドロイドの戦術',
                 name_eng: 'Assassin Droid Tactics',
                 image: '/ability/tex.ability_ig86sentineldroid_special01.png',
@@ -1070,6 +1153,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ドロイドチーム戦術',
                 name_eng: 'Droid Squad Tactics',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -1088,6 +1172,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '致命傷',
                 name_eng: 'Mortal Wound',
                 image: '/ability/tex.ability_ig88_basic.png',
@@ -1098,6 +1183,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'ラピッド・ファイア',
                 name_eng: 'Rapid Fire',
                 image: '/ability/tex.ability_ig88_special01.png',
@@ -1108,6 +1194,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '機略に優れた追跡者',
                 name_eng: 'Resourceful Pursuer',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -1122,6 +1209,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '適応型エイムアルゴリズム',
                 name_eng: 'Adaptive Aim Algorithm',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -1132,6 +1220,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'IG-88のボーナス',
                 name_eng: "IG-88's Payout",
                 image: '/abilityui/tex.abilityui_passive_contract.png',
@@ -1142,7 +1231,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -1152,6 +1241,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'カーボプラスト複合材フィスト',
                 name_eng: 'Carboplast Composite Fist',
                 image: '/ability/tex.ability_k2so_basic.png',
@@ -1162,6 +1252,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: 'コンダクティブ・チャージ',
                 name_eng: 'Conductive Charge',
                 image: '/ability/tex.ability_k2so_special01.png',
@@ -1172,6 +1263,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '執行者',
                 name_eng: 'Enforcer',
                 image: '/abilityui/tex.abilityui_passive_taunt.png',
@@ -1182,6 +1274,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '再プログラム済み帝国軍ドロイド',
                 name_eng: 'Reprogrammed Imperial Droid',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -1190,7 +1283,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -1200,6 +1293,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '猛進',
                 name_eng: 'Daring Advance',
                 image: '/ability/tex.ability_l337_basic.png',
@@ -1212,6 +1306,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '希望の灯',
                 name_eng: 'Spark of Hope',
                 image: '/ability/tex.ability_l337_special01.png',
@@ -1224,6 +1319,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ドロイドのために',
                 name_eng: 'For the Droids',
                 image: '/abilityui/tex.abilityui_passive_removeharmful.png',
@@ -1234,6 +1330,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '自己書き換え',
                 name_eng: 'Self Modificationl',
                 image: '/abilityui/tex.abilityui_passive_heal.png',
@@ -1244,6 +1341,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: null,
                 name_jp: 'アップグレードMk I',
                 name_eng: 'Enhance (MK I)',
                 image: '/ability/tex.ability_l337_special02.png',
@@ -1254,6 +1352,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: null,
                 name_jp: 'アップグレードMk II',
                 name_eng: 'Enhance (MK II)',
                 image: '/ability/tex.ability_l337_special02.png',
@@ -1264,6 +1363,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: null,
                 name_jp: 'アップグレードMk III',
                 name_eng: 'Enhance (MK III)',
                 image: '/ability/tex.ability_l337_special02.png',
@@ -1282,6 +1382,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '電気ショック・プロッド',
                 name_eng: "Electroshock Prod",
                 image: '/ability/tex.ability_r2d2_basic.png',
@@ -1292,6 +1393,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '煙幕',
                 name_eng: 'Smoke Screen',
                 image: '/ability/tex.ability_r2d2_special01.png',
@@ -1302,6 +1404,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: '臨機応変',
                 name_eng: 'Improvise',
                 image: '/ability/tex.ability_r2d2_special02.png',
@@ -1312,6 +1415,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: 4,
                 name_jp: '戦闘分析',
                 name_eng: 'Combat Analysis',
                 image: '/abilityui/tex.abilityui_passive_crit_buff.png',
@@ -1322,6 +1426,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '計算処理',
                 name_eng: 'Number Crunch',
                 image: '/abilityui/tex.abilityui_passive_extraturn.png',
@@ -1342,6 +1447,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '検問所制圧！',
                 name_eng: 'Checkpoint Secure!',
                 image: '/ability/tex.ability_stap_basic.png',
@@ -1354,6 +1460,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: '死ね、ジェダイの犬め！',
                 name_eng: 'Die, Jedi Dogs!',
                 image: '/ability/tex.ability_stap_special01.png',
@@ -1364,6 +1471,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'リチャージが必要だ！',
                 name_eng: 'We Need to Recharge!',
                 image: '/ability/tex.ability_stap_special02.png',
@@ -1374,6 +1482,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'シングル・トルーパー・エアリアル・プラットフォーム',
                 name_eng: 'Single Trooper Aerial Platform',
                 image: '/abilityui/tex.abilityui_passive_singletrooperaerialplatform.png',
@@ -1404,6 +1513,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '無力化',
                 name_eng: 'Disable',
                 image: '/ability/tex.ability_t3m4_basic.png',
@@ -1414,6 +1524,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '修理キット',
                 name_eng: 'Repair Kit',
                 image: '/ability/tex.ability_t3m4_special01.png',
@@ -1424,6 +1535,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'カーボナイトプロジェクター',
                 name_eng: 'Carbonite Projector',
                 image: '/ability/tex.ability_t3m4_special02.png',
@@ -1434,6 +1546,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '戦闘ロジック強化',
                 name_eng: 'Combat Logic Upgrade',
                 image: '/abilityui/tex.abilityui_passive_crit_buff.png',
@@ -1444,6 +1557,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'マスターギアヘッド',
                 name_eng: 'Master Gearhead',
                 image: '/abilityui/tex.abilityui_passive_penetration.png',
@@ -1464,6 +1578,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '照準コンピューター',
                 name_eng: 'Targeting Computer',
                 image: '/ability/tex.ability_tiepilot_basic.png',
@@ -1474,6 +1589,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'TIEストライク',
                 name_eng: 'TIE Sreike',
                 image: '/ability/tex.ability_tiepilot_special01.png',
@@ -1484,6 +1600,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '回避行動',
                 name_eng: 'Evasive Maneuvers',
                 image: '/abilityui/tex.abilityui_passive_foresight.png',
@@ -1502,6 +1619,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'テンパード・ストライク',
                 name_eng: 'Tempered Strike',
                 image: '/ability/tex.ability_armorer_basic.png',
@@ -1514,6 +1632,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: 3,
                 name_jp: '印を得よ',
                 name_eng: 'Earn Your Signet',
                 image: '/ability/tex.ability_armorer_special01.png',
@@ -1529,6 +1648,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '我らの道',
                 name_eng: 'This is The Way',
                 image: '/ability/tex.ability_armorer_special02.png',
@@ -1539,6 +1659,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '生き残ることが強さ',
                 name_eng: 'Our Survival is our Strength',
                 image: '/abilityui/tex.abilityui_passive_survivalstrength.png',
@@ -1549,6 +1670,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ハンターであり獲物',
                 name_eng: 'Both Hunter and Prey',
                 image: '/abilityui/tex.abilityui_passive_hunterprey.png',
@@ -1567,6 +1689,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '掃射',
                 name_eng: 'Take Them Down',
                 image: '/ability/tex.ability_idenversioempire_basic.png',
@@ -1577,6 +1700,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: '前進',
                 name_eng: 'Push Forward',
                 image: '/ability/tex.ability_idenversioempire_special01.png',
@@ -1587,6 +1711,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '悲しむのはあとでいい',
                 name_eng: 'We Can Grieve Later',
                 image: '/ability/tex.ability_idenversioempire_special02.png',
@@ -1601,6 +1726,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '計画通り',
                 name_eng: 'Exactly as Planned',
                 image: '/abilityui/tex.abilityui_passive_empire.png',
@@ -1615,6 +1741,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ファーストイン・ラストアウト',
                 name_eng: 'First In, Last Out',
                 image: '/abilityui/tex.abilityui_passive_firstinlastout.png',
@@ -1635,6 +1762,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '切断',
                 name_eng: 'Sunder',
                 image: '/ability/tex.ability_imagundi_basic.png',
@@ -1645,6 +1773,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '𠮟責',
                 name_eng: 'Rebuke',
                 image: '/ability/tex.ability_imagundi_special01.png',
@@ -1655,6 +1784,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ジェダイの策士',
                 name_eng: 'Jedi Strategist',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -1665,6 +1795,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ラストスタンド',
                 name_eng: 'Last Stand',
                 image: '/abilityui/tex.abilityui_passive_heal_buff.png',
@@ -1683,6 +1814,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'トリガー・ストライク',
                 name_eng: 'Inspiring Strike',
                 image: '/ability/tex.ability_aayla_basic.png',
@@ -1693,6 +1825,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'サバイバー',
                 name_eng: 'Survivor',
                 image: '/ability/tex.ability_aayla_special01.png',
@@ -1703,6 +1836,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ジェダイの武勇',
                 name_eng: 'Jedi Valor',
                 image: '/abilityui/tex.abilityui_passive_def_resistance.png',
@@ -1713,6 +1847,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '高等付き返し',
                 name_eng: 'Superior Riposte',
                 description_jp: `アイラのカウンター率が65%になり、クリティカル率が10%、カウンターダメージが50%上昇する。さらに、クリティカルヒット時にはターゲットを1ターンの間スタン状態にする。`,
@@ -1731,6 +1866,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ガダッフィ・スラム',
                 name_eng: 'Gaffi Srick Slam',
                 image: '/ability/tex.ability_urorrurrr_basic.png',
@@ -1741,6 +1877,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '隠密隊',
                 name_eng: 'Single File to Hide Their Numbers',
                 image: '/ability/tex.ability_urorrurrr_special01.png',
@@ -1751,6 +1888,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'タスケン族長',
                 name_eng: 'Tusken Chief',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -1761,6 +1899,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '奇襲本能',
                 name_eng: 'Ambush Instincts',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -1779,6 +1918,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ブレーク・オープン',
                 name_eng: 'Break Open',
                 image: '/ability/tex.ability_ugnaught_basic.png',
@@ -1789,6 +1929,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ドロイドエキスパート',
                 name_eng: 'Droid Experts',
                 image: '/ability/tex.ability_ugnaught_special01.png',
@@ -1799,6 +1940,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '先回り',
                 name_eng: 'One Step Ahead',
                 image: '/abilityui/tex.abilityui_passive_dodge.png',
@@ -1817,6 +1959,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'クイックショット',
                 name_eng: 'Quick Shot',
                 image: '/ability/tex.ability_ackbar_basic.png',
@@ -1827,6 +1970,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '仕掛けられた罠',
                 name_eng: "It's a Trap!",
                 image: '/ability/tex.ability_ackbar_special01.png',
@@ -1837,6 +1981,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '軍略の天才',
                 name_eng: 'Tactical Genius',
                 image: '/ability/tex.ability_ackbar_special02.png',
@@ -1847,6 +1992,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '反乱軍の指揮',
                 name_eng: 'Rebel Coordination',
                 image: '/abilityui/tex.abilityui_passive_speed.png',
@@ -1867,6 +2013,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '冷酷な攻撃',
                 name_eng: 'Cruel Strike',
                 image: '/ability/tex.ability_ventress_basic.png',
@@ -1877,6 +2024,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ストライク・フィアー',
                 name_eng: 'Strike Fear',
                 image: '/ability/tex.ability_ventress_special01.png',
@@ -1887,6 +2035,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '果てなき怒り',
                 name_eng: 'Endless Wrath',
                 image: '/ability/tex.ability_ventress_special02.png',
@@ -1897,6 +2046,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ナイトシスターの早業',
                 name_eng: 'Nightsister Swiftness',
                 image: '/abilityui/tex.abilityui_passive_speed.png',
@@ -1907,6 +2057,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ランページ',
                 name_eng: 'Rampage',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -1927,6 +2078,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'フォーカス・スラッシュ',
                 name_eng: 'Focused Slash',
                 image: '/ability/tex.ability_ahsokatanopadawan_basic.png',
@@ -1937,6 +2089,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '防衛戦略',
                 name_eng: 'Protective Maneuver',
                 image: '/ability/tex.ability_ahsokatanopadawan_special01.png',
@@ -1947,6 +2100,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'クイック・ステップ',
                 name_eng: 'Quick Steps',
                 image: '/abilityui/tex.abilityui_passive_dodge.png',
@@ -1957,6 +2111,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '勇敢なパダワン',
                 name_eng: 'Daring Padawan',
                 image: '/abilityui/tex.abilityui_passive_hp.png',
@@ -1979,6 +2134,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ジャーカイ・マスター',
                 name_eng: "Jar'Kai Master",
                 image: '/ability/tex.ability_commanderahsoka_basic.png',
@@ -1989,6 +2145,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'シエン',
                 name_eng: 'Shien',
                 image: '/ability/tex.ability_commanderahsoka_special01.png',
@@ -2001,6 +2158,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 8,
                 name_jp: 'フォース・リープ',
                 name_eng: 'Force Leap',
                 image: '/ability/tex.ability_commanderahsoka_special01.png',
@@ -2019,6 +2177,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '己の道',
                 name_eng: 'Her Own Path',
                 image: '/abilityui/tex.abilityui_passive_commanderahsoka.png',
@@ -2039,6 +2198,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'バランス攻撃',
                 name_eng: 'Balanced Strike',
                 image: '/ability/tex.ability_ahsoka_adult_basic.png',
@@ -2049,6 +2209,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '瞑想',
                 name_eng: 'Meditate',
                 image: '/ability/tex.ability_ahsoka_adult_basic.png',
@@ -2059,6 +2220,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ワーるウィンド',
                 name_eng: 'Whirlwind',
                 image: '/ability/tex.ability_ahsoka_adult_special02.png',
@@ -2069,6 +2231,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '忍耐',
                 name_eng: 'Perseverance',
                 image: '/abilityui/tex.abilityui_passive_rebel.png',
@@ -2089,6 +2252,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'S-5ヘビー・ブラスター・ピストル',
                 name_eng: "S-5 Heavy Blaster Pistol",
                 image: '/ability/tex.ability_queenamidala_basic.png',
@@ -2101,6 +2265,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '私がアミダラ女王です',
                 name_eng: 'I am Queen Amidala',
                 image: '/ability/tex.ability_queenamidala_special01.png',
@@ -2115,6 +2280,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'アセンション・ガン',
                 name_eng: 'Ascension Gun',
                 image: '/ability/tex.ability_queenamidala_special02.png',
@@ -2129,6 +2295,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '民と共に',
                 name_eng: 'My Place is with My Peole',
                 image: '/abilityui/tex.abilityui_passive_myplaceiswithmypeople.png',
@@ -2151,6 +2318,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '忠実な護衛',
                 name_eng: 'Loyal Bodyguard',
                 image: '/abilityui/tex.abilityui_passive_handmaidendecoy.png',
@@ -2175,6 +2343,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '侍女(おとり)',
                 name_eng: 'Handmaiden Decoy',
                 image: '/charui/tex.charui_queenamidala_decoy.png',
@@ -2197,6 +2366,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'メジャーショット',
                 name_eng: 'Measured Shot',
                 image: '/ability/tex.ability_holdo_basic.png',
@@ -2206,7 +2376,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }, {
-                ability_type: '通常スキル',
+                ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: 'バンカーバスター',
                 name_eng: 'Bunker Buster',
                 image: '/ability/tex.ability_holdo_special01.png',
@@ -2217,6 +2388,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: '救済',
                 name_eng: 'Reprieve',
                 image: '/ability/tex.ability_holdo_special02.png',
@@ -2227,6 +2399,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '秘めたる自身',
                 name_eng: 'Quiet Confidence',
                 image: '/abilityui/tex.abilityui_passive_uniqueability.png',
@@ -2245,6 +2418,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ブリーチ・ストライク',
                 name_eng: 'Breaching Strike',
                 image: '/ability/tex.ability_eethkoth_basic.png',
@@ -2255,6 +2429,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'フォースプッシュ',
                 name_eng: 'Force Pushl',
                 image: '/ability/tex.ability_eethkoth_special01.png',
@@ -2265,6 +2440,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '熱心なジェダイのディフェンダー',
                 name_eng: 'Stalwart Jedi Defender',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -2275,6 +2451,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '対ドロイド・スペシャリスト',
                 name_eng: 'Anti-Droid Specialist',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -2293,6 +2470,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ガイド・ストライク',
                 name_eng: 'Guiding Strike',
                 image: '/ability/tex.ability_ewok_elder_basic.png',
@@ -2303,6 +2481,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '部族の癒し手',
                 name_eng: 'Tribial Healer',
                 image: '/ability/tex.ability_ewok_elder_special01.png',
@@ -2313,6 +2492,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 7,
                 name_jp: '森の力',
                 name_eng: 'Power of the Forest',
                 image: '/ability/tex.ability_ewok_elder_special02.png',
@@ -2331,6 +2511,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'イウォークの奇襲',
                 name_eng: 'Ewoke Ambush',
                 image: '/ability/tex.ability_ewok_scout_basic.png',
@@ -2341,6 +2522,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ラッシュ・アタック',
                 name_eng: 'Rushing Attack',
                 image: '/ability/tex.ability_ewok_scout_special01.png',
@@ -2351,6 +2533,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '種族の戦術',
                 name_eng: 'Tribal Tactics',
                 image: '/abilityui/tex.abilityui_passive_dodge.png',
@@ -2369,6 +2552,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'アドバンテージ確保',
                 name_eng: 'Seize the Advantage',
                 image: '/ability/tex.ability_imperial_super_commando_basic.png',
@@ -2379,6 +2563,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: '高度戦略',
                 name_eng: 'Superior tactics',
                 image: '/ability/tex.ability_imperial_super_commando_special01.png',
@@ -2389,6 +2574,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '優位確保',
                 name_eng: 'Upper Hand',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -2405,6 +2591,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'スーパー・コマンドー・ベスカー・アーマー',
                 name_eng: 'Super Commando Beskar Armor',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -2425,6 +2612,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'アンチェインド',
                 name_eng: 'Unchained',
                 image: '/ability/tex.ability_chewbacca_vandor_basic.png',
@@ -2435,6 +2623,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '自由の戦士',
                 name_eng: 'Freedom Fighter',
                 image: '/ability/tex.ability_chewbacca_vandor_special01.png',
@@ -2447,6 +2636,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ザ・ビースト',
                 name_eng: 'The Beast',
                 image: '/abilityui/tex.abilityui_passive_firstaid.png',
@@ -2457,6 +2647,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '凶暴な守護者',
                 name_eng: 'Ferocious Protector',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -2475,6 +2666,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '大胆な攻撃',
                 name_eng: 'Daring Attack',
                 image: '/ability/tex.ability_veers_basic.png',
@@ -2485,6 +2677,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '無慈悲な襲撃',
                 name_eng: 'Ruthless Assault',
                 image: '/ability/tex.ability_veers_special01.png',
@@ -2495,6 +2688,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '帝国アサルト・コマンダー',
                 name_eng: 'Imperial Assault Commander',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -2505,6 +2699,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '攻撃的戦術家',
                 name_eng: 'Aggressive Tectician',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -2525,6 +2720,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '探究者の一突き',
                 name_eng: 'Inquisitive Jab',
                 image: '/ability/tex.ability_ewok_wicket_basic.png',
@@ -2535,6 +2731,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '森林奇襲',
                 name_eng: 'Forest Ambush',
                 image: '/ability/tex.ability_ewok_wicket_special01.png',
@@ -2545,6 +2742,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ゲリラ奇襲',
                 name_eng: 'Guerrilla Strike',
                 image: '/ability/tex.ability_ewok_wicket_special02.png',
@@ -2555,6 +2753,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '隠密作戦',
                 name_eng: 'Furtive Tactics',
                 image: '/abilityui/tex.abilityui_passive_extraturn.png',
@@ -2573,6 +2772,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'テレキネシスブラスト',
                 name_eng: 'Telekinetic Blast',
                 image: '/ability/tex.ability_visas_basic.png',
@@ -2583,6 +2783,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 8,
                 name_jp: 'ダークヒーリング',
                 name_eng: 'Dark Healing',
                 image: '/ability/tex.ability_visas_special01.png',
@@ -2593,6 +2794,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '貫通ストライク',
                 name_eng: 'Piercing Strike',
                 image: '/ability/tex.ability_visas_special02.png',
@@ -2603,6 +2805,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '光への回帰',
                 name_eng: 'Returned to the Light',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -2621,6 +2824,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '集中攻撃',
                 name_eng: 'Focused Fire',
                 image: '/ability/tex.ability_wedge_basic.png',
@@ -2631,6 +2835,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'レッド中隊ストライク',
                 name_eng: 'Red Squadron Strike',
                 image: '/ability/tex.ability_wedge_special01.png',
@@ -2641,6 +2846,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '反乱軍の勇壮',
                 name_eng: 'Rebel Heroism',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -2651,6 +2857,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'レッド・リーダー',
                 name_eng: 'Red Leader',
                 image: '/abilityui/tex.abilityui_leader_default.png',
@@ -2669,6 +2876,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '回転攻撃',
                 name_eng: 'Whirling Strike',
                 image: '/ability/tex.ability_eighthbrother_basic.png',
@@ -2679,6 +2887,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'フォトン・グレネード',
                 name_eng: 'Photon Grenades',
                 image: '/ability/tex.ability_eighthbrother_special01.png',
@@ -2689,6 +2898,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: 'ブレード・ヒルト',
                 name_eng: 'Bladed Hilt',
                 image: '/ability/tex.ability_eighthbrother_special02.png',
@@ -2707,6 +2917,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'もうたくさんだ',
                 name_eng: 'More Than Enough',
                 image: '/abilityui/tex.abilityui_leader_inquisitor.png',
@@ -2719,6 +2930,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'シャドウハント',
                 name_eng: 'Hunting A Shadow',
                 image: '/abilityui/tex.abilityui_passive_stealth.png',
@@ -2731,6 +2943,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '忍耐',
                 name_eng: 'Patience',
                 image: '/abilityui/tex.abilityui_passive_jediwillneverbevictorious.png',
@@ -2749,6 +2962,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '攻撃的防御',
                 name_eng: 'Daring Defense',
                 image: '/ability/tex.ability_bbecho_basic.png',
@@ -2759,6 +2973,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '先回り',
                 name_eng: 'One Step Ahead',
                 image: '/ability/tex.ability_bbecho_special01.png',
@@ -2770,6 +2985,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '疑う余地なし',
                 name_eng: 'Never Any Doubt',
                 image: '/ability/tex.ability_bbecho_special02.png',
@@ -2782,6 +2998,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '生き延びるために',
                 name_eng: 'One That Survives',
                 image: '/abilityui/tex.abilityui_passive_bbecho.png',
@@ -2802,6 +3019,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ラッシュ・ストライク',
                 name_eng: 'Rushing Strike',
                 image: '/ability/tex.ability_ezra_s3_basic.png',
@@ -2812,6 +3030,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'フラリッシュ',
                 name_eng: 'Flourish',
                 image: '/ability/tex.ability_ezra_s3_special01.png',
@@ -2822,6 +3041,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ウォッチ&ラーン',
                 name_eng: 'Watch and Learn',
                 image: '/ability/tex.ability_ezra_s3_special02.png',
@@ -2838,6 +3058,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '完遂',
                 name_eng: 'Push Through',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -2856,6 +3077,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'カットスルー',
                 name_eng: 'Cut Thruough',
                 image: '/ability/tex.ability_enfys_basic.png',
@@ -2868,6 +3090,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'サドンインパクト',
                 name_eng: 'Sudden Impact',
                 image: '/ability/tex.ability_enfys_special01.png',
@@ -2878,6 +3101,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'キネタイトチャージ',
                 name_eng: 'Kinetite Charge',
                 image: '/ability/tex.ability_enfys_special02.png',
@@ -2888,6 +3112,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '闘争本能',
                 name_eng: 'Fighting Instinct',
                 image: '/abilityui/tex.abilityui_passive_enfys.png',
@@ -2910,6 +3135,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '分解ショット',
                 name_eng: 'Dismantling Shot',
                 image: '/ability/tex.ability_embo_basic.png',
@@ -2920,6 +3146,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'キューゾ戦闘ヘルメット',
                 name_eng: 'Kyuzo War Helmet',
                 image: '/ability/tex.ability_embo_special01.png',
@@ -2930,6 +3157,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '寡黙なアサシン',
                 name_eng: 'The Quiet Assassin',
                 image: '/abilityui/tex.abilityui_passive_seizetheday.png',
@@ -2944,6 +3172,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'キューゾ流',
                 name_eng: 'Way of the Kyuzo',
                 image: '/abilityui/tex.abilityui_passive_embo.png',
@@ -2956,6 +3185,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'エンボのボーナス',
                 name_eng: "Embo's Payout",
                 image: '/abilityui/tex.abilityui_passive_contract.png',
@@ -2968,6 +3198,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'エルーシブ・ストライク',
                 name_eng: "Embo's Payout",
                 image: '/ability/tex.ability_embo_special02.png',
@@ -2986,6 +3217,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '弱体ショット',
                 name_eng: 'Weakening Shot',
                 image: '/ability/tex.ability_aurrasing_basic.png',
@@ -2996,6 +3228,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '活性化',
                 name_eng: 'Hustle',
                 image: '/ability/tex.ability_aurrasing_special01.png',
@@ -3006,6 +3239,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'スナイパーの技術',
                 name_eng: 'Snipers Expertise',
                 image: '/ability/tex.ability_aurrasing_special02.png',
@@ -3016,6 +3250,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ゲームプラン',
                 name_eng: 'Game Plan',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -3030,6 +3265,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '冷酷な殺し屋',
                 name_eng: 'Relentless Killer',
                 image: '/abilityui/tex.abilityui_passive_stealth.png',
@@ -3040,6 +3276,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'オーラ・シングのボーナス',
                 name_eng: "Aurra Sing's Payout",
                 image: '/abilityui/tex.abilityui_passive_contract.png',
@@ -3060,6 +3297,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'インサイトフル・ブロー',
                 name_eng: 'Insightful Blow',
                 image: '/ability/tex.ability_daka_basic.png',
@@ -3070,6 +3308,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '復活の詠唱',
                 name_eng: 'Chant of Resurrection',
                 image: '/ability/tex.ability_daka_special01.png',
@@ -3080,6 +3319,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ナイトシスター・エルダー',
                 name_eng: 'Nightsister Elder',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -3090,6 +3330,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'サーブ・アゲイン',
                 name_eng: 'Serve Again',
                 image: '/abilityui/tex.abilityui_passive_heal_buff.png',
@@ -3108,6 +3349,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'エレガントフォーム',
                 name_eng: 'Elegant Form',
                 image: '/ability/tex.ability_obiwankenobioldhermit_basic.png',
@@ -3118,6 +3360,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: 'マインド・トリック',
                 name_eng: 'Mind Tricks',
                 image: '/ability/tex.ability_obiwankenobioldhermit_special01.png',
@@ -3128,6 +3371,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '真なる守護者',
                 name_eng: 'Devoted Protector',
                 image: '/ability/tex.ability_obiwankenobioldhermit_event01.png',
@@ -3138,6 +3382,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ジェダイの老騎士',
                 name_eng: 'Old Jedi Knight',
                 image: '/abilityui/tex.abilityui_passive_dodge.png',
@@ -3148,6 +3393,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '不屈の心',
                 name_eng: 'If You Strike Me Down',
                 image: '/abilityui/tex.abilityui_passive_removeharmful.png',
@@ -3166,6 +3412,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '鎮圧射撃',
                 name_eng: 'Disarming Shot',
                 image: '/ability/tex.ability_badbatchomega_basic.png',
@@ -3178,6 +3425,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'アダプティブラーナー',
                 name_eng: 'Adaptive Learner',
                 image: '/ability/tex.ability_badbatchomega_special01.png',
@@ -3194,6 +3442,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '共感力',
                 name_eng: 'Empathy First',
                 image: '/ability/tex.ability_badbatchomega_special02.png',
@@ -3208,6 +3457,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'チームの一員',
                 name_eng: 'Part of the Squad',
                 image: '/abilityui/tex.abilityui_passive_badbatchomega.png',
@@ -3234,6 +3484,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'オン・ザ・ハント',
                 name_eng: 'On the Hunt',
                 image: '/ability/tex.ability_gar_saxon_basic.png',
@@ -3244,6 +3495,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: '精密奇襲',
                 name_eng: 'Calculated Ambush',
                 image: '/ability/tex.ability_gar_saxon_special01.png',
@@ -3254,6 +3506,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'マンダロリアンの報復',
                 name_eng: 'Mandalorian Retaliation',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -3264,6 +3517,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '総督の復讐',
                 name_eng: "Viceroy's Vengeance",
                 image: '/abilityui/tex.abilityui_passive_assist.png',
@@ -3282,6 +3536,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ラピッドショット',
                 name_eng: 'Rapid Shot',
                 image: '/ability/tex.ability_carth_basic.png',
@@ -3292,6 +3547,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '撃ち続けるのみ',
                 name_eng: 'Just Keep Shooting',
                 image: '/ability/tex.ability_carth_special01.png',
@@ -3302,6 +3558,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '旧共和国の兵士',
                 name_eng: 'Soldier of the Old Republic',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -3316,6 +3573,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '兵士の訓練',
                 name_eng: "Soldier's Training",
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -3334,6 +3592,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'バールーム・ブロウラー',
                 name_eng: 'Bar Room Brawler',
                 image: '/ability/tex.ability_caradune_basic.png',
@@ -3344,6 +3603,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: '即興戦術',
                 name_eng: 'Improvised Strategy',
                 image: '/ability/tex.ability_caradune_special01.png',
@@ -3354,6 +3614,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '潜入者',
                 name_eng: 'Infiltrator',
                 image: '/abilityui/tex.abilityui_passive_crit_buff.png',
@@ -3364,6 +3625,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '元反乱軍ショック・トルーパー',
                 name_eng: 'Ex-Rebel Shock Trooper',
                 image: '/abilityui/tex.abilityui_passive_shocktrooper.png',
@@ -3382,6 +3644,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '面白くなってきた',
                 name_eng: 'This Should Be Interesting',
                 image: '/ability/tex.ability_kylekatarn_basic.png',
@@ -3392,6 +3655,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ただのライトセーバー使い',
                 name_eng: 'Just a Guy With a Lightsaber',
                 image: '/ability/tex.ability_kylekatarn_special01.png',
@@ -3404,6 +3668,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '谷の力',
                 name_eng: 'Power of the Valley',
                 image: '/ability/tex.ability_kylekatarn_special02.png',
@@ -3418,6 +3683,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ブルー・ミルク・ラン',
                 name_eng: 'Blue Milk Run',
                 image: '/abilityui/tex.abilityui_passive_jediknight.png',
@@ -3449,6 +3715,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ラフ・カット',
                 name_eng: 'Ragged Cut',
                 image: '/ability/tex.ability_kyloren_basic.png',
@@ -3459,6 +3726,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '猛撃',
                 name_eng: 'Lash Out',
                 image: '/ability/tex.ability_kyloren_special02.png',
@@ -3469,6 +3737,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'アウトレイジ',
                 name_eng: 'Outrage',
                 image: '/ability/tex.ability_kyloren_special01.png',
@@ -3479,6 +3748,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'アンストッパブル',
                 name_eng: 'Unstoppable',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -3497,6 +3767,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '強硬ストライク',
                 name_eng: 'Aggressive Strike',
                 image: '/ability/tex.ability_kylo_unmasked_basic.png',
@@ -3507,6 +3778,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '強制停止',
                 name_eng: 'Halt',
                 image: '/ability/tex.ability_kylo_unmasked_special01.png',
@@ -3517,6 +3789,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'フォーカス・レイジ',
                 name_eng: 'Focused Rage',
                 image: '/ability/tex.ability_kylo_unmasked_special02.png',
@@ -3527,6 +3800,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '冷徹なる追撃',
                 name_eng: 'Merciless Pursuit',
                 image: '/abilityui/tex.abilityui_passive_crit_buff.png',
@@ -3537,6 +3811,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '傷跡',
                 name_eng: 'Scarred',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -3555,6 +3830,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: 'アルティメットスキル',
+                cooldown: null,
                 name_jp: '底知れぬ激情',
                 name_eng: 'Depths of Rage',
                 image: '/ability/tex.ability_kyloren_tros_ultimate.png',
@@ -3573,6 +3849,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: true
             }, {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ブルータル・アサルト',
                 name_eng: 'Brutal Assault',
                 image: '/ability/tex.ability_kyloren_tros_basic.png',
@@ -3585,6 +3862,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ステイシス・ストライク',
                 name_eng: 'Stasis Strike',
                 image: '/ability/tex.ability_kyloren_tros_special01.png',
@@ -3595,6 +3873,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '荒ぶる猛攻',
                 name_eng: 'Furious Onslaught',
                 image: '/ability/tex.ability_kyloren_tros_special02.png',
@@ -3607,6 +3886,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '最高指導者',
                 name_eng: 'Supreme Leader',
                 image: '/abilityui/tex.abilityui_passive_kyloren_tros.png',
@@ -3624,6 +3904,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '攻勢での追撃',
                 name_eng: 'Press the Advantage',
                 image: '/abilityui/tex.abilityui_press_advantage.png',
@@ -3638,6 +3919,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '銀河の伝説',
                 name_eng: 'Galactic Legend',
                 image: '/abilityui/tex.abilityui_passive_galacticlegend.png',
@@ -3658,6 +3940,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ハック&スラッシュ',
                 name_eng: 'Hack and Slash',
                 image: '/ability/tex.ability_gamorrguard_basic.png',
@@ -3668,6 +3951,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '強行突破',
                 name_eng: 'Muscle In',
                 image: '/ability/tex.ability_gamorrguard_special01.png',
@@ -3678,6 +3962,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'パンチ・スルー',
                 name_eng: 'Punch Through',
                 image: '/ability/tex.ability_gamorrguard_special02.png',
@@ -3690,6 +3975,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '忠実なエンフォーサー',
                 name_eng: 'Loyal Enforcer',
                 image: '/abilityui/tex.abilityui_passive_taunt.png',
@@ -3714,6 +4000,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'バッシュ',
                 name_eng: 'Bash',
                 image: '/ability/tex.ability_zeb_s3_basic.png',
@@ -3724,6 +4011,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'スタッガー・スイーフ',
                 name_eng: 'Staggering Sweep',
                 image: '/ability/tex.ability_zeb_s3_special01.png',
@@ -3734,6 +4022,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '儀仗兵',
                 name_eng: 'Honor Guard',
                 image: '/abilityui/tex.abilityui_passive_hp.png',
@@ -3744,6 +4033,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '受け流し',
                 name_eng: 'Shrung Off',
                 image: '/abilityui/tex.abilityui_passive_hp.png',
@@ -3762,6 +4052,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'オーバーヘッド・スラッシュ',
                 name_eng: 'Overhead Slash',
                 image: '/ability/tex.ability_calkestis_basic.png',
@@ -3776,6 +4067,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '助けてくれ、BD-1',
                 name_eng: 'Help Me, BD-1',
                 image: '/ability/tex.ability_calkestis_special01.png',
@@ -3786,6 +4078,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '待つんだ',
                 name_eng: 'Not So Fast',
                 image: '/ability/tex.ability_calkestis_special02.png',
@@ -3796,6 +4089,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '俺はあきらめない',
                 name_eng: "I'm Persistent",
                 image: '/abilityui/tex.abilityui_passive_impersistent.png',
@@ -3824,6 +4118,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'セーバー・スタビリティ',
                 name_eng: 'Saber Stability',
                 image: '/ability/tex.ability_kelleranbeq_basic.png',
@@ -3834,6 +4129,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ライトセーバーの移行',
                 name_eng: 'Lightsaber training',
                 image: '/ability/tex.ability_kelleranbeq_special01.png',
@@ -3844,6 +4140,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: 'ジェダイの勇気',
                 name_eng: 'Jedi Bravery',
                 image: '/ability/tex.ability_kelleranbeq_special02.png',
@@ -3854,6 +4151,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '評議会の意志により',
                 name_eng: 'By The Will Of The Council',
                 image: '/abilityui/tex.abilityui_passive_jedi.png',
@@ -3876,6 +4174,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'セーバー・ハンド',
                 name_eng: 'The Sabered Hand',
                 image: '/abilityui/tex.abilityui_passive_thesaberedhand.png',
@@ -3901,12 +4200,416 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月16日'
     }, {
+        id: 'Canderous-Ordo',
+        character_name: 'カンデラス・オルド',
+        character_image: '/charui/tex.charui_canderous.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'エンドレスアサルト',
+                name_eng: 'Interminable Assault',
+                image: '/ability/tex.ability_canderous_basic.png',
+                description_jp: `物理ダメージを与え、再攻撃を行う。この攻撃前に敵がプロテクションを得ていた場合、カンデラスは3回目の攻撃を行い、2ターンの間抵抗力を低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '圧倒的破壊力',
+                name_eng: 'Overwhelming Firepower',
+                image: '/ability/tex.ability_canderous_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、2ターンの間攻撃力低下を発生させる。この攻撃は防御力を無効化する。`,
+                is_omega: true,
+                is_omicron: false,
+                is_ultimate: false,
+                is_zeta: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'マンダロリアンの熟練兵',
+                name_eng: 'Mandalorian Veteran',
+                image: '/abilityui/tex.abilityui_passive_mandalorian.png',
+                description_jp: `バトル開始時、味方マンダロリアン、旧共和国、ならず者ユニットごとにカンデラスのヘルス・スティールと有効性が10%上昇する。カンデラスは敵にダメージを与えると2ターンの時間経過ダメージを発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '困難は好きだ',
+                name_eng: 'I Like a Challenge',
+                image: '/abilityui/tex.abilityui_passive_penetration.png',
+                description_jp: `「エンドレスアサルト」と「圧倒的破壊力」で挑発、デスマーク、マーク状態の敵を攻撃すると、カンデラスが与えるダメージが50%増加する。敵が攻撃でダメージを負うたび、カンデラスのターンメーターが8%上昇する。敵が挑発を行う、あるいやデスマークやマーク状態になると、カンデラスが2ターンの間クリティカル率上昇とクリティカルダメージ上昇を得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月18日'
+    }, {
+        id: 'Ki-Adi-Mundi',
+        character_name: 'キ＝アディ＝ムンディ',
+        character_image: '/charui/tex.charui_kiadimundi.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ヴァーサタイル・ストライク',
+                name_eng: 'Versatile Strike',
+                image: '/ability/tex.ability_kiadimundi_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。
+                
+                キ＝アディ＝ムンディが*アタル・フォーム*を使用している場合、もう一度攻撃する。*マカシ・フォーム*を使用している場合、ターンメーターが15%上昇し、プロテクションが10%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 2,
+                name_jp: 'アダプティブ・フォーム',
+                name_eng: 'Adaptive Form',
+                image: '/ability/tex.ability_kiadimundi_special02.png',
+                description_jp: `フォームを切り替えると、弱体を全て解除し、ターンメーターが100%上昇する。
+                
+                *アタル・フォーム: *攻撃力+100%、防御突破力+30%、スピード+20
+                
+                *マカシ・フォーム: *カウンター率+100%、抵抗力+60%、クリティカルヒット耐性
+                
+                このスキルはクールダウン操作を無効にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'デサイシブ・スラスト',
+                name_eng: 'Decisive Thrust',
+                image: '/ability/tex.ability_kiadimundi_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。この攻撃は味方銀河共和国ジェダイ1体につきダメージが100%上昇する。
+                
+                キ＝アディ＝ムンディが*アタル・フォーム*を使用している場合、このスキルで敵を倒すと全てのクールダウンがリセットされる。
+                
+                *マカシ・フォーム*を使用している場合、味方銀河共和国ジェダイの弱体が全て解除され、ターンメーターが25%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'ジェダイ評議会',
+                name_eng: 'Jedi Council',
+                image: '/abilityui/tex.abilityui_passive_jedi.png',
+                description_jp: `味方全てが銀河共和国ジェダイだった場合、各バトル開始時に味方銀河共和国ジェダイのスピードが30、最大HPが40%、攻撃力が20%上昇する。
+                
+                サポートもしくはヒーラークラスの味方銀河共和国ジェダイは最大HPの10%分の追加攻撃力を得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'フォーム・マスター',
+                name_eng: 'Master of Forms',
+                image: '/abilityui/tex.abilityui_passive_uniqueability.png',
+                description_jp: `バトル開始時、キ＝アディ＝ムンディは*アタル・フォーム*を使用する。キ＝アディ＝ムンディは使用するフォームに応じて追加スキルを得る。
+                
+                *マカシ・フォーム*に切り替えると、プロテクションが10%回復し、3ターンの挑発を行う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '付与スキル',
+                cooldown: 3,
+                name_jp: 'アタル・ランジ',
+                name_eng: 'Ataru Lange',
+                image: '/ability/tex.ability_kiadimundi_special03a.png',
+                description_jp: `ターゲットに物理ダメージを与え、アーマー破壊状態にする。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '付与スキル',
+                cooldown: 3,
+                name_jp: 'マカシ・ジャブ',
+                name_eng: 'Makashi Jab',
+                image: '/ability/tex.ability_kiadimundi_special03b.png',
+                description_jp: `敵全体を2ターンの間めまい状態にし、ターゲットに物理ダメージを与える。このスキルは回避できない。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月18日'
+    }, {
+        id: 'Qira',
+        character_name: 'キーラ',
+        character_image: '/charui/tex.charui_qira.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'デッドリーダブル',
+                name_eng: 'Deadly Double',
+                image: '/ability/tex.ability_qira_basic.png',
+                description_jp: `ターゲットに物理ダメージを2回与え、2ターンの攻撃力低下を発生させる。この攻撃はカウンターができない。この攻撃がクリティカルヒットした場合、さらに1ターンの間めまい状態にする。攻撃が2回ともクリティカルヒットした場合、ターゲットの最大HP10%分の追加ダメージを与える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '拡散ブラスト',
+                name_eng: 'Scattering Blast',
+                image: '/ability/tex.ability_qira_special01.png',
+                description_jp: `ターゲットの強化を全て解除し、敵全体に物理ダメージを与えて2ターンの間よろめき状態にする。強化発生中の敵ごとに25%の追加ダメージが発生する。
+                
+                *準備万端: *キーラが準備万端状態の場合、敵全体から全ての強化を解除する。その後、キーラの準備万端状態は解除される。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '共同作戦',
+                name_eng: 'Joint Operation',
+                image: '/ability/tex.ability_qira_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、指定した味方1体をアシストに呼ぶ。その味方がならず者の場合、両者の攻撃ダメージが30%増加する。回避された場合も、それぞれの攻撃は50%の確率で2ターンのエクスポーズを発生させる。
+                
+                *準備万端: *他の準備万端状態の味方全ての防御突破力を3ターンの間上昇させ、アシストに呼ぶ。その後、キーラの準備万端状態は解除される。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '商売道具',
+                name_eng: 'Tools of the Trade',
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `味方ならず者のクリティカル率が20%上昇する。さらに味方(=味方ならず者?)がクリティカルヒットを決めると、味方のプロテクションが10%回復し、バトル終了まで各クラスに応じた追加ボーナスが付与される。
+                
+                アタッカー: 攻撃力+30(最大3スタック)
+                タンク: クリティカル回避力+20%(最大3スタック)
+                サポート、ヒーラー: スピード+20(最大3スタック)`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '追い打ち',
+                name_eng: 'Insult to Injury',
+                image: '/ability/tex.ability_passive_healthsteal.png',
+                description_jp: `攻撃時、ターゲットに弱体が発生していない場合はキーラの有効性が40%上昇し、弱体が発生している場合はクリティカルダメージが30%上昇する。他の味方ならず者も、攻撃時にその半分の効果を得る。さらに各ターン終了時、いずれか敵が2回以上クリティカルヒットを受けていると、キーラは準備万端状態となり、ターンメーターが15%上昇し、1ターンの間ヘルス・スティールが上昇する。このターン中にスキルを使用した他の味方も、それぞれ1ターンの間ヘルス・スティールが上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月18日'
+    }, {
+        id: 'Kit-Fisto',
+        character_name: 'キット・フィストー',
+        character_image: '/charui/tex.charui_kitfisto.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ライトセーバー・マスター',
+                name_eng: 'Lightsaber Mastery',
+                image: '/ability/tex.ability_kitfisto_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、30%の確率で再攻撃を行う。キット・フィストーは攻撃ごとに50%の確率でターンメーターが15%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '潮流変化',
+                name_eng: 'Turn the Tide',
+                image: '/ability/tex.ability_kitfisto_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、3ターンの間、味方全体の有効性が上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'ジェダイ・プロテクター',
+                name_eng: 'Jedi Protector',
+                image: '/abilityui/tex.abilityui_passive_def_resistance.png',
+                description_jp: `味方全体の抵抗力が25%上昇し、さらに味方ジェダイは防御力が45上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '高等剣術',
+                name_eng: 'Superior Bladework',
+                image: '/abilityui/tex.abilityui_passive_counterattack.png',
+                description_jp: `キット・フィストーのカウンター率が35%になり、攻撃力が20%上昇する。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月18日'
+    }, {
+        id: 'Cassian-Andor',
+        character_name: 'キャシアン・アンドー',
+        character_image: '/charui/tex.charui_cassian.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '2歩先回り',
+                name_eng: 'Two Steps Ahead',
+                image: '/ability/tex.ability_cassian_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、85%の確率で2ターンの強化無効を発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 2,
+                name_jp: 'ショックグレネード',
+                name_eng: 'Shock Grenade',
+                image: '/ability/tex.ability_cassian_special01.png',
+                description_jp: `スキルブロック、防御力低下、回復無効、攻撃力低下、スピード低下(各1度ずつ)をランダムな敵に2ターン発生させる。メインターゲットが帝国軍の場合、2ターンの間エクスポーズ状態にする。K-2SOがいる場合、K-2SOをアシストに呼ぶ。さらに、弱体を受けている敵1体ごとにターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'クリップリング・ショット',
+                name_eng: 'Crippling Shot',
+                image: '/ability/tex.ability_cassian_special02.png',
+                description_jp: `ターゲットに物理ダメージを与える。他の敵に発生している各弱体を、ターゲットに1ターン発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '下準備',
+                name_eng: 'Groundwork',
+                image: '/abilityui/tex.abilityui_passive_rebel.png',
+                description_jp: `各バトル開始時(=各遭遇開始時?)、味方反乱軍が3ターンのプロテクション上昇(20%)を得て、味方反乱軍アタッカーは3ターンの防御力上昇、味方反乱軍サポートは3ターンの有効性上昇、味方反乱軍タンクは3ターンの抵抗力上昇を得る。K-2SOは、生存中の場合にこれらの強化効果をすべて得る。
+                
+                $テリトリーバトルの場合: $バトル開始時、味方全員がローグ・ワンの場合、キャシアン・アンドーはボーナスターンを得て、バトル終了まで敵ユニットに変装する。変装中、キャシアンはユニークスキルと勢力を維持し、変装先の勢力に加えて、ローグ・ワン勢力のメンバーと見なされる。各遭遇開始時、反乱軍の味方全体は、3ターンの防御力上昇、有効性上昇、抵抗力上昇を得る。キャシアンはスキルを使用するたび、弱体化効果発生中の敵ごとにターンメーターが12%上昇し、ターゲットに1ターンのスキルブロックと強化無効および2ターンの防御力低下と回復無効を発生させ、K-2SOをアシストに呼び、97.8%の増加ダメージを与える。
+                
+                - +テリトリーバトル「反乱軍の襲撃」: +キャシアンがスノートルーパー・オプス(精鋭)に変装する。
+                - +テリトリーバトル「銀河共和国の攻撃」: +キャシアンがワット・タンバーに変装する。
+                - +テリトリーバトル「帝国の台頭」: +キャシアンが改造版のマグマトルーパーに変装する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月19日'
+    }, {
+        id: 'Cad-Bane',
+        character_name: 'キャド・ベイン',
+        character_image: '/charui/tex.charui_cadbane.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ガンスリンガー',
+                name_eng: 'Gun Slinger',
+                image: '/ability/tex.ability_cadbane_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、65%の確率で再攻撃を行う。2ターンの間ターゲットの精度を低下させる。クリティカルヒットを決める毎に、キャド・ベインのターンメーターが15%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'スタン・グローブ',
+                name_eng: 'Stun Glove',
+                image: '/ability/tex.ability_cadbane_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、全ての強化効果を解除し、1ターンの間スタン状態にする。さらに、ターンメーターを50%減少させる(敵ジェダイに対しては2倍)。ターゲットが弱体を受けている場合、最大プロテクションを25%低下させる(スタック可能)。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'どんな仕事でも',
+                name_eng: 'At Your Service',
+                image: '/abilityui/tex.abilityui_passive_dodge.png',
+                description_jp: `味方賞金稼ぎの有効性が100%上昇し、弱体を発生させると2ターンのアドバンテージを得る。キャド・ベインがリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可):
+                
+                *契約: *敵に弱体を20発生させる(契約達成には味方賞金稼ぎのみが参加可能。)。
+                
+                *報酬: *バトル終了まで、敵全体の抵抗力が50%減少する。味方賞金稼ぎ全体にボーナス効果が発動する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'それなりの報酬をよこせ',
+                name_eng: "For The Right Price",
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `キャド・ベインのクリティカル率が30%、クリティカルダメージが30%上昇する。キャド・ベインが弱体を与えると、最大HPと最大プロテクションが5%回復する。キャド・ベインがクリティカルヒットを決めると、50%の確率でクールダウンを1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'キャド・ベインのボーナス',
+                name_eng: "Cad Bane's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `キャド・ベインは契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                *ボーナス: *キャド・ベインの回避力が25%上昇する。キャド・ベインが回避を行うと、攻撃をしてきた敵に2ターンのサーマル・デトネーターを発生させる。このサーマル・デトネーターは回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月19日'
+    }, {
         id: 'General-Kenobi',
         character_name: "ケノービ将軍",
         character_image: '/charui/tex.charui_obiwangeneral.png',
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '直観的攻撃',
                 name_eng: 'Intuitive Strike',
                 image: '/ability/tex.ability_generalkenobi_basic.png',
@@ -3917,6 +4620,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'ネゴシエーター',
                 name_eng: 'The Negotiator',
                 image: '/ability/tex.ability_generalkenobi_special01.png',
@@ -3927,6 +4631,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '戦闘指揮',
                 name_eng: 'lead the Charge',
                 image: '/ability/tex.ability_generalkenobi_special02.png',
@@ -3937,6 +4642,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '第212攻撃大隊コマンダー',
                 name_eng: '212th Attack Battalion Commnader',
                 image: '/abilityui/tex.abilityui_passive_hp.png',
@@ -3947,6 +4653,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ソレス',
                 name_eng: 'Soresu',
                 image: '/abilityui/tex.abilityui_passive_foresight.png',
@@ -3959,7 +4666,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -3969,6 +4676,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '文化的ではない時代',
                 name_eng: 'Less Civilized Age',
                 image: '/ability/tex.ability_jediknightcal_basic.png',
@@ -3985,6 +4693,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: 'ワールウィンドスラム',
                 name_eng: 'Whirlwind Slam',
                 image: '/ability/tex.ability_jediknightcal_special01.png',
@@ -4009,6 +4718,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: 'ウィンドミルガード',
                 name_eng: 'Windmil Defense',
                 image: '/ability/tex.ability_jediknightcal_special02.png',
@@ -4028,6 +4738,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: '向こう見ずの攻撃',
                 name_eng: 'Impetuous Assault',
                 image: '/ability/tex.ability_jediknightcal_special03.png',
@@ -4048,6 +4759,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '銀河の歪み',
                 name_eng: 'Weight of the Galaxy',
                 image: '/abilityui/tex.abilityui_passive_jedi.png',
@@ -4060,6 +4772,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ジェダイ・サバイバー',
                 name_eng: 'Jedi Survivor',
                 image: '/abilityui/tex.abilityui_passive_jedisurvivor.png',
@@ -4088,6 +4801,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '優勢攻撃',
                 name_eng: 'Prevailing Strike',
                 image: '/ability/tex.ability_luke_jediknight_basic.png',
@@ -4098,6 +4812,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '堅固な前進',
                 name_eng: 'Stalwart Advance',
                 image: '/ability/tex.ability_luke_jediknight_special01.png',
@@ -4112,6 +4827,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: '拒絶',
                 name_eng: 'Repulse',
                 image: '/ability/tex.ability_luke_jediknight_special02.png',
@@ -4126,6 +4842,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ジェダイの帰還',
                 name_eng: 'Return of the Jedi',
                 image: '/abilityui/tex.abilityui_passive_jedi.png',
@@ -4140,6 +4857,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: 10,
                 name_jp: '英雄の覚醒',
                 name_eng: 'Heroes Arise',
                 image: '/ability/tex.ability_luke_jediknight_special03.png',
@@ -4152,6 +4870,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ジェダイ・ナイトの決意',
                 name_eng: "Jedi Knight7s Resolve",
                 image: '/abilityui/tex.abilityui_passive_protection.png',
@@ -4176,6 +4895,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: 'アルティメットスキル',
+                cooldown: null,
                 name_jp: '終わりだ',
                 name_eng: "It's Over",
                 image: '/ability/tex.ability_globiwan_ultimate.png',
@@ -4196,6 +4916,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: true,
             }, {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '烈火の剣さばき',
                 name_eng: 'Ardent Bladework',
                 image: '/ability/tex.ability_globiwan_basic.png',
@@ -4206,6 +4927,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: '私の義務を果たす',
                 name_eng: 'I Will Do What I Must',
                 image: '/ability/tex.ability_globiwan_special01.png',
@@ -4216,6 +4938,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: 'やあ',
                 name_eng: 'Hello There',
                 image: '/ability/tex.ability_globiwan_special02.png',
@@ -4228,6 +4951,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: true,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '共鳴する意志',
                 name_eng: 'Harmonious Will',
                 image: '/abilityui/tex.abilityui_passive_harmoniouswill.png',
@@ -4246,6 +4970,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: true,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'フォースと共にあれ',
                 name_eng: 'May The Force Be With You',
                 image: '/abilityui/tex.abilityui_passive_maytheforcebewithyou.png',
@@ -4260,6 +4985,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '銀河の伝説',
                 name_eng: 'Galactic Legend',
                 image: '/abilityui/tex.abilityui_passive_galacticlegend.png',
@@ -4270,7 +4996,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }
