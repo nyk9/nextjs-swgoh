@@ -256,6 +256,13 @@ const characters: Characters[] = [
         skill: `アドバンテージ  回避力上昇  ターンメーター入れ替え  シエン・フォーム  即戦闘不能  クールダウン減少  アーマー破壊  アシスト  クールダウン状態から開始 コピー不可  解除不可  阻止不可  ターンメーター上昇  回避不可`,
         url: '/characters/Commander-Ahsoka-Tano'
     }, {
+        name: "アミダラ女王",
+        property: "ライトサイド、サポート、リーダー、銀河共和国",
+        src: '/charui/tex.charui_queenamidala.png',
+        abbreviation: 'Queen Amidala',
+        skill: `エクスポーズ  回避不可  時間経過回復  時間経過プロテクション  全体攻撃  精度上昇  よろめき  耐性発揮不可  防御突破力上昇  プロテクション無効化  クリティカルダメージ上昇  時間経過ダメージ  スピード低下  無防備  クールダウン増加  味方全体-弱体解除  アシスト  回復  ターンメーター減少  召集  侍女(おとり)  防御力上昇  抵抗力上昇  スピード上昇  ステルス  リーダー:防御力上昇  リーダー:最大HP上昇  リーダー:最大プロテクション上昇  攻撃力上昇  プロテクション上昇  クールダウン操作無効化  挑発付与  強化効果無効化  弱体化効果無効化  疑心  ボーナスターン  ダメージ体制  コピー不可  解除不可  阻止不可  女王の保護  恐怖無効化  回復無効無効化  有効性低下  抵抗力低下  アドバンテージ  `,
+        url: '/characters/Queen-Amidala'
+    }, {
         name: "アソーカ・タノ(フルクラム)",
         property: "ライトサイド、アタッカー、反乱軍、非同盟のフォースの使い手",
         src: '/charui/tex.charui_ahsokaadult.png',
@@ -359,133 +366,133 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_enfys.png',
         abbreviation: "Enfys Nest enfys nest",
         skill: `エクスポーズ  強化解除  回避不可  スタン付与  強化無効  カウンター  ボーナスプロテクション  クリティカルダメージ上昇  挑発無視 `,
-        url: '/characters/'
+        url: '/characters/Enfys-Nest'
     }, {
         name: "エンボ",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
         src: '/charui/tex.charui_embo.png',
         abbreviation: "Embo",
         skill: `強化解除  カウンター  攻撃力上昇  フォアサイト  回復 `,
-        url: '/characters/'
+        url: '/characters/Embo'
     }, {
         name: "オーラ・シング",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: '/charui/tex.charui_aurrasing.png',
         abbreviation: "Aurra Sing aurra sing",
         skill: `スタン付与  ターンメーター上昇  クリティカル率上昇  攻撃力上昇  ステルス  カウンター  `,
-        url: '/characters/'
+        url: '/characters/Aurra-Sing'
     }, {
         name: "オールド・ダカ",
         property: "ダークサイド、ヒーラー、リーダー、ナイトシスター",
         src: '/charui/tex.charui_daka.png',
         abbreviation: "Old Daka old daka ",
         skill: `スタン付与  復活  回復  リーダー：HP上昇  リーダー：防御力上昇  ターンメーター上昇  クールダウン減少  攻撃力上昇  防御力上昇  最大HP上昇 `,
-        url: '/characters/'
+        url: '/characters/Old-Daka'
     }, {
         name: "オビ＝ワン・ケノービ(ベン爺)",
         property: "ライトサイド、タンク、リーダー、ジェダイ、反乱軍",
         src: '/charui/tex.charui_obiwanep4.png',
         abbreviation: "OB ob Obi-Wan Kenobi (Old Ben) Obi Wan obi wan obi-wan Hello There ベン・ケノービ Ben ben ",
         skill: `回避力低下  有効性上昇  回避不可  スキルブロック付与  攻撃力低下  ターンメーター減少付与  ターンメーター上昇  挑発付与 防御力上昇  回避力上昇  回復  攻撃力上昇  スピード上昇 `,
-        url: '/characters/'
+        url: '/characters/Obi-Wan-Kenobi-Old-Ben'
     }, {
         name: "オメガ",
         property: "ライトサイド、アタッカー、バッド・バッチ、クローン・トルーパー",
         src: '/charui/tex.charui_badbatchomega.png',
         abbreviation: "Omega Bad Batch BB",
         skill: `めまい付与  暗闇  標的  射撃訓練  ターゲットロック  ターンメーター減少付与 弱体解除  ステルス  プロテクション上昇  防御突破力上昇  ターンメーター上昇  時間経過プロテクション  アシスト  ボーナスプロテクション `,
-        url: '/characters/'
+        url: '/characters/Omega'
     }, {
         name: "ガー・サクソン",
         property: "ダークサイド、タンク、リーダー、帝国軍、マンダロリアン",
         src: '/charui/tex.charui_gar_saxon.png',
         abbreviation: "Gar Saxon gar saxon",
         skill: `スピード低下  クールダウン減少  ターンメーター減少付与 リーダー：防御力上  カウンター  アシスト  全体攻撃 `,
-        url: '/characters/'
+        url: '/characters/Gar-Saxon'
     }, {
         name: "カース・オナシ",
         property: "ライトサイド、アタッカー、リーダー、旧共和国",
         src: '/charui/tex.charui_carth.png',
         abbreviation: "Carth Onasi carth onasi",
         skill: ` 時間経過ダメージ  攻撃力上昇  全体攻撃  ターンメーター上昇  回復  リーダー：有効性上昇  リーダー：抵抗力上昇  アシスト  クールダウンリセット `,
-        url: '/characters/'
-    }, {
-        name: "ガーモリアン・ガード",
-        property: "ダークサイド、タンク、ハット・カルテル、ならず者",
-        src: '/charui/tex.charui_gamorreanguard.png',
-        abbreviation: "Gamorrean Guard gamorrean guard",
-        skill: `時間経過ダメージ  挑発付与 報復効果  エクスポーズ  ターンメーター減少付与  防御力上昇  クリティカル回避力上昇  回復  プロテクション上昇  抵抗力上昇  ダメージ耐性  アシスト `,
-        url: '/characters/'
+        url: '/characters/Carth-Onasi'
     }, {
         name: "カーラ・デューン",
         property: "ライトサイド、タンク、反乱軍、反乱軍ファイター、ならず者",
         src: '/charui/tex.charui_caradune.png',
         abbreviation: "Cara Dune cara dune",
         skill: `ステルス  挑発付与 有効性上昇  スタン付与  ターンメーター減少付与 クリティカル率上昇  クリティカルダメージ上昇  クリティカルヒット耐性  ターンメーター上昇  復活  全体攻撃 `,
-        url: '/characters/'
+        url: '/characters/Cara-Dune'
     }, {
         name: "カイル・カターン",
         property: "ライトサイド、アタッカー、ジェダイ、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_kylekatarn.png',
         abbreviation: "Kyle Katarn kyle katarn",
         skill: `スキルブロック付与 フォースの酔い  クリティカル率上昇  有効性上昇  回復  弱体解除  味方全体-弱体解除  防御力上昇  スピード上昇  全体攻撃  ターンメーター上昇  ジェダイ・ナイト  ボーナスプロテクション `,
-        url: '/characters/'
+        url: '/characters/Kyle-Katarn'
     }, {
         name: "カイロ・レン",
         property: "ダークサイド、アタッカー、ファースト・オーダー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_kyloren.png',
         abbreviation: "Kylo Ren kylo ren",
         skill: `回復無効  時間経過ダメージ  報復  ターンメーター上昇  全体攻撃  スタン付与  クールダウンリセット `,
-        url: '/characters/'
+        url: '/characters/Kylo-Ren'
     }, {
         name: "カイロ・レン(マスクなし)",
         property: "ダークサイド、タンク、リーダー、ファースト・オーダー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_kylo_unmasked.png',
         abbreviation: "KRU マスク無し Kylo Ren Unmasked unmasked kylo ren ",
         skill: `抵抗力低下  挑発付与 スタン付与  回復  回避不可  リーダー：クリティカルダメージ上昇  リーダー：スピード上昇  ターンメーター上昇  アドバンテージ  カウンター  `,
-        url: '/characters/'
+        url: '/characters/Kylo-Ren-Unmasked'
     }, {
         name: "カイロレン最高指導者",
         property: "銀河の伝説、ダークサイド、アタッカー、リーダー、ファースト・オーダー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_kyloren_tros.png',
         abbreviation: "SLKR slkr GL Galactic Legends galactic legends Supreme Leader Kylo Ren supreme leader kylo ren",
         skill: `強化無効  アドバンテージ  サイフォン  スタン付与  マスター上昇  リーダー：スピード上昇  リーダー：クリティカルダメージ上昇  挑発付与 ターンメーター上昇  復活不可 全体攻撃  スタン無効化 `,
-        url: '/characters/'
+        url: '/characters/Supreme-Leader-kylo-Ren'
+    }, {
+        name: "ガモーリアン・ガード",
+        property: "ダークサイド、タンク、ハット・カルテル、ならず者",
+        src: '/charui/tex.charui_gamorreanguard.png',
+        abbreviation: "Gamorrean Guard gamorrean guard",
+        skill: `時間経過ダメージ  挑発付与 報復効果  エクスポーズ  ターンメーター減少付与  防御力上昇  クリティカル回避力上昇  回復  プロテクション上昇  抵抗力上昇  ダメージ耐性  アシスト `,
+        url: '/characters/Gamorrean-Guard'
     }, {
         name: `ガラゼブ・ "ゼブ" ・オレリオス`,
         property: "ライトサイド、タンク、反乱軍、フェニックス",
         src: '/charui/tex.charui_zeb_s3.png',
         abbreviation: 'Garazeb "Zeb" Orrelios garazeb zeb orrelios',
         skill: `めまい付与  よろめき  スタン付与  ターンメーター上昇  プロテクション上昇  報復効果  抵抗力上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Garazeb-Zeb-Orrelios'
     }, {
         name: "カル・ケスティス",
         property: "ライトサイド、サポート、非同盟のフォースの使い手",
         src: '/charui/tex.charui_calkestis.png',
         abbreviation: "Cal Kestis cal kestis CK ck",
         skill: `防御力低下  スピード低下  ヘルス・スティール上昇  クリティカル率低下  めまい付与  回復  クリティカル耐性  精度上昇  回避力低下  スピード低下  抵抗力低下  クリティカルだめ  ターンメーター上昇  スタン付与  プロテクション上昇  不屈  フォアサイト  防御力上昇  スキルブロック付与 強化無効  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Cal-Kestis'
     }, {
         name: "カレラン・ベク",
         property: "ライトサイド、アタッカー、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_kelleranbeq.png',
         abbreviation: "Kelleran Beq kelleran beq",
         skill: `フォアサイト  攻撃力上昇  アシスト  回復  リーダー：防御力上昇  リーダー：スピード上昇  リーダー：抵抗力上昇  パダワンの訓戒  カウンター  プロテクション上昇  ターンメーター上昇  セカンドウィンド `,
-        url: '/characters/'
+        url: '/characters/Kelleran-Beq'
     }, {
         name: "カンデラス・オルド",
         property: "ダークサイド、アタッカー、マンダロリアン、旧共和国、ならず者",
         src: '/charui/tex.charui_canderous.png',
         abbreviation: "Canderous Ordo canderous ordo",
         skill: `抵抗力低下  攻撃力低下  時間経過ダメージ  ターンメーター上昇  クリティカル率上昇  クリティカルダメージ上昇 `,
-        url: '/characters/'
+        url: '/characters/Canderous-Ordo'
     }, {
         name: "キ＝アディ＝ムンディ",
         property: "ライトサイド、アタッカー、ジェダイ、銀河共和国",
         src: '/charui/tex.charui_kiadimundi.png',
         abbreviation: "KAM kam Ki- Adi-Mundi Ki Adi Mundi ki-adi-mundi ki adi mundi",
         skill: `アタル・フォーム  マカシ・フォーム  ターンメーター上昇  回復  クールダウンリセット  弱体解除  味方全体-弱体解除  スピード上昇  最大HP上昇  攻撃力上昇  挑発  アーマー破壊  めまい付与  回避不可 `,
-        url: '/characters/'
+        url: '/characters/Ki-Adi-Mundi'
     }, {
         name: "キーラ",
         property: "ライトサイド、サポート、リーダー、ならず者、スマグラー",
@@ -493,29 +500,36 @@ const characters: Characters[] = [
         abbreviation: "Qira qira",
         skill: `攻撃力低下  カウンター不可  めまい付与  強化解除  よろめき  敵全体-強化解除  アシスト
             エクスポーズ  リーダー：クリティカル率上昇  回復  準備万端  ヘルススティール上昇  全体攻撃`,
-        url: '/characters/'
+        url: '/characters/Qira'
     }, {
         name: "キット・フィストー",
         property: "ライトサイド、アタッカー、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_kitfisto.png',
         abbreviation: "Kit Fisto kit fisto",
         skill: `ターンメーター上昇 全体攻撃  有効性上昇  リーダー：抵抗力上昇  リーダー：防御力上昇  カウンター `,
-        url: '/characters/'
+        url: '/characters/Kit-Fisto'
     }, {
         name: "キャシアン・アンドー",
         property: "ライトサイド、サポート、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_cassian.png',
         abbreviation: "Cassian Andor cassian andor",
         skill: `強化無効  スキルブロック付与 防御力低下  回復無効  攻撃力低下  スピード低下  エクスポーズ  アシスト  ターンメーター上昇  プロテクション上昇  防御力上昇  有効性上昇  抵抗力上昇 `,
-        url: '/characters/'
+        url: '/characters/Cassian-Andor'
     }, {
         name: "キャド・ベイン",
         property: "ダークサイド、サポート、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
         src: '/charui/tex.charui_cadbane.png',
         abbreviation: "Cad Bane cad bane",
         skill: `精度低下  ターンメーター上昇  強化解除  スタン付与  ターンメーター減少付与 最大プロテクション低下  リーダー：有効性上昇  アドバンテージ  抵抗力低下  クールダウン減少  回復  サーマル・デトネーター `,
-        url: '/characters/'
+        url: '/characters/Cad-Bane'
     }, {
+        name: "キャプテン・ターパルス",
+        property: "ライトサイド、アタッカー、グンガン",
+        src: '/charui/tex.charui_captaintarpals.png',
+        abbreviation: "Captain Tarpals",
+        skill: `ショック  強化解除   アドバンテージ  固定ダメージ  ターンメーター減少  よろめき  スタン付与  耐性発揮不可  リチャージ  回避不可  アシスト  クリティカルダメージ上昇  回復  マーク状態  解除不可  固定ダメージ  ターンメーター上昇  カウンター  弱体解除  挑発無視  強化無効  攻撃力上昇  防御力上昇  クールダウンリセット  ボーナスターン  プラズマシールド  `,
+        url: '/characters/'
+    },{
         name: "キャプテン・ドロガン",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_captaindrogan.png',
@@ -738,7 +752,7 @@ const characters: Characters[] = [
         property: "ライトサイド・アタッカー、リーダー、ジェダイ、旧共和国",
         src: '/charui/tex.charui_jedirevan.png',
         abbreviation: "JKR jkr Jedi Knight Revan jedi knight revan 白レヴァン ",
-        skill: `ターンメーター上昇  全体攻撃  弱体解除  クリティカルダメージ上昇  フォアサイト  ターンメーター入れ替え  マーク  クールダウン増加  スタン付与  リーダー：スピード上昇  抵抗力上昇  回復  最大HP減少  戦略的アドバンテージ  挑発無視  クリティカルヒット耐性  ボーナスターン  スタン無効化  スキルブロック無効化  `,
+        skill: `ターンメーター上昇  全体攻撃  弱体解除  クリティカルダメージ上昇  フォアサイト  ターンメーター入れ替え  マーク状態  クールダウン増加  スタン付与  リーダー：スピード上昇  抵抗力上昇  回復  最大HP減少  戦略的アドバンテージ  挑発無視  クリティカルヒット耐性  ボーナスターン  スタン無効化  スキルブロック無効化  `,
         url: '/characters/'
     }, {
         name: "ジェダイ・マスター・ケノービ",
@@ -962,7 +976,7 @@ const characters: Characters[] = [
         property: "ダークサイド、アタッカー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_secondsister.png',
         abbreviation: "2s 2S Second Sister second sister 2女 トリラ Trilla trilla",
-        skill: `粛清  耐性発揮不可  クリティカルダメージ上昇  スタン付与  ターンメーター減少付与 ターンメーター上昇  マーク  回避不可  `,
+        skill: `粛清  耐性発揮不可  クリティカルダメージ上昇  スタン付与  ターンメーター減少付与 ターンメーター上昇  マーク状態  回避不可  `,
         url: '/characters/'
     }, {
         name: "セブンス・シスター",
@@ -976,7 +990,7 @@ const characters: Characters[] = [
         property: "ライトサイド、サポート、リーダー、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_sawgerrera.png',
         abbreviation: "Saw Gerrera saw gerrera",
-        skill: `防御力低下  クールダウン減少  ターンメーター減少付与 攻撃力減少  回避不可  耐性発揮不可  強化解除  敵全体-強化解除  回復  暗闇  リーダー：最大HP上昇  リーダー：クリティカルダメージ上昇  リーダー：防御力上昇  リーダー：スピード上昇  スピード上昇  クリティカルダメージ上昇  時間経過回復  抵抗力上昇  攻撃力上昇  挑発付与 ターンメーター上昇  起爆トラップ  コピー不可  解除不可  クリティカルダメージ低下  スタン付与  炎上  よろめき  ボーナスターン  クールダウン増加付与 マーク  ステルス  クリティカル回避力上昇 `,
+        skill: `防御力低下  クールダウン減少  ターンメーター減少付与 攻撃力減少  回避不可  耐性発揮不可  強化解除  敵全体-強化解除  回復  暗闇  リーダー：最大HP上昇  リーダー：クリティカルダメージ上昇  リーダー：防御力上昇  リーダー：スピード上昇  スピード上昇  クリティカルダメージ上昇  時間経過回復  抵抗力上昇  攻撃力上昇  挑発付与 ターンメーター上昇  起爆トラップ  コピー不可  解除不可  クリティカルダメージ低下  スタン付与  炎上  よろめき  ボーナスターン  クールダウン増加付与 マーク状態  ステルス  クリティカル回避力上昇 `,
         url: '/characters/'
     }, {
         name: "ゾリ・ブリス",
@@ -1356,7 +1370,7 @@ const characters: Characters[] = [
         property: "ダークサイド、サポート、リーダー、帝国軍、帝国軍トルーパー、艦隊司令官",
         src: '/charui/tex.charui_piett.png',
         abbreviation: "Admiral Piett admiral piett",
-        skill: `アシスト  攻撃力上昇  ステルス  マーク  失敗不可避  コピー不可  解除不可  耐性発揮不可  全体攻撃  強化解除  めまい  恐怖付与  コピー不可  解除不可  耐性発揮不可  リーダー：攻撃力上昇  リーダー：有効性上昇  リーダー：スピード減少  リーダー：抵抗力減少  防御力上昇  カウンター  皇帝の罠  阻止不可 `,
+        skill: `アシスト  攻撃力上昇  ステルス  マーク状態  失敗不可避  コピー不可  解除不可  耐性発揮不可  全体攻撃  強化解除  めまい  恐怖付与  コピー不可  解除不可  耐性発揮不可  リーダー：攻撃力上昇  リーダー：有効性上昇  リーダー：スピード減少  リーダー：抵抗力減少  防御力上昇  カウンター  皇帝の罠  阻止不可 `,
         url: '/characters/'
     }, {
         name: "ビスタン",
@@ -1461,7 +1475,7 @@ const characters: Characters[] = [
         property: "銀河の伝説、ダークサイド、アタッカー、リーダー、帝国軍、シス",
         src: '/charui/tex.charui_lordvader.png',
         abbreviation: "Lord Vader load vader GL gl Galactic Legend LV lv",
-        skill: `強化無効  回復無効  過小評価  回復  全体攻撃  めまい付与  時間経過ダメージ  耐性発揮不可  スキルブロック付与  解除不可  クールダウン増加付与 リーダー：スピード上昇  リーダー：マスター上昇  リーダー：最大HP上昇  プロテクション失う  恐怖無効化  挑発付与 マーク  阻止不可  最大HP減少無効化  時間経過ダメージ無効化  サーマル・デトネーター無効化  クリティカルヒット無効化  ターンメーター操作無効化  回避不可  スピード上昇  ステルス  ボーナスターンメーター無効化  HP割合ダメージ軽減  大ダメージ軽減  スタン無効化  ボーナスターン  クールダウン減少  コピー不可  共和国の灰 `,
+        skill: `強化無効  回復無効  過小評価  回復  全体攻撃  めまい付与  時間経過ダメージ  耐性発揮不可  スキルブロック付与  解除不可  クールダウン増加付与 リーダー：スピード上昇  リーダー：マスター上昇  リーダー：最大HP上昇  プロテクション失う  恐怖無効化  挑発付与 マーク状態  阻止不可  最大HP減少無効化  時間経過ダメージ無効化  サーマル・デトネーター無効化  クリティカルヒット無効化  ターンメーター操作無効化  回避不可  スピード上昇  ステルス  ボーナスターンメーター無効化  HP割合ダメージ軽減  大ダメージ軽減  スタン無効化  ボーナスターン  クールダウン減少  コピー不可  共和国の灰 `,
         url: '/characters/'
     }, {
         name: "ヘラ・シンドゥーラ",

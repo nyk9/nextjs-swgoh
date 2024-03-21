@@ -4,7 +4,8 @@ import Image from "next/image";
 export default async function CharacterSkills(params: {
     url: string
 }) {
-    const res: globalThis.Response = await fetch('https://swgoh4jp.com/api/characterAbilities', {
+    const apilink: string = 'https://swgoh4jp.com/api/characterAbilities';
+    const res: globalThis.Response = await fetch(apilink, {
         next: {
             revalidate: 3600,
         },
@@ -24,7 +25,8 @@ export default async function CharacterSkills(params: {
         }
     }
     // 現在の進捗状況確認用
-    // const a: globalThis.Response = await fetch('https://swgoh4jp.com/api/characters',{
+    // const allCharacters: string = 'http://localhost:3000/api/characters';
+    // const a: globalThis.Response = await fetch(allCharacters ,{
     //     cache: 'no-cache'
     // });
     // const charLength = await a.json();
@@ -40,11 +42,12 @@ export default async function CharacterSkills(params: {
     } else {
         for (let i: number = 0; i < data[abilityIndex].ability.length; i++) {
             let str: string = data[abilityIndex].ability[i].description_jp;
-            data[abilityIndex].ability[i].description_jp = str.replace(/                /g, '');
+            data[abilityIndex].ability[i].description_jp = str.replaceAll('\n', '&&');
         }
         return (
             <>
                 <h1 className="flex text-2xl">
+
                     <Image
                         alt={data[abilityIndex].character_name}
                         src={data[abilityIndex].character_image}
@@ -61,37 +64,156 @@ export default async function CharacterSkills(params: {
                             key={item.name_jp}
                             className="border border-blue-300 mt-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
                         >
-                            <h1 className="xs:flex text-2xl ">
-                                {/* <div className="image"> */}
-                                    <Image
-                                        src={item.image}
-                                        alt={item.name_jp}
-                                        width={50}
-                                        height={50}
-                                        className="object-cover px-1"
-                                    />
-                                {/* </div> */}
-                                <span className="text-sky-300">
+                            <h1 className="">
+                                <Image
+                                    src={item.image}
+                                    alt={item.name_jp}
+                                    width={50}
+                                    height={50}
+                                    className="object-cover px-1"
+                                />
+                                <span className="text-sky-300 text-2xl">
                                     {item.name_jp}:
                                 </span>
-                                <span className="text-sky-700">
+                                <span className="text-sky-700 text-2xl">
                                     ({item.ability_type})
                                 </span>
-                                {/* {item.is_zeta && (
-                                    <p>zeta</p>
-                                )} */}
-                                {/* {item.is_omega && (
-                                    <p>omega</p>
-                                )} */}
-                                {/* {item.is_omicron && (
-                                    <p>omicron</p>
-                                )} */}
-                                {/* {item.is_ultimate && (
-                                    <p>ultimate</p>
-                                )} */}
+                                <div className="flex">
+                                    <span className="text-xs">
+                                        {item.cooldown !== null ? (
+                                            <span className="text-sky-100">
+                                                クールダウン: {item.cooldown}
+                                            </span>
+                                        ) : (
+                                            <></>
+                                        )}
+                                    </span>
+                                    {item.ability_type !== '付与スキル' ? (
+                                        item.is_ultimate === true ? (
+                                            <Image
+                                                src={'/skill/tex.skill_abilitymaterial_ultimate.png'}
+                                                alt="ultimate"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        ) : (item.is_omicron === true && item.is_zeta === true ? (
+                                            <>
+                                                <Image
+                                                    src={'/skill/tex.skill_hexagon_white.png'}
+                                                    alt="ultimate"
+                                                    width={15}
+                                                    height={15}
+                                                />
+                                                <Image
+                                                    src={'/skill/tex.skill_zeta.png'}
+                                                    alt="ultimate"
+                                                    width={15}
+                                                    height={15}
+                                                />
+                                            </>
+                                        ) : (item.is_omicron === true ? (
+                                            <Image
+                                                src={'/skill/tex.skill_hexagon_white.png'}
+                                                alt="ultimate"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        ) : (item.is_zeta === true ? (
+                                            <Image
+                                                src={'/skill/tex.skill_zeta.png'}
+                                                alt="ultimate"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        ) : (item.is_omega === true ? (
+                                            <Image
+                                                src={'/skill/tex.skill_pentagon_gold.png'}
+                                                alt="ultimate"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        ) : (
+                                            <Image
+                                                src={'/skill/tex.skill_pentagon_white.png'}
+                                                alt="ultimate"
+                                                width={15}
+                                                height={15}
+                                            />
+                                        )))))) : (<></>)}
+                                </div>
                             </h1>
-                            <div className="flex">
-                                <p className="whitespace-pre-wrap px-1">{item.description_jp}</p>
+                            <div className="">
+                                {item.description_jp.includes('&') || item.description_jp.includes('*')
+                                    || item.description_jp.includes('$') || item.description_jp.includes('#')
+                                    || item.description_jp.includes('+') ? (
+                                    item.description_jp.split('&').map((line: string, lineIndex: number) => {
+                                        if (lineIndex % 2 !== 0 && lineIndex !== 0) {
+                                            return (<span key={lineIndex}><br /></span>);
+                                        } else if (line.includes('*')) {
+                                            return line.split('*').map((yellow: string, yellowIndex: number) => {
+                                                if (yellowIndex % 2 !== 0) {
+                                                    return (
+                                                        <span className="text-yellow-200" key={yellowIndex}>{yellow}</span>
+                                                    );
+                                                } else {
+                                                    return (<span key={yellowIndex}>{yellow}</span>);
+                                                }
+                                            });
+                                        } else if (line.includes('$')) {
+                                            return line.split('$').map((omicron: string, omicronIndex: number) => {
+                                                if (omicronIndex % 2 !== 0) {
+                                                    return (
+                                                        <span
+                                                            key={omicronIndex}
+                                                            className="font-bold text-lg drop-shadow">
+                                                            {omicron}
+                                                        </span>
+                                                    );
+                                                } else {
+                                                    return (<span key={omicronIndex}>{omicron}</span>);
+                                                }
+                                            });
+                                        } else if (line.includes('#')) {
+                                            return line.split('#').map((ult: string, ultIndex: number) => {
+                                                if (ultIndex % 2 !== 0) {
+                                                    return (
+                                                        <span
+                                                            key={ultIndex}
+                                                            className="text-orange-400"
+                                                        >
+                                                            {ult}
+                                                        </span>
+                                                    );
+                                                } else {
+                                                    return (
+                                                        <span key={ultIndex}>{ult}</span>
+                                                    );
+                                                }
+                                            });
+                                        } else if (line.includes('+')) {
+                                            return line.split('+').map((role: string, roleIndex: number) => {
+                                                if (roleIndex % 2 !== 0) {
+                                                    return (
+                                                        <span
+                                                            key={roleIndex}
+                                                            className="text-sky-200"
+                                                        >
+                                                            {role}
+                                                        </span>
+                                                    );
+                                                } else {
+                                                    return (
+                                                        <span key={roleIndex}>{role}</span>
+                                                    );
+                                                }
+                                            });
+                                        } else {
+                                            return (<span key={lineIndex}>{line}</span>);
+                                        }
+                                    })
+                                ) : (
+                                    <span>{item.description_jp}</span>
+                                )}
                             </div>
                         </div>
                     );

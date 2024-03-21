@@ -1,6 +1,13 @@
+// スキル説明文の特殊記号等のメモ:
+// ** : 囲まれたところは黄色文字(特殊効果、スキル等が該当)
+// $$ : 囲まれたところは白色+太字(オミクロンが該当)
+// ## : 囲まれたところはオレンジ色(アルティメットチャージが該当)
+// ++ : 囲まれたところは薄水色(ロールなど)
+
 
 export type Abilities = {
     ability_type: string,
+    cooldown: number | null,
     name_jp: string,
     name_eng: string,
     image: string,
@@ -27,6 +34,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'フェイタルショック',
                 name_eng: 'Fatale Shock',
                 image: '/ability/tex.ability_000_basic.png',
@@ -37,12 +45,13 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: '拷問特化',
                 name_eng: 'Specialized in Torture',
                 image: '/ability/tex.ability_000_special01.png',
                 description_jp: `ターゲットに特殊ダメージを与え、1ターンの間、「拷問」を発生させる(コピー、解除、回避、耐性発揮不可)。ターゲットに既に「拷問」が発生している場合、代わりに敵全体に特殊ダメージを与え、ダークサイドの味方全員に3ターンの間「通訳」のスタックを与える(最大3)。
                 
-                3対3のグランドアリーナの場合: 拷問効果が2ターン続く。BT-1がアクティブな味方の場合、BT-1と0-0-0のHPとプロテクションが20%回復する。このスキルで敵を倒した場合、遭遇終了まで、ダークサイドの味方全体の(=味方全員の?)攻撃力が10%上昇する(スタック可能) (ダークサイドのドロイドの場合はその2倍)。`,
+                $3対3のグランドアリーナの場合:$ 拷問効果が2ターン続く。BT-1がアクティブな味方の場合、BT-1と0-0-0のHPとプロテクションが20%回復する。このスキルで敵を倒した場合、遭遇終了まで、ダークサイドの味方全体の(=味方全員の?)攻撃力が10%上昇する(スタック可能) (ダークサイドのドロイドの場合はその2倍)。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: true,
@@ -50,15 +59,16 @@ const characterAbilities: characterAbilities[] = [
             }, {
                 ability_type: 'ユニークスキル',
                 name_jp: '尋問プロトコル',
+                cooldown: null,
                 name_eng: 'Interrogation Protocol',
                 image: '/abilityui/tex.abilityui_passive_translation.png',
                 description_jp: `ダークサイドの味方全体の(=味方全員の?)クリティカルダメージが20%上昇する。味方ダークサイドは「拷問」が発生している敵にスキルを使用するたび、3ターンの間「通訳」のスタックを1得る(最大3)。味方ダークサイドは、自身の「通訳」のスタックごとに有効性が5%上昇する(ドロイドは2倍)。
                 
-                通訳 - 合計スタック数に応じて強化効果が発生する: 
+                *通訳* - 合計スタック数に応じて強化効果が発生する: 
                 
-                スタックx1: 最大HP30%上昇
-                スタックx2: クリティカル率上昇
-                スタックx3: 「通訳」を付与できる味方が1体しかいない場合、その味方の通常スキル使用時にクールダウンを1減少させる(1ターンにつき1回限り)`,
+                *スタックx1:* 最大HP30%上昇
+                *スタックx2:* クリティカル率上昇
+                *スタックx3:* 「通訳」を付与できる味方が1体しかいない場合、その味方の通常スキル使用時にクールダウンを1減少させる(1ターンにつき1回限り)`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
@@ -66,6 +76,7 @@ const characterAbilities: characterAbilities[] = [
             }, {
                 ability_type: 'ユニークスキル',
                 name_jp: '血液収集',
+                cooldown: null,
                 name_eng: 'Drain Organics',
                 image: '/abilityui/tex.abilityui_passive_drainorganics.png',
                 description_jp: `0-0-0とBT-1のどちらかが「通訳」のスタックを得るたび、もう片方も「通訳」のスタックを得る(1ターンにつき1回限り)。0-0-0のターン開始時、まだターゲットロックが発生していないランダムなドロイド以外の敵に、1ターンのターゲットロックを発生させる。ドロイド以外の敵が戦闘不能になるたび、攻撃した味方のHPとプロテクションが30%回復する。攻撃した味方がダークサイドのドロイドだった場合、2ターンの攻撃力上昇と、15%のターンメーターを得る。攻撃した味方がBT-1の場合、2ターンの攻撃力上昇と、30%のターンメーターを代わりに得る。`,
@@ -73,7 +84,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -83,6 +94,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '緻密な勝算',
                 name_eng: 'Calculated Odds',
                 image: '/ability/tex.ability_50rt_basic.png',
@@ -93,6 +105,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'サバック・シャッフル',
                 name_eng: 'Sabacc Shuffle',
                 image: '/ability/tex.ability_50rt_special01.png',
@@ -105,6 +118,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'タクティカル・アドバンテージ',
                 name_eng: 'Tactical Advantage',
                 image: '/ability/tex.ability_50rt_special02.png',
@@ -115,31 +129,33 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'スペアパーツ',
                 name_eng: 'Spare Parts',
                 image: '/abilityui/tex.abilityui_leader_spareparts.png',
-                description_jp: `味方ドロイドの防御力が35%、スピードが35上昇し、バトル終了までスペアパーツを得る(コピー、解除、阻止不可)。バトル開始時、味方全員がドロイドの場合、50R-Tの最大HPが30%、スピードが40上昇する。
+                description_jp: `味方ドロイドの防御力が35%、スピードが35上昇し、バトル終了まで*スペアパーツ*を得る(コピー、解除、阻止不可)。バトル開始時、味方全員がドロイドの場合、50R-Tの最大HPが30%、スピードが40上昇する。
                 
-                スペアパーツ: クリティカル率が30%、攻撃力が30%上昇する。このユニットが戦闘不能になると、HPが100%の状態で復活し、2ターンのフォアサイトとプロテクション上昇(50%)を得て、味方全体からこの強化を解除する。また、この復活は阻止できない。
+                *スペアパーツ:* クリティカル率が30%、攻撃力が30%上昇する。このユニットが戦闘不能になると、HPが100%の状態で復活し、2ターンのフォアサイトとプロテクション上昇(50%)を得て、味方全体からこの強化を解除する。また、この復活は阻止できない。
                 
-                征服モード中、味方全体が分離主義者以外のドロイドの場合: 最初にターンを得た敵が初めて戦闘不能になると、他のアクティブな敵(招集を除く)がいる場合、味方全体(=味方全員?)がHP60%の状態で復活し、2ターンのダメージ耐性と即戦闘不能耐性を得る。これらの強化効果はコピー、解除、阻止できない。この復活は阻止できない。`,
+                $征服モード中、味方全体が分離主義者以外のドロイドの場合:$ 最初にターンを得た敵が初めて戦闘不能になると、他のアクティブな敵(招集を除く)がいる場合、味方全体(=味方全員?)がHP60%の状態で復活し、2ターンのダメージ耐性と即戦闘不能耐性を得る。これらの強化効果はコピー、解除、阻止できない。この復活は阻止できない。`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: true,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'VIP待遇',
                 name_eng: 'VIP Treatment',
                 image: '/abilityui/tex.abilityui_passive_viptreatment.png',
-                description_jp: `バトル開始時、最弱の他の味方がVIPを得る。VIPがダメージを受けると、2ターンのステルス効果が発生し、50R-TのHPとプロテクションが5%回復する。50R-Tがダメージを受けると、VIP状態の味方のHPとプロテクションが50R-Tの最大HPとプロテクションの5%分回復し、2ターンの間攻撃力が上昇し、50R-Tは2ターンの間防御力が上昇し、プロテクションが上昇する(スタック可能、最大250%)。バトル開始時に味方全員がドロイドの場合、50R-TとVIPはターンメーター減少を無効化する。
+                description_jp: `バトル開始時、最弱の他の味方が*VIP*を得る。VIPがダメージを受けると、2ターンのステルス効果が発生し、50R-TのHPとプロテクションが5%回復する。50R-Tがダメージを受けると、VIP状態の味方のHPとプロテクションが50R-Tの最大HPとプロテクションの5%分回復し、2ターンの間攻撃力が上昇し、50R-Tは2ターンの間防御力が上昇し、プロテクションが上昇する(スタック可能、最大250%)。バトル開始時に味方全員がドロイドの場合、50R-TとVIPはターンメーター減少を無効化する。
                 
-                VIP: ダメージを受けると、VIPを利用しているユニットからボーナスを得る`,
+                *VIP:* ダメージを受けると、VIPを利用しているユニットからボーナスを得る`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -149,6 +165,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'クロスファイア',
                 name_eng: 'Crossfire',
                 image: '/ability/tex.ability_trooperclone_arc_basic.png',
@@ -159,36 +176,39 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '指令を与える',
                 name_eng: 'Assign Command',
                 image: '/ability/tex.ability_trooperclone_arc_special01.png',
-                description_jp: `ターゲットに物理攻撃(=ダメージ?)を与える。ブラスタータレットが存在する場合、指令対象クローンが戦闘不能になるか他の味方へ指令が与えられるまで、味方クローンに指令を与える。
+                description_jp: `ターゲットに物理攻撃(=ダメージ?)を与える。ブラスタータレットが存在する場合、指令対象クローンが戦闘不能になるか他の味方へ*指令*が与えられるまで、味方クローンに*指令*を与える。
                 
-                指令: ユニットがターン中にスキルを使用するとブラスタータレットがアシストする`,
+                *指令:* ユニットがターン中にスキルを使用するとブラスタータレットがアシストする`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ARCアーセナル',
                 name_eng: 'ARC Arsenal',
                 image: '/abilityui/tex.abilityui_passive_commandoassault.png',
-                description_jp: `ARCトルーパーはカウンター率35%を得る。ARCトルーパーはブラスター・タレットが存在している間は常に指令を受け、遭遇開始時や復活時に同盟スロットへブラスター・タレットを招集する。ブラスター・タレットはARCトルーパーがターン外に攻撃を行った時にアシストする。`,
+                description_jp: `ARCトルーパーはカウンター率35%を得る。ARCトルーパーはブラスター・タレットが存在している間は常に*指令*を受け、遭遇開始時や復活時に同盟スロットへブラスター・タレットを招集する。ブラスター・タレットはARCトルーパーがターン外に攻撃を行った時にアシストする。`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ブラスター・タレット',
                 name_eng: 'Blaster Turret',
                 image: '/ability/tex.ability_trooperclone_arc_special02.png',
-                description_jp: `[通常]「粉砕ブラスト」: 回避不可能攻撃で、ターゲットの強化を全て解除し固定ダメージを与える。
+                description_jp: `*[通常]「粉砕ブラスト」:* 回避不可能攻撃で、ターゲットの強化を全て解除し固定ダメージを与える。
                 
-                [特殊]「オブジェクト召集」: このオブジェクトは召集したユニットのステータスを引き継ぐ。同盟スロットに空きがある場合にのみ召集される。レイドでは召集できない。このオブジェクトは復活できない。戦闘不能ユニット数に応じた効果に対して、召集されたオブジェクトはカウントされない。他の味方が全て撃破された場合、このオブジェクトはバトルから離脱する。このオブジェクトが同盟スロットにいる場合、他のユニットは復活できない。
+                *[ユニーク]「オブジェクト召集」: *このオブジェクトは召集したユニットのステータスを引き継ぐ。同盟スロットに空きがある場合にのみ召集される。レイドでは召集できない。このオブジェクトは復活できない。戦闘不能ユニット数に応じた効果に対して、召集されたオブジェクトはカウントされない。他の味方が全て撃破された場合、このオブジェクトはバトルから離脱する。このオブジェクトが同盟スロットにいる場合、他のユニットは復活できない。
                 
-                [特殊]「オブジェクトの特性」: このオブジェクトが標的とされることはなく、ダメージ耐性とあらゆるステータス効果に耐性を持ち、ターン上昇しない。指令を受けた味方がいなくなった場合、ブラスター・タレットは破壊される。`,
+                *[ユニーク]「オブジェクトの特性」:* このオブジェクトが標的とされることはなく、ダメージ耐性とあらゆるステータス効果に耐性を持ち、ターン上昇しない。*指令*を受けた味方がいなくなった場合、ブラスター・タレットは破壊される。`,
                 is_omega: false,
                 is_zeta: false,
                 is_omicron: false,
@@ -203,6 +223,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'B1集中攻撃',
                 name_eng: 'B1 Barrage',
                 image: '/ability/tex.ability_b1_basic.png',
@@ -213,6 +234,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: '撃て!',
                 name_eng: 'Blast Them!',
                 image: '/ability/tex.ability_b1_special01.png',
@@ -223,6 +245,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ラジャー ラジャー',
                 name_eng: 'Roger Roger',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -233,6 +256,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ドロイド大隊',
                 name_eng: 'Droid Battalion',
                 image: '/abilityui/tex.abilityui_passive_mechanicalmenace.png',
@@ -242,12 +266,12 @@ const characterAbilities: characterAbilities[] = [
                 
                 B1はシス三頭レイドでロード・オブ・ベトレイアルからのダメージを無効化する。
                 
-                ドロイド大隊: スタック1つにつき、B1の攻撃力が2%上昇し、分離主義者の味方全体の抵抗力とクリティカル回避力が0.5%上昇する。`,
+                *ドロイド大隊:* スタック1つにつき、B1の攻撃力が2%上昇し、分離主義者の味方全体の抵抗力とクリティカル回避力が0.5%上昇する。`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -257,6 +281,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ヘビーアーム',
                 name_eng: 'Heavy Arms',
                 image: '/ability/tex.ability_b2_basic.png',
@@ -267,6 +292,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '一掃',
                 name_eng: 'Mow Down',
                 image: '/ability/tex.ability_b2_special01.png',
@@ -277,6 +303,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '容赦なき集中砲火',
                 name_eng: 'Relentless Barrage',
                 image: '/abilityui/tex.abilityui_passive_targetlock.png',
@@ -287,6 +314,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'リアクティブ・プロトコル',
                 name_eng: 'Reactive Protocol',
                 image: '/abilityui/tex.abilityui_passive_faction_separatist.png',
@@ -295,7 +323,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -305,6 +333,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'アーク・ウェルダー',
                 name_eng: 'Arc Welder',
                 image: '/ability/tex.ability_bb8_tfa_basic.png',
@@ -315,18 +344,20 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: '秘匿データ転送',
                 name_eng: 'Covert Data Transfer',
                 image: '/ability/tex.ability_bb8_tfa_special01.png',
-                description_jp: `3ターンの間、ユニーク強化「機密情報」がBB-8およびこの効果を受けていないランダムな味方1体に発生する。さらに機密情報効果が発生している味方1体ごとに、BB-8のターンメーターが8%上昇する。アクティブな味方が全てドロイドの場合、BB-8が1ターンの挑発を行う。
+                description_jp: `3ターンの間、ユニーク強化*「機密情報」*がBB-8およびこの効果を受けていないランダムな味方1体に発生する。さらに*機密情報*効果が発生している味方1体ごとに、BB-8のターンメーターが8%上昇する。アクティブな味方が全てドロイドの場合、BB-8が1ターンの挑発を行う。
                 
-                機密情報: 有効性が25%上昇し、他の味方が特殊スキルを使用するとそのユニットに3ターンの間機密情報効果が発生する。また、機密情報効果の発生している味方1体ごとに「イルミネート・デスティニー」のクールダウンが1減少する。`,
+                *機密情報:* 有効性が25%上昇し、他の味方が特殊スキルを使用するとそのユニットに3ターンの間機密情報効果が発生する。また、機密情報効果の発生している味方1体ごとに「イルミネート・デスティニー」のクールダウンが1減少する。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 70,
                 name_jp: 'イルミネート・デスティニー',
                 name_eng: 'Illuminated Destiny',
                 image: '/ability/tex.ability_bb8_tfa_special02.png',
@@ -337,6 +368,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '危機順応',
                 name_eng: 'Roll with the Punches',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -347,6 +379,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '自己防衛プロトコル',
                 name_eng: 'Self-Preservation Protocol',
                 image: '/abilityui/tex.abilityui_passive_foresight.png',
@@ -355,7 +388,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -365,6 +398,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'オーバーチャージ・レーザー',
                 name_eng: 'Overcharged Lasers',
                 image: '/ability/tex.ability_bt1_basic.png',
@@ -375,6 +409,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '破壊工作',
                 name_eng: 'Agent of Destruction',
                 image: '/ability/tex.ability_bt1_special01.png',
@@ -385,18 +420,20 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '殺りくの相棒',
                 name_eng: 'Homicidal Counterpart',
                 image: '/abilityui/tex.abilityui_passive_homicidalcounterpart.png',
-                description_jp: `バトル開始時、味方ドロイドごとにBT-1のクリティカルダメージが10%、味方ダークサイドごとに有効性が10%、味方ならず者ごとにスピードが5上昇する。0-0-0がアクティブな味方の場合、付与スキル「すべて抹殺せよ」を得る。0-0-0が特殊スキルを使用するたび、BT-1がアシストを行う(ダメージは40%減少)。
+                description_jp: `バトル開始時、味方ドロイドごとにBT-1のクリティカルダメージが10%、味方ダークサイドごとに有効性が10%、味方ならず者ごとにスピードが5上昇する。0-0-0がアクティブな味方の場合、付与スキル*「すべて抹殺せよ」*を得る。0-0-0が特殊スキルを使用するたび、BT-1がアシストを行う(ダメージは40%減少)。
                 
-                3対3のグランドアリーナの場合: BT-1または0-0-0は敵を倒すたび、そのクールダウンがリフレッシュされ、ターンメーターが30%上昇する。`,
+                $3対3のグランドアリーナの場合:$ BT-1または0-0-0は敵を倒すたび、そのクールダウンがリフレッシュされ、ターンメーターが30%上昇する。`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: true,
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: 5,
                 name_jp: 'すべて抹殺せよ',
                 name_eng: 'Kill Them All',
                 image: '/ability/tex.ability_bt1_special02.png',
@@ -407,16 +444,18 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ブラストメクプロトタイプ',
                 name_eng: 'Blastomech Prototype',
                 image: '/abilityui/tex.abilityui_passive_dumpygunboy.png',
-                description_jp: `バトル開始時、BT-1の攻撃力が100%上昇する。BT-1は敵を倒すたび、付与スキル「めちゃくちゃ」とボーナスターンを得る。このボーナスターン中、BT-1は自身のスキルブロックを取り除いて「めちゃくちゃ」のみを使用できる。`,
+                description_jp: `バトル開始時、BT-1の攻撃力が100%上昇する。BT-1は敵を倒すたび、付与スキル*「めちゃくちゃ」*とボーナスターンを得る。このボーナスターン中、BT-1は自身のスキルブロックを取り除いて「めちゃくちゃ」のみを使用できる。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: null,
                 name_jp: 'めちゃくちゃ',
                 name_eng: 'Haywire',
                 image: '/ability/tex.ability_bt1_special03.png',
@@ -425,7 +464,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -435,12 +474,13 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'バッフリング・トリック',
                 name_eng: 'Baffling Trick',
                 image: '/ability/tex.ability_c3p0_basic.png',
-                description_jp: `C-3POは3ターンの混乱(ユニーク弱体)を発生させる(最大3回スタック可能、回避/コピー不可)。ターゲットが既に混乱状態の場合、現在のスタックの全ての持続時間が3ターンにリセットされる。ターゲットのターンメーターが6%減少し、C-3POの通訳効果のスタックごとにさらに3%減少する(詳細はプロトコル・ドロイドの通訳の説明を確認)。
+                description_jp: `C-3POは3ターンの*混乱*(ユニーク弱体)を発生させる(最大3回スタック可能、回避/コピー不可)。ターゲットが既に*混乱状態*の場合、現在のスタックの全ての持続時間が3ターンにリセットされる。ターゲットのターンメーターが6%減少し、C-3POの*通訳*効果のスタックごとにさらに3%減少する(詳細はプロトコル・ドロイドの*通訳*の説明を確認)。
                 
-                混乱 - 状態異常は、累積のスタック数によって増えていく:
+                *混乱* - 状態異常は、累積のスタック数によって増えていく:
                 1: 強化効果不可
                 2: カウンター、アシスト、ボーナスターンメーター不可(レイドボスと銀河の伝説: カウンター率が30%低下)
                 3: ユニットが通常スキル使用時、クールダウンを1増加させる。耐性発揮不可(レイドボスと銀河の伝説: 防御力50%低下、防御力低下はスタックしない)`,
@@ -450,24 +490,26 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'なんですって！',
                 name_eng: 'Oh My Goodness!',
                 image: '/ability/tex.ability_c3p0_special01.png',
-                description_jp: `C-3POは2ターンの有効性上昇とステルス効果を得る。その後、C-3POとその他指定した味方に3ターンの通訳効果が付与される。C-3POは通訳効果をその他味方全体をアシストに呼ぶ(ダメージ50%減少)。
+                description_jp: `C-3POは2ターンの有効性上昇とステルス効果を得る。その後、C-3POとその他指定した味方に3ターンの*通訳*効果が付与される。C-3POは*通訳*効果をその他味方全体をアシストに呼ぶ(ダメージ50%減少)。
                 
-                (詳細はプロトコル・ドロイドの通訳の説明を確認)`,
+                (詳細はプロトコル・ドロイドの*通訳*の説明を確認)`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'プロトコル・ドロイド',
                 name_eng: 'Protocol Droid',
                 image: '/abilityui/tex.abilityui_passive_translation.png',
                 description_jp: `C-3POのスピードが20上昇する。C-3POがアクティブな間、味方銀河共和国、反乱軍、レジスタンス、イウォークは特殊スキルを使用するたび、3ターンの通訳効果を得る(最大3スタック)。通訳効果はコピーできない。ユニットに既に通訳効果が発生している場合、そのユニットの全てのスタックの有効時間が3ターンにリセットされる。通訳を適用できる味方が全て戦闘不能になった場合、通訳の全てのスタックはその効果を失う。
                 
-                通訳 - 強化効果は、累積のスタック数によって増えていく:
+                *通訳* - 強化効果は、累積のスタック数によって増えていく:
                 1. 最大HP+30%上昇
                 2. クリティカル率+15%上昇
                 3. 通訳の効果を付与できる味方が1体だけしかない場合、この味方が通常スキル使用時、このユニットのクールダウンが1減少する(1ターンに1度のみ)`,
@@ -477,16 +519,18 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '置いて行かないで！',
                 name_eng: 'Wait for Me!',
                 image: '/abilityui/tex.abilityui_passive_stealth.png',
-                description_jp: `C-3POとR2-D2の回避力が、自身の通訳効果のスタック数ごとに10%上昇する。遭遇開始時、C-3POとR2-D2は3ターンの通訳効果を得る。戦う味方がいなくなると、C-3POはバトルから逃走する。`,
+                description_jp: `C-3POとR2-D2の回避力が、自身の*通訳*効果のスタック数ごとに10%上昇する。遭遇開始時、C-3POとR2-D2は3ターンの通訳効果を得る。戦う味方がいなくなると、C-3POはバトルから逃走する。`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '仲裁',
                 name_eng: 'Intermediary',
                 image: '/abilityui/tex.abilityui_passive_sootheall.png',
@@ -497,25 +541,27 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'サイボーグ関係',
                 name_eng: 'Cyborg Relations',
                 image: '/abilityui/tex.abilityui_passive_uniqueability.png',
-                description_jp: `味方全体の有効性が10%上昇する。味方反乱軍あるいはイウォークが通常スキルを使用すると、ターゲットを2ターンの間エクスポーズ状態させる(回避不可)。スタックしている通訳効果1つごとに、味方反乱軍の有効性が10%上昇する。イウォークは上昇量2倍。`,
+                description_jp: `味方全体の有効性が10%上昇する。味方反乱軍あるいはイウォークが通常スキルを使用すると、ターゲットを2ターンの間エクスポーズ状態させる(回避不可)。スタックしている*通訳*効果1つごとに、味方反乱軍の有効性が10%上昇する。イウォークは上昇量2倍。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '苛立たしい仲裁',
                 name_eng: 'Fretful Medator',
                 image: '/abilityui/tex.abilityui_passive_soothe.png',
-                description_jp: `味方全体のクリティカルダメージが10%上昇する。味方レジスタンスあるいはイウォークが特殊スキルを使用すると、ターゲットに2ターンの攻撃力低下を発生させる(回避不可)。スタックしている通訳効果1つごとに、味方レジスタンスのクリティカルダメージが10%上昇する。イウォークは上昇量2倍。`,
+                description_jp: `味方全体のクリティカルダメージが10%上昇する。味方レジスタンスあるいはイウォークが特殊スキルを使用すると、ターゲットに2ターンの攻撃力低下を発生させる(回避不可)。スタックしている*通訳*効果1つごとに、味方レジスタンスのクリティカルダメージが10%上昇する。イウォークは上昇量2倍。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -525,6 +571,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'フランティックショット',
                 name_eng: 'Frantic Shot',
                 image: '/ability/tex.ability_chew3po_basic.png',
@@ -535,6 +582,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: 'キラキラのおとり',
                 name_eng: 'Shining Distraction',
                 image: '/ability/tex.ability_chew3po_special01.png',
@@ -545,6 +593,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'チューイの怒り',
                 name_eng: "Chewie's Rage",
                 image: '/ability/tex.ability_chew3po_special02.png',
@@ -555,6 +604,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'みなさんに伝えないと',
                 name_eng: 'I Must Tell The Others',
                 image: '/abilityui/tex.abilityui_passive_c3po.png',
@@ -567,7 +617,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -577,6 +627,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'アルファストライク',
                 name_eng: 'Alpha Strike',
                 image: '/ability/tex.ability_commandercody_basic.png',
@@ -587,6 +638,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'AT-TEマスドライバーキャノン',
                 name_eng: 'AT-TE Mass-Driver Cannon',
                 image: '/ability/tex.ability_commandercody_special01.png',
@@ -597,6 +649,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 6,
                 name_jp: '第212攻撃',
                 name_eng: 'The 212th Attack',
                 image: '/ability/tex.ability_commandercody_special02.png',
@@ -607,6 +660,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ゴースト・カンパニー・コマンダー',
                 name_eng: 'Ghost Company Commander',
                 image: '/abilityui/tex.abilityui_passive_crit_buff.png',
@@ -615,7 +669,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -625,6 +679,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '援護攻撃',
                 name_eng: 'Supporting Fire',
                 image: '/ability/tex.ability_echo_basic.png',
@@ -635,6 +690,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'EMPグレネード',
                 name_eng: 'EMP Grenade',
                 image: '/ability/tex.ability_echo_special01.png',
@@ -645,6 +701,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '了解',
                 name_eng: 'Copy That',
                 image: '/abilityui/tex.abilityui_leader_default.png',
@@ -655,6 +712,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ドミノ分隊',
                 name_eng: 'Domino Squad',
                 image: '/abilityui/tex.abilityui_passive_501.png',
@@ -665,7 +723,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -675,6 +733,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'デュアルDC-17ブラスター',
                 name_eng: 'Dual DC-17 Blasters',
                 image: '/ability/tex.ability_ct5555_basic.png',
@@ -685,6 +744,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '支援攻撃',
                 name_eng: 'Cover Fire',
                 image: '/ability/tex.ability_ct5555_special01.png',
@@ -695,6 +755,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '熟練クローン・トルーパー',
                 name_eng: 'Veteran Clone Trooper',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -705,6 +766,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ドミノ分隊',
                 name_eng: 'Domino Squad',
                 image: '/abilityui/tex.abilityui_passive_501.png',
@@ -717,6 +779,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'タクティカル・アウェアネス',
                 name_eng: 'Tactical Awareness',
                 image: '/abilityui/tex.abilityui_passive_heal.png',
@@ -728,7 +791,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: true,
                 is_ultimate: true,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -738,6 +801,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '妨害ショット',
                 name_eng: 'Impeding Shot',
                 image: '/ability/tex.ability_rex_basic.png',
@@ -748,6 +812,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '編隊形成',
                 name_eng: 'Form Up',
                 image: '/ability/tex.ability_rex_special01.png',
@@ -758,6 +823,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'エアリアル・アドバンテージ',
                 name_eng: 'Aerial Advantage',
                 image: '/ability/tex.ability_rex_special02.png',
@@ -769,6 +835,7 @@ const characterAbilities: characterAbilities[] = [
 
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '戦友',
                 name_eng: 'Brothers in Arms',
                 image: '/abilityui/tex.abilityui_passive_hp.png',
@@ -779,6 +846,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '第501軍団のキャプテン',
                 name_eng: 'Captain of the 501st',
                 image: '/abilityui/tex.abilityui_passive_501.png',
@@ -789,7 +857,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -799,6 +867,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'リクエスト: タオレロ、ミートバッグ！',
                 name_eng: 'Request: Die, Meatbag!',
                 image: '/ability/tex.ability_hk47_basic.png',
@@ -809,6 +878,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ハボック',
                 name_eng: 'Havoc',
                 image: '/ability/tex.ability_hk47_special01.png',
@@ -819,6 +889,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 9,
                 name_jp: 'アサシネーション・プロトコル',
                 name_eng: 'Assassination Protocl',
                 image: '/ability/tex.ability_hk47_special02.png',
@@ -831,6 +902,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ターゲット排除',
                 name_eng: 'Target Elimination',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -841,6 +913,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '自己再生',
                 name_eng: 'Self-Reconstruction',
                 image: '/abilityui/tex.abilityui_passive_heal_buff.png',
@@ -851,6 +924,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '設計者への忠誠',
                 name_eng: 'Loyalty to the Maker',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -867,7 +941,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -877,6 +951,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'エレクトロスタッフ・アサルト',
                 name_eng: 'Electrostaff Assault',
                 image: '/ability/tex.ability_magnaguard_basic.png',
@@ -889,6 +964,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ディスラプション',
                 name_eng: 'Disruption',
                 image: '/ability/tex.ability_magnaguard_special01.png',
@@ -899,6 +975,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'スタニング・ストライク',
                 name_eng: 'Stunning Strike',
                 image: '/ability/tex.ability_magnaguard_special02.png',
@@ -909,6 +986,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '容赦なき襲撃',
                 name_eng: 'Relentless Assault',
                 image: '/abilityui/tex.abilityui_passive_taunt.png',
@@ -931,6 +1009,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'センサリーアドバンテージ',
                 name_eng: 'Sensory Advantage',
                 image: '/ability/tex.ability_ig11_nurse_basic.png',
@@ -941,6 +1020,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '機能: プロテクト',
                 name_eng: 'FUNCTION: PROTECT',
                 image: '/ability/tex.ability_ig11_nurse_special01.png',
@@ -951,6 +1031,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ナースドロイド・プロトコル',
                 name_eng: 'Nurse Droid Protocol',
                 image: '/ability/tex.ability_ig11_nurse_special02.png',
@@ -961,6 +1042,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '世話好き',
                 name_eng: "Child's Favor",
                 image: '/abilityui/tex.abilityui_passive_ig11.png',
@@ -983,6 +1065,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'いいえ',
                 name_eng: 'No.',
                 image: '/ability/tex.ability_ig12_basic.png',
@@ -993,6 +1076,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: 'はい',
                 name_eng: 'Yes.',
                 image: '/ability/tex.ability_ig12_special01.png',
@@ -1003,6 +1087,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'いいえ。いいえ。いいえ。',
                 name_eng: 'No. No. No.',
                 image: '/ability/tex.ability_ig12_special02.png',
@@ -1013,6 +1098,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'はい。はい。はい。',
                 name_eng: 'Yes. Yes. Yes.',
                 image: '/abilityui/tex.abilityui_passive_yesyesyes.png',
@@ -1020,22 +1106,22 @@ const characterAbilities: characterAbilities[] = [
                 
                 IG-12 & グローグーのターン開始時、ライトサイドのマンダロリアンの味方全体がIG-12 & グローグーの最大HPの10%分回復する。HPが最大の場合、代わりに1ターンの間、攻撃力上昇とプロテクション上昇(10%)を得る。Ig-12 & グローグーがスキルを使用するたび、ランダムなライトサイドの味方マンダロリアンがアシストし、使用したスキルに応じて追加の効果を得る。
                 
-                「はい」: アシストする味方のクールダウンが1減少する。
+                *「はい」:* アシストする味方のクールダウンが1減少する。
                 
-                「いいえ。いいえ。いいえ。」: アシストする味方が20%の増加ダメージを与え、再度アシストを行う。
+                *「いいえ。いいえ。いいえ。」:* アシストする味方が20%の増加ダメージを与え、再度アシストを行う。
                 
                 ターン開始時に戦っている味方がいない場合、IG-12 & グローグーはバトルから逃走する。
                 
-                テリトリーウォーズの場合: ライトサイドの味方マンダロリアンが初めてプロテクションを失うたび、IG-12 & グローグーはボーナスターンを得て「いいえ。いいえ。いいえ。」のクールダウンをリセットする。IG-12 & グローグーがスキルを使用するたび追加の味方を呼び、使用したスキルに応じた追加効果を得る。
+                $テリトリーウォーズの場合:$ ライトサイドの味方マンダロリアンが初めてプロテクションを失うたび、IG-12 & グローグーはボーナスターンを得て「いいえ。いいえ。いいえ。」のクールダウンをリセットする。IG-12 & グローグーがスキルを使用するたび追加の味方を呼び、使用したスキルに応じた追加効果を得る。
                 
-                「はい」: アシストする味方が10%増加ダメージを与え、プロテクションが20%回復する。
+                *「はい」:* アシストする味方が10%増加ダメージを与え、プロテクションが20%回復する。
                 
-                「いいえ。いいえ。いいえ。」: アシストする味方のターンメーターが20%上昇する。`,
+                *「いいえ。いいえ。いいえ。」:* アシストする味方のターンメーターが20%上昇する。`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: true,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -1045,6 +1131,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'プリサイス・ストライク',
                 name_eng: 'Precision Strike',
                 image: '/ability/tex.ability_ig86sentineldroid_basic.png',
@@ -1055,6 +1142,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: 'アサシン・ドロイドの戦術',
                 name_eng: 'Assassin Droid Tactics',
                 image: '/ability/tex.ability_ig86sentineldroid_special01.png',
@@ -1065,6 +1153,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ドロイドチーム戦術',
                 name_eng: 'Droid Squad Tactics',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -1083,6 +1172,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '致命傷',
                 name_eng: 'Mortal Wound',
                 image: '/ability/tex.ability_ig88_basic.png',
@@ -1093,6 +1183,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'ラピッド・ファイア',
                 name_eng: 'Rapid Fire',
                 image: '/ability/tex.ability_ig88_special01.png',
@@ -1103,20 +1194,22 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '機略に優れた追跡者',
                 name_eng: 'Resourceful Pursuer',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
                 description_jp: `味方全体のクリティカル率が20%上昇する。クリティカルヒットを与えると、時間経過ダメージ効果を発生させる。IG-88がリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可):
                 
-                契約: 弱体化効果発生中の敵にクリティカルヒットを10回与える。回数をカウントするには、攻撃を始める前に敵に弱体化効果が発生している必要がある(契約達成には味方賞金稼ぎのみ参加可能)。
+                *契約:* 弱体化効果発生中の敵にクリティカルヒットを10回与える。回数をカウントするには、攻撃を始める前に敵に弱体化効果が発生している必要がある(契約達成には味方賞金稼ぎのみ参加可能)。
                 
-                報酬: バトル終了まで、味方賞金稼ぎ全体の攻撃力と有効性が25上昇し、ボーナス効果が発動する。`,
+                *報酬:* バトル終了まで、味方賞金稼ぎ全体の攻撃力と有効性が25上昇し、ボーナス効果が発動する。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '適応型エイムアルゴリズム',
                 name_eng: 'Adaptive Aim Algorithm',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -1127,17 +1220,18 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'IG-88のボーナス',
                 name_eng: "IG-88's Payout",
                 image: '/abilityui/tex.abilityui_passive_contract.png',
                 description_jp: `IG-88は契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
                 
-                ボーナス: バトル終了まで、IG-88はクリスタルヒットを与えた敵の抵抗力が10%低下させ(スタック可能)、ターゲットロック状態の敵の防御力を50%無力化し、ターゲットロック状態の敵が1体でもいる場合、攻撃力が25%上昇する。`,
+                *ボーナス:* バトル終了まで、IG-88はクリスタルヒットを与えた敵の抵抗力が10%低下させ(スタック可能)、ターゲットロック状態の敵の防御力を50%無力化し、ターゲットロック状態の敵が1体でもいる場合、攻撃力が25%上昇する。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -1147,6 +1241,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'カーボプラスト複合材フィスト',
                 name_eng: 'Carboplast Composite Fist',
                 image: '/ability/tex.ability_k2so_basic.png',
@@ -1157,6 +1252,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: 'コンダクティブ・チャージ',
                 name_eng: 'Conductive Charge',
                 image: '/ability/tex.ability_k2so_special01.png',
@@ -1167,6 +1263,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '執行者',
                 name_eng: 'Enforcer',
                 image: '/abilityui/tex.abilityui_passive_taunt.png',
@@ -1177,6 +1274,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '再プログラム済み帝国軍ドロイド',
                 name_eng: 'Reprogrammed Imperial Droid',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -1185,7 +1283,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -1195,30 +1293,33 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '猛進',
                 name_eng: 'Daring Advance',
                 image: '/ability/tex.ability_l337_basic.png',
                 description_jp: `ターゲットに物理ダメージを与え、2ターンの防御力を低下させる。
                 
-                準備万端: L3-37が準備万端状態の場合、遭遇終了まで最大HPが10%上昇する(スタック可能)。`,
+                *準備万端:* L3-37が準備万端状態の場合、遭遇終了まで最大HPが10%上昇する(スタック可能)。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '希望の灯',
                 name_eng: 'Spark of Hope',
                 image: '/ability/tex.ability_l337_special01.png',
                 description_jp: `ターゲットに物理ダメージを与え、1ターンの間挑発を行う。
                 
-                準備万端: 味方ならず者および味方ドロイド全体をL3の最大HPの50%分回復させ、準備万端状態の味方全体の抵抗力を2ターンの間上昇させる。準備万端状態の味方が1体でもいる場合、このスキルのクールダウンが1減少する。L3-37の準備万端は解除される。`,
+                *準備万端:* 味方ならず者および味方ドロイド全体をL3の最大HPの50%分回復させ、準備万端状態の味方全体の抵抗力を2ターンの間上昇させる。準備万端状態の味方が1体でもいる場合、このスキルのクールダウンが1減少する。L3-37の準備万端は解除される。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ドロイドのために',
                 name_eng: 'For the Droids',
                 image: '/abilityui/tex.abilityui_passive_removeharmful.png',
@@ -1229,16 +1330,18 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '自己書き換え',
                 name_eng: 'Self Modificationl',
                 image: '/abilityui/tex.abilityui_passive_heal.png',
-                description_jp: `L3-37の最大プロテクションが25%上昇する。L3-37は準備万端状態になると、1ターンの挑発を行う。各戦闘を開始する時にL3-37は準備万端状態になる。遭遇開始時(=バトル開始時?)に特殊スキル「アップグレードMk I」が使用可能になる。`,
+                description_jp: `L3-37の最大プロテクションが25%上昇する。L3-37は準備万端状態になると、1ターンの挑発を行う。各戦闘を開始する時にL3-37は準備万端状態になる。遭遇開始時(=バトル開始時?)に特殊スキル*「アップグレードMk I」*が使用可能になる。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: null,
                 name_jp: 'アップグレードMk I',
                 name_eng: 'Enhance (MK I)',
                 image: '/ability/tex.ability_l337_special02.png',
@@ -1249,6 +1352,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: null,
                 name_jp: 'アップグレードMk II',
                 name_eng: 'Enhance (MK II)',
                 image: '/ability/tex.ability_l337_special02.png',
@@ -1259,6 +1363,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: null,
                 name_jp: 'アップグレードMk III',
                 name_eng: 'Enhance (MK III)',
                 image: '/ability/tex.ability_l337_special02.png',
@@ -1277,6 +1382,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '電気ショック・プロッド',
                 name_eng: "Electroshock Prod",
                 image: '/ability/tex.ability_r2d2_basic.png',
@@ -1287,6 +1393,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '煙幕',
                 name_eng: 'Smoke Screen',
                 image: '/ability/tex.ability_r2d2_special01.png',
@@ -1297,6 +1404,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: '臨機応変',
                 name_eng: 'Improvise',
                 image: '/ability/tex.ability_r2d2_special02.png',
@@ -1307,6 +1415,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: 4,
                 name_jp: '戦闘分析',
                 name_eng: 'Combat Analysis',
                 image: '/abilityui/tex.abilityui_passive_crit_buff.png',
@@ -1317,6 +1426,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '計算処理',
                 name_eng: 'Number Crunch',
                 image: '/abilityui/tex.abilityui_passive_extraturn.png',
@@ -1337,18 +1447,20 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '検問所制圧！',
                 name_eng: 'Checkpoint Secure!',
                 image: '/ability/tex.ability_stap_basic.png',
-                description_jp: `ターゲットに物理ダメージを与え、2ターンのターゲットロックを発生させる。既にターゲットロック状態の場合、代わりに2ターンの間固定状態にする(コピー不可、解除、阻止不可。この攻撃は回避できない)。
+                description_jp: `ターゲットに物理ダメージを与え、2ターンのターゲットロックを発生させる。既にターゲットロック状態の場合、代わりに2ターンの間*固定*状態にする(コピー不可、解除、阻止不可。この攻撃は回避できない)。
                 
-                固定: ボーナスターンメーターを獲得できず、スピードが25%低下する。破損やスピード低下とはスタックしない。`,
+                *固定:* ボーナスターンメーターを獲得できず、スピードが25%低下する。破損やスピード低下とはスタックしない。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: '死ね、ジェダイの犬め！',
                 name_eng: 'Die, Jedi Dogs!',
                 image: '/ability/tex.ability_stap_special01.png',
@@ -1359,6 +1471,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'リチャージが必要だ！',
                 name_eng: 'We Need to Recharge!',
                 image: '/ability/tex.ability_stap_special02.png',
@@ -1369,6 +1482,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'シングル・トルーパー・エアリアル・プラットフォーム',
                 name_eng: 'Single Trooper Aerial Platform',
                 image: '/abilityui/tex.abilityui_passive_singletrooperaerialplatform.png',
@@ -1380,7 +1494,7 @@ const characterAbilities: characterAbilities[] = [
                 
                 STAPまたは味方の分離主義者ドロイドタンクが敵から固定ダメージを受ける度、味方全ての分離主義者ドロイドはターンメーターを15%失う(敵1体につき1ターン1回まで)。
                 
-                グランドアリーナかつ味方全体が分離主義者ドロイドの場合: STAPはバトル開始時にボーナスターンを得て、敵が最初のターンを開始すると追加のボーナスターンを得る。
+                $グランドアリーナかつ味方全体が分離主義者ドロイドの場合:$ STAPはバトル開始時にボーナスターンを得て、敵が最初のターンを開始すると追加のボーナスターンを得る。
                 
                 STAPがオーバーチャージを得ると、味方全体の最大HPがバトル終了まで20%(スタック可能)上昇し、HPとプロテクションが10%回復する。
                 
@@ -1399,6 +1513,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '無力化',
                 name_eng: 'Disable',
                 image: '/ability/tex.ability_t3m4_basic.png',
@@ -1409,6 +1524,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '修理キット',
                 name_eng: 'Repair Kit',
                 image: '/ability/tex.ability_t3m4_special01.png',
@@ -1419,6 +1535,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'カーボナイトプロジェクター',
                 name_eng: 'Carbonite Projector',
                 image: '/ability/tex.ability_t3m4_special02.png',
@@ -1429,6 +1546,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '戦闘ロジック強化',
                 name_eng: 'Combat Logic Upgrade',
                 image: '/abilityui/tex.abilityui_passive_crit_buff.png',
@@ -1439,12 +1557,13 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'マスターギアヘッド',
                 name_eng: 'Master Gearhead',
                 image: '/abilityui/tex.abilityui_passive_penetration.png',
                 description_jp: `T3-M4の防御突破力が100%上昇し、味方ドロイドはT3-M4の防御突破力の100%を得る。さらに、T3-M4がターンを開始するたび、75%の確率で効果が発生していないランダムな敵に2ターンのターゲットロックを発生させる。このターゲットロックは回避できない。
                 
-                テリトリーウォーズの場合: 遭遇開始時、T3-M4に2ターンのステルス効果が発生し、味方ドロイドのアーマー突破力が15、最大HPが30%上昇する。味方ドロイドはターゲットロック状態の敵ごとに防御力が20%、弱体化効果発生中に防御力が20%、強化効果発生中に防御力が20%上昇する。T3-M4のターン開始時、効果が発生していないランダムな敵に2ターンのターゲットロックを発生させ(回避不可)、ターゲットロック状態の敵ごとに味方全体のHPとプロテクションを5%回復する。`,
+                $テリトリーウォーズの場合:$ 遭遇開始時、T3-M4に2ターンのステルス効果が発生し、味方ドロイドのアーマー突破力が15、最大HPが30%上昇する。味方ドロイドはターゲットロック状態の敵ごとに防御力が20%、弱体化効果発生中に防御力が20%、強化効果発生中に防御力が20%上昇する。T3-M4のターン開始時、効果が発生していないランダムな敵に2ターンのターゲットロックを発生させ(回避不可)、ターゲットロック状態の敵ごとに味方全体のHPとプロテクションを5%回復する。`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: true,
@@ -1459,6 +1578,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '照準コンピューター',
                 name_eng: 'Targeting Computer',
                 image: '/ability/tex.ability_tiepilot_basic.png',
@@ -1469,6 +1589,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'TIEストライク',
                 name_eng: 'TIE Sreike',
                 image: '/ability/tex.ability_tiepilot_special01.png',
@@ -1479,6 +1600,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '回避行動',
                 name_eng: 'Evasive Maneuvers',
                 image: '/abilityui/tex.abilityui_passive_foresight.png',
@@ -1497,33 +1619,36 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'テンパード・ストライク',
                 name_eng: 'Tempered Strike',
                 image: '/ability/tex.ability_armorer_basic.png',
                 description_jp: `ターゲットに2回物理ダメージを与える。ターゲットがアーマー破壊状態の場合、アーマラーは「ベスカー・インゴット」のスタックを1得る(最大3スタック)。
                 
-                ベスカー・インゴット: 味方にベスカー・アーマーを与えるのに使用。`,
+                *ベスカー・インゴット:* 味方にベスカー・アーマーを与えるのに使用。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: 3,
                 name_jp: '印を得よ',
                 name_eng: 'Earn Your Signet',
                 image: '/ability/tex.ability_armorer_special01.png',
                 description_jp: `アーマラーがベスカー・インゴットのスタックを全て失い、指定した味方に遭遇終了までベスカー・インゴットの消費スタック数に応じたレベルのベスカー・アーマーを付与する(コピー、解除、阻止不可)。アーマラーにベスカー・インゴットのスタックがない場合や指定した味方のベスカー・アーマーのレベルがそれ以上上がらない場合、このスキルは使用できない。
                 
-                ベスカー・アーマー - スタック数が多いほど、強化効果が高まる:
-                スタック1: 防御力+50%、最大HP+15%
-                スタック2: ターン終了時にプロテクション30%回復
-                スタック3: カウンター率が100%上昇し、クリティカルヒットを受けない`,
+                *ベスカー・アーマー* - スタック数が多いほど、強化効果が高まる:
+                *スタック1:* 防御力+50%、最大HP+15%
+                *スタック2:* ターン終了時にプロテクション30%回復
+                *スタック3:* カウンター率が100%上昇し、クリティカルヒットを受けない`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '我らの道',
                 name_eng: 'This is The Way',
                 image: '/ability/tex.ability_armorer_special02.png',
@@ -1534,6 +1659,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '生き残ることが強さ',
                 name_eng: 'Our Survival is our Strength',
                 image: '/abilityui/tex.abilityui_passive_survivalstrength.png',
@@ -1544,6 +1670,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ハンターであり獲物',
                 name_eng: 'Both Hunter and Prey',
                 image: '/abilityui/tex.abilityui_passive_hunterprey.png',
@@ -1562,6 +1689,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '掃射',
                 name_eng: 'Take Them Down',
                 image: '/ability/tex.ability_idenversioempire_basic.png',
@@ -1572,6 +1700,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: '前進',
                 name_eng: 'Push Forward',
                 image: '/ability/tex.ability_idenversioempire_special01.png',
@@ -1582,20 +1711,22 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '悲しむのはあとでいい',
                 name_eng: 'We Can Grieve Later',
                 image: '/ability/tex.ability_idenversioempire_special02.png',
                 description_jp: `味方帝国軍トルーパーの弱体化効果を全て解除する。アイデンのプロテクションが2ターンの間上昇し(100%)、帝国軍トルーパーの味方全体のプロテクションが上昇する(50%)、味方帝国軍トルーパーのプロテクションが35%回復する。
                 
-                リーダータグを持つ味方が他にいない場合、ドロイド以外の味方帝国軍トルーパー全体に3ターンの「受け入れるか死か」の効果が発生する(コピー不可)。
+                リーダータグを持つ味方が他にいない場合、ドロイド以外の味方帝国軍トルーパー全体に3ターンの*「受け入れるか死か」*の効果が発生する(コピー不可)。
                 
-                「受け入れるか死か」: クリティカル率が30%、攻撃力が30%、スピードが30上昇する。戦闘不能になるとHP70%の状態で復活する。解除された場合、HPが80%回復、ターンメーターが80%上昇し、2ターンの間クリティカルヒットを受けない。`,
+                *「受け入れるか死か」:* クリティカル率が30%、攻撃力が30%、スピードが30上昇する。戦闘不能になるとHP70%の状態で復活する。解除された場合、HPが80%回復、ターンメーターが80%上昇し、2ターンの間クリティカルヒットを受けない。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '計画通り',
                 name_eng: 'Exactly as Planned',
                 image: '/abilityui/tex.abilityui_passive_empire.png',
@@ -1603,13 +1734,14 @@ const characterAbilities: characterAbilities[] = [
                 
                 バトル開始時にリーダータグを持つ味方が他にいない場合、ドロイド以外の味方帝国軍トルーパーがターン外に攻撃するたび、遭遇終了まで攻撃力が2%上昇し(スタック可能)、各遭遇開始時クリティカルダメージが2ターンの間上昇、カウンター率が100%上昇して、無防備状態の敵のスピードが25%減少する。
 
-                グランドアリーナの場合: バトル開始時、リーダータグを持つ味方が他にいない場合、味方帝国軍トルーパーの最大HPと最大プロテクションも35%上昇し、敵がターン外に攻撃を行うたび、未kた帝国軍トルーパーのHPとプロテクションが20%回復してターンメーターが10%上昇する。`,
+                $グランドアリーナの場合:$ バトル開始時、リーダータグを持つ味方が他にいない場合、味方帝国軍トルーパーの最大HPと最大プロテクションも35%上昇し、敵がターン外に攻撃を行うたび、未kた帝国軍トルーパーのHPとプロテクションが20%回復してターンメーターが10%上昇する。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: true,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ファーストイン・ラストアウト',
                 name_eng: 'First In, Last Out',
                 image: '/abilityui/tex.abilityui_passive_firstinlastout.png',
@@ -1630,6 +1762,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '切断',
                 name_eng: 'Sunder',
                 image: '/ability/tex.ability_imagundi_basic.png',
@@ -1640,6 +1773,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '𠮟責',
                 name_eng: 'Rebuke',
                 image: '/ability/tex.ability_imagundi_special01.png',
@@ -1650,6 +1784,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ジェダイの策士',
                 name_eng: 'Jedi Strategist',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -1660,6 +1795,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ラストスタンド',
                 name_eng: 'Last Stand',
                 image: '/abilityui/tex.abilityui_passive_heal_buff.png',
@@ -1678,6 +1814,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'トリガー・ストライク',
                 name_eng: 'Inspiring Strike',
                 image: '/ability/tex.ability_aayla_basic.png',
@@ -1688,6 +1825,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'サバイバー',
                 name_eng: 'Survivor',
                 image: '/ability/tex.ability_aayla_special01.png',
@@ -1698,6 +1836,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ジェダイの武勇',
                 name_eng: 'Jedi Valor',
                 image: '/abilityui/tex.abilityui_passive_def_resistance.png',
@@ -1708,6 +1847,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '高等付き返し',
                 name_eng: 'Superior Riposte',
                 description_jp: `アイラのカウンター率が65%になり、クリティカル率が10%、カウンターダメージが50%上昇する。さらに、クリティカルヒット時にはターゲットを1ターンの間スタン状態にする。`,
@@ -1726,6 +1866,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ガダッフィ・スラム',
                 name_eng: 'Gaffi Srick Slam',
                 image: '/ability/tex.ability_urorrurrr_basic.png',
@@ -1736,6 +1877,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '隠密隊',
                 name_eng: 'Single File to Hide Their Numbers',
                 image: '/ability/tex.ability_urorrurrr_special01.png',
@@ -1746,6 +1888,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'タスケン族長',
                 name_eng: 'Tusken Chief',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -1756,6 +1899,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '奇襲本能',
                 name_eng: 'Ambush Instincts',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -1774,6 +1918,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ブレーク・オープン',
                 name_eng: 'Break Open',
                 image: '/ability/tex.ability_ugnaught_basic.png',
@@ -1784,6 +1929,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ドロイドエキスパート',
                 name_eng: 'Droid Experts',
                 image: '/ability/tex.ability_ugnaught_special01.png',
@@ -1794,6 +1940,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '先回り',
                 name_eng: 'One Step Ahead',
                 image: '/abilityui/tex.abilityui_passive_dodge.png',
@@ -1812,6 +1959,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'クイックショット',
                 name_eng: 'Quick Shot',
                 image: '/ability/tex.ability_ackbar_basic.png',
@@ -1822,6 +1970,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '仕掛けられた罠',
                 name_eng: "It's a Trap!",
                 image: '/ability/tex.ability_ackbar_special01.png',
@@ -1832,16 +1981,18 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '軍略の天才',
                 name_eng: 'Tactical Genius',
                 image: '/ability/tex.ability_ackbar_special02.png',
-                description_jp: `アクバー提督が各味方に「軍略の天才」の効果を発生させる。効果発生中、最初に特殊スキルを使った味方はターンメーターが100%上昇し、最大HPの30%分回復する。味方の誰かがこの効果を発動させるか、アクバー提督の次のターンが終了すると「軍略の天才」の効果はなくなる。`,
+                description_jp: `アクバー提督が各味方に*「軍略の天才」*の効果を発生させる。効果発生中、最初に特殊スキルを使った味方はターンメーターが100%上昇し、最大HPの30%分回復する。味方の誰かがこの効果を発動させるか、アクバー提督の次のターンが終了すると*「軍略の天才」*の効果はなくなる。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '反乱軍の指揮',
                 name_eng: 'Rebel Coordination',
                 image: '/abilityui/tex.abilityui_passive_speed.png',
@@ -1862,6 +2013,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '冷酷な攻撃',
                 name_eng: 'Cruel Strike',
                 image: '/ability/tex.ability_ventress_basic.png',
@@ -1872,6 +2024,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ストライク・フィアー',
                 name_eng: 'Strike Fear',
                 image: '/ability/tex.ability_ventress_special01.png',
@@ -1882,6 +2035,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '果てなき怒り',
                 name_eng: 'Endless Wrath',
                 image: '/ability/tex.ability_ventress_special02.png',
@@ -1892,6 +2046,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ナイトシスターの早業',
                 name_eng: 'Nightsister Swiftness',
                 image: '/abilityui/tex.abilityui_passive_speed.png',
@@ -1902,12 +2057,13 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ランページ',
                 name_eng: 'Rampage',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
                 description_jp: `味方または敵が戦闘不能になるたび、アサージのターンメーターが35%上昇し、遭遇終了まで、攻撃力が15%、クリティカル率が15%、最大HPが5%上昇する(スタック可能)。強化効果が発生していない敵ごとにアサージのスピードが15上昇する。
                 
-                グランドアリーナの場合: 味方ナイトシスターの最大HP、有効性、抵抗力が30%上昇する。味方また敵が戦闘不能になると、ナイトシスターの味方全体のターンメーターが10%上昇し、プロテクションが25%回復、「果てしなき怒り」のクールダウンがリセットされる。アサージが「果てしなき怒り」を使用すると、敵全体に2ターンの回復無効を発生させ、遭遇終了まで敵の防御力と最大HPを4%減少させる(銀河の伝説は除く)。弱体化効果発生中の敵ごとに、アサージのクリティカルダメージが10%上昇する。`,
+                $グランドアリーナの場合:$ 味方ナイトシスターの最大HP、有効性、抵抗力が30%上昇する。味方また敵が戦闘不能になると、ナイトシスターの味方全体のターンメーターが10%上昇し、プロテクションが25%回復、「果てしなき怒り」のクールダウンがリセットされる。アサージが「果てしなき怒り」を使用すると、敵全体に2ターンの回復無効を発生させ、遭遇終了まで敵の防御力と最大HPを4%減少させる(銀河の伝説は除く)。弱体化効果発生中の敵ごとに、アサージのクリティカルダメージが10%上昇する。`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: true,
@@ -1922,6 +2078,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'フォーカス・スラッシュ',
                 name_eng: 'Focused Slash',
                 image: '/ability/tex.ability_ahsokatanopadawan_basic.png',
@@ -1932,6 +2089,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '防衛戦略',
                 name_eng: 'Protective Maneuver',
                 image: '/ability/tex.ability_ahsokatanopadawan_special01.png',
@@ -1942,6 +2100,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'クイック・ステップ',
                 name_eng: 'Quick Steps',
                 image: '/abilityui/tex.abilityui_passive_dodge.png',
@@ -1952,6 +2111,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '勇敢なパダワン',
                 name_eng: 'Daring Padawan',
                 image: '/abilityui/tex.abilityui_passive_hp.png',
@@ -1974,6 +2134,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ジャーカイ・マスター',
                 name_eng: "Jar'Kai Master",
                 image: '/ability/tex.ability_commanderahsoka_basic.png',
@@ -1984,18 +2145,20 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'シエン',
                 name_eng: 'Shien',
                 image: '/ability/tex.ability_commanderahsoka_special01.png',
-                description_jp: `アソーカと指定した味方銀河共和国またはならず者が4ターンのシエン効果と2ターンの回避力上昇を得る。アソーカはその味方とターンメーターを入れ替えてその味方をアシストに呼び、20%の増加ダメージを与える。シエン・フォームはコピー、解除、阻止不可。
+                description_jp: `アソーカと指定した味方銀河共和国またはならず者が4ターンのシエン効果と2ターンの回避力上昇を得る。アソーカはその味方とターンメーターを入れ替えてその味方をアシストに呼び、20%の増加ダメージを与える。*シエン・フォーム*はコピー、解除、阻止不可。
                 
-                シエン・フォーム: このユニットが回避またはターン外に攻撃するたび、アソーカ・タノ(コマンダー)の「フォース・リープ」のクールダウンが1減少し、「フォース・リープ」のダメージが次に使用するまでさらに50%増加する    (スタック可能)。`,
+                *シエン・フォーム:* このユニットが回避またはターン外に攻撃するたび、アソーカ・タノ(コマンダー)の「フォース・リープ」のクールダウンが1減少し、「フォース・リープ」のダメージが次に使用するまでさらに50%増加する    (スタック可能)。`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 8,
                 name_jp: 'フォース・リープ',
                 name_eng: 'Force Leap',
                 image: '/ability/tex.ability_commanderahsoka_special01.png',
@@ -2014,6 +2177,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '己の道',
                 name_eng: 'Her Own Path',
                 image: '/abilityui/tex.abilityui_passive_commanderahsoka.png',
@@ -2034,6 +2198,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'バランス攻撃',
                 name_eng: 'Balanced Strike',
                 image: '/ability/tex.ability_ahsoka_adult_basic.png',
@@ -2044,6 +2209,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '瞑想',
                 name_eng: 'Meditate',
                 image: '/ability/tex.ability_ahsoka_adult_basic.png',
@@ -2054,6 +2220,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ワーるウィンド',
                 name_eng: 'Whirlwind',
                 image: '/ability/tex.ability_ahsoka_adult_special02.png',
@@ -2064,12 +2231,13 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '忍耐',
                 name_eng: 'Perseverance',
                 image: '/abilityui/tex.abilityui_passive_rebel.png',
                 description_jp: `アソーカは時間経過ダメージ効果を無効化し、クリティカル回避力が30%上昇する。各ターン開始時、アソーカは自身の弱体化効果を全て解除し、解除された弱体化効果ごとにHPを10%失う。その後自身の強化効果ごとにHPを5%回復する。このHP減少ではアソーカは戦闘不能にならない。
                 
-                テリトリーウォーズの場合: アソーカ・タノ(フルクラム)の防御力、最大HP、防御力、最大プロテクションが25%、スピードが35上昇する。バトル開始時にアクティブな味方がいない場合、アソーカ・タノ(フルクラム)のアーマー突破力とクリティカル回避力がさらに100%、防御力、最大HP、攻撃力、最大プロテクションが75%上昇し、抵抗力が60%減少する。アソーカ・タノ(フルクラム)は「忍耐」で弱体化効果を解除すると、この方法で解除した弱体化効果につき、反対の強化効果(可能な場合)、ターンメーター20%、2ターンのプロテクション上昇(+20%、スタック可能)を得る。アソーカ・タノ(フルクラム)は挑発効果を無視し、アソーカ・タノ(フルクラム)に戦闘不能にされた敵は復活できない。`,
+                $テリトリーウォーズの場合:$ アソーカ・タノ(フルクラム)の防御力、最大HP、防御力、最大プロテクションが25%、スピードが35上昇する。バトル開始時にアクティブな味方がいない場合、アソーカ・タノ(フルクラム)のアーマー突破力とクリティカル回避力がさらに100%、防御力、最大HP、攻撃力、最大プロテクションが75%上昇し、抵抗力が60%減少する。アソーカ・タノ(フルクラム)は「忍耐」で弱体化効果を解除すると、この方法で解除した弱体化効果につき、反対の強化効果(可能な場合)、ターンメーター20%、2ターンのプロテクション上昇(+20%、スタック可能)を得る。アソーカ・タノ(フルクラム)は挑発効果を無視し、アソーカ・タノ(フルクラム)に戦闘不能にされた敵は復活できない。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: true,
@@ -2078,12 +2246,127 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月13日'
     }, {
+        id: 'Queen-Amidala',
+        character_name: 'アミダラ女王',
+        character_image: '/charui/tex.charui_queenamidala.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'S-5ヘビー・ブラスター・ピストル',
+                name_eng: "S-5 Heavy Blaster Pistol",
+                image: '/ability/tex.ability_queenamidala_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間エクスポーズ状態にする(アクティブな味方侍女(おとり)がいる場合は回避不可)。銀河共和国の味方全体は2ターンの時間経過回復および時間経過プロテクションのスタックを3得る。
+                
+                アクティブな味方侍女(おとり)がいる場合、味方銀河共和国のHPとプロテクションが5%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '私がアミダラ女王です',
+                name_eng: 'I am Queen Amidala',
+                image: '/ability/tex.ability_queenamidala_special01.png',
+                description_jp: `敵全体の強化効果を全て解除し、物理ダメージを与える。味方全体が2ターンの精度上昇を得る。
+                
+                アクティブな味方侍女(おとり)がいる場合、ターゲットを2ターンのよろめき状態にする(回避、耐性発揮不可)。銀河共和国の味方全体が、2ターンの間、防御突破力上昇と、時間経過回復および時間経過プロテクションのスタックを3得る。この攻撃は回避できない。
+                
+                $グランドアリーナで、味方に銀河の伝説がいない場合:$この攻撃は敵のプロテクションを無効化し、味方全体がクリティカルダメージ上昇と、時間経過回復および時間経過プロテクションのスタック4を2ターンの間得る。アクティブな味方銀河共和国ごとに、敵全体に時間経過ダメージのスタック1とスピード低下、そして無防備状態が2ターン発生し、クールダウンが1増加する(耐性発揮不可)。アクティブな味方侍女(おとり)がいる場合、これらの効果は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'アセンション・ガン',
+                name_eng: 'Ascension Gun',
+                image: '/ability/tex.ability_queenamidala_special02.png',
+                description_jp: `味方全体の弱体化効果を全て解除する。銀河の伝説以外の銀河共和国の味方全体をアシストに呼び、その味方とアミダラ女王のHPとプロテクションが20%回復する。ターゲットのターンメーターを50%減少させる(耐性発揮不可)。
+                
+                味方全体が銀河共和国で、味方に銀河の伝説やならず者がいない場合、同盟スロットが使用可能であれば味方侍女(おとり)をバトルに召集する。
+                
+                味方侍女(おとり)が既に存在する場合、銀河共和国の味方全体が2ターンの間、防御力上昇、スピード上昇、抵抗力上昇を得て、タンク以外の味方銀河共和国が2ターンの間ステルス状態になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '民と共に',
+                name_eng: 'My Place is with My Peole',
+                image: '/abilityui/tex.abilityui_passive_myplaceiswithmypeople.png',
+                description_jp: `味方全体の防御力が20%、最大HPと最大プロテクションが15%上昇する。
+                
+                バトル開始時、味方全体が銀河共和国で、味方に銀河の伝説の伝説がいない場合:
+                
+                - 敵はターン外に攻撃するたび、1ターンの時間経過ダメージが発生し(回避、耐性発揮不可)、敵全体のターンメーターが10%減少する(耐性発揮不可)。
+                - 各味方はターン開始時、ターン終了まで、自身の時間経過回復のスタックごとにクリティカルダメージが3%上昇し(スタック可能)、自身の時間経過プロテクションのスタックごとに攻撃力が3%上昇する(スタック可能)。
+                - 敵はクリスタルヒットを与えるたび、遭遇終了まで、クリティカルダメージ、防御力、攻撃力が5%低下する(スタック可能、最大-50%、耐性発揮不可)。
+                
+                $グランドアリーナで、味方に銀河の伝説が存在せず、味方全体が銀河共和国の場合:$ 味方は特殊スキルを使用するたび、役割に応じたボーナスを得る:
+                
+                - +アタッカー:+ 2ターンの攻撃力上昇を得て、別のランダムな味方をアシストに呼び、20%の増加ダメージを与える
+                - +ヒーラーとサポート:+ プロテクション城所(50%、スタック可能)とスピード上昇を3ターンの間得る
+                - +タンク:+ HPとプロテクションが25%回復する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '忠実な護衛',
+                name_eng: 'Loyal Bodyguard',
+                image: '/abilityui/tex.abilityui_passive_handmaidendecoy.png',
+                description_jp: `アミダラ女王の最大HPと最大プロテクションが20%、クリティカル率とクリティカルダメージが10%上昇し、味方全体がクールダウン操作を無効化する。
+                
+                味方侍女(おとり)は召集されるたび、戦闘不能になるまで挑発を行う(解除、阻止不可)。侍女(おとり)は他の全ての強化効果と弱体化効果を無効化し、ターンを開始しない。侍女(おとり)が戦闘不能になるたび、彼女を戦闘不能にした敵は2ターンの間疑心状態になり(回避、耐性発揮不可)、アミダラ女王がボーナスターンと2ターンのダメージ耐性を得る(コピー、解除、阻止不可)。
+                
+                アクティブな味方侍女(おとり)がいる場合:
+                
+                - 味方銀河共和国の時間経過回復または時間経過プロテクションが切れるたび、その味方のHPとプロテクションが5%回復する。
+                - アミダラ女王の時間経過回復または時間経過プロテクションが切れるたび、バトル終了までアミダラ女王は*女王の保護*のスタックを1得る(最大10。コピー、解除、阻止不可)。アミダラ女王の女王の保護のスタックごとに、銀河共和国の味方全体がその2倍のステータスを得る。味方侍女(おとり)はこれらの効果を無効化し、おとりが戦闘不能になってもその効果は持続するが、アミダラ女王が戦闘不能になると解除される。
+                
+                *女王の保護:*
+                最大HPと最大プロテクションが3%、有効性と抵抗力が5%、スピードが5上昇する(スタックごと)
+                
+                $グランドアリーナで、味方に銀河の伝説またはならず者がおらず、味方全体が銀河共和国の場合:$ 味方全体のクリティカルダメージが25%、マスターが40%上昇し、恐怖と回復無効を無効化する。
+                味方は時間経過ダメージのスタックが発生するたび、それを解除し、味方全体が2ターンの時間経過回復および時間経過プロテクションのスタックを1得る。
+                各遭遇開始時、味方侍女(おとり)1体を招集する。味方のおとりがクリティカルヒットを受けるたび、敵全体に2ターンの間、有効性低下と抵抗力低下が発生する(回避不可)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '侍女(おとり)',
+                name_eng: 'Handmaiden Decoy',
+                image: '/charui/tex.charui_queenamidala_decoy.png',
+                description_jp: `ライトサイド、タンク、銀河共和国
+                
+                *[通常] ボディーガード:* 味方銀河共和国のHPとプロテクションが10%回復する。アドバンテージがまだ発生していないランダムな敵に、1ターンのアドバンテージを与える(回避、耐性発揮不可)。
+                
+                *[ユニーク] 召集:* このユニットのステータスは召集者のステータスによって変化する。特定のレイドではこのユニットを召集できない。このユニットは復活できない。効果で戦闘不能のユニットを数える場合、このユニットは数に含めない。味方戦闘ユニットがいなくなった場合、このユニットはバトルから逃走する。この召集ユニットがスロットにいる場合、ユニットは復活できない。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
         id: 'Amilyn-Holdo',
         character_name: 'アミリン・ホルド',
         character_image: '/charui/tex.charui_holdo.png',
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'メジャーショット',
                 name_eng: 'Measured Shot',
                 image: '/ability/tex.ability_holdo_basic.png',
@@ -2093,7 +2376,8 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false,
                 is_ultimate: false
             }, {
-                ability_type: '通常スキル',
+                ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: 'バンカーバスター',
                 name_eng: 'Bunker Buster',
                 image: '/ability/tex.ability_holdo_special01.png',
@@ -2104,6 +2388,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: '救済',
                 name_eng: 'Reprieve',
                 image: '/ability/tex.ability_holdo_special02.png',
@@ -2114,6 +2399,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '秘めたる自身',
                 name_eng: 'Quiet Confidence',
                 image: '/abilityui/tex.abilityui_passive_uniqueability.png',
@@ -2132,6 +2418,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ブリーチ・ストライク',
                 name_eng: 'Breaching Strike',
                 image: '/ability/tex.ability_eethkoth_basic.png',
@@ -2142,6 +2429,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'フォースプッシュ',
                 name_eng: 'Force Pushl',
                 image: '/ability/tex.ability_eethkoth_special01.png',
@@ -2152,6 +2440,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '熱心なジェダイのディフェンダー',
                 name_eng: 'Stalwart Jedi Defender',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -2162,6 +2451,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '対ドロイド・スペシャリスト',
                 name_eng: 'Anti-Droid Specialist',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -2180,6 +2470,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ガイド・ストライク',
                 name_eng: 'Guiding Strike',
                 image: '/ability/tex.ability_ewok_elder_basic.png',
@@ -2190,6 +2481,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '部族の癒し手',
                 name_eng: 'Tribial Healer',
                 image: '/ability/tex.ability_ewok_elder_special01.png',
@@ -2200,6 +2492,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 7,
                 name_jp: '森の力',
                 name_eng: 'Power of the Forest',
                 image: '/ability/tex.ability_ewok_elder_special02.png',
@@ -2218,6 +2511,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'イウォークの奇襲',
                 name_eng: 'Ewoke Ambush',
                 image: '/ability/tex.ability_ewok_scout_basic.png',
@@ -2228,6 +2522,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ラッシュ・アタック',
                 name_eng: 'Rushing Attack',
                 image: '/ability/tex.ability_ewok_scout_special01.png',
@@ -2238,6 +2533,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '種族の戦術',
                 name_eng: 'Tribal Tactics',
                 image: '/abilityui/tex.abilityui_passive_dodge.png',
@@ -2256,6 +2552,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'アドバンテージ確保',
                 name_eng: 'Seize the Advantage',
                 image: '/ability/tex.ability_imperial_super_commando_basic.png',
@@ -2266,6 +2563,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: '高度戦略',
                 name_eng: 'Superior tactics',
                 image: '/ability/tex.ability_imperial_super_commando_special01.png',
@@ -2276,6 +2574,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '優位確保',
                 name_eng: 'Upper Hand',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -2292,6 +2591,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'スーパー・コマンドー・ベスカー・アーマー',
                 name_eng: 'Super Commando Beskar Armor',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -2312,6 +2612,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'アンチェインド',
                 name_eng: 'Unchained',
                 image: '/ability/tex.ability_chewbacca_vandor_basic.png',
@@ -2322,18 +2623,20 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '自由の戦士',
                 name_eng: 'Freedom Fighter',
                 image: '/ability/tex.ability_chewbacca_vandor_special01.png',
                 description_jp: `攻撃力ではなくチューバッカの最大HPに応じた物理ダメージをターゲットに2回与える。指定した味方のHPが、そのダメージの50%分回復する。さらに、チューバッカとその味方は2ターンのプロテクション上昇(30%)を得る。
                 
-                準備万端: チューバッカが準備万端状態の時、この攻撃のダメージが2倍になり、与えたダメージの50%分チューバッカのHPが回復し、このスキルのクールダウンが2減少し、準備万端状態の味方全てに2ターンのプロテクション上昇(30%)が発生する。その後、チューバッカの準備万端状態は解除される。`,
+                *準備万端:* チューバッカが準備万端状態の時、この攻撃のダメージが2倍になり、与えたダメージの50%分チューバッカのHPが回復し、このスキルのクールダウンが2減少し、準備万端状態の味方全てに2ターンのプロテクション上昇(30%)が発生する。その後、チューバッカの準備万端状態は解除される。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ザ・ビースト',
                 name_eng: 'The Beast',
                 image: '/abilityui/tex.abilityui_passive_firstaid.png',
@@ -2344,6 +2647,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '凶暴な守護者',
                 name_eng: 'Ferocious Protector',
                 image: '/abilityui/tex.abilityui_passive_def.png',
@@ -2362,6 +2666,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '大胆な攻撃',
                 name_eng: 'Daring Attack',
                 image: '/ability/tex.ability_veers_basic.png',
@@ -2372,6 +2677,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '無慈悲な襲撃',
                 name_eng: 'Ruthless Assault',
                 image: '/ability/tex.ability_veers_special01.png',
@@ -2382,6 +2688,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '帝国アサルト・コマンダー',
                 name_eng: 'Imperial Assault Commander',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -2392,6 +2699,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '攻撃的戦術家',
                 name_eng: 'Aggressive Tectician',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -2412,6 +2720,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '探究者の一突き',
                 name_eng: 'Inquisitive Jab',
                 image: '/ability/tex.ability_ewok_wicket_basic.png',
@@ -2422,6 +2731,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '森林奇襲',
                 name_eng: 'Forest Ambush',
                 image: '/ability/tex.ability_ewok_wicket_special01.png',
@@ -2432,6 +2742,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ゲリラ奇襲',
                 name_eng: 'Guerrilla Strike',
                 image: '/ability/tex.ability_ewok_wicket_special02.png',
@@ -2442,6 +2753,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '隠密作戦',
                 name_eng: 'Furtive Tactics',
                 image: '/abilityui/tex.abilityui_passive_extraturn.png',
@@ -2460,6 +2772,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'テレキネシスブラスト',
                 name_eng: 'Telekinetic Blast',
                 image: '/ability/tex.ability_visas_basic.png',
@@ -2470,6 +2783,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 8,
                 name_jp: 'ダークヒーリング',
                 name_eng: 'Dark Healing',
                 image: '/ability/tex.ability_visas_special01.png',
@@ -2480,6 +2794,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '貫通ストライク',
                 name_eng: 'Piercing Strike',
                 image: '/ability/tex.ability_visas_special02.png',
@@ -2490,6 +2805,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '光への回帰',
                 name_eng: 'Returned to the Light',
                 image: '/abilityui/tex.abilityui_passive_counterattack.png',
@@ -2508,6 +2824,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '集中攻撃',
                 name_eng: 'Focused Fire',
                 image: '/ability/tex.ability_wedge_basic.png',
@@ -2518,6 +2835,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'レッド中隊ストライク',
                 name_eng: 'Red Squadron Strike',
                 image: '/ability/tex.ability_wedge_special01.png',
@@ -2528,6 +2846,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '反乱軍の勇壮',
                 name_eng: 'Rebel Heroism',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -2538,6 +2857,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'レッド・リーダー',
                 name_eng: 'Red Leader',
                 image: '/abilityui/tex.abilityui_leader_default.png',
@@ -2556,6 +2876,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '回転攻撃',
                 name_eng: 'Whirling Strike',
                 image: '/ability/tex.ability_eighthbrother_basic.png',
@@ -2566,6 +2887,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'フォトン・グレネード',
                 name_eng: 'Photon Grenades',
                 image: '/ability/tex.ability_eighthbrother_special01.png',
@@ -2576,16 +2898,17 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: 'ブレード・ヒルト',
                 name_eng: 'Bladed Hilt',
                 image: '/ability/tex.ability_eighthbrother_special02.png',
                 description_jp: `このターン、エイス・ブラザーにステルス効果が発生していない場合、3ターンのステルス効果が発生する。物理ダメージを与え、「粛清」のスタックを最大5消費する。以降、「粛清」のスタックがこの方法で消費されるたび、再度物理ダメージを与える。
                 
-                - スタック消費1以上: 2ターンの回復無効
-                - スタック消費2以上: 2ターンのスピード低下
-                - スタック消費3以上: 1ターンのスキルブロック
-                - スタック消費4以上: 2ターンの強化無効
-                - スタック5消費: バトル終了までアーマー破壊
+                - *スタック消費1以上:* 2ターンの回復無効
+                - *スタック消費2以上:* 2ターンのスピード低下
+                - *スタック消費3以上:* 1ターンのスキルブロック
+                - *スタック消費4以上:* 2ターンの強化無効
+                - *スタック5消費:* バトル終了までアーマー破壊
                 
                 敵ジェダイはこれらの弱体化効果を耐性発揮できない。`,
                 is_omega: true,
@@ -2594,18 +2917,20 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'もうたくさんだ',
                 name_eng: 'More Than Enough',
                 image: '/abilityui/tex.abilityui_leader_inquisitor.png',
                 description_jp: `味方帝国軍の精度と有効性が5%上昇する。尋問官はさらに30%上昇する。また、ジェダイのユニークスキルでフォアサイトを得た敵ジェダイは、2ターンの間、暗闇状態になる(回避、耐性発揮不可)。味方尋問官が通常スキルを使用するたび、30%の確率で遭遇終了まで「粛清」のスタックを1発生させる(最大6。コピー、回避、耐性発揮不可)。
                 
-                テリトリーウォーズの場合: 敵ジェダイがジェダイのユニークスキルで挑発を行うたび、敵全体は自身の最大HP20%分のダメージを受ける。このダメージでは敵を戦闘不能にできない。敵ジェダイがジェダイのユニークスキルでクリティカルヒット耐性を得るたび、敵はクリスタルヒット耐性を解除し、代わりに1ターンの無防備状態になる(耐性発揮不可)。`,
+                $テリトリーウォーズの場合:$ 敵ジェダイがジェダイのユニークスキルで挑発を行うたび、敵全体は自身の最大HP20%分のダメージを受ける。このダメージでは敵を戦闘不能にできない。敵ジェダイがジェダイのユニークスキルでクリティカルヒット耐性を得るたび、敵はクリスタルヒット耐性を解除し、代わりに1ターンの無防備状態になる(耐性発揮不可)。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: true,
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'シャドウハント',
                 name_eng: 'Hunting A Shadow',
                 image: '/abilityui/tex.abilityui_passive_stealth.png',
@@ -2618,6 +2943,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '忍耐',
                 name_eng: 'Patience',
                 image: '/abilityui/tex.abilityui_passive_jediwillneverbevictorious.png',
@@ -2636,6 +2962,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '攻撃的防御',
                 name_eng: 'Daring Defense',
                 image: '/ability/tex.ability_bbecho_basic.png',
@@ -2646,6 +2973,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '先回り',
                 name_eng: 'One Step Ahead',
                 image: '/ability/tex.ability_bbecho_special01.png',
@@ -2657,6 +2985,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '疑う余地なし',
                 name_eng: 'Never Any Doubt',
                 image: '/ability/tex.ability_bbecho_special02.png',
@@ -2669,6 +2998,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '生き延びるために',
                 name_eng: 'One That Survives',
                 image: '/abilityui/tex.abilityui_passive_bbecho.png',
@@ -2689,6 +3019,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: 'ラッシュ・ストライク',
                 name_eng: 'Rushing Strike',
                 image: '/ability/tex.ability_ezra_s3_basic.png',
@@ -2699,6 +3030,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'フラリッシュ',
                 name_eng: 'Flourish',
                 image: '/ability/tex.ability_ezra_s3_special01.png',
@@ -2709,6 +3041,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: 'ウォッチ&ラーン',
                 name_eng: 'Watch and Learn',
                 image: '/ability/tex.ability_ezra_s3_special02.png',
@@ -2725,6 +3058,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '完遂',
                 name_eng: 'Push Through',
                 image: '/abilityui/tex.abilityui_passive_attack_buff.png',
@@ -2737,12 +3071,1545 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月13日'
     }, {
+        id: 'Enfys-Nest',
+        character_name: 'エンフィス・ネスト',
+        character_image: '/charui/tex.charui_enfys.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'カットスルー',
+                name_eng: 'Cut Thruough',
+                image: '/ability/tex.ability_enfys_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間エクスポーズ状態にする。ターゲットに防御系強化が発生している場合、その効果を解除する。この攻撃は回避できない。
+                
+                (防御系強化には防御力、HP、プロテクション、回避力、抵抗力上昇に加え、挑発、ステルス、フォアサイト、時間経過回復、クリティカル耐性が含まれる。)`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'サドンインパクト',
+                name_eng: 'Sudden Impact',
+                image: '/ability/tex.ability_enfys_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間スタン状態にし、3ターンの強化無効を発生させる。ターゲットにプロテクションがある場合、50%の追加ダメージを与え、アーマーを無効化する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'キネタイトチャージ',
+                name_eng: 'Kinetite Charge',
+                image: '/ability/tex.ability_enfys_special02.png',
+                description_jp: `敵全体に特殊ダメージを与え、2ターンのめまい効果を発生させ、HPが最大値の敵のターンメーターを20%減少させる。さらにHPが最大値を下回っている敵1体ごとに、ターンメーターが40%上昇する。この攻撃はカウンターおよび回避ができない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '闘争本能',
+                name_eng: 'Fighting Instinct',
+                image: '/abilityui/tex.abilityui_passive_enfys.png',
+                description_jp: `ネストのカウンター率が80%上昇し、自ターン中は挑発を無効化する。
+                
+                攻撃ダメージを受けると、クリティカル率30%およびボーナスプロテクション40%を得る(スタック可能)。ボーナスプロテクションは毎回40%ずつ上昇する。ボーナスはどちらも、次ターン終了時に解除およびリセットされる。
+                
+                敵が強化あるいは弱体を失うと、遭遇終了までネストのクリティカルダメージとヘルス・スティールが2%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Embo',
+        character_name: 'エンボ',
+        character_image: '/charui/tex.charui_embo.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '分解ショット',
+                name_eng: 'Dismantling Shot',
+                image: '/ability/tex.ability_embo_basic.png',
+                description_jp: `強化効果を全て解除し、ターゲットに物理ダメージを与える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'キューゾ戦闘ヘルメット',
+                name_eng: 'Kyuzo War Helmet',
+                image: '/ability/tex.ability_embo_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。この攻撃はエンボの最大プロテクションの35%に等しい分のボーナスダメージを与える。その後、エンボはプロテクションを50%失う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '寡黙なアサシン',
+                name_eng: 'The Quiet Assassin',
+                image: '/abilityui/tex.abilityui_passive_seizetheday.png',
+                description_jp: `賞金稼ぎ全体のカウンター率が50%、ヘルス・スティールが50%上昇する。エンボがリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可)
+                
+                *契約:* 強化なしで敵にダメージを15回与える(契約達成には味方賞金稼ぎのみが参加可能)
+                
+                *報酬:* 味方賞金稼ぎ全体の攻撃力が50%上昇する。味方賞金稼ぎが通常スキルを使うと、ターゲットの最大プロテクションの7%分ボーナスダメージを与える`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'キューゾ流',
+                name_eng: 'Way of the Kyuzo',
+                image: '/abilityui/tex.abilityui_passive_embo.png',
+                description_jp: `エンボがクリティカルヒットを受けなくなる。エンボにプロテクションがある場合はエンボの攻撃力が30%上昇し、プロテクションが無い場合はクリスタル率が30%上昇する。敵1体から攻撃ダメージを受けた際にプロテクションがない場合は、エンボに2ターンのフォアサイトが発生する。
+                
+                $テリトリーウォーズの場合:$ 味方賞金稼ぎの最大プロテクションが40%上昇する。エンボのターン終了時、味方賞金稼ぎのプロテクションがエンボの最大プロテクションの25%分回復(エンボの場合は2倍)。エンボにプロテクションが発生している間、味方賞金稼ぎが弱体化効果発生中にダメージを受けると、賞金稼ぎの味方全体の防御力が30%、ターンメーターが5%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'エンボのボーナス',
+                name_eng: "Embo's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `エンボは契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                *ボーナス:* エンボクリティカルヒットを決めた後にボーナスヒットを決めた跡にボーナスターンを得る。ボーナスターンは連続では得られない。エンボは新しい特殊スキル*「エルーシブ・ストライク」*を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'エルーシブ・ストライク',
+                name_eng: "Embo's Payout",
+                image: '/ability/tex.ability_embo_special02.png',
+                description_jp: `物理ダメージを与え、与えたダメージと等しい分のプロテクションを回復させる。この攻撃はプロテクションを無効化する。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Aurra-Sing',
+        character_name: 'オーラ・シング',
+        character_image: '/charui/tex.charui_aurrasing.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '弱体ショット',
+                name_eng: 'Weakening Shot',
+                image: '/ability/tex.ability_aurrasing_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、70%の確率で1ターンの間スタン状態にする。ターゲットが弱体効果を受けている場合、オーラ・シングのターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '活性化',
+                name_eng: 'Hustle',
+                image: '/ability/tex.ability_aurrasing_special01.png',
+                description_jp: `オーラ・シングのクリティカル率と攻撃力が3ターン上昇し、次のスキル使用時のダメージが35%上昇する。オーラ・シングが既にステルス状態の場合、ボーナスターンを得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'スナイパーの技術',
+                name_eng: 'Snipers Expertise',
+                image: '/ability/tex.ability_aurrasing_special02.png',
+                description_jp: `ターゲットに物理ダメージを与える。ターゲットが転倒状態の場合、この攻撃によるダメージが200%になり、このスキルのクールダウンがリセットされる(レイドボスのみ転倒状態にできる)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'ゲームプラン',
+                name_eng: 'Game Plan',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `ステルス状態の間、味方賞金稼ぎとならず者の攻撃力が30%上昇する。バトル開始時および味方賞金稼ぎが敵に倒されると、味方賞金稼ぎアタッカー全体に2ターンのステルス効果が発生する。オーラ・シングがリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可):
+                
+                *契約:* 強化発生中にスキル1つを10回使用する(契約達成には味方賞金稼ぎのみが参加可能)
+                
+                *報酬:* 味方賞金稼ぎ全体のカウンター率が50%上昇し、ボーナス効果が発動する。敵が倒れると、味方賞金稼ぎのプロテクションが25%回復し、ターンメーターが25%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '冷酷な殺し屋',
+                name_eng: 'Relentless Killer',
+                image: '/abilityui/tex.abilityui_passive_stealth.png',
+                description_jp: `オーラ・シングのクリティカルダメージが40%上昇する。このボーナス効果はステルス状態の間2倍になる。味方賞金稼ぎが敵に倒されると、バトル終了までオーラ・シングのクリティカル率が10%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'オーラ・シングのボーナス',
+                name_eng: "Aurra Sing's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `オーラ・シングは契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                *ボーナス:* オーラ・シングの攻撃力が25%、ヘルス・スティールが50%上昇する。特殊スキルを使用すると1ターンの間オーラ・シングがステルス状態になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Old-Daka',
+        character_name: 'オールド・ダカ',
+        character_image: '/charui/tex.charui_daka.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'インサイトフル・ブロー',
+                name_eng: 'Insightful Blow',
+                image: '/ability/tex.ability_daka_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、75%の確率で1ターンの間スタン状態にする。ランダムな敵1体に物理ダメージを与え、55%の確率で1ターンの間スタン状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '復活の詠唱',
+                name_eng: 'Chant of Resurrection',
+                image: '/ability/tex.ability_daka_special01.png',
+                description_jp: `戦闘不能になったランダムな味方ナイトシスター1体をHP1で復活させ、35%の確率(ナイトシスターは成功率2倍)で戦闘不能になった他の味方もHP1で復活させる。味方全体のHPがオールド・ダカの最大HPの50%分回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'ナイトシスター・エルダー',
+                name_eng: 'Nightsister Elder',
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `味方ナイトシスターのHPが50%、防御力が50%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'サーブ・アゲイン',
+                name_eng: 'Serve Again',
+                image: '/abilityui/tex.abilityui_passive_heal_buff.png',
+                description_jp: `他の味方が戦闘不能になると、オールド・ダカのターンメーターが50%上昇し、「復活の詠唱」のクールダウンが1減少する。オールド・ダカがアクティブな間に他の味方が復活すると、復活した味方はターンメーターが20%上昇し、2ターンの間攻撃力と防御力が上昇する。さらに、遭遇終了までオールド・ダカの最大HPが10%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月13日'
+    }, {
+        id: 'Obi-Wan-Kenobi-Old-Ben',
+        character_name: 'オビ=ワン・ケノービ(ベン爺)',
+        character_image: '/charui/tex.charui_obiwanep4.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'エレガントフォーム',
+                name_eng: 'Elegant Form',
+                image: '/ability/tex.ability_obiwankenobioldhermit_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの回避力低下を発生させ、2ターンの間有効性が上昇する。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 5,
+                name_jp: 'マインド・トリック',
+                name_eng: 'Mind Tricks',
+                image: '/ability/tex.ability_obiwankenobioldhermit_special01.png',
+                description_jp: `敵全体を1ターンの間スキルブロック状態にし、2ターンの間攻撃力を低下させる。さらに80%の確率でターンメーターを60%減少させる。味方ジェダイおよび反乱軍は、耐性発揮した効果1つごとにターンメーターが3%上昇する。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '真なる守護者',
+                name_eng: 'Devoted Protector',
+                image: '/ability/tex.ability_obiwankenobioldhermit_event01.png',
+                description_jp: `ベン爺が2ターンの挑発を行う。この挑発が終わると、ベン爺は1ターンの挑発を行う。味方全体の防御力が2ターンの間上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'ジェダイの老騎士',
+                name_eng: 'Old Jedi Knight',
+                image: '/abilityui/tex.abilityui_passive_dodge.png',
+                description_jp: `味方全体の回避力が15%上昇する。さらに攻撃を回避するとターンメーターが30%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '不屈の心',
+                name_eng: 'If You Strike Me Down',
+                image: '/abilityui/tex.abilityui_passive_removeharmful.png',
+                description_jp: `味方ジェダイまたは反乱軍がダメージを受けると、ベン爺のターンメーターが5%上昇する。ベン爺が初めて戦闘不能になった時に味方全体が2ターンの攻撃力上昇とスピード上昇を得て、HPが50%、プロテクションが50%回復し、ターンメーターが25%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: "2024年3月15日"
+    }, {
+        id: 'Omega',
+        character_name: 'オメガ',
+        character_image: '/charui/tex.charui_badbatchomega.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '鎮圧射撃',
+                name_eng: 'Disarming Shot',
+                image: '/ability/tex.ability_badbatchomega_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。オメガに回避力上昇が発生している場合、1ターンの暗闇とめまいを発生させる。
+                
+                オメガに解除可能な強化効果が発生しており、かつオメガのターンである場合、オメガは再びダメージを与える(ダメージは50%減少)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'アダプティブラーナー',
+                name_eng: 'Adaptive Learner',
+                image: '/ability/tex.ability_badbatchomega_special01.png',
+                description_jp: `物理ダメージを与え、ターゲットを*標的*状態にする。他の全ての敵から標的を解除し、オメガは*射撃訓練*のスタックを1得る。これらの効果はコピー、解除、阻止、耐性発揮できず、遭遇が終了するか敵から標的効果が取り除かれるかオメガが戦闘不能になるまで継続する。
+                
+                ターゲットがエクスポーズ状態の場合、この攻撃で敵に2ターンのターゲットロックが発生し、ターンメーターが10%減少する。
+                
+                *標的:* ユニットがこの効果を受けている間、オメガに射撃訓練の効果が発生する。オメガは挑発を無視してこの敵をターゲットにできる
+                
+                *射撃訓練:* スタックごとに、クリティカル率と攻撃力が5%、クリティカルダメージが10%上昇する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '共感力',
+                name_eng: 'Empathy First',
+                image: '/ability/tex.ability_badbatchomega_special02.png',
+                description_jp: `オメガは自身の弱体化効果を全て解除し、2ターンのステルス効果を得る。味方バッド・バッチが2ターンのプロテクション上昇(40%)と防御突破力上昇、10%のターンメーターを得る。
+                
+                オメガにクリティカル率上昇が発生している場合、味方バッド・バッチのターンメーターがさらに20%上昇し、2ターンの時間経過プロテクション(20%)を得る。
+                
+                オメガが既にステルス状態かつ敵に標的効果が発生している場合、オメガは射撃訓練のスタックを1つ得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'チームの一員',
+                name_eng: 'Part of the Squad',
+                image: '/abilityui/tex.abilityui_passive_badbatchomega.png',
+                description_jp: `遭遇開始時に味方全員がバッド・バッチの場合、味方リーダーがターンを開始するたび、遭遇終了までオメガのスピードが5、攻撃力が2%上昇する(スタック可能、最大でスピード50、攻撃力20%)。
+                
+                オメガはステルス状態の間、クリティカルダメージが10%上昇する。味方バッド・バッチが特殊スキルを使用すると、オメガがアシストする(ダメージは60%減少)。オメガは防御突破力上昇中、クリティカル率が10%上昇する。
+                
+                オメガの攻撃は、オメガに発生している強化ごとに与えるダメージが5%、敵に発生している弱体化効果ごとにダメージが5%増加する。
+                
+                $テリトリーバトルの場合:$ バトル開始時、バッド・バッチの味方全体の最大HPが、その味方のレリックアンプレベルごとに最大プロテクションの10%分上昇する(最大100%)。その後、プロテクションを全て失う。味方バッド・バッチがHP割合ダメージ効果で受けるダメージが減少する。これらのボーナスはオメガが初めて戦闘不能になるまで持続する。
+                
+                各遭遇開始時、オメガのレリックアンプレベルごとに、味方バッド・バッチは2ターンの間、10%のボーナスプロテクションを得る(最大100%)。オメガは通常スキルを使用するたび、味方バッド・バッチごとに再度ダメージを与える(ダメージ50%減少)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Gar-Saxon',
+        character_name: 'ガー・サクソン',
+        character_image: '/charui/tex.charui_gar_saxon.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'オン・ザ・ハント',
+                name_eng: 'On the Hunt',
+                image: '/ability/tex.ability_gar_saxon_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、70%の確率で2ターンの間スピードを低下させる。ターゲットが既にスピード低下を受けている場合、ガー・サクソンのクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 5,
+                name_jp: '精密奇襲',
+                name_eng: 'Calculated Ambush',
+                image: '/ability/tex.ability_gar_saxon_special01.png',
+                description_jp: `敵全体に物理ダメージを与える。ターンメーターが50%以下の敵に対してはダメージが2倍になる。ターンメーターが50%以上ある敵はターンメーターが30%減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'マンダロリアンの報復',
+                name_eng: 'Mandalorian Retaliation',
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `味方帝国軍のカウンター率が50%、防御力が40%上昇する。味方帝国軍が通常攻撃を使用すると、そのユニットはHPが5%回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '総督の復讐',
+                name_eng: "Viceroy's Vengeance",
+                image: '/abilityui/tex.abilityui_passive_assist.png',
+                description_jp: `敵のターン中に他の味方が攻撃を行うと、ガー・サクソンが100%の確率でアシストする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Carth-Onasi',
+        character_name: 'カース・オナシ',
+        character_image: '/charui/tex.charui_carth.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ラピッドショット',
+                name_eng: 'Rapid Shot',
+                image: '/ability/tex.ability_carth_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの時間経過ダメージ効果を発生させる。敵に発生している時間経過ダメージ効果ごとに、攻撃ダメージがさらに10%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '撃ち続けるのみ',
+                name_eng: 'Just Keep Shooting',
+                image: '/ability/tex.ability_carth_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、2ターンの間攻撃力が上昇する。この攻撃がクリティカルヒットになるごとに、カースのターンメーターが15%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '旧共和国の兵士',
+                name_eng: 'Soldier of the Old Republic',
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `味方旧共和国の有効性、抵抗力、クリティカル回避力が30%上昇する。敵に時間経過ダメージ効果が発生するたび、旧共和国の味方全体のHPとプロテクションが3%回復する。
+                
+                味方旧共和国がターン中に通常スキルを使用すると、80%の確率で他の味方旧共和国をアシストに呼び、50%の減少ダメージを与える(1ターンに一度のみ)。
+                
+                $テリトリーバトルの場合:$ 旧共和国の味方1体につき、カウンター率、防御力、最大HPが20%上昇する。味方旧共和国が特殊スキルを使用するたび、ターゲット時間経過ダメージ効果を4つ発生させ(回避不可)、カースをアシストに呼ぶ。味方旧共和国はターン外に攻撃するたび、HPとプロテクションが5%回復し、遭遇終了まで攻撃力が25%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '兵士の訓練',
+                name_eng: "Soldier's Training",
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `攻撃中、アクティブな各敵および味方旧共和国ユニットごとにカースの攻撃力が10%上昇する。カースが敵を倒すと、クリティカル率とクリティカルダメージが10%上昇し(スタック可能)、「撃ち続けるのみ」のクールダウンがリセットされる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Cara-Dune',
+        character_name: 'カーラ・デューン',
+        character_image: '/charui/tex.charui_caradune.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'バールーム・ブロウラー',
+                name_eng: 'Bar Room Brawler',
+                image: '/ability/tex.ability_caradune_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。リーダースロットに設定されている味方がならず者の場合、カーラ・デューンは次のターン終了までステルス状態になる。リーダースロットに設定されている味方が反乱軍の場合、カーラ・デューンはステルス効果を失い、2ターンの間挑発する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 2,
+                name_jp: '即興戦術',
+                name_eng: 'Improvised Strategy',
+                image: '/ability/tex.ability_caradune_special01.png',
+                description_jp: `カーラ・デューンの有効性が1ターン上昇し、敵全体に物理ダメージを与え、ターンメーターを50%減少させる。敵帝国軍は1ターンの間スタン状態になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '潜入者',
+                name_eng: 'Infiltrator',
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `ステルス状態の間、カーラ・デューンのクリティカル率が100%、クリティカルダメージが50%上昇する。カーラ・デューンは挑発効果を失うと、次のターン開始時に1ターンのステルス効果を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '元反乱軍ショック・トルーパー',
+                name_eng: 'Ex-Rebel Shock Trooper',
+                image: '/abilityui/tex.abilityui_passive_shocktrooper.png',
+                description_jp: `カーラ・デューンは、敵帝国軍が戦闘不能になると、2ターンのクリティカルヒット耐性を獲得し、ターンメーターが100%上昇する。帝国軍以外の敵の場合はその半分量上昇する。カーラ・デューンが倒れた時に有効性上昇の効果が発生していた場合、最大体力の50%で復活し、1ターンの間有効性が上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Kyle-Katarn',
+        character_name: 'カイル・カターン',
+        character_image: '/charui/tex.charui_kylekatarn.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '面白くなってきた',
+                name_eng: 'This Should Be Interesting',
+                image: '/ability/tex.ability_kylekatarn_basic.png',
+                description_jp: `ターゲットに物理ダメージを2回与える。カイル・カターンのターンの場合、1ターンのスキルブロックを発生させる。それ以外の場合は、3回目のダメージを与える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ただのライトセーバー使い',
+                name_eng: 'Just a Guy With a Lightsaber',
+                image: '/ability/tex.ability_kylekatarn_special01.png',
+                description_jp: `ターゲットに物理ダメージを2回与える。ターゲットに*フォース酔い*の効果が発生している場合、2回目に与えるダメージが75%増加する。2ターンの間、味方全体がクリティカル率上昇と有効性上昇を得る。
+                
+                *ジェダイ・ナイト:* 最初に与えるダメージが75%増加する。味方反乱軍ファイター全体のHPとプロテクションが50%回復する`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '谷の力',
+                name_eng: 'Power of the Valley',
+                image: '/ability/tex.ability_kylekatarn_special02.png',
+                description_jp: `味方反乱軍ファイター全体の弱体化効果を全て解除する。2ターンの間、反乱軍ファイターが防御力上昇とスピード上昇を得る。敵全体に物理ダメージを与え、ターゲットに2ターンの間*フォース酔い*の効果を発生させる(コピー不可)。
+                
+                *ジェダイ・ナイト:* 2ターンの間、敵全体にフォース酔いの効果を発生させる
+                
+                *フォース酔い:* アシスト、カウンター、強化効果の獲得不可(レイドボスと銀河の伝説: カウンター率30%減少)`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'ブルー・ミルク・ラン',
+                name_eng: 'Blue Milk Run',
+                image: '/abilityui/tex.abilityui_passive_jediknight.png',
+                description_jp: `各遭遇開始時、味方反乱軍ファイター1体ごとにカイル・カターンのターンメーターが10%上昇する。
+                
+                味方反乱軍ファイターがターン外に攻撃するたび、その味方の攻撃力が次のターン終了時まで12%上昇する(スタック可能、最大60%)。
+                
+                カイル・カターンはターン外に攻撃するたび、バトル終了まで*フォースの繋がり*のスタックを得る(コピー、解除、阻止不可)(スタック可能、最大10スタック)。
+                カイル・カターンは「フォースの繋がり」のスタックが10溜まると、クールダウンをリセットして「フォースの繋がり」のスタックを全て失い、バトル終了まで*ジェダイ・ナイト*の効果を得る(コピー、解除、阻止不可)。
+                
+                遭遇開始時、敵のリーダーがシスだった場合、遭遇終了まで味方反乱軍ファイターの防御力と抵抗力が50%上昇し、最大HPが25%上昇する。
+                
+                *フォースの繋がり:* 防御力と攻撃力が2%上昇する
+                
+                *ジェダイ・ナイト:* カイル・カターンおよび味方反乱軍ファイターの防御力と攻撃力が50%上昇する。「フォースの繋がり」は得られない。テリトリーバトルではこのボーナスが味方ジェダイにも適用される
+                
+                $テリトリーバトル中:$ 敵はボーナスターンメーターを得られず、「フォース酔い」の効果を耐性発揮できない。カイル・カターンがターン外に攻撃すると、「フォースの繋がり」のスタックを得て、他の味方ジェダイにも「ジェダイ・ナイト」の効果によるボーナスが適用される。各バトル開始時、ジェダイおよび反乱軍ファイターの味方全体がバトル終了まで75%のボーナスプロテクションを得る。各バトル開始時、味方ジェダイ1体ごとにカイル・カターンのターンメーターが10%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Kylo-Ren',
+        character_name: 'カイロ・レン',
+        character_image: '/charui/tex.charui_kyloren.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ラフ・カット',
+                name_eng: 'Ragged Cut',
+                image: '/ability/tex.ability_kyloren_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。さらに75%の確率で2ターンの回復無効と、75%の確率で3ターンの時間経過ダメージを発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '猛撃',
+                name_eng: 'Lash Out',
+                image: '/ability/tex.ability_kyloren_special02.png',
+                description_jp: `敵全体に物理ダメージを与え、2ターンの報復効果が発生する。この攻撃はクリスタルヒットすることがなく、カイロ・レンのクリティカルダメージの50%に相当するボーナスダメージが発生する。味方ファースト・オーダーおよびアドバンテージ発生中の味方のターンメーターが25%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'アウトレイジ',
+                name_eng: 'Outrage',
+                image: '/ability/tex.ability_kyloren_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間スタン状態にする。カイロのHPが最大値を下回ると、この攻撃のダメージは75%上昇する。与えたダメージと同量のプロテクションが回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'アンストッパブル',
+                name_eng: 'Unstoppable',
+                image: '/abilityui/tex.abilityui_passive_counterattack.png',
+                description_jp: `カイロがダメージを受けた時、1ターンの間防御力が50%(スタック可能)、攻撃力が15%(スタック可能)上昇する。さらに、50%の確率でクールダウンがリセットされる。カイロの受けるHP割合ダメージの効果が軽減され、カイロに発生している弱体1つごとにスピードが10上昇する。カイロは特殊スキル使用時に2ターンの時間経過ダメージを得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Kylo-Ren-Unmasked',
+        character_name: 'カイロ・レン(マスクなし)',
+        character_image: '/charui/tex.charui_kylo_unmasked.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '強硬ストライク',
+                name_eng: 'Aggressive Strike',
+                image: '/ability/tex.ability_kylo_unmasked_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間抵抗力を低下させる。ターゲットが既に弱体を受けていてカイロのターン中である場合、カイロが1ターンの間挑発を行う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '強制停止',
+                name_eng: 'Halt',
+                image: '/ability/tex.ability_kylo_unmasked_special01.png',
+                description_jp: `ターゲットの強化を全て解除し、2ターンの間スタン状態にする。カイロのHPが10%回復し、1ターンの間挑発を行う。この攻撃は回避または耐性発揮できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'フォーカス・レイジ',
+                name_eng: 'Focused Rage',
+                image: '/ability/tex.ability_kylo_unmasked_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、与えたダメージ分HPが回復する。ターゲットがスタン状態の場合、ダメージが2倍になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '冷徹なる追撃',
+                name_eng: 'Merciless Pursuit',
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `味方ファースト・オーダーのクリティカルダメージが40%、スピードが30上昇する。味方ファースト・オーダーがクリティカルヒットを決めると、そのユニットのターンメーターが20%上昇する。味方ファースト・オーダーがステータス効果を得ると、そのユニットはHPが5%、プロテクションが5%回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '傷跡',
+                name_eng: 'Scarred',
+                image: '/abilityui/tex.abilityui_passive_counterattack.png',
+                description_jp: `ダメージを受けるとカイロのHPが8%回復し、この効果を受けていないランダムな味方ファースト・オーダー1体に2ターンのアドバンテージが発生する。カイロのカウンター率が50%上昇する(挑発中は上昇量2倍)。HP割合ダメージの効果が減少し、各遭遇開始時に1ターンの間挑発を行う。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Supreme-Leader-kylo-Ren',
+        character_name: 'カイロ・レン最高指導者',
+        character_image: '/charui/tex.charui_kyloren_tros.png',
+        ability: [
+            {
+                ability_type: 'アルティメットスキル',
+                cooldown: null,
+                name_jp: '底知れぬ激情',
+                name_eng: 'Depths of Rage',
+                image: '/ability/tex.ability_kyloren_tros_ultimate.png',
+                description_jp: `使用するには#アルティメットチャージ#が少なくとも60%必要
+                
+                #アルティメットチャージ:# カイロ・レン最高指導者は味方ダークサイドが物理または特殊ダメージを敵に与えた際に2%のアルティメットチャージを獲得する。クリティカルヒットの場合は5%獲得する。
+                
+                カイロ・レンは自身の弱体化効果を全て解除し、攻撃態勢に入り、敵全体に物理ダメージを与える(回避不可)。この態勢の間、カイロ・レンはダメージおよび状態異常が無効になり、戦闘不能にならない。またサイフォンが倍になり、スキルのクールダウンが0になる。
+                
+                - #アルティメットチャージ60%:# 攻撃態勢が1ターン持続する
+                - #アルティメットチャージ85%:# 攻撃態勢が2ターン持続する
+                - #アルティメットチャージ100%:# 攻撃態勢が3ターン持続する`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: true
+            }, {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ブルータル・アサルト',
+                name_eng: 'Brutal Assault',
+                image: '/ability/tex.ability_kyloren_tros_basic.png',
+                description_jp: `ターゲットに2ターンの強化無効を発生させ、物理ダメージを2回与える。ターゲットがスタン状態だった場合、再度ダメージを与えて2ターンのアドバンテージを得る。カイロ・レンのターンでは、遭遇終了まで*サイフォン*が10発生する。
+                
+                *サイフォン:* スタック1つにつき、このユニットはステータスの1%を得て、ターゲットは同じ分を失う`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ステイシス・ストライク',
+                name_eng: 'Stasis Strike',
+                image: '/ability/tex.ability_kyloren_tros_special01.png',
+                description_jp: `敵全体の強化を全て解除し、ターゲットを2ターンのスタン状態にする(コピー、解除、耐性発揮不可)。その後ターゲットに物理ダメージを与え、カイロ・レンは遭遇終了まで20のサイフォンを得る。クリティカルヒットになると代わりに40のサイフォンを得る。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '荒ぶる猛攻',
+                name_eng: 'Furious Onslaught',
+                image: '/ability/tex.ability_kyloren_tros_special02.png',
+                description_jp: `敵全体に物理ダメージを与え、#サイフォン・マスター#でターゲットのマスターを吸収する(耐性発揮不可)。ターゲットがスタン状態だった場合、吸収量は2倍になる。その後、味方ダークサイド全体の弱体化効果を全て解除し、2ターンのアドバンテージを付与する。
+                
+                #サイフォン・マスター:# 遭遇終了まで、このユニットに発生しているサイフォンと同じ割合のマスターを獲得する。ターゲットは同量のマスターを失う(スタック可能。ただし、レイドボスおよび銀河の伝説ユニットは除く)`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '最高指導者',
+                name_eng: 'Supreme Leader',
+                image: '/abilityui/tex.abilityui_passive_kyloren_tros.png',
+                description_jp: `味方ダークサイドのスピードが30、マスターが40%、クリティカルダメージが50%上昇する。
+                
+                味方ダークサイドがクリティカルヒットを与えずにアドバンテージを失うと、ターン終了時にその味方に1ターンのアドバンテージが発生する。
+                
+                味方ダークサイドにまだアドバンテージが発生していない状態でアドバンテージが発生すると、その味方は役割に応じたボーナスを得る:
+                - +タンク+は2ターン挑発する
+                - +アタッカー+は2ターンのクリティカルダメージ上昇を得る
+                - +サポート+と+ヒーラー+はターンメーターが20%上昇する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '攻勢での追撃',
+                name_eng: 'Press the Advantage',
+                image: '/abilityui/tex.abilityui_press_advantage.png',
+                description_jp: `カイロ・レン最高指導者はよろめきを無効化し、挑発効果を得られない。カイロのターン中に戦闘不能になった敵は復活できない。
+                
+                味方ダークサイドはターンメーターを失うと、現在の最大HPと最大プロテクションの10%を得る(スタック可能)。
+                
+                味方ダークサイドはボーナスターンを得ると、現在の最大HPと最大プロテクションの10%を失う(スタック可能)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '銀河の伝説',
+                name_eng: 'Galactic Legend',
+                image: '/abilityui/tex.abilityui_passive_galacticlegend.png',
+                description_jp: `このユニットはHP割合ダメージと大ダメージ効果によるダメージを軽減する。破壊効果から大ダメージを受け(レイドボスは除く)、スタン効果を無効化する。
+                
+                このユニットの最大HPと最大プロテクションがレリックアンプのレベルごとに10%上昇し、受けるダメージが30%減少する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Gamorrean-Guard',
+        character_name: 'ガモーリアン・ガード',
+        character_image: '/charui/tex.charui_gamorreanguard.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ハック&スラッシュ',
+                name_eng: 'Hack and Slash',
+                image: '/ability/tex.ability_gamorrguard_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、3ターンの時間経過ダメージを2つ発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '強行突破',
+                name_eng: 'Muscle In',
+                image: '/ability/tex.ability_gamorrguard_special01.png',
+                description_jp: `ガモーリアン・ガードが2ターンの挑発を行い、2ターンの報復効果が発生する。挑発中、ガモーリアン・ガードに最大HPの20%に相当するプロテクションが発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'パンチ・スルー',
+                name_eng: 'Punch Through',
+                image: '/ability/tex.ability_gamorrguard_special02.png',
+                description_jp: `ターゲットの強化効果を解除し、物理ダメージを与え、2ターンの間エクスポーズ状態にする。
+                
+                リーダースロットの味方がハット・カルテルで、ターゲットに時間経過ダメージまたはサーマルデトネーターが発生している場合、ターンメーターを２０％減少させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '忠実なエンフォーサー',
+                name_eng: 'Loyal Enforcer',
+                image: '/abilityui/tex.abilityui_passive_taunt.png',
+                description_jp: `バトル開始時、味方ハット・カルテルごとにガモーリアン・ガードの最大HPが10%上昇し、「好みの悪党」のスタックを1得る。ガモーリアン・ガードがアクティブな間、敵の抵抗力が20%減少する。
+                
+                リーダースロットの味方がジャバ・ザ・ハットの場合: ガモーリアン・ガードのクリティカル回避力が50%上昇する。ガモーリアン・ガードは挑発効果を失うたび、2ターンの防御力上昇を得て、ジャバが特殊スキルを使用かつガモーリアン・ガードが挑発中の場合、HPが20%回復する。
+                
+                リーダースロットの味方がハット・カルテルの場合、ガモーリアン・ガードの防御力上昇中に味方ハット・カルテルのHPが70%を下回るたび、ガモーリアン・ガードは挑発を行い、2ターンのプロテクション上昇(100%)を得る。
+                
+                $テリトリーバトルの場合:$ ガモーリアン・ガードのクリティカル回避力、防御力、抵抗力が50%上昇する。他の味方ハット・カルテルの最大HPと最大プロテクションが50%上昇する。味方ハット・カルテルのHPが初めて50%を下回ると、その味方は1ターンのダメージ耐性を得る(コピー、解除、阻止不可)。リーダースロットの味方がハット・カルテルでガモーリアン・ガードではない場合、味方がアビリティを使用するたびに、ガモーリアン・ガードがアシストする。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Garazeb-Zeb-Orrelios',
+        character_name: 'ガラゼブ・"ゼブ"・オレリオス',
+        character_image: '/charui/tex.charui_zeb_s3.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'バッシュ',
+                name_eng: 'Bash',
+                image: '/ability/tex.ability_zeb_s3_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンのめまい効果を発生させる。その敵が既にめまい、エクスポーズ、よろめき状態の場合は、1ターンのスタンを発生させる。この攻撃は弱体発生中の敵に対してダメージが30%増加する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'スタッガー・スイーフ',
+                name_eng: 'Staggering Sweep',
+                image: '/ability/tex.ability_zeb_s3_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンのよろめき効果を発生させる。アクティブな味方フェニックス1体ごとに、ゼブのターンメーターが10%上昇する。ターゲットに弱体が発生していない場合、この攻撃は耐性発揮不可となり、ダメージが2倍になり、ターゲットの最大HPの20%分のボーナスダメージが発生する。ターゲットに強化が発生している場合、ターゲットのアーマーを無効化する。ターゲットに弱体が発生している場合、この攻撃のクリティカルダメージは50%増加する。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '儀仗兵',
+                name_eng: 'Honor Guard',
+                image: '/abilityui/tex.abilityui_passive_hp.png',
+                description_jp: `2ターンの間、ゼブと指定した味方がプロテクション上昇(50%)を得る。ゼブまたは指定した味方は、弱体化効果が発生している場合は2ターンの間報復状態になり、それ以外の場合は、2ターンの抵抗力上昇を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '受け流し',
+                name_eng: 'Shrung Off',
+                image: '/abilityui/tex.abilityui_passive_hp.png',
+                description_jp: `ゼブの最大HP+40%分、最大プロテクションが上昇する。ターン開始時にはプロテクションが15%回復する。ゼブが弱体を受けている場合、この回復量が2倍になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月15日'
+    }, {
+        id: 'Cal-Kestis',
+        character_name: 'カル・ケスティス',
+        character_image: '/charui/tex.charui_calkestis.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'オーバーヘッド・スラッシュ',
+                name_eng: 'Overhead Slash',
+                image: '/ability/tex.ability_calkestis_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間、防御力低下とスピード低下を発生させる。カルのHPの状況に応じて、このスキルで様々な効果が発生する:
+                
+                - *HP75%以下:* 1ターンのヘルス・スティール上昇を得る
+                - *HP60%以下:* 再攻撃を行い、1ターンのクリティカル率低下を発生させる
+                - *HP40%以下:* 3回目の攻撃を行い、1ターンのめまい効果を発生させる`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '助けてくれ、BD-1',
+                name_eng: 'Help Me, BD-1',
+                image: '/ability/tex.ability_calkestis_special01.png',
+                description_jp: `指定した味方の弱体化効果を全て解除し、その味方のHPが45%回復する。指定した味方のHPが最大の場合、代わりにそのユニットのプロテクションが30%回復する。指定した味方のHPとプロテクションが最大の場合、代わりに2ターンのクリティカル耐性を与える。指定した味方がライトサイドの場合、2ターンの精度上昇を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '待つんだ',
+                name_eng: 'Not So Fast',
+                image: '/ability/tex.ability_calkestis_special02.png',
+                description_jp: `敵全体に2ターンの間、回避力低下、スピード低下、抵抗力低下を発生させ、味方全体が2ターンの間、クリティカルダメージ上昇とスピード上昇を得る。敵が耐性発揮した弱体化効果ごとに、非同盟のフォースの使い手の味方全体のターンメーターが3%上昇する。敵に既にスピード低下が発生している場合、1ターンの間スタン状態にする。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '俺はあきらめない',
+                name_eng: "I'm Persistent",
+                image: '/abilityui/tex.abilityui_passive_impersistent.png',
+                description_jp: `バトル開始時、非同盟のフォースの使い手の味方全体の最大HPが30%、抵抗力が30%上昇する。味方がクリティカルヒットを受けるたび、その味方とカルのHPとプロテクションが5%回復する。また、味方がライトサイドまたはダークサイドの非同盟のフォースの使い手の場合、味方とカルが2ターンのプロテクション上昇を得る(10%、スタック可能、最大50%)。
+                
+                ユニット同士が使用した特殊スキルごとに、カルは不屈のスタックを1得る(コピー、解除、阻止不可)。遭遇で相手が最初のターンの開始すると、カルが*不屈*のスタックを15得る。
+                
+                *不屈:* ターン開始時、カルは不屈のスタック数に応じて以下の効果を発生させる:
+                
+                - *10スタック以上:* カルと非同盟のフォースの使い手の味方全体が2ターンの間、フォアサイトを得る
+                - *20スタック以上:* カルと非同盟のフォースの使い手の味方全体が2ターンの間、防御力上昇とプロテクション上昇(30%)を得る
+                - *30スタック:* 敵全体に2ターンの間、スキルブロックと強化無効を発生させる(回避、耐性発揮不可)。敵全体のターンメーターが50%上昇する(ライトサイドの非同盟のフォースの使い手の場合はこの効果が2倍)(=味方全体のターンメーターが50%上昇する?)。 不屈のスタックがリセットされる。
+                
+                $テリトリーウォーズでアップグレードされたオミクロンスキルを持つアソーカ・タノ(フルクラム)が味方にいる場合:$ アソーカ単体のオミクロン効果は、味方がいる間は無効化されなくなる。この効果は戦闘不能になるまで持続する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月16日'
+    }, {
+        id: 'Kelleran-Beq',
+        character_name: 'カレラン・ベク',
+        character_image: '/charui/tex.charui_kelleranbeq.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'セーバー・スタビリティ',
+                name_eng: 'Saber Stability',
+                image: '/ability/tex.ability_kelleranbeq_basic.png',
+                description_jp: `2ターンの間、ターゲットに物理ダメージを与え、フォアサイトが発生していないランダムな味方1体にフォアサイトを付与する。カレラン・ベクのターンの場合、もう一度攻撃する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ライトセーバーの移行',
+                name_eng: 'Lightsaber training',
+                image: '/ability/tex.ability_kelleranbeq_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。味方全体が2ターンの間攻撃力上昇を得る。銀河共和国ジェダイの味方全体をアシストに呼ぶ。味方に銀河の伝説がいない場合、味方のHPとプロテクションがターン終了までに与えたダメージの50%分回復する。そうでない場合は、ターン終了まで与えたダメージの5%分HPとプロテクションが回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 2,
+                name_jp: 'ジェダイの勇気',
+                name_eng: 'Jedi Bravery',
+                image: '/ability/tex.ability_kelleranbeq_special02.png',
+                description_jp: `味方全体の弱体化効果を全て解除する。ターゲットに物理ダメージを与え、カレラン・ベクの最大プロテクション20%分の追加固定ダメージを与える。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '評議会の意志により',
+                name_eng: 'By The Will Of The Council',
+                image: '/abilityui/tex.abilityui_passive_jedi.png',
+                description_jp: `味方銀河共和国ジェダイの防御力と抵抗力が50%、スピードが30上昇する。
+                
+                バトル開始時、他の銀河共和国ジェダイの味方全体が、バトル終了までカレラン・ベクのスタック数と同じ分のパダワンの訓戒を得る。
+                
+                各遭遇開始時、ジェダイの味方全体が2ターンのフォアサイトを得る。
+                
+                $テリトリーウォーズで、銀河の伝説が存在せず、味方全体が銀河共和国ジェダイの場合:$ バトル開始時、味方は自身のパダワンの訓戒のスタックごとに攻撃力がさらに5%上昇する(フォアサイトが発生している場合は2倍)。
+                
+                プロテクションを持つ味方がターン中にスキルを使用するたび、ランダムな味方をアシストに呼ぶ。
+                
+                各味方は初めてプロテクションを全て失うと、ターンメーターが50%回復し、3ターンの間、ボーナスプロテクション150%上昇を得て、クリティカル率、クリティカルダメージ、攻撃力が10%上昇し、さらに自身のパダワンの訓戒のスタックごとに追加で2%上昇する。
+                
+                カレランがアクティブな間、味方の防御力が500%上昇する。他の味方にプロテクションが発生している間、カレランは戦闘不能にならない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'セーバー・ハンド',
+                name_eng: 'The Sabered Hand',
+                image: '/abilityui/tex.abilityui_passive_thesaberedhand.png',
+                description_jp: `味方全体が銀河共和国ジェダイの場合、カレラン・ベクは最大HPを40%失い、その2倍分を最大プロテクションとして得る。
+                
+                バトル開始時、カレラン・ベクは自身のプロテクション10,000ごとに、バトル終了まで*パダワンの訓戒*のスタックを得る(最大100スタック)。
+                
+                プロテクションが発生しているいる間、カレラン・ベクはカウンター率が100%になり、通常スキルを使用するたび50%の確率でもう一度攻撃を行い、またHPが100%を下回らない。
+                
+                味方に銀河の伝説がいない場合:
+                
+                - 味方銀河共和国ジェダイは回復無効状態になるたび、1ターンの間、プロテクション上昇(40%)と抵抗力上昇を得る
+                - 味方銀河共和国ジェダイはターゲットロック状態になるたび、HPとプロテクションが20%回復してターンメーターが10%上昇する。
+                
+                カレラン・ベクが同盟スロットではなくリーダースロットにいる場合、初めて戦闘不能になった際、代わりにHPとプロテクションが100%回復し、ボーナスターンを得る。それ以外の場合で、バトル開始時に味方リーダーが銀河共和国ジェダイで銀河の伝説ではなかった場合は、バトル終了まで「セカンドウィンド」を得る(コピー、解除、阻止不可)。
+                
+                *パダワンの訓戒:* 防御突破力+20%、スタック1つにつき攻撃力が5%上昇する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月16日'
+    }, {
+        id: 'Canderous-Ordo',
+        character_name: 'カンデラス・オルド',
+        character_image: '/charui/tex.charui_canderous.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'エンドレスアサルト',
+                name_eng: 'Interminable Assault',
+                image: '/ability/tex.ability_canderous_basic.png',
+                description_jp: `物理ダメージを与え、再攻撃を行う。この攻撃前に敵がプロテクションを得ていた場合、カンデラスは3回目の攻撃を行い、2ターンの間抵抗力を低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '圧倒的破壊力',
+                name_eng: 'Overwhelming Firepower',
+                image: '/ability/tex.ability_canderous_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、2ターンの間攻撃力低下を発生させる。この攻撃は防御力を無効化する。`,
+                is_omega: true,
+                is_omicron: false,
+                is_ultimate: false,
+                is_zeta: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'マンダロリアンの熟練兵',
+                name_eng: 'Mandalorian Veteran',
+                image: '/abilityui/tex.abilityui_passive_mandalorian.png',
+                description_jp: `バトル開始時、味方マンダロリアン、旧共和国、ならず者ユニットごとにカンデラスのヘルス・スティールと有効性が10%上昇する。カンデラスは敵にダメージを与えると2ターンの時間経過ダメージを発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '困難は好きだ',
+                name_eng: 'I Like a Challenge',
+                image: '/abilityui/tex.abilityui_passive_penetration.png',
+                description_jp: `「エンドレスアサルト」と「圧倒的破壊力」で挑発、デスマーク、マーク状態の敵を攻撃すると、カンデラスが与えるダメージが50%増加する。敵が攻撃でダメージを負うたび、カンデラスのターンメーターが8%上昇する。敵が挑発を行う、あるいやデスマークやマーク状態になると、カンデラスが2ターンの間クリティカル率上昇とクリティカルダメージ上昇を得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月18日'
+    }, {
+        id: 'Ki-Adi-Mundi',
+        character_name: 'キ＝アディ＝ムンディ',
+        character_image: '/charui/tex.charui_kiadimundi.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ヴァーサタイル・ストライク',
+                name_eng: 'Versatile Strike',
+                image: '/ability/tex.ability_kiadimundi_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。
+                
+                キ＝アディ＝ムンディが*アタル・フォーム*を使用している場合、もう一度攻撃する。*マカシ・フォーム*を使用している場合、ターンメーターが15%上昇し、プロテクションが10%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 2,
+                name_jp: 'アダプティブ・フォーム',
+                name_eng: 'Adaptive Form',
+                image: '/ability/tex.ability_kiadimundi_special02.png',
+                description_jp: `フォームを切り替えると、弱体を全て解除し、ターンメーターが100%上昇する。
+                
+                *アタル・フォーム: *攻撃力+100%、防御突破力+30%、スピード+20
+                
+                *マカシ・フォーム: *カウンター率+100%、抵抗力+60%、クリティカルヒット耐性
+                
+                このスキルはクールダウン操作を無効にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'デサイシブ・スラスト',
+                name_eng: 'Decisive Thrust',
+                image: '/ability/tex.ability_kiadimundi_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。この攻撃は味方銀河共和国ジェダイ1体につきダメージが100%上昇する。
+                
+                キ＝アディ＝ムンディが*アタル・フォーム*を使用している場合、このスキルで敵を倒すと全てのクールダウンがリセットされる。
+                
+                *マカシ・フォーム*を使用している場合、味方銀河共和国ジェダイの弱体が全て解除され、ターンメーターが25%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'ジェダイ評議会',
+                name_eng: 'Jedi Council',
+                image: '/abilityui/tex.abilityui_passive_jedi.png',
+                description_jp: `味方全てが銀河共和国ジェダイだった場合、各バトル開始時に味方銀河共和国ジェダイのスピードが30、最大HPが40%、攻撃力が20%上昇する。
+                
+                サポートもしくはヒーラークラスの味方銀河共和国ジェダイは最大HPの10%分の追加攻撃力を得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'フォーム・マスター',
+                name_eng: 'Master of Forms',
+                image: '/abilityui/tex.abilityui_passive_uniqueability.png',
+                description_jp: `バトル開始時、キ＝アディ＝ムンディは*アタル・フォーム*を使用する。キ＝アディ＝ムンディは使用するフォームに応じて追加スキルを得る。
+                
+                *マカシ・フォーム*に切り替えると、プロテクションが10%回復し、3ターンの挑発を行う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '付与スキル',
+                cooldown: 3,
+                name_jp: 'アタル・ランジ',
+                name_eng: 'Ataru Lange',
+                image: '/ability/tex.ability_kiadimundi_special03a.png',
+                description_jp: `ターゲットに物理ダメージを与え、アーマー破壊状態にする。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '付与スキル',
+                cooldown: 3,
+                name_jp: 'マカシ・ジャブ',
+                name_eng: 'Makashi Jab',
+                image: '/ability/tex.ability_kiadimundi_special03b.png',
+                description_jp: `敵全体を2ターンの間めまい状態にし、ターゲットに物理ダメージを与える。このスキルは回避できない。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月18日'
+    }, {
+        id: 'Qira',
+        character_name: 'キーラ',
+        character_image: '/charui/tex.charui_qira.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'デッドリーダブル',
+                name_eng: 'Deadly Double',
+                image: '/ability/tex.ability_qira_basic.png',
+                description_jp: `ターゲットに物理ダメージを2回与え、2ターンの攻撃力低下を発生させる。この攻撃はカウンターができない。この攻撃がクリティカルヒットした場合、さらに1ターンの間めまい状態にする。攻撃が2回ともクリティカルヒットした場合、ターゲットの最大HP10%分の追加ダメージを与える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '拡散ブラスト',
+                name_eng: 'Scattering Blast',
+                image: '/ability/tex.ability_qira_special01.png',
+                description_jp: `ターゲットの強化を全て解除し、敵全体に物理ダメージを与えて2ターンの間よろめき状態にする。強化発生中の敵ごとに25%の追加ダメージが発生する。
+                
+                *準備万端: *キーラが準備万端状態の場合、敵全体から全ての強化を解除する。その後、キーラの準備万端状態は解除される。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '共同作戦',
+                name_eng: 'Joint Operation',
+                image: '/ability/tex.ability_qira_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、指定した味方1体をアシストに呼ぶ。その味方がならず者の場合、両者の攻撃ダメージが30%増加する。回避された場合も、それぞれの攻撃は50%の確率で2ターンのエクスポーズを発生させる。
+                
+                *準備万端: *他の準備万端状態の味方全ての防御突破力を3ターンの間上昇させ、アシストに呼ぶ。その後、キーラの準備万端状態は解除される。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '商売道具',
+                name_eng: 'Tools of the Trade',
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `味方ならず者のクリティカル率が20%上昇する。さらに味方(=味方ならず者?)がクリティカルヒットを決めると、味方のプロテクションが10%回復し、バトル終了まで各クラスに応じた追加ボーナスが付与される。
+                
+                アタッカー: 攻撃力+30(最大3スタック)
+                タンク: クリティカル回避力+20%(最大3スタック)
+                サポート、ヒーラー: スピード+20(最大3スタック)`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '追い打ち',
+                name_eng: 'Insult to Injury',
+                image: '/ability/tex.ability_passive_healthsteal.png',
+                description_jp: `攻撃時、ターゲットに弱体が発生していない場合はキーラの有効性が40%上昇し、弱体が発生している場合はクリティカルダメージが30%上昇する。他の味方ならず者も、攻撃時にその半分の効果を得る。さらに各ターン終了時、いずれか敵が2回以上クリティカルヒットを受けていると、キーラは準備万端状態となり、ターンメーターが15%上昇し、1ターンの間ヘルス・スティールが上昇する。このターン中にスキルを使用した他の味方も、それぞれ1ターンの間ヘルス・スティールが上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月18日'
+    }, {
+        id: 'Kit-Fisto',
+        character_name: 'キット・フィストー',
+        character_image: '/charui/tex.charui_kitfisto.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ライトセーバー・マスター',
+                name_eng: 'Lightsaber Mastery',
+                image: '/ability/tex.ability_kitfisto_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、30%の確率で再攻撃を行う。キット・フィストーは攻撃ごとに50%の確率でターンメーターが15%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '潮流変化',
+                name_eng: 'Turn the Tide',
+                image: '/ability/tex.ability_kitfisto_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、3ターンの間、味方全体の有効性が上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'ジェダイ・プロテクター',
+                name_eng: 'Jedi Protector',
+                image: '/abilityui/tex.abilityui_passive_def_resistance.png',
+                description_jp: `味方全体の抵抗力が25%上昇し、さらに味方ジェダイは防御力が45上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '高等剣術',
+                name_eng: 'Superior Bladework',
+                image: '/abilityui/tex.abilityui_passive_counterattack.png',
+                description_jp: `キット・フィストーのカウンター率が35%になり、攻撃力が20%上昇する。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月18日'
+    }, {
+        id: 'Cassian-Andor',
+        character_name: 'キャシアン・アンドー',
+        character_image: '/charui/tex.charui_cassian.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '2歩先回り',
+                name_eng: 'Two Steps Ahead',
+                image: '/ability/tex.ability_cassian_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、85%の確率で2ターンの強化無効を発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 2,
+                name_jp: 'ショックグレネード',
+                name_eng: 'Shock Grenade',
+                image: '/ability/tex.ability_cassian_special01.png',
+                description_jp: `スキルブロック、防御力低下、回復無効、攻撃力低下、スピード低下(各1度ずつ)をランダムな敵に2ターン発生させる。メインターゲットが帝国軍の場合、2ターンの間エクスポーズ状態にする。K-2SOがいる場合、K-2SOをアシストに呼ぶ。さらに、弱体を受けている敵1体ごとにターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'クリップリング・ショット',
+                name_eng: 'Crippling Shot',
+                image: '/ability/tex.ability_cassian_special02.png',
+                description_jp: `ターゲットに物理ダメージを与える。他の敵に発生している各弱体を、ターゲットに1ターン発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '下準備',
+                name_eng: 'Groundwork',
+                image: '/abilityui/tex.abilityui_passive_rebel.png',
+                description_jp: `各バトル開始時(=各遭遇開始時?)、味方反乱軍が3ターンのプロテクション上昇(20%)を得て、味方反乱軍アタッカーは3ターンの防御力上昇、味方反乱軍サポートは3ターンの有効性上昇、味方反乱軍タンクは3ターンの抵抗力上昇を得る。K-2SOは、生存中の場合にこれらの強化効果をすべて得る。
+                
+                $テリトリーバトルの場合: $バトル開始時、味方全員がローグ・ワンの場合、キャシアン・アンドーはボーナスターンを得て、バトル終了まで敵ユニットに変装する。変装中、キャシアンはユニークスキルと勢力を維持し、変装先の勢力に加えて、ローグ・ワン勢力のメンバーと見なされる。各遭遇開始時、反乱軍の味方全体は、3ターンの防御力上昇、有効性上昇、抵抗力上昇を得る。キャシアンはスキルを使用するたび、弱体化効果発生中の敵ごとにターンメーターが12%上昇し、ターゲットに1ターンのスキルブロックと強化無効および2ターンの防御力低下と回復無効を発生させ、K-2SOをアシストに呼び、97.8%の増加ダメージを与える。
+                
+                - +テリトリーバトル「反乱軍の襲撃」: +キャシアンがスノートルーパー・オプス(精鋭)に変装する。
+                - +テリトリーバトル「銀河共和国の攻撃」: +キャシアンがワット・タンバーに変装する。
+                - +テリトリーバトル「帝国の台頭」: +キャシアンが改造版のマグマトルーパーに変装する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月19日'
+    }, {
+        id: 'Cad-Bane',
+        character_name: 'キャド・ベイン',
+        character_image: '/charui/tex.charui_cadbane.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ガンスリンガー',
+                name_eng: 'Gun Slinger',
+                image: '/ability/tex.ability_cadbane_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、65%の確率で再攻撃を行う。2ターンの間ターゲットの精度を低下させる。クリティカルヒットを決める毎に、キャド・ベインのターンメーターが15%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'スタン・グローブ',
+                name_eng: 'Stun Glove',
+                image: '/ability/tex.ability_cadbane_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、全ての強化効果を解除し、1ターンの間スタン状態にする。さらに、ターンメーターを50%減少させる(敵ジェダイに対しては2倍)。ターゲットが弱体を受けている場合、最大プロテクションを25%低下させる(スタック可能)。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'どんな仕事でも',
+                name_eng: 'At Your Service',
+                image: '/abilityui/tex.abilityui_passive_dodge.png',
+                description_jp: `味方賞金稼ぎの有効性が100%上昇し、弱体を発生させると2ターンのアドバンテージを得る。キャド・ベインがリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可):
+                
+                *契約: *敵に弱体を20発生させる(契約達成には味方賞金稼ぎのみが参加可能。)。
+                
+                *報酬: *バトル終了まで、敵全体の抵抗力が50%減少する。味方賞金稼ぎ全体にボーナス効果が発動する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'それなりの報酬をよこせ',
+                name_eng: "For The Right Price",
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `キャド・ベインのクリティカル率が30%、クリティカルダメージが30%上昇する。キャド・ベインが弱体を与えると、最大HPと最大プロテクションが5%回復する。キャド・ベインがクリティカルヒットを決めると、50%の確率でクールダウンを1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'キャド・ベインのボーナス',
+                name_eng: "Cad Bane's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `キャド・ベインは契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                *ボーナス: *キャド・ベインの回避力が25%上昇する。キャド・ベインが回避を行うと、攻撃をしてきた敵に2ターンのサーマル・デトネーターを発生させる。このサーマル・デトネーターは回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月19日'
+    }, {
         id: 'General-Kenobi',
         character_name: "ケノービ将軍",
         character_image: '/charui/tex.charui_obiwangeneral.png',
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '直観的攻撃',
                 name_eng: 'Intuitive Strike',
                 image: '/ability/tex.ability_generalkenobi_basic.png',
@@ -2753,6 +4620,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: 'ネゴシエーター',
                 name_eng: 'The Negotiator',
                 image: '/ability/tex.ability_generalkenobi_special01.png',
@@ -2763,6 +4631,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 4,
                 name_jp: '戦闘指揮',
                 name_eng: 'lead the Charge',
                 image: '/ability/tex.ability_generalkenobi_special02.png',
@@ -2773,6 +4642,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '第212攻撃大隊コマンダー',
                 name_eng: '212th Attack Battalion Commnader',
                 image: '/abilityui/tex.abilityui_passive_hp.png',
@@ -2783,6 +4653,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ソレス',
                 name_eng: 'Soresu',
                 image: '/abilityui/tex.abilityui_passive_foresight.png',
@@ -2795,7 +4666,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }, {
@@ -2805,6 +4676,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '文化的ではない時代',
                 name_eng: 'Less Civilized Age',
                 image: '/ability/tex.ability_jediknightcal_basic.png',
@@ -2812,7 +4684,7 @@ const characterAbilities: characterAbilities[] = [
                 
                 ジェダイ・ナイト・カル・ケスティスのターンの場合:
                 
-                1ターンの間、「ワールウィンドスラム」、「ウィンドミルガード」、「向こう見ずの攻撃」が利用可能になる。ジェダイ・ナイト・カル・ケスティスがボーナスターンを得る。
+                1ターンの間、*「ワールウィンドスラム」*、*「ウィンドミルガード」*、*「向こう見ずの攻撃」*が利用可能になる。ジェダイ・ナイト・カル・ケスティスがボーナスターンを得る。
                 
                 このボーナスターン中、ジェダイ・ナイト・カル・ケスティスは「ワールウィンドスラム」「ウィンドミルガード」「向こう見ずの攻撃」のみ使用可能。`,
                 is_omega: true,
@@ -2821,10 +4693,11 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: 'ワールウィンドスラム',
                 name_eng: 'Whirlwind Slam',
                 image: '/ability/tex.ability_jediknightcal_special01.png',
-                description_jp: `「スタンス - ダブルブレード」が発生していない場合、ジェダイ・ナイト・カル・ケスティスはスタンスを失い、遭遇終了まで「スタンス - ダブルブレード」を獲得し、「向こう見ず」のスタックを5得る(最大30)。
+                description_jp: `*「スタンス - ダブルブレード」*が発生していない場合、ジェダイ・ナイト・カル・ケスティスはスタンスを失い、遭遇終了まで「スタンス - ダブルブレード」を獲得し、「向こう見ず」のスタックを5得る(最大30)。
                 
                 敵全体に物理ダメージを与え、2ターンのスピード低下を発生させる。
                 
@@ -2832,9 +4705,9 @@ const characterAbilities: characterAbilities[] = [
                 - ターゲットを1ターンの間スタン状態にし、遭遇終了までアーマー破壊を発生させる
                 - その他の敵全体を2ターンのめまい状態にする
                 
-                スタンス - ダブルブレード: 攻撃力と抵抗力が50%上昇する。「向こう見ず」のスタックごとにスピードが2上昇する。
+                *スタンス - ダブルブレード:* 攻撃力と抵抗力が50%上昇する。「向こう見ず」のスタックごとにスピードが2上昇する。
                 
-                テリトリーバトルの場合: ジェダイ・ナイト・カル・ケスティスは「ウィンドブルガード」の次回使用時、HPとプロテクションが50%回復し、「ウィンドミルガード」を最後に使用してから「ワールウィンドスラム」を使用するたび、味方全体がプロテクション上昇(20%)2ターンを得る(スタック可能)
+                $テリトリーバトルの場合:$ ジェダイ・ナイト・カル・ケスティスは「ウィンドブルガード」の次回使用時、HPとプロテクションが50%回復し、「ウィンドミルガード」を最後に使用してから「ワールウィンドスラム」を使用するたび、味方全体がプロテクション上昇(20%)2ターンを得る(スタック可能)
                 
                 ターン開始時、ジェダイ・ナイト・カル・ケスティスに「スタンス - ダブルブレード」が発生していない場合:
                 
@@ -2845,10 +4718,11 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: 'ウィンドミルガード',
                 name_eng: 'Windmil Defense',
                 image: '/ability/tex.ability_jediknightcal_special02.png',
-                description_jp: `ターン開始時に「スタンス - デュアルブレード」が発生していない場合、ジェダイ・ナイト・カル・ケスティスはスタンスを失い、遭遇終了まで「スタンス - デュアルブレード」を獲得し、「向こう見ず」のスタックを5得る(最大30)。
+                description_jp: `ターン開始時に*「スタンス - デュアルブレード」*が発生していない場合、ジェダイ・ナイト・カル・ケスティスはスタンスを失い、遭遇終了まで「スタンス - デュアルブレード」を獲得し、「向こう見ず」のスタックを5得る(最大30)。
                 
                 味方全体の弱体化効果を全て解除し、他の指定した味方をアシストに呼ぶ。ジェダイ・ナイト・カル・ケスティスはが4ターンの間プロテクション上昇を得る(スタック可能50%、コピー不可)。
                 
@@ -2857,45 +4731,48 @@ const characterAbilities: characterAbilities[] = [
                 - 味方ジェダイが2ターンの間プロテクション上昇(スタック可能20%)と報復効果を得る
                 - 指定した味方ジェダイがボーナスターンを得る。
                 
-                スタンス - デュアルブレード: 防御力が100%上昇し、「向こう見ず」のスタックごとに敵の攻撃力が2%減少する。他の味方がターン外に攻撃すると、このユニットがアシストに呼ばれる(1ターンにつき1回限り)`,
+                *スタンス - デュアルブレード:* 防御力が100%上昇し、「向こう見ず」のスタックごとに敵の攻撃力が2%減少する。他の味方がターン外に攻撃すると、このユニットがアシストに呼ばれる(1ターンにつき1回限り)`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: null,
                 name_jp: '向こう見ずの攻撃',
                 name_eng: 'Impetuous Assault',
                 image: '/ability/tex.ability_jediknightcal_special03.png',
-                description_jp: `ターン開始時に「スタンス - クロスガード」が発生していない場合、ジェダイ・ナイト・カル・ケスティスはスタンスを失い、バトル終了まで「スタンス - クロスガード」を獲得し、「向こう見ず」のスタックを5失う。
+                description_jp: `ターン開始時に*「スタンス - クロスガード」*が発生していない場合、ジェダイ・ナイト・カル・ケスティスはスタンスを失い、バトル終了まで「スタンス - クロスガード」を獲得し、「向こう見ず」のスタックを5失う。
                 
                 この遭遇で初めて「向こう見ずの攻撃」が使用されると、ターゲットを即座に戦闘不能にする。
                 
                 ターゲットに物理ダメージを与える。ターゲットは1ターンの間スキルブロックとよろめき状態になり、敵全体が4ターンの間フォース酔い(=フォースの酔い?)状態になる。その他味方全体が2ターンの防御突破力上昇を得る。
                 
-                スタンス - クロスガード: クリティカルダメージが50%上昇、防御力が25%減少、スピードが25減少する。さらに攻撃時に追加でこのユニットの最大25%分をダメージとして与える
+                *スタンス - クロスガード:* クリティカルダメージが50%上昇、防御力が25%減少、スピードが25減少する。さらに攻撃時に追加でこのユニットの最大25%分をダメージとして与える
                 
-                テリトリーバトルの場合: 「向こう見ずの攻撃」が追加でジェダイ・ナイト・カル・ケスティスのレベルごとにターゲットの最大HP10%分のダメージを与える。「向こう見ずの攻撃」使用後、ジェダイ・ナイト・カル・ケスティスの攻撃はプロテクションを無効化し、味方全体がジェダイ・ナイト・カル・ケスティスの基本攻撃力の300%分をバトル終了まで得る。
+                $テリトリーバトルの場合:$ 「向こう見ずの攻撃」が追加でジェダイ・ナイト・カル・ケスティスのレベルごとにターゲットの最大HP10%分のダメージを与える。「向こう見ずの攻撃」使用後、ジェダイ・ナイト・カル・ケスティスの攻撃はプロテクションを無効化し、味方全体がジェダイ・ナイト・カル・ケスティスの基本攻撃力の300%分をバトル終了まで得る。
                 
-                このスキルはジェダイ・ナイト・カル・ケスティスに「向こう見ず」のスタックが30ないと使用できない。`,
+                *このスキルはジェダイ・ナイト・カル・ケスティスに「向こう見ず」のスタックが30ないと使用できない。*`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: true,
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '銀河の歪み',
                 name_eng: 'Weight of the Galaxy',
                 image: '/abilityui/tex.abilityui_passive_jedi.png',
                 description_jp: `味方ジェダイのカウンター率、防御力、攻撃力が50%上昇する。
                 
-                テリトリーバトルの場合: バトル開始時、味方の最大HPと最大プロテクションが100%上昇し、ジェダイ・ナイト・カル・ケスティスの防御力の300%を得る。各遭遇開始時、味方のターンメーターとフレンジーが2ターンの間25%上昇する(=ターンメーターが25%上昇し、2ターンの間フレンジーを得る?)。戦闘不能になった敵は復活できない。遭遇が終了しても、「向こう見ず」のスタック数は持続する。`,
+                $テリトリーバトルの場合:$ バトル開始時、味方の最大HPと最大プロテクションが100%上昇し、ジェダイ・ナイト・カル・ケスティスの防御力の300%を得る。各遭遇開始時、味方のターンメーターとフレンジーが2ターンの間25%上昇する(=ターンメーターが25%上昇し、2ターンの間フレンジーを得る?)。戦闘不能になった敵は復活できない。遭遇が終了しても、「向こう見ず」のスタック数は持続する。`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: true,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ジェダイ・サバイバー',
                 name_eng: 'Jedi Survivor',
                 image: '/abilityui/tex.abilityui_passive_jedisurvivor.png',
@@ -2907,9 +4784,9 @@ const characterAbilities: characterAbilities[] = [
                 
                 味方ジェダイは恐怖状態になると、1ターンのダメージ耐性を得て、ターンメーターが60%上昇する。
                 
-                ジェダイ・ナイト・カル・ケスティスはスタンスを得るたび、遭遇終了まで「向こう見ず」のスタックを5得る(最大30)。
+                ジェダイ・ナイト・カル・ケスティスはスタンスを得るたび、遭遇終了まで*「向こう見ず」*のスタックを5得る(最大30)。
                 
-                向こう見ず: 攻撃力が1%上昇し、防御力が1%減少する。スキルに追加効果が発生する`,
+                *向こう見ず:* 攻撃力が1%上昇し、防御力が1%減少する。スキルに追加効果が発生する`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: false,
@@ -2924,6 +4801,7 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '優勢攻撃',
                 name_eng: 'Prevailing Strike',
                 image: '/ability/tex.ability_luke_jediknight_basic.png',
@@ -2934,20 +4812,22 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 3,
                 name_jp: '堅固な前進',
                 name_eng: 'Stalwart Advance',
                 image: '/ability/tex.ability_luke_jediknight_special01.png',
                 description_jp: `ターゲットに物理ダメージを与え、指定した味方をアシストに呼ぶ。敵ターゲットは2ターンの間暗闇状態となる。
                 
-                ジェダイ・ナイト・ルーク・スカイウォーカーは2ターンの間ジェダイの意志を得る(コピー、解除、阻止不可)。指定した味方がジェダイの場合(旧共和国ジェダイは除く)、その味方にも2ターンのジェダイの意志が発生する。
+                ジェダイ・ナイト・ルーク・スカイウォーカーは2ターンの間*ジェダイの意志*を得る(コピー、解除、阻止不可)。指定した味方がジェダイの場合(旧共和国ジェダイは除く)、その味方にも2ターンの*ジェダイの意志*が発生する。
                 
-                ジェダイの意志: カウンター率+100%、攻撃力+50%、スピード;25%、抵抗力+25%`,
+                *ジェダイの意志*: カウンター率+100%、攻撃力+50%、スピード;25%、抵抗力+25%`,
                 is_omega: true,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: '拒絶',
                 name_eng: 'Repulse',
                 image: '/ability/tex.ability_luke_jediknight_special02.png',
@@ -2962,6 +4842,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: 'ジェダイの帰還',
                 name_eng: 'Return of the Jedi',
                 image: '/abilityui/tex.abilityui_passive_jedi.png',
@@ -2969,25 +4850,27 @@ const characterAbilities: characterAbilities[] = [
                 
                 ジェダイ・ナイト・ルーク・スカイウォーカーの各ターン開始時、遭遇終了まで敵全体のスピードがルークのベーススピードまで減少し、この方法によってスピードが制限されると敵のベーススピードは増加できなくなる(ベースの値は、強化や弱体化効果が適用される前の遭遇開始時の値となる)。このスピード制限はレイドボスには影響せず、また征服バトルでルークのスタミナが40を切っている場合や敵側もスピード制限スキルや銀河の伝説を持っている場合は発動しない。
                 
-                遭遇開始時、味方ジェダイ全体(旧共和国ジェダイを除く)に付与スキル「英雄の覚醒」が発生する。`,
+                遭遇開始時、味方ジェダイ全体(旧共和国ジェダイを除く)に付与スキル*「英雄の覚醒」*が発生する。`,
                 is_omega: true,
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: '付与スキル',
+                cooldown: 10,
                 name_jp: '英雄の覚醒',
                 name_eng: 'Heroes Arise',
                 image: '/ability/tex.ability_luke_jediknight_special03.png',
                 description_jp: `味方全体の弱体化効果を全て解除し、味方ジェダイをアシストに呼ぶ(ダメージは20%減少)。味方ジェダイ全体(旧共和国ジェダイを除く)のHPとプロテクションが25%回復し、2ターンの間ジェダイの意志が発生する。ジェダイ・ナイト・ルーク・スカイウォーカーのターンメーターが100%上昇する。
                 
-                このスキルのクールダウンは「英雄の覚醒」が発生している味方の間で共有され、クールダウン操作を無効化する(クールダウン: 10)。`,
+                このスキルのクールダウンは*「英雄の覚醒」*が発生している味方の間で共有され、クールダウン操作を無効化する(クールダウン: 10)。`,
                 is_omega: false,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'ジェダイ・ナイトの決意',
                 name_eng: "Jedi Knight7s Resolve",
                 image: '/abilityui/tex.abilityui_passive_protection.png',
@@ -3012,26 +4895,28 @@ const characterAbilities: characterAbilities[] = [
         ability: [
             {
                 ability_type: 'アルティメットスキル',
+                cooldown: null,
                 name_jp: '終わりだ',
                 name_eng: "It's Over",
                 image: '/ability/tex.ability_globiwan_ultimate.png',
-                description_jp: `使用するにはアルティメットチャージが50%以上必要
+                description_jp: `使用するには#アルティメットチャージ#が50%以上必要
 
-                アルティメットチャージ: ジェダイ・マスター・ケノービはスキルを使用するとアルティメットチャージを行う。ジェダイ・マスター・ケノービがリーダーの場合、味方ライトサイドが通常スキルを使用すると、ケノービのアルティメットチャージが3%上昇(味方のターンの場合はその2場合)。
+                #アルティメットチャージ:# ジェダイ・マスター・ケノービはスキルを使用するとアルティメットチャージを行う。ジェダイ・マスター・ケノービがリーダーの場合、味方ライトサイドが通常スキルを使用すると、ケノービのアルティメットチャージが3%上昇(味方のターンの場合はその2場合)。
                 
                 バトルの開始時に銀河共和国でもある味方非同盟のフォースの使い手(ライトサイド)がいる場合、味方ジェダイ全体は敵のシスをターゲット中、プロテクションを無効化し、敵シスはバトル終了までカウンター不可となる。味方ライトサイドの弱体化効果を全て解除する。味方ライトサイド全体はこのスキルで使用したアルティメットチャージと同等の割合のマスターを得る(スタック可能)。アルティメットチャージ100%で2倍、遭遇終了まで有効。
                 
-                100%を下回るアルティメットチャージを使用すると、ジェダイ・マスター・ケノービに2ターンの有利の効果が発生する(コピー、解除、阻止不可)。味方銀河共和国全体のプロテクションが3ターンの間20%上昇する(解除、阻止不可)。
+                100%を下回るアルティメットチャージを使用すると、ジェダイ・マスター・ケノービに2ターンの*有利*の効果が発生する(コピー、解除、阻止不可)。味方銀河共和国全体のプロテクションが3ターンの間20%上昇する(解除、阻止不可)。
                 
                 アルティメットチャージを100%使用した場合、ジェダイ・マスター・ケノービに5ターンの有利の強化効果が発生する(コピー、解除、阻止不可)。味方ライトサイド全体のHPとプロテクションが60%回復し、味方銀河共和国全体のプロテクションが3ターンの間50%上昇する(解除、阻止不可)。
                 
-                有利: ターン外に攻撃すると35%の増加ダメージを与える。カウンター率が100%上昇。スピードが35%減少。アルティメットチャージは獲得不可`,
+                *有利:* ターン外に攻撃すると35%の増加ダメージを与える。カウンター率が100%上昇。スピードが35%減少。アルティメットチャージは獲得不可`,
                 is_omega: false,
                 is_zeta: false,
                 is_omicron: false,
                 is_ultimate: true,
             }, {
                 ability_type: '通常スキル',
+                cooldown: null,
                 name_jp: '烈火の剣さばき',
                 name_eng: 'Ardent Bladework',
                 image: '/ability/tex.ability_globiwan_basic.png',
@@ -3042,6 +4927,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 2,
                 name_jp: '私の義務を果たす',
                 name_eng: 'I Will Do What I Must',
                 image: '/ability/tex.ability_globiwan_special01.png',
@@ -3052,6 +4938,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: '特殊スキル',
+                cooldown: 5,
                 name_jp: 'やあ',
                 name_eng: 'Hello There',
                 image: '/ability/tex.ability_globiwan_special02.png',
@@ -3064,6 +4951,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: true,
             }, {
                 ability_type: 'リーダースキル',
+                cooldown: null,
                 name_jp: '共鳴する意志',
                 name_eng: 'Harmonious Will',
                 image: '/abilityui/tex.abilityui_passive_harmoniouswill.png',
@@ -3082,6 +4970,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: true,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: 'フォースと共にあれ',
                 name_eng: 'May The Force Be With You',
                 image: '/abilityui/tex.abilityui_passive_maytheforcebewithyou.png',
@@ -3096,6 +4985,7 @@ const characterAbilities: characterAbilities[] = [
                 is_ultimate: false,
             }, {
                 ability_type: 'ユニークスキル',
+                cooldown: null,
                 name_jp: '銀河の伝説',
                 name_eng: 'Galactic Legend',
                 image: '/abilityui/tex.abilityui_passive_galacticlegend.png',
@@ -3106,7 +4996,7 @@ const characterAbilities: characterAbilities[] = [
                 is_zeta: true,
                 is_omicron: false,
                 is_ultimate: false,
-            },
+            }
         ],
         last_updated: '2024年3月13日'
     }
