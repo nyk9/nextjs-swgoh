@@ -4603,6 +4603,1032 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月19日'
     }, {
+        id: 'Captain-Tarpals',
+        character_name: 'キャプテン・ターパルス',
+        character_image: '/charui/tex.charui_captaintarpals.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'おい、ユーたち！',
+                name_eng: 'Hey, Yousa!',
+                image: '/ability/tex.ability_captaintarpals_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間ショック状態にする。ターゲットに強化効果が発生していた場合、その効果を解除して追加ダメージを与える。味方グンガンは2ターンのアドバンテージを得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '覚悟はいいか',
+                name_eng: 'Ouch Time',
+                image: '/ability/tex.ability_captaintarpals_special01.png',
+                description_jp: `敵全体に固定ダメージを与える。弱体化効果発生中の敵ごとに与えるダメージが10%増加する。敵全体のターンメーターを10%減少させる。弱体化効果が発生していない敵は1ターンの間よろめき状態になる。弱体化効果のない敵分離主義者は1ターンの間スタン状態になる(耐性発揮不可)。味方シールド発生装置からリチャージのスタックを2取り除く。このスキルは回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '諦めるな',
+                name_eng: 'No Giben Up',
+                image: '/ability/tex.ability_captaintarpals_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、ターゲットの弱体化効果ごとに与えるダメージが10%増加する。指定した味方をアシストに呼ぶ。味方グンガンは1ターンのクリティカルダメージ上昇を得て、プロテクションが25%回復する。1ターンの間、ターゲットをマーク状態にする(まだ発生していない場合)。ターゲットが分離主義者の場合、2ターンの間、敵リーダーもマーク状態にする(解除、回避、耐性発揮不可)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'ミーが何か手を考える',
+                name_eng: "Mesa Tink of Something",
+                image: '/abilityui/tex.abilityui_passive_mesatinkofsomething.png',
+                description_jp: `バトル開始時、キャプテン・ターパルスの最大HPが75%減少し、それと同量分、最大プロテクションが上昇する。キャプテン・ターパルスがターン外に攻撃するたび、最大プロテクション5%分のボーナス固定ダメージを与え(回避不可)、1ターンのキャプテン・ターパルスと最弱の味方グンガンのプロテクションが10%回復する。
+                
+                キャプテン・ターパルスがクリティカルヒットを決めるたび、味方シールド発生装置からリチャージのスタックを1取り除く。味方シールド発生装置から取り除かれたリチャージのスタックごとに、味方グンガンの防御突破力が1ターンの間5%上昇する(スタック可能)。
+                
+                敵が弱体化効果を受けるたび、キャプテン・ターパルスのターンメーターが1%上昇する。弱体化効果発生中の敵がキャプテン・ターパルスを攻撃するたび、キャプテン・ターパルスはカウンター攻撃を行う。
+                
+                アクティブな味方シールド発生装置がある場合: キャプテン・ターパルスのターン開始時、キャプテン・ターパルスの弱体化効果を全て解除して挑発を無効化(=無視?)し、キャプテン・ターパルスがターン外に攻撃するたび、1ターンの強化無効を発生させる。
+                
+                $テリトリーバトルの場合: $各遭遇開始時、アクティブな味方グンガンごとにキャプテン・ターパルスの攻撃力が20%上昇し、グンガンの味方全体が2ターンのクリティカルダメージ上昇を得て、遭遇終了まで最大プロテクションが100%上昇する。
+                
+                各味方グンガンのターン開始時に、味方シールド発生装置からリチャージのスタックを1取り除く。
+                
+                各味方グンガンは、HPが初めて50%を下回ると、HPとプロテクションが100%回復する。キャプテン・ターパルスのターン開始時にその最大プロテクションが50%を超えている場合、グンガン全体が2ターンの攻撃力上昇を得る。それ以外の場合は、2ターンの防御力上昇を得る。
+                
+                味方グンガンはめまい状態またはスタン状態になるたび、その効果を解除してクールダウンをリセットし、ボーナスターンを得る。キャプテン・ターパルスがクリティカルヒットを決めるたび、味方シールド発生装置に「プラズマシールド」のスタックを1追加する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月19日'
+    }, {
+        id: 'Captain-Drogan',
+        character_name: 'キャプテン・ドロガン',
+        character_image: '/charui/tex.charui_captaindrogan.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '同時射撃',
+                name_eng: 'Coordinated Shot',
+                image: '/ability/tex.ability_captaindrogan_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。リーダースロットの味方がタンクの場合、この攻撃は回避できない。
+                
+                ドロガンのターンの場合、ターゲットを1ターンの間スタン状態にする。ドロガン以外のターンで敵が帝国の場合、1ターンの攻撃力低下を発生させる。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '援護射撃',
+                name_eng: 'Fire Support',
+                image: '/ability/tex.ability_captaindrogan_special01.png',
+                description_jp: `ターゲットの強化効果を全て解除し、特殊ダメージを2回与える。既に弱体化効果が発生している場合は、追加で特殊ダメージを与える。ターゲットを2ターンの間炎上状態にする。
+                
+                ターゲットが既に炎上状態の場合、まだ炎上が発生していないランダムな敵を炎上状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '知略',
+                name_eng: 'Battle Plan',
+                image: '/ability/tex.ability_captaindrogan_special02.png',
+                description_jp: `指定した味方と*知略*状態の味方の弱体化効果を全て解除する。指定した味方にまた知略が発生していない場合、その味方はバトル終了まで知略を得る(コピー、解除、阻止不可)。
+                
+                知略状態の味方全体をアシストに呼ぶ。ドロガン・指定した味方・知略状態の味方のプロテクションが20%回復する。指定した味方が反乱軍の場合、その味方のプロテクションが30%回復する。
+                
+                *知略: *攻撃力と有効性が25%上昇する`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '副司令官',
+                name_eng: 'Second in Command',
+                image: '/abilityui/tex.abilityui_passive_secondincommand.png',
+                description_jp: `ドロガンの有効性が50%上昇する。ドロガンはターンメーターが減少するたび、プロテクションが20%回復し、1ターンの間攻撃力が60%上昇する(1ターンに1回限り)。各バトルでドロガンが初めて自分のターンで「同時射撃」を使用すると、75%の増加ダメージを与える。
+                
+                バトル開始時、ドロガンは遭遇終了まで知略を得る。知略状態の味方がターン中にスキルを使用するたび、ドロガンはアシストを行い、30%の減少ダメージを与える(1ターンに1回限り)。ドロガンが敵にダメージを与えるたび、ドロガンと知略状態の味方全体のプロテクションが5%回復する。味方反乱軍は、知略によるステータス効果が2倍。
+                
+                各遭遇開始時、リーダースロットの味方が反乱軍タンクの場合、ドロガンは1ターンのプロテクション上昇(100%)を得る。
+                
+                $グランドアリーナの場合: $ドロガンの最大HPが50%上昇する。
+                
+                バトル開始時、リーダースロットの味方が反乱軍タンクの場合、ドロガンはスキルブロックを無効化する。各ターン開始時、ドロガンはランダムな味方の弱体化効果を全て解除し、HPとプロテクションを25%回復する。
+                
+                バトル開始時、リーダースロットの味方が反乱軍ファイター・サポートの場合、ドロガンがクリティカルヒットを決めるたび、反乱軍の味方全体のターンメーターが10%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月19日'
+    }, {
+        id: 'Captaion-Han-Solo',
+        character_name: 'キャプテン・ハン・ソロ',
+        character_image: '/charui/tex.charui_hoth_han.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '無力化ショット',
+                name_eng: 'Disabling Shot',
+                image: '/ability/tex.ability_han_hoth_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンのめまい効果を発生させる。帝国軍はこの攻撃に耐性発揮、回避が行えず、2倍のダメージを受ける。ハンのHPが最大値の場合、ターンメーターが30%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 10,
+                name_jp: '潜伏',
+                name_eng: 'Hunker Down',
+                image: '/ability/tex.ability_han_hoth_special01.png',
+                description_jp: `ハンと指定した他の味方の弱体を全て解除し、両者のHPがハンの最大HPの40%分回復し、ターンメーターが25%上昇する。指定した味方がHPが最大値の場合、さらにプロテクションが20%回復する。
+                
+                味方が弱体を受けると、このスキルのクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 6,
+                name_jp: 'サーチ&レスキュー',
+                name_eng: 'Search and Rescue',
+                image: '/ability/tex.ability_han_hoth_special02.png',
+                description_jp: `戦闘不能になった味方をランダムに1体、HP1%、ターンメーター0%の状態で復活させる。それが反乱軍の場合、HPが50%回復し、ターンメーターが50%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '間一髪',
+                name_eng: 'Nick of Time',
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `キャプテン・ハン・ソロのクリティカル率が15%、クリティカルダメージが30%上昇する。さらに自ターン終了時、ハンは最大HPの10%分回復する。HPが既に最大値の場合、最もコンディションの悪い味方が代わりに回復する。ハンは通常攻撃を使用すると、3ターンの間最大HPが10%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月19日'
+    }, {
+        id: 'Captain-Phasma',
+        character_name: 'キャプテン・ファズマ',
+        character_image: '/charui/tex.charui_phasma.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '猛襲',
+                name_eng: 'Onslaught',
+                image: '/ability/tex.ability_phasma_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、クリティカルヒット時に2ターンの間防御力を低下させる。クリティカルヒットでなかった場合は、ファズマに50%の確率で2ターンの間アドバンテージが発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '勝利の更新',
+                name_eng: 'Victory March',
+                image: '/ability/tex.ability_phasma_special02.png',
+                description_jp: `味方全体に50%のターンメーター上昇と2ターンのアドバンテージが発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '一斉攻撃',
+                name_eng: 'Fusillade',
+                image: '/ability/tex.ability_phasma_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、90%の確率で2ターンの間スピードを低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '各自攻撃',
+                name_eng: 'Fire at Will',
+                image: '/abilityui/tex.abilityui_leader_default.png',
+                description_jp: `味方ファースト・オーダーの有効性が20%上昇し、各遭遇開始時に2ターンの間アドバンテージを得る。アドバンテージ発生中はクリスタルヒットを受けない。味方は攻撃するたび、20%の確率でランダムな味方をアシストに呼ぶ。味方がファースト・オーダーの場合、この確率は3倍になる。味方にアドバンテージが発生していた場合、再び2ターンの間アドバンテージを得る。
+                
+                $テリトリーウォーズの場合: $ランダムな味方をアシストに呼ぶ確率がさらに10%上昇する。キャプテン・ファズマのスピードが100上昇。味方ファースト・オーダーがターン外に攻撃するたび、味方ファースト・オーダーのHPとプロテクションが5%回復する。味方ファースト・オーダーがアドバンテージを得るたび、その味方はバトル終了まで攻撃力10%も得て(スタック可能)、ファースト・オーダーの味方全体のターンメーターが7.5%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月19日'
+    }, {
+        id: 'Captain-Rex',
+        character_name: 'キャプテン・レックス',
+        character_image: '/charui/tex.charui_captainrex.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '狙って撃つ',
+                name_eng: 'Aim, Then Shoot',
+                image: '/ability/tex.ability_captainrex_basic.png',
+                description_jp: `ターゲットに物理ダメージを2回与える。この攻撃がクリティカルヒットを決めるたび、キャプテン・レックスとランダムな味方クローン・トルーパーまたはフェニックスの弱体化効果を全て解除する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'マスター・マークスマン',
+                name_eng: 'Master Marksman',
+                image: '/ability/tex.ability_captainrex_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンのスタン状態にする。この攻撃がクリティカルヒットすると、味方全体のHPとプロテクションが15%回復する。この攻撃でターゲットを戦闘不能にした場合、クローン・トルーパーとフェニックスの味方全体のクールダウンをリセットする。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '制圧射撃',
+                name_eng: 'Suppressing Fire',
+                image: '/ability/tex.ability_captainrex_special02.png',
+                description_jp: `敵全体に2ターンの抵抗力低下(回避不可)とめまいを発生させる。敵全体に物理ダメージを与え、2ターンの間攻撃力を低下させる。このスキルにより発生させた弱体化効果ごとに味方クローン・トルーパーとフェニックスのターンメーターが5%上昇し、味方全体が2ターンのクリティカル率上昇と攻撃力上昇を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '消えた戦士',
+                name_eng: 'The Lost Commander',
+                image: '/abilityui/tex.abilityui_passive_thelostcommander.png',
+                description_jp: `キャプテン・レックスのクリティカル率が25%、最大HPが40%、スピードが25、抵抗力が40%上昇する。
+                
+                味方フェニックスが特殊スキルを使用するたび、レックスがアシストを行い、40%の減少ダメージを与える。味方クローン・トルーパーはHPが50%を下回るたび、HPとプロテクションが35%回復し(1ターンに1度限り)、2ターンの間、防御力と抵抗力が50%上昇する。味方クローン・トルーパーまたはフェニックスに弱体化効果が発生するたび、レックスのターンメーターが弱体化効果ごとに5%上昇し、味方全体のHPとプロテクションが5%回復する。
+                
+                $グランドアリーナの場合: $レックスのクリティカルダメージが30%、最大HPが追加で60%、スピードが25上昇する。
+                
+                $5対5のグランドアリーナで、バトル開始時に味方全体がフェニックスの場合: $味方はスキルブロック状態またはめまい状態になるたび、その効果を解除して敵全体に3ターンの時間経過ダメージのスタックを2つ発生させる(回避、耐性発揮不可)。キャプテン・レックスは通常スキルを使用するたび、HPとプロテクションが10%回復する。
+                
+                $3対3のグランドアリーナで、遭遇開始時に味方全体がクローン・トルーパーの場合: $味方はアシストを行うたび、50%の確率でターゲットの強化効果を全て解除し、バトル終了までアーマー破壊を発生させる(回避、耐性発揮不可)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月19日'
+    }, {
+        id: 'Kuiil',
+        character_name: 'クイール',
+        character_image: '/charui/tex.charui_kuiil.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'エンジニアのギャンビット',
+                name_eng: "Engineer's Gambit",
+                image: '/ability/tex.ability_kuiil_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、3ターンの間炎上状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 2,
+                name_jp: 'ボルタイックショット',
+                name_eng: 'Voltaic Shot',
+                image: '/ability/tex.ability_kuiil_special01.png',
+                description_jp: `ターゲットに特殊ダメージを与え、1ターンの間スタン状態にし、3ターンのショックとスピード低下を与える。ターゲットに既に炎上効果が発生している場合、2ターンの間エクスポーズ状態にする。ターゲットに既にショックが発生している場合は、効果が発生していない最弱の敵を3ターンの間ショック状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '有無は言わせん',
+                name_eng: 'I Have Spoken',
+                image: '/ability/tex.ability_kuiil_special02.png',
+                description_jp: `味方全体のHPがクイールの最大HPの20%分回復し、プロテクションがクイールの最大プロテクションの20%分回復する(味方ドロイドとならず者はその2倍)。味方ならず者のターンメーターが25%上昇する。味方ならず者とライトサイドのドロイドに2ターンの*メカニックの知識*が発生する(コピー不可)。
+                
+                #メカニックの知識は、味方の勢力に応じて異なるボーナス効果を付与する:#
+                
+                - +ドロイド:+ 攻撃力が40%上昇する。戦闘不能になると、HPとプロテクションが80%の状態で復活する
+                - +ならず者:+ クリティカル率が20%上昇し、クリティカルダメージと防御突破力が40%上昇する`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'フロンティア・ウィズダム',
+                name_eng: 'Frontier Wisdom',
+                image: '/abilityui/tex.abilityui_passive_frontierwisdom.png',
+                description_jp: `バトル開始時、味方ドロイドとならず者はクイールの最大HP、攻撃力、有効性の40%を得る。またクイールが初めて戦闘不能になるまで、味方はクイールの最大プロテクションの40%を得る。
+                
+                敵にショックが発生するたび、クイールと味方ドロイドのプロテクションが20%回復する。
+                
+                クイールとIG-11が味方にいる間: クイールとIG-11のヘルス・スティールが10%、有効性が30%上昇する。クイールはクリスタルヒットやスタンを受けず、IG-11がクリティカルヒットを決めるたびプロテクションが20%回復する。`,
+                is_omega: true,
+                is_omicron: true,
+                is_zeta: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    }, {
+        id: 'Grand-Master-Yoda',
+        character_name: 'グランドマスター・ヨーダ',
+        character_image: '/charui/tex.charui_yodagrandmaster.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'アタル',
+                name_eng: 'Ataru',
+                image: '/ability/tex.ability_yodagrandmaster_basic.png',
+                description_jp: `ターゲットに特殊ダメージを与え、1ターンの間有効性を低下させる。その敵のHPが50%以上残っている場合、ヨーダのターンメーターが40%上昇し、2ターンのフォアサイトが発生する。その敵のHPが50%未満の場合、2ターンの間攻撃力と防御突破力が上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'マスターストローク',
+                name_eng: 'Masterstroke',
+                image: '/ability/tex.ability_yodagrandmaster_special03.png',
+                description_jp: `敵全体に特殊ダメージを与える。その後、敵に発生している各強化効果をグランドマスター・ヨーダに3ターン発生させる(*ユニーク*ステータス効果はコピー不可)。グランドマスター・ヨーダは、他の味方ジェダイが生存している限り、追加ターンを得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'アンストッパブル・フォース',
+                name_eng: 'Unstoppable Force',
+                image: '/ability/tex.ability_yodagrandmaster_special01.png',
+                description_jp: `ターゲットに特殊ダメージを与え、ターンメーターを70%減少させる。その敵のHPが100%を下回っている場合、1ターンの間スタン状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '戦闘瞑想',
+                name_eng: 'Battle Meditation',
+                image: '/ability/tex.ability_yodagrandmaster_special02.png',
+                description_jp: `ヨーダが2ターンの抵抗力上昇、プロテクション上昇(35%)、フォアサイトを得て、ヨーダに発生している全ての非ユニーク強化(ステルスと挑発を除く)を各味方に2ターン付与する。さらにヨーダのターンメーターが35%上昇し、生存している味方ジェダイ1体につき10%ターンメーターが上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'グランドマスターの導き',
+                name_eng: "Grand Master's Guidance",
+                image: '/abilityui/tex.abilityui_passive_removeharmful.png',
+                description_jp: `味方ジェダイの抵抗力が30%上昇する。味方ジェダイが弱体に対して耐性発揮を行うと、その味方は次の効果を得る: ターンメーター30%上昇、2ターンのクリティカル率上昇し、2ターンのクリティカルダメージ上昇。味方ジェダイが弱体を受けると、ターン終了時その味方に1ターンの抵抗力上昇が発生する。グランドマスター・ヨーダはショック効果を無効化する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    }, {
+        id: 'Grand-Moff-Tarkin',
+        character_name: 'グランドモフ・ターキン',
+        character_image: '/charui/tex.charui_tarkinadmiral.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'グランドモフ・アタック',
+                name_eng: "Grand Moff's Attack",
+                image: '/ability/tex.ability_grandmofftarkin_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。この攻撃は、生存している味方1体ごとに10%ダメージが上昇する。次に「超火力」が使用されるまで、ターキンの有効性が50%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '超火力',
+                name_eng: "Ultimate Firepower",
+                image: '/ability/tex.ability_grandmofftarkin_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、100%の確率でターンメーターを50%減少させる。この攻撃はターキンの有効性値の2倍分、攻撃力が上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '威圧戦術',
+                name_eng: "Intimidation Tactics",
+                image: '/ability/tex.ability_grandmofftarkin_special02.png',
+                description_jp: `3ターンの間有効性が上昇する。敵全体のクリティカル率および攻撃力を3ターンの間低下させる。敵反乱軍はこの弱体に耐性発揮が行えない。さらに弱体を受けた敵1体ごとにターンメーターが15%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'タイト・グリップ',
+                name_eng: "Tighten the Grip",
+                image: '/abilityui/tex.abilityui_passive_speed.png',
+                description_jp: `味方帝国軍のスピードが30上昇する。味方帝国軍のターン中にHPが100%を下回った敵には、2ターンの防御力低下およびエクスポーズを発生させる。この効果には耐性発揮が行えない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '冷酷なる信念',
+                name_eng: "Callous Conviction",
+                image: '/abilityui/tex.abilityui_passive_empire.png',
+                description_jp: `グランドモフ・ターキンの防御力が、有効性の値分上昇する。さらに弱体を受けている敵1体ごとに有効性が20%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    }, {
+        id: 'General-Grievous',
+        character_name: 'グリーヴァス将軍',
+        character_image: '/charui/tex.charui_grievous.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'フィリアス・アサルト',
+                name_eng: "Furious Assault",
+                image: '/ability/tex.ability_grievous_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間、回復無効状態にする。この攻撃は回避、カウンターができない。ターゲットに既に弱体が発生していた場合、さらに30%の増加ダメージを与える。グリーヴァスの攻撃は、物理ダメージの代わりに最大HPに応じたダメージを与える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'グリーヴァス・ウーンド',
+                name_eng: "Grievous Wonds",
+                image: '/ability/tex.ability_grievous_special02.png',
+                description_jp: `敵全体にグリーヴァスの最大HPに応じた物理ダメージを与え、2ターンのターゲットロックを発生させる。さらに敵のターンメーターを30%減少させる。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '駆けまわる怪物',
+                name_eng: "Skittering Horror",
+                image: '/ability/tex.ability_grievous_special01.png',
+                description_jp: `2ターンのヘルス・スティール上昇を得て、ターゲットにグリーヴァスの最大HPに応じた物理ダメージを与え、1ターンの間スタン状態にする。ターゲットに既に弱体化効果が発生していた場合、ターゲットは最大HPの10%を失い、遭遇終了までグリーヴァスの最大HPが10%上昇する(レイドボスと銀河の伝説は対象外、耐性発揮不可)。この攻撃は回避できない。`,
+                is_omega: true,
+                is_omicron: false,
+                is_ultimate: false,
+                is_zeta: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '重圧',
+                name_eng: "Daunting Presence",
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `敵全体のクリティカル回避力が40%、防御力が50%低下する。味方ダークサイドドロイドが耐性発揮されると、遭遇終了までそのドロイドの有効性が10%上昇する(スタック可能)。ターゲットロック状態の敵はカウンター攻撃できない。
+                
+                ターゲットロック状態の敵がダメージを受けると、味方ドロイドと分離主義者のターンメーターが2%上昇する(グリーヴァスに対しては2倍)。攻撃ダメージを受けると、敵ダークサイドのターンメーターが5%、敵ライトサイドの有効性が2%減少する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'メタロイド・モンスター',
+                name_eng: "Metalloid Monstrosity",
+                image: '/abilityui/tex.abilityui_passive_speed.png',
+                description_jp: `グリーヴァスのターン開始時、味方ドロイド全てがグリーヴァスの最大HPの8%相当のダメージを受ける(ライトサイドのドロイドに対しては2倍)。グリーヴァスは遭遇終了まで、味方ドロイド1体につき、最大HPと有効性を5%上昇させる。このダメージではユニットは戦闘不能にならない。
+                
+                全ユニットのターン開始時、グリーヴァスのHPが100%を下回っている場合、ターン終了まで自身とマーク状態の最良コンディションの味方の弱体を全て解除する(=各ターン開始時、グリーヴァスのHPが100%を下回っている場合、自身の弱体化効果を全て解除し、ターン終了まで最もHPが高い味方ドロイド1体をマーク状態にする?)。味方ドロイドまたは分離主義者が戦闘不能になると、グリーヴァスは自身の弱体を全て解除し、全スキルのクールダウンをリセットさせ、ボーナスターンを1得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    }, {
+        id: 'Greedo',
+        character_name: 'グリード',
+        character_image: '/charui/tex.charui_greedo.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '誰が先に撃った？',
+                name_eng: "Who Shot First?",
+                image: '/ability/tex.ability_greedo_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、70%の確率で1ターンの間有効性が上昇する。サーマル・デトネーター付きの敵を攻撃した場合、この攻撃のクリティカルダメージが25%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 5,
+                name_jp: '爆破工作',
+                name_eng: "Explosive Sabotage",
+                image: '/ability/tex.ability_greedo_special01.png',
+                description_jp: `敵全体にサーマル・デトネーターを投擲する。このサーマル・デトネーターは1ターン後に起爆し、爆発したサーマル・デトネーター1つごとにグリードのターンメーターが25%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '脅威',
+                name_eng: "Threaten",
+                image: '/ability/tex.ability_greedo_special02.png',
+                description_jp: `2ターンの間、味方全体のクリティカル率が上昇する。またグリードのクリティカル率分の値分、敵ターゲットのターンメーターを減少させる(レイドボスと銀河の伝説は対象外、耐性発揮不可)。グリードはこれによって減少させた量のターンメーターを得る。ターゲットのターンメーターが20%を下回った場合、1ターンの間スタン状態にする(耐性発揮不可)。さらに、敵ターゲットの強化を全て解除する。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '奇襲',
+                name_eng: "Ambuscade",
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `味方ならず者のクリティカルダメージが50%上昇する。グリードがリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可):
+                
+                *契約: *ターンメーターが50%を下回る敵に通常スキルで10回ダメージを与える(契約達成には味方賞金稼ぎのみが参加可能)
+                
+                *報酬: *バトル終了まで味方賞金稼ぎ全体のクリティカルダメージが50%上昇し、ボーナス効果が発動する`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '挫けぬ心',
+                name_eng: "If at First You Don't Succeed",
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `グリードのクリティカル率が15%上昇し、クリティカルヒット時には50%の確率でもう一度攻撃する(制限なし)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'グリードのボーナス',
+                name_eng: "Greedo's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `グリードは契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                *ボーナス: *バトル終了までグリードのヘルス・スティールが50%、クリティカルダメージが25%上昇し、カウンター率が75%になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    }, {
+        id: 'Greef-Karga',
+        character_name: 'グリーフ・カルガ',
+        character_image: '/charui/tex.charui_greefkarga.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'デュアルショット',
+                name_eng: "Dual Shot",
+                image: '/ability/tex.ability_greefkarga_basic.png',
+                description_jp: `ターゲットに物理ダメージを2回与え、2ターンのめまいを発生させる。ボーナスがアクティブな味方全体のHPとプロテクションが5%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 6,
+                name_jp: '冷たくしてでも連れてこい',
+                name_eng: "Bring Them in Cold",
+                image: '/ability/tex.ability_greefkarga_special01.png',
+                description_jp: `ターゲットの強化効果を全て解除する(回避不可)。味方賞金稼ぎ全体をアシストに呼ぶ。ボーナスがアクティブな味方の与えるダメージが30%増加する。このスキルで敵が戦闘不能になった場合、味方賞金稼ぎの攻撃力、防御突破力、クリティカルダメージ、クリティカル率、ヘルス・スティールが3ターンの間上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 5,
+                name_jp: '色を付ける',
+                name_eng: "Sweeten the Deal",
+                image: '/ability/tex.ability_greefkarga_special02.png',
+                description_jp: `味方賞金稼ぎの弱体化効果を全て解除する。味方賞金稼ぎ全体に2ターンの報復効果を与え、HPとプロテクションを25%回復する(味方のボーナスがアクティブな場合は効果2倍)。ボーナスがアクティブな味方は抵抗力が2ターン上昇し、ターンメーターが50%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'ロイヤリティ・ペイ',
+                name_eng: "Loyalty Pays",
+                image: '/abilityui/tex.abilityui_passive_mil_fal_pristine.png',
+                description_jp: `味方賞金稼ぎの最大プロテクションが30%上昇する。味方賞金稼ぎが強化効果を受けると、その味方のプロテクションが5%回復する。グリーフがリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可):
+                
+                *契約: *ターン外に20回攻撃する(契約達成には味方賞金稼ぎのみが参加可能)
+                
+                *報酬: *味方賞金稼ぎ全体がボーナスを獲得し、クリティカル率と攻撃力が20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'ギルドのボス',
+                name_eng: "Boss of the Guild",
+                image: '/abilityui/tex.abilityui_passive_guildboss.png',
+                description_jp: `遭遇開始時、グリーフは2ターンの間ステルス状態になる。賞金稼ぎがボーナスを獲得するたび、味方賞金稼ぎのクールダウンが1減少し、グリーフは次のボーナスを獲得する:カウンター率、クリティカル回避力、最大体力(=最大HP?)が10%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'グリーフ・カルガのボーナス',
+                name_eng: "Greef Karga's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `グリーフは契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                *ボーナス*: グリーフは味方賞金稼ぎの弱体化効果を全て解除し、HPとプロテクションを100%回復する。自分の各ターン開始時、グリーフは1ターンの間ステルス状態になる。弱体化効果を受けるたび、グリーフのクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    }, {
+        id: 'Krrsantan',
+        character_name: 'クルルサンタン',
+        character_image: '/charui/tex.charui_krrsantan.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ナックル・ダスター',
+                name_eng: "Knuckle Duster",
+                image: '/ability/tex.ability_krrsantan_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間有効性を低下させる。さらに10%の確率で2ターンのショックを発生させる。
+                
+                バトル開始時に味方全体がハット・カルテルで、クルルサンタンが挑発中の場合、ターゲットに2ターンの回避力低下とショックを発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '猛攻',
+                name_eng: "Dismember",
+                image: '/ability/tex.ability_krrsantan_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。2ターンの防御力上昇と挑発を得て、HPとプロテクションが10%回復する。
+                
+                リーダースロットにいる味方がハット・カルテルの場合、2ターンの間プロテクションが上昇し、味方ハット・カルテルごとにHPとプロテクションが5%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 8,
+                name_jp: '解体',
+                name_eng: "Dismember",
+                image: '/ability/tex.ability_krrsantan_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間またはクルルサンタンが戦闘不能になるまで*「武装解除」*を発生させ、その他の敵全体からその効果を解除する。この弱体化効果はコピー、解除、耐性発揮できない。このスキルはクールダウン状態からスタートする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '恐ろしく獰猛',
+                name_eng: "Formidable Ferocity",
+                image: '/abilityui/tex.abilityui_passive_formidableferocity.png',
+                description_jp: `味方ならず者のヘルス・スティール、最大HP、最大プロテクションが30%上昇する。
+                
+                味方ハット・カルテルがクリティカルヒットを受けるたび、2ターンの間攻撃力が5%上昇する(スタック可能)。
+                
+                クルルサンタンが同盟スロットではなく、リーダースロットにいる場合、次の契約が有効になる:
+                
+                *契約: *敵リーダーを倒す(契約に貢献できるのは味方ならず者のみ)。
+                
+                *報酬: *賞金稼ぎの味方全体のボーナスが有効になり、賞金稼ぎまたはならず者の味方全体のヘルス・スティールと最大HPが25%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '闘技場のチャンピオン',
+                name_eng: "Champion of the Fighting Pits",
+                image: '/abilityui/tex.abilityui_passive_hardware.png',
+                description_jp: `バトル開始時、クルルサンタンの防御力と最大HPが30%上昇する。クルルサンタンは挑発を失うたび、HPとプロテクションが10%回復する。
+                
+                遭遇開始時に味方全体がハット・カルテルだった場合、各バトル開始時にクルルサンタンが挑発を行い、スピードが上昇する(2ターンの間)。リーダースロットの味方のプロテクションが50%を超えている場合、クルルサンタンは挑発を失うたびに1ターンの挑発を行う。初めて戦闘不能になると、リーダースロットの味方のターン終了時にHP60%で復活し、プロテクションが60%回復する。「解体」がクールダウン状態から開始しなくなり、各遭遇開始時にそのクールダウンがリセットされる。
+                
+                $グランドアリーナの場合: $バトル開始時、クルルサンタンの最大プロテクションが40%上昇する。クルルサンタンがアクティブな間、敵全体の有効性が30%低下する。
+                
+                バトル開始時に味方全体がハット・カルテルだった場合: クルルサンタンはスキルブロックとクールダウン上昇を無効化し、リーダースロット(自分を除く)の味方HPが初めてHPが初めて50%を下回ると、2ターンの挑発を行い、リーダースロットの味方のプロテクションが50%回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: 'クルルサンタンのボーナス',
+                name_eng: "Krrsantan's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `クルルサンタンは契約報酬を受け取るたび、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                *ボーナス: *バトル終了まで、クルルサンタンのクリティカル回避力が50%上昇する。クルルサンタンは2ターンの挑発を行い、HPとプロテクションが40%回復する。
+                
+                リーダースロットの味方が銀河の伝説とハット・カルテルの場合、クルルサンタンはさらに2ターンのダメージ耐性と、バトル終了まで抵抗力が30%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    }, {
+        id: 'Director-Krennic',
+        character_name: 'クレニック長官',
+        character_image: '/charui/tex.charui_krennic.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: '防御力検証',
+                name_eng: "Test Their Defenses",
+                image: '/ability/tex.ability_krennic_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、3ターンの間抵抗力を低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'デス・トルーパー・アサルト',
+                name_eng: "Death Trooper Assault",
+                image: '/ability/tex.ability_krennic_special02.png',
+                description_jp: `敵全体に特殊ダメージを与え、70%の確率で2ターンのよろめき効果を発生させる。弱体された敵がいる場合、1体ごとにHP20%でデス・トルーパーを復活させる。デス・トルーパーがいる場合、デス・トルーパーをアシストに呼ぶ。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '実験兵器',
+                name_eng: "Experimental Weaponry",
+                image: '/ability/tex.ability_krennic_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの弱体を発生させる(アタッカー: スタン、ヒーラー/サポート: スキルブロック、タンク: 強化無効)。ターゲットが反乱軍の場合、2ターンの間スピードを低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '先進兵器研究部門長官',
+                name_eng: "Director of Advanced Weapons Research",
+                image: '/abilityui/tex.abilityui_passive_empire.png',
+                description_jp: `味方帝国軍のクリティカル率が25%、有効性が25%上昇する。味方帝国軍のターン中にクリティカルヒットを受けた弱体発生中の敵は、1ターンの間スキルブロック状態になる。この効果には耐性発揮が行えない。味方帝国軍はクリスタルヒット時にプロテクションが10%回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '絶大なる力',
+                name_eng: "Immeasurable Power",
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `弱体化効果発生中の敵1体につき、クレニック長官のクリティカルダメージが10%上昇し、敵反乱軍1体につき、クリティカルダメージが10%上昇する。デス・トルーパーがいる場合、デス・トルーパーもこれらのボーナスを得る。
+                
+                $グランドアリーナの場合$: クレニックの防御突破力、HP、攻撃力が30%上昇する。デス・トルーパーがいる場合、デス・トルーパーもこれらのボーナスを得る。クレニックが攻撃するたび、デス・トルーパーがアシストを行い、クールダウンが1減少する。味方デス・トルーパーがアクティブな間、クレニックとデス・トルーパーは挑発を無効化する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    }, {
+        id: 'Clone-Sergeant-Phase-I',
+        character_name: 'クローン・サージェント(フェーズI)',
+        character_image: '/charui/tex.charui_trooperclonegreen.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'Z-6ロータリーブラスター',
+                name_eng: "Z-6 Rotary Blaster",
+                image: '/ability/tex.ability_clonesergeant_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、クリティカルヒット時にターンメーターが50%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '制圧射撃',
+                name_eng: "Suppressive Fire",
+                image: '/ability/tex.ability_clonesergeant_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、ターンメーターを50%減少させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'ユニークスキル',
+                cooldown: null,
+                name_jp: '集中射撃',
+                name_eng: "Councentrated Fire",
+                image: '/abilityui/tex.abilityui_passive_attack_buff.png',
+                description_jp: `生存している味方クローン1体ごとに、クローン・サージェント(フェーズI)のクリティカル率が4.5%上昇する。さらにクリティカルダメージが10%上昇し、クリティカルヒット時には2ターンの間攻撃力が上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    }, {
+        id: 'Clone-Wars-Chewbacca',
+        character_name: 'クローン大戦チューバッカ',
+        character_image: '/charui/tex.charui_clonewarschewbacca.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'ボウキャスター',
+                name_eng: "Bowcaster",
+                image: '/ability/tex.ability_chewbacca_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、55%の確率でターンメーターを50%減少させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ウーキーレイジ',
+                name_eng: "Wookiee Rage",
+                image: '/ability/tex.ability_chewbacca_special01.png',
+                description_jp: `2ターンの間、チューバッカが挑発を行いHPが30%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '反抗のうなり',
+                name_eng: "Defiant Roar",
+                image: '/ability/tex.ability_chewbacca_special02.png',
+                description_jp: `チューバッカが自分に発生している弱体を全て解除し、最大HPの50%分回復する。さらに3ターンの間防御力が上昇し、50%の確率でターンメーターが25%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: 'ウーキーの決意',
+                name_eng: "Wookiee Resolve",
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `味方全体の防御力が50上昇し、味方はダメージを受けると50%の確率で3ターンの間防御力が上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    }, {
+        id: 'Qui-Gon-Jinn',
+        character_name: 'クワイ＝ガン・ジン',
+        character_image: '/charui/tex.charui_quigon.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                cooldown: null,
+                name_jp: 'クイックストライク',
+                name_eng: "Quick Strike",
+                image: '/ability/tex.ability_quigonjinn_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、65%の確率でターンメーターを30%減少させる。65%の確率でターンメーターが30%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 2,
+                name_jp: '連携アサルト',
+                name_eng: "Harmonious Assault",
+                image: '/ability/tex.ability_quigonjinn_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、ランダムな味方をアシストに呼ぶ。アシストする味方は75%の増加ダメージを与え、HPが20%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '謙虚な一撃',
+                name_eng: "Humbling Blow",
+                image: '/ability/tex.ability_quigonjinn_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、強化効果を全て解除する。強化効果が解除された場合、味方全体が3ターンの攻撃力上昇を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: 'リーダースキル',
+                cooldown: null,
+                name_jp: '俊敏性訓練',
+                name_eng: "Agility Training",
+                image: '/abilityui/tex.abilityui_passive_speed.png',
+                description_jp: `味方ジェダイのスピードが30上昇し、各自のスピードの3倍の攻撃力を得る。さらに各バトル開始時およびいずれかのユニットが戦闘不能になると、2ターンのフォアサイトが発生する。
+                
+                $グランドアリーナの場合: $バトル開始時に銀河の伝説が存在せず、味方が全てジェダイの場合、味方全体は代わりに各自のスピードの30倍の攻撃力を得る(フォアサイト発生中はその2倍)。また味方はクワイ＝ガン・ジンがアクティブな間は戦闘不能にならない。クワイ＝ガン・ジンはダメージ耐性またはステルスを得られなくなり、復活できなくなる。クワイ＝ガン・ジンが戦闘不能になると、味方全体のHPとプロテクションが100%回復し、2ターンの間クワイ＝ガン・ジンの攻撃力の400%を得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月26日'
+    },{
         id: 'General-Kenobi',
         character_name: "ケノービ将軍",
         character_image: '/charui/tex.charui_obiwangeneral.png',

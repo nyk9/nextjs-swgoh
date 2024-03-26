@@ -528,35 +528,35 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_captaintarpals.png',
         abbreviation: "Captain Tarpals",
         skill: `ショック  強化解除   アドバンテージ  固定ダメージ  ターンメーター減少  よろめき  スタン付与  耐性発揮不可  リチャージ  回避不可  アシスト  クリティカルダメージ上昇  回復  マーク状態  解除不可  固定ダメージ  ターンメーター上昇  カウンター  弱体解除  挑発無視  強化無効  攻撃力上昇  防御力上昇  クールダウンリセット  ボーナスターン  プラズマシールド  `,
-        url: '/characters/'
+        url: '/characters/Captain-Tarpals'
     },{
         name: "キャプテン・ドロガン",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_captaindrogan.png',
         abbreviation: "Captain Drogan captaion drogan",
         skill: `回避不可  スタン付与  攻撃力低下  強化解除  炎上  知略  弱体解除  アシスト  回復  プロテクション上昇  スキルブロック無効化 `,
-        url: '/characters/'
+        url: '/characters/Captain-Drogan'
     }, {
         name: "キャプテン・ハン・ソロ",
         property: "ライトサイド、サポート、反乱軍、ならず者",
         src: '/charui/tex.charui_hoth_han.png',
         abbreviation: "Captain Han Solo captain han solo Hoth hoth ホスハン CHOLO CHS cholo chs",
         skill: `めまい付与  ターンメーター上昇  弱体解除  回復  クールダウン減少  復活  `,
-        url: '/characters/'
+        url: '/characters/Captaion-Han-Solo'
     }, {
         name: "キャプテン・ファズマ",
         property: "ダークサイド、サポート、リーダー、ファースト・オーダー",
         src: '/charui/tex.charui_phasma.png',
         abbreviation: "Captain Phasma captain phasma",
         skill: `防御力低下  アドバンテージ  ターンメーター上昇  スピード低下  アシスト  回復  リーダー：スピード上昇  リーダー：攻撃力上昇 `,
-        url: '/characters/'
+        url: '/characters/Captain-Phasma'
     }, {
         name: "キャプテン・レックス",
         property: "ライトサイド、サポート、クローン・トルーパー、フェニックス、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_captainrex.png',
         abbreviation: "CRex crex Captain Rex captain rex ",
         skill: `弱体解除  スタン付与  回復  クールダウンリセット  抵抗力低下  めまい付与  全体攻撃  攻撃力低下  ターンメーター上昇  クリティカル率上昇  攻撃力上昇  アシスト  防御力上昇  抵抗力上昇 `,
-        url: '/characters/'
+        url: '/characters/Captain-Rex'
     }, {
         name: "クイール",
         property: "ライトサイド、サポート、ならず者",
@@ -564,77 +564,77 @@ const characters: Characters[] = [
         abbreviation: "Kuiil kuiil",
         skill: `炎上  スタン付与  ショック  スピード低下  エクスポーズ  回復  ターンメーター上昇
             メカニックの知識`,
-        url: '/characters/'
+        url: '/characters/Kuiil'
     }, {
         name: "グランドマスター・ヨーダ",
         property: "ライトサイド、サポート、リーダー、ジェダイ、銀河共和国",
         src: '/charui/tex.charui_yodagrandmaster.png',
         abbreviation: "GMY gmy Grand Master Yoda grand master yoda",
         skill: `有効性低下  ターンメーター上昇  攻撃力上昇  防御突破力上昇  全体攻撃  ターンメーター減少付与  スタン付与  抵抗力上昇  プロテクション上昇  リーダー：抵抗力上昇  リーダー：クリティカル率上昇  リーダー：クリティカルダメージ上昇  `,
-        url: '/characters/'
+        url: '/characters/Grand-Master-Yoda'
     }, {
         name: "グランドモフ・ターキン",
         property: "ダークサイド、サポート、リーダー、帝国軍、艦隊司令官",
         src: '/charui/tex.charui_tarkinadmiral.png',
         abbreviation: "Grand Moff Tarkin ターキン総督 grand moff tarkin GMT gmt",
         skill: `有効性上昇  ターンメーター減少付与 全体攻撃  クリティカル率減少  攻撃力低下  ターンメーター上昇  リーダー：スピード上昇  防御力低下  エクスポーズ  `,
-        url: '/characters/'
+        url: '/characters/Grand-Moff-Tarkin'
     }, {
         name: "グリーヴァス将軍",
         property: "ダークサイド、アタッカー、リーダー、ドロイド、分離主義者、艦隊司令官",
         src: '/charui/tex.charui_grievous.png',
-        abbreviation: "GG General Grievous general grievous gg",
+        abbreviation: "GG General Grievous general grievous gg ゴキブリーヴァス将軍 容赦なき前進",
         skill: `回復無効  回避不可  カウンター不可  ターゲットロック  ターンメーター減少付与 ヘルススティール上昇  スタン付与  リーダー：クリティカル回避力低下  リーダー：防御力低下  ターンメーター上昇  弱体解除  クールダウンリセット `,
-        url: '/characters/'
+        url: '/characters/General-Grievous'
     }, {
         name: "グリード",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
         src: '/charui/tex.charui_greedo.png',
         abbreviation: "Greedo greedo",
         skill: `有効性上昇  サーマル・デトネーター  ターンメーター上昇  クリティカル率上昇  ターンメーター減少  スタン付与  強化解除  リーダー：クリティカルダメージ上昇  カウンター `,
-        url: '/characters/'
+        url: '/characters/Greedo'
     }, {
         name: "グリーフ・カルガ",
         property: "ライトサイド、サポート、リーダー、賞金稼ぎ、ならず者",
         src: '/charui/tex.charui_greefkarga.png',
         abbreviation: "Greef Karga greef karga",
         skill: `めまい付与  回復  強化解除  アシスト  攻撃力上昇  防御突破力上昇  クリティカルダメージ上昇  クリティカル率上昇  ヘルス・スティール上昇  リーダー：最大プロテクション上昇  ステルス  クールダウン減少  カウンター  弱体解除 `,
-        url: '/characters/'
+        url: '/characters/Greef-Karga'
     }, {
         name: "クルルサンタン",
         property: "ダークサイド、タンク、リーダー、賞金稼ぎ、ハット・カルテル、ならず者、ウーキー",
         src: '/charui/tex.charui_krrsantan.png',
         abbreviation: "Krrsantan krrsantan",
         skill: `有効性低下  ショック  防御力上昇  挑発付与 回復  武装解除  クールダウン増加付与 スキルブロック付与 最大HP上昇  リーダー：ヘルススティール上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  攻撃力上昇  挑発  スピード上昇  復活  クールダウンリセット  スキルブロック無効化  クールダウン増加無効化  クリティカル回避力上昇  ダメージ耐性 `,
-        url: '/characters/'
+        url: '/characters/Krrsantan'
     }, {
         name: "クレニック長官",
         property: "ダークサイド、サポート、リーダー、帝国軍",
         src: '/charui/tex.charui_krennic.png',
         abbreviation: "Director Krennic 高須院長  クレニック院長",
         skill: `抵抗力低下  よろめき  全体攻撃  復活  アシスト  スタン付与  スキルブロック付与 強化無効  スピード低下  リーダー：クリティカル率上昇  リーダー：有効性上昇  耐性発揮不可  回復  クールダウン減少  挑発無視 `,
-        url: '/characters/'
+        url: '/characters/Director-Krennic'
     }, {
         name: "クローン・サージェント(フェーズI)",
         property: "ライトサイド、アタッカー、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_trooperclonegreen.png',
-        abbreviation: "Clone Sergent - Phase Ⅰ I ",
+        abbreviation: "Clone Sergent - Phase Ⅰ I クローンサージェント クローン サージェント",
         skill: `ターンメーター上昇  全体攻撃  ターンメーター減少付与 クリティカル率上昇  攻撃力上昇 `,
-        url: '/characters/'
+        url: '/characters/Clone-Sergeant-Phase-I'
     }, {
         name: "クローン大戦チューバッカ",
         property: "ライトサイド、タンク、リーダー、銀河共和国、ならず者、ウーキー",
         src: '/charui/tex.charui_clonewarschewbacca.png',
         abbreviation: "Clone Wars Chewbacca チューイ clone wars chewbacca CWC cwc",
         skill: `ターンメーター減少付与 挑発付与 最大HP上昇  弱体解除  回復  防御力上昇  ターンメーター上昇   リーダー：防御力上昇 `,
-        url: '/characters/'
+        url: '/characters/Clone-Wars-Chewbacca'
     }, {
         name: "クワイ=ガン・ジン",
         property: "ライトサイド、サポート、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_quigon.png',
         abbreviation: "QGJ qgj Gui-Gon Jinn gui gon jinn",
         skill: `ターンメーター上昇  ターンメーター減少付与 アシスト  回復  強化解除  攻撃力上昇  リーダー：スピード上昇  リーダー：攻撃力上昇  フォアサイト 復活不可  `,
-        url: '/characters/'
+        url: '/characters/Qui-Gon-Jinn'
     }, {
         name: "ケイナン・ジャラス",
         property: "ライトサイド、タンク、ジェダイ、フェニックス、反乱軍",

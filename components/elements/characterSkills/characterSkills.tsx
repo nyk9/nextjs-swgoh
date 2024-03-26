@@ -10,7 +10,8 @@ export default async function CharacterSkills(params: {
             revalidate: 3600,
         },
     });
-    // const res: globalThis.Response = await fetch('http://localhost:3000/api/characterAbilities', {
+    // const devapi: string = 'http://localhost:3000/api/characterAbilities';
+    // const res: globalThis.Response = await fetch(devapi , {
     //     cache: 'no-cache'
     // });
     if (!res.ok) {
