@@ -6,7 +6,7 @@
 
 
 export type Abilities = {
-    ability_type: string,
+    ability_type: "アルティメットスキル" |"通常スキル"|"特殊スキル"|"リーダースキル"|"ユニークスキル"|"付与スキル",
     cooldown: number | null,
     name_jp: string,
     name_eng: string,
@@ -5628,7 +5628,7 @@ const characterAbilities: characterAbilities[] = [
             }
         ],
         last_updated: '2024年3月26日'
-    },{
+    }, {
         id: 'General-Kenobi',
         character_name: "ケノービ将軍",
         character_image: '/charui/tex.charui_obiwangeneral.png',
