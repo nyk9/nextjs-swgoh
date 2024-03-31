@@ -11,7 +11,7 @@ export default async function CharacterSkills(params: {
         },
     });
     // const devapi: string = 'http://localhost:3000/api/characterAbilities';
-    // const res: globalThis.Response = await fetch(devapi , {
+    // const res: globalThis.Response = await fetch(devapi, {
     //     cache: 'no-cache'
     // });
     if (!res.ok) {
@@ -154,8 +154,103 @@ export default async function CharacterSkills(params: {
                                             return line.split('*').map((yellow: string, yellowIndex: number) => {
                                                 if (yellowIndex % 2 !== 0) {
                                                     return (
-                                                        <span className="text-yellow-200" key={yellowIndex}>{yellow}</span>
+                                                        <span
+                                                            className="text-yellow-200"
+                                                            key={yellowIndex}
+                                                        >
+                                                            {yellow}
+                                                        </span>
                                                     );
+                                                } else if (yellow.includes('$')) {
+                                                    return yellow.split('$').map((white: string, whiteIndex: number) => {
+                                                        if (whiteIndex % 2 !== 0) {
+                                                            return (
+                                                                <span
+                                                                    className="font-bold text-lg drop-shadow"
+                                                                    key={whiteIndex}
+                                                                >
+                                                                    {white}
+                                                                </span>
+                                                            );
+                                                        } else if (yellow.includes('#')) {
+                                                            return yellow.split('#').map((orange: string, orangeIndex: number) => {
+                                                                if (orangeIndex % 2 !== 0) {
+                                                                    return (
+                                                                        <span
+                                                                            className="font-bold text-lg drop-shadow"
+                                                                            key={orangeIndex}
+                                                                        >
+                                                                            {orange}
+                                                                        </span>
+                                                                    );
+                                                                } else if (yellow.includes('+')) {
+                                                                    return yellow.split('+').map((sky: string, skyIndex: number) => {
+                                                                        if (skyIndex % 2 !== 0) {
+                                                                            return (
+                                                                                <span
+                                                                                    className="font-bold text-lg drop-shadow"
+                                                                                    key={skyIndex}
+                                                                                >
+                                                                                    {sky}
+                                                                                </span>
+                                                                            );
+                                                                        } else {
+                                                                            return (<span key={skyIndex}>{sky}</span>);
+                                                                        }
+                                                                    });
+                                                                } else {
+                                                                    return (<span key={orangeIndex}>{orange}</span>);
+                                                                }
+                                                            });
+                                                        } else {
+                                                            return (<span key={whiteIndex}>{white}</span>);
+                                                        }
+                                                    });
+                                                } else if (yellow.includes('#')) {
+                                                    return yellow.split('#').map((orange: string, orangeIndex: number) => {
+                                                        if (orangeIndex % 2 !== 0) {
+                                                            return (
+                                                                <span
+                                                                    className="font-bold text-lg drop-shadow"
+                                                                    key={orangeIndex}
+                                                                >
+                                                                    {orange}
+                                                                </span>
+                                                            );
+                                                        } else if (yellow.includes('+')) {
+                                                            return yellow.split('+').map((sky: string, skyIndex: number) => {
+                                                                if (skyIndex % 2 !== 0) {
+                                                                    return (
+                                                                        <span
+                                                                            className="font-bold text-lg drop-shadow"
+                                                                            key={skyIndex}
+                                                                        >
+                                                                            {sky}
+                                                                        </span>
+                                                                    );
+                                                                } else {
+                                                                    return (<span key={skyIndex}>{sky}</span>);
+                                                                }
+                                                            });
+                                                        } else {
+                                                            return (<span key={orangeIndex}>{orange}</span>);
+                                                        }
+                                                    });
+                                                } else if (yellow.includes('+')) {
+                                                    return yellow.split('+').map((sky: string, skyIndex: number) => {
+                                                        if (skyIndex % 2 !== 0) {
+                                                            return (
+                                                                <span
+                                                                    className="font-bold text-lg drop-shadow"
+                                                                    key={skyIndex}
+                                                                >
+                                                                    {sky}
+                                                                </span>
+                                                            );
+                                                        } else {
+                                                            return (<span key={skyIndex}>{sky}</span>);
+                                                        }
+                                                    });
                                                 } else {
                                                     return (<span key={yellowIndex}>{yellow}</span>);
                                                 }
@@ -170,6 +265,51 @@ export default async function CharacterSkills(params: {
                                                             {omicron}
                                                         </span>
                                                     );
+                                                } else if (omicron.includes('#')) {
+                                                    return omicron.split('#').map((orange: string, orangeIndex: number) => {
+                                                        if (orangeIndex % 2 !== 0) {
+                                                            return (
+                                                                <span
+                                                                    className="font-bold text-lg drop-shadow"
+                                                                    key={orangeIndex}
+                                                                >
+                                                                    {orange}
+                                                                </span>
+                                                            );
+                                                        } else if (omicron.includes('+')) {
+                                                            return omicron.split('+').map((sky: string, skyIndex: number) => {
+                                                                if (skyIndex % 2 !== 0) {
+                                                                    return (
+                                                                        <span
+                                                                            className="font-bold text-lg drop-shadow"
+                                                                            key={skyIndex}
+                                                                        >
+                                                                            {sky}
+                                                                        </span>
+                                                                    );
+                                                                } else {
+                                                                    return (<span key={skyIndex}>{sky}</span>);
+                                                                }
+                                                            });
+                                                        } else {
+                                                            return (<span key={orangeIndex}>{orange}</span>);
+                                                        }
+                                                    });
+                                                } else if (omicron.includes('+')) {
+                                                    return omicron.split('+').map((sky: string, skyIndex: number) => {
+                                                        if (skyIndex % 2 !== 0) {
+                                                            return (
+                                                                <span
+                                                                    className="font-bold text-lg drop-shadow"
+                                                                    key={skyIndex}
+                                                                >
+                                                                    {sky}
+                                                                </span>
+                                                            );
+                                                        } else {
+                                                            return (<span key={skyIndex}>{sky}</span>);
+                                                        }
+                                                    });
                                                 } else {
                                                     return (<span key={omicronIndex}>{omicron}</span>);
                                                 }
@@ -185,6 +325,21 @@ export default async function CharacterSkills(params: {
                                                             {ult}
                                                         </span>
                                                     );
+                                                } else if (ult.includes('+')) {
+                                                    return ult.split('+').map((sky: string, skyIndex: number) => {
+                                                        if (skyIndex % 2 !== 0) {
+                                                            return (
+                                                                <span
+                                                                    className="font-bold text-lg drop-shadow"
+                                                                    key={skyIndex}
+                                                                >
+                                                                    {sky}
+                                                                </span>
+                                                            );
+                                                        } else {
+                                                            return (<span key={skyIndex}>{sky}</span>);
+                                                        }
+                                                    });
                                                 } else {
                                                     return (
                                                         <span key={ultIndex}>{ult}</span>

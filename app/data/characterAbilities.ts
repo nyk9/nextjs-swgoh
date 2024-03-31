@@ -6,7 +6,7 @@
 
 
 export type Abilities = {
-    ability_type: "アルティメットスキル" |"通常スキル"|"特殊スキル"|"リーダースキル"|"ユニークスキル"|"付与スキル",
+    ability_type: "アルティメットスキル" | "通常スキル" | "特殊スキル" | "リーダースキル" | "ユニークスキル" | "付与スキル",
     cooldown: number | null,
     name_jp: string,
     name_eng: string,
@@ -5629,7 +5629,118 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月26日'
     }, {
-        id: 'General-Kenobi',
+        id: 'Kanan-Jarrus',
+        character_name: "ケイナン・ジャラス",
+        character_image: '/charui/tex.charui_kanan_s3.png',
+        ability: [
+            {
+                ability_type: "通常スキル",
+                cooldown: null,
+                name_jp: "武装解除攻撃",
+                name_eng: "Disarming Strike",
+                image: '/ability/tex.ability_kanan_s3_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、ケイナンの次ターン開始まで、または戦闘不能になるまで攻撃力を低下させる。この攻撃がクリティカルヒットした場合、この効果には耐性発揮が行えなくなる。フルHPではない味方1体ごとに、このスキルのクリティカル率は15%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 3,
+                name_jp: "介入",
+                name_eng: "Intervene",
+                image: '/ability/tex.ability_kanan_s3_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの挑発を行う。さらに指定した味方から弱体を全て解除する。ケイナンは挑発を行っている間、抵抗力が2倍になる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 3,
+                name_jp: "トータルディフェンス",
+                name_eng: "Total Defense",
+                image: "/ability/tex.ability_kanan_s3_special02.png",
+                description_jp: `味方フェニックスから弱体を全て解除し、3ターンの間防御力を上昇させる。ケイナンと指定した味方は2ターンの間フォアサイトが発生してプロテクションが40%上昇し、それぞれのフォアサイト終了時にケイナンのターンメーターが100%、他の味方フェニックスのターンメーターが50%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "クリア・マインド",
+                name_eng: "Clear Mind",
+                image: "/abilityui/tex.abilityui_passive_phoenix.png",
+                description_jp: `ケイナンの70%のカウンター率を得て、弱体を受けるとHPが25%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月29日'
+    }, {
+        id: 'Gungan-Boomadier',
+        character_name: "グンガン・ブーマディア",
+        character_image: '/charui/tex.charui_gunganboomadier.png',
+        ability: [
+            {
+                ability_type: "通常スキル",
+                cooldown: null,
+                name_jp: "これでも食らえ！",
+                name_eng: "Catch This!",
+                image: '/ability/tex.ability_gunganboomadier_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、敵がショック状態の場合、このダメージは3倍になる。1ターンのスピード上昇を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 3,
+                name_jp: "クラスター・ブーマ",
+                name_eng: "Cluster Booma",
+                image: '/ability/tex.ability_gunganboomadier_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。ターゲットに発生している攻撃力低下、防御力低下、回復無効、スピード低下ごとに追加でダメージを与える(最大5)。敵分離主義者には常に5回ダメージを与える。与えたダメージごとに味方シールド発生装置からリチャージのスタックを1取り除く。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 5,
+                name_jp: "オータ・グンガのホーン",
+                name_eng: "Horn of Otoh Gunga",
+                image: '/ability/tex.ability_gunganboomadier_special02.png',
+                description_jp: `敵全体に物理ダメージを与え、1ターンの間スキルブロック状態にする。敵分離主義者に2ターンの間、プロテクション破壊が発生する(コピー、解除、耐性発揮不可)。味方シールド発生装置からリチャージのスタックを3取り除き、プラズマシールドのスタックを2得る。指定した味方グンガンとターンメーターを入れ替える。ブーマディアは1ターンの間フレンジー状態になる。指定した味方グンガンの精度が2ターンの間上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "グランド・アーミー・スペシャリスト",
+                name_eng: "Grand Army Specialist",
+                image: '/abilityui/tex.abilityui_passive_grandarmyspecialist.png',
+                description_jp: `バトル開始時、グンガン・ブーマディアの最大HPが75%減少し、それと同量分、最大プロテクションが上昇する。
+                
+                グンガン・ブーマディアの防御突破力と攻撃力が30%上昇する。
+                
+                味方シールド発生装置がアクティブな場合:
+                 - グンガンのアタッカーによって戦闘不能になった敵は復活できない
+                 - グンガン・ブーマディアが特殊スキルを使用するたび、バトル終了まで防御突破力と攻撃力が5%上昇する(スタック可能、戦闘不能になるまで持続)
+                 - 味方グンガンは報復効果発生中、ターゲットロックを無効化する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月29日'
+    }, {
+        id: 'General-KenImperial Probe Droidobi',
         character_name: "ケノービ将軍",
         character_image: '/charui/tex.charui_obiwangeneral.png',
         ability: [
@@ -5695,6 +5806,127 @@ const characterAbilities: characterAbilities[] = [
             }
         ],
         last_updated: '2024年3月13日'
+    }, {
+        id: 'Coruscant-Underworld-Police',
+        character_name: "コルサント・アンダーワールド警察隊",
+        character_image: '/charui/tex.charui_coruscantpolice.png',
+        ability: [
+            {
+                ability_type: "通常スキル",
+                cooldown: null,
+                name_jp: "非致死攻撃",
+                name_eng: "Non-Lethal Takedown",
+                image: '/ability/tex.ability_coruscantpolice_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、50%の確率で1ターンの間スタン状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 3,
+                name_jp: "非致死性の群衆整理",
+                name_eng: "Non-Lethal Crowd Control",
+                image: '/ability/tex.ability_coruscantpolice_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、70%の確率で2ターンの間攻撃力を低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "ノンリーサル・スペシャリスト",
+                name_eng: "Non-Lethal Specialist",
+                image: '/abilityui/tex.abilityui_passive_speed.png',
+                description_jp: `コルサント・アンダーワールド警察隊の有効性が30%上昇する。さらに、状態異常を発生させるとターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月29日'
+    }, {
+        id: 'Third-Sister',
+        character_name: "サード・シスター",
+        character_image: '/charui/tex.charui_thirdsister.png',
+        ability: [
+            {
+                ability_type: "通常スキル",
+                cooldown: null,
+                name_jp: "隠れるのは終わり",
+                name_eng: "No More Hiding",
+                image: '/ability/tex.ability_thirdsister_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、遭遇終了まで「粛清」のスタックを1発生させる(最大6。回避不可)。ターゲットに既に「粛清」が発生していた場合、2ターンのスキルブロックを発生させ、サード・シスターの弱体化効果を全て解除する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 3,
+                name_jp: "不屈の猛攻",
+                name_eng: "Unyielding Onslaught",
+                image: '/ability/tex.ability_thirdsister_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、与えたダメージ分HPが回復する。敵に発生している「粛清」のスタックごとに、この攻撃のダメージが30%上昇する。このスキル使用後にサード・シスターのHPが満タンの場合、遭遇終了までターゲットにアーマー破壊を発生させる。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 4,
+                name_jp: "無謀な一掃",
+                name_eng: "Reckless Sweep",
+                image: '/ability/tex.ability_thirdsister_special02.png',
+                description_jp: `敵全体に物理ダメージを与え、各敵の「粛清」のスタックを1消費する。敵全体に「粛清」のスタックが1以上ある場合、敵全体に2ターンの間、防御力低下と回復無効を発生させる(解除、回避、耐性発揮不可)。尋問官の味方全体のターンメーターが20%上昇する。そうでない場合、2ターンの間、敵全体に防御力低下と回復無効を発生させる。
+                
+                $グランドアリーナの場合: $尋問官の味方全体のクリティカルダメージが2ターンの間上昇し、クールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: "リーダースキル",
+                cooldown: null,
+                name_jp: "抑えがたき衝動",
+                name_eng: "Harbored Aggression",
+                image: '/abilityui/tex.abilityui_leader_inquisitor.png',
+                description_jp: `味方尋問官の最大HPが40%、攻撃力が20%、スピードが30上昇し、スタンを無効化する。遭遇開始時または味方尋問官が戦闘不能になるか敵を戦闘不能にするたび、遭遇終了まで敵全体に「粛清」のスタックが5発生する(最大6。耐性発揮不可)。味方尋問官の攻撃は、「粛清」のスタックが5以上ある敵に対して常にクリティカルヒットになる(可能な場合)。敵がプロテクションを回復するかプロテクション上昇を得るたび、遭遇終了まで敵全体の防御力が2%減少する(スタック可能、最大50%)。
+                
+                $グランドアリーナの場合: $味方または敵が戦闘不能になるたび、尋問官の味方全体が2ターンの防御突破力上昇を得る。敵のターン中に「粛清」が解除されるたび、そのユニット(銀河の伝説を除く)に2ターンの*デスマーク*が発生する(解除、耐性発揮不可)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "復讐の衝動",
+                name_eng: "Driven by Revenge",
+                image: '/abilityui/tex.abilityui_passive_drivenbyrevenge.png',
+                description_jp: `サード・シスターの最大HPが30%、スピードが30上昇する。サード・シスターがHP割合ダメージの効果で受けるダメージが減少する。サード・シスターはバトル開始時および初めて戦闘不能になった際に、バトル終了まで*憎悪*の効果を得る。サード・シスターが復活するたび、遭遇終了まで、攻撃力と防御力が100%(スタック可能、最大200%)、クリティカル率が25%(スタック可能、最大50%)上昇する。敵のターン中に「粛清」が解除されるたび、または敵が味方2体以上にダメージを与える攻撃を行うたび、「粛清」のスタックが1発生し(最大6)、サード・シスターが2ターンの挑発を行う。
+                
+                $グランドアリーナの場合: $「憎悪」からサード・シスターが復活するたび、「不屈の猛攻」のクールダウンがリフレッシュされ、次に攻撃するまで攻撃力が100%上昇し、1ターンの間挑発効果を無効化する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "短気",
+                name_eng: "Impatience",
+                image: '/abilityui/tex.abilityui_passive_jediwillneverbevictorious.png',
+                description_jp: `バトル開始時、味方全体(3体以上)が尋問官の場合、このユニットのクリティカルダメージ、最大HP、攻撃力が20%上昇する。遭遇開始時および味方または敵が戦闘不能になるたび、このユニットは2ターンの挑発を行う。敵がターン外にこのユニットに攻撃ダメージを与えるたび、その敵は「粛清」のスタックを1得る(最大6。回避、耐性発揮不可)。「粛清」が消費または解除されるたび、このユニットのターンメーターが3%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月31日'
     }, {
         id: 'Jedi-Knight-Cal-Kestis',
         character_name: 'ジェダイ・ナイト・カル・ケスティス',
