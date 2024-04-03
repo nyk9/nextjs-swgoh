@@ -529,7 +529,7 @@ const characters: Characters[] = [
         abbreviation: "Captain Tarpals",
         skill: `ショック  強化解除   アドバンテージ  固定ダメージ  ターンメーター減少  よろめき  スタン付与  耐性発揮不可  リチャージ  回避不可  アシスト  クリティカルダメージ上昇  回復  マーク状態  解除不可  固定ダメージ  ターンメーター上昇  カウンター  弱体解除  挑発無視  強化無効  攻撃力上昇  防御力上昇  クールダウンリセット  ボーナスターン  プラズマシールド  `,
         url: '/characters/Captain-Tarpals'
-    },{
+    }, {
         name: "キャプテン・ドロガン",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_captaindrogan.png',
@@ -636,12 +636,19 @@ const characters: Characters[] = [
         skill: `ターンメーター上昇  ターンメーター減少付与 アシスト  回復  強化解除  攻撃力上昇  リーダー：スピード上昇  リーダー：攻撃力上昇  フォアサイト 復活不可  `,
         url: '/characters/Qui-Gon-Jinn'
     }, {
+        name: "グンガン・ブーマディア",
+        property: "ライトサイド、アタッカー、グンガン",
+        src: '/charui/tex.charui_gunganboomadier.png',
+        abbreviation: "Gungan Boomadier",
+        skill: `スピード上昇  リチャージ  スキルブロック  プロテクション破壊  復活不可  プラズマシールド  シールド発生装置  精度上昇  ターゲットロック無効化  ターンメーター入れ替え  フレンジー  `,
+        url: '/characters/Gungan-Boomadier'
+    }, {
         name: "ケイナン・ジャラス",
         property: "ライトサイド、タンク、ジェダイ、フェニックス、反乱軍",
         src: '/charui/tex.charui_kanan_s3.png',
         abbreviation: "Kanan Jarrus kanan jarrus Caleb Dume ケイレブ・デューム",
         skill: `攻撃力低下  挑発付与 弱体解除  抵抗力上昇  味方全体-弱体解除  防御力上昇  フォアサイト  プロテクション上昇  ターンメーター上昇  カウンター   回復 `,
-        url: '/characters/'
+        url: '/characters/Kanan-Jarrus'
     }, {
         name: "ケノービ将軍",
         property: "ライトサイド、タンク、リーダー、銀河共和国、ジェダイ、艦隊司令官",
@@ -655,77 +662,77 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_coruscantpolice.png',
         abbreviation: "CUP cup Coruscant Underworld Police",
         skill: `スタン付与  攻撃力低下  全体攻撃  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Coruscant-Underworld-Police'
     }, {
         name: "サード・シスター",
         property: "ダークサイド、タンク、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_thirdsister.png',
         abbreviation: "Reva reva リーヴァ 3s 3S Third Sister third sister 3rd",
         skill: `粛清  スキルブロック付与 弱体解除  回復  アーマー破壊  全体攻撃  防御力低下  回復無効  解除不可  リーダー：攻撃力上昇  リーダー：スピード上昇  スタン無効化  回避不可  耐性発揮不可  ターンメーター上昇  クリティカルダメージ上昇  クールダウン減少  リーダー：最大HP上昇  防御突破力上昇  デスマーク  憎悪  挑発付与  クールダウンリセット  挑発無視 `,
-        url: '/characters/'
+        url: '/characters/Third-Sister'
     }, {
         name: "サヴァージ・オプレス",
         property: "ダークサイド、アタッカー、リーダー、シス",
         src: '/charui/tex.charui_savageopress.png',
         abbreviation: "Savage Opress savage opress",
         skill: `攻撃力低下  大ダメージ  クリティカル率上昇  クリティカルダメージ上昇  リーダー：防御力上昇  リーダー：抵抗力上昇  防御力上昇  時間経過回復  攻撃力上昇  `,
-        url: '/characters/'
+        url: '/characters/Savage-Opress'
     }, {
         name: "サナ・スタロス",
         property: "ライトサイド、アタッカー、リーダー、ならず者、スマグラー",
         src: '/charui/tex.charui_sanastarros.png',
         abbreviation: "Sana Strarros sana strarros",
         skill: `無防備  回復  弱体解除  クリティカル率上昇  ステルス  アシスト  全体攻撃  抵抗力低下  よろめき  リーダー：防御力上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  ターンメーター上昇  プロテクション上昇  リーダー：クリティカルダメージ上昇  ターゲットロック  クールダウン減少  挑発付与 抵抗力上昇  強化解除  敵全体-強化解除  回復無効  カウンター  疑惑  `,
-        url: '/characters/'
+        url: '/characters/Sana-Strarros'
     }, {
         name: "サビーヌ・レン",
         property: "ライトサイド、アタッカー、マンダロリアン、フェニックス、反乱軍",
         src: '/charui/tex.charui_sabine_s3-2.png',
         abbreviation: "Sabine Wren sabine wren",
         skill: `アーマー破壊  全体攻撃  よろめき  エクスポーズ  クリティカル率上昇  攻撃力上昇  カウンター不可  回避不可  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Sabine-Wren'
     }, {
         name: "ザム・ウェセル",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: '/charui/tex.charui_zamwesell.png',
         abbreviation: "Zam Wesell zam wesell",
         skill: `ターンメーター上昇  スピード上昇  全体攻撃  サーマル・デトネーター  回避力低下  回復  回避不可  リーダー：有効性上昇  弱体解除  ステルス  最大プロテクション上昇 `,
-        url: '/characters/'
+        url: '/characters/Zam-Wesell'
     }, {
         name: "ザルバー",
         property: "ライトサイド、タンク、旧共和国、ならず者、ウーキー",
         src: '/charui/tex.charui_zaalbar.png',
         abbreviation: "Zaalbar",
         skill: `時間経過ダメージ  回復  全体攻撃  挑発付与 アーマー破壊  防御力上昇  報復効果  `,
-        url: '/characters/'
+        url: '/characters/Zaalbar'
     }, {
         name: "サン・ファク",
         property: "ダークサイド、タンク、ジオノージアン、分離主義者",
         src: '/charui/tex.charui_geonosian_sunfac.png',
         abbreviation: "Sun Fac sun fac 蟲",
         skill: `強化解除  回復  挑発付与 攻撃力低下  ターンメーター減少付与 回避不可  よろめき  暗闇  めまい付与  カウンター  防御力上昇  HP上昇  ヘルススティール上昇 `,
-        url: '/characters/'
+        url: '/characters/Sun-Fac'
     }, {
         name: "シア・ジュンダ",
         property: "ライトサイド、サポート、リーダー、ならず者、非同盟のフォースの使い手",
         src: '/charui/tex.charui_cerejunda.png',
         abbreviation: "Cere Junda cere junda",
         skill: `抵抗力上昇  精度上昇  ボーナスプロテクション  防御力上昇  ダメージ耐性  クールダウン状態から開始  防御突破力上昇  クールダウン増加付与 クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Cere-Junda'
     }, {
         name: "ジェダイ・コンシュラー",
         property: "ライトサイド、ヒーラー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_jedi_consular_03.png',
         abbreviation: "Jedi Consular jedi consular",
         skill: `クールダウン減少  回復  ターンメーター上昇  アーマー無効化 `,
-        url: '/characters/'
+        url: '/characters/Jedi-Consular'
     }, {
         name: "ジェダイ・ナイト・アナキン",
         property: "ライトサイド、アタッカー、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_anakinknight.png',
         abbreviation: "JKA jka Jedi Knight Anakin jedi knight anakin",
         skill: `回避不可  強化無効  リーダー：攻撃力上昇  全体攻撃  リーダー：クリティカルダメージ上昇  アドバンテージ  ボーナスターン  `,
-        url: '/characters/'
+        url: '/characters/Jedi-Knight-Anakin'
     }, {
         name: "ジェダイ・ナイト・カル・ケスティス",
         property: "ライトサイド、アタッカー、リーダー、ジェダイ",
@@ -739,7 +746,7 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_jedi_guardian_01.png',
         abbreviation: "Jedi Knight Guardian jedi knight guardian ",
         skill: `攻撃力低下  全体攻撃  スキルブロック付与 防御力上昇  回復  抵抗力上昇 `,
-        url: '/characters/'
+        url: '/characters/Jedi-Knight-Guardian'
     }, {
         name: "ジェダイ・ナイト・ルーク・スカイウォーカー",
         property: "ライトサイド、アタッカー、リーダー、ジェダイ",
@@ -753,7 +760,7 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_jedirevan.png',
         abbreviation: "JKR jkr Jedi Knight Revan jedi knight revan 白レヴァン ",
         skill: `ターンメーター上昇  全体攻撃  弱体解除  クリティカルダメージ上昇  フォアサイト  ターンメーター入れ替え  マーク状態  クールダウン増加  スタン付与  リーダー：スピード上昇  抵抗力上昇  回復  最大HP減少  戦略的アドバンテージ  挑発無視  クリティカルヒット耐性  ボーナスターン  スタン無効化  スキルブロック無効化  `,
-        url: '/characters/'
+        url: '/characters/Jedi-Knight-Revan'
     }, {
         name: "ジェダイ・マスター・ケノービ",
         property: "銀河の伝説、ライトサイド、アタッカー、リーダー、銀河共和国、ジェダイ",
@@ -767,105 +774,105 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_luke_jml.png',
         abbreviation: "JML jml Jedi Master Luke Skywalker jedi master luke skywalker",
         skill: `強化無効  最大HP上昇  カウンター不可  抵抗力低下  めまい付与  クールダウン増加付与 抵抗力低下  エクスポーズ  アシスト  アドバンテージ  クリティカルダメージ上昇  ジェダイの訓戒  耐性発揮不可  回避不可  全体攻撃  ターンメーター減少付与 スキルブロック付与 破損  ジェダイの意志  クリティカルヒット耐性  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：攻撃力上昇  リーダー：スピード上昇  挑発付与  弱体解除  防御力上昇  抵抗力上昇  固定ダメージ  ターンメーター上昇  クールダウン減少  HP割合ダメージ軽減  大ダメージ軽減  スタン無効化 `,
-        url: '/characters/'
+        url: '/characters/Jedi-Master-Luke-Skywalker'
     }, {
         name: "ジオノージアン・スパイ",
         property: "ダークサイド、アタッカー、ジオノージアン、分離主義者",
         src: '/charui/tex.charui_geonosian_spy.png',
         abbreviation: "Geonosian Spy geo Geo geonosian spy 蟲",
         skill: `クリティカル率上昇  回避不可  強化解除  回避力低下  有効性上昇  エクスポーズ  ステルス  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Geonosian-Spy'
     }, {
         name: "ジオノージアン、ブルード、アルファ",
         property: "ダークサイド、サポート、リーダー、ジオノージアン、分離主義者",
         src: '/charui/tex.charui_geonosian_broodalpha.png',
         abbreviation: "GBA gba Geonosian Brood Alpha geo Geo geonosian brood alpha 蟲",
         skill: `強化解除  全体攻撃  エクスポーズ   ターンメーター減少付与 弱体解除  味方全体-弱体解除  招集  クリティカルダメージ上昇  攻撃力上昇  ターンメーター上昇  回復  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：ヘルススティール上昇  アシスト  集団意識  挑発付与 カウンター  `,
-        url: '/characters/'
+        url: '/characters/Geonosian-Brood-Alpha'
     }, {
         name: "ジオノージアン兵士",
         property: "ダークサイド、アタッカー、ジオノージアン、分離主義者",
         src: '/charui/tex.charui_geonosian_soldier.png',
         abbreviation: "Geonosian Soldier geonosian soldier 蟲",
         skill: `抵抗力低下  アシスト  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Geonosian-Soldier'
     }, {
         name: "シス・アサシン",
         property: "ダークサイド、アタッカー、シス、シス帝国",
         src: '/charui/tex.charui_sithassassin.png',
         abbreviation: "Sass Sith Assassin sith assassin",
         skill: `回避力低下  攻撃力上昇  ステルス  プロテクション無効化  弱体解除  フォアサイト  スピード上昇  抵抗力上昇  ターンメーター上昇  スタン付与  強化解除  `,
-        url: '/characters/'
+        url: '/characters/Sith-Assassin'
     }, {
         name: "シス・エターナルの皇帝",
         property: "銀河の伝説、アタッカー、リーダー、シス",
         src: '/charui/tex.charui_espalpatine_post.png',
         abbreviation: "SEE see Sith Eternal Emperor sith eternal eternal",
         skill: `欺瞞  コピー不可  解除不可  耐性発揮不可  スピード上昇  カウンター不可  アシスト  回復  復活不可  報復効果  挑発付与 連帯  ボーナスターン  挑発無視  リーダー：マスター上昇  リーダー：有効性上昇  リーダー：スピード上昇  ターンメーター上昇  弱体解除  復活不可  挑発無効化  ターンメーター減少無効化  エクスポーズ  HP割合ダメージ軽減  大ダメージ軽減  スタン無効化  スキルブロック無効化 `,
-        url: '/characters/'
+        url: '/characters/Sith-Eternal-Emperor'
     }, {
         name: "シス・トルーパー",
         property: "ダークサイド、アタッカー、ファースト・オーダー、シス",
         src: '/charui/tex.charui_firstorder_sithtrooper.png',
         abbreviation: "SiT SithT Sith Trooper sith trooper シストル",
         skill: `クリティカルヒット耐性  全体攻撃  弱体解除  味方全体-弱体解除  アドバンテージ  アシスト  クールダウンリセット  ボーナスターン `,
-        url: '/characters/'
+        url: '/characters/Sith-Trooper'
     }, {
         name: "シス・マローダー",
         property: "ダークサイド、アタッカー、シス、シス帝国",
         src: '/charui/tex.charui_sithmarauder.png',
         abbreviation: "Sith Marauder sith marauder",
         skill: `攻撃力低下  有効性上昇  最大HP減少  アーマー無効化  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Sith-Marauder'
     }, {
         name: "シス帝国トルーパー",
         property: "ダークサイド、タンク、シス、シス帝国",
         src: '/charui/tex.charui_sithtrooper.png',
         abbreviation: "Sith Empire Troper sith empire trooper SE SET",
         skill: `防御力低下  プロテクション無効化  攻撃力低下  プロテクション上昇  挑発付与 防御力上昇  報復効果  `,
-        url: '/characters/'
+        url: '/characters/Sith-Empire-Troper'
     }, {
         name: "シャアク・ティ",
         property: "ライトサイド、サポート、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_shaakti.png',
         abbreviation: "釈 Shaak Ti shaak ti",
         skill: `強化解除  攻撃力上昇  弱体解除  味方全体-弱体解除  アシスト  ターンメーター上昇  ステルス  クリティカル率上昇  スピード上昇  挑発  クリティカルヒット耐性  リーダー：スピード上昇  回復  報復効果 `,
-        url: '/characters/'
+        url: '/characters/Shaak-Ti'
     }, {
         name: "ジャバ・ザ・ハット",
         property: "銀河の伝説、ダークサイド、サポート、リーダー、賞金稼ぎ、ハット・カルテル、スマグラー",
         src: '/charui/tex.charui_jabbathehutt.png',
         abbreviation: "Jabba jabba The Hutt the hutt GL",
         skill: `アシスト  プロテクション上昇  暗闇  回復  弱体解除  味方全体-弱体解除  スピード低下  用心棒  クリティカルヒット耐性  防御突破力上昇  スピード上昇  アドバンテージ  強化解除  強化無効  解除不可  サーマル・デトネーター  リーダー：スピード上昇  リーダー：最大HP上昇  好みの悪党  挑発無効化  クリティカルダメージ上昇  ダメージ耐性  攻撃力上昇  コピー不可  解除不可  阻止不可  クールダウンリセット  復活  挑発無視  ステルス解除  スタン解除  攻撃力上昇  ターンメーター上昇  ボーナスプロテクション  HP割合ダメージ軽減  大ダメージ軽減  即戦闘不能  固定ダメージ  カウンター不可  回避不可  スタン無効化  めまい無効化  恐怖無効化 `,
-        url: '/characters/'
+        url: '/characters/Jabba-The-Hutt'
     }, {
         name: "ジャワ",
         property: "ライトサイド、アタッカー、ジャワ",
         src: '/charui/tex.charui_jawa_jawa.png',
         abbreviation: "Jawa jawa",
         skill: `スピード低下  全体攻撃  スタン付与  ターンメーター上昇  `,
-        url: '/characters/'
+        url: '/characters/Jawa'
     }, {
         name: "ジャワ・エンジニア",
         property: "ライトサイド、ヒーラー、ジャワ",
         src: '/charui/tex.charui_jawa_engineer.png',
         abbreviation: "Jawa Engineer jawa engineer",
         skill: `デトネーター  復活  回復  クリティカル率上昇  ターンメーター上昇  スピード上昇 `,
-        url: '/characters/'
+        url: '/characters/Jawa-Engineer'
     }, {
         name: "ジャワ・スカベンジャー",
         property: "ライトサイド、サポート、ジャワ",
         src: '/charui/tex.charui_jawa_scavenger.png',
         abbreviation: "Jawa Scavenger jawa scavenger ジャワスカ",
         skill: `攻撃力低下  サーマル・デトネーター  防御力低下  回復無効  抵抗力低下  ステルス  防御力上昇  攻撃力上昇 `,
-        url: '/characters/'
+        url: '/characters/Jawa-Scavenger'
     }, {
         name: "ジャンゴ・フェット",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、マンダロリアン、ならず者、分離主義者",
         src: '/charui/tex.charui_jangofett.png',
         abbreviation: "Jango Fett jango fett ﾌｪｯ!!",
         skill: `回復無効  よろめき  炎上  全体攻撃  回避不可  最大HP減少  抵抗力低下  リーダー：スピード上昇  有効性上昇  攻撃力上昇  賞金稼ぎの決意  復活不可  回復  復活  挑発無視  解除不可  阻止不可  スタック不可  ダメージ耐性 `,
-        url: '/characters/'
+        url: '/characters/Jango-Fett'
     }, {
         name: "ジュアニ",
         property: "ライトサイド、タンク、ジェダイ、旧共和国",
@@ -879,252 +886,252 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_troopershore.png',
         abbreviation: "Shore Trooper shore trooper",
         skill: `クリティカル率減少  回復  クリティカルヒット耐性  挑発付与 クールダウン減少  ターンメーター上昇  最大HP上昇 `,
-        url: '/characters/'
+        url: '/characters/Shore-Trooper'
     }, {
         name: "ジョリー・ビンド",
         property: "ライトサイド、ヒーラー、ジェダイ、旧共和国",
         src: '/charui/tex.charui_joleebindo.png',
         abbreviation: "Jolee Bindo jolee bindo どうあがいてもジョリービンド",
         skill: `クールダウン減少  アシスト  回復  弱体解除  復活  クリティカルヒット耐性  ターンメーター減少無効化  プロテクション上昇 `,
-        url: '/characters/'
+        url: '/characters/Jolee-Bindo'
     }, {
         name: "ジン・アーソ",
         property: "ライトサイド、アタッカー、リーダー、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_jyn.png',
         abbreviation: "Jyn Erso jyn erso",
         skill: `アドバンテージ  ターンメーター上昇  復活  スタン付与  エクスポーズ  耐性発揮不可  強化無効無効化  スタン無効  クリティカルダメージ上昇  攻撃力上昇  クリティカルヒット耐性  挑発付与 回避力上昇  スピード上昇 `,
-        url: '/characters/'
+        url: '/characters/Jyn-Erso'
     }, {
         name: "スカイウォーカー将軍",
         property: "ライトサイド、アタッカー、リーダー、第501軍団、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_generalanakin.png',
         abbreviation: "GAS gas General Anakin Skywalker general anakin skywalker スカぴょん",
         skill: `回避不可  防御突破力上昇  アーマー破壊  めまい付与  全体攻撃  復活不可  アドバンス  カバー  挑発付与 ターンメーター上昇  クールダウン増加  弱体解除  クリティカルヒット不可  最大HP減少  耐性発揮不可  カウンター `,
-        url: '/characters/'
+        url: '/characters/General-Skywalker'
     }, {
         name: "スカウト・トルーパー",
         property: "ダークサイド、サポート、帝国軍、インペリアル・レムナント、帝国軍トルーパー",
         src: '/charui/tex.charui_trooperscout.png',
         abbreviation: "Scout Trooper scout trooper",
         skill: `精度低下  有効性上昇  攻撃力上昇  強化解除  スピード低下  耐性発揮不可  回避不可  弱体解除  味方全体-弱体解除  クリティカルダメージ上昇  スピード上昇  アシスト  エクスポーズ  よろめき  アドバンテージ  ステルス  回復  ターンメーター上昇  帝国の罠 `,
-        url: '/characters/'
+        url: '/characters/Scout-Trooper'
     }, {
         name: "スカリフ同盟軍パスファインダー",
         property: "ライトサイド、タンク、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_rebel_scarif.png',
-        abbreviation: "Scarif Path Finder scarif path finder",
+        abbreviation: "Scarif Rebel Pathfinder scarif path finder",
         skill: `攻撃力上昇  精度上昇  挑発付与 全体攻撃  復活  ターンメーター上昇  スピード上昇 `,
-        url: '/characters/'
+        url: '/characters/Scarif-Rebel-Pathfinder'
     }, {
         name: "スキッフ・ガード(ランド・カルリジアン)",
         property: "ライトサイド、アタッカー、ハット・カルテル、ならず者、スマグラー",
         src: '/charui/tex.charui_lando_jabbaguard.png',
         abbreviation: "Skiff Guard Lando Calrissian skiff guard lando calrissian ",
         skill: `潜伏  時間経過ダメージ  アーマー破壊  クールダウンリフレッシュ  弱体解除  報復効果  スピード上昇  防御力上昇  HP上昇  有効性上昇  ステルス上昇  アシスト  信頼できるエージェント `,
-        url: '/characters/'
+        url: '/characters/Skiff-Guard-Lando-Calrissian'
     }, {
         name: "スターキラー",
         property: "ダークサイド、アタッカー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_starkiller.png',
         abbreviation: "SK sk Starkiller sterkiller ギャレン・マレック Galen Marek galen marek",
         skill: `ショック  全体攻撃  カウンター不可  クールダウン減少  めまい付与  無防備  フォースエネルギー  回避不可  強化無効  回復無効  耐性発揮不可  味方全体-弱体解除  コピー不可  解除不可  強化解除  敵全体-強化解除  カウンター  恐怖無効化  解放  弱体解除  ボーナスターン  クールダウンリセット  スタン付与  挑発付与 アシスト  クリティカルヒット耐性  ダメージ耐性  挑発付与 スタン無効化 `,
-        url: '/characters/'
+        url: '/characters/Starkiller'
     }, {
         name: "スターク大佐",
         property: "ダークサイド、サポート、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_colonel_stark.png',
         abbreviation: "Col.  Colonel Starck colonel starck",
         skill: `防御力低下  クリティカル率上昇  クリティカルダメージ上昇  ターンメーター上昇  全体攻撃  よろめき  強化解除  クールダウン減少  回復 `,
-        url: '/characters/'
+        url: '/characters/Colonel-Starck'
     }, {
         name: "ストームトルーパー",
         property: "ダークサイド、タンク、帝国軍、インペリアル、レムナント、帝国軍トルーパー",
         src: '/charui/tex.charui_trooperstorm.png',
         abbreviation: "Storm Trooper storm trooper",
         skill: `エクスポーズ  挑発付与 防御力上昇  ターンメーター減少付与 プロテクション上昇 `,
-        url: '/characters/'
+        url: '/characters/Storm-Trooper'
     }, {
         name: "スノートルーパー",
         property: "ダークサイド、アタッカー、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_troopersnow.png',
-        abbreviation: "Snow trooper snow trooper",
+        abbreviation: "Snowtrooper snow trooper",
         skill: `スキルブロック付与 全体攻撃  クリティカルダメージ上昇  クールダウン減少  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Snowtrooper'
     }, {
         name: "スマグラー・チューバッカ",
         property: "ライトサイド・アタッカー・レジスタンス・ならず者・ウーキー・スマグラー",
         src: '/charui/tex.charui_tfa_chewbacca.png',
         abbreviation: "Vets Veteran Smuggler Chewbacca Chew vets veteran smuggler chewbacca",
         skill: `めまい付与  スタン付与  スピード低下  ターンメーター上昇  クールダウンリセット  ボーナスターン  `,
-        url: '/characters/'
+        url: '/characters/Veteran-Smuggler-Chewbacca'
     }, {
         name: "スマグラー・ハン",
         property: "ライトサイド・アタッカー、レジスタンス、ならず者、スマグラー",
         src: '/charui/tex.charui_tfa_han.png',
         abbreviation: "Vets vets veteran smuggler han solo Veteran Smuggler Han Solo",
         skill: `よろめき  スタン付与  スキルブロック付与 ターンメーター上昇  クールダウンリセット  ボーナスターン  `,
-        url: '/characters/'
+        url: '/characters/Veteran-Smuggler-Han-Solo'
     }, {
         name: "スローン大提督",
         property: "ダークサイド、サポート、リーダー、帝国軍、艦隊司令官",
         src: '/charui/tex.charui_thrawn.png',
         abbreviation: "GAT gat Grand Admiral Thrawn grand admiral thrawn",
         skill: `スピード上昇  スキルブロック付与 スタン付与  耐性発揮不可  防御力低下  強化解除  ターンメーター減少付与 破砕  ターンメーター交換  回復  弱体解除  ターンメーター上昇  カウンター  `,
-        url: '/characters/'
+        url: '/characters/Grand-Admiral-Thrawn'
     }, {
         name: "セカンド・シスター",
         property: "ダークサイド、アタッカー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_secondsister.png',
         abbreviation: "2s 2S Second Sister second sister 2女 トリラ Trilla trilla",
         skill: `粛清  耐性発揮不可  クリティカルダメージ上昇  スタン付与  ターンメーター減少付与 ターンメーター上昇  マーク状態  回避不可  `,
-        url: '/characters/'
+        url: '/characters/Second-Sister'
     }, {
         name: "セブンス・シスター",
         property: "ダークサイド、ヒーラー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_seventhsister.png',
         abbreviation: "Seventh Sister seventh sister 7S 7s",
         skill: `攻撃力低下  粛清  耐性発揮不可  強化解除  ターンメーター減少付与 スキルブロック付与 めまい付与  回避不可  耐性発揮不可  回復  クリティカルヒット耐性  フォアサイト  回避力上昇  クールダウン減少  リーダー：回避力上昇  アドバンテージ  アシスト  スピード低下  命中率低下  回復無効  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Seventh-Sister'
     }, {
         name: "ソウ・ゲレラ",
         property: "ライトサイド、サポート、リーダー、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_sawgerrera.png',
         abbreviation: "Saw Gerrera saw gerrera",
         skill: `防御力低下  クールダウン減少  ターンメーター減少付与 攻撃力減少  回避不可  耐性発揮不可  強化解除  敵全体-強化解除  回復  暗闇  リーダー：最大HP上昇  リーダー：クリティカルダメージ上昇  リーダー：防御力上昇  リーダー：スピード上昇  スピード上昇  クリティカルダメージ上昇  時間経過回復  抵抗力上昇  攻撃力上昇  挑発付与 ターンメーター上昇  起爆トラップ  コピー不可  解除不可  クリティカルダメージ低下  スタン付与  炎上  よろめき  ボーナスターン  クールダウン増加付与 マーク状態  ステルス  クリティカル回避力上昇 `,
-        url: '/characters/'
+        url: '/characters/Saw-Gerrera'
     }, {
         name: "ゾリ・ブリス",
         property: "ライトサイド、サポーター、レジスタンス、ならず者、スマグラー",
         src: '/charui/tex.charui_zoriibliss.png',
         abbreviation: "Zorri Bliss zorri bliss",
         skill: `ステルス  回避不可  強化解除  回復  弱体解除  ターンメーター上昇  挑発付与 プロテクション上昇  アシスト  エクスポーズ  回復無効  スタン付与  耐性発揮不可  報復効果  クリティカルヒット耐性  スピード低下  抵抗力上昇  最大HP上昇  ダメージ耐性  クリティカルダメージ上昇  スピード上昇 `,
-        url: '/characters/'
+        url: '/characters/Zorri-Bliss'
     }, {
         name: "ダーク・トルーパー",
         property: "ダークサイド、アタッカー、ドロイド、帝国軍、インペリアル・レムナント、帝国軍トルーパー",
         src: '/charui/tex.charui_darktrooper.png',
         abbreviation: "Dark Trooper dark trooper",
         skill: `全体攻撃  アドバンテージ  ダーク・トルーパー部隊  ターンメーター上昇  攻撃力上昇  弱体解除  回復 `,
-        url: '/characters/'
+        url: '/characters/Dark-Trooper'
     }, {
         name: "ダース・サイオン",
         property: "ダークサイド、タンク、シス",
         src: '/charui/tex.charui_sion.png',
         abbreviation: "Darth Sion darth sion",
         skill: `ペイン  弱体解除  全体攻撃  強化解除  クールダウン減少  回避不可  回復  増悪  弱体解除  ターンメーター上昇  クールダウン状態から開始  クールダウン減少  挑発付与 `,
-        url: '/characters/'
+        url: '/characters/Darth-Sion'
     }, {
         name: "ダース・シディアス",
         property: "ダークサイド、アタッカー、リーダー、シス",
         src: '/charui/tex.charui_sidious.png',
         abbreviation: "Darth Sidious darth sidious ",
         skill: `回復無効  防御力無効化  時間経過ダメージ  エクスポーズ  全体攻撃  リーダー：クリティカル率上昇  リーダー：クリティカルダメージ上昇  回復  ターンメーター上昇  クールダウン減少  スピード上昇 `,
-        url: '/characters/'
+        url: '/characters/Darth-Sidious'
     }, {
         name: "ダース・タロン",
         property: "ダークサイド、アタッカー、シス",
         src: '/charui/tex.charui_darthtalon.png',
         abbreviation: "Darth Talon darth talon",
         skill: `スキルブロック付与 クールダウン減少  ステルス  ターンメーター上昇  全体攻撃  ロイヤルハンド  クールダウン状態から開始  コピー不可  阻止不可  解除不可  弱体解除  クールダウンリフレッシュ  報復効果  挑発付与 強化無効  `,
-        url: '/characters/'
+        url: '/characters/Darth-Talon'
     }, {
         name: "ダース・トレイヤ",
         property: "ダークサイド、サポート、リーダー、シス",
         src: '/charui/tex.charui_traya.png',
         abbreviation: "Darth Traya darth traya トラヤ",
         skill: `めまい付与  クールダウン減少  抵抗力低下  スキルブロック付与 回復無効  回避不可  リーダー：クリティカル回避力上昇  リーダー：有効性上昇  回復  攻撃力低下  ボーナスプロテクション上昇  弱体解除  クールダウンリセット `,
-        url: '/characters/'
+        url: '/characters/Darth-Traya'
     }, {
         name: "ダース・ナイアリス",
         property: "ダークサイド、サポート、リーダー、シス",
         src: '/charui/tex.charui_nihilus.png',
         abbreviation: "Darth Nihilus darth nihilus",
         skill: `強化解除  クールダウン減少  クールダウン増加付与 全体攻撃  則戦闘不能  クールダウン状態から開始  リーダー：攻撃力上昇  リーダー：ヘルススティール上昇  リーダー：最大HP上昇  リーダー：クリティカルヒット無効  時間経過ダメージ  最大HP低下  ターンメーター上昇  最大HP上昇  `,
-        url: '/characters/'
+        url: '/characters/Darth-Nihilus'
     }, {
         name: "ダース・ベイダー",
         property: "ダークサイド、アタッカー、リーダー、帝国軍",
         src: '/charui/tex.charui_vader.png',
         abbreviation: "Darth Vader darth vader",
         skill: `スキルブロック付与 時間経過ダメージ  全体攻撃  弱体解除  回避不可  耐性発揮不可  カウンター不可  スピード低下  ターンメーター上昇  無慈悲  ボーナスターン  無慈悲な標的  恐怖無効化  スタン無効化  ターンメーター操作無効  挑発無視  リーダー：攻撃力上昇  ターンメーター減少付与  ターンメーター減少無効化  回復  ステルス解除  `,
-        url: '/characters/'
+        url: '/characters/Darth-Vader'
     }, {
         name: "ダース・ベイン",
         property: "ダークサイド、アタッカー、リーダー、シス",
         src: '/charui/tex.charui_darthbane.png',
         abbreviation: "Darth Bane darth bane",
         skill: `攻撃力減少  攻撃力上昇  耐性発揮不可  サイフォン  復活不可  強化解除  敵全体-強化解除  全体攻撃  回復無効  クールダウン増加付与 ヘルススティール上昇  防御突破力上昇  スピード上昇  ターンメーター減少付与 ターンメーター上昇  防御力減少  抵抗力減少  リーダー：攻撃力上昇  リーダー：スピード上昇  復活不可  スピード低下  防御力上昇  回避力上昇  HP上昇  クールダウンリセット  回復  HP割合ダメージ軽減  スキルブロック無効化  クールダウン増加無効化  スタン無効化  ターンメーター減少無効化  最大プロテクション上昇  挑発無視  弱体解除  味方全体-弱体解除  `,
-        url: '/characters/'
+        url: '/characters/Darth-Bane'
     }, {
         name: "ダース・マラック",
         property: "ダークサイド、タンク、シス、シス帝国",
         src: '/charui/tex.charui_darthmalak.png',
         abbreviation: "Darth Malak darth malak",
         skill: `抵抗力  強化解除  ショック  スタン付与  ダーク・インフュージョン  コピー不可  解除不可  阻止不可  回復  クールダウン状態から開始  回復無効  挑発  ボーナスターン不可  恐怖付与  耐性発揮不可  回避不可  HP割合ダメージ軽減  ボーナスターン  クールダウンリセット `,
-        url: '/characters/'
+        url: '/characters/Darth-Malak'
     }, {
         name: "ダース・マルガス",
         property: "ダークサイド、タンク、リーダー、シス、シス帝国",
         src: '/charui/tex.charui_darthmalgus.png',
         abbreviation: "Darth Malgus darth malgus gus",
         skill: `最大HP上昇  カウンター不可  回避不可  クリティカルダメージ上昇  暗闇  ショック  スキルブロック付与 挑発付与 耐性発揮不可  クリティカル率上昇  ターンメーター上昇  疑心  プロテクション上昇  ターンメーター減少無効化  リーダー：クリティカル率上昇  リーダー：最大HP上昇  リーダー：スピード上昇  恐怖付与  解除不可  帰ってきたぞ  スタン無効化  恐怖無効化  リーダー：マスター上昇  リーダー：クリティカル回避力上昇  エクスポーズ  HP割合ダメージ軽減  回復無効無効化  カウンター  `,
-        url: '/characters/'
+        url: '/characters/Darth-Malgus'
     }, {
         name: "ダース・モール",
         property: "ダークサイド、タンク、リーダー、シス",
         src: '/charui/tex.charui_maul.png',
         abbreviation: "Darth Maul darth maul",
         skill: `ターンメーター上昇  攻撃力上昇  全体攻撃  めまい付与  リーダー：回避力上昇  ステルス  `,
-        url: '/characters/'
+        url: '/characters/Darth-Maul'
     }, {
         name: "ダース・レヴァン",
         property: "ダークサイド、アタッカー、リーダー、シス、シス帝国",
         src: '/charui/tex.charui_sithrevan.png',
         abbreviation: "DR dr 黒レヴァン Darth Revan darth revan",
         skill: `強化無効  クールダウン減少  全体攻撃  ショック  回避不可  獰猛  恐怖付与  コピー不可  解除不可  耐性発揮不可  ターンメーター減少無効化  リーダー：クリティカル率上昇  リーダー：スピード上昇  リーダー：クリティカルダメージ上昇  デスマーク  フォアサイト解除  強化解除 `,
-        url: '/characters/'
+        url: '/characters/Darth-Revan'
     }, {
         name: "ターフル",
         property: "ライトサイド、サポート、リーダー、ウーキー",
         src: '/charui/tex.charui_tarfful.png',
         abbreviation: "Tarfful tarfful",
         skill: `強化解除  防御突破力上昇  防御力上昇  プロテクション上昇  アシスト  スタン付与  クリティカルダメージ上昇  スピード上昇  挑発  味方全体-弱体解除  有効性上昇  抵抗力上昇  最大HP上昇  誘発  回避不可  リーダー：防御力上昇  リーダー：最大HP上昇  回復  プロテクション上昇  抵抗力上昇  フォアサイト  報復効果  クールダウンリセット  ターンメーター上昇  アドバンテージ  時間経過ダメージ `,
-        url: '/characters/'
+        url: '/characters/Tarfful'
     }, {
         name: "タスケン・ウォーリアー",
         property: "ダークサイド、アタッカー、タスケン",
         src: '/charui/tex.charui_tuskenhuntress.png',
         abbreviation: "Tusken Warrior tusken warrior",
         skill: `時間経過ダメージ  モメンタム  クリティカルダメージ上昇  防御力低下  強化解除  敵全体-強化解除  カウンター不可  回避不可  弱体解除  クールダウンリセット  ボーナスターン `,
-        url: '/characters/'
+        url: '/characters/Tusken-Warrior'
     }, {
         name: "タスケン・シャーマン",
         property: "ダークサイド、ヒーラー、タスケン",
         src: '/charui/tex.charui_tuskenshaman.png',
         abbreviation: "Tusken Shaman tusken shaman",
         skill: `時間経過ダメージ  攻撃力上昇  回復  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Tusken-Shaman'
     }, {
         name: "タスケン・レイダー",
         property: "ダークサイド、アタッカー、タスケン",
         src: '/charui/tex.charui_tuskenraider.png',
         abbreviation: "Tusken Raider tusken raider",
         skill: `ターンメーター減少付与 アシスト  挑発付与 復活  クールダウン減少  弱体解除  味方全体-弱体解除  招集 `,
-        url: '/characters/'
+        url: '/characters/Tusken-Raider'
     }, {
         name: "タスケン族長",
         property: "ダークサイド、サポート、リーダー、タスケン",
         src: '/charui/tex.charui_tuskenchief.png',
         abbreviation: "Tusken Chief tusken chief",
         skill: `アシスト  モメンタム  プロテクション上昇  弱体解除  味方全体-弱体解除  クールダウン減少  スタン付与  ボーナスターン  時間経過ダメージ  回復  時間経過ダメージ無効化 `,
-        url: '/characters/'
+        url: '/characters/Tusken-Chief'
     }, {
         name: "ダスチャ",
         property: "ライトサイド、サポート、リーダー、ジャワ",
         src: '/charui/tex.charui_jawa_dathcha.png',
         abbreviation: "Dathcha dathcha",
         skill: `ステルス  スキルブロック付与 スタン付与  防御力低下  ターンメーター減少付与 `,
-        url: '/characters/'
+        url: '/characters/Dathcha'
     }, {
         name: "ダッシュ・レイダー",
         property: "ライトサイド、サポート、リーダー、ならず者",
@@ -1132,232 +1139,232 @@ const characters: Characters[] = [
         abbreviation: "Dash Rendar dash rander",
         skill: `アシスト  強化解除  スタン付与  全体攻撃  ステルス解除  めまい付与  防御力低下  クリティカルダメージ低下
             回避不可  耐性発揮不可  準備万端  クリティカルダメージ上昇  攻撃力上昇  ターンメーター上昇  `,
-        url: '/characters/'
+        url: '/characters/Dash-Rendar'
     }, {
         name: "タリア",
         property: "ダークサイド、ヒーラー、リーダー、ナイトシスター",
         src: '/charui/tex.charui_nightsister_talia.png',
         abbreviation: "Talia talia",
         skill: `回復  弱体解除  ターンメーター上昇  時間経過ダメージ  よろめき `,
-        url: '/characters/'
+        url: '/characters/Talia'
     }, {
         name: "タロン・マリコス",
         property: "ダークサイド、アタッカー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_taronmalicos.png',
         abbreviation: "Tron Malicos tron malicos",
         skill: `狂気の刃  コピー不可  解除不可  阻止不可  カウンター不可  切り返し  ボーナスターン  溢れる狂気  クールダウンリセット  全体攻撃  無防備  スタン付与  耐性発揮不可  クールダウン増加付与 強化無効  回復無効  回避不可  復活不可  カウンター 挑発無視  クールダウン減少  クリティカルヒット耐性  プロテクション上昇 ダメージ耐性  攻撃力上昇  クリティカル率上昇  クリティカルダメージ上昇  固定ダメージ  `,
-        url: '/characters/'
+        url: '/characters/Tron-Malicos'
     }, {
         name: "チアルート・イムウェ",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_chirrut.png',
         abbreviation: "Chirrut Îmwe chirrut imwe",
         skill: `時間経過回復  HP均一化  弱体無効  味方全体-弱体無効  抵抗力上昇  アシスト  回復 `,
-        url: '/characters/'
+        url: '/characters/Chirrut-Imwe'
     }, {
         name: "チャーパ族長",
         property: "ライトサイド、サポート、リーダー、イウォーク",
         src: '/charui/tex.charui_chirpa.png',
         abbreviation: "Chief Chirpa chief chirpa",
         skill: `ターンメーター上昇  回復  時間経過回復  報復効果  スピード上昇  アシスト  リーダー：スピード上昇 `,
-        url: '/characters/'
+        url: '/characters/Chief-Chirpa'
     }, {
         name: "チューバッカ",
         property: "ライトサイド、アタッカー、反乱軍、ならず者、スマグラー、ウーキー",
         src: '/charui/tex.charui_chewbacca.png',
         abbreviation: "Chewbacca chewbacca チューイ",
         skill: `抵抗力低下  強化解除  全体攻撃  敵全体-強化解除  攻撃力上昇  防御力無効化  クリティカル率上昇  スタン付与  クールダウンリセット  回避不可  ガード  アシスト  回復  スキルブロック無効化  クールダウン増加無効化  ボーナスダメージ  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Chewbacca'
     }, {
         name: "チョッパー",
         property: "ライトサイド、サポーター、ドロイド、フェニックス、反乱軍",
         src: '/charui/tex.charui_chopper.png',
         abbreviation: "Chopper chopper",
         skill: `防御力上昇  攻撃力上昇  スピード上昇  クールダウン減少  挑発付与 強化解除  ターンメーター減少  プロテクション上昇  スタン付与  回避不可  回復  プロテクション上昇  アシスト `,
-        url: '/characters/'
+        url: '/characters/Chopper'
     }, {
         name: "ティーボ",
         property: "ライトサイド、タンク、リーダー、イウォーク",
         src: '/charui/tex.charui_teebo.png',
         abbreviation: "Teebo teebo",
         skill: `ターンメーター減少付与 ステルス  ターンメーター上昇  強化解除 `,
-        url: '/characters/'
+        url: '/characters/Teebo'
     }, {
         name: "デス・トルーパー",
         property: "ダークサイド、アタッカー、帝国軍、インペリアル・レムナント、帝国軍トルーパー",
         src: '/charui/tex.charui_trooperdeath.png',
         abbreviation: "Death Trooper death trooper",
         skill: `めまい付与  スタン付与  全体攻撃  強化解除  敵全体-強化解除  回復無効  クールダウン増加付与 耐性発揮不可  デスマーク  復活不可  回復  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Death-Trooper'
     }, {
         name: "テック",
         property: "ライトサイド、サポート、バッド・バッチ、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_bb_tech.png',
         abbreviation: "Tech tech Bad Batch BB bad batch bb",
         skill: `ターゲットロック  回復  有効性上昇  ステルス  通訳  弱体解除  味方全体-弱体解除  フォアサイト  抵抗力上昇  スタン付与  コピー不可  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Tech'
     }, {
         name: "デンガー",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: '/charui/tex.charui_dengar.png',
         abbreviation: "Denger denger",
         skill: `アシスト  スピード低下  スタン付与  抵抗力低下  時間経過ダメージ  ステルス  ターンメーター減少付与 サーマル・デトネーター  カウンター不可  リーダー：ヘルススティール上昇  クリティカルダメージ低下  ターンメータ増加  抵抗力上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Denger'
     }, {
         name: "ドゥークー伯爵",
         property: "ダークサイド、アタッカー、リーダー、分離主義者、シス",
         src: '/charui/tex.charui_dooku.png',
         abbreviation: "Count Dooku cout dooku ウィリウォンカ",
         skill: `スタン付与  スキルブロック付与 カウンター不可  回避不可  ショック  スタン付与  切り返し  ステルス  弱体解除  リーダー：抵抗力上昇  リーダー：カウンター率上昇  カウンター  抵抗力低下  回復無効  耐性発揮不可  ターンメーター上昇  クリティカルヒット耐性 `,
-        url: '/characters/'
+        url: '/characters/Count-Dooku'
     }, {
         name: "ドクター・アフラ",
         property: "ダークサイド、サポート、リーダー、ならず者",
         src: '/charui/tex.charui_doctoraphra.png',
-        abbreviation: "Doctor Apra doctor aphra",
+        abbreviation: "Doctor Aphra doctor aphra",
         skill: `スタン付与  最大プロテクション上昇  サイフォン  精度低下  有効性上昇  ターンメーター上昇  クリティカルダメージ上昇  攻撃力上昇  回復  復活  招集  破損  ターゲットロック  全体攻撃  クールダウン増加付与 疑心  カウンター不可  強化無効  回復無効  よろめき  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  エクスポーズ  スピード低下  回避不可  耐性発揮不可  リーダー：クリティカル回避力上昇  リーダー：スピード上昇  プロテクション上昇  ダメージ耐性  時間経過ダメージ  スキルブロック無効化  回復無効無効化  アーマー破壊  復活不可 `,
-        url: '/characters/'
+        url: '/characters/Doctor-Aphra'
     }, {
         name: "トレンチ提督",
         property: "ダークサイド、サポート、リーダー、分離主義者",
         src: '/charui/tex.charui_admiraltrench.png',
         abbreviation: "Admiral Trench admiral trench",
         skill: `ショック  スタン付与  時間経過回復  時間経過プロテクション  スキルブロック付与 解除不可  耐性発揮不可  クリティカルダメージ減少  ターンメーター減少付与 回復  強化解除  よろめき  アシスト  戦術的優位性  プロテクション上昇  アドバンテージ  フォアサイト  リーダー：最大HP上昇  リーダー：有効性上昇  リーダー：スピード上昇  攻撃力上昇  ステルス解除  ステルス無効化  カウンター  アシスト不可  カウンター不可  ボーナスターン不可  ターンメーター減少無効化  ターンメーター上昇  強化無効無効化  回復無効無効化  恐怖付与  `,
-        url: '/characters/'
+        url: '/characters/Admiral-Trench'
     }, {
         name: "ドロイデカ",
         property: "ダークサイド、アタッカー、ドロイド、分離主義者",
         src: '/charui/tex.charui_droideka.png',
         abbreviation: "DDk ddk Droideka droideka",
         skill: `固定ダメージ  防御力無効化  クリティカルヒット不可  ターゲットロック  回避不可  弱体解除  ダメージ耐性  コピー不可  抵抗力上昇  回復  チャージ  アシスト  解除不可  阻止不可  最大HP上昇  めまい無効化  スタン無効化  復活 `,
-        url: '/characters/'
+        url: '/characters/Droideka'
     }, {
         name: "ナイトシスター・アコライト",
         property: "ダークサイド、アタッカー、ナイトシスター",
         src: '/charui/tex.charui_nightsister_acolyte.png',
         abbreviation: "Nightsister Acolyte nightsister acolyte",
         skill: `ステルス  ターンメーター上昇  弱体解除  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Nightsister-Acolyte'
     }, {
         name: "ナイトシスター・イニシエート",
         property: "ダークサイド、アタッカー、ナイトシスター",
         src: '/charui/tex.charui_nightsister_initiate.png',
         abbreviation: "Nightsister Initiate nightsister initiate",
         skill: `時間経過ダメージ  クリティカル率上昇  強化無効  カウンター `,
-        url: '/characters/'
+        url: '/characters/Nightsister-Initiate'
     }, {
         name: "ナイトシスター・スピリット",
         property: "ダークサイド、アタッカー、ナイトシスター",
         src: '/charui/tex.charui_nightsisters_wraith.png',
         abbreviation: "Nightsister Spirit nightsister spirit",
         skill: `スピード低下  ターンメーター減少付与 ターンメーター上昇  強化解除  スタン付与  フォアサイト  アーマー無効化 `,
-        url: '/characters/'
+        url: '/characters/Nightsister-Spirit'
     }, {
         name: "ナイトシスター・ゾンビ",
         property: "ダークサイド、タンク、ナイトシスター",
         src: '/charui/tex.charui_nightsisters_zombie.png',
         abbreviation: "Nightsister Zombie nightsister zombie",
         skill: `抵抗力低下  弱体解除  回復  挑発付与 復活  阻止不可  スピード上昇  スピード低下  復活不可  復活 `,
-        url: '/characters/'
+        url: '/characters/Nightsister-Zombie'
     }, {
         name: "ナインス・シスター",
         property: "ダークサイド、タンク、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_ninthsister.png',
         abbreviation: "9s 9S Ninth Sister ninth sister マサナ・タイド Masana Tide masana ",
         skill: `粛清  耐性発揮不可  時間経過ダメージ  時間経過回復  強化解除  めまい付与  防御力低下  有効性低下  全体攻撃  挑発  防御力上昇  スピード制限無効化  スキルブロック無効化  スタン無効化  クリティカル回避力上昇  回復  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Ninth-Sister'
     }, {
         name: "ヌート・ガンレイ",
         property: "ダークサイド、サポート、リーダー、ならず者、分離主義者",
         src: '/charui/tex.charui_nutegunray.png',
         abbreviation: "Nute Gunray nute gunray",
         skill: `クールダウン減少  強要  恩恵  スピード低下  回避不可  強化解除  クールダウン増加付与 アシスト  リーダー：スピード上昇  リーダー：有効性上昇  スピード減少  復活  ステルス `,
-        url: '/characters/'
+        url: '/characters/Nute-Gunray'
     }, {
         name: "ネビット長老",
         property: "ライトサイド、タンク、リーダー、ジャワ",
         src: '/charui/tex.charui_jawa_nebit.png',
         abbreviation: "Chief Nebit chief nebit",
         skill: `プロテクション上昇  時間経過回復  クールダウン減少  挑発付与 アシスト  ステルス  リーダー：クリティカル率上昇  クリティカル率低下  強化解除  サーマル・デトネーター  解除不可  阻止不可  耐性発揮不可  回復 `,
-        url: '/characters/'
+        url: '/characters/Chief-Nebit'
     }, {
         name: "パオ",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_pao.png',
         abbreviation: "Pao pao",
         skill: `攻撃力上昇  ターンメーター上昇  全体攻撃  防御力減少  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Pao'
     }, {
         name: "パズ・ウィズラ",
         property: "ライトサイド、タンク、マンダロリアン",
         src: '/charui/tex.charui_pazvizsla.png',
         abbreviation: "Paz Vizsla paz vizsla",
         skill: `ヒート  オーバーヒート  コピー不可  解除不可  阻止不可  強靭な防御  固定ダメージ  回避不可  全体攻撃  破損  クリティカルダメージ低下  回復  クリティカル回避力上昇  めまい付与  ターンメーター減少付与 炎上  エクスポーズ  よろめき  プロテクション上昇  報復効果  フレンジー  弱体解除  ダメージ耐性  ボーナスターン  クールダウンリセット `,
-        url: '/characters/'
+        url: '/characters/Paz-Vizsla'
     }, {
         name: "バスティラ・シャン",
         property: "ライトサイド、サポート、リーダー、ジェダイ、旧共和国",
         src: '/charui/tex.charui_bastilashan.png',
         abbreviation: "Bastila bastila Shan shan BS bs Bast bast",
         skill: `スキルブロック付与 弱体解除  攻撃力上昇  防御力上昇  スピード上昇  精度上昇  クリティカル率上昇  アシスト  強化解除  スタン付与  強化無効  プロテクション上昇  ターンメーター上昇  挑発付与 回復  伝説の戦闘瞑想  解除不可  アドバンテージ  報復効果 `,
-        url: '/characters/'
+        url: '/characters/Bastila-Shan'
     }, {
         name: "バスティラ・シャン(フォールン)",
         property: "ダークサイド、サポート、シス、シス帝国",
         src: '/charui/tex.charui_bastilashan_dark.png',
         abbreviation: "BSF bsf 闇バス Bastila Shan (Fallen) bastila shan fallen ",
         skill: `スキルブロック付与 ショック  全体攻撃  カウンタ不可  回避不可  恐怖付与  コピー不可  解除不可  攻撃力低下  クリティカルダメージ低下  回避力低下  スピード低下  エクスポーズ  よろめき  耐性発揮不可  クールダウン増加付与  邪悪な戦闘瞑想  ターンメーター減少付与 回復  フォアサイト  アドバンテージ  フォアサイト `,
-        url: '/characters/'
+        url: '/characters/Bastila-Shan-Fallen'
     }, {
         name: "ハックス将軍",
         property: "ダークサイド、サポート、リーダー、ファースト・オーダー、艦隊司令官",
         src: '/charui/tex.charui_generalhux.png',
         abbreviation: "General Hux general hux ハグス将軍 Hugs",
         skill: `ターンメーター上昇  アドバンテージ  強化解除  回避不可  アシスト  弱体解除  ボーナスターン  クールダウンリセット  ダメージ上昇  優位  カウンター  ボーナスターン不可 `,
-        url: '/characters/'
+        url: '/characters/General-Hux'
     }, {
         name: "パドメ・アミダラ",
         property: "ライトサイド、サポート、リーダー、銀河共和国",
         src: '/charui/tex.charui_padme_geonosis.png',
         abbreviation: "Padme Padmé Amidala padme amidala padmé PA pa",
         skill: `回避不可  プロテクション上昇  弱体解除  味方全体-弱体解除  プロテクション上昇  スタン付与  コピー不可  解除不可  アシスト  リーダー：最大HP上昇  耐性発揮  クリティカルヒット不可  勇気  阻止不可  ボーナスダメージ  恐怖無効化 `,
-        url: '/characters/'
+        url: '/characters/Padme-Amidala'
     }, {
         name: "パプルー",
         property: "ライトサイド、タンク、イウォーク",
         src: '/charui/tex.charui_paploo.png',
         abbreviation: "Paploo paploo",
         skill: `強化解除  防御力上昇  スピード低下  挑発付与 弱体解除  ターンメーター上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Paploo'
     }, {
         name: "バリス・オフィー",
         property: "ライトサイド、ヒーラー、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_barriss_light.png',
         abbreviation: "Barriss Offee barriss offee",
         skill: `回復  HP均一化  防御力上昇  リーダー：最大HP上昇  弱体解除  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Barriss-Offee'
     }, {
         name: "パルパティーン皇帝",
         property: "ダークサイド、サポート、リーダー、帝国軍、シス",
         src: '/charui/tex.charui_palpatineemperor.png',
-        abbreviation: "Emperor Palpatine emperor palpatine EP ep",
+        abbreviation: "Emperor Palpatine emperor palpatine EP ep パワー ",
         skill: `ショック  ターンメーター上昇  スタン付与  全体攻撃  攻撃力上昇  回復  ヘルススティール上昇  リーダー：有効性上昇
             リーダー：最大HP上昇  リーダー：有効性低下  リーダー：回避力低下 `,
-        url: '/characters/'
+        url: '/characters/Emperor-Palpatine'
     }, {
         name: "ハン(ストームトルーパー)",
         property: "ライトサイド、タンク、リーダー、反乱軍、ならず者",
         src: '/charui/tex.charui_trooperstorm_han.png',
         abbreviation: "STハン Stormtrooper Han stormtrooper han solo Solo ソロ",
         skill: `ターンメーター上昇  挑発付与 リーダー：防御力上昇  リーダー：攻撃力上昇  ターンメーター減少付与  回復 `,
-        url: '/characters/'
+        url: '/characters/Stormtrooper-Han'
     }, {
         name: "ハン・ソロ",
         property: "ライトサイド、アタッカー、反乱軍、ならず者、スマグラー",
         src: '/charui/tex.charui_han.png',
         abbreviation: "Han Solo han solo",
         skill: `ターンメーター減少付与 回避不可  スタン付与  ターンメーター上昇  クリティカル率上昇  回避力上昇  クリティカルダメージ上昇  ボーナスターン  挑発無視  `,
-        url: '/characters/'
+        url: '/characters/Han-Solo'
     }, {
         name: "ハンター",
         property: "ライトサイド、アタッカー、リーダー、バッド・バッチ、クローン・トルーパー",
@@ -1371,14 +1378,14 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_piett.png',
         abbreviation: "Admiral Piett admiral piett",
         skill: `アシスト  攻撃力上昇  ステルス  マーク状態  失敗不可避  コピー不可  解除不可  耐性発揮不可  全体攻撃  強化解除  めまい  恐怖付与  コピー不可  解除不可  耐性発揮不可  リーダー：攻撃力上昇  リーダー：有効性上昇  リーダー：スピード減少  リーダー：抵抗力減少  防御力上昇  カウンター  皇帝の罠  阻止不可 `,
-        url: '/characters/'
+        url: '/characters/Admiral-Piett'
     }, {
         name: "ビスタン",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_bistan.png',
         abbreviation: "Bistan bistan",
         skill: `時間経過ダメージ  フレンジー  ターンメーター上昇  ターンメーター減少付与 `,
-        url: '/characters/'
+        url: '/characters/Bistan'
     }, {
         name: "ビッグス・ダークライダー",
         property: "ライトサイド、サポート、反乱軍、反乱軍ファイター",
@@ -1392,133 +1399,133 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_firstorder_executioner.png',
         abbreviation: "First Order Executioner first order executioner FOE foe FOX fox",
         skill: `HP上昇  アドバンテージ  ターンメータ減少  強化解除  ターンメーター上昇  クールダウンリセット  最大HP上昇 `,
-        url: '/characters/'
+        url: '/characters/First-Order-Executioner'
     }, {
         name: "ファースト・オーダー・オフィサー",
         property: "ダークサイド、サポート、ファースト・オーダー",
         src: '/charui/tex.charui_firstorderofficer.png',
         abbreviation: "First Order Officer FOO foo first order officer",
         skill: `ターンメーター上昇  アドバンテージ  攻撃力上昇  弱体解除  抵抗力上昇  ターンメータ減少  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/First-Order-Officer'
     }, {
         name: "ファースト・オーダー・ストームトルーパー",
         property: "ダークサイド、タンク、ファースト・オーダー",
         src: '/charui/tex.charui_firstordertrooper.png',
         abbreviation: "First Order Stormtrooper first order stormtrooper FOST fost",
         skill: `スピード低下  強化解除  ターンメーター上昇  防御力上昇  弱体解除  アドバンテージ  挑発付与 カウンター  アシスト `,
-        url: '/characters/'
+        url: '/characters/First-Order-Stormtrooper'
     }, {
         name: "ファースト・オーダーTIEパイロット",
         property: "ダークサイド、アタッカー、ファースト・オーダー",
         src: '/charui/tex.charui_firstordertiepilot.png',
         abbreviation: "First Order TIE Pilot first order tie pilot FOTP fotp",
         skill: `アドバンテージ  攻撃力低下  強化無効  HP低下  アドバンテージ  フォアサイト  回復 `,
-        url: '/characters/'
+        url: '/characters/First-Order-TIE-Pilot'
     }, {
         name: "ファースト・オーダー特殊部隊TIEパイロット",
         property: "ダークサイド、アタッカー、ファースト・オーダー",
         src: '/charui/tex.charui_firstorder_pilot.png',
         abbreviation: "First Order SF TIE Pilot first order sf tie pilot special force",
         skill: `防御力低下  アドバンテージ  全体攻撃  スピード上昇  アシスト   スタン付与 `,
-        url: '/characters/'
+        url: '/characters/First-Order-SF-TIE-Pilot'
     }, {
         name: "フィフス・ブラザー",
         property: "ダークサイド、サポート、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_fifthbrother.png',
         abbreviation: "Fifth Brother 5b 5B fifth brother",
         skill: `粛清  耐性発揮不可  強化解除  全体攻撃  防御力低下  エクスポーズ  有効性上昇  無防備  プロテクション上昇  ダメージ耐性  スタン付与  恐怖付与  コピー不可  解除不可  回避不可  リーダー：防御力上昇  リーダー：最大HP上昇  スピード減少  エクスポーズ  カウンター  誘発  破損  スタン解除  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Fifth-Brother'
     }, {
         name: "フィン",
         property: "ライトサイド、タンク、リーダー、レジスタンス",
         src: '/charui/tex.charui_finnjakku.png',
         abbreviation: "Finn finn ジョン・ボイエガ",
         skill: `回復  アドバンテージ  防御力上昇  挑発付与 決意  報復効果  エクスポーズ  スタン付与  リーダー：防御力上昇  リーダー：攻撃力上昇  リーダー：有効性上昇  ターンメーター上昇  ターンメーター減少付与 クールダウン減少  リーダー：最大HP上昇  リーダー：プロテクション上昇  復活  プロテクション上昇  解除不可  阻止不可  クリティカルヒット無効化  カウンター  強化解除  回避不可  耐性発揮不可  固定ダメージ `,
-        url: '/characters/'
+        url: '/characters/Finn'
     }, {
         name: "ブーシ(レイア・オーガナ)",
         property: "ライトサイド、アタッカー、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
         src: '/charui/tex.charui_boushh.png',
         abbreviation: "Boushh (Leia Organa) boushh leia organa",
         skill: `サーマル・デトネーター  回避不可  防御力低下  全体攻撃  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  強化解除  スタン無効化  復活不可  恐怖無効化  好みの悪党  コピー不可  解除不可  阻止不可  デッドリーブラフ  ターン外攻撃不可 スピード減少  ターンメーター操作無効化  アシスト  スキルブロック無効化  最大クールダウン減少 クールダウンリセット `,
-        url: '/characters/'
+        url: '/characters/Boushh-Leia-Organa'
     }, {
         name: "フェネック・シャンド",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: '/charui/tex.charui_fennec.png',
         abbreviation: "Fennec Shand fennec shand",
         skill: `攻撃力上昇 熟練兵  全体攻撃  アーマー破壊  自信過剰  コピー不可  耐性発揮不可  回避不可  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：防御力上昇  リーダー：攻撃力上昇  賞金稼ぎの決意  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Fennec-Shand'
     }, {
         name: "プリンセス・ニーサ",
         property: "ライトサイド、アタッカー、イウォーク",
         src: '/charui/tex.charui_princesskneesaa.png',
         abbreviation: "Princess Kneesaa princess knersaa",
         skill: `ボーナスターンメーター上昇無効化  攻撃力上昇  有効性低下  弱体解除  味方全体-弱体解除  アシスト  スピード低下  クリティカル率上昇  回復  スタン付与  ターンメーター減少付与 クリティカルダメージ上昇  時間経過ダメージ  固定ダメージ  アシスト  報復効果  フォアサイト  プロテクション上昇  めまい無効化  スタン無効化  ターンメーター上昇  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Princess-Kneesaa'
     }, {
         name: "プロ・クーン",
         property: "ライトサイド、タンク、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_plokoon.png',
         abbreviation: "Plo Koon plo koon",
         skill: `強化解除  防御力上昇  全体攻撃  攻撃力低下  ターンメーター上昇  ステルス解除  攻撃力上昇 `,
-        url: '/characters/'
+        url: '/characters/Plo-Koon'
     }, {
         name: "ベイズ・マルバス",
         property: "ライトサイド、タンク、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_bazemalbus.png',
         abbreviation: "Baze Malbus baze malbus",
         skill: `スピード低下  ターンメーター上昇  強化解除  アシスト  挑発付与  報復効果  `,
-        url: '/characters/'
+        url: '/characters/Baze-Malbus'
     }, {
         name: "ベイダー卿",
         property: "銀河の伝説、ダークサイド、アタッカー、リーダー、帝国軍、シス",
         src: '/charui/tex.charui_lordvader.png',
         abbreviation: "Lord Vader load vader GL gl Galactic Legend LV lv",
         skill: `強化無効  回復無効  過小評価  回復  全体攻撃  めまい付与  時間経過ダメージ  耐性発揮不可  スキルブロック付与  解除不可  クールダウン増加付与 リーダー：スピード上昇  リーダー：マスター上昇  リーダー：最大HP上昇  プロテクション失う  恐怖無効化  挑発付与 マーク状態  阻止不可  最大HP減少無効化  時間経過ダメージ無効化  サーマル・デトネーター無効化  クリティカルヒット無効化  ターンメーター操作無効化  回避不可  スピード上昇  ステルス  ボーナスターンメーター無効化  HP割合ダメージ軽減  大ダメージ軽減  スタン無効化  ボーナスターン  クールダウン減少  コピー不可  共和国の灰 `,
-        url: '/characters/'
+        url: '/characters/Lord-Vader'
     }, {
         name: "ヘラ・シンドゥーラ",
         property: "ライトサイド、サポート、リーダー、フェニックス、反乱軍",
         src: '/charui/tex.charui_hera_s3.png',
         abbreviation: "Hera Syndulla hera syndulla",
         skill: `エクスポーズ  アシスト  弱体解除  クールダウン減少  ターンメーター上昇  予備プラン  復活  カウンター `,
-        url: '/characters/'
+        url: '/characters/Hera-Syndulla'
     }, {
         name: "ベン・ソロ",
         property: "ライトサイド、アタッカー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_bensolo.png',
         abbreviation: "Ben Solo ben solo ",
         skill: `防御力低下  攻撃力低下  有効性低下  スピード低下  ターンメーター減少付与 暗闇  攻撃力上昇  クールダウン減少  固定ダメージ  回復無効  コピー不可  解除不可  回避不可  耐性発揮不可  アーマー破壊  強化解除  敵全体-強化解除  ターンメーター上昇  挑発無視  プロテクション無効化  即戦闘不能耐性  復活 `,
-        url: '/characters/'
+        url: '/characters/Ben-Solo'
     }, {
         name: "ボ＝カターン(マンダロア)",
         property: "ライトサイド、アタッカー、リーダー、マンダロリアン",
         src: '/charui/tex.charui_mandalorbokatan.png',
         abbreviation: "Bo-Katan (Mand'alor) bo-katan mand'alor bokatan ",
         skill: `固定ダメージ  回避不可  強化解除  スピード上昇  アーマー破壊  クールダウン減少  弱体解除  味方全体-弱体解除  アシスト  先祖の決意  コピー不可  解除不可  阻止不可  ボーナスターン  リーダー：最大HP上昇  リーダー：防御力上昇  リーダー：攻撃力上昇  挑発付与 復活  HP割合ダメージ軽減  回復  めまい無効化  挑発無視  スタン付与 `,
-        url: '/characters/'
+        url: '/characters/Bo-Katan-Mandalor'
     }, {
         name: "ボ＝カターン・クライズ",
         property: "ライトサイド・アタッカー・リーダー、マンダロリアン、ならず者",
         src: '/charui/tex.charui_bokatan.png',
         abbreviation: "Bo-Katan Kryze bo-katan kryze bokatan",
         skill: `脆弱  強化解除  敵全体-強化解除  アシスト  弱体解除  挑発付与 防御力上昇  抵抗力上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Bo-Katan-Kryze'
     }, {
         name: "ポー・ダメロン",
         property: "ライトサイド、タンク、リーダー、レジスタンス",
         src: '/charui/tex.charui_poe.png',
         abbreviation: "Poe Dameron poe dameron",
         skill: `攻撃力低下  挑発付与 ターンメーター減少付与 エクスポーズ  強化無効  リーダー：攻撃力上昇  リーダー：有効性上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Poe-Dameron'
     }, {
         name: "ボーディー・ルック",
         property: "ライトサイド、サポート、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_bodhi.png',
         abbreviation: "Bodhi Rook bodhi rook",
         skill: `回避力低下  回避不可  攻撃力上昇  有効性上昇  ターンメーター上昇  ターンメーター減少付与 `,
-        url: '/characters/'
+        url: '/characters/Bodhi-Rook'
     }, {
         name: "ポグル",
         property: "ダークサイド、サポート、リーダー、ジオノージアン、分離主義者",
@@ -1526,7 +1533,7 @@ const characters: Characters[] = [
         abbreviation: "Poggle poggle",
         skill: `スキルブロック付与 弱体解除  味方全体-弱体解除  ターンメーター上昇  攻撃力上昇  アシスト  リーダー：攻撃力上昇  回復
             ターンメーター減少付与 ジオノージアン・ブルード  コピー不可  解除不可  阻止不可  復活 `,
-        url: '/characters/'
+        url: '/characters/Poggle'
     }, {
         name: "ボス・ナス",
         property: 'ライトサイド、サポート、リーダー、グンガン',
@@ -1540,56 +1547,56 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_bossk.png',
         abbreviation: "Bossk bossk お喋りトカゲ",
         skill: `スタン付与  アシスト  クールダウン減少  弱体解除  回復  フレンジー  挑発付与 攻撃力上昇  リーダー：最大プロテクション上昇  リーダー：抵抗力上昇 `,
-        url: '/characters/'
+        url: '/characters/Bossk'
     }, {
         name: "ホス反乱軍スカウト",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_rebelhothscout.png',
         abbreviation: "Hoth Rebel Scout hoth rebel scout",
         skill: `ターンメーター上昇  スタン付与  `,
-        url: '/characters/'
+        url: '/characters/Hoth-Rebel-Scout'
     }, {
         name: "ホス反乱軍兵士",
         property: "ライトサイド、サポーター、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_rebelhoth.png',
         abbreviation: "Hoth Rebel Soldier hoth rebel soldier",
         skill: `攻撃力低下  挑発付与 防御力上昇  HP上昇  防御力上昇  回復  カウンター `,
-        url: '/characters/'
+        url: '/characters/Hoth-Rebel-Soldier'
     }, {
         name: "ボバ・フェット",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
         src: '/charui/tex.charui_bobafett.png',
         abbreviation: "Boba Fett BF boba fett ﾌｪｯ!!",
         skill: `時間経過ダメージ  全体攻撃  スキルブロック付与 強化解除  弱体解除  復活不可  クールダウン減少  回復無効  回避不可  リーダー：クリティカルダメージ上昇  リーダー：クリティカル率上昇  ターンメーター上昇  賞金稼ぎの決意  挑発無視`,
-        url: '/characters/'
+        url: '/characters/Boba-Fett'
     }, {
         name: `ボバ・フェット(ジャンゴの "息子" )`,
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: '/charui/tex.charui_bobafettold.png',
         abbreviation: "大名 Daimyo BFSoJ SOJ SoJ soj bfsoj Boba Fett, Scion of Jango boba fett scion jango  ﾌｪｯ!!",
         skill: `モメンタム  解除不可  阻止不可  抵抗力上昇  コピー不可  プロテクション破壊  耐性発揮不可  プロテクション無効化  全体攻撃  時間経過ダメージ  抵抗力低下  有効性低下  破損  リーダー：クリティカル回避力上昇  挑発無視  固定ダメージ  賞金稼ぎの決意  ターンメーター上昇  スキルブロック無効化  スタン無効化  回復 `,
-        url: '/characters/'
+        url: '/characters/Boba-Fett-Scion-of-Jango'
     }, {
         name: "ホンドー・オナカ",
         property: "ニュートラル、サポート、ならず者、スマグラー",
         src: '/charui/tex.charui_hondoohnaka.png',
         abbreviation: "Hondo Ohnaca hondo ohnaca",
         skill: `身代金  コピー不可  解除不可  阻止不可  ターンメーター減少付与 ターンメーター上昇  勝利戦術  人質  耐性発揮不可  スピード0  ボーナスアタック不可  ボーナスターン不可  防御力上昇  弱体解除  味方全体-弱体解除  アシスト  スキルブロック付与  強化無効  クールダウン増加付与 逃走  エクスポーズ  フォアサイト  クリティカルヒット無効化  回復  ボーナスターンメーター `,
-        url: '/characters/'
+        url: '/characters/Hondo-Ohnaca'
     }, {
         name: "マグマトルーパー",
         property: "ダークサイド、アタッカー、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_trooperstorm_magma.png',
         abbreviation: "Magmatrooper magmatrooper",
         skill: `全体攻撃  ターンメーター減少付与 アーマー無効化  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Magmatrooper'
     }, {
         name: "マザー・タルジン",
         property: "ダークサイド、サポート、リーダー、ナイトシスター",
         src: '/charui/tex.charui_nightsisters_talzin.png',
         abbreviation: "Mother Talzin mother talzin",
         skill: `感染  カウンター不可  プロテクション無効化  アシスト  復活  回復 リーダー：有効性上昇  リーダー：スピード上昇  回避不可  ターンメーター上昇  即戦闘不能  耐性発揮不可 `,
-        url: '/characters/'
+        url: '/characters/Mother-Talzin'
     }, {
         name: "マラ・ジェイド(皇帝の手)",
         property: "ダークサイド、アタッカー、帝国軍、非同盟のフォースの使い手",
@@ -1597,254 +1604,252 @@ const characters: Characters[] = [
         abbreviation: "MJ mj Mara Jade, The Empeor's Hand mara jade the emprors hand",
         skill: `めまい付与  アシスト 全体攻撃  強化解除  スタン付与  無防備  抵抗力低下  攻撃力低下  ショック  よろめき  ステルス  ターンメーター上昇
             有用なコマ  コピー不可  解除不可  ロイヤルハンド  暗闇  回避不可  耐性発揮不可  プロテクション減少  最大プロテクション減少`,
-        url: '/characters/'
+        url: '/characters/Mara-Jade-The-Empeors-Hand'
     }, {
         name: "マンダロリアン",
         property: "ライトサイド、アタッカー、リーダー、賞金稼ぎ、マンダロリアン、ならず者",
         src: '/charui/tex.charui_mandalorian.png',
         abbreviation: "The Mandalorian the mandalorian Mando mando This is the way",
         skill: `クリティカル率上昇  アシスト  クリティカルダメージ上昇  リーダー：スピード上昇  リーダー：抵抗力上昇  リーダー：クリティカル率上昇  ターンメーター上昇  賞金稼ぎの決意  即戦闘不能  回避不可  復活不可 `,
-        url: '/characters/'
+        url: '/characters/The-Mandalorian'
     }, {
         name: "マンダロリアン(ベスカー・アーマー)",
         property: "ライトサイド、アタッカー、リーダー、マンダロリアン、ならず者",
         src: '/charui/tex.charui_mandobeskar.png',
         abbreviation: "BAM bam The Mandalorian (Beskar Armor) the mandalorian beskar armor",
         skill: `時間経過ダメージ  ホイッスリング・バード  アシスト不可  カウンター不可 ステルス無視  挑発無視  弱体解除  味方全体-弱体解除  プロテクション均一化  回復  ターンメーター減少付与 回避不可  ダメージ耐性  コピー不可  解除不可  阻止不可  抵抗力上昇  クールダウンから開始  固定ダメージ  復活不可  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：攻撃力上昇  スキルブロック無効化  クールダウンリセット `,
-        url: '/characters/'
+        url: '/characters/The-Mandalorian-Beskar-Armor'
     }, {
         name: "ミッション・ヴァオ",
         property: "ライトサイド、アタッカー、旧共和国、ならず者",
         src: '/charui/tex.charui_mission.png',
         abbreviation: "MV Mission Vao mission vao",
         skill: `めまい付与  ターンメーター上昇  弱体解除  ステルス  プロテクション上昇  暗闇  時間経過ダメージ  回避不可  アシスト  回復 `,
-        url: '/characters/'
+        url: '/characters/Mission-Vao'
     }, {
         name: "メイス・ウィンドゥ",
         property: "ライトサイド、タンク、リーダー、銀河共和国、ジェダイ、艦隊司令官",
         src: '/charui/tex.charui_macewindu.png',
         abbreviation: "Mace Windu mace windu",
         skill: `スキルブロック付与 ターンメーター上昇  回復  強化解除  スタン付与  ターンメーター減少付与 アシスト   ターンメーター入れ替え  強靭な防御  リーダー：最大HP上昇  リーダー：攻撃力  リーダー：クリティカル率上昇  カウンター  ステルス解除  スピード低下  シャッターポイント  回避不可  耐性発揮不可  フォアサイト `,
-        url: '/characters/'
+        url: '/characters/Mace-Windu'
     }, {
         name: "メリン",
         property: "ダークサイド、サポート、ナイトシスター",
         src: '/charui/tex.charui_merrin.png',
         abbreviation: "Merrin merrin",
         skill: `感染  回復  強化解除  弱体解除  マジックステルス  味方全体-弱体解除  復活  ターンメーター上昇不可  阻止不可  ターンメーター操作無効化  即戦闘不能耐性  コピー不可  解除不可  阻止不可 `,
-        url: '/characters/'
+        url: '/characters/Merrin'
     }, {
         name: "モール",
         property: "ダークサイド、アタッカー、リーダー、マンダロリアン、非同盟のフォースの使い手",
         src: '/charui/tex.charui_maul_cyborg.png',
         abbreviation: "Maul maul",
         skill: `苦悩  強化解除  敵全体-強化解除  全体攻撃  攻撃力低下  ターンメーター上昇  固定ダメージ  強化無効  クールダウン増加付与 カウンター不可  リーダー：最大HP上昇  リーダー：攻撃力上昇  マンダロア  コピー不可  解除不可  阻止不可  アシスト  弱体解除  挑発付与 回避不可  フレンジー  報復効果  スタン無効化  スキルブロック無効化  挑発無視`,
-        url: '/characters/'
+        url: '/characters/Maul'
     }, {
         name: "モブ・エンフォーサー",
         property: "ダークサイド、サポート、ハット・カルテル、ならず者",
         src: '/charui/tex.charui_mob_enforcer.png',
         abbreviation: "Mob Enforcer mob enforcer",
         skill: `防御力低下  めまい付与  エクスポーズ  無防備  サーマル・デトネーター  ターンメーター上昇  ボーナスターン  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Mob-Enforcer'
     }, {
         name: "モフ・ギデオン",
         property: "ダークサイド、サポート、リーダー、帝国軍、インペリアル・レムナント、帝国軍トルーパー",
         src: '/charui/tex.charui_moffgideon.png',
         abbreviation: "Moff Gideon moff gideon Long Live the Empire",
         skill: `洞察  コピー不可  解除不可  阻止不可  全体攻撃  めまい付与  耐性発揮不可  アーマー破壊  アシスト  ターンメーター減少付与  ターンメーター増加  挑発付与 攻撃力上昇  プロテクション上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：攻撃力上昇  戦意喪失 `,
-        url: '/characters/'
+        url: '/characters/Moff-Gideon'
     }, {
         name: "モフ・ギデオン(ダーク・トルーパー)",
         property: "ダークサイド、タンク、リーダー、帝国軍、インペリアル・レムナント",
         src: '/charui/tex.charui_moffgideons3.png',
-        abbreviation: "Dark Trooper Moff Gideon dark trooper moff gideon Long Live the Empire",
+        abbreviation: "Dark Trooper Moff Gideon dark trooper moff gideon Long Live the Empire DTMG",
         skill: `洞察  めまい付与  攻撃力低下  よろめき  スタン付与  ターンメーター減少付与 固定ダメージ  回復無効  解除不可  耐性発揮不可  精度上昇  防御力上昇  挑発付与 阻止不可  アシスト  ステルス  復活  報復効果  リーダー：クリティカル率上昇  リーダー：防御力上昇  リーダー：攻撃力上昇  回復  リーダー：マスター上昇  リーダー：スピード上昇  味方全体-弱体解除  敵全体-強化解除  ボーナスターン `,
-        url: '/characters/'
+        url: '/characters/Dark-Trooper-Moff-Gideon'
     }, {
         name: "モン・モスマ",
         property: "ライトサイド、サポート、リーダー、反乱軍",
         src: '/charui/tex.charui_monmothma.png',
         abbreviation: "MM mm Mon Mothma mon mothma",
         skill: `弱体解除  回復  復活  HP均一化  挑発付与 クリティカルヒット耐性  アシスト  招集  クールダウン減少  挑発無効化  逃走  防御突破力上昇  終結  挑発解除  めまい  `,
-        url: '/characters/'
+        url: '/characters/Mon-Mothma'
     }, {
         name: "ヤング・ハン・ソロ",
         property: "ライトサイド、アタッカー、ならず者、スマグラー",
         src: '/charui/tex.charui_han_young.png',
         abbreviation: "Yolo yolo Young Han Solo young han solo",
         skill: `スピード低下  準備万端  プロテクション上昇  報復効果  回復  クリティカルダメージ上昇  アシスト `,
-        url: '/characters/'
+        url: '/characters/Young-Han-Solo'
     }, {
         name: "ヤング・ランド・カルリジアン",
         property: "ライトサイド、アタッカー、ならず者、スマグラー",
         src: '/charui/tex.charui_younglando.png',
         abbreviation: "Young Lando Calrissian young lando calrissian",
         skill: `有効性上昇  カウンター不可  ボーナスターン不可  スキルブロック付与 クールダウン減少  弱体解除  ステルス  ターンメーター上昇  スピード上昇  `,
-        url: '/characters/'
+        url: '/characters/Young-Lando-Calrissian'
     }, {
         name: "ヨーダ(ハーミット)",
         property: "ライトサイド、サポート、ジェダイ",
         src: '/charui/tex.charui_yodahermit.png',
         abbreviation: "Hoda HYoda HY hoda hyoda hy 隠者 Hermit Yoda hermit yoda",
         skill: `回復  ターンメーター上昇  マスターの訓練  アシスト  HP均一化  フォアサイト  ステルス  逃走  クールダウンリセット `,
-        url: '/characters/'
+        url: '/characters/Hermit-Yoda'
     }, {
         name: "ラダス提督",
         property: "ライトサイド、サポート、リーダー、反乱軍、ローグ・ワン、艦隊司令官",
         src: '/charui/tex.charui_admiralraddus.png',
         abbreviation: "Admiral Raddus admiral raddus AdRad",
         skill: `プロテクション上昇  回復  挑発付与 反乱の口火  アシスト  クールダウン増加付与 復活不可  ターンメーター上昇  弱体解除  味方全体-弱体解除  リーダー：スピード上昇  リーダー：HP上昇  リーダー：有効性上昇  めまい付与  耐性発揮不可  エクスポーズ  リーダー：最大HP上昇  クリティカル率上昇  クリティカルダメージ上昇  防御力上昇  HP上昇  攻撃力上昇  有効性上昇  戦闘不能不可  ボーナスターン  固定ダメージ  プロテクション破壊  回復無効  解除不可 `,
-        url: '/characters/'
+        url: '/characters/Admiral-Raddus'
     }, {
         name: "ランド・カルリジアン",
         property: "ライトサイド、アタッカー、リーダー、反乱軍、反乱軍ファイター、ならず者",
         src: '/charui/tex.charui_landobespin.png',
         abbreviation: "Lando Calrissian lando calrissian ランド・カルリジアンからのお別れの挨拶",
         skill: `クールダウンリセット  全体攻撃  リーダー：スピード上昇  リーダー：クリティカルダメージ上昇  クリティカル率上昇 `,
-        url: '/characters/'
+        url: '/characters/Lando-Calrissian'
     }, {
         name: "ルーク・スカイウォーカー(農民)",
         property: "ライトサイド、アタッカー、リーダー、反乱軍",
         src: '/charui/tex.charui_luke_ep4.png',
         abbreviation: "Luke Skywalker (Farmboy) luke skywalker farmboy 農民ルーク",
         skill: `ターンメーター上昇  時間経過ダメージ  防御力上昇  スピード低下  スタン付与  強化解除  リーダー：抵抗力上昇  アドバンテージ  クリティカルダメージ上昇  攻撃力上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Luke-Skywalker-Farmboy'
     }, {
         name: "ルーク・スカイウォーカー中佐",
         property: "ライトサイド、アタッカー、リーダー、反乱軍、非同盟のフォースの使い手",
         src: '/charui/tex.charui_lukebespin.png',
         abbreviation: "CLS cls Commander Luke Skywalker commander luke skywalker",
         skill: `スピード低下  防御力低下  ターンメーター減少付与 スタン付与  強化解除  強化無効  抵抗力低下  クールダウン減少  リーダー：防御力上昇  リーダー：攻撃力上昇  カウンター  ターンメーター上昇  行動喚起  挑発無視`,
-        url: '/characters/'
+        url: '/characters/Commander-Luke-Skywalker'
     }, {
         name: "ルミナーラ・アンドゥリ",
         property: "ライトサイド、ヒーラー、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_luminara.png',
-        abbreviation: "LuminaraUnduli luminara unduli",
+        abbreviation: "Luminara Unduli luminara unduli",
         skill: `回避力上昇  スキルブロック付与 回復  時間経過回復  弱体解除  味方全体-弱体解除  抵抗力上昇  ターンメーター減少無効化  クールダウン減少  リーダー：回避力上昇  `,
-        url: '/characters/'
+        url: '/characters/Luminara-Unduli'
     }, {
         name: "レイ",
         property: "銀河の伝説、ライトサイド、アタッカー、リーダー、レジスタンス、非同盟のフォースの使い手",
         src: '/charui/tex.charui_rey_tros.png',
         abbreviation: "GL Rey rey Garactic Legends garactic legends",
         skill: `アーマー無視  ボーナスプロテクション  クリティカルヒット耐性  活力源  コピー不可  解除不可  阻止不可  大ダメージ  復活不可  カウンター不可  回避不可  リーダー：最大HP上昇  リーダー：マスター上昇  リーダー：スピード上昇  ダメージ耐性  触発  弱体解除  ターンメーター減少無効化  HP割合ダメージ軽減  大ダメージ軽減  スタン無効化  固定ダメージ  カウンター不可  防御力無効化  クリティカルヒット不可 `,
-        url: '/characters/'
+        url: '/characters/Rey'
     }, {
         name: "レイ(ジェダイ・トレーニング)",
         property: "ライトサイド、タンク、リーダー、レジスタンス、非同盟のフォースの使い手",
         src: '/charui/tex.charui_rey_tlj.png',
         abbreviation: "RJT JTR 修行中レイ rjt jtr Rey(Jedi Trainig) rey jedi training",
         skill: `回復無効  コピー不可  解除不可  耐性発揮不可  アシスト  弱体解除  フォアサイト  強化解除  スキルブロック付与 めまい付与  攻撃力低下  スピード低下 ターンメーター減少付与 ターンメーター上昇  回避不可  リーダー：クリティカル率上昇  リーダー：クリティカルダメージ上昇  エクスポーズ  クールダウン減少  回復  フォアサイト  クリティカルダメージ上昇 `,
-        url: '/characters/'
+        url: '/characters/Rey-Jedi-Trainig'
     }, {
         name: "レイ(スカベンジャー)",
         property: "ライトサイド、アタッカー、レジスタンス、非同盟のフォースの使い手",
         src: '/charui/tex.charui_reyjakku.png',
         abbreviation: "Rey (Scavenger) rey scavenger",
         skill: `フォアサイト  攻撃力上昇  めまい付与  耐性発揮不可 `,
-        url: '/characters/'
+        url: '/characters/Rey-Scavenger'
     }, {
         name: "レイア・オーガナ",
         property: "銀河の伝説、ライトサイド、タンク、リーダー、反乱軍",
         src: '/charui/tex.charui_leiaendor.png',
         abbreviation: "GL GLレイア gl Geractic Legends garactic legends Leia Organa leia organa",
         skill: `報復効果  固定ダメージ  強化解除  弱体解除  味方全体-弱体解除  回復  アシスト  ターンメーター減少付与 待ち伏せ  コピー不可  解除不可  阻止不可  回避不可  耐性発揮不可  解除不可  めまい付与  よろめき  強化無効  不意打ち  プロテクション無効化  ステルス  クリティカル率低下  クリティカルダメージ低下  有効性低下  抵抗力低下  防御力低下  無防備  リーダー：スピード上昇  リーダー：マスター上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  防御力上昇  プロテクション上昇  最大HP低下無効化  感染無効化  フォアサイト解除  ステルス解除  ダメージ耐性  セカンドウィンド  クールダウン操作無効化  恐れ知らず   ボーナスプロテクション  エクスポーズ無効化  恐怖無効化  HP割合ダメージ軽減  大ダメージ軽減  スタン無効化  破砕  抵抗力上昇  復活  カウンター不可 `,
-        url: '/characters/'
+        url: '/characters/Leia-Organa'
     }, {
         name: "レイア・オーガナ(反乱軍オフィサー)",
         property: "ライトサイド、アタッカー、リーダー、反乱軍",
         src: '/charui/tex.charui_leiahoth.png',
-        abbreviation: "ROLO rolo ホスレイア",
+        abbreviation: "ROLO rolo ホスレイア Rebel Officer Leia Organa",
         skill: `強化無効  ターンメーター上昇  全体攻撃  スキルブロック付与 クールダウン減少  カウンター不可  リーダー：抵抗力上昇  リーダー：クリティカル率上昇  フォアサイト  リーダー：スピード上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Rebel-Officer-Leia-Organa'
     }, {
         name: "レイア姫",
         property: "ライトサイド、アタッカー、リーダー、反乱軍",
         src: '/charui/tex.charui_leia_princess.png',
         abbreviation: "Princess Leia princess leia",
         skill: `ターンメーター上昇  ステルス  クリティカルダメージ上昇  攻撃力上昇  フォアサイト  リーダー：クリティカル率上昇  報復効果  抵抗力上昇 `,
-        url: '/characters/'
+        url: '/characters/Princess-Leia'
     }, {
         name: "レジスタンス・トルーパー",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_resistancetrooper.png',
         abbreviation: "Resistance Trooper rasistance trooper レジトル",
         skill: `エクスポーズ  強化解除  スピード低下  クールダウン減少  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Resistance-Trooper'
     }, {
         name: "レジスタンス・パイロット",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_resistancepilot.png',
         abbreviation: "Resistance Pilot resistane pilot レジパイ",
         skill: `ターンメーター上昇  エクスポーズ  フォアサイト `,
-        url: '/characters/'
+        url: '/characters/Resistance^Pilot'
     }, {
         name: "レジスタンスの英雄フィン",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_finn.png',
         abbreviation: "Resistance Hero Finn resistance hero finn",
-        skill: `回復  触発  クールダウン減少  回避不可  ターンメーター入れ替え  挑発付与 クリティカルヒット耐性  アシスト  カウンター
-            ターンメーター上昇 `,
-        url: '/characters/'
+        skill: `回復  触発  クールダウン減少  回避不可  ターンメーター入れ替え  挑発付与 クリティカルヒット耐性  アシスト  カウンター  ターンメーター上昇 `,
+        url: '/characters/Resistance-Hero-Finn'
     }, {
         name: "レジスタンスの英雄ポー",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_poe_tros.png',
         abbreviation: "Resistance Hero Poe resistance hero poe",
         skill: `無防備  めまい付与  よろめき  時間経過ダメージ  スタン付与  強化解除  回避不可  プロテクション減少  触発 `,
-        url: '/characters/'
+        url: '/characters/Resistance-Hero-Poe'
     }, {
         name: "レッカー",
         property: "ライトサイド、タンク、バッド・バッチ、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_bb_wrecker.png',
         abbreviation: "Wrecker wrecker Bad Batch bad batch BB bb",
-        skill: `スピード低下  回復  逆上  ステルス解除  ターンメーター上昇  挑発付与 防御力上昇  抵抗力上昇  スタン付与  全体攻撃
-            怒り  コピー不可  解除不可  阻止不可 `,
-        url: '/characters/'
+        skill: `スピード低下  回復  逆上  ステルス解除  ターンメーター上昇  挑発付与 防御力上昇  抵抗力上昇  スタン付与  全体攻撃  怒り  コピー不可  解除不可  阻止不可 `,
+        url: '/characters/Wrecker'
     }, {
         name: "レンジ・トルーパー",
         property: "ダークサイド、サポート、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_trooperranger.png',
         abbreviation: "Renge Trooper renge trooper",
         skill: `プロテクション上昇  報復効果  アシスト `,
-        url: '/characters/'
+        url: '/characters/Renge-Trooper'
     }, {
         name: "ロイヤル・ガード",
         property: "ダークサイド、タンク、帝国軍",
         src: '/charui/tex.charui_royalguard.png',
         abbreviation: "Royal Guard royal guard RG",
         skill: `スピード低下  スタン付与  防御力上昇  時間経過回復  HP上昇  報復効果  挑発付与 回復  `,
-        url: '/characters/'
+        url: '/characters/Royal-Guard'
     }, {
         name: "ローズ・ティコ",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_rose.png',
         abbreviation: "Rose Tico rose tico",
         skill: `抵抗力上昇  防御力上昇  ターンメーター上昇  ターンメーター減少付与 回避不可  スタン付与  めまい付与  耐性発揮不可 `,
-        url: '/characters/'
+        url: '/characters/Rose-Tico'
     }, {
         name: "ログレイ",
         property: "ライトサイド、サポート、イウォーク",
         src: '/charui/tex.charui_ewok_logray.png',
         abbreviation: "Logray logray",
         skill: `抵抗力上昇  強化解除  ターンメーター減少付与 めまい付与  回避不可  ターンメーター上昇  フォアサイト  アドバンテージ  攻撃力上昇  HP上昇  回復 `,
-        url: '/characters/'
+        url: '/characters/Logray'
     }, {
         name: "ロボト",
         property: "ライトサイド、サポート、リーダー、反乱軍",
         src: '/charui/tex.charui_lobot.png',
         abbreviation: "Lobot lobot",
         skill: `防御力低下  フォアサイト  防御力上昇  ターゲットロック  味方全体-弱体解除  回復  ターンメーター上昇  リーダー：有効性上昇  リーダー：スピード上昇  スピード上昇  ターンメーター減少付与 耐性発揮不可  スピード低下  アシスト `,
-        url: '/characters/'
+        url: '/characters/Lobot'
     }, {
         name: "ワット・タンバー",
         property: "ダークサイド、サポート、分離主義者",
         src: '/charui/tex.charui_wattambor.png',
         abbreviation: "Wat Tambor wat tambor",
         skill: `弱体解除  時間経過回復  時間経過ダメージ  回避不可  ターンメーター減少付与 復活  時間経過プロテクション  アシスト  逃走  ボーナスターン  コピー不可  解除不可  阻止不可  チーワプ社製医療パック  バクトイド社製シールド発生器  ブラステック社製ウェポンモッド 挑発付与 復活不可  ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Wat-Tambor'
     }, {
         name: "ワンパ",
         property: "ダークサイド、アタッカー",
@@ -1852,22 +1857,22 @@ const characters: Characters[] = [
         abbreviation: "Wampa wampa DE WANNA WANGA",
         skill: `時間経過ダメージ  スタン付与  ターンメーター上昇  回避不可  全体攻撃  弱体解除  めまい付与  プロテクション上昇  解除不可  阻止不可
             回復無効  クールダウン状態から開始  カウンター  クールダウン減少 `,
-        url: '/characters/'
+        url: '/characters/Wampa'
     }, {
         name: "大尋問官",
         property: "ダークサイド、アタッカー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_grandinquisitor.png',
         abbreviation: "GI gi Grand Inquisitor grand inquisitor Ready to Die?",
         skill: `粛清  耐性発揮不可  固定ダメージ  回避不可  弱体解除  味方全体-弱体解除  HP均一化  プロテクション均一化  スキルブロック付与  脆弱  回復  クリティカルダメージ上昇  ターンメーター減少付与 拷問  解除不可  耐性発揮不可  攻撃力上昇  スピード上昇  抵抗力上昇  攻撃力上昇  スピード上昇  抵抗力上昇  ボーナスターン不可  クールダウンリセット  強化無効  阻止不可  即戦闘不能  復活不可  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  リーダー：スピード上昇  スキルブロック無効化  防御突破力上昇  攻撃力上昇  アドバンテージ  フォアサイト  挑発付与  挑発無視  フォアサイト解除  ボーナスターン ターンメーター上昇 `,
-        url: '/characters/'
+        url: '/characters/Grand-Inquisitor'
     }, {
         name: "帝国軍偵察ドロイド",
         property: "ダークサイド、サポート、ドロイド、帝国軍",
         src: '/charui/tex.charui_probedroid.png',
-        abbreviation: "Imperial Probe Droid",
+        abbreviation: "Imperial Probe Droid IPD",
         skill: `エクスポーズ  強化解除  敵全体-強化解除  ターゲットロック  ターンメーター減少付与 回避不可  即戦闘不能  復活不可
             大ダメージ  挑発無視  復活`,
-        url: '/characters/'
+        url: '/characters/Imperial-Probe-Droid'
     }
 
 ];
