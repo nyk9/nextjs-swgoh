@@ -5928,6 +5928,332 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月31日'
     }, {
+        id: 'Savage-Opress',
+        character_name: "サヴァージ・オプレス",
+        character_image: '/charui/tex.charui_savageopress.png',
+        ability: [
+            {
+                ability_type: "通常スキル",
+                cooldown: null,
+                name_jp: "強打",
+                name_eng: "Staggering Blow",
+                image: '/ability/tex.ability_savageopress_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。サヴァージは50%の確率で2ターンの攻撃力低下を発生させる(クリティカルヒットを決めた場合、この確率は2倍になる)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 3,
+                name_jp: "征服",
+                name_eng: "Overpower",
+                image: '/ability/tex.ability_savageopress_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。ターゲットのHPが50%以下の場合、この攻撃は大ダメージを与える(回避不可)。このスキルで敵を倒した場合、サヴァージはクリティカル率上昇と、クリティカルダメージ上昇を3ターン得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "リーダースキル",
+                cooldown: null,
+                name_jp: "痛みに耐えよ",
+                name_eng: "Pain Is Weakness",
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `味方シスの防御力が75%、抵抗力が30%上昇する(他の味方はその半分量上昇する)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "ブルート",
+                name_eng: "Brute",
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `サヴァージはダメージを受けるたび、2ターンの間、防御力上昇、時間経過回復、攻撃力上昇を得て、ターンメーターが30%上昇する。
+                
+                サヴァージはクリティカルヒットを受けるたび、自身の弱体化効果を全て解除する。ターン終了時に、サヴァージはランダムな他の味方シス1体から弱体化効果を全て解除し、それらの弱体化効果を1ターンの間受ける。
+                
+                $グランドアリーナの場合: $サヴァージの防御力、最大HP、攻撃力が50%上昇し、スピードが30上昇する。遭遇開始時、サヴァージは「強靭な防御」のスタックを2得る。自ターン終了時、味方シスの弱体化効果ごとに、サヴァージは「強靭な防御」のスタック2つ(最大10)とターンメーター10%上昇(最大10%)を得る。
+                サヴァージがクリティカルヒットを受けるたび、サヴァージのヘルス・スティールと攻撃力が16%上昇(スタック可能、最大160%)し、シスの味方全体のヘルス・スティールと攻撃力が4%上昇する(スタック可能、最大40%)。またHPとプロテクションが15%回復し、バトル終了までターンメーターが10%上昇する。
+                
+                サヴァージに「強靭な防御」が発生している間、スタックごとに防御力が50%上昇し、無防備状態になる(阻止、解除不可)。サヴァージは挑発を得るたび、それを解除して「強靭な防御」のスタックを2得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年3月31日'
+    }, {
+        id: 'Sana-Starros',
+        character_name: "サナ・サタロス",
+        character_image: '/charui/tex.charui_sanastarros.png',
+        ability: [
+            {
+                ability_type: "通常スキル",
+                cooldown: null,
+                name_jp: "チープショット",
+                name_eng: "Cheap Shot",
+                image: '/ability/tex.ability_sanastarros_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間無防備状態にする。敵が既に無防備状態の場合、敵全体を1ターンの間無防備状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 4,
+                name_jp: "コアシオンの教訓",
+                name_eng: "Lessons in Coercion",
+                image: '/ability/tex.ability_sanastarros_special01.png',
+                description_jp: `反乱軍ならず者タンクのプロテクションが20%回復する。タンク以外の味方反乱軍とサナの弱体化効果が全て解除され、2ターンのクリティカル率上昇とステルス効果が発生する。その後、ステルス効果が発生している味方全体を、クリティカルダメージが100%上昇した状態でアシストに呼ぶ。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 3,
+                name_jp: "スマート照準散弾ブラスター",
+                name_eng: "Smart-targeting Scatterblaster",
+                image: '/ability/tex.ability_sanastarros_special02.png',
+                description_jp: `敵全体に特殊ダメージを与え、2ターンの抵抗力低下を発生させる。ターゲットロック状態の敵全体に再びダメージを与え、1ターンのよろめき効果を発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "リーダースキル",
+                cooldown: null,
+                name_jp: "反乱軍シンバ",
+                name_eng: "Rebel Sympathizer",
+                image: '/abilityui/tex.abilityui_passive_rebelsympathizer.png',
+                description_jp: `タンク以外の味方反乱軍またはサナが攻撃ダメージを受けるたび、反乱軍ならず者タンクの防御力、最大HP、最大プロテクションが30%上昇し、ターンメーターが15%上昇する。味方反乱軍とサナの攻撃力と有効性が30%上昇する。バトル開始時、スキルを使用するまで、味方反乱軍とサナがプロテクション上昇(100%)を得る。
+                
+                味方反乱軍またはサナのターンメーターが100%を下回り、ボーナスターンメーターを獲得するたび、敵にクリティカルヒットを与えるまでクリティカルダメージが25%上昇する(スタック可能)。反乱軍ならず者が敵のターンメーターを減少させた場合、その敵は自身の最大HP20%分のダメージを受ける(回避不可)。このダメージでは敵は戦闘不能にならない。味方反乱軍またはセナ各ターンで初めて複数回ダメージを与えると、遭遇終了まで最大HPが25%上昇する(スタック可能、最大200%)。味方反乱軍またはサナが敵にクリティカルヒットを与えるたび、1ターンのターゲットロックを発生させる(回避不可)。敵にターゲットロックが発生するたび、反乱軍ならず者タンクのクールダウンが1減少する。
+                
+                $テリトリーウォーズの場合: $反乱軍ならず者とサナはめまいを無効化する。バトル開始時、反乱軍ならず者タンクが1ターンの挑発を行い、反乱軍ならず者とサナは1ターンの抵抗力上昇を得てバトルを開始する。このスキルによるターゲットロックは耐性発揮不可。味方反乱軍とサナが各ターンで初めて複数回ダメージを与えると、敵全体の強化効果を全て解除し、1ターンの回復無効を発生させる。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "信頼できそうなプロ",
+                name_eng: "A Professional I Can Trust...ish",
+                image: '/abilityui/tex.abilityui_passive_marriageofconvenience.png',
+                description_jp: `サナのカウンター率が35%、クリティカル率上昇する。各味方反乱軍のターン開始時、サナが攻撃を回避するか、サナがターン外に攻撃を行うたび、ならず者以外の味方全体に1ターンの*疑惑*の効果が発生する(コピー、耐性発揮不可)。アタッカー以外の反乱軍ならず者が特殊スキルを特殊スキルを使用するたび、サナがアシストを行う。この方法でサナがアシストするたび、サナのプロテクションが20%回復し、味方はその半分量回復する。敵にターゲットロックが発生するたび、サナのターンメーターが5%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年4月4日'
+    }, {
+        id: 'Sabine-Wren',
+        character_name: 'サビーヌ・レン',
+        character_image: '/charui/tex.charui_sabine_s3-2.png',
+        ability: [
+            {
+                ability_type: "通常スキル",
+                cooldown: null,
+                name_jp: "2丁ブラスター",
+                name_eng: "Blasters Akimbo",
+                image: '/ability/tex.ability_sabine_s3_basic.png',
+                description_jp: `ターゲットに物理ダメージを2回与える。ターゲットが次の条件を満たす場合、それぞれ追加ヒットが発生する:
+                
+                - ターンメーターが70%未満
+                
+                - ターンメーターが30%未満
+                
+                - 弱体が発生している
+                
+                2回目以降の攻撃はダメージが75%減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 2,
+                name_jp: "ダークセーバーストライク",
+                name_eng: "Darksaber Strike",
+                image: '/ability/tex.ability_sabine_s3_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、バトル終了までアーマー破壊状態にする。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 5,
+                name_jp: "デモリッシュ",
+                name_eng: "Demolish",
+                image: '/ability/tex.ability_sabine_s3_special02.png',
+                description_jp: ``,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "テイクバック",
+                name_eng: "Take It Back",
+                image: '/abilityui/tex.abilityui_passive_crit_buff.png',
+                description_jp: `サビーヌのクリティカル率が25%、クリティカルダメージが25%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年4月4日'
+    }, {
+        id: 'Zam-Wesell',
+        character_name: "ザム・ウェセル",
+        character_image: '/charui/tex.charui_zamwesell.png',
+        ability: [
+            {
+                ability_type: "通常スキル",
+                cooldown: null,
+                name_jp: "起爆ショット",
+                name_eng: "Detonating Shot",
+                image: '/ability/tex.ability_zamwesell_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。ターゲット上のサーマル・デトネーターが全て起爆し、即座にダメージを与える。サーマル・デトネーターが起爆した場合、生存している味方ならず者ごとにザムのターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 4,
+                name_jp: "爆薬設置",
+                name_eng: "See What Sticks",
+                image: '/ability/tex.ability_zamwesell_special01.png',
+                description_jp: `敵全体に2ターン後に爆発するサーマル・デトネーターを設置する。ザムのスピードが3ターン上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 3,
+                name_jp: "エレクトロゴーグル",
+                name_eng: "Electro-goggles",
+                image: '/ability/tex.ability_zamwesell_special02.png',
+                description_jp: `敵全体の回避力を4ターン低下させ、既にサーマル・デトネーターがついている敵に2ターンのサーマル・デトネーターを発生させる。サーマル・デトネーター付きの敵ごとにザムのプロテクションが10%回復し、ザムのターンメーターが50%上昇する。この攻撃は回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "リーダースキル",
+                cooldown: null,
+                name_jp: "気分高揚",
+                name_eng: "Having a Blast",
+                image: '/abilityui/tex.abilityui_passive_potency.png',
+                description_jp: `敵がサーマル・デトネーターによってダメージを受けるたび、味方賞金稼ぎの有効性が25%上昇し、HPとプロテクションが4%回復する。味方賞金稼ぎが特殊スキルを使用すると、指定したターゲットに2ターンのサーマル・デトネーターを発生させる(回避不可)。ザム・ウェセルがリーダースロットに設定されていると、次の契約が発動する(同盟スロットでは不可):
+                
+                *契約*: 敵にサーマル・デトネーターを20回発生させる。(契約達成には味方賞金稼ぎのみが参加可能。)
+                
+                *報酬*: 全ての賞金稼ぎが、戦闘不能になった際に敵全体にサーマル・デトネーターを発生させる(回避不可)。味方賞金稼ぎ全体にボーナス効果が発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "変身能力",
+                name_eng: "Shapeshifter",
+                image: '/abilityui/tex.abilityui_passive_dodge.png',
+                description_jp: `バトル開始時、ザムは次の効果を得る:
+                
+                味方ならず者アタッカーごとにザムの攻撃力が20%上昇する
+                
+                味方ならず者サポートおよびヒーラーごとに最大HPが20%上昇する
+                
+                味方ならず者タンクごとに最大プロテクションが20%上昇する。
+                
+                $グランドアリーナの場合: $ザムの攻撃力、最大HP、最大プロテクションが60%上昇する。他の味方賞金稼ぎごとにザムのスピードが5%上昇する。他の味方賞金稼ぎは、ザムが初めて戦闘不能になるまで、ザムの現在の攻撃力、最大HP、最大プロテクション、スピードの20%を得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "ザムのボーナス",
+                name_eng: "Zam's Payout",
+                image: '/abilityui/tex.abilityui_passive_contract.png',
+                description_jp: `ザムは契約報酬を受け取ると、次のボーナスも獲得する(契約は特定の賞金稼ぎリーダースキルによって付与される)。
+                
+                *ボーナス*: 敵がサーマル・デトネーターのダメージを受けるとザムは25%の確率で自身の弱体効果を全て解除し、1ターンのステルス効果を得る。また遭遇終了まで最大プロテクションが2%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年4月4日'
+    }, {
+        id: 'Zaalbar',
+        character_name: "ザルバー",
+        character_image: '/charui/tex.charui_zaalbar.png',
+        ability: [
+            {
+                ability_type: "通常スキル",
+                cooldown: null,
+                name_jp: "たくましい味方",
+                name_eng: "Stalwart Ally",
+                image: '/ability/tex.ability_zaalbar_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間時間経過ダメージ効果を2つ発生させる。ザルバーのHPが10%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "特殊スキル",
+                cooldown: 3,
+                name_jp: "パワーブラスト",
+                name_eng: "Power Blast",
+                image: '/ability/tex.ability_zaalbar_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、3ターンの間挑発を行う。クリティカルヒットを与えると、バトル終了までターゲットにアーマー破壊を発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "ウーキータフネス",
+                name_eng: "Wookiee Toughness",
+                image: '/abilityui/tex.abilityui_passive_def.png',
+                description_jp: `1ターンに1回攻撃ダメージを受けるたび、ザルバーの防御力が20%上昇する(スタック可能)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false,
+                is_ultimate: false
+            }, {
+                ability_type: "ユニークスキル",
+                cooldown: null,
+                name_jp: "ミッションのガーディアン",
+                name_eng: "Mission's Guardian",
+                image: '/abilityui/tex.abilityui_passive_mission_zaalbar.png',
+                description_jp: `ザルバーのクリティカル回避力が25%上昇する。ミッションがいる場合、ミッションにもボーナス効果が発生する。他の味方のHPが10%を下回ると、ザルバーは2ターンの挑発と報復効果を発生させる。各ターン開始時、時間経過ダメージ効果が発生している敵ごとに、ザルバーとミッションのプロテクションが10%回復する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false,
+                is_ultimate: false
+            }
+        ],
+        last_updated: '2024年4月4日'
+    }, {
         id: 'Jedi-Knight-Cal-Kestis',
         character_name: 'ジェダイ・ナイト・カル・ケスティス',
         character_image: '/charui/tex.charui_jediknightcal.png',

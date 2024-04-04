@@ -683,7 +683,7 @@ const characters: Characters[] = [
         src: '/charui/tex.charui_sanastarros.png',
         abbreviation: "Sana Strarros sana strarros",
         skill: `無防備  回復  弱体解除  クリティカル率上昇  ステルス  アシスト  全体攻撃  抵抗力低下  よろめき  リーダー：防御力上昇  リーダー：最大HP上昇  リーダー：最大プロテクション上昇  ターンメーター上昇  プロテクション上昇  リーダー：クリティカルダメージ上昇  ターゲットロック  クールダウン減少  挑発付与 抵抗力上昇  強化解除  敵全体-強化解除  回復無効  カウンター  疑惑  `,
-        url: '/characters/Sana-Strarros'
+        url: '/characters/Sana-Starros'
     }, {
         name: "サビーヌ・レン",
         property: "ライトサイド、アタッカー、マンダロリアン、フェニックス、反乱軍",
