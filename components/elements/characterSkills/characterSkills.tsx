@@ -81,7 +81,7 @@ export default async function CharacterSkills(params: {
                                 </span>
                                 <div className="flex">
                                     <span className="text-xs">
-                                        {item.cooldown !== null ? (
+                                        {item.cooldown  ? (
                                             <span className="text-sky-100">
                                                 クールダウン: {item.cooldown}
                                             </span>
