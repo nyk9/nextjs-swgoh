@@ -81,7 +81,7 @@ export default async function CharacterSkills(params: {
                                 </span>
                                 <div className="flex">
                                     <span className="text-xs">
-                                        {item.cooldown !== null ? (
+                                        {item.cooldown  ? (
                                             <span className="text-sky-100">
                                                 クールダウン: {item.cooldown}
                                             </span>
@@ -90,7 +90,7 @@ export default async function CharacterSkills(params: {
                                         )}
                                     </span>
                                     {item.ability_type !== '付与スキル' ? (
-                                        item.is_ultimate === true ? (
+                                        item.ability_type === "アルティメットスキル" ? (
                                             <Image
                                                 src={'/skill/tex.skill_abilitymaterial_ultimate.png'}
                                                 alt="ultimate"
