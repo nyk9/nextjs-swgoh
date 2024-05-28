@@ -1,15 +1,9 @@
-export type Characters = {
-    name: string;
-    src: string;
-    property: string;
-    abbreviation: string;
-    skill: string;
-    url: string;
-};
+import { Characters } from "@/types/characters/characters";
 
 const characters: Characters[] = [
     {
         name: "0-0-0",
+        character_base_id: "TRIPLEZERO",
         property: "ダークサイド、サポート、ドロイド、ならず者",
         src: '/charui/tex.charui_triplezero.png',
         abbreviation: "卵  タマゴ  000  triple-zero triple zero Triple Zero",
