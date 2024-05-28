@@ -389,6 +389,13 @@ const characters: Characters[] = [
         skill: `スタン付与  復活  回復  リーダー：HP上昇  リーダー：防御力上昇  ターンメーター上昇  クールダウン減少  攻撃力上昇  防御力上昇  最大HP上昇 `,
         url: '/characters/Old-Daka'
     }, {
+        name: "オビ＝ワン(パダワン)",
+        property: "ライトサイド、アタッカー、銀河共和国、ジェダイ",
+        src: '/charui/tex.charui_padawanobiwan.png',
+        abbreviation: "Padawan Obi-Wan Kenobi ケノービ Kenobi obi wan",
+        skill: `有効性低下  ターンメーター上昇  フォアサイト  防御突破力上昇  めまい付与  ターンメーター減少  回避不可  全体攻撃  防御力低下  クリティカル率上昇  攻撃力上昇  規律  コピー不可  解除不可  耐性発揮不可  アシスト  ボーナスターン  クリティカルダメージ上昇  カウンター不可  時間経過プロテクション  プロテクション無視  回復  強化無効  回復無効  精度低下  クリティカル率低下  クリティカルダメージ低下  回避力低下  攻撃力低下  よろめき  スピード低下  抵抗力低下  精度上昇  防御力上昇  回避力上昇  攻撃力上昇  スピード上昇  `,
+        url: '/characters/Padawan-Obi-Wan'
+    }, {
         name: "オビ＝ワン・ケノービ(ベン爺)",
         property: "ライトサイド、タンク、リーダー、ジェダイ、反乱軍",
         src: '/charui/tex.charui_obiwanep4.png',
@@ -636,11 +643,18 @@ const characters: Characters[] = [
         skill: `ターンメーター上昇  ターンメーター減少付与 アシスト  回復  強化解除  攻撃力上昇  リーダー：スピード上昇  リーダー：攻撃力上昇  フォアサイト 復活不可  `,
         url: '/characters/Qui-Gon-Jinn'
     }, {
+        name: "グンガン・ファランクス",
+        property: "ライトサイド、タンク、グンガン",
+        src: '/charui/tex.charui_gunganphalanx.png',
+        abbreviation: "Gungan Phalanx",
+        skill: `防御力低下  めまい付与  時間経過プロテクション  全体攻撃  抵抗力低下  誘発状態  コピー不可  解除不可  耐性発揮不可  挑発  回復  弱体解除  無防備  回避不可  シールド上昇  仕返し   固定ダメージ  有効性上昇  アシスト  シールド発生装置  リチャージ  弱体解除  プロテクション破壊無効化  フォアサイト  エクスポーズ  攻撃力上昇  ターンメーター減少  `,
+        url: '/characters/Gungan-Phalanx'
+    }, {
         name: "グンガン・ブーマディア",
         property: "ライトサイド、アタッカー、グンガン",
         src: '/charui/tex.charui_gunganboomadier.png',
         abbreviation: "Gungan Boomadier",
-        skill: `スピード上昇  リチャージ  スキルブロック  プロテクション破壊  復活不可  プラズマシールド  シールド発生装置  精度上昇  ターゲットロック無効化  ターンメーター入れ替え  フレンジー  `,
+        skill: `スピード上昇  リチャージ  スキルブロック  プロテクション破壊付与  復活不可  プラズマシールド  シールド発生装置  精度上昇  ターゲットロック無効化  ターンメーター入れ替え  フレンジー  `,
         url: '/characters/Gungan-Boomadier'
     }, {
         name: "ケイナン・ジャラス",
@@ -832,11 +846,18 @@ const characters: Characters[] = [
         skill: `防御力低下  プロテクション無効化  攻撃力低下  プロテクション上昇  挑発付与 防御力上昇  報復効果  `,
         url: '/characters/Sith-Empire-Troper'
     }, {
+        name: "ジャー・ジャー・ビンクス",
+        property: "ライトサイド、サポート、グンガン",
+        src: '/charui/tex.charui_jarjarbinks.png',
+        abbreviation: "Jar Jar Binks ",
+        skill: `デスマーク  ダメージ耐性  抵抗力上昇  即戦闘不能  回避不可  カウンター不可  全体攻撃  スタン付与  エクスポーズ  恐怖付与  コピー不可  解除不可  阻止不可  耐性発揮不可  残留プラズマ  コピー不可  プロテクション破壊付与  クールダウン減少  回復  ターンメーター上昇  フォアサイト  苛立ち  アシスト不可  カウンター不可  無防備  暗闇  デスマーク  クールダウンリセット  シールド上昇  アシスト  プロテクション無視  即戦闘不能耐性  `,
+        url: '/characters/Jar-Jar-Binks'
+    }, {
         name: "シャアク・ティ",
         property: "ライトサイド、サポート、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_shaakti.png',
         abbreviation: "釈 Shaak Ti shaak ti",
-        skill: `強化解除  攻撃力上昇  弱体解除  味方全体-弱体解除  アシスト  ターンメーター上昇  ステルス  クリティカル率上昇  スピード上昇  挑発  クリティカルヒット耐性  リーダー：スピード上昇  回復  報復効果 `,
+        skill: `強化解除  攻撃力上昇  弱体解除  味方全体-弱体解除  アシスト  ターンメーター上昇  ステルス  クリティカル率上昇  スピード上昇  挑発  クリティカルヒット耐性  リーダー：スピード上昇  回復  報復効果  暗闇 `,
         url: '/characters/Shaak-Ti'
     }, {
         name: "ジャバ・ザ・ハット",
@@ -1574,7 +1595,7 @@ const characters: Characters[] = [
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: '/charui/tex.charui_bobafettold.png',
         abbreviation: "大名 Daimyo BFSoJ SOJ SoJ soj bfsoj Boba Fett, Scion of Jango boba fett scion jango  ﾌｪｯ!!",
-        skill: `モメンタム  解除不可  阻止不可  抵抗力上昇  コピー不可  プロテクション破壊  耐性発揮不可  プロテクション無効化  全体攻撃  時間経過ダメージ  抵抗力低下  有効性低下  破損  リーダー：クリティカル回避力上昇  挑発無視  固定ダメージ  賞金稼ぎの決意  ターンメーター上昇  スキルブロック無効化  スタン無効化  回復 `,
+        skill: `モメンタム  解除不可  阻止不可  抵抗力上昇  コピー不可  プロテクション破壊付与  耐性発揮不可  プロテクション無効化  全体攻撃  時間経過ダメージ  抵抗力低下  有効性低下  破損  リーダー：クリティカル回避力上昇  挑発無視  固定ダメージ  賞金稼ぎの決意  ターンメーター上昇  スキルブロック無効化  スタン無効化  回復 `,
         url: '/characters/Boba-Fett-Scion-of-Jango'
     }, {
         name: "ホンドー・オナカ",
@@ -1597,6 +1618,13 @@ const characters: Characters[] = [
         abbreviation: "Mother Talzin mother talzin",
         skill: `感染  カウンター不可  プロテクション無効化  アシスト  復活  回復 リーダー：有効性上昇  リーダー：スピード上昇  回避不可  ターンメーター上昇  即戦闘不能  耐性発揮不可 `,
         url: '/characters/Mother-Talzin'
+    }, {
+        name: "マスター・クワイ＝ガン",
+        property: "ライトサイド、サポート、銀河共和国、ジェダイ",
+        src: "/charui/tex.charui_masterquigon.png",
+        abbreviation: "Master Qui-Gon qui gon",
+        skill: `破損  防御力上昇  回復  強化解除  強化無効  ターンメーター減少  エクスポーズ  スタン付与  耐性発揮不可  伝説の戦闘瞑想  コピー不可  解除不可  阻止不可  ステルス  スピード上昇  回避不可  全体攻撃  弱体解除  クリティカルダメージ上昇  フォアサイト  抵抗力上昇  抵抗力低下  ターンメーター減少無効化  防御力上昇  アシスト  プロテクション上昇  アドバンテージ  クリティカルダメージ上昇  ボーナスターン  ターンメーター上昇  スキルブロック  回復無効  プロテクション破壊付与  `,
+        url: '/characters/Master-Qui-Gon'
     }, {
         name: "マラ・ジェイド(皇帝の手)",
         property: "ダークサイド、アタッカー、帝国軍、非同盟のフォースの使い手",
@@ -1701,7 +1729,7 @@ const characters: Characters[] = [
         property: "ライトサイド、サポート、リーダー、反乱軍、ローグ・ワン、艦隊司令官",
         src: '/charui/tex.charui_admiralraddus.png',
         abbreviation: "Admiral Raddus admiral raddus AdRad",
-        skill: `プロテクション上昇  回復  挑発付与 反乱の口火  アシスト  クールダウン増加付与 復活不可  ターンメーター上昇  弱体解除  味方全体-弱体解除  リーダー：スピード上昇  リーダー：HP上昇  リーダー：有効性上昇  めまい付与  耐性発揮不可  エクスポーズ  リーダー：最大HP上昇  クリティカル率上昇  クリティカルダメージ上昇  防御力上昇  HP上昇  攻撃力上昇  有効性上昇  戦闘不能不可  ボーナスターン  固定ダメージ  プロテクション破壊  回復無効  解除不可 `,
+        skill: `プロテクション上昇  回復  挑発付与 反乱の口火  アシスト  クールダウン増加付与 復活不可  ターンメーター上昇  弱体解除  味方全体-弱体解除  リーダー：スピード上昇  リーダー：HP上昇  リーダー：有効性上昇  めまい付与  耐性発揮不可  エクスポーズ  リーダー：最大HP上昇  クリティカル率上昇  クリティカルダメージ上昇  防御力上昇  HP上昇  攻撃力上昇  有効性上昇  戦闘不能不可  ボーナスターン  固定ダメージ  プロテクション破壊付与  回復無効  解除不可 `,
         url: '/characters/Admiral-Raddus'
     }, {
         name: "ランド・カルリジアン",
