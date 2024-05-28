@@ -1,5 +1,7 @@
 "use client"
 import Home from "@/components/layouts/header/Home";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 import propertyButtons from "@/features/characterlist/constants/property";
 import skillButtons from "@/features/characterlist/constants/skillEffect";
 import Image from "next/image";
@@ -168,10 +170,10 @@ export default function Character() {
             <div className="mb-32 grid text-center lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left p-4">
                 {searchResults.map((char) => {
                     return (
-                        <Link
+                        <div
                             className="border border-gray-300 rounded m-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
                             key={`${char.abbreviation}-${char.skill}`}
-                            href={`${char.url}`}
+
                         >
                             <h1 className="text-2xl text-center text-white">{char.name}</h1>
                             <div className="flex grid">
@@ -184,7 +186,20 @@ export default function Character() {
                                 />
                                 <small className="group">{char.property}</small>
                             </div>
-                        </Link>
+                            <Separator />
+                            <div className="flex items-center">
+                                <Link href={`${char.url}`} className="m-1">
+                                    <Badge>ゲーム内説明（手動入力）</Badge>
+                                </Link>
+                                {char.character_base_id && (
+                                    <>
+                                        <Link href={`/character/${char.character_base_id}`}>
+                                            <Badge>英文（SWGOH.GG）</Badge>
+                                        </Link>
+                                    </>
+                                )}
+                            </div>
+                        </div>
                     );
                 })}
             </div>
