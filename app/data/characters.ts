@@ -1811,6 +1811,7 @@ const characters: Characters[] = [
         url: '/characters/Resistance^Pilot'
     }, {
         name: "レジスタンスの英雄フィン",
+        character_base_id: "EPIXFINN",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_finn.png',
         abbreviation: "Resistance Hero Finn resistance hero finn",
@@ -1818,6 +1819,7 @@ const characters: Characters[] = [
         url: '/characters/Resistance-Hero-Finn'
     }, {
         name: "レジスタンスの英雄ポー",
+        character_base_id: "EPIXPOE",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_poe_tros.png',
         abbreviation: "Resistance Hero Poe resistance hero poe",
@@ -1825,6 +1827,7 @@ const characters: Characters[] = [
         url: '/characters/Resistance-Hero-Poe'
     }, {
         name: "レッカー",
+        character_base_id: "BADBATCHWRECKER",
         property: "ライトサイド、タンク、バッド・バッチ、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_bb_wrecker.png',
         abbreviation: "Wrecker wrecker Bad Batch bad batch BB bb",
@@ -1832,6 +1835,7 @@ const characters: Characters[] = [
         url: '/characters/Wrecker'
     }, {
         name: "レンジ・トルーパー",
+        character_base_id: "RANGETROOPER",
         property: "ダークサイド、サポート、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_trooperranger.png',
         abbreviation: "Renge Trooper renge trooper",
@@ -1839,6 +1843,7 @@ const characters: Characters[] = [
         url: '/characters/Renge-Trooper'
     }, {
         name: "ロイヤル・ガード",
+        character_base_id: "ROYALGUARD",
         property: "ダークサイド、タンク、帝国軍",
         src: '/charui/tex.charui_royalguard.png',
         abbreviation: "Royal Guard royal guard RG",
@@ -1846,6 +1851,7 @@ const characters: Characters[] = [
         url: '/characters/Royal-Guard'
     }, {
         name: "ローズ・ティコ",
+        character_base_id: "ROSETICO",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_rose.png',
         abbreviation: "Rose Tico rose tico",
@@ -1853,6 +1859,7 @@ const characters: Characters[] = [
         url: '/characters/Rose-Tico'
     }, {
         name: "ログレイ",
+        character_base_id: " LOGRAY",
         property: "ライトサイド、サポート、イウォーク",
         src: '/charui/tex.charui_ewok_logray.png',
         abbreviation: "Logray logray",
@@ -1860,6 +1867,7 @@ const characters: Characters[] = [
         url: '/characters/Logray'
     }, {
         name: "ロボト",
+        character_base_id: "LOBOT",
         property: "ライトサイド、サポート、リーダー、反乱軍",
         src: '/charui/tex.charui_lobot.png',
         abbreviation: "Lobot lobot",
@@ -1867,6 +1875,7 @@ const characters: Characters[] = [
         url: '/characters/Lobot'
     }, {
         name: "ワット・タンバー",
+        character_base_id: "WATTAMBOR",
         property: "ダークサイド、サポート、分離主義者",
         src: '/charui/tex.charui_wattambor.png',
         abbreviation: "Wat Tambor wat tambor",
@@ -1874,6 +1883,7 @@ const characters: Characters[] = [
         url: '/characters/Wat-Tambor'
     }, {
         name: "ワンパ",
+        character_base_id: "WAMPA",
         property: "ダークサイド、アタッカー",
         src: '/charui/tex.charui_wampa.png',
         abbreviation: "Wampa wampa DE WANNA WANGA",
@@ -1882,6 +1892,7 @@ const characters: Characters[] = [
         url: '/characters/Wampa'
     }, {
         name: "大尋問官",
+        character_base_id: "GRANDINQUISITOR",
         property: "ダークサイド、アタッカー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_grandinquisitor.png',
         abbreviation: "GI gi Grand Inquisitor grand inquisitor Ready to Die?",
@@ -1889,6 +1900,7 @@ const characters: Characters[] = [
         url: '/characters/Grand-Inquisitor'
     }, {
         name: "帝国軍偵察ドロイド",
+        character_base_id: "IMPERIALPROBEDROID",
         property: "ダークサイド、サポート、ドロイド、帝国軍",
         src: '/charui/tex.charui_probedroid.png',
         abbreviation: "Imperial Probe Droid IPD",
