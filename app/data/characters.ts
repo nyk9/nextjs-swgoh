@@ -1,15 +1,9 @@
-export type Characters = {
-    name: string;
-    src: string;
-    property: string;
-    abbreviation: string;
-    skill: string;
-    url: string;
-};
+import { Characters } from "@/types/characters/characters";
 
 const characters: Characters[] = [
     {
         name: "0-0-0",
+        character_base_id: "TRIPLEZERO",
         property: "ダークサイド、サポート、ドロイド、ならず者",
         src: '/charui/tex.charui_triplezero.png',
         abbreviation: "卵  タマゴ  000  triple-zero triple zero Triple Zero",
@@ -1500,6 +1494,7 @@ const characters: Characters[] = [
         url: '/characters/Baze-Malbus'
     }, {
         name: "ベイダー卿",
+        character_base_id: "LORDVADER",
         property: "銀河の伝説、ダークサイド、アタッカー、リーダー、帝国軍、シス",
         src: '/charui/tex.charui_lordvader.png',
         abbreviation: "Lord Vader load vader GL gl Galactic Legend LV lv",
@@ -1507,6 +1502,7 @@ const characters: Characters[] = [
         url: '/characters/Lord-Vader'
     }, {
         name: "ヘラ・シンドゥーラ",
+        character_base_id: "HERASYNDULLAS3",
         property: "ライトサイド、サポート、リーダー、フェニックス、反乱軍",
         src: '/charui/tex.charui_hera_s3.png',
         abbreviation: "Hera Syndulla hera syndulla",
@@ -1514,6 +1510,7 @@ const characters: Characters[] = [
         url: '/characters/Hera-Syndulla'
     }, {
         name: "ベン・ソロ",
+        character_base_id: "BENSOLO",
         property: "ライトサイド、アタッカー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_bensolo.png',
         abbreviation: "Ben Solo ben solo ",
@@ -1521,6 +1518,7 @@ const characters: Characters[] = [
         url: '/characters/Ben-Solo'
     }, {
         name: "ボ＝カターン(マンダロア)",
+        character_base_id: "MANDALORBOKATAN",
         property: "ライトサイド、アタッカー、リーダー、マンダロリアン",
         src: '/charui/tex.charui_mandalorbokatan.png',
         abbreviation: "Bo-Katan (Mand'alor) bo-katan mand'alor bokatan ",
@@ -1528,6 +1526,7 @@ const characters: Characters[] = [
         url: '/characters/Bo-Katan-Mandalor'
     }, {
         name: "ボ＝カターン・クライズ",
+        character_base_id: "BOKATAN",
         property: "ライトサイド・アタッカー・リーダー、マンダロリアン、ならず者",
         src: '/charui/tex.charui_bokatan.png',
         abbreviation: "Bo-Katan Kryze bo-katan kryze bokatan",
@@ -1535,6 +1534,7 @@ const characters: Characters[] = [
         url: '/characters/Bo-Katan-Kryze'
     }, {
         name: "ポー・ダメロン",
+        character_base_id: "POE",
         property: "ライトサイド、タンク、リーダー、レジスタンス",
         src: '/charui/tex.charui_poe.png',
         abbreviation: "Poe Dameron poe dameron",
@@ -1542,6 +1542,7 @@ const characters: Characters[] = [
         url: '/characters/Poe-Dameron'
     }, {
         name: "ボーディー・ルック",
+        character_base_id: "BODHIROOK",
         property: "ライトサイド、サポート、反乱軍、反乱軍ファイター、ローグ・ワン",
         src: '/charui/tex.charui_bodhi.png',
         abbreviation: "Bodhi Rook bodhi rook",
@@ -1549,6 +1550,7 @@ const characters: Characters[] = [
         url: '/characters/Bodhi-Rook'
     }, {
         name: "ポグル",
+        character_base_id: "POGGLETHELESSER",
         property: "ダークサイド、サポート、リーダー、ジオノージアン、分離主義者",
         src: '/charui/tex.charui_geonosian_poggle.png',
         abbreviation: "Poggle poggle",
@@ -1557,6 +1559,7 @@ const characters: Characters[] = [
         url: '/characters/Poggle'
     }, {
         name: "ボス・ナス",
+        character_base_id: "BOSSNASS",
         property: 'ライトサイド、サポート、リーダー、グンガン',
         src: '/charui/tex.charui_bossnass.png',
         abbreviation: 'Boss Nass',
@@ -1564,6 +1567,7 @@ const characters: Characters[] = [
         url: '/characters/Boss-Nass'
     }, {
         name: "ボスク",
+        character_base_id: "BOSSK",
         property: "ダークサイド、タンク、リーダー、賞金稼ぎ、ならず者",
         src: '/charui/tex.charui_bossk.png',
         abbreviation: "Bossk bossk お喋りトカゲ",
@@ -1571,6 +1575,7 @@ const characters: Characters[] = [
         url: '/characters/Bossk'
     }, {
         name: "ホス反乱軍スカウト",
+        character_base_id: "HOTHREBELSCOUT",
         property: "ライトサイド、アタッカー、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_rebelhothscout.png',
         abbreviation: "Hoth Rebel Scout hoth rebel scout",
@@ -1578,6 +1583,7 @@ const characters: Characters[] = [
         url: '/characters/Hoth-Rebel-Scout'
     }, {
         name: "ホス反乱軍兵士",
+        character_base_id: "HOTHREBELSOLDIER",
         property: "ライトサイド、サポーター、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_rebelhoth.png',
         abbreviation: "Hoth Rebel Soldier hoth rebel soldier",
@@ -1585,6 +1591,7 @@ const characters: Characters[] = [
         url: '/characters/Hoth-Rebel-Soldier'
     }, {
         name: "ボバ・フェット",
+        character_base_id: "BOBAFETT",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ハット・カルテル、ならず者",
         src: '/charui/tex.charui_bobafett.png',
         abbreviation: "Boba Fett BF boba fett ﾌｪｯ!!",
@@ -1592,6 +1599,7 @@ const characters: Characters[] = [
         url: '/characters/Boba-Fett'
     }, {
         name: `ボバ・フェット(ジャンゴの "息子" )`,
+        character_base_id: "BOBAFETTSCION",
         property: "ダークサイド、アタッカー、リーダー、賞金稼ぎ、ならず者",
         src: '/charui/tex.charui_bobafettold.png',
         abbreviation: "大名 Daimyo BFSoJ SOJ SoJ soj bfsoj Boba Fett, Scion of Jango boba fett scion jango  ﾌｪｯ!!",
@@ -1599,6 +1607,7 @@ const characters: Characters[] = [
         url: '/characters/Boba-Fett-Scion-of-Jango'
     }, {
         name: "ホンドー・オナカ",
+        character_base_id: "HONDO",
         property: "ニュートラル、サポート、ならず者、スマグラー",
         src: '/charui/tex.charui_hondoohnaka.png',
         abbreviation: "Hondo Ohnaca hondo ohnaca",
@@ -1606,6 +1615,7 @@ const characters: Characters[] = [
         url: '/characters/Hondo-Ohnaca'
     }, {
         name: "マグマトルーパー",
+        character_base_id: "MAGMATROOPER",
         property: "ダークサイド、アタッカー、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_trooperstorm_magma.png',
         abbreviation: "Magmatrooper magmatrooper",
@@ -1613,6 +1623,7 @@ const characters: Characters[] = [
         url: '/characters/Magmatrooper'
     }, {
         name: "マザー・タルジン",
+        character_base_id: "MOTHERTALZIN",
         property: "ダークサイド、サポート、リーダー、ナイトシスター",
         src: '/charui/tex.charui_nightsisters_talzin.png',
         abbreviation: "Mother Talzin mother talzin",
@@ -1620,6 +1631,7 @@ const characters: Characters[] = [
         url: '/characters/Mother-Talzin'
     }, {
         name: "マスター・クワイ＝ガン",
+        character_base_id: "MASTERQUIGON",
         property: "ライトサイド、サポート、銀河共和国、ジェダイ",
         src: "/charui/tex.charui_masterquigon.png",
         abbreviation: "Master Qui-Gon qui gon",
@@ -1627,6 +1639,7 @@ const characters: Characters[] = [
         url: '/characters/Master-Qui-Gon'
     }, {
         name: "マラ・ジェイド(皇帝の手)",
+        character_base_id: "MARAJADE",
         property: "ダークサイド、アタッカー、帝国軍、非同盟のフォースの使い手",
         src: '/charui/tex.charui_marajade.png',
         abbreviation: "MJ mj Mara Jade, The Empeor's Hand mara jade the emprors hand",
@@ -1635,6 +1648,7 @@ const characters: Characters[] = [
         url: '/characters/Mara-Jade-The-Empeors-Hand'
     }, {
         name: "マンダロリアン",
+        character_base_id: "THEMANDALORIAN",
         property: "ライトサイド、アタッカー、リーダー、賞金稼ぎ、マンダロリアン、ならず者",
         src: '/charui/tex.charui_mandalorian.png',
         abbreviation: "The Mandalorian the mandalorian Mando mando This is the way",
@@ -1642,6 +1656,7 @@ const characters: Characters[] = [
         url: '/characters/The-Mandalorian'
     }, {
         name: "マンダロリアン(ベスカー・アーマー)",
+        character_base_id: "THEMANDALORIANBESKARARMOR",
         property: "ライトサイド、アタッカー、リーダー、マンダロリアン、ならず者",
         src: '/charui/tex.charui_mandobeskar.png',
         abbreviation: "BAM bam The Mandalorian (Beskar Armor) the mandalorian beskar armor",
@@ -1649,6 +1664,7 @@ const characters: Characters[] = [
         url: '/characters/The-Mandalorian-Beskar-Armor'
     }, {
         name: "ミッション・ヴァオ",
+        character_base_id: "MISSIONVAO",
         property: "ライトサイド、アタッカー、旧共和国、ならず者",
         src: '/charui/tex.charui_mission.png',
         abbreviation: "MV Mission Vao mission vao",
@@ -1656,6 +1672,7 @@ const characters: Characters[] = [
         url: '/characters/Mission-Vao'
     }, {
         name: "メイス・ウィンドゥ",
+        character_base_id: "MACEWINDU",
         property: "ライトサイド、タンク、リーダー、銀河共和国、ジェダイ、艦隊司令官",
         src: '/charui/tex.charui_macewindu.png',
         abbreviation: "Mace Windu mace windu",
@@ -1663,6 +1680,7 @@ const characters: Characters[] = [
         url: '/characters/Mace-Windu'
     }, {
         name: "メリン",
+        character_base_id: "MERRIN",
         property: "ダークサイド、サポート、ナイトシスター",
         src: '/charui/tex.charui_merrin.png',
         abbreviation: "Merrin merrin",
@@ -1670,6 +1688,7 @@ const characters: Characters[] = [
         url: '/characters/Merrin'
     }, {
         name: "モール",
+        character_base_id: "MAULS7",
         property: "ダークサイド、アタッカー、リーダー、マンダロリアン、非同盟のフォースの使い手",
         src: '/charui/tex.charui_maul_cyborg.png',
         abbreviation: "Maul maul",
@@ -1677,6 +1696,7 @@ const characters: Characters[] = [
         url: '/characters/Maul'
     }, {
         name: "モブ・エンフォーサー",
+        character_base_id: "HUMANTHUG",
         property: "ダークサイド、サポート、ハット・カルテル、ならず者",
         src: '/charui/tex.charui_mob_enforcer.png',
         abbreviation: "Mob Enforcer mob enforcer",
@@ -1684,6 +1704,7 @@ const characters: Characters[] = [
         url: '/characters/Mob-Enforcer'
     }, {
         name: "モフ・ギデオン",
+        character_base_id: "MOFFGIDEONS1",
         property: "ダークサイド、サポート、リーダー、帝国軍、インペリアル・レムナント、帝国軍トルーパー",
         src: '/charui/tex.charui_moffgideon.png',
         abbreviation: "Moff Gideon moff gideon Long Live the Empire",
@@ -1691,6 +1712,7 @@ const characters: Characters[] = [
         url: '/characters/Moff-Gideon'
     }, {
         name: "モフ・ギデオン(ダーク・トルーパー)",
+        character_base_id: "MOFFGIDEONS3",
         property: "ダークサイド、タンク、リーダー、帝国軍、インペリアル・レムナント",
         src: '/charui/tex.charui_moffgideons3.png',
         abbreviation: "Dark Trooper Moff Gideon dark trooper moff gideon Long Live the Empire DTMG",
@@ -1698,6 +1720,7 @@ const characters: Characters[] = [
         url: '/characters/Dark-Trooper-Moff-Gideon'
     }, {
         name: "モン・モスマ",
+        character_base_id: "MONMOTHMA",
         property: "ライトサイド、サポート、リーダー、反乱軍",
         src: '/charui/tex.charui_monmothma.png',
         abbreviation: "MM mm Mon Mothma mon mothma",
@@ -1705,6 +1728,7 @@ const characters: Characters[] = [
         url: '/characters/Mon-Mothma'
     }, {
         name: "ヤング・ハン・ソロ",
+        character_base_id: "YOUNGHAN",
         property: "ライトサイド、アタッカー、ならず者、スマグラー",
         src: '/charui/tex.charui_han_young.png',
         abbreviation: "Yolo yolo Young Han Solo young han solo",
@@ -1712,6 +1736,7 @@ const characters: Characters[] = [
         url: '/characters/Young-Han-Solo'
     }, {
         name: "ヤング・ランド・カルリジアン",
+        character_base_id: "YOUNGLANDO",
         property: "ライトサイド、アタッカー、ならず者、スマグラー",
         src: '/charui/tex.charui_younglando.png',
         abbreviation: "Young Lando Calrissian young lando calrissian",
@@ -1719,6 +1744,7 @@ const characters: Characters[] = [
         url: '/characters/Young-Lando-Calrissian'
     }, {
         name: "ヨーダ(ハーミット)",
+        character_base_id: "HERMITYODA",
         property: "ライトサイド、サポート、ジェダイ",
         src: '/charui/tex.charui_yodahermit.png',
         abbreviation: "Hoda HYoda HY hoda hyoda hy 隠者 Hermit Yoda hermit yoda",
@@ -1726,6 +1752,7 @@ const characters: Characters[] = [
         url: '/characters/Hermit-Yoda'
     }, {
         name: "ラダス提督",
+        character_base_id: "ADMIRALRADDUS",
         property: "ライトサイド、サポート、リーダー、反乱軍、ローグ・ワン、艦隊司令官",
         src: '/charui/tex.charui_admiralraddus.png',
         abbreviation: "Admiral Raddus admiral raddus AdRad",
@@ -1733,6 +1760,7 @@ const characters: Characters[] = [
         url: '/characters/Admiral-Raddus'
     }, {
         name: "ランド・カルリジアン",
+        character_base_id: "ADMINISTRATORLANDO",
         property: "ライトサイド、アタッカー、リーダー、反乱軍、反乱軍ファイター、ならず者",
         src: '/charui/tex.charui_landobespin.png',
         abbreviation: "Lando Calrissian lando calrissian ランド・カルリジアンからのお別れの挨拶",
@@ -1740,6 +1768,7 @@ const characters: Characters[] = [
         url: '/characters/Lando-Calrissian'
     }, {
         name: "ルーク・スカイウォーカー(農民)",
+        character_base_id: "LUKESKYWALKER",
         property: "ライトサイド、アタッカー、リーダー、反乱軍",
         src: '/charui/tex.charui_luke_ep4.png',
         abbreviation: "Luke Skywalker (Farmboy) luke skywalker farmboy 農民ルーク",
@@ -1747,6 +1776,7 @@ const characters: Characters[] = [
         url: '/characters/Luke-Skywalker-Farmboy'
     }, {
         name: "ルーク・スカイウォーカー中佐",
+        character_base_id: "COMMANDERLUKESKYWALKER",
         property: "ライトサイド、アタッカー、リーダー、反乱軍、非同盟のフォースの使い手",
         src: '/charui/tex.charui_lukebespin.png',
         abbreviation: "CLS cls Commander Luke Skywalker commander luke skywalker",
@@ -1754,6 +1784,7 @@ const characters: Characters[] = [
         url: '/characters/Commander-Luke-Skywalker'
     }, {
         name: "ルミナーラ・アンドゥリ",
+        character_base_id: "LUMINARAUNDULI",
         property: "ライトサイド、ヒーラー、リーダー、銀河共和国、ジェダイ",
         src: '/charui/tex.charui_luminara.png',
         abbreviation: "Luminara Unduli luminara unduli",
@@ -1761,6 +1792,7 @@ const characters: Characters[] = [
         url: '/characters/Luminara-Unduli'
     }, {
         name: "レイ",
+        character_base_id: "GLREY",
         property: "銀河の伝説、ライトサイド、アタッカー、リーダー、レジスタンス、非同盟のフォースの使い手",
         src: '/charui/tex.charui_rey_tros.png',
         abbreviation: "GL Rey rey Garactic Legends garactic legends",
@@ -1768,6 +1800,7 @@ const characters: Characters[] = [
         url: '/characters/Rey'
     }, {
         name: "レイ(ジェダイ・トレーニング)",
+        character_base_id: "REYJEDITRAINING",
         property: "ライトサイド、タンク、リーダー、レジスタンス、非同盟のフォースの使い手",
         src: '/charui/tex.charui_rey_tlj.png',
         abbreviation: "RJT JTR 修行中レイ rjt jtr Rey(Jedi Trainig) rey jedi training",
@@ -1775,6 +1808,7 @@ const characters: Characters[] = [
         url: '/characters/Rey-Jedi-Trainig'
     }, {
         name: "レイ(スカベンジャー)",
+        character_base_id: "REY",
         property: "ライトサイド、アタッカー、レジスタンス、非同盟のフォースの使い手",
         src: '/charui/tex.charui_reyjakku.png',
         abbreviation: "Rey (Scavenger) rey scavenger",
@@ -1782,6 +1816,7 @@ const characters: Characters[] = [
         url: '/characters/Rey-Scavenger'
     }, {
         name: "レイア・オーガナ",
+        character_base_id: "GLLEIA",
         property: "銀河の伝説、ライトサイド、タンク、リーダー、反乱軍",
         src: '/charui/tex.charui_leiaendor.png',
         abbreviation: "GL GLレイア gl Geractic Legends garactic legends Leia Organa leia organa",
@@ -1789,6 +1824,7 @@ const characters: Characters[] = [
         url: '/characters/Leia-Organa'
     }, {
         name: "レイア・オーガナ(反乱軍オフィサー)",
+        character_base_id: "HOTHLEIA",
         property: "ライトサイド、アタッカー、リーダー、反乱軍",
         src: '/charui/tex.charui_leiahoth.png',
         abbreviation: "ROLO rolo ホスレイア Rebel Officer Leia Organa",
@@ -1796,6 +1832,7 @@ const characters: Characters[] = [
         url: '/characters/Rebel-Officer-Leia-Organa'
     }, {
         name: "レイア姫",
+        character_base_id:"PRINCESSLEIA",
         property: "ライトサイド、アタッカー、リーダー、反乱軍",
         src: '/charui/tex.charui_leia_princess.png',
         abbreviation: "Princess Leia princess leia",
@@ -1803,6 +1840,7 @@ const characters: Characters[] = [
         url: '/characters/Princess-Leia'
     }, {
         name: "レジスタンス・トルーパー",
+        character_base_id: "RESISTANCETROOPER",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_resistancetrooper.png',
         abbreviation: "Resistance Trooper rasistance trooper レジトル",
@@ -1810,6 +1848,7 @@ const characters: Characters[] = [
         url: '/characters/Resistance-Trooper'
     }, {
         name: "レジスタンス・パイロット",
+        character_base_id: "RESISTANCEPILOT",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_resistancepilot.png',
         abbreviation: "Resistance Pilot resistane pilot レジパイ",
@@ -1817,6 +1856,7 @@ const characters: Characters[] = [
         url: '/characters/Resistance^Pilot'
     }, {
         name: "レジスタンスの英雄フィン",
+        character_base_id: "EPIXFINN",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_finn.png',
         abbreviation: "Resistance Hero Finn resistance hero finn",
@@ -1824,6 +1864,7 @@ const characters: Characters[] = [
         url: '/characters/Resistance-Hero-Finn'
     }, {
         name: "レジスタンスの英雄ポー",
+        character_base_id: "EPIXPOE",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_poe_tros.png',
         abbreviation: "Resistance Hero Poe resistance hero poe",
@@ -1831,6 +1872,7 @@ const characters: Characters[] = [
         url: '/characters/Resistance-Hero-Poe'
     }, {
         name: "レッカー",
+        character_base_id: "BADBATCHWRECKER",
         property: "ライトサイド、タンク、バッド・バッチ、クローン・トルーパー、銀河共和国",
         src: '/charui/tex.charui_bb_wrecker.png',
         abbreviation: "Wrecker wrecker Bad Batch bad batch BB bb",
@@ -1838,6 +1880,7 @@ const characters: Characters[] = [
         url: '/characters/Wrecker'
     }, {
         name: "レンジ・トルーパー",
+        character_base_id: "RANGETROOPER",
         property: "ダークサイド、サポート、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_trooperranger.png',
         abbreviation: "Renge Trooper renge trooper",
@@ -1845,6 +1888,7 @@ const characters: Characters[] = [
         url: '/characters/Renge-Trooper'
     }, {
         name: "ロイヤル・ガード",
+        character_base_id: "ROYALGUARD",
         property: "ダークサイド、タンク、帝国軍",
         src: '/charui/tex.charui_royalguard.png',
         abbreviation: "Royal Guard royal guard RG",
@@ -1852,6 +1896,7 @@ const characters: Characters[] = [
         url: '/characters/Royal-Guard'
     }, {
         name: "ローズ・ティコ",
+        character_base_id: "ROSETICO",
         property: "ライトサイド、アタッカー、レジスタンス",
         src: '/charui/tex.charui_rose.png',
         abbreviation: "Rose Tico rose tico",
@@ -1859,6 +1904,7 @@ const characters: Characters[] = [
         url: '/characters/Rose-Tico'
     }, {
         name: "ログレイ",
+        character_base_id: " LOGRAY",
         property: "ライトサイド、サポート、イウォーク",
         src: '/charui/tex.charui_ewok_logray.png',
         abbreviation: "Logray logray",
@@ -1866,6 +1912,7 @@ const characters: Characters[] = [
         url: '/characters/Logray'
     }, {
         name: "ロボト",
+        character_base_id: "LOBOT",
         property: "ライトサイド、サポート、リーダー、反乱軍",
         src: '/charui/tex.charui_lobot.png',
         abbreviation: "Lobot lobot",
@@ -1873,6 +1920,7 @@ const characters: Characters[] = [
         url: '/characters/Lobot'
     }, {
         name: "ワット・タンバー",
+        character_base_id: "WATTAMBOR",
         property: "ダークサイド、サポート、分離主義者",
         src: '/charui/tex.charui_wattambor.png',
         abbreviation: "Wat Tambor wat tambor",
@@ -1880,6 +1928,7 @@ const characters: Characters[] = [
         url: '/characters/Wat-Tambor'
     }, {
         name: "ワンパ",
+        character_base_id: "WAMPA",
         property: "ダークサイド、アタッカー",
         src: '/charui/tex.charui_wampa.png',
         abbreviation: "Wampa wampa DE WANNA WANGA",
@@ -1888,6 +1937,7 @@ const characters: Characters[] = [
         url: '/characters/Wampa'
     }, {
         name: "大尋問官",
+        character_base_id: "GRANDINQUISITOR",
         property: "ダークサイド、アタッカー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_grandinquisitor.png',
         abbreviation: "GI gi Grand Inquisitor grand inquisitor Ready to Die?",
@@ -1895,6 +1945,7 @@ const characters: Characters[] = [
         url: '/characters/Grand-Inquisitor'
     }, {
         name: "帝国軍偵察ドロイド",
+        character_base_id: "IMPERIALPROBEDROID",
         property: "ダークサイド、サポート、ドロイド、帝国軍",
         src: '/charui/tex.charui_probedroid.png',
         abbreviation: "Imperial Probe Droid IPD",

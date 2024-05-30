@@ -1,7 +1,8 @@
 "use client"
 
+import { Characters } from "@/types/characters/characters";
 import { useEffect, useState } from "react";
-import { Characters } from "../data/characters";
+
 
 export const useSearchTerm = () => {
     const [searchTerm, setSearchTerm] = useState<string>('');

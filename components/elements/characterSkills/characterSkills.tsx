@@ -1,4 +1,5 @@
-import { Abilities } from "@/app/data/characterAbilities";
+
+import { Abilities } from "@/types/abilities/abilities";
 import Image from "next/image";
 // import { useRouter } from "next/router";
 export default async function CharacterSkills(params: {
@@ -7,7 +8,7 @@ export default async function CharacterSkills(params: {
     const apilink: string = 'https://swgoh4jp.com/api/characterAbilities';
     const res: globalThis.Response = await fetch(apilink, {
         next: {
-            revalidate: 3600,
+            revalidate: 3 * 60 * 60,
         },
     });
     // const devapi: string = 'http://localhost:3000/api/characterAbilities';
@@ -43,7 +44,7 @@ export default async function CharacterSkills(params: {
     } else {
         for (let i: number = 0; i < data[abilityIndex].ability.length; i++) {
             let str: string = data[abilityIndex].ability[i].description_jp;
-            data[abilityIndex].ability[i].description_jp = str.replaceAll('\n', '&&');
+            data[abilityIndex].ability[i].description_jp = str.replaceAll('\n', '>>');
         }
         return (
             <>
@@ -144,10 +145,10 @@ export default async function CharacterSkills(params: {
                                 </div>
                             </h1>
                             <div className="">
-                                {item.description_jp.includes('&') || item.description_jp.includes('*')
+                                {item.description_jp.includes('>') || item.description_jp.includes('*')
                                     || item.description_jp.includes('$') || item.description_jp.includes('#')
                                     || item.description_jp.includes('+') ? (
-                                    item.description_jp.split('&').map((line: string, lineIndex: number) => {
+                                    item.description_jp.split('>').map((line: string, lineIndex: number) => {
                                         if (lineIndex % 2 !== 0 && lineIndex !== 0) {
                                             return (<span key={lineIndex}><br /></span>);
                                         } else if (line.includes('*')) {
