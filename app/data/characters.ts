@@ -939,6 +939,7 @@ const characters: Characters[] = [
         url: '/characters/Scarif-Rebel-Pathfinder'
     }, {
         name: "スキッフ・ガード(ランド・カルリジアン)",
+        character_base_id: "UNDERCOVERLANDO",
         property: "ライトサイド、アタッカー、ハット・カルテル、ならず者、スマグラー",
         src: '/charui/tex.charui_lando_jabbaguard.png',
         abbreviation: "Skiff Guard Lando Calrissian skiff guard lando calrissian ",
@@ -946,6 +947,7 @@ const characters: Characters[] = [
         url: '/characters/Skiff-Guard-Lando-Calrissian'
     }, {
         name: "スターキラー",
+        character_base_id: "STARKILLER",
         property: "ダークサイド、アタッカー、非同盟のフォースの使い手",
         src: '/charui/tex.charui_starkiller.png',
         abbreviation: "SK sk Starkiller sterkiller ギャレン・マレック Galen Marek galen marek",
@@ -953,6 +955,7 @@ const characters: Characters[] = [
         url: '/characters/Starkiller'
     }, {
         name: "スターク大佐",
+        character_base_id: "COLONELSTARCK",
         property: "ダークサイド、サポート、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_colonel_stark.png',
         abbreviation: "Col.  Colonel Starck colonel starck",
@@ -960,6 +963,7 @@ const characters: Characters[] = [
         url: '/characters/Colonel-Starck'
     }, {
         name: "ストームトルーパー",
+        character_base_id: "STORMTROOPER",
         property: "ダークサイド、タンク、帝国軍、インペリアル、レムナント、帝国軍トルーパー",
         src: '/charui/tex.charui_trooperstorm.png',
         abbreviation: "Storm Trooper storm trooper",
@@ -967,6 +971,7 @@ const characters: Characters[] = [
         url: '/characters/Storm-Trooper'
     }, {
         name: "スノートルーパー",
+        character_base_id: "SNOWTROOPER",
         property: "ダークサイド、アタッカー、帝国軍、帝国軍トルーパー",
         src: '/charui/tex.charui_troopersnow.png',
         abbreviation: "Snowtrooper snow trooper",
@@ -974,20 +979,23 @@ const characters: Characters[] = [
         url: '/characters/Snowtrooper'
     }, {
         name: "スマグラー・チューバッカ",
-        property: "ライトサイド・アタッカー・レジスタンス・ならず者・ウーキー・スマグラー",
+        character_base_id: "SMUGGLERCHEWBACCA",
+        property: "ライトサイド、アタッカー、レジスタンス、ならず者、ウーキー、スマグラー",
         src: '/charui/tex.charui_tfa_chewbacca.png',
         abbreviation: "Vets Veteran Smuggler Chewbacca Chew vets veteran smuggler chewbacca",
         skill: `めまい付与  スタン付与  スピード低下  ターンメーター上昇  クールダウンリセット  ボーナスターン  `,
         url: '/characters/Veteran-Smuggler-Chewbacca'
     }, {
         name: "スマグラー・ハン",
-        property: "ライトサイド・アタッカー、レジスタンス、ならず者、スマグラー",
+        character_base_id: "SMUGGLERHAN",
+        property: "ライトサイド、アタッカー、レジスタンス、ならず者、スマグラー",
         src: '/charui/tex.charui_tfa_han.png',
         abbreviation: "Vets vets veteran smuggler han solo Veteran Smuggler Han Solo",
         skill: `よろめき  スタン付与  スキルブロック付与 ターンメーター上昇  クールダウンリセット  ボーナスターン  `,
         url: '/characters/Veteran-Smuggler-Han-Solo'
     }, {
         name: "スローン大提督",
+        character_base_id: "GRANDADMIRALTHRAWN",
         property: "ダークサイド、サポート、リーダー、帝国軍、艦隊司令官",
         src: '/charui/tex.charui_thrawn.png',
         abbreviation: "GAT gat Grand Admiral Thrawn grand admiral thrawn",
@@ -995,6 +1003,7 @@ const characters: Characters[] = [
         url: '/characters/Grand-Admiral-Thrawn'
     }, {
         name: "セカンド・シスター",
+        character_base_id: "SECONDSISTER",
         property: "ダークサイド、アタッカー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_secondsister.png',
         abbreviation: "2s 2S Second Sister second sister 2女 トリラ Trilla trilla",
@@ -1002,6 +1011,7 @@ const characters: Characters[] = [
         url: '/characters/Second-Sister'
     }, {
         name: "セブンス・シスター",
+        character_base_id: "SEVENTHSISTER",
         property: "ダークサイド、ヒーラー、リーダー、帝国軍、尋問官、非同盟のフォースの使い手",
         src: '/charui/tex.charui_seventhsister.png',
         abbreviation: "Seventh Sister seventh sister 7S 7s",
@@ -1009,6 +1019,7 @@ const characters: Characters[] = [
         url: '/characters/Seventh-Sister'
     }, {
         name: "ソウ・ゲレラ",
+        character_base_id: "SAWGERRERA",
         property: "ライトサイド、サポート、リーダー、反乱軍、反乱軍ファイター",
         src: '/charui/tex.charui_sawgerrera.png',
         abbreviation: "Saw Gerrera saw gerrera",
@@ -1016,6 +1027,7 @@ const characters: Characters[] = [
         url: '/characters/Saw-Gerrera'
     }, {
         name: "ゾリ・ブリス",
+        character_base_id: "ZORIIBLISS_V2",
         property: "ライトサイド、サポーター、レジスタンス、ならず者、スマグラー",
         src: '/charui/tex.charui_zoriibliss.png',
         abbreviation: "Zorri Bliss zorri bliss",
