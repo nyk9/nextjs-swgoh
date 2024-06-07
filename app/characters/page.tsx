@@ -1,5 +1,4 @@
 "use client"
-import Home from "@/components/layouts/header/Home";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import propertyButtons from "@/features/characterlist/constants/property";
@@ -28,7 +27,6 @@ export default function Character() {
 
     return (
         <div className="relative bg-neutral-500 min-h-screen ">
-            <Home />
             <div className="">
                 <div className="flex flex-wrap items-center">
                     <input
