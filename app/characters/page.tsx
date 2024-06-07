@@ -167,7 +167,7 @@ export default function Character() {
             <div>
                 <p>押したボタン： 属性:{selectedProperty} ,スキル効果:{selectedSkill} </p>
             </div>
-            <div className="mb-32 grid text-center lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left p-4">
+            <div className="mb-32 grid text-center lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left p-4">
                 {searchResults.map((char) => {
                     return (
                         <div
