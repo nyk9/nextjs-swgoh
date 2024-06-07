@@ -6,7 +6,7 @@ export default function About() {
                 <div>
                     <h5 className="pt-2">1. 自己紹介</h5>
                     <p className="text-left p-3">
-                        2024/1/21現在情報系の学部に通う大学2年生(2回生)、
+                        2024/6/07 現在情報系の学部に通う大学3年生(3回生)、
                     </p>
                 </div>
                 <div>
@@ -16,7 +16,7 @@ export default function About() {
                         TypeScript <br />
                         Tailwind CSS <br />
                         Vercel (Deploy) <br />
-                        GitHub : <a href="http://github.com/nyk9/nextjs-swgoh">リンク</a> <br />
+                        GitHub : <a href="https://github.com/nyk9/nextjs-swgoh">Git Hub</a>
                     </p>
                 </div>
                 主な連絡先：<a href="https://discord.gg/yX3pS2WemD">公式Discordサーバー</a>

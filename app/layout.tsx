@@ -22,8 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
-        <SpeedInsights/>
+        <div className="mt-7">
+          {children}
+        </div>
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>

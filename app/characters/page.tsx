@@ -32,7 +32,7 @@ export default function Character() {
                     <input
                         type="text"
                         placeholder="キャラ名等を入力してください"
-                        className="mt-20 m-1 lg:mt-1 w-full md:w-1/3 xl:py-2 text-black"
+                        className="m-1 lg:mt-1 w-full md:w-1/3 xl:py-2 text-black"
                         value={searchTerm}
                         onChange={handleTextChange}
                     />
