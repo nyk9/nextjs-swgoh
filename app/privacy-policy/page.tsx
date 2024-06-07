@@ -1,11 +1,9 @@
-import Home from "@/components/layouts/header/Home";
 
 export default function PrivacyPolicy() {
     return (
         <div
             className="min-h-screen bg-neutral-700"
         >
-            <Home />
             <header
                 className="text-center pt-20 lg:pt-0 text-5xl"
             >
