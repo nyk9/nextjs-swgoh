@@ -1,5 +1,4 @@
 "use client"
-import Home from "@/components/layouts/header/Home";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import propertyButtons from "@/features/characterlist/constants/property";
@@ -28,13 +27,12 @@ export default function Character() {
 
     return (
         <div className="relative bg-neutral-500 min-h-screen ">
-            <Home />
             <div className="">
                 <div className="flex flex-wrap items-center">
                     <input
                         type="text"
                         placeholder="キャラ名等を入力してください"
-                        className="mt-20 m-1 lg:mt-1 w-full md:w-1/3 xl:py-2 text-black"
+                        className="m-1 lg:mt-1 w-full md:w-1/3 xl:py-2 text-black"
                         value={searchTerm}
                         onChange={handleTextChange}
                     />
