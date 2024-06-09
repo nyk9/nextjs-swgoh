@@ -1,5 +1,6 @@
 "use client"
-import Home from "@/components/layouts/header/Home";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 import propertyButtons from "@/features/characterlist/constants/property";
 import skillButtons from "@/features/characterlist/constants/skillEffect";
 import Image from "next/image";
@@ -25,14 +26,13 @@ export default function Character() {
     };
 
     return (
-        <div className="relative bg-neutral-500 min-h-screen ">
-            <Home />
+        <div className="bg-neutral-500 min-h-screen ">
             <div className="">
                 <div className="flex flex-wrap items-center">
                     <input
                         type="text"
                         placeholder="キャラ名等を入力してください"
-                        className="mt-20 m-1 lg:mt-1 w-full md:w-1/3 xl:py-2 text-black"
+                        className="m-1 lg:mt-1 w-full md:w-1/3 xl:py-2 text-black"
                         value={searchTerm}
                         onChange={handleTextChange}
                     />
@@ -141,7 +141,7 @@ export default function Character() {
                                     {isButtonVisibleSkill && (
                                         <div className="justify-center ">
                                             <div
-                                                className="grid border md:w-[40rem] px-auto grid-cols-2 bg-orange-300 overflow-y-auto"
+                                                className="grid border rounded-lg md:w-[40rem] px-auto grid-cols-2 bg-orange-300 overflow-y-auto"
                                             >
                                                 {skillButtons.map((property, index) => (
                                                     <input
@@ -165,16 +165,16 @@ export default function Character() {
             <div>
                 <p>押したボタン： 属性:{selectedProperty} ,スキル効果:{selectedSkill} </p>
             </div>
-            <div className="mb-32 grid text-center lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left p-4">
+            <div className="mb-32 grid text-center lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left p-4">
                 {searchResults.map((char) => {
                     return (
-                        <Link
-                            className="border border-gray-300 rounded m-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
+                        <div
+                            className="border rounded-lg border-gray-300 m-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
                             key={`${char.abbreviation}-${char.skill}`}
-                            href={`${char.url}`}
+
                         >
                             <h1 className="text-2xl text-center text-white">{char.name}</h1>
-                            <div className="flex grid">
+                            <div className="flex">
                                 <Image
                                     alt={char.name}
                                     src={char.src}
@@ -184,7 +184,20 @@ export default function Character() {
                                 />
                                 <small className="group">{char.property}</small>
                             </div>
-                        </Link>
+                            <Separator />
+                            <div className="flex items-end py-1">
+                                <Link href={`${char.url}`}>
+                                    <Badge className="">ゲーム内説明（手動入力）</Badge>
+                                </Link>
+                                {char.character_base_id && (
+                                    <>
+                                        <Link href={`/character/${char.character_base_id}`}>
+                                            <Badge>英文（SWGOH.GG）</Badge>
+                                        </Link>
+                                    </>
+                                )}
+                            </div>
+                        </div>
                     );
                 })}
             </div>

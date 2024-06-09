@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import schedules from './schedules';
 import updates, { Updates } from './update';
 
@@ -7,16 +8,8 @@ export default function Home() {
   const schedule: Updates[] = schedules;
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-1 bg-neutral-700">
-      <div className="z-10 max-w-5xl w-full m-10 items-center justify-between font-mono text-sm lg:flex" >
-        <a
-          className='relative left-0 bottom-5 border border-blue-600 bg-red-400 left-0 top-0 w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 p-2 m-3 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-2 lg:dark:bg-zinc-800/30 group rounded-lg border border-transparent  transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-black-900 hover:light:border-neutral-700'
-          href={'/about'}
-        >
-          About me
-        </a>
-      </div>
-      <div className=" grid center text-center w-full md:w-2xl md:grid-cols-3 xl:grid-cols-4  lg:w-full lg:mb-0 lg:text-left">
-        <a
+      <div className="mt-5 md:mt-0 grid center text-center w-full md:w-2xl md:grid-cols-3 xl:grid-cols-4  lg:w-full lg:mb-0 lg:text-left">
+        <Link
           href='https://swgoh.gg/'
           className='group rounded-lg border border-transparent px-1 py-4 mx-5 md:mt-5 transition-colors hover:border-gray-300 hover:scale-110 hover:bg-orange-700 hover:light:border-neutral-700 bg-orange-200'
           target='_blank'
@@ -31,9 +24,9 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             swgoh.gg
           </p>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href='/characters'
           className='group rounded-lg border border-transparent px-2 py-4 mx-5 mt-8 md:mt-5 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-300'
           // target='_blank'
@@ -48,13 +41,13 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             キャラ一覧
           </p>
-        </a>
+        </Link>
 
-        <a
-          
+        <Link
           className='group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 md:mt-5 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-300'
           // target='_blank'
           rel='noopener noreferrer'
+          href='/ships'
         >
           <h2 className={`mb-3 text-3xl font-semibold`}>
             Ships {' '}
@@ -65,11 +58,11 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             ※ 今後追加予定
           </p>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="https://discord.gg/yX3pS2WemD"
-          className="group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 md:mt-5  transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-teal-200"
+          className="group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 md:mt-5  transition-colors hover:border-gray-300 hover:dark:scale-110 bg-teal-200 hover:bg-teal-700 hover:light:border-neutral-700 "
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -82,11 +75,11 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             公式 Discord サーバー
           </p>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="https://github.com/nyk9/nextjs-swgoh"
-          className="group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 md:mt-5 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-teal-200"
+          className="group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 md:mt-5 transition-colors hover:border-gray-300 hover:dark:scale-110 bg-teal-200 hover:bg-teal-700 hover:light:border-neutral-700 "
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -99,7 +92,7 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             ソースコード
           </p>
-        </a>
+        </Link>
 
       </div>
       <div className='w-full text-center mb-10 m-1 my-6'>
@@ -138,13 +131,20 @@ export default function Home() {
           })}
         </div>
       </div>
+      <div className="my-4 text-sm" >
+        <Link
+          href={'/about'}
+        >
+          About me
+        </Link>
+      </div>
       <div>
-        <a
+        <Link
           href="/privacy-policy"
           className='text-center mt-2'
         >
           プライバシーポリシー・免責事項
-        </a>
+        </Link>
       </div>
     </main>
   )
