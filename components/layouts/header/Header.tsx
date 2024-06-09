@@ -7,7 +7,7 @@ import { IoMenu } from "react-icons/io5";
 export const Header = () => {
     return (
         <header className="flex fixed top-0 w-full justify-between flex-wrap py-1 bg-black text-white">
-            <h1 className="text-lg pt-1">
+            <h1 className="text-lg py-1">
                 <Link href="/">初心者応援データベース</Link>
             </h1>
             <Menubar className="px-3 bg-black border-none">

@@ -26,7 +26,7 @@ export default function Character() {
     };
 
     return (
-        <div className="relative bg-neutral-500 min-h-screen ">
+        <div className="bg-neutral-500 min-h-screen ">
             <div className="">
                 <div className="flex flex-wrap items-center">
                     <input
@@ -141,7 +141,7 @@ export default function Character() {
                                     {isButtonVisibleSkill && (
                                         <div className="justify-center ">
                                             <div
-                                                className="grid border md:w-[40rem] px-auto grid-cols-2 bg-orange-300 overflow-y-auto"
+                                                className="grid border rounded-lg md:w-[40rem] px-auto grid-cols-2 bg-orange-300 overflow-y-auto"
                                             >
                                                 {skillButtons.map((property, index) => (
                                                     <input
@@ -169,12 +169,12 @@ export default function Character() {
                 {searchResults.map((char) => {
                     return (
                         <div
-                            className="border border-gray-300 rounded m-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
+                            className="border rounded-lg border-gray-300 m-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
                             key={`${char.abbreviation}-${char.skill}`}
 
                         >
                             <h1 className="text-2xl text-center text-white">{char.name}</h1>
-                            <div className="flex grid">
+                            <div className="flex">
                                 <Image
                                     alt={char.name}
                                     src={char.src}
@@ -185,9 +185,9 @@ export default function Character() {
                                 <small className="group">{char.property}</small>
                             </div>
                             <Separator />
-                            <div className="flex items-center">
-                                <Link href={`${char.url}`} className="m-1">
-                                    <Badge>ゲーム内説明（手動入力）</Badge>
+                            <div className="flex items-end py-1">
+                                <Link href={`${char.url}`}>
+                                    <Badge className="">ゲーム内説明（手動入力）</Badge>
                                 </Link>
                                 {char.character_base_id && (
                                     <>
