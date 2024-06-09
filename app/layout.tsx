@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <div className="mt-7">
+        <div className="mt-10">
           {children}
         </div>
         <SpeedInsights />
