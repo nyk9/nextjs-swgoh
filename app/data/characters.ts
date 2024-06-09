@@ -1994,6 +1994,14 @@ const characters: Characters[] = [
         skill: `スピード低下  防御力低下  ターンメーター減少付与 スタン付与  強化解除  強化無効  抵抗力低下  クールダウン減少  リーダー：防御力上昇  リーダー：攻撃力上昇  カウンター  ターンメーター上昇  行動喚起  挑発無視`,
         url: '/characters/Commander-Luke-Skywalker'
     }, {
+        name: "ルーセン・レイエル",
+        character_base_id: "LUTHENRAEL",
+        property: "ライトサイド、サポート、反乱軍、反乱軍ファイター",
+        src: '/charui/tex.charui_luthenrael.png',
+        abbreviation: "Luthen Rael",
+        skill: ``,
+        url: '/characters/Luthen-Rael'
+    }, {
         name: "ルミナーラ・アンドゥリ",
         character_base_id: "LUMINARAUNDULI",
         property: "ライトサイド、ヒーラー、リーダー、銀河共和国、ジェダイ",
