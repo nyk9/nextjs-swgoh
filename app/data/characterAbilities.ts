@@ -5952,6 +5952,86 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月13日'
     }, {
+        id: 'Jedi-Knight-Revan',
+        character_name: 'ジェダイ・ナイト・レヴァン',
+        character_image: '/charui/tex.charui_jedirevan.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'フェローシャスチャージ',
+                name_eng: 'Ferocious Charge',
+                image: '/ability/tex.ability_jedirevan_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。ダークサイドの敵に対して、この攻撃のダメージは25%上昇する。ターゲットがマークされている場合、レヴァンのターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ストラテジスト・マスター',
+                name_eng: 'Master Strategist',
+                image: '/ability/tex.ability_jedirevan_special01.png',
+                description_jp: `敵全体に特殊ダメージを与える。味方ジェダイと旧共和国ユニットごとにそれらユニットを10%回復する。レヴァンは3ターンのクリティカルダメージ上昇とフォアサイトを得る。ターンメーターを指定した他の味方ジェダイと入れ替える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ダイレクトフォーカス',
+                name_eng: 'Direct Focus',
+                image: '/ability/tex.ability_jedirevan_special02.png',
+                description_jp: `ターゲットに2ターンの間マーク状態にさせ、強化無効を発生させる(コピー、解除、耐性発揮不可)。ターゲットのクールダウンが1増加し(耐性発揮不可)、ターンメーターを50%減少させ、1ターンスタン状態にする。この攻撃は回避できない。味方ジェダイを全てアシストに呼ぶ(ダメージは50%減少)。
+                
+                *マーク状態*: 全ての敵がこのユニットをターゲットにする`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '将軍',
+                name_eng: 'General',
+                image: '/abilityui/tex.abilityui_passive_jedirevan.png',
+                description_jp: `バトル開始時、味方ジェダイと旧共和国ユニットごとに(召集された味方を除く)、各々のスピードが5、クリティカル率が5%、攻撃力が5%上昇する。バトル開始時、味方ジェダイに1ターンの抵抗力上昇が発生する。レヴァンがリーダースロットに設定されている間(同盟スロットでは不可)、ユニットはバトルの最初のターンが開始されるまで、リーダースキルによるボーナスターンメーター効果を受けない。
+                
+                味方ジェダイはターン外に攻撃すると、最大プロテクションが20%回復し、ダメージが35%上昇する。味方ジェダイがボーナスプロテクションが発生している敵に対して通常スキルを使用すると、ターゲットの最大HPを10%減少させる(スタック可能、レイドボスには機能しない)。味方ジェダイユニットの各ターン開始時に戦略的アドバンテージが味方の誰にも発生していない場合、味方ジェダイに戦略的アドバンテージが発生する。戦略的アドバンテージを持つ味方ジェダイはカウンターできない＝されない？。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '付与スキル',
+                cooldown: 1,
+                name_jp: '戦略的アドバンテージ',
+                name_eng: 'Strategic Advantage',
+                image: '/ability/tex.ability_jedirevan_special03.png',
+                description_jp: `指定した味方ジェダイの弱体を全て解除する。指定した味方が通常スキルを使用すると、戦略的アドバンテージとアシストが発生する。このユニットが通常スキルを使用すると戦略的アドバンテージの効果は失われる。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '救世主',
+                name_eng: 'Savior',
+                image: '/abilityui/tex.abilityui_passive_uniqueability.png',
+                description_jp: `別の味方ジェダイ1体がアクティブな間、レヴァンは挑発を無効化する。
+                
+                味方ジェダイ1体のHpが初めて1%まで減少し、レヴァンがアクティブである場合、彼らの最大HPとプロテクションが100%回復およびターン終了まで倒されない。また2ターンのクリティカルヒット耐性を付与し、ボーナスターンを発生させユニットの弱体を全て解除する。レヴァンがリーダースロットに設定されている場合、レヴァンは「救世主」によって守られる(同盟スロットでは不可)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '英雄',
+                name_eng: 'Hero',
+                image: '/abilityui/tex.abilityui_leader_default.png',
+                description_jp: `ジェダイ・ナイト・レヴァンはスタンとスキルブロックを無効にする。レヴァンの抵抗力、ヘルス・スティール、最大HP、最大プロテクション、クリティカルヒット回避力、防御力、クリティカルダメージが10%上昇する。その他味方ライトサイドユニットはレヴァンがアクティブな間、これらボーナスの半分の効果を得る。レヴァンがリーダースロットに設定されている間、これらのボーナスは2倍になる(同盟スロットでは不可)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月16日'
+    }, {
         id: 'Jedi-Master-Kenobi',
         character_name: 'ジェダイ・マスター・ケノービ',
         character_image: '/charui/tex.charui_globiwan.png',
