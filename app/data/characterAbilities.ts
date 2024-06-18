@@ -5952,6 +5952,86 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月13日'
     }, {
+        id: 'Jedi-Knight-Revan',
+        character_name: 'ジェダイ・ナイト・レヴァン',
+        character_image: '/charui/tex.charui_jedirevan.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'フェローシャスチャージ',
+                name_eng: 'Ferocious Charge',
+                image: '/ability/tex.ability_jedirevan_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。ダークサイドの敵に対して、この攻撃のダメージは25%上昇する。ターゲットがマークされている場合、レヴァンのターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ストラテジスト・マスター',
+                name_eng: 'Master Strategist',
+                image: '/ability/tex.ability_jedirevan_special01.png',
+                description_jp: `敵全体に特殊ダメージを与える。味方ジェダイと旧共和国ユニットごとにそれらユニットを10%回復する。レヴァンは3ターンのクリティカルダメージ上昇とフォアサイトを得る。ターンメーターを指定した他の味方ジェダイと入れ替える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ダイレクトフォーカス',
+                name_eng: 'Direct Focus',
+                image: '/ability/tex.ability_jedirevan_special02.png',
+                description_jp: `ターゲットに2ターンの間マーク状態にさせ、強化無効を発生させる(コピー、解除、耐性発揮不可)。ターゲットのクールダウンが1増加し(耐性発揮不可)、ターンメーターを50%減少させ、1ターンスタン状態にする。この攻撃は回避できない。味方ジェダイを全てアシストに呼ぶ(ダメージは50%減少)。
+                
+                *マーク状態*: 全ての敵がこのユニットをターゲットにする`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '将軍',
+                name_eng: 'General',
+                image: '/abilityui/tex.abilityui_passive_jedirevan.png',
+                description_jp: `バトル開始時、味方ジェダイと旧共和国ユニットごとに(召集された味方を除く)、各々のスピードが5、クリティカル率が5%、攻撃力が5%上昇する。バトル開始時、味方ジェダイに1ターンの抵抗力上昇が発生する。レヴァンがリーダースロットに設定されている間(同盟スロットでは不可)、ユニットはバトルの最初のターンが開始されるまで、リーダースキルによるボーナスターンメーター効果を受けない。
+                
+                味方ジェダイはターン外に攻撃すると、最大プロテクションが20%回復し、ダメージが35%上昇する。味方ジェダイがボーナスプロテクションが発生している敵に対して通常スキルを使用すると、ターゲットの最大HPを10%減少させる(スタック可能、レイドボスには機能しない)。味方ジェダイユニットの各ターン開始時に戦略的アドバンテージが味方の誰にも発生していない場合、味方ジェダイに戦略的アドバンテージが発生する。戦略的アドバンテージを持つ味方ジェダイはカウンターできない＝されない？。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '付与スキル',
+                cooldown: 1,
+                name_jp: '戦略的アドバンテージ',
+                name_eng: 'Strategic Advantage',
+                image: '/ability/tex.ability_jedirevan_special03.png',
+                description_jp: `指定した味方ジェダイの弱体を全て解除する。指定した味方が通常スキルを使用すると、戦略的アドバンテージとアシストが発生する。このユニットが通常スキルを使用すると戦略的アドバンテージの効果は失われる。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '救世主',
+                name_eng: 'Savior',
+                image: '/abilityui/tex.abilityui_passive_uniqueability.png',
+                description_jp: `別の味方ジェダイ1体がアクティブな間、レヴァンは挑発を無効化する。
+                
+                味方ジェダイ1体のHpが初めて1%まで減少し、レヴァンがアクティブである場合、彼らの最大HPとプロテクションが100%回復およびターン終了まで倒されない。また2ターンのクリティカルヒット耐性を付与し、ボーナスターンを発生させユニットの弱体を全て解除する。レヴァンがリーダースロットに設定されている場合、レヴァンは「救世主」によって守られる(同盟スロットでは不可)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '英雄',
+                name_eng: 'Hero',
+                image: '/abilityui/tex.abilityui_leader_default.png',
+                description_jp: `ジェダイ・ナイト・レヴァンはスタンとスキルブロックを無効にする。レヴァンの抵抗力、ヘルス・スティール、最大HP、最大プロテクション、クリティカルヒット回避力、防御力、クリティカルダメージが10%上昇する。その他味方ライトサイドユニットはレヴァンがアクティブな間、これらボーナスの半分の効果を得る。レヴァンがリーダースロットに設定されている間、これらのボーナスは2倍になる(同盟スロットでは不可)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月16日'
+    }, {
         id: 'Jedi-Master-Kenobi',
         character_name: 'ジェダイ・マスター・ケノービ',
         character_image: '/charui/tex.charui_globiwan.png',
@@ -6050,7 +6130,128 @@ const characterAbilities: characterAbilities[] = [
             }
         ],
         last_updated: '2024年3月13日'
-    }
+    }, {
+        id: 'Jedi-Master-Luke-Skywalker',
+        character_name: 'ジェダイ・マスター・ルーク・スカイウォーカー',
+        character_image: '/charui/tex.charui_luke_jml.png',
+        ability: [
+            {
+                ability_type: 'アルティメットスキル',
+                name_jp: 'ヒロイックスタンド',
+                name_eng: 'Heroic Stand',
+                image: '/ability/tex.ability_luke_jml_ultimate.png',
+                description_jp: `#アルティメットチャージ#100%で発動
+                
+                #アルティメットチャージ：# 味方ジェダイがジェダイの訓戒を得るか現在のジェダイの訓戒の全スタックの持続時間がリセットされるたび、ジェダイ・マスター・ルーク・スカイウォーカーのアルティメットチャージが8%上昇する。
+                
+                ジェダイ・マスター・ルーク・スカイウォーカーは、ジェダイ・マスター・ルーク・スカイウォーカー(英雄)に変化し、味方ジェダイ全体のジェダイの訓戒を解除する。
+                
+                味方ジェダイ全体の弱体化効果を全て解除し、特殊スキルのクールダウンをリセットする。味方ジェダイ全体は2ターンのクリティカル率上昇とクリティカルダメージ上昇を得る。さらにバトル終了まで、ジェダイの意志が発生して攻撃力が35%上昇する。
+                
+                ルークが変化すると、*「超えるべき存在」*と*「エフラクス」*の最大クールダウンが2減少する。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '通常スキル',
+                name_jp: 'インドミタブル・ブラスト',
+                name_eng: 'Indomitable Blast',
+                image: '/ability/tex.ability_luke_jml_basic.png',
+                description_jp: `ターゲットに2ターンの強化無効を発生させ、特殊ダメージを与える。ルークの最大HPが遭遇終了まで2%上昇する(スタック可能、最大20%)。可能ならこの攻撃はクリティカルヒットになる(カウンター不可)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '超えるべき存在',
+                name_eng: 'They Grow Beyond',
+                image: '/ability/tex.ability_luke_jml_special01.png',
+                description_jp: `ターゲットに2ターンの抵抗力低下を与え、その後2ターンの間めまい状態にする。ターゲットのクールダウンが1増加する。
+                
+                レイドボス：ターゲットに2ターンの抵抗力低下を与え、その後2ターンのエクスポーズを3発生させる。
+                
+                指定した味方ライトサイドをアシストに呼ぶ。その後、その味方とジェダイ・マスター・ルーク・スカイウォーカーに2ターンのアドバンテージとクリティカルダメージが発生する。
+                
+                指定した味方がジェダイの場合、その味方に3ターンの*ジェダイの訓戒*の効果が発生する(コピー不可)。既に味方に*ジェダイの訓戒*が発生している場合、現在の全スタックの持続時間が3ターンにリセットされる(最大3スタック)。
+                
+                このスキルは耐性発揮または回避できない。
+                
+                *ジェダイの訓戒：* スタックごとにマスターが20%上昇する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'エフラクス',
+                name_eng: 'Efflux',
+                image: '/ability/tex.ability_luke_jml_special02.png',
+                description_jp: `敵全体に特殊ダメージを与える。その後、敵からターンメーターを20%取り除き、2ターンのスキルブロックと破損効果を与える。ジェダイの訓戒またはジェダイの意志が発生している味方1体につき、与えるダメージが10%増加し、ターンメーターをさらに5%取り除く。
+                
+                味方ジェダイ全体のターンメーターが15%上昇し、1ターンのクリティカルヒット耐性を得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '伝説のジェダイ',
+                name_eng: 'Legend of the Jedi',
+                image: '/abilityui/tex.abilityui_passive_lifeblood.png',
+                description_jp: `味方ライトサイド全体の最大HPと最大プロテクションが10%上昇する(味方ジェダイは2倍)。味方ジェダイ全体の攻撃力が30%、スピードが40上昇する。
+                
+                バトル開始時味方が全てジェダイの場合(召集された味方を除く)、ジェダイ・マスター・ルーク・スカイウォーカーはプロテクション発生中に挑発を行う。
+                
+                他の味方ジェダイのHPが初めて100%を下回ると、味方ジェダイは自身の弱体化効果を全て解除し、2ターンのクリティカルヒット無効、防御力上昇、抵抗力上昇を得る。その後、ルークが2ターンの挑発を行う(コピー、解除、阻止不可)。
+                
+                バトル開始時、味方ジェダイは付与スキル*「継承されし教え」*を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '付与スキル',
+                cooldown: 2,
+                name_jp: '継承されし教え',
+                name_eng: 'Inherited Teachings',
+                image: '/ability/tex.ability_luke_jml_event.png',
+                description_jp: `ジェダイの訓戒の効果が3ターン発生し、指定した味方ライトサイドをアシストに呼ぶ(ダメージは90%減少)。その後、ジェダイ・マスター・ルーク・スカイウォーカーの最大ベースプロテクション60%分に応じた固定ダメージをターゲットに与える(回避不可)。
+                
+                指定した味方がジェダイの場合、その味方にジェダイの訓戒の効果が3ターン発生し、ターンメーターが15%上昇する。またルークの最大ベースプロテクション5%分のプロテクションが回復し、スキル*「継承されし教え」*のクールダウンが1減少する。
+                
+                他にアクティブな味方ジェダイがいない場合、このスキルは使用できない（クールダウン：2）。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ジェダイの遺志',  
+                name_eng: 'Jedi Legacy',
+                image: '/abilityui/tex.abilityui_passive_masterslessons.png',
+                description_jp: `味方ジェダイがジェダイの訓戒を得る。
+                
+                他の味方ライトサイドのHPが初めて100%を下回ると、味方ライトサイドのHPとプロテクションが15%回復する(味方ジェダイは2倍)。
+                
+                バトル開始時、ジェダイ・マスター・ルーク・スカイウォーカーはバトル終了まで*ジェダイの遺志*を得る(コピー、解除、阻止不可)。
+                
+                *ジェダイの遺志：* ターン中にマスターが100%上昇し挑発効果を無視する=マスターが100%上昇しターン中は挑発効果を無視する?。ジェダイの訓戒の効果は得られない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '銀河の伝説',
+                name_eng: 'Galactic Legend',
+                image: '/abilityui/tex.abilityui_passive_galacticlegend.png',
+                description_jp: `このユニットはHP割合ダメージと大ダメージ効果によるダメージを軽減する。破壊効果から大ダメージを受け(レイドボスは除く)、スタン効果を無効化する。
+                
+                このユニットの最大HPと最大プロテクションがレリックアンプのレベルごとに10%上昇し、受けるダメージが30%減少する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月18日'
+    }, 
 ];
 
 export default characterAbilities;
