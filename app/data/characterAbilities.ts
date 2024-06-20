@@ -6224,7 +6224,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false
             }, {
                 ability_type: 'ユニークスキル',
-                name_jp: 'ジェダイの遺志',  
+                name_jp: 'ジェダイの遺志',
                 name_eng: 'Jedi Legacy',
                 image: '/abilityui/tex.abilityui_passive_masterslessons.png',
                 description_jp: `味方ジェダイがジェダイの訓戒を得る。
@@ -6251,7 +6251,59 @@ const characterAbilities: characterAbilities[] = [
             }
         ],
         last_updated: '2024年6月18日'
-    }, 
+    }, {
+        id: 'Geonosian-Spy',
+        character_name: 'ジオノージアン・スパイ',
+        character_image: '/charui/tex.charui_geonosian_spy.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'フェイント',
+                name_eng: 'Feint',
+                image: '/ability/tex.ability_geonosianspy_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間ジオノージアン・スパイのクリティカル率が上昇する。このスキルは回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'サイレントストライク',
+                name_eng: 'Silent Strike',
+                image: '/ability/tex.ability_geonosianspy_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。このスキルの使用時にジオノージアン・スパイがステルス状態だった場合、自分とターゲットのすべての強化を解除する。これによって解除された強化ごとにダメージが40%増加する。このスキルは回避できない。
+                
+                *集団意識ボーナス：*全ての効果が解除された後、ターゲットに2ターンの回避力低下を発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '違法情報',
+                name_eng: 'Illicit Intel',
+                image: '/ability/tex.ability_geonosianspy_special02.png',
+                description_jp: `味方分離主義者全体に2ターンの有効性上昇を付与し、敵全体を2ターンの間エクスポーズ状態にする。このスキルは回避できない。
+                
+                *集団意識ボーナス：*「サイレントストライク」のクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ハイブの戦術',
+                name_eng: 'Hive Tactics',
+                image: '/abilityui/tex.abilityui_passive_hivemind.png',
+                description_jp: `各遭遇の開始時およびクリティカルヒット時に、ジオノージアン・スパイに3ターンのステルス効果が発生する。味方ジオノージアンが敵に弱体効果を発生させると、ジオノージアン・スパイのターンメーターが35%上昇する。
+                
+                *集団意識ボーナス：*エクスポーズ状態になった敵は、ステルスを失う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月20日'
+    }
 ];
 
 export default characterAbilities;
