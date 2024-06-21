@@ -9,3 +9,11 @@ export type Abilities = {
     is_zeta: boolean,
     is_omicron: boolean
 };
+
+export type CharacterAbilities = {
+    id: string,
+    character_name: string,
+    character_image: string,
+    ability: Abilities[],
+    last_updated: string
+};
