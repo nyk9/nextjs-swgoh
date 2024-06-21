@@ -3,17 +3,12 @@
 // $$ : 囲まれたところは白色+太字(オミクロンが該当)
 // ## : 囲まれたところはオレンジ色(アルティメットチャージが該当)
 // ++ : 囲まれたところは薄水色(ロールなど)
+// @@ : 囲まれたところは赤色(ダークサイド)
+// ^^ : 囲まれたところは青色(ライトサイド)
 
-import { Abilities } from "@/types/abilities/abilities";
+import { CharacterAbilities } from "@/types/abilities/abilities";
 
-export type characterAbilities = {
-    id: string,
-    character_name: string,
-    character_image: string,
-    ability: Abilities[],
-    last_updated: string
-};
-const characterAbilities: characterAbilities[] = [
+const characterAbilities: CharacterAbilities[] = [
     {
         id: '0-0-0',
         character_name: '0-0-0',
@@ -6224,7 +6219,7 @@ const characterAbilities: characterAbilities[] = [
                 is_omicron: false
             }, {
                 ability_type: 'ユニークスキル',
-                name_jp: 'ジェダイの遺志',  
+                name_jp: 'ジェダイの遺志',
                 name_eng: 'Jedi Legacy',
                 image: '/abilityui/tex.abilityui_passive_masterslessons.png',
                 description_jp: `味方ジェダイがジェダイの訓戒を得る。
@@ -6251,7 +6246,130 @@ const characterAbilities: characterAbilities[] = [
             }
         ],
         last_updated: '2024年6月18日'
-    }, 
+    }, {
+        id: 'Geonosian-Spy',
+        character_name: 'ジオノージアン・スパイ',
+        character_image: '/charui/tex.charui_geonosian_spy.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'フェイント',
+                name_eng: 'Feint',
+                image: '/ability/tex.ability_geonosianspy_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間ジオノージアン・スパイのクリティカル率が上昇する。このスキルは回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'サイレントストライク',
+                name_eng: 'Silent Strike',
+                image: '/ability/tex.ability_geonosianspy_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。このスキルの使用時にジオノージアン・スパイがステルス状態だった場合、自分とターゲットのすべての強化を解除する。これによって解除された強化ごとにダメージが40%増加する。このスキルは回避できない。
+                
+                *集団意識ボーナス：*全ての効果が解除された後、ターゲットに2ターンの回避力低下を発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '違法情報',
+                name_eng: 'Illicit Intel',
+                image: '/ability/tex.ability_geonosianspy_special02.png',
+                description_jp: `味方分離主義者全体に2ターンの有効性上昇を付与し、敵全体を2ターンの間エクスポーズ状態にする。このスキルは回避できない。
+                
+                *集団意識ボーナス：*「サイレントストライク」のクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ハイブの戦術',
+                name_eng: 'Hive Tactics',
+                image: '/abilityui/tex.abilityui_passive_hivemind.png',
+                description_jp: `各遭遇の開始時およびクリティカルヒット時に、ジオノージアン・スパイに3ターンのステルス効果が発生する。味方ジオノージアンが敵に弱体効果を発生させると、ジオノージアン・スパイのターンメーターが35%上昇する。
+                
+                *集団意識ボーナス：*エクスポーズ状態になった敵は、ステルスを失う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月20日'
+    }, {
+        id: 'Geonosian-Brood-Alpha',
+        character_name: 'ジオノージアン・ブルード・アルファ',
+        character_image: '/charui/tex.charui_geonosian_broodalpha.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'シールドバッシュ',
+                name_eng: 'Shield Bash',
+                image: '/ability/tex.ability_geonosian_broodalpha_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、クリティカルヒット時に強化効果を全て解除する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'グレイブ・スイープ',
+                name_eng: 'Glaive Sweep',
+                image: '/ability/tex.ability_geonosian_broodalpha_special01.png',
+                description_jp: `敵全体の強化を全て解除する。敵全体に物理ダメージを与え、2ターンの間エクスポーズ状態にする。その後、弱体発生中の敵のターンメーターを15%減少させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '徴集',
+                name_eng: 'Conscription',
+                image: '/ability/tex.ability_geonosian_broodalpha_special02.png',
+                description_jp: `味方ジオノージアン全体の弱体を解除する。同盟スロットが使用できる場合、ジオノージアン・ブルートをバトルに召集する。ジオノージアン・ブルードが既にいる場合はブルートのクリティカルダメージと攻撃力が2ターンの間上昇する。その後、味方ジオノージアン全体のターンメーターが15%上昇し、HPとプロテクションが35%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: 'ジオノージアン・スウォーム',
+                name_eng: 'Geonosian Swarm',
+                image: '/abilityui/tex.abilityui_passive_firstaid.png',
+                description_jp: `味方ジオノージアンの最大HPと最大プロテクションが15,000上昇し、ヘルス・スティールが50%上昇する。味方ジオノージアンは通常スキルを使用するとプロテクションが3%回復する。強化発生中の敵1体につき、味方ジオノージアンの通常スキルで与えるダメージが10%増加する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '女王の遺志',
+                name_eng: "Queen's Will",
+                image: '/abilityui/tex.abilityui_passive_hivemind.png',
+                description_jp: `ジオノージアン・ブルード・アルファの抵抗力が60%上昇する。ジオノージアン・ブルード・アルファがアクティブな間、味方ジオノージアン全体に集団意識の強化効果が発生する(解除、阻止不可)。味方ジオノージアンが戦闘不能になると、「徴集」のクールダウンが1減少する。遭遇開始時、1ターン挑発を行うジオノージアン・ブルートを召集する。
+                
+                *集団意識：* 味方ジオノージアンがターン中にスキルを使用するとアシストを行う(ダメージは50%減少)。敵がスキルを使用すると、集団意識効果が発生している味方とHPとプロテクションを均一化する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ジオノージアン・ブルート',
+                name_eng: 'Geonosian Brood',
+                image: '/ability/tex.ability_geonosian_broodalpha_special03.png',
+                description_jp: `ダークサイド、タンク、ジオノージアン、分離主義者
+                
+                *[通常]　[ゴーディング・ストライク]：*ターゲットに物理ダメージを与え、1ターン挑発する。
+                *[特殊]　[スウォーム戦術]：*ターゲットに物理ダメージを与え、その他味方ジオノージアンを全てアシストに呼ぶ。
+                *[ユニーク]　[無謀な報復]：*アクティブな味方ジオノージアンごとにジオノージアン・ブルートの攻撃力が100%上昇し、カウンター率が25%上昇する。
+                *[ユニーク]　[召集]：*このユニットのステータスは、召集したユニットのステータスに対応する。このユニットは同盟スロットが使用可能な場合のみ召集される。特定のレイドではこのユニットを召集できない。このユニットは復活できない。ある効果が戦闘不能ユニットをカウントする際、このユニットはカウントに含まれない。味方戦闘ユニットがいない場合、このユニットはバトルから逃走する。この召集ユニットがスロットにいる場合、ユニットは蘇生できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月21日'
+    }
 ];
 
 export default characterAbilities;
