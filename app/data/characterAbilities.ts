@@ -6369,6 +6369,46 @@ const characterAbilities: CharacterAbilities[] = [
             }
         ],
         last_updated: '2024年6月21日'
+    }, {
+        id: 'Geonosian-Soldier',
+        character_name: 'ジオノージアン兵士',
+        character_image: '/charui/tex.charui_geonosian_soldier.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'アグレッシブ・アドバンス',
+                name_eng: 'Aggressive Advance',
+                image: '/ability/tex.ability_geonosiansoldier_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間抵抗力を低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'スワーム',
+                name_eng: 'Swarm',
+                image: '/ability/tex.ability_geonosiansoldier_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、ランダムな味方をアシストに呼ぶ。アシストする味方がジオノージアンの場合、両方のアタッカーのダメージが25%増加する。
+                
+                *集団意識ボーナス：* アシストする味方を選択できる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ハイブの戦術',
+                name_eng: 'Hive Tactics',
+                image: '/abilityui/tex.abilityui_passive_hivemind.png',
+                description_jp: `味方ジオノージアンのクリティカル率が15%上昇する。クリティカルヒット時には、ジオノージアン兵士のターンメーターが25%上昇する。
+                
+                *集団意識ボーナス： * 味方ジオノージアンの防御突破力が35%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月22日'
     }
 ];
 
