@@ -6409,6 +6409,148 @@ const characterAbilities: CharacterAbilities[] = [
             }
         ],
         last_updated: '2024年6月22日'
+    }, {
+        id: 'Sith-Assassin',
+        character_name: 'シス・アサシン',
+        character_image: '/charui/tex.charui_sithassassin.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '弱点看破',
+                name_eng: 'Expose Weakness',
+                image: '/ability/tex.ability_sithassassin_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間回避力を低下させる。さらにシス・アサシンの攻撃力が2ターンの間上昇する。ターゲットが既に弱体を受けている場合、2ターンのステルス効果が発生する。シス・アサシンが既にステルス状態の場合は、ターゲットのプロテクションを無効化=無視?する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ダークシュラウド',
+                name_eng: 'Dark Shroud',
+                image: '/ability/tex.ability_sithassassin_special01.png',
+                description_jp: `シス・アサシンから全ての弱体を解除し、2ターンの間ステルスとフォアサイトが発生する。既にステルス状態の場合は、スピードと抵抗力が2ターンの間上昇する。味方シスはシス・アサシンに発生している強化1つごとに12%ターンメーターが上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '電撃',
+                name_eng: 'Electrocute',
+                image: '/ability/tex.ability_sithassassin_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間スタン状態にする。シス・アサシンがステルス状態の場合、シス・アサシンから全ての強化を解除するが、解除された効果1つごと、生存している味方シス1体ごとにダメージが5%増加する。この攻撃はターゲットのプロテクションを無効化=無視?する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月23日'
+    }, {
+        id: 'Sith-Eternal-Emperor',
+        character_name: 'シス・エターナルの皇帝',
+        character_image: '/charui/tex.charui_espalpatine_post.png',
+        ability: [
+            {
+                ability_type: 'アルティメットスキル',
+                name_jp: '余がシスのすべてだ',
+                name_eng: 'I Am All The Sith',
+                image: '/ability/tex.ability_espalpatine_pre_special03.png',
+                description_jp: `#アルティメットチャージ#100%で発動
+                
+                #アルティメットチャージ：# 欺瞞状態の敵がスキルを使用するたび、シス・エターナルの皇帝のアルティメットチャージが2%上昇する。またシス・エターナルの皇帝がリーダーの場合、連帯状態の敵がスキルを使用するたびにアルティメットチャージが8%上昇する。
+                
+                シス・エターナルの皇帝は、バトル終了まで現在のマスターと同じ分のマスターを獲得し、シス・エターナルの皇帝（復活）に変化する。リーダーの場合、味方ダークサイド全体がバトル終了まで現在のマスターと同じ分のマスターを得る。欺瞞状態の敵全体から欺瞞を解除し、遭遇終了までそれらの敵を欺瞞状態にする（コピー、解除、耐性発揮不可）。
+                
+                シス・エターナルの皇帝は変化すると、*「偽装」*と*「好きにしろ、ジェダイ」*のスキルを失い、新たに2つのスキルを得る。
+                
+                *[Basic=通常?] 「リバイタルショック」：* ターゲットに特殊ダメージを与え、2ターンの間ショック状態にする（コピー、解除不可）。この子劇ダメージは、欺瞞状態の敵ライトサイドに対して150%に増加する。ターゲットが既に欺瞞状態の場合、欺瞞状態の敵1体につき「無限のパワーを食らえ！」のクールダウンを1減少する。この攻撃は回避できない。
+                
+                *[Special=特殊?] 「無限のパワーを食らえ！」：* 連帯状態の敵を即座に戦闘不能にし、敵全体に特殊ダメージを与える。その後、欺瞞状態の敵の強化効果を全て解除し、特殊ダメージを与える。このスキルによって戦闘不能になった敵は復活できない。この攻撃は回避不可。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '通常スキル',
+                name_jp: '偽装',
+                name_eng: 'Deception',
+                image: '/ability/tex.ability_espalpatine_pre_basic.png',
+                description_jp: `ターゲットに特殊ダメージを与える。ターゲットが欺瞞状態ではない場合、2ターンの間*欺瞞状態*になる(ジェダイの場合は3ターン。コピー、解除、耐性発揮不可)。シス・エターナルの皇帝は2ターンの間スピードが上昇する。このスキルはカウンターできない。
+                
+                *欺瞞：* 別の敵シスがいる場合、そのターンにシス・エターナルの皇帝をターゲットにできない。スキルを使用すると、シス・エターナルの皇帝の「アルティメットチャージ」が2%上昇する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '好きにしろ、ジェダイ',
+                name_eng: 'So Be It, Jedi',
+                image: '/ability/tex.ability_espalpatine_pre_special01.png',
+                description_jp: `ターゲットに特殊ダメージを与え、全ての味方ダークサイドをアシストに呼ぶ。欺瞞状態の敵1体につきダメージが10%増加する。味方ダークサイドのプロテクションが50%回復する。このターンで倒された敵ジェダイは復活できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 6,
+                name_jp: 'ほどかれし運命',
+                name_eng: 'Unraveled Destiny',
+                image: '/ability/tex.ability_espalpatine_pre_special02.png',
+                description_jp: `味方ダークサイドが3ターンの報復効果を得て、味方ダークサイドのタンクが2ターンの挑発を行う。敵全体の連帯状態を解除する。その後、連帯状態の敵が戦闘不能になるか遭遇が終了するまで敵ターゲットを*連帯状態*にする。シス・エターナルの皇帝は付与スキル「絡み合う運命」とボーナスターンを得る。
+                
+                このボーナスターン中、シス・エターナルの皇帝は「絡み合う運命」のみ使用できる(スキルブロック、挑発無効効果、連帯状態のユニットのターゲットは不可)。
+                
+                *連帯：* ユニットが連帯状態になる
+                
+                *「絡み合う運命」：* ターゲットが連帯状態になる。このスキルは解除されると「ほどかれし運命」が使用されるまで使用できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: 'シス・エターナル',
+                name_eng: 'Sith Eternal',
+                image: '/abilityui/tex.abilityui_passive_sith_e9.png',
+                description_jp: `味方ダークサイドのマスターが25%、有効性が30%、スピードが20上昇する(味方シスは2倍)。
+                
+                欺瞞または連帯状態の敵がスキルを使用するたび、遭遇終了までシス・エターナルの皇帝のマスターが10%上昇(スタック可能)し、味方シスはその半分量上昇する。連帯状態の敵がスキルを使用するたび、シス・エターナルの皇帝のアルティメットチャージが8%上昇する。
+                
+                各遭遇開始時、敵が解除不可の強化効果を得るたび、味方シスのターンメーターが5%上昇する。
+                
+                =味方シスが倒されるたび?シスの弱体化効果が全て解除され、そのHPとプロテクションが100%回復する。味方シスは復活できず、敵ジェダイをターゲット中は防御力を無視する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '不和の種',
+                name_eng: 'Sow Discord',
+                image: '/abilityui/tex.abilityui_passive_sowdiscord.png',
+                description_jp: `シス・エターナルの皇帝は挑発効果やターンメーター減少を無効化する。欺瞞状態の敵はカウンター攻撃できず、また欺瞞状態の敵反乱軍およびジェダイはボーナスターンを得られない。
+                
+                シス・エターナルの皇帝のターン開始時、敵が欺瞞状態出ない場合、最弱の敵ライトサイドを2ターンの間欺瞞状態にする。欺瞞状態の敵がスキルを使用するたび、欺瞞状態ではない最弱の敵がシス・エターナルの皇帝が発生させた最大期間の欺瞞状態になり(1ターンにつき1回)、シス・エターナルの皇帝のプロテクションが2%回復する。欺瞞状態はコピー、解除、耐性発揮不可。
+                
+                各連帯状態の敵のターン開始時、連帯状態の敵は最大プロテクションを20%(ジェダイは4倍)失い、シス・エターナルの皇帝はその損失分の25%を得る。連帯状態のレイドボスは代わりに2ターンの間エクスポーズ状態となる(耐性発揮不可)。
+                
+                連帯状態の敵はクリティカルヒットを与えられず、与えるダメージが25%減少する(銀河の伝説は除く)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '銀河の伝説',
+                name_eng: 'Galactic Legend',
+                image: '/abilityui/tex.abilityui_passive_galacticlegend.png',
+                description_jp: `このユニットはHP割合ダメージと大ダメージ効果によるダメージを軽減する。破壊効果から大ダメージを受け(レイドボスは除く)、スタン効果を無効化する。
+
+                このユニットの最大HPと最大プロテクションがレリックアンプのレベルごとに10%上昇し、受けるダメージが30%減少する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月23日'
     }
 ];
 
