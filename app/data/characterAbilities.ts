@@ -6551,6 +6551,134 @@ const characterAbilities: CharacterAbilities[] = [
             }
         ],
         last_updated: '2024年6月23日'
+    }, {
+        id: 'Sith-Trooper',
+        character_name: 'シス・トルーパー',
+        character_image: '/charui/tex.charui_firstorder_sithtrooper.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'シス・ストライク',
+                name_eng: 'Sith Strike',
+                image: '/ability/tex.ability_firstorder_sithtrooper_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。この攻撃がクリティカルヒットになると、シス・トルーパーに2ターンのクリティカルヒット耐性が発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'リベンジブラスト',
+                name_eng: 'Vengeant Blast',
+                image: '/ability/tex.ability_firstorder_sithtrooper_special01.png',
+                description_jp: `敵全体に物理ダメージを与える。この攻撃はその時点で戦闘不能になっている味方ファースト・オーダーまたはシス1体ごとにダメージが50%増加する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'リサージェントパワー',
+                name_eng: 'Resurgent Power',
+                image: '/ability/tex.ability_firstorder_sithtrooper_special02.png',
+                description_jp: `味方ファースト・オーダーとシス全体の弱体効果を全て解除し、2ターンのアドバンテージを付与する。シス・トルーパーは、既にアドバンテージが発生している場合は、アシストを行う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '皇帝の遺産',
+                name_eng: "Emperor's Legacy",
+                image: '/abilityui/tex.abilityui_passive_sith_e9.png',
+                description_jp: `バトル開始時、リーダーがファースト・オーダーかシスの場合、シス・トルーパーに2ターンのアドバンテージが発生する。シス・トルーパーにアドバンテージが発生している間、クリティカルダメージが50%上昇する。
+                
+                味方ファースト・オーダーまたはシスが敵にクリティカルヒットかスタンを発生させると、シス・トルーパーがアシストを行う(1ターンに1度のみ)。
+                
+                味方ファースト・オーダーまたはシスが戦闘不能になると、「リベンジブラスト」のクールダウンがリセットされ、シス・トルーパーに1ターンのアドバンテージとボーナスターンが発生する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月24日'
+    }, {
+        id: 'Sith-Marauder',
+        character_name: 'シス・マローダー',
+        character_image: '/charui/tex.charui_sithmarauder.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '情熱が与えし強さ',
+                name_eng: 'Strength Through Passion',
+                image: '/ability/tex.ability_sithmarauder_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間攻撃力を低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '力が与えし勝利',
+                name_eng: 'Victory Through Power',
+                image: '/ability/tex.ability_sithmarauder_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、味方全体の有効性を2ターンの間上昇させる。この攻撃がクリティカルヒットしたターゲットは、遭遇終了まで最大HPが15%減少する(耐性発揮不可)。
+                
+                レイドボス：この攻撃はアーマーを無効化する。`,
+                is_omega: true,
+                is_omicron: false,
+                is_zeta: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'フォースは解法をもたらす',
+                name_eng: 'The Force Shall Free Me',
+                image: '/abilityui/tex.abilityui_passive_uniqueability.png',
+                description_jp: `全ユニットの発生中強化1つごとにシス・マローダーの防御力が10%、ヘルス・スティールが10%、抵抗力が10%上昇する。全ユニットの発生中弱体1つごとにシス・マローダーのクリティカル率が2%、攻撃力が2%、有効性が2%上昇する。敵が自ターン外にスキルを使用すると、シス・マローダーのターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月24日'
+    }, {
+        id: 'Sith-Empire-Troper',
+        character_name: 'シス帝国トルーパー',
+        character_image: '/charui/tex.charui_sithtrooper.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'ディスラプターブラスト',
+                name_eng: 'Disruptor Blast',
+                image: '/ability/tex.ability_sithtrooper_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、70%の確率で3ターンの間防御力を低下させる。ターゲットが既に弱体を受けている場合、プロテクションを無効化=無視?する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'クリムゾン・バレッジ',
+                name_eng: 'Crimson Barrage',
+                image: '/ability/tex.ability_sithtrooper_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、70%の確率で2ターンの間攻撃力を低下させる。2ターンの間、弱体を受けている敵1体ごとにプロテクションが5%上昇する。この攻撃は敵のプロテクションを無効化=無視?する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '通常スキル',
+                name_jp: 'ヴァイカンの遺産',
+                name_eng: "Vaiken's Legacy",
+                image: '/abilityui/tex.abilityui_passive_taunt.png',
+                description_jp: `シス帝国トルーパーの防御力が100%上昇する。
+
+                味方シスが特殊スキルを使用すると、またはそのHPが50%を下回ると、2ターンの間シス帝国トルーパーの防御力がさらに上昇する=防御力が上昇を得る?。防御力上昇が既に発生している場合は、2ターンの間挑発を行う。既に挑発中の場合は、2ターンの報復効果が発生する。
+                
+                各遭遇開始時、シス帝国トルーパーに2ターンの防御力上昇と挑発効果が発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月24日'
     }
 ];
 
