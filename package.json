@@ -12,9 +12,11 @@
   "dependencies": {
     "@ionic/core": "^7.7.1",
     "@ionic/react": "^7.7.1",
+    "@radix-ui/react-dropdown-menu": "^2.1.1",
     "@radix-ui/react-menubar": "^1.0.4",
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slot": "^1.1.0",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.4",
     "class-variance-authority": "^0.7.0",

@@ -80,7 +80,7 @@ export default function Character() {
                                                         type="button"
                                                         onClick={() => handlePropertyChange('ライトサイド')}
                                                         value={'ライトサイド'}
-                                                        className="m-1 border border-2 text-blue-700 bg-indigo-300"
+                                                        className="m-1 border-2 text-blue-700 bg-indigo-300"
                                                     />
                                                     <input
                                                         type="button"
