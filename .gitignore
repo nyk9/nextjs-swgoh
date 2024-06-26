@@ -40,3 +40,9 @@ next-env.d.ts
 /playwright/.cache/
 
 /tests/
+
+# IDE
+/.vscode
+
+# yarn
+yarn.lock
