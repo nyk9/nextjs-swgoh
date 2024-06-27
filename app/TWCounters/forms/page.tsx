@@ -4,17 +4,11 @@ import { CharacterButton } from "@/components/elements/counters/charactersButton
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
-import { supabase } from "@/utils/supabase/supabase";
 import { useState } from "react";
 
-export default async function TWCounter() {
+export default function TWCounter() {
     const [alliedCharacters, setAlliedCharacters] = useState<string[]>(["自軍リーダー", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター"]);
     const [enemyCharacters, setEnemyCharacters] = useState<string[]>(["敵軍リーダー", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター"]);
-    const { data: { session } } = await supabase.auth.getSession();
-    // if(!session) {
-    //     redirect('/TWCounters/login')
-    // }
-    console.log(session);
 
     return (
         <>
