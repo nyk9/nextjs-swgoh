@@ -19,7 +19,7 @@ export default function TWCounter() {
                 allied_leader: alliedCharacters[0],
                 enemy_leader: enemyCharacters[0],
                 allied_characters: alliedCharacters.slice(1),
-                enemy_character: enemyCharacters.slice(1),
+                enemy_characters: enemyCharacters.slice(1),
                 description: description
             });
             if (error) console.error(error.message);
