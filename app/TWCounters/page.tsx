@@ -7,7 +7,7 @@ export default async function TWCounter() {
             {data ? (
                 data.map((counter: any, index: number) => {
                     return (
-                        <div className=" p-1 bg-indigo-400" key={index}>
+                        <div className="m-1 p-1 bg-indigo-400" key={index}>
                             <p>自軍リーダー：{counter.allied_leader}</p>
                             <p>自軍キャラクター：{counter.allied_characters}</p>
                             <p>敵軍リーダー：{counter.enemy_leader}</p>

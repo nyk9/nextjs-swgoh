@@ -4,12 +4,29 @@ import { CharacterButton } from "@/components/elements/counters/charactersButton
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
+import { supabase } from "@/utils/supabase/supabase";
 import { useState } from "react";
 
 export default function TWCounter() {
     const [alliedCharacters, setAlliedCharacters] = useState<string[]>(["自軍リーダー", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター"]);
     const [enemyCharacters, setEnemyCharacters] = useState<string[]>(["敵軍リーダー", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター"]);
+    const [description, setDescription] = useState<string>("テスト");
+    const addCounters = async () => {
+        console.log('called');
+        const { error } = await supabase.from('counters').insert({
+            id: 501,
+            allied_leader: alliedCharacters[0],
+            enemy_leader: enemyCharacters[0],
+            allied_characters: alliedCharacters.slice(1),
+            enemy_character: enemyCharacters.slice(1),
+            description: description
+        });
 
+        setAlliedCharacters(["自軍リーダー", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター"]);
+        setEnemyCharacters(["敵軍リーダー", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター"]);
+        setDescription("テスト");
+        if (error) console.error(error.message);
+    }
     return (
         <>
             <Card className="bg-teal-800 text-fuchsia-100">
@@ -61,7 +78,7 @@ export default function TWCounter() {
                     <Textarea placeholder="詳細" className="mt-2 bg-teal-100 text-black" />
                 </>
                 <CardFooter>
-                    <Button>登録</Button>
+                    <Button onClick={() => { addCounters() }}>登録</Button>
                 </CardFooter>
             </Card>
         </>
