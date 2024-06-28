@@ -10,7 +10,11 @@ import { useState } from "react";
 export default function TWCounter() {
     const [alliedCharacters, setAlliedCharacters] = useState<string[]>(["自軍リーダー", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター"]);
     const [enemyCharacters, setEnemyCharacters] = useState<string[]>(["敵軍リーダー", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター"]);
-    const [description, setDescription] = useState<string>("テスト");
+    const [description, setDescription] = useState<string>("");
+
+    const setDescriptionFunc = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        setDescription(e.target.value);
+    };
     const addCounters = async () => {
         console.log('called');
         if (!alliedCharacters.includes("自軍リーダー") && !enemyCharacters.includes("敵軍リーダー")) {
@@ -26,8 +30,8 @@ export default function TWCounter() {
         }
         setAlliedCharacters(["自軍リーダー", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター"]);
         setEnemyCharacters(["敵軍リーダー", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター"]);
-        setDescription("テスト");
-    }
+        setDescription("");
+    };
     return (
         <>
             <Card className="bg-teal-800 text-fuchsia-100">
@@ -76,7 +80,7 @@ export default function TWCounter() {
                         敵軍キャラクター：
                         <CharacterButton characters={enemyCharacters} index={4} addCharacter={setEnemyCharacters} />
                     </p>
-                    <Textarea placeholder="詳細" className="mt-2 bg-teal-100 text-black" />
+                    <Textarea placeholder="詳細" className="mt-2 bg-teal-100 text-black" value={description} onChange={setDescriptionFunc} />
                 </>
                 <CardFooter>
                     <Button onClick={() => { addCounters() }}>登録</Button>
