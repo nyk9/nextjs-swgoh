@@ -64,7 +64,7 @@ export default function Home() {
           className='group rounded-lg border border-transparent px-5 py-4 mx-5 mt-8 md:mt-5 transition-colors hover:border-gray-300 hover:dark:scale-110 hover:bg-blue-900 hover:light:border-neutral-700 bg-blue-300'
           // target='_blank'
           rel='noopener noreferrer'
-          href='/TWCouters'
+          href='/TWCounters'
         >
           <h2 className={`mb-3 text-3xl font-semibold`}>
             TW Counters {' '}
