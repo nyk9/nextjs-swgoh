@@ -1,9 +1,20 @@
+import { Button } from "@/components/ui/button";
 import { supabase } from "@/utils/supabase/supabase";
+import Link from "next/link";
 
 export default async function TWCounter() {
     const { data } = await supabase.from('counters').select('*');
+    // console.log(data);
     return (
         <div className="pt-3 bg-stone-700">
+            <div className="p-1">
+                <Link href="/TWCounters/login" className="p-1">
+                    <Button>ログイン</Button>
+                </Link>
+                <Link href="/TWCounters/forms" className="p-1">
+                    <Button>入力フォーム</Button>
+                </Link>
+            </div>
             {data ? (
                 data.map((counter: any, index: number) => {
                     return (
