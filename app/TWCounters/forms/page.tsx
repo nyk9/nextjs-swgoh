@@ -18,12 +18,21 @@ export default function TWCounter() {
     const addCounters = async () => {
         console.log('called');
         if (!alliedCharacters.includes("自軍リーダー") && !enemyCharacters.includes("敵軍リーダー")) {
+            let allied_characters = '';
+            let enemy_characters = '';
+            for(let i=1; i<5; i++ ) {
+                if(alliedCharacters[i] !== "自軍キャラクター") {
+                    allied_characters += alliedCharacters[i] + '、';
+                }
+                if (enemyCharacters[i] !== "敵軍キャラクター") {
+                    enemy_characters += enemyCharacters[i] + '、';
+                }
+            }
             const { error } = await supabase.from('counters').insert({
-                id: 501,
                 allied_leader: alliedCharacters[0],
                 enemy_leader: enemyCharacters[0],
-                allied_characters: alliedCharacters.slice(1),
-                enemy_characters: enemyCharacters.slice(1),
+                allied_characters: allied_characters,
+                enemy_characters: enemy_characters,
                 description: description
             });
             if (error) console.error(error.message);
