@@ -13,19 +13,20 @@ export default function TWCounter() {
     const [description, setDescription] = useState<string>("テスト");
     const addCounters = async () => {
         console.log('called');
-        const { error } = await supabase.from('counters').insert({
-            id: 501,
-            allied_leader: alliedCharacters[0],
-            enemy_leader: enemyCharacters[0],
-            allied_characters: alliedCharacters.slice(1),
-            enemy_character: enemyCharacters.slice(1),
-            description: description
-        });
-
+        if (!alliedCharacters.includes("自軍リーダー") && !enemyCharacters.includes("敵軍リーダー")) {
+            const { error } = await supabase.from('counters').insert({
+                id: 501,
+                allied_leader: alliedCharacters[0],
+                enemy_leader: enemyCharacters[0],
+                allied_characters: alliedCharacters.slice(1),
+                enemy_character: enemyCharacters.slice(1),
+                description: description
+            });
+            if (error) console.error(error.message);
+        }
         setAlliedCharacters(["自軍リーダー", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター", "自軍キャラクター"]);
         setEnemyCharacters(["敵軍リーダー", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター", "敵軍キャラクター"]);
         setDescription("テスト");
-        if (error) console.error(error.message);
     }
     return (
         <>
