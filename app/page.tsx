@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
-import schedules from './schedules';
-import updates, { Updates } from './update';
+import schedules from '../features/mainpages/constant/schedules';
+import updates, { Updates } from '../features/mainpages/constant/update';
 
 export default function Home() {
   const update: Updates[] = updates;
