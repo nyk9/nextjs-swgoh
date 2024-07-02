@@ -4,7 +4,8 @@ import Link from "next/link";
 
 export default async function TWCounter() {
     const { data } = await supabase.from('counters').select('*');
-    // console.log(data);
+    // const user = await supabase.auth.getUser()
+    // console.log(user);
     return (
         <div className="pt-3 bg-stone-700">
             <div className="p-1">
