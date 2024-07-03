@@ -74,6 +74,7 @@ export default async function CharacterSkills(params: {
                                     width={50}
                                     height={50}
                                     className="object-cover px-1"
+                                    unoptimized={true}
                                 />
                                 <span className="text-sky-300 text-2xl">
                                     {item.name_jp}:
