@@ -26,6 +26,7 @@ export default async function Page({ params }: {
                             src={item.image}
                             height={50}
                             width={50}
+                            unoptimized={true}
                         />
                         <h3>{item.name}</h3>
                     </div>

@@ -181,6 +181,7 @@ export default function Character() {
                                     className="group"
                                     width={75}
                                     height={75}
+                                    unoptimized={true}
                                 />
                                 <small className="group">{char.property}</small>
                             </div>

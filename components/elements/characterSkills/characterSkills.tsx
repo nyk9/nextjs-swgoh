@@ -55,6 +55,7 @@ export default async function CharacterSkills(params: {
                         src={data[abilityIndex].character_image}
                         width={50}
                         height={50}
+                        unoptimized={true}
                     />
                     <span>
                         {data[abilityIndex].character_name}
@@ -73,6 +74,7 @@ export default async function CharacterSkills(params: {
                                     width={50}
                                     height={50}
                                     className="object-cover px-1"
+                                    unoptimized={true}
                                 />
                                 <span className="text-sky-300 text-2xl">
                                     {item.name_jp}:
@@ -97,6 +99,7 @@ export default async function CharacterSkills(params: {
                                                 alt="ultimate"
                                                 width={15}
                                                 height={15}
+                                                unoptimized={true}
                                             />
                                         ) : (item.is_omicron === true && item.is_zeta === true ? (
                                             <>
@@ -105,12 +108,14 @@ export default async function CharacterSkills(params: {
                                                     alt="ultimate"
                                                     width={15}
                                                     height={15}
+                                                    unoptimized={true}
                                                 />
                                                 <Image
                                                     src={'/skill/tex.skill_zeta.png'}
                                                     alt="ultimate"
                                                     width={15}
                                                     height={15}
+                                                    unoptimized={true}
                                                 />
                                             </>
                                         ) : (item.is_omicron === true ? (
@@ -119,6 +124,7 @@ export default async function CharacterSkills(params: {
                                                 alt="ultimate"
                                                 width={15}
                                                 height={15}
+                                                unoptimized={true}
                                             />
                                         ) : (item.is_zeta === true ? (
                                             <Image
@@ -126,6 +132,7 @@ export default async function CharacterSkills(params: {
                                                 alt="ultimate"
                                                 width={15}
                                                 height={15}
+                                                unoptimized={true}
                                             />
                                         ) : (item.is_omega === true ? (
                                             <Image
@@ -133,6 +140,7 @@ export default async function CharacterSkills(params: {
                                                 alt="ultimate"
                                                 width={15}
                                                 height={15}
+                                                unoptimized={true}
                                             />
                                         ) : (
                                             <Image
@@ -140,6 +148,7 @@ export default async function CharacterSkills(params: {
                                                 alt="ultimate"
                                                 width={15}
                                                 height={15}
+                                                unoptimized={true}
                                             />
                                         )))))) : (<></>)}
                                 </div>
