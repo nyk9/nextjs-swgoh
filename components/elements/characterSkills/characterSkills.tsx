@@ -55,6 +55,7 @@ export default async function CharacterSkills(params: {
                         src={data[abilityIndex].character_image}
                         width={50}
                         height={50}
+                        unoptimized={true}
                     />
                     <span>
                         {data[abilityIndex].character_name}
