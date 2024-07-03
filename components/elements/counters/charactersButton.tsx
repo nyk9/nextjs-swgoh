@@ -36,7 +36,13 @@ export const CharacterButton = (params: {
                                 params.addCharacter(characters);
                             }}
                         >
-                            <Image src={char.src} alt={char.name} width={50} height={50} />
+                            <Image
+                                src={char.src}
+                                alt={char.name}
+                                width={50}
+                                height={50}
+                                unoptimized={true}
+                            />
                             <p>{char.name}</p>
                         </DropdownMenuItem>
                     ))}
