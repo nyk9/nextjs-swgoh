@@ -3,17 +3,12 @@
 // $$ : 囲まれたところは白色+太字(オミクロンが該当)
 // ## : 囲まれたところはオレンジ色(アルティメットチャージが該当)
 // ++ : 囲まれたところは薄水色(ロールなど)
+// @@ : 囲まれたところは赤色(ダークサイド)
+// ^^ : 囲まれたところは青色(ライトサイド)
 
-import { Abilities } from "@/types/abilities/abilities";
+import { CharacterAbilities } from "@/types/abilities/abilities";
 
-export type characterAbilities = {
-    id: string,
-    character_name: string,
-    character_image: string,
-    ability: Abilities[],
-    last_updated: string
-};
-const characterAbilities: characterAbilities[] = [
+const characterAbilities: CharacterAbilities[] = [
     {
         id: '0-0-0',
         character_name: '0-0-0',
@@ -5952,6 +5947,86 @@ const characterAbilities: characterAbilities[] = [
         ],
         last_updated: '2024年3月13日'
     }, {
+        id: 'Jedi-Knight-Revan',
+        character_name: 'ジェダイ・ナイト・レヴァン',
+        character_image: '/charui/tex.charui_jedirevan.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'フェローシャスチャージ',
+                name_eng: 'Ferocious Charge',
+                image: '/ability/tex.ability_jedirevan_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。ダークサイドの敵に対して、この攻撃のダメージは25%上昇する。ターゲットがマークされている場合、レヴァンのターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ストラテジスト・マスター',
+                name_eng: 'Master Strategist',
+                image: '/ability/tex.ability_jedirevan_special01.png',
+                description_jp: `敵全体に特殊ダメージを与える。味方ジェダイと旧共和国ユニットごとにそれらユニットを10%回復する。レヴァンは3ターンのクリティカルダメージ上昇とフォアサイトを得る。ターンメーターを指定した他の味方ジェダイと入れ替える。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ダイレクトフォーカス',
+                name_eng: 'Direct Focus',
+                image: '/ability/tex.ability_jedirevan_special02.png',
+                description_jp: `ターゲットに2ターンの間マーク状態にさせ、強化無効を発生させる(コピー、解除、耐性発揮不可)。ターゲットのクールダウンが1増加し(耐性発揮不可)、ターンメーターを50%減少させ、1ターンスタン状態にする。この攻撃は回避できない。味方ジェダイを全てアシストに呼ぶ(ダメージは50%減少)。
+                
+                *マーク状態*: 全ての敵がこのユニットをターゲットにする`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '将軍',
+                name_eng: 'General',
+                image: '/abilityui/tex.abilityui_passive_jedirevan.png',
+                description_jp: `バトル開始時、味方ジェダイと旧共和国ユニットごとに(召集された味方を除く)、各々のスピードが5、クリティカル率が5%、攻撃力が5%上昇する。バトル開始時、味方ジェダイに1ターンの抵抗力上昇が発生する。レヴァンがリーダースロットに設定されている間(同盟スロットでは不可)、ユニットはバトルの最初のターンが開始されるまで、リーダースキルによるボーナスターンメーター効果を受けない。
+                
+                味方ジェダイはターン外に攻撃すると、最大プロテクションが20%回復し、ダメージが35%上昇する。味方ジェダイがボーナスプロテクションが発生している敵に対して通常スキルを使用すると、ターゲットの最大HPを10%減少させる(スタック可能、レイドボスには機能しない)。味方ジェダイユニットの各ターン開始時に戦略的アドバンテージが味方の誰にも発生していない場合、味方ジェダイに戦略的アドバンテージが発生する。戦略的アドバンテージを持つ味方ジェダイはカウンターできない＝されない？。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '付与スキル',
+                cooldown: 1,
+                name_jp: '戦略的アドバンテージ',
+                name_eng: 'Strategic Advantage',
+                image: '/ability/tex.ability_jedirevan_special03.png',
+                description_jp: `指定した味方ジェダイの弱体を全て解除する。指定した味方が通常スキルを使用すると、戦略的アドバンテージとアシストが発生する。このユニットが通常スキルを使用すると戦略的アドバンテージの効果は失われる。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '救世主',
+                name_eng: 'Savior',
+                image: '/abilityui/tex.abilityui_passive_uniqueability.png',
+                description_jp: `別の味方ジェダイ1体がアクティブな間、レヴァンは挑発を無効化する。
+                
+                味方ジェダイ1体のHpが初めて1%まで減少し、レヴァンがアクティブである場合、彼らの最大HPとプロテクションが100%回復およびターン終了まで倒されない。また2ターンのクリティカルヒット耐性を付与し、ボーナスターンを発生させユニットの弱体を全て解除する。レヴァンがリーダースロットに設定されている場合、レヴァンは「救世主」によって守られる(同盟スロットでは不可)。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '英雄',
+                name_eng: 'Hero',
+                image: '/abilityui/tex.abilityui_leader_default.png',
+                description_jp: `ジェダイ・ナイト・レヴァンはスタンとスキルブロックを無効にする。レヴァンの抵抗力、ヘルス・スティール、最大HP、最大プロテクション、クリティカルヒット回避力、防御力、クリティカルダメージが10%上昇する。その他味方ライトサイドユニットはレヴァンがアクティブな間、これらボーナスの半分の効果を得る。レヴァンがリーダースロットに設定されている間、これらのボーナスは2倍になる(同盟スロットでは不可)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月16日'
+    }, {
         id: 'Jedi-Master-Kenobi',
         character_name: 'ジェダイ・マスター・ケノービ',
         character_image: '/charui/tex.charui_globiwan.png',
@@ -6050,6 +6125,738 @@ const characterAbilities: characterAbilities[] = [
             }
         ],
         last_updated: '2024年3月13日'
+    }, {
+        id: 'Jedi-Master-Luke-Skywalker',
+        character_name: 'ジェダイ・マスター・ルーク・スカイウォーカー',
+        character_image: '/charui/tex.charui_luke_jml.png',
+        ability: [
+            {
+                ability_type: 'アルティメットスキル',
+                name_jp: 'ヒロイックスタンド',
+                name_eng: 'Heroic Stand',
+                image: '/ability/tex.ability_luke_jml_ultimate.png',
+                description_jp: `#アルティメットチャージ#100%で発動
+                
+                #アルティメットチャージ：# 味方ジェダイがジェダイの訓戒を得るか現在のジェダイの訓戒の全スタックの持続時間がリセットされるたび、ジェダイ・マスター・ルーク・スカイウォーカーのアルティメットチャージが8%上昇する。
+                
+                ジェダイ・マスター・ルーク・スカイウォーカーは、ジェダイ・マスター・ルーク・スカイウォーカー(英雄)に変化し、味方ジェダイ全体のジェダイの訓戒を解除する。
+                
+                味方ジェダイ全体の弱体化効果を全て解除し、特殊スキルのクールダウンをリセットする。味方ジェダイ全体は2ターンのクリティカル率上昇とクリティカルダメージ上昇を得る。さらにバトル終了まで、ジェダイの意志が発生して攻撃力が35%上昇する。
+                
+                ルークが変化すると、*「超えるべき存在」*と*「エフラクス」*の最大クールダウンが2減少する。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '通常スキル',
+                name_jp: 'インドミタブル・ブラスト',
+                name_eng: 'Indomitable Blast',
+                image: '/ability/tex.ability_luke_jml_basic.png',
+                description_jp: `ターゲットに2ターンの強化無効を発生させ、特殊ダメージを与える。ルークの最大HPが遭遇終了まで2%上昇する(スタック可能、最大20%)。可能ならこの攻撃はクリティカルヒットになる(カウンター不可)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '超えるべき存在',
+                name_eng: 'They Grow Beyond',
+                image: '/ability/tex.ability_luke_jml_special01.png',
+                description_jp: `ターゲットに2ターンの抵抗力低下を与え、その後2ターンの間めまい状態にする。ターゲットのクールダウンが1増加する。
+                
+                レイドボス：ターゲットに2ターンの抵抗力低下を与え、その後2ターンのエクスポーズを3発生させる。
+                
+                指定した味方ライトサイドをアシストに呼ぶ。その後、その味方とジェダイ・マスター・ルーク・スカイウォーカーに2ターンのアドバンテージとクリティカルダメージが発生する。
+                
+                指定した味方がジェダイの場合、その味方に3ターンの*ジェダイの訓戒*の効果が発生する(コピー不可)。既に味方に*ジェダイの訓戒*が発生している場合、現在の全スタックの持続時間が3ターンにリセットされる(最大3スタック)。
+                
+                このスキルは耐性発揮または回避できない。
+                
+                *ジェダイの訓戒：* スタックごとにマスターが20%上昇する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'エフラクス',
+                name_eng: 'Efflux',
+                image: '/ability/tex.ability_luke_jml_special02.png',
+                description_jp: `敵全体に特殊ダメージを与える。その後、敵からターンメーターを20%取り除き、2ターンのスキルブロックと破損効果を与える。ジェダイの訓戒またはジェダイの意志が発生している味方1体につき、与えるダメージが10%増加し、ターンメーターをさらに5%取り除く。
+                
+                味方ジェダイ全体のターンメーターが15%上昇し、1ターンのクリティカルヒット耐性を得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: '伝説のジェダイ',
+                name_eng: 'Legend of the Jedi',
+                image: '/abilityui/tex.abilityui_passive_lifeblood.png',
+                description_jp: `味方ライトサイド全体の最大HPと最大プロテクションが10%上昇する(味方ジェダイは2倍)。味方ジェダイ全体の攻撃力が30%、スピードが40上昇する。
+                
+                バトル開始時味方が全てジェダイの場合(召集された味方を除く)、ジェダイ・マスター・ルーク・スカイウォーカーはプロテクション発生中に挑発を行う。
+                
+                他の味方ジェダイのHPが初めて100%を下回ると、味方ジェダイは自身の弱体化効果を全て解除し、2ターンのクリティカルヒット無効、防御力上昇、抵抗力上昇を得る。その後、ルークが2ターンの挑発を行う(コピー、解除、阻止不可)。
+                
+                バトル開始時、味方ジェダイは付与スキル*「継承されし教え」*を得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '付与スキル',
+                cooldown: 2,
+                name_jp: '継承されし教え',
+                name_eng: 'Inherited Teachings',
+                image: '/ability/tex.ability_luke_jml_event.png',
+                description_jp: `ジェダイの訓戒の効果が3ターン発生し、指定した味方ライトサイドをアシストに呼ぶ(ダメージは90%減少)。その後、ジェダイ・マスター・ルーク・スカイウォーカーの最大ベースプロテクション60%分に応じた固定ダメージをターゲットに与える(回避不可)。
+                
+                指定した味方がジェダイの場合、その味方にジェダイの訓戒の効果が3ターン発生し、ターンメーターが15%上昇する。またルークの最大ベースプロテクション5%分のプロテクションが回復し、スキル*「継承されし教え」*のクールダウンが1減少する。
+                
+                他にアクティブな味方ジェダイがいない場合、このスキルは使用できない（クールダウン：2）。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ジェダイの遺志',
+                name_eng: 'Jedi Legacy',
+                image: '/abilityui/tex.abilityui_passive_masterslessons.png',
+                description_jp: `味方ジェダイがジェダイの訓戒を得る。
+                
+                他の味方ライトサイドのHPが初めて100%を下回ると、味方ライトサイドのHPとプロテクションが15%回復する(味方ジェダイは2倍)。
+                
+                バトル開始時、ジェダイ・マスター・ルーク・スカイウォーカーはバトル終了まで*ジェダイの遺志*を得る(コピー、解除、阻止不可)。
+                
+                *ジェダイの遺志：* ターン中にマスターが100%上昇し挑発効果を無視する=マスターが100%上昇しターン中は挑発効果を無視する?。ジェダイの訓戒の効果は得られない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '銀河の伝説',
+                name_eng: 'Galactic Legend',
+                image: '/abilityui/tex.abilityui_passive_galacticlegend.png',
+                description_jp: `このユニットはHP割合ダメージと大ダメージ効果によるダメージを軽減する。破壊効果から大ダメージを受け(レイドボスは除く)、スタン効果を無効化する。
+                
+                このユニットの最大HPと最大プロテクションがレリックアンプのレベルごとに10%上昇し、受けるダメージが30%減少する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月18日'
+    }, {
+        id: 'Geonosian-Spy',
+        character_name: 'ジオノージアン・スパイ',
+        character_image: '/charui/tex.charui_geonosian_spy.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'フェイント',
+                name_eng: 'Feint',
+                image: '/ability/tex.ability_geonosianspy_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間ジオノージアン・スパイのクリティカル率が上昇する。このスキルは回避できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'サイレントストライク',
+                name_eng: 'Silent Strike',
+                image: '/ability/tex.ability_geonosianspy_special01.png',
+                description_jp: `ターゲットに物理ダメージを与える。このスキルの使用時にジオノージアン・スパイがステルス状態だった場合、自分とターゲットのすべての強化を解除する。これによって解除された強化ごとにダメージが40%増加する。このスキルは回避できない。
+                
+                *集団意識ボーナス：*全ての効果が解除された後、ターゲットに2ターンの回避力低下を発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '違法情報',
+                name_eng: 'Illicit Intel',
+                image: '/ability/tex.ability_geonosianspy_special02.png',
+                description_jp: `味方分離主義者全体に2ターンの有効性上昇を付与し、敵全体を2ターンの間エクスポーズ状態にする。このスキルは回避できない。
+                
+                *集団意識ボーナス：*「サイレントストライク」のクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ハイブの戦術',
+                name_eng: 'Hive Tactics',
+                image: '/abilityui/tex.abilityui_passive_hivemind.png',
+                description_jp: `各遭遇の開始時およびクリティカルヒット時に、ジオノージアン・スパイに3ターンのステルス効果が発生する。味方ジオノージアンが敵に弱体効果を発生させると、ジオノージアン・スパイのターンメーターが35%上昇する。
+                
+                *集団意識ボーナス：*エクスポーズ状態になった敵は、ステルスを失う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月20日'
+    }, {
+        id: 'Geonosian-Brood-Alpha',
+        character_name: 'ジオノージアン・ブルード・アルファ',
+        character_image: '/charui/tex.charui_geonosian_broodalpha.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'シールドバッシュ',
+                name_eng: 'Shield Bash',
+                image: '/ability/tex.ability_geonosian_broodalpha_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、クリティカルヒット時に強化効果を全て解除する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'グレイブ・スイープ',
+                name_eng: 'Glaive Sweep',
+                image: '/ability/tex.ability_geonosian_broodalpha_special01.png',
+                description_jp: `敵全体の強化を全て解除する。敵全体に物理ダメージを与え、2ターンの間エクスポーズ状態にする。その後、弱体発生中の敵のターンメーターを15%減少させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '徴集',
+                name_eng: 'Conscription',
+                image: '/ability/tex.ability_geonosian_broodalpha_special02.png',
+                description_jp: `味方ジオノージアン全体の弱体を解除する。同盟スロットが使用できる場合、ジオノージアン・ブルートをバトルに召集する。ジオノージアン・ブルードが既にいる場合はブルートのクリティカルダメージと攻撃力が2ターンの間上昇する。その後、味方ジオノージアン全体のターンメーターが15%上昇し、HPとプロテクションが35%回復する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: 'ジオノージアン・スウォーム',
+                name_eng: 'Geonosian Swarm',
+                image: '/abilityui/tex.abilityui_passive_firstaid.png',
+                description_jp: `味方ジオノージアンの最大HPと最大プロテクションが15,000上昇し、ヘルス・スティールが50%上昇する。味方ジオノージアンは通常スキルを使用するとプロテクションが3%回復する。強化発生中の敵1体につき、味方ジオノージアンの通常スキルで与えるダメージが10%増加する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '女王の遺志',
+                name_eng: "Queen's Will",
+                image: '/abilityui/tex.abilityui_passive_hivemind.png',
+                description_jp: `ジオノージアン・ブルード・アルファの抵抗力が60%上昇する。ジオノージアン・ブルード・アルファがアクティブな間、味方ジオノージアン全体に集団意識の強化効果が発生する(解除、阻止不可)。味方ジオノージアンが戦闘不能になると、「徴集」のクールダウンが1減少する。遭遇開始時、1ターン挑発を行うジオノージアン・ブルートを召集する。
+                
+                *集団意識：* 味方ジオノージアンがターン中にスキルを使用するとアシストを行う(ダメージは50%減少)。敵がスキルを使用すると、集団意識効果が発生している味方とHPとプロテクションを均一化する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ジオノージアン・ブルート',
+                name_eng: 'Geonosian Brood',
+                image: '/ability/tex.ability_geonosian_broodalpha_special03.png',
+                description_jp: `ダークサイド、タンク、ジオノージアン、分離主義者
+                
+                *[通常]　[ゴーディング・ストライク]：*ターゲットに物理ダメージを与え、1ターン挑発する。
+                *[特殊]　[スウォーム戦術]：*ターゲットに物理ダメージを与え、その他味方ジオノージアンを全てアシストに呼ぶ。
+                *[ユニーク]　[無謀な報復]：*アクティブな味方ジオノージアンごとにジオノージアン・ブルートの攻撃力が100%上昇し、カウンター率が25%上昇する。
+                *[ユニーク]　[召集]：*このユニットのステータスは、召集したユニットのステータスに対応する。このユニットは同盟スロットが使用可能な場合のみ召集される。特定のレイドではこのユニットを召集できない。このユニットは復活できない。ある効果が戦闘不能ユニットをカウントする際、このユニットはカウントに含まれない。味方戦闘ユニットがいない場合、このユニットはバトルから逃走する。この召集ユニットがスロットにいる場合、ユニットは蘇生できない。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月21日'
+    }, {
+        id: 'Geonosian-Soldier',
+        character_name: 'ジオノージアン兵士',
+        character_image: '/charui/tex.charui_geonosian_soldier.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'アグレッシブ・アドバンス',
+                name_eng: 'Aggressive Advance',
+                image: '/ability/tex.ability_geonosiansoldier_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間抵抗力を低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'スワーム',
+                name_eng: 'Swarm',
+                image: '/ability/tex.ability_geonosiansoldier_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、ランダムな味方をアシストに呼ぶ。アシストする味方がジオノージアンの場合、両方のアタッカーのダメージが25%増加する。
+                
+                *集団意識ボーナス：* アシストする味方を選択できる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ハイブの戦術',
+                name_eng: 'Hive Tactics',
+                image: '/abilityui/tex.abilityui_passive_hivemind.png',
+                description_jp: `味方ジオノージアンのクリティカル率が15%上昇する。クリティカルヒット時には、ジオノージアン兵士のターンメーターが25%上昇する。
+                
+                *集団意識ボーナス： * 味方ジオノージアンの防御突破力が35%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月22日'
+    }, {
+        id: 'Sith-Assassin',
+        character_name: 'シス・アサシン',
+        character_image: '/charui/tex.charui_sithassassin.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '弱点看破',
+                name_eng: 'Expose Weakness',
+                image: '/ability/tex.ability_sithassassin_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間回避力を低下させる。さらにシス・アサシンの攻撃力が2ターンの間上昇する。ターゲットが既に弱体を受けている場合、2ターンのステルス効果が発生する。シス・アサシンが既にステルス状態の場合は、ターゲットのプロテクションを無効化=無視?する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'ダークシュラウド',
+                name_eng: 'Dark Shroud',
+                image: '/ability/tex.ability_sithassassin_special01.png',
+                description_jp: `シス・アサシンから全ての弱体を解除し、2ターンの間ステルスとフォアサイトが発生する。既にステルス状態の場合は、スピードと抵抗力が2ターンの間上昇する。味方シスはシス・アサシンに発生している強化1つごとに12%ターンメーターが上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '電撃',
+                name_eng: 'Electrocute',
+                image: '/ability/tex.ability_sithassassin_special02.png',
+                description_jp: `ターゲットに物理ダメージを与え、1ターンの間スタン状態にする。シス・アサシンがステルス状態の場合、シス・アサシンから全ての強化を解除するが、解除された効果1つごと、生存している味方シス1体ごとにダメージが5%増加する。この攻撃はターゲットのプロテクションを無効化=無視?する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月23日'
+    }, {
+        id: 'Sith-Eternal-Emperor',
+        character_name: 'シス・エターナルの皇帝',
+        character_image: '/charui/tex.charui_espalpatine_post.png',
+        ability: [
+            {
+                ability_type: 'アルティメットスキル',
+                name_jp: '余がシスのすべてだ',
+                name_eng: 'I Am All The Sith',
+                image: '/ability/tex.ability_espalpatine_pre_special03.png',
+                description_jp: `#アルティメットチャージ#100%で発動
+                
+                #アルティメットチャージ：# 欺瞞状態の敵がスキルを使用するたび、シス・エターナルの皇帝のアルティメットチャージが2%上昇する。またシス・エターナルの皇帝がリーダーの場合、連帯状態の敵がスキルを使用するたびにアルティメットチャージが8%上昇する。
+                
+                シス・エターナルの皇帝は、バトル終了まで現在のマスターと同じ分のマスターを獲得し、シス・エターナルの皇帝（復活）に変化する。リーダーの場合、味方ダークサイド全体がバトル終了まで現在のマスターと同じ分のマスターを得る。欺瞞状態の敵全体から欺瞞を解除し、遭遇終了までそれらの敵を欺瞞状態にする（コピー、解除、耐性発揮不可）。
+                
+                シス・エターナルの皇帝は変化すると、*「偽装」*と*「好きにしろ、ジェダイ」*のスキルを失い、新たに2つのスキルを得る。
+                
+                *[Basic=通常?] 「リバイタルショック」：* ターゲットに特殊ダメージを与え、2ターンの間ショック状態にする（コピー、解除不可）。この子劇ダメージは、欺瞞状態の敵ライトサイドに対して150%に増加する。ターゲットが既に欺瞞状態の場合、欺瞞状態の敵1体につき「無限のパワーを食らえ！」のクールダウンを1減少する。この攻撃は回避できない。
+                
+                *[Special=特殊?] 「無限のパワーを食らえ！」：* 連帯状態の敵を即座に戦闘不能にし、敵全体に特殊ダメージを与える。その後、欺瞞状態の敵の強化効果を全て解除し、特殊ダメージを与える。このスキルによって戦闘不能になった敵は復活できない。この攻撃は回避不可。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '通常スキル',
+                name_jp: '偽装',
+                name_eng: 'Deception',
+                image: '/ability/tex.ability_espalpatine_pre_basic.png',
+                description_jp: `ターゲットに特殊ダメージを与える。ターゲットが欺瞞状態ではない場合、2ターンの間*欺瞞状態*になる(ジェダイの場合は3ターン。コピー、解除、耐性発揮不可)。シス・エターナルの皇帝は2ターンの間スピードが上昇する。このスキルはカウンターできない。
+                
+                *欺瞞：* 別の敵シスがいる場合、そのターンにシス・エターナルの皇帝をターゲットにできない。スキルを使用すると、シス・エターナルの皇帝の「アルティメットチャージ」が2%上昇する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '好きにしろ、ジェダイ',
+                name_eng: 'So Be It, Jedi',
+                image: '/ability/tex.ability_espalpatine_pre_special01.png',
+                description_jp: `ターゲットに特殊ダメージを与え、全ての味方ダークサイドをアシストに呼ぶ。欺瞞状態の敵1体につきダメージが10%増加する。味方ダークサイドのプロテクションが50%回復する。このターンで倒された敵ジェダイは復活できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 6,
+                name_jp: 'ほどかれし運命',
+                name_eng: 'Unraveled Destiny',
+                image: '/ability/tex.ability_espalpatine_pre_special02.png',
+                description_jp: `味方ダークサイドが3ターンの報復効果を得て、味方ダークサイドのタンクが2ターンの挑発を行う。敵全体の連帯状態を解除する。その後、連帯状態の敵が戦闘不能になるか遭遇が終了するまで敵ターゲットを*連帯状態*にする。シス・エターナルの皇帝は付与スキル「絡み合う運命」とボーナスターンを得る。
+                
+                このボーナスターン中、シス・エターナルの皇帝は「絡み合う運命」のみ使用できる(スキルブロック、挑発無効効果、連帯状態のユニットのターゲットは不可)。
+                
+                *連帯：* ユニットが連帯状態になる
+                
+                *「絡み合う運命」：* ターゲットが連帯状態になる。このスキルは解除されると「ほどかれし運命」が使用されるまで使用できない。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'リーダースキル',
+                name_jp: 'シス・エターナル',
+                name_eng: 'Sith Eternal',
+                image: '/abilityui/tex.abilityui_passive_sith_e9.png',
+                description_jp: `味方ダークサイドのマスターが25%、有効性が30%、スピードが20上昇する(味方シスは2倍)。
+                
+                欺瞞または連帯状態の敵がスキルを使用するたび、遭遇終了までシス・エターナルの皇帝のマスターが10%上昇(スタック可能)し、味方シスはその半分量上昇する。連帯状態の敵がスキルを使用するたび、シス・エターナルの皇帝のアルティメットチャージが8%上昇する。
+                
+                各遭遇開始時、敵が解除不可の強化効果を得るたび、味方シスのターンメーターが5%上昇する。
+                
+                =味方シスが倒されるたび?シスの弱体化効果が全て解除され、そのHPとプロテクションが100%回復する。味方シスは復活できず、敵ジェダイをターゲット中は防御力を無視する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '不和の種',
+                name_eng: 'Sow Discord',
+                image: '/abilityui/tex.abilityui_passive_sowdiscord.png',
+                description_jp: `シス・エターナルの皇帝は挑発効果やターンメーター減少を無効化する。欺瞞状態の敵はカウンター攻撃できず、また欺瞞状態の敵反乱軍およびジェダイはボーナスターンを得られない。
+                
+                シス・エターナルの皇帝のターン開始時、敵が欺瞞状態出ない場合、最弱の敵ライトサイドを2ターンの間欺瞞状態にする。欺瞞状態の敵がスキルを使用するたび、欺瞞状態ではない最弱の敵がシス・エターナルの皇帝が発生させた最大期間の欺瞞状態になり(1ターンにつき1回)、シス・エターナルの皇帝のプロテクションが2%回復する。欺瞞状態はコピー、解除、耐性発揮不可。
+                
+                各連帯状態の敵のターン開始時、連帯状態の敵は最大プロテクションを20%(ジェダイは4倍)失い、シス・エターナルの皇帝はその損失分の25%を得る。連帯状態のレイドボスは代わりに2ターンの間エクスポーズ状態となる(耐性発揮不可)。
+                
+                連帯状態の敵はクリティカルヒットを与えられず、与えるダメージが25%減少する(銀河の伝説は除く)。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '銀河の伝説',
+                name_eng: 'Galactic Legend',
+                image: '/abilityui/tex.abilityui_passive_galacticlegend.png',
+                description_jp: `このユニットはHP割合ダメージと大ダメージ効果によるダメージを軽減する。破壊効果から大ダメージを受け(レイドボスは除く)、スタン効果を無効化する。
+
+                このユニットの最大HPと最大プロテクションがレリックアンプのレベルごとに10%上昇し、受けるダメージが30%減少する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月23日'
+    }, {
+        id: 'Sith-Trooper',
+        character_name: 'シス・トルーパー',
+        character_image: '/charui/tex.charui_firstorder_sithtrooper.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'シス・ストライク',
+                name_eng: 'Sith Strike',
+                image: '/ability/tex.ability_firstorder_sithtrooper_basic.png',
+                description_jp: `ターゲットに物理ダメージを与える。この攻撃がクリティカルヒットになると、シス・トルーパーに2ターンのクリティカルヒット耐性が発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'リベンジブラスト',
+                name_eng: 'Vengeant Blast',
+                image: '/ability/tex.ability_firstorder_sithtrooper_special01.png',
+                description_jp: `敵全体に物理ダメージを与える。この攻撃はその時点で戦闘不能になっている味方ファースト・オーダーまたはシス1体ごとにダメージが50%増加する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'リサージェントパワー',
+                name_eng: 'Resurgent Power',
+                image: '/ability/tex.ability_firstorder_sithtrooper_special02.png',
+                description_jp: `味方ファースト・オーダーとシス全体の弱体効果を全て解除し、2ターンのアドバンテージを付与する。シス・トルーパーは、既にアドバンテージが発生している場合は、アシストを行う。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: '皇帝の遺産',
+                name_eng: "Emperor's Legacy",
+                image: '/abilityui/tex.abilityui_passive_sith_e9.png',
+                description_jp: `バトル開始時、リーダーがファースト・オーダーかシスの場合、シス・トルーパーに2ターンのアドバンテージが発生する。シス・トルーパーにアドバンテージが発生している間、クリティカルダメージが50%上昇する。
+                
+                味方ファースト・オーダーまたはシスが敵にクリティカルヒットかスタンを発生させると、シス・トルーパーがアシストを行う(1ターンに1度のみ)。
+                
+                味方ファースト・オーダーまたはシスが戦闘不能になると、「リベンジブラスト」のクールダウンがリセットされ、シス・トルーパーに1ターンのアドバンテージとボーナスターンが発生する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月24日'
+    }, {
+        id: 'Sith-Marauder',
+        character_name: 'シス・マローダー',
+        character_image: '/charui/tex.charui_sithmarauder.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '情熱が与えし強さ',
+                name_eng: 'Strength Through Passion',
+                image: '/ability/tex.ability_sithmarauder_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、2ターンの間攻撃力を低下させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '力が与えし勝利',
+                name_eng: 'Victory Through Power',
+                image: '/ability/tex.ability_sithmarauder_special01.png',
+                description_jp: `ターゲットに物理ダメージを与え、味方全体の有効性を2ターンの間上昇させる。この攻撃がクリティカルヒットしたターゲットは、遭遇終了まで最大HPが15%減少する(耐性発揮不可)。
+                
+                レイドボス：この攻撃はアーマーを無効化する。`,
+                is_omega: true,
+                is_omicron: false,
+                is_zeta: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'フォースは解法をもたらす',
+                name_eng: 'The Force Shall Free Me',
+                image: '/abilityui/tex.abilityui_passive_uniqueability.png',
+                description_jp: `全ユニットの発生中強化1つごとにシス・マローダーの防御力が10%、ヘルス・スティールが10%、抵抗力が10%上昇する。全ユニットの発生中弱体1つごとにシス・マローダーのクリティカル率が2%、攻撃力が2%、有効性が2%上昇する。敵が自ターン外にスキルを使用すると、シス・マローダーのターンメーターが20%上昇する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月24日'
+    }, {
+        id: 'Sith-Empire-Troper',
+        character_name: 'シス帝国トルーパー',
+        character_image: '/charui/tex.charui_sithtrooper.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'ディスラプターブラスト',
+                name_eng: 'Disruptor Blast',
+                image: '/ability/tex.ability_sithtrooper_basic.png',
+                description_jp: `ターゲットに物理ダメージを与え、70%の確率で3ターンの間防御力を低下させる。ターゲットが既に弱体を受けている場合、プロテクションを無効化=無視?する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: 'クリムゾン・バレッジ',
+                name_eng: 'Crimson Barrage',
+                image: '/ability/tex.ability_sithtrooper_special01.png',
+                description_jp: `敵全体に物理ダメージを与え、70%の確率で2ターンの間攻撃力を低下させる。2ターンの間、弱体を受けている敵1体ごとにプロテクションが5%上昇する。この攻撃は敵のプロテクションを無効化=無視?する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '通常スキル',
+                name_jp: 'ヴァイカンの遺産',
+                name_eng: "Vaiken's Legacy",
+                image: '/abilityui/tex.abilityui_passive_taunt.png',
+                description_jp: `シス帝国トルーパーの防御力が100%上昇する。
+
+                味方シスが特殊スキルを使用すると、またはそのHPが50%を下回ると、2ターンの間シス帝国トルーパーの防御力がさらに上昇する=防御力が上昇を得る?。防御力上昇が既に発生している場合は、2ターンの間挑発を行う。既に挑発中の場合は、2ターンの報復効果が発生する。
+                
+                各遭遇開始時、シス帝国トルーパーに2ターンの防御力上昇と挑発効果が発生する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年6月24日'
+    }, {
+        id: 'Jar-Jar-Binks',
+        character_name: 'ジャー・ジャー・ビンクス',
+        character_image: '/charui/tex.charui_jarjarbinks.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: 'シドい！',
+                name_eng: 'How Wude!',
+                image: '/ability/tex.ability_jarjarbinks_basic.png',
+                description_jp: `敵全体に物理ダメージを与える。自ターン中、3つの効果のうち1つが発生する:
+                
+                - 弱体化効果が3つ以上ある場合、最良コンディションの敵に1ターンのデスマーク付与する(耐性発揮不可)
+                - 最も弱い味方グンガンが1ターンの間ダメージ耐性を得る
+                - 味方グンガンの抵抗力が1ターンの間上昇
+                
+                また、この攻撃は0.01%の確率でランダムな敵を即座に戦闘不能にする。即座に戦闘不能にする。(回避不可、敵に分離主義者がいる場合、確率が1%に上昇する)。この攻撃はカウンター不可。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: 'おっと、ビッグブーマだ！',
+                name_eng: 'Uh Oh, Big Boomers',
+                image: '/ability/tex.ability_jarjarbinks_special01.png',
+                description_jp: `敵全体に物理ダメージを与える。ターゲットにプロテクションがある場合、1ターンの間スタン状態にする。そうでない場合、1ターンの間エクスポーズのスタックを3発生させる。0.01%の確率で敵全体がターンメーターを全て失い、1ターンの間恐怖状態になる(コピー、解除、阻止、耐性発揮不可)。敵に分離主義者がいる場合、確率が1%に上昇する。味方全体がグンガンの場合、敵全体に1ターンの間*残留プラズマ*が発生する。
+                
+                *残留プラズマ：*このユニットは回避力を100%失う。このユニットがショック状態になると、残留プラズマが発生している敵全体へのダメージが大幅に減少し、残留プラズマをすべて取り除く
+                
+                $グランドアリーナで、味方全体がグンガンの場合：$ 敵全体のボーナスプロテクションとプロテクション上昇を解除すると、遭遇終了まで敵の最大HPと最大プロテクションが5%失われ(スタック可能。回避不可)、ターゲットに1ターンのプロテクション破壊を発生させる。残留プラズマは耐性発揮不可。このスキルを使用するたび、他のグンガンの味方全体のスキルのクールダウンが1減少する。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: true
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 5,
+                name_jp: 'ミーたち、戦士',
+                name_eng: 'Mesa, Warriors',
+                image: '/ability/tex.ability_jarjarbinks_special02.png',
+                description_jp: `ターゲットとランダムな敵1体に特殊ダメージを与える。味方グンガンのプロテクションが10%回復する。0.01%の確率でグンガンの味方全体のHPとプロテクションが100%回復、ターンメーターが100%上昇し、2ターンのフォアサイトを得る(敵に分離主義者がいる場合、確率が1%に上昇する)。1ターンの間、敵全体に*苛立ち*のスタックが2発生する(コピー不可)。
+                
+                味方全体がグンガンの場合(召集されたユニットを除く)、ターゲットまたはランダムな敵のコピーや解除可能な異なる弱体化効果(スタック中の弱体化効果は除く)1つにつき、その弱体化効果を解除して1ターンの間その敵に発生させる。これらの弱体化効果は解除、耐性発揮できない。
+                
+                *苛立ち：* 累積スタック数に応じて状態異常が蓄積される：
+                *スタック1以上：* アシストまたはカウンター攻撃不可
+                *スタック2以上：* このユニットがボーナスターンメーターを得るたび、敵シールド発生装置からリチャージのスタックを2取り除き、このユニットを2ターンの間無防備状態にする
+                *スタック3：* 1回の攻撃の間は特殊スキルが使用できない。この攻撃の後は苛立ちのスタックを全て解除する`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ミーは良い感じ',
+                name_eng: 'Mesa Okeyday',
+                image: '/abilityui/tex.abilityui_passive_mesaokeyday.png',
+                description_jp: `バトル開始時、ジャー・ジャーの最大Hpが75%減少し、それと同量分、最大プロテクションが上昇する。敵リーダーが分離主義者の場合、遭遇開始時にジャー・ジャーのスピードが50上昇し、遭遇終了までその効果が続く。ジャー・ジャーの弱体化効果は回避できず、アシストに呼ばれることもない。他のユニットがフォアサイトを得るたび、ジャー・ジャーは1ターンのフォアサイトを得る。ジャー・ジャーはフォアサイトを得るたび、その効果を解除し、代わりに1ターンの間、自身を暗闇状態にする。
+                
+                ジャー・ジャーが通常スキルを回避するたび、失敗した敵に次のターン開始時に1ターンの苛立ちのスタックが発生する(コピー、耐性発揮不可)。敵が味方グンガンをめまい、よろめき、スタン状態にするたび、ダメージを受けるか攻撃を回避するまで、ジャー・ジャーがデスマーク状態になる。
+                
+                アクティブな味方シールド発生装置がある場合： ジャー・ジャーの回避力が+1,000%上昇する。ユニットがボーナスターンメーターを得るたび、ジャー・ジャーは1%の確率でボーナスターンを得る(敵の場合は10%に増加)。このボーナスターンが発生するたび、ジャー・ジャーは2ターンの間、この方法で別のボーナスターンを得ることができない。
+                
+                $グランドアリーナで味方全体がグンガンの場合：$ シールド発生装置がプラズマパルスを使用するたび、ジャー・ジャーのクールダウンを全てリセットする。味方グンガンがめまい、よろめき、またはスタン状態になるたび、味方はそれを解除して2ターンのシールド上昇(25%)を得る。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ムーイ　ムーイ、愛してる',
+                name_eng: 'Mooie-Mooie, I Love You',
+                image: '/abilityui/tex.abilityui_passive_mooiemooieiloveyou.png',
+                description_jp: `味方グンガンの精度が75%上昇する。敵リーダーが分離主義者の場合、遭遇開始時にグンガンの味方全体の最大プロテクションが50%上昇し、遭遇が終了するかジャー・ジャーが初めて戦闘不能になるまでその効果が続く。
+                
+                バトル開始時、銀河の伝説がいない場合、1ターンの間、敵全体に苛立ちのスタックが発生する(ステルス状態の場合はスタックが3に増加。耐性発揮不可)。ジャー・ジャーがターン中に攻撃を失敗するたび、グンガンの味方全体がアシストを行い、50%の減少ダメージを与える(1ターンに1回)。味方のシールド発生装置がプラズマパルスを使用するたび、味方グンガンは1回の攻撃の間プロテクションを無効化=無視?する。
+                
+                アクティブな味方シールド発生装置がある場合： 味方グンガンはプロテクションが得ている間、HPが100%を下回ることはなく、即座に戦闘不能にならない。
+                
+                $グランドアリーナで、味方全体がグンガンの場合：$ バトル開始時、ジャー・ジャーのレリックアンプレベル3つごとに、味方シールド発生装置はプラズマシールドのスタックを2得る。グンガン以外の敵がダメージ耐性を得るたび、グンガンの味方全体が1ターンのダメージ耐性を得る。味方グンガンがこのスキルでボーナスターンを得るたび、その味方は遭遇終了までマスターが5%上昇する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true
+            }
+        ],
+        last_updated: '2024年7月2日'
+    }, {
+        id: 'Doctor-Aphra',
+        character_name: 'ドクター・アフラ',
+        character_image: '/charui/tex.charui_doctoraphra.png',
+        ability: [
+            {
+                ability_type: '通常スキル',
+                name_jp: '破壊発掘',
+                name_eng: 'Destructive Excavation',
+                image: '/ability/tex.ability_doctoraphra_basic.png',
+                description_jp: `ターゲットに特殊ダメージを与える。ターゲットがドロイドの場合、1ターンの間スタン状態にする。
+                
+                自身のターンで、アフラは遭遇終了まで最大プロテクションが10%上昇し(スタック可能、最大50%)、「サイフォン」を2得る。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 3,
+                name_jp: '危険な技術',
+                name_eng: 'Dangerous Tech',
+                image: '/ability/tex.ability_doctoraphra_special01.png',
+                description_jp: `ターゲットに2ターンの精度低下を発生させる。味方ダークサイドは2ターンの有効性上昇を得てターンメーターが10%上昇する。味方ダークサイドドロイドは2ターンのクリティカルダメージ上昇と攻撃力上昇を得て、HPとプロテクションが30%回復する。ランダムな分離主義者以外の味方ダークサイドドロイド、BT-1、0-0-0を復活させる。
+                
+                バトル開始時、味方に銀河の伝説がおらず、味方全体がダークサイドならず者、ダークサイドドロイド、クルルサンタン、またはダース・ベイダーの場合、ハックド・コマンドー・ドロイドを召集する。ハックド・コマンドー・ドロイドが既に存在する場合、ターゲットに2ターンの破損効果とターゲットロックを発生させ、ハックド・コマンドー・ドロイドをアシストに呼び、アフラの有効性の20%に相当する追加ダメージを再び固定ダメージとして与える。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: '特殊スキル',
+                cooldown: 4,
+                name_jp: '盗賊考古学者',
+                name_eng: 'Rogue Archaeology',
+                image: '/ability/tex.ability_doctoraphra_special02.png',
+                description_jp: `敵全体に特殊ダメージを与え、クールダウンを1増加させて、2ターンの疑心効果を発生させる。アフラがターゲットから*有効性を吸い取る*(耐性発揮不可)。
+                
+                このスキルはカウンターできない。
+                
+                *有効性を吸い取る：* このユニットの「サイフォン」(遭遇終了まで有効)に等しい割合の有効性を得て、ターゲットはその分の有効性を失う(スタック可能、レイドボスと銀河の伝説は除く)
+                
+                $5対5のグランドアリーナの場合：$ ターゲットにアフラの有効性50%分のボーナスダメージを与える。ターゲットに2ターンの強化無効、回復無効、よろめき効果を発生させる。`,
+                is_omega: true,
+                is_zeta: false,
+                is_omicron: false
+            }, {
+                ability_type:'リーダースキル',
+                name_jp: 'サスペンド・ドクトレイト',
+                name_eng: 'Suspended Doctorate',
+                image: '/abilityui/tex.abilityui_passive_suspendeddoctorate.png',
+                description_jp: `バトル開始時、ドクター・アフラの最大HPと最大プロテクションが有効性の30%分上昇し、BT-1か0-0-0が味方にいる場合、アフラのターンメーターが1体につき50%上昇する。味方ダークサイドの攻撃力が20%上昇する。また、味方ダークサイドドロイド、ダース・ベイダー、クルルサンタンの最大HPが20%上昇する。
+                
+                味方ダークサイドが弱体化効果を発生させるたび、その攻撃力が1ターンの間5%上昇し、遭遇終了までアフラは「サイフォン」を5得る。味方ダークサイドが、ドロイド、ダース・ベイダー、またはクルルサンタンの場合、代わりに攻撃力が1ターンの間10%上昇し、遭遇終了までアフラは「サイフォン」を10得る。ドクター・アフラ、BT-1、または0-0-0は、弱体化効果を発生させるかクリティカルヒットを受けるたび、ターンメーターが10%上昇する。
+                
+                敵のHPが30%を下回るたび、その敵に2ターンのエクスポーズとスピード低下が発生する(回避、耐性発揮不可)。
+                
+                $5対5のグランドアリーナの場合：$ 味方ダークサイドドロイドとダークサイドならず者のクリティカル回避力が50%、スピードが30上昇する。アフラの有効性が50%上昇する。味方ダークサイドドロイドまたはダークサイドならず者が敵に弱体化効果を発生させるたび、そのユニットのターンメーターが10%上昇する(1ターンに1回限り)。敵は弱体化効果を受けている間、抵抗力が20%低下する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: true
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ドロイド・サーヴァント',
+                name_eng: 'Droid Savant',
+                image: '/abilityui/tex.abilityui_passive_flatmech.png',
+                description_jp: `アフラのターン開始時、次のターン開始まで、アフラ、ダークサイドドロイド、ダークサイドならず者、ダース・ベイダー、クルルサンタンの防御力、攻撃力、抵抗力が30%分上昇する。味方ハックド・コマンドー・ドロイドは代わりに60%上昇する。アフラがアクティブで、BT-1または0-0-0が味方にいる場合、有効性が20%、スピードが20上昇する。
+                
+                味方ダークサイドドロイドはHPが初めて50%を下回ると、2ターンのプロテクション上昇(40%)を得る。
+                
+                $5対5のグランドアリーナの場合：$ 分離主義者以外の味方ダークサイドドロイドまたはダークサイドならず者のHPが初めて20%を下回ると、その味方は1ターンのダメージ耐性を得る。ダークサイドドロイドが戦闘不能になるたび、敵全体に2ターンの時間経過ダメージが発生する。また、そのユニットのレリックレベルごとに2ターンの時間経過ダメージを追加で発生させる。
+                
+                アフラ、分離主義者以外のダークサイドドロイド、ダークサイドならず者、クルルサンタンはスキルブロックと回復無効を無効化する。`,
+                is_omega: true,
+                is_zeta: true,
+                is_omicron: false
+            }, {
+                ability_type: 'ユニークスキル',
+                name_jp: 'ハックド・コマンドー・ドロイド',
+                name_eng: 'Hacked Commando Droid',
+                image: '/charui/tex.charui_bx_commando.png',
+                description_jp: `@ダークサイド@、アタッカー、ドロイド
+                
+                *[通常] 「縦射」：* ターゲットに物理ダメージを与える。攻撃力上昇の発生していない味方全体は2ターンの攻撃力上昇を得る。
+                
+                *[特殊] 「包囲」：* ターゲットに物理ダメージを与え、ランダムな味方1体をアシストに呼ぶ。
+                
+                *[特殊] 「ランジング・ストライク」：* ターゲットに物理ダメージを与え、バトル終了までアーマー破壊を発生させる。ターゲットの敵に発生している強化効果および弱体化効果ごとにこの攻撃で与えるダメージが20%上昇する。このスキルで戦闘不能になった敵は復活できない。
+                
+                *[ユニーク] 「召集」：* このユニットのステータスは、召集したユニットのステータスによって変化する。このユニットは同盟スロットが利用できる場合にのみ召集可能。特定のレイドバトルでは召集不可。このユニットは復活できない。ある効果で戦闘不能のユニットを数える場合、このユニットは数に含めない。味方戦闘ユニットが他にいない場合、このユニットはバトルから逃走する。この召集ユニットがスロットにいる限り、ユニットは復活できない。`,
+                is_omega: false,
+                is_zeta: false,
+                is_omicron: false
+            }
+        ],
+        last_updated: '2024年7月3日'
     }
 ];
 

@@ -36,6 +36,11 @@ export const Header = () => {
                                 Ships(未実装)
                             </MenubarItem>
                         </Link>
+                        <Link href="/TWCounters">
+                            <MenubarItem>
+                                TW Counters
+                            </MenubarItem>
+                        </Link>
                     </MenubarContent>
                 </MenubarMenu>
             </Menubar>

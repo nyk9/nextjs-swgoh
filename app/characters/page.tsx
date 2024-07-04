@@ -8,7 +8,7 @@ import Link from "next/link";
 import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import characters from "../data/characters";
-import { useButtonVisibility, usePropertyChange, useSearchResults, useSearchTerm, useSkillChange } from "../utils/serchFilter";
+import { useButtonVisibility, usePropertyChange, useSearchResults, useSearchTerm, useSkillChange } from "../hooks/serchFilter";
 import "./styles.css";
 
 export default function Character() {
@@ -80,7 +80,7 @@ export default function Character() {
                                                         type="button"
                                                         onClick={() => handlePropertyChange('ライトサイド')}
                                                         value={'ライトサイド'}
-                                                        className="m-1 border border-2 text-blue-700 bg-indigo-300"
+                                                        className="m-1 border-2 text-blue-700 bg-indigo-300"
                                                     />
                                                     <input
                                                         type="button"
@@ -181,6 +181,7 @@ export default function Character() {
                                     className="group"
                                     width={75}
                                     height={75}
+                                    unoptimized={true}
                                 />
                                 <small className="group">{char.property}</small>
                             </div>
