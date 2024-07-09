@@ -155,14 +155,6 @@ export default function Home() {
           About me
         </Link>
       </div>
-      <div>
-        <Link
-          href="/privacy-policy"
-          className='text-center mt-2'
-        >
-          プライバシーポリシー・免責事項
-        </Link>
-      </div>
     </main>
   )
 }
