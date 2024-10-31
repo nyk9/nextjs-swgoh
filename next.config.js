@@ -1,15 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-   images: {
+  images: {
     remotePatterns: [
-        {
-            protocol: 'https',
-            hostname: "game-assets.swgoh.gg",
-            port: "",
-            pathname: "/**"
-        }
-    ]
-   }
-}
+      {
+        protocol: "https",
+        hostname: "game-assets.swgoh.gg",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
