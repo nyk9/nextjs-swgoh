@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-    font-family: 'UD ShinGo NT';
+  font-family: "UD ShinGo NT";
 }
 
 .closeline :hover {
-    color: red;
+  color: red;
 }
