@@ -26,6 +26,7 @@ export default function RootLayout({
         <div className="mt-10">{children}</div>
         <SpeedInsights />
         <Analytics />
+        <Footer />
       </body>
     </html>
   );
