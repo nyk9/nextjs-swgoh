@@ -2,16 +2,16 @@ import { Abilities } from "@/types/abilities/abilities";
 import Image from "next/image";
 // import { useRouter } from "next/router";
 export default async function CharacterSkills(params: { url: string }) {
-  // const apilink: string = 'https://swgoh4jp.com/api/characterAbilities';
-  // const res: globalThis.Response = await fetch(apilink, {
-  //     next: {
-  //         revalidate: 3 * 60 * 60,
-  //     },
-  // });
-  const devapi: string = "http://localhost:3000/api/characterAbilities";
-  const res: globalThis.Response = await fetch(devapi, {
-    cache: "no-cache",
+  const apilink: string = "https://swgoh4jp.com/api/characterAbilities";
+  const res: globalThis.Response = await fetch(apilink, {
+    next: {
+      revalidate: 3 * 60 * 60,
+    },
   });
+  // const devapi: string = "http://localhost:3000/api/characterAbilities";
+  // const res: globalThis.Response = await fetch(devapi, {
+  //   cache: "no-cache",
+  // });
   if (!res.ok) {
     throw new Error("Error!!!");
   }
