@@ -1,7 +1,8 @@
 import abilitiesList from "@/types/swgoh/abilitieLists/abilitiesList";
 import Image from "next/image";
 
-export default async function Page({ params }: { params: { baseId: string } }) {
+export default async function Page(props: { params: Promise<{ baseId: string }> }) {
+  const params = await props.params;
   const response = await fetch("https://swgoh4jp.com/api/swgohgg/abilities");
   if (!response.ok) return <p>Failed to fetch</p>;
   let data: abilitiesList[] = await response.json();
