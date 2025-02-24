@@ -1,4 +1,4 @@
-import characters from "@/app/data/characters";
+import characters from "@/data/characters";
 import { Input } from "@/components/ui/input";
 import {
   DropdownMenu,

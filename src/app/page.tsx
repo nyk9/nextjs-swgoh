@@ -117,7 +117,7 @@ export default function Home() {
                 <p className="">
                   {update.date} : {update.title}
                 </p>
-                <small className="ml-2">詳細：{update.detaill}</small>
+                <small className="ml-2">詳細：{update.detail}</small>
               </div>
             );
           })}
@@ -135,7 +135,7 @@ export default function Home() {
                 <p>
                   {schedule.date} : {schedule.title}
                 </p>
-                <small className="pl-2">詳細 : {schedule.detaill}</small>
+                <small className="pl-2">詳細 : {schedule.detail}</small>
               </div>
             );
           })}

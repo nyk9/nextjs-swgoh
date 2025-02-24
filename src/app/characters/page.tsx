@@ -7,14 +7,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
-import characters from "../data/characters";
+import characters from "../../data/characters";
 import {
   useButtonVisibility,
   usePropertyChange,
   useSearchResults,
   useSearchTerm,
   useSkillChange,
-} from "../hooks/serchFilter";
+} from "../../hooks/serchFilter";
 import "./styles.css";
 
 export default function Character() {
