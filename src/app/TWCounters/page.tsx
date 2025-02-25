@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { supabase } from "@/utils/supabase/supabase";
 import Link from "next/link";
+import prisma from "@/lib/prisma/prismaClient"; // Prismaクライアントをインポート
 
 export default async function TWCounter() {
-  const { data } = await supabase.from("counters").select("*");
-  // const user = await supabase.auth.getUser()
-  // console.log(user);
+  const counters = await prisma.counter.findMany(); // Prismaを使用してデータを取得
+
   return (
     <div className="pt-3 bg-stone-700">
       <div className="p-1">
@@ -16,8 +15,8 @@ export default async function TWCounter() {
           <Button>入力フォーム</Button>
         </Link>
       </div>
-      {data ? (
-        data.map((counter: any, index: number) => {
+      {counters.length > 0 ? (
+        counters.map((counter, index) => {
           return (
             <div className="m-1 p-1 bg-indigo-400" key={index}>
               <p>自軍リーダー：{counter.allied_leader}</p>

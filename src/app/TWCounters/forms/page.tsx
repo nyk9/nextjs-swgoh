@@ -10,7 +10,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
-import { supabase } from "@/utils/supabase/supabase";
 import { useState } from "react";
 
 export default function TWCounter() {
@@ -33,6 +32,7 @@ export default function TWCounter() {
   const setDescriptionFunc = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setDescription(e.target.value);
   };
+
   const addCounters = async () => {
     console.log("called");
     if (
@@ -49,14 +49,29 @@ export default function TWCounter() {
           enemy_characters += enemyCharacters[i] + "、";
         }
       }
-      const { error } = await supabase.from("counters").insert({
-        allied_leader: alliedCharacters[0],
-        enemy_leader: enemyCharacters[0],
-        allied_characters: allied_characters,
-        enemy_characters: enemy_characters,
-        description: description,
-      });
-      if (error) console.error(error.message);
+      try {
+        const response = await fetch('/api/counters', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            allied_leader: alliedCharacters[0],
+            enemy_leader: enemyCharacters[0],
+            allied_characters: allied_characters,
+            enemy_characters: enemy_characters,
+            description: description,
+          }),
+        });
+
+        if (response.ok) {
+          console.log("カウンターデータを登録しました");
+        } else {
+          console.error("カウンターデータの登録に失敗しました");
+        }
+      } catch (error) {
+        console.error("データ登録中にエラーが発生しました:", error);
+      }
     }
     setAlliedCharacters([
       "自軍リーダー",
@@ -74,6 +89,7 @@ export default function TWCounter() {
     ]);
     setDescription("");
   };
+
   return (
     <>
       <Card className="bg-teal-800 text-fuchsia-100">
@@ -172,13 +188,7 @@ export default function TWCounter() {
           />
         </>
         <CardFooter>
-          <Button
-            onClick={() => {
-              addCounters();
-            }}
-          >
-            登録
-          </Button>
+          <Button onClick={addCounters}>登録</Button>
         </CardFooter>
       </Card>
     </>
