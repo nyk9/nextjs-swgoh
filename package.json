@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack ",
     "build": "next build",
+    "generate": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest"
@@ -13,10 +14,10 @@
     "@ionic/core": "^7.7.1",
     "@ionic/react": "^7.7.1",
     "@prisma/client": "^6.4.1",
-    "@radix-ui/react-dropdown-menu": "^2.1.1",
-    "@radix-ui/react-menubar": "^1.0.4",
+    "@radix-ui/react-dropdown-menu": "^2.1.6",
+    "@radix-ui/react-menubar": "^1.1.6",
     "@radix-ui/react-select": "^2.0.0",
-    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-separator": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.0",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.4",
@@ -38,9 +39,6 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.44.1",
-    "@supabase/auth-helpers-nextjs": "^0.10.0",
-    "@supabase/ssr": "^0.4.0",
-    "@supabase/supabase-js": "^2.44.0",
     "@testing-library/dom": "^9.3.4",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
