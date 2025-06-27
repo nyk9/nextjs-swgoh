@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 銀河の英雄 初心者応援データベース
 
-## Getting Started
+「スター・ウォーズ／銀河の英雄（SWGoH）」の初心者向け攻略情報サイトです。キャラクターデータベース、テリトリーウォーズ（TW）のカウンター編成記録、攻略情報などを提供します。
 
-First, run the development server:
+## 主な機能
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **キャラクター一覧と検索**: 全キャラクターの情報を網羅し、名前、所属、スキル効果などで絞り込み検索が可能です。
+- **キャラクタースキル詳細**: 各キャラクターのスキル詳細（日本語・英語）を確認できます。
+- **TWカウンター掲示板**: テリトリーウォーズで有効なカウンター編成を投稿・閲覧できます。
+- **swgoh.gg API連携**: 一部のデータは swgoh.gg API から取得し、最新の情報を提供します。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 使用技術
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **フレームワーク**: Next.js
+- **言語**: TypeScript
+- **データベース**: Prisma
+- **スタイリング**: Tailwind CSS, shadcn/ui
+- **テスト**: Jest, Playwright
+- **デプロイ**: Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## セットアップ方法
 
-## Learn More
+1.  リポジトリをクローンします:
+    ```bash
+    git clone https://github.com/nyk9/nextjs-swgoh.git
+    ```
+2.  ディレクトリを移動します:
+    ```bash
+    cd nextjs-swgoh
+    ```
+3.  依存関係をインストールします:
+    ```bash
+    npm install
+    ```
+4.  `.env` ファイルを作成し、`DATABASE_URL` を設定します。
+    ```env
+    DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE"
+    ```
+5.  データベースのマイグレーションを実行します:
+    ```bash
+    npx prisma migrate dev
+    ```
+6.  開発サーバーを起動します:
+    ```bash
+    npm run dev
+    ```
+    [http://localhost:3000](http://localhost:3000) でアプリケーションを確認できます。
 
-To learn more about Next.js, take a look at the following resources:
+## 利用可能なスクリプト
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev`: 開発サーバーを起動します。
+- `npm run build`: プロダクション用にビルドします。
+- `npm run start`: ビルドしたアプリケーションを起動します。
+- `npm run lint`: ESLintでコードをチェックします。
+- `npm run test`: Jestでテストを実行します。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 作者
 
-## Deploy on Vercel
+- **nyk9**
+  - [GitHub](https://github.com/nyk9)
+  - [Discord](https://discord.gg/yX3pS2WemD)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
