@@ -31,5 +31,8 @@ const propertyButtons: string[] = [
   "反乱軍ファイター",
   "非同盟のフォースの使い手",
   "分離主義者",
+  "傭兵",
+  "オーダー66",
+  "レイド",
 ];
 export default propertyButtons;
