@@ -1,8 +1,8 @@
 "use client";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import propertyButtons from "@/features/characterlist/constants/property";
-import skillButtons from "@/features/characterlist/constants/skillEffect";
+import { characterPropertyButtons } from "@/features/common/constants/properties";
+import { skillButtons } from "@/features/common/constants/skills";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -136,7 +136,7 @@ export default function Character() {
                             value={"ヒーラー"}
                             className="m-1 border text-green-300 bg-indigo-300"
                           />
-                          {propertyButtons.map((property, index) => (
+                          {characterPropertyButtons.map((property, index) => (
                             <input
                               key={index}
                               type="button"

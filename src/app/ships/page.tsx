@@ -1,8 +1,8 @@
 "use client";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import propertyButtons from "@/features/shiplist/constants/property";
-import skillButtons from "@/features/shiplist/constants/skillEffect";
+import { shipPropertyButtons } from "@/features/common/constants/properties";
+import { skillButtons } from "@/features/common/constants/skills";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -130,7 +130,7 @@ export default function Ship() {
                             value={"タンク"}
                             className="m-1 border text-green-300 bg-indigo-300"
                           />
-                          {propertyButtons.map((property, index) => (
+                          {shipPropertyButtons.map((property, index) => (
                             <input
                               key={index}
                               type="button"
