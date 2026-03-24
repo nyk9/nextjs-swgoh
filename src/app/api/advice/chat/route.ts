@@ -5,6 +5,7 @@ import { ComlinkError } from "@/lib/swgoh/comlink/client";
 import { continueChat } from "@/lib/swgoh/advisor/client";
 import type { ChatMessage } from "@/lib/swgoh/advisor/client";
 import { createModel, DEFAULT_PROVIDER } from "@/lib/swgoh/advisor/providers";
+import { buildSystemPrompt } from "@/lib/swgoh/advisor/prompt";
 import type { ModeSelection, RotePurpose } from "@/lib/swgoh/advisor/prompt";
 
 interface ChatRequestBody {
@@ -79,20 +80,21 @@ export async function POST(request: NextRequest) {
 
     // AI に送信
     const model = createModel(DEFAULT_PROVIDER);
+    const system = buildSystemPrompt({
+      playerName: player.name,
+      allyCode: player.allyCode,
+      level: player.level,
+      guildName: player.guildName,
+      galacticPower: player.galacticPower,
+      characterGalacticPower: player.characterGalacticPower,
+      shipGalacticPower: player.shipGalacticPower,
+      topUnits,
+      allUnitsMap: player.units,
+      selection,
+    });
     const reply = await continueChat(
       {
-        systemPromptInput: {
-          playerName: player.name,
-          allyCode: player.allyCode,
-          level: player.level,
-          guildName: player.guildName,
-          galacticPower: player.galacticPower,
-          characterGalacticPower: player.characterGalacticPower,
-          shipGalacticPower: player.shipGalacticPower,
-          topUnits,
-          allUnitsMap: player.units,
-          selection,
-        },
+        system,
         history: fullHistory,
       },
       { model },
