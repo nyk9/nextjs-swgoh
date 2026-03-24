@@ -11,8 +11,6 @@
 
 import type { LanguageModel } from "ai";
 import { generateText } from "ai";
-import { buildSystemPrompt } from "./prompt";
-import type { ChatSystemPromptInput } from "./prompt";
 
 // -------------------------------------------------------
 // 定数
@@ -48,11 +46,11 @@ export interface AdvisorConfig {
 
 /**
  * チャットセッションの入力
- * システムプロンプト + 会話履歴全体を受け取る
+ * システムプロンプト文字列 + 会話履歴全体を受け取る
  */
 export interface ChatInput {
-  /** システムプロンプト生成に必要なデータ */
-  systemPromptInput: ChatSystemPromptInput;
+  /** 事前に組み立て済みのシステムプロンプト文字列 */
+  system: string;
   /** これまでの会話履歴（user/assistant のやり取り） */
   history: ChatMessage[];
 }
@@ -115,10 +113,10 @@ async function callAI(
  * チャットセッションでAIにメッセージを送り、返答を得る
  *
  * 会話履歴（history）をそのまま渡す軽量版。
- * システムプロンプトはセッション開始時に1回組み立てられ、
- * 以降の呼び出しでも同じものを使い回す。
+ * システムプロンプトは呼び出し元で事前に組み立てて渡す。
+ * 呼び出し元でキャッシュすることで、同一セッション内での再生成を避けられる。
  *
- * @param input  - システムプロンプト入力データ + 会話履歴
+ * @param input  - 事前組み立て済みシステムプロンプト + 会話履歴
  * @param config - LanguageModel インスタンスと生成オプション
  * @returns 生成されたアドバイス文字列
  * @throws {AdvisorError} API 呼び出し失敗時
@@ -128,6 +126,5 @@ export async function continueChat(
   config: AdvisorConfig,
 ): Promise<string> {
   const { model, maxOutputTokens = DEFAULT_MAX_OUTPUT_TOKENS } = config;
-  const system = buildSystemPrompt(input.systemPromptInput);
-  return callAI(model, system, input.history, maxOutputTokens);
+  return callAI(model, input.system, input.history, maxOutputTokens);
 }
