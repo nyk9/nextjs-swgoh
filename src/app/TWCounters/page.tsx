@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import prisma from "@/lib/prisma/prismaClient"; // Prismaクライアントをインポート
 
+export const dynamic = "force-dynamic";
+
 export default async function TWCounter() {
   const counters = await prisma.counter.findMany(); // Prismaを使用してデータを取得
 
