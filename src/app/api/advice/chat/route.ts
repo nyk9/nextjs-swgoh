@@ -35,6 +35,41 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  // history のバリデーションとサニタイズ
+  const MAX_HISTORY_ENTRIES = 40;
+  const MAX_HISTORY_CHARS = 20000;
+  const MAX_ENTRY_CONTENT_CHARS = 2000;
+
+  const rawHistory = Array.isArray(history) ? history : [];
+  if (rawHistory.length > MAX_HISTORY_ENTRIES * 2) {
+    return NextResponse.json(
+      { error: "会話履歴が長すぎます。新しい会話を始めてください。" },
+      { status: 400 },
+    );
+  }
+
+  const validatedHistory: ChatMessage[] = rawHistory
+    .filter(
+      (entry): entry is ChatMessage =>
+        entry !== null &&
+        typeof entry === "object" &&
+        (entry.role === "user" || entry.role === "assistant") &&
+        typeof entry.content === "string" &&
+        entry.content.length <= MAX_ENTRY_CONTENT_CHARS,
+    )
+    .slice(-MAX_HISTORY_ENTRIES);
+
+  const totalChars = validatedHistory.reduce(
+    (sum, entry) => sum + entry.content.length,
+    0,
+  );
+  if (totalChars > MAX_HISTORY_CHARS) {
+    return NextResponse.json(
+      { error: "会話履歴が長すぎます。新しい会話を始めてください。" },
+      { status: 400 },
+    );
+  }
+
   const cleanAllycode = allycode.replace(/[^0-9]/g, "");
   if (cleanAllycode.length !== 9) {
     return NextResponse.json(
@@ -73,7 +108,7 @@ export async function POST(request: NextRequest) {
 
     // 会話履歴に今回のメッセージを追加
     const fullHistory: ChatMessage[] = [
-      ...history,
+      ...validatedHistory,
       { role: "user", content: message },
     ];
 
