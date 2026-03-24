@@ -46,7 +46,18 @@ export async function POST(request: NextRequest) {
   // ModeSelection を組み立て
   let selection: ModeSelection;
   if (mode === "rote") {
-    const rotePurpose = (purpose ?? "guild_rewards") as RotePurpose;
+    // 許可された RotePurpose のみを受け付け、その他はデフォルトにフォールバック
+    const defaultRotePurpose: RotePurpose = "guild_rewards";
+    const allowedRotePurposes: ReadonlyArray<RotePurpose> = [defaultRotePurpose];
+
+    const requestedPurpose =
+      typeof purpose === "string" ? purpose : undefined;
+
+    const rotePurpose: RotePurpose =
+      requestedPurpose &&
+      (allowedRotePurposes as readonly string[]).includes(requestedPurpose)
+        ? (requestedPurpose as RotePurpose)
+        : defaultRotePurpose;
     selection = { mode: "rote", purpose: rotePurpose };
   } else if (mode === "tw") {
     selection = { mode: "tw" };
