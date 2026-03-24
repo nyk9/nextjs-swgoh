@@ -9,43 +9,34 @@ export default async function TWCounter() {
 
   return (
     <div className="min-h-screen px-4 py-8">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="mb-6">
-          <Link
-            href="/"
-            className="text-sm text-[hsl(215,16%,47%)] hover:text-[hsl(213,32%,82%)] transition-colors"
-          >
-            &larr; トップに戻る
-          </Link>
-          <h1 className="font-display text-3xl tracking-wider text-[hsl(0,84%,60%)] mt-4 mb-2" style={{ textShadow: '0 0 20px hsla(0,84%,60%,0.4), 0 0 40px hsla(0,84%,60%,0.1)' }}>
-            TW Counters
-          </h1>
-          <p className="text-[hsl(215,16%,47%)] text-sm mt-1">
-            テリトリーウォーのカウンター情報
-          </p>
-        </div>
+      <div className="max-w-3xl mx-auto">
+        <Link
+          href="/"
+          className="text-sm text-[hsl(220,10%,52%)] hover:text-[hsl(220,14%,82%)] transition-colors"
+        >
+          ← トップ
+        </Link>
 
-        {/* Dev Banner */}
-        <div className="rounded-xl border border-[hsl(51,100%,50%)]/25 p-4 mb-6 flex items-start gap-3" style={{ background: 'linear-gradient(135deg, hsla(51,100%,50%,0.05) 0%, transparent 100%)' }}>
-          <span className="text-[hsl(51,100%,50%)] text-lg mt-0.5 flex-shrink-0">⚠</span>
-          <p className="text-sm text-[hsl(215,16%,65%)]">
-            この機能は開発中です。データの追加・編集機能は限定的に提供されています。
-          </p>
-        </div>
+        <h1 className="text-xl font-bold text-white mt-6 mb-1">TW カウンター</h1>
+        <p className="text-sm text-[hsl(220,10%,52%)] mb-5">テリトリーウォーの編成対策</p>
+
+        {/* Notice */}
+        <p className="text-xs text-[hsl(220,8%,36%)] border-l-2 border-[hsl(220,12%,18%)] pl-3 mb-5">
+          この機能は開発中です。データの追加・編集機能は限定的に提供されています。
+        </p>
 
         {/* Actions */}
         <div className="flex gap-2 mb-6">
           <Link href="/TWCounters/login">
             <Button
               variant="outline"
-              className="border-[hsl(228,20%,22%)] bg-[hsl(228,28%,18%)] text-[hsl(213,32%,82%)] hover:bg-[hsl(228,28%,24%)]"
+              className="border-[hsl(220,12%,18%)] bg-transparent text-[hsl(220,14%,82%)] hover:bg-[hsl(220,14%,14%)] text-sm"
             >
               ログイン
             </Button>
           </Link>
           <Link href="/TWCounters/forms">
-            <Button className="bg-[hsl(51,100%,50%)] text-[hsl(228,40%,8%)] hover:bg-[hsl(43,80%,42%)] font-medium">
+            <Button className="bg-[hsl(220,14%,82%)] text-[hsl(220,16%,6%)] hover:bg-white text-sm font-medium">
               入力フォーム
             </Button>
           </Link>
@@ -53,47 +44,46 @@ export default async function TWCounter() {
 
         {/* Counter List */}
         {counters.length > 0 ? (
-          <div className="space-y-3">
+          <div className="space-y-2">
             {counters.map((counter, index) => (
               <div
-                className="rounded-xl border border-[hsl(228,20%,22%)] bg-gradient-to-b from-[hsl(228,32%,14%)] to-[hsl(228,28%,12%)] p-5 hover:border-[hsl(199,92%,64%)]/30 transition-colors"
+                className="rounded border border-[hsl(220,12%,14%)] bg-[hsl(220,16%,10%)] p-4 hover:border-[hsl(220,12%,22%)] transition-colors"
                 key={index}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                   <div>
-                    <span className="text-[hsl(199,92%,64%)] text-xs font-medium">自軍リーダー</span>
+                    <span className="text-xs text-[hsl(220,10%,52%)]">自軍リーダー</span>
                     <p className="text-white">{counter.allied_leader}</p>
                   </div>
                   <div>
-                    <span className="text-[hsl(0,84%,60%)] text-xs font-medium">敵軍リーダー</span>
+                    <span className="text-xs text-[hsl(220,10%,52%)]">敵軍リーダー</span>
                     <p className="text-white">{counter.enemy_leader}</p>
                   </div>
                   <div>
-                    <span className="text-[hsl(199,92%,64%)] text-xs font-medium">自軍キャラクター</span>
-                    <p className="text-[hsl(213,32%,82%)]">{counter.allied_characters}</p>
+                    <span className="text-xs text-[hsl(220,10%,52%)]">自軍キャラクター</span>
+                    <p className="text-[hsl(220,14%,82%)]">{counter.allied_characters}</p>
                   </div>
                   <div>
-                    <span className="text-[hsl(0,84%,60%)] text-xs font-medium">敵軍キャラクター</span>
-                    <p className="text-[hsl(213,32%,82%)]">{counter.enemy_characters}</p>
+                    <span className="text-xs text-[hsl(220,10%,52%)]">敵軍キャラクター</span>
+                    <p className="text-[hsl(220,14%,82%)]">{counter.enemy_characters}</p>
                   </div>
                 </div>
                 {counter.description && (
-                  <div className="mt-3 pt-3 border-t border-[hsl(228,20%,22%)]">
-                    <span className="text-[hsl(215,16%,47%)] text-xs">詳細</span>
-                    <p className="text-[hsl(213,32%,82%)] text-sm">{counter.description}</p>
+                  <div className="mt-3 pt-3 border-t border-[hsl(220,12%,14%)]">
+                    <p className="text-sm text-[hsl(220,14%,82%)]">{counter.description}</p>
                   </div>
                 )}
               </div>
             ))}
           </div>
         ) : (
-          <div className="rounded-xl border border-[hsl(228,20%,25%)] border-dashed bg-[hsl(228,32%,11%)] p-14 text-center">
-            <p className="text-[hsl(215,16%,47%)] text-lg mb-2">まだカウンターが登録されていません</p>
-            <p className="text-[hsl(215,16%,47%)] text-sm mb-6">
+          <div className="rounded border border-dashed border-[hsl(220,12%,18%)] p-10 text-center">
+            <p className="text-[hsl(220,10%,52%)] mb-1">まだカウンターが登録されていません</p>
+            <p className="text-xs text-[hsl(220,8%,36%)] mb-5">
               最初のカウンター情報を登録して、コミュニティに貢献しましょう
             </p>
             <Link href="/TWCounters/forms">
-              <Button className="bg-[hsl(51,100%,50%)] text-[hsl(228,40%,8%)] hover:bg-[hsl(43,80%,42%)] font-medium">
+              <Button className="bg-[hsl(220,14%,82%)] text-[hsl(220,16%,6%)] hover:bg-white text-sm">
                 カウンターを登録する
               </Button>
             </Link>

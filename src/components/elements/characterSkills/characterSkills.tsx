@@ -1,6 +1,6 @@
 import { Abilities } from "@/types/abilities/abilities";
 import Image from "next/image";
-// import { useRouter } from "next/router";
+
 export default async function CharacterSkills(params: { url: string }) {
   const apilink: string = "https://swgoh4jp.com/api/characterAbilities";
   const res: globalThis.Response = await fetch(apilink, {
@@ -8,10 +8,6 @@ export default async function CharacterSkills(params: { url: string }) {
       revalidate: 3 * 60 * 60,
     },
   });
-  // const devapi: string = "http://localhost:3000/api/characterAbilities";
-  // const res: globalThis.Response = await fetch(devapi, {
-  //   cache: "no-cache",
-  // });
   if (!res.ok) {
     throw new Error("Error!!!");
   }
@@ -23,24 +19,14 @@ export default async function CharacterSkills(params: { url: string }) {
       break;
     }
   }
-  // 現在の進捗状況確認用
-  // const allCharacters: string = 'http://localhost:3000/api/characters';
-  // const a: globalThis.Response = await fetch(allCharacters ,{
-  //     cache: 'no-cache'
-  // });
-  // const charLength = await a.json();
-  // console.log("全キャラ数:"+charLength.length);
-  // console.log("詳細完了数:"+data.length);
-  // console.log("進捗割合:"+Math.round(data.length/charLength.length*10000)/100+"%");
+
   if (abilityIndex == -1) {
     return (
-      <>
-        <p>
-          このキャラクターのページは存在しません。
-          <br />
-          URLが間違っているか、現在制作中です。
-        </p>
-      </>
+      <p className="text-[hsl(220,10%,52%)]">
+        このキャラクターのページは存在しません。
+        <br />
+        URLが間違っているか、現在制作中です。
+      </p>
     );
   } else {
     for (let i: number = 0; i < data[abilityIndex].ability.length; i++) {
@@ -49,12 +35,13 @@ export default async function CharacterSkills(params: { url: string }) {
     }
     return (
       <>
-        <h2 className="flex items-center gap-2 text-2xl text-white mb-4">
+        <h2 className="flex items-center gap-3 text-lg font-medium text-white mb-5">
           <Image
             alt={data[abilityIndex].character_name}
             src={data[abilityIndex].character_image}
-            width={50}
-            height={50}
+            width={48}
+            height={48}
+            className="rounded"
             unoptimized={true}
           />
           <span>{data[abilityIndex].character_name}</span>
@@ -63,96 +50,48 @@ export default async function CharacterSkills(params: { url: string }) {
           return (
             <div
               key={item.name_jp}
-              className="rounded-lg border border-[hsl(228,20%,22%)] bg-[hsl(228,32%,13%)] mt-3 p-4"
+              className="rounded border border-[hsl(220,12%,14%)] bg-[hsl(220,16%,10%)] mt-2 p-4"
             >
-              <h3 className="flex flex-wrap items-center gap-2">
+              <h3 className="flex flex-wrap items-center gap-2 mb-2">
                 <Image
                   src={item.image}
                   alt={item.name_jp}
-                  width={50}
-                  height={50}
-                  className="object-cover px-1"
+                  width={40}
+                  height={40}
+                  className="object-cover"
                   unoptimized={true}
                 />
-                <span className="text-sky-300 text-2xl">{item.name_jp}:</span>
-                <span className="text-sky-700 text-2xl">
-                  ({item.ability_type})
+                <span className="text-white font-medium">{item.name_jp}</span>
+                <span className="text-[hsl(220,10%,52%)] text-sm">
+                  {item.ability_type}
                 </span>
-                <div className="flex">
-                  <span className="text-xs">
-                    {item.cooldown ? (
-                      <span className="text-sky-100">
-                        クールダウン: {item.cooldown}
-                      </span>
-                    ) : (
-                      <></>
-                    )}
-                  </span>
-                  {item.ability_type !== "付与スキル" ? (
+                <div className="flex items-center gap-1">
+                  {item.cooldown && (
+                    <span className="text-xs text-[hsl(220,8%,36%)]">
+                      CT: {item.cooldown}
+                    </span>
+                  )}
+                  {item.ability_type !== "付与スキル" && (
                     item.ability_type === "アルティメットスキル" ? (
-                      <Image
-                        src={"/skill/tex.skill_abilitymaterial_ultimate.png"}
-                        alt="ultimate"
-                        width={15}
-                        height={15}
-                        unoptimized={true}
-                      />
+                      <Image src="/skill/tex.skill_abilitymaterial_ultimate.png" alt="ultimate" width={15} height={15} unoptimized={true} />
                     ) : item.is_omicron === true && item.is_zeta === true ? (
                       <>
-                        <Image
-                          src={"/skill/tex.skill_hexagon_white.png"}
-                          alt="ultimate"
-                          width={15}
-                          height={15}
-                          unoptimized={true}
-                        />
-                        <Image
-                          src={"/skill/tex.skill_zeta.png"}
-                          alt="ultimate"
-                          width={15}
-                          height={15}
-                          unoptimized={true}
-                        />
+                        <Image src="/skill/tex.skill_hexagon_white.png" alt="omicron" width={15} height={15} unoptimized={true} />
+                        <Image src="/skill/tex.skill_zeta.png" alt="zeta" width={15} height={15} unoptimized={true} />
                       </>
                     ) : item.is_omicron === true ? (
-                      <Image
-                        src={"/skill/tex.skill_hexagon_white.png"}
-                        alt="ultimate"
-                        width={15}
-                        height={15}
-                        unoptimized={true}
-                      />
+                      <Image src="/skill/tex.skill_hexagon_white.png" alt="omicron" width={15} height={15} unoptimized={true} />
                     ) : item.is_zeta === true ? (
-                      <Image
-                        src={"/skill/tex.skill_zeta.png"}
-                        alt="ultimate"
-                        width={15}
-                        height={15}
-                        unoptimized={true}
-                      />
+                      <Image src="/skill/tex.skill_zeta.png" alt="zeta" width={15} height={15} unoptimized={true} />
                     ) : item.is_omega === true ? (
-                      <Image
-                        src={"/skill/tex.skill_pentagon_gold.png"}
-                        alt="ultimate"
-                        width={15}
-                        height={15}
-                        unoptimized={true}
-                      />
+                      <Image src="/skill/tex.skill_pentagon_gold.png" alt="omega" width={15} height={15} unoptimized={true} />
                     ) : (
-                      <Image
-                        src={"/skill/tex.skill_pentagon_white.png"}
-                        alt="ultimate"
-                        width={15}
-                        height={15}
-                        unoptimized={true}
-                      />
+                      <Image src="/skill/tex.skill_pentagon_white.png" alt="skill" width={15} height={15} unoptimized={true} />
                     )
-                  ) : (
-                    <></>
                   )}
                 </div>
               </h3>
-              <div className="">
+              <div className="text-sm text-[hsl(220,14%,82%)] leading-relaxed">
                 {item.description_jp.includes(">") ||
                 item.description_jp.includes("*") ||
                 item.description_jp.includes("$") ||
@@ -173,263 +112,122 @@ export default async function CharacterSkills(params: { url: string }) {
                           .map((yellow: string, yellowIndex: number) => {
                             if (yellowIndex % 2 !== 0) {
                               return (
-                                <span
-                                  className="text-yellow-200"
-                                  key={yellowIndex}
-                                >
+                                <span className="text-[hsl(40,56%,62%)]" key={yellowIndex}>
                                   {yellow}
                                 </span>
                               );
                             } else if (yellow.includes("$")) {
-                              return yellow
-                                .split("$")
-                                .map((white: string, whiteIndex: number) => {
-                                  if (whiteIndex % 2 !== 0) {
-                                    return (
-                                      <span
-                                        className="font-bold text-lg drop-shadow"
-                                        key={whiteIndex}
-                                      >
-                                        {white}
-                                      </span>
-                                    );
-                                  } else if (yellow.includes("#")) {
-                                    return yellow
-                                      .split("#")
-                                      .map(
-                                        (
-                                          orange: string,
-                                          orangeIndex: number,
-                                        ) => {
-                                          if (orangeIndex % 2 !== 0) {
-                                            return (
-                                              <span
-                                                className="font-bold text-lg drop-shadow"
-                                                key={orangeIndex}
-                                              >
-                                                {orange}
-                                              </span>
-                                            );
-                                          } else if (yellow.includes("+")) {
-                                            return yellow
-                                              .split("+")
-                                              .map(
-                                                (
-                                                  sky: string,
-                                                  skyIndex: number,
-                                                ) => {
-                                                  if (skyIndex % 2 !== 0) {
-                                                    return (
-                                                      <span
-                                                        className="font-bold text-lg drop-shadow"
-                                                        key={skyIndex}
-                                                      >
-                                                        {sky}
-                                                      </span>
-                                                    );
-                                                  } else {
-                                                    return (
-                                                      <span key={skyIndex}>
-                                                        {sky}
-                                                      </span>
-                                                    );
-                                                  }
-                                                },
-                                              );
-                                          } else {
-                                            return (
-                                              <span key={orangeIndex}>
-                                                {orange}
-                                              </span>
-                                            );
-                                          }
-                                        },
-                                      );
-                                  } else {
-                                    return (
-                                      <span key={whiteIndex}>{white}</span>
-                                    );
-                                  }
-                                });
-                            } else if (yellow.includes("#")) {
-                              return yellow
-                                .split("#")
-                                .map((orange: string, orangeIndex: number) => {
-                                  if (orangeIndex % 2 !== 0) {
-                                    return (
-                                      <span
-                                        className="font-bold text-lg drop-shadow"
-                                        key={orangeIndex}
-                                      >
-                                        {orange}
-                                      </span>
-                                    );
-                                  } else if (yellow.includes("+")) {
-                                    return yellow
-                                      .split("+")
-                                      .map((sky: string, skyIndex: number) => {
+                              return yellow.split("$").map((white: string, whiteIndex: number) => {
+                                if (whiteIndex % 2 !== 0) {
+                                  return (
+                                    <span className="font-bold text-lg" key={whiteIndex}>
+                                      {white}
+                                    </span>
+                                  );
+                                } else if (yellow.includes("#")) {
+                                  return yellow.split("#").map((orange: string, orangeIndex: number) => {
+                                    if (orangeIndex % 2 !== 0) {
+                                      return <span className="font-bold text-lg" key={orangeIndex}>{orange}</span>;
+                                    } else if (yellow.includes("+")) {
+                                      return yellow.split("+").map((sky: string, skyIndex: number) => {
                                         if (skyIndex % 2 !== 0) {
-                                          return (
-                                            <span
-                                              className="font-bold text-lg drop-shadow"
-                                              key={skyIndex}
-                                            >
-                                              {sky}
-                                            </span>
-                                          );
+                                          return <span className="font-bold text-lg" key={skyIndex}>{sky}</span>;
                                         } else {
-                                          return (
-                                            <span key={skyIndex}>{sky}</span>
-                                          );
+                                          return <span key={skyIndex}>{sky}</span>;
                                         }
                                       });
-                                  } else {
-                                    return (
-                                      <span key={orangeIndex}>{orange}</span>
-                                    );
-                                  }
-                                });
+                                    } else {
+                                      return <span key={orangeIndex}>{orange}</span>;
+                                    }
+                                  });
+                                } else {
+                                  return <span key={whiteIndex}>{white}</span>;
+                                }
+                              });
+                            } else if (yellow.includes("#")) {
+                              return yellow.split("#").map((orange: string, orangeIndex: number) => {
+                                if (orangeIndex % 2 !== 0) {
+                                  return <span className="font-bold text-lg" key={orangeIndex}>{orange}</span>;
+                                } else if (yellow.includes("+")) {
+                                  return yellow.split("+").map((sky: string, skyIndex: number) => {
+                                    if (skyIndex % 2 !== 0) {
+                                      return <span className="font-bold text-lg" key={skyIndex}>{sky}</span>;
+                                    } else {
+                                      return <span key={skyIndex}>{sky}</span>;
+                                    }
+                                  });
+                                } else {
+                                  return <span key={orangeIndex}>{orange}</span>;
+                                }
+                              });
                             } else if (yellow.includes("+")) {
-                              return yellow
-                                .split("+")
-                                .map((sky: string, skyIndex: number) => {
-                                  if (skyIndex % 2 !== 0) {
-                                    return (
-                                      <span
-                                        className="font-bold text-lg drop-shadow"
-                                        key={skyIndex}
-                                      >
-                                        {sky}
-                                      </span>
-                                    );
-                                  } else {
-                                    return <span key={skyIndex}>{sky}</span>;
-                                  }
-                                });
+                              return yellow.split("+").map((sky: string, skyIndex: number) => {
+                                if (skyIndex % 2 !== 0) {
+                                  return <span className="font-bold text-lg" key={skyIndex}>{sky}</span>;
+                                } else {
+                                  return <span key={skyIndex}>{sky}</span>;
+                                }
+                              });
                             } else {
                               return <span key={yellowIndex}>{yellow}</span>;
                             }
                           });
                       } else if (line.includes("$")) {
-                        return line
-                          .split("$")
-                          .map((omicron: string, omicronIndex: number) => {
-                            if (omicronIndex % 2 !== 0) {
-                              return (
-                                <span
-                                  key={omicronIndex}
-                                  className="font-bold text-lg drop-shadow"
-                                >
-                                  {omicron}
-                                </span>
-                              );
-                            } else if (omicron.includes("#")) {
-                              return omicron
-                                .split("#")
-                                .map((orange: string, orangeIndex: number) => {
-                                  if (orangeIndex % 2 !== 0) {
-                                    return (
-                                      <span
-                                        className="font-bold text-lg drop-shadow"
-                                        key={orangeIndex}
-                                      >
-                                        {orange}
-                                      </span>
-                                    );
-                                  } else if (omicron.includes("+")) {
-                                    return omicron
-                                      .split("+")
-                                      .map((sky: string, skyIndex: number) => {
-                                        if (skyIndex % 2 !== 0) {
-                                          return (
-                                            <span
-                                              className="font-bold text-lg drop-shadow"
-                                              key={skyIndex}
-                                            >
-                                              {sky}
-                                            </span>
-                                          );
-                                        } else {
-                                          return (
-                                            <span key={skyIndex}>{sky}</span>
-                                          );
-                                        }
-                                      });
-                                  } else {
-                                    return (
-                                      <span key={orangeIndex}>{orange}</span>
-                                    );
-                                  }
-                                });
-                            } else if (omicron.includes("+")) {
-                              return omicron
-                                .split("+")
-                                .map((sky: string, skyIndex: number) => {
+                        return line.split("$").map((omicron: string, omicronIndex: number) => {
+                          if (omicronIndex % 2 !== 0) {
+                            return <span key={omicronIndex} className="font-bold text-lg">{omicron}</span>;
+                          } else if (omicron.includes("#")) {
+                            return omicron.split("#").map((orange: string, orangeIndex: number) => {
+                              if (orangeIndex % 2 !== 0) {
+                                return <span className="font-bold text-lg" key={orangeIndex}>{orange}</span>;
+                              } else if (omicron.includes("+")) {
+                                return omicron.split("+").map((sky: string, skyIndex: number) => {
                                   if (skyIndex % 2 !== 0) {
-                                    return (
-                                      <span
-                                        className="font-bold text-lg drop-shadow"
-                                        key={skyIndex}
-                                      >
-                                        {sky}
-                                      </span>
-                                    );
+                                    return <span className="font-bold text-lg" key={skyIndex}>{sky}</span>;
                                   } else {
                                     return <span key={skyIndex}>{sky}</span>;
                                   }
                                 });
-                            } else {
-                              return <span key={omicronIndex}>{omicron}</span>;
-                            }
-                          });
+                              } else {
+                                return <span key={orangeIndex}>{orange}</span>;
+                              }
+                            });
+                          } else if (omicron.includes("+")) {
+                            return omicron.split("+").map((sky: string, skyIndex: number) => {
+                              if (skyIndex % 2 !== 0) {
+                                return <span className="font-bold text-lg" key={skyIndex}>{sky}</span>;
+                              } else {
+                                return <span key={skyIndex}>{sky}</span>;
+                              }
+                            });
+                          } else {
+                            return <span key={omicronIndex}>{omicron}</span>;
+                          }
+                        });
                       } else if (line.includes("#")) {
-                        return line
-                          .split("#")
-                          .map((ult: string, ultIndex: number) => {
-                            if (ultIndex % 2 !== 0) {
-                              return (
-                                <span
-                                  key={ultIndex}
-                                  className="text-orange-400"
-                                >
-                                  {ult}
-                                </span>
-                              );
-                            } else if (ult.includes("+")) {
-                              return ult
-                                .split("+")
-                                .map((sky: string, skyIndex: number) => {
-                                  if (skyIndex % 2 !== 0) {
-                                    return (
-                                      <span
-                                        className="font-bold text-lg drop-shadow"
-                                        key={skyIndex}
-                                      >
-                                        {sky}
-                                      </span>
-                                    );
-                                  } else {
-                                    return <span key={skyIndex}>{sky}</span>;
-                                  }
-                                });
-                            } else {
-                              return <span key={ultIndex}>{ult}</span>;
-                            }
-                          });
+                        return line.split("#").map((ult: string, ultIndex: number) => {
+                          if (ultIndex % 2 !== 0) {
+                            return <span key={ultIndex} className="text-[hsl(25,70%,55%)]">{ult}</span>;
+                          } else if (ult.includes("+")) {
+                            return ult.split("+").map((sky: string, skyIndex: number) => {
+                              if (skyIndex % 2 !== 0) {
+                                return <span className="font-bold text-lg" key={skyIndex}>{sky}</span>;
+                              } else {
+                                return <span key={skyIndex}>{sky}</span>;
+                              }
+                            });
+                          } else {
+                            return <span key={ultIndex}>{ult}</span>;
+                          }
+                        });
                       } else if (line.includes("+")) {
-                        return line
-                          .split("+")
-                          .map((role: string, roleIndex: number) => {
-                            if (roleIndex % 2 !== 0) {
-                              return (
-                                <span key={roleIndex} className="text-sky-200">
-                                  {role}
-                                </span>
-                              );
-                            } else {
-                              return <span key={roleIndex}>{role}</span>;
-                            }
-                          });
+                        return line.split("+").map((role: string, roleIndex: number) => {
+                          if (roleIndex % 2 !== 0) {
+                            return <span key={roleIndex} className="text-[hsl(200,40%,70%)]">{role}</span>;
+                          } else {
+                            return <span key={roleIndex}>{role}</span>;
+                          }
+                        });
                       } else {
                         return <span key={lineIndex}>{line}</span>;
                       }
@@ -441,7 +239,7 @@ export default async function CharacterSkills(params: { url: string }) {
             </div>
           );
         })}
-        <footer>最終更新日: {data[abilityIndex].last_updated}</footer>
+        <p className="text-xs text-[hsl(220,8%,36%)] mt-4">最終更新日: {data[abilityIndex].last_updated}</p>
       </>
     );
   }

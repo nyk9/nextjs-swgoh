@@ -19,8 +19,7 @@ const config = {
   	},
   	extend: {
   		fontFamily: {
-  			sans: ['var(--font-body)', 'sans-serif'],
-  			display: ['var(--font-display)', 'sans-serif'],
+  			sans: ['var(--font-body)', 'system-ui', 'sans-serif'],
   		},
   		colors: {
   			border: 'hsl(var(--border))',
@@ -63,18 +62,6 @@ const config = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-  			swgoh: {
-  				deep: 'hsl(var(--swgoh-bg-deep))',
-  				card: 'hsl(var(--swgoh-bg-card))',
-  				surface: 'hsl(var(--swgoh-bg-surface))',
-  				gold: 'hsl(var(--swgoh-gold))',
-  				'gold-dim': 'hsl(var(--swgoh-gold-dim))',
-  				blue: 'hsl(var(--swgoh-force-blue))',
-  				red: 'hsl(var(--swgoh-sith-red))',
-  				text: 'hsl(var(--swgoh-text))',
-  				subtext: 'hsl(var(--swgoh-subtext))',
-  				border: 'hsl(var(--swgoh-border))',
-  			}
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -83,20 +70,12 @@ const config = {
   		},
   		keyframes: {
   			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
+  				from: { height: '0' },
+  				to: { height: 'var(--radix-accordion-content-height)' }
   			},
   			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
+  				from: { height: 'var(--radix-accordion-content-height)' },
+  				to: { height: '0' }
   			}
   		},
   		animation: {

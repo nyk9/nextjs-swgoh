@@ -8,15 +8,17 @@ export default async function characterDetail(
 ) {
   const params = await props.params;
   return (
-    <div className="min-h-screen px-4 py-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen px-4 py-8">
+      <div className="max-w-3xl mx-auto">
         <Link
           href="/characters"
-          className="inline-flex items-center gap-1 text-sm text-[hsl(215,16%,47%)] hover:text-[hsl(213,32%,82%)] transition-colors mb-4"
+          className="text-sm text-[hsl(220,10%,52%)] hover:text-[hsl(220,14%,82%)] transition-colors"
         >
-          &larr; キャラクター一覧へ
+          ← キャラクター一覧
         </Link>
-        <CharacterSkills url={params.characterId} />
+        <div className="mt-4">
+          <CharacterSkills url={params.characterId} />
+        </div>
       </div>
     </div>
   );
