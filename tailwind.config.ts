@@ -18,6 +18,10 @@ const config = {
   		}
   	},
   	extend: {
+  		fontFamily: {
+  			sans: ['var(--font-body)', 'sans-serif'],
+  			display: ['var(--font-display)', 'sans-serif'],
+  		},
   		colors: {
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
@@ -58,6 +62,18 @@ const config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			swgoh: {
+  				deep: 'hsl(var(--swgoh-bg-deep))',
+  				card: 'hsl(var(--swgoh-bg-card))',
+  				surface: 'hsl(var(--swgoh-bg-surface))',
+  				gold: 'hsl(var(--swgoh-gold))',
+  				'gold-dim': 'hsl(var(--swgoh-gold-dim))',
+  				blue: 'hsl(var(--swgoh-force-blue))',
+  				red: 'hsl(var(--swgoh-sith-red))',
+  				text: 'hsl(var(--swgoh-text))',
+  				subtext: 'hsl(var(--swgoh-subtext))',
+  				border: 'hsl(var(--swgoh-border))',
   			}
   		},
   		borderRadius: {

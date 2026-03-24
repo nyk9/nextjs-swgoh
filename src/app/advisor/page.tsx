@@ -120,23 +120,27 @@ export default function AdvisorPage() {
   };
 
   return (
-    <main className="min-h-screen bg-stone-700 p-4">
+    <main className="min-h-screen px-4 py-10">
       <div className="max-w-3xl mx-auto">
         {/* ヘッダー */}
-        <div className="mb-6">
-          <Link href="/" className="text-stone-400 hover:text-stone-200 text-sm">
+        <div className="mb-8">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-1 text-sm text-[hsl(215,16%,47%)] hover:text-[hsl(213,32%,82%)] transition-colors"
+          >
             &larr; トップに戻る
           </Link>
-          <h1 className="text-3xl font-bold text-amber-400 mt-2">
+          <h1 className="font-display text-3xl md:text-4xl tracking-wider text-[hsl(51,100%,50%)] mt-4 mb-2 title-glow-gold">
             育成アドバイザー
           </h1>
-          <p className="text-stone-300 mt-1">
-            SWGoH AI アドバイザー - キャラクター育成のアドバイスを提供します
+          <p className="text-[hsl(215,16%,47%)] text-sm">
+            SWGoH AI アドバイザー — キャラクター育成のアドバイスを提供します
           </p>
+          <div className="mt-4 h-px w-full bg-gradient-to-r from-[hsl(51,100%,50%)]/30 via-[hsl(51,100%,50%)]/10 to-transparent" />
         </div>
 
         {/* ステップ表示 */}
-        <div className="flex items-center space-x-2 mb-6 text-sm">
+        <div className="flex items-center space-x-1 mb-8 text-sm">
           {(["allycode", "mode", "purpose", "chat"] as Step[]).map((s, i) => {
             const labels: Record<Step, string> = {
               allycode: "1. アライコード",
@@ -147,35 +151,39 @@ export default function AdvisorPage() {
             const isDone = ["allycode", "mode", "purpose", "chat"].indexOf(step) > i;
             const isCurrent = step === s;
             return (
-              <span
+              <button
                 key={s}
-                className={`px-2 py-1 rounded text-xs font-medium ${
+                onClick={() => {
+                  if (isDone) setStep(s);
+                }}
+                disabled={!isDone && !isCurrent}
+                className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${
                   isCurrent
-                    ? "bg-amber-600 text-white"
+                    ? "bg-[hsl(51,100%,50%)] text-[hsl(228,40%,8%)]"
                     : isDone
-                    ? "bg-stone-600 text-amber-300"
-                    : "bg-stone-800 text-stone-500"
+                    ? "bg-[hsl(228,28%,18%)] text-[hsl(51,100%,50%)] cursor-pointer hover:bg-[hsl(228,28%,24%)]"
+                    : "bg-[hsl(228,32%,13%)] text-[hsl(215,16%,47%)] cursor-not-allowed"
                 }`}
               >
                 {labels[s]}
-              </span>
+              </button>
             );
           })}
         </div>
 
         {/* プレイヤー情報表示 */}
         {playerInfo && step !== "allycode" && (
-          <div className="bg-stone-800 rounded-lg p-4 border border-stone-600 mb-4">
+          <div className="rounded-xl p-4 border border-[hsl(51,100%,50%)]/20 mb-6" style={{ background: 'linear-gradient(135deg, hsl(228, 32%, 13%) 0%, hsl(40, 20%, 14%) 100%)' }}>
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-amber-300 font-semibold text-lg">{playerInfo.name}</p>
-                <p className="text-stone-400 text-sm">
+                <p className="text-[hsl(51,100%,50%)] font-semibold text-lg">{playerInfo.name}</p>
+                <p className="text-[hsl(215,16%,47%)] text-sm">
                   Lv.{playerInfo.level} | {playerInfo.guildName || "ギルド未加入"} | GP: {playerInfo.galacticPower.toLocaleString("ja-JP")}
                 </p>
-                <p className="text-stone-500 text-xs mt-1">
+                <p className="text-[hsl(215,16%,47%)] text-xs mt-1">
                   キャラ: {playerInfo.characterGalacticPower.toLocaleString("ja-JP")} / 艦隊: {playerInfo.shipGalacticPower.toLocaleString("ja-JP")}
                 </p>
-                <p className="text-stone-500 text-xs">
+                <p className="text-[hsl(215,16%,47%)] text-xs">
                   R5以上キャラ: {playerInfo.topUnits.length}体
                 </p>
               </div>
@@ -189,7 +197,7 @@ export default function AdvisorPage() {
                     setChatHistory([]);
                     setStep("allycode");
                   }}
-                  className="text-xs text-stone-400 hover:text-stone-200 underline"
+                  className="text-xs text-[hsl(215,16%,47%)] hover:text-white underline"
                 >
                   変更
                 </button>
@@ -199,7 +207,7 @@ export default function AdvisorPage() {
         )}
 
         {/* ステップコンテンツ */}
-        <div className="space-y-4">
+        <div className="space-y-6">
           {step === "allycode" && (
             <AllyCodeForm onPlayerLoaded={handlePlayerLoaded} />
           )}
@@ -211,7 +219,7 @@ export default function AdvisorPage() {
           {step === "purpose" && mode && (
             <>
               {startError && (
-                <div className="bg-red-900/50 border border-red-600 text-red-300 px-4 py-3 rounded-lg text-sm">
+                <div className="bg-[hsl(0,84%,60%)]/10 border border-[hsl(0,84%,60%)]/30 text-[hsl(0,84%,60%)] px-4 py-3 rounded-lg text-sm">
                   {startError}
                 </div>
               )}
@@ -226,7 +234,7 @@ export default function AdvisorPage() {
               />
               <button
                 onClick={() => setStep("mode")}
-                className="text-sm text-stone-400 hover:text-stone-200 underline"
+                className="text-sm text-[hsl(215,16%,47%)] hover:text-white underline"
               >
                 &larr; モード選択に戻る
               </button>
@@ -235,13 +243,13 @@ export default function AdvisorPage() {
 
           {step === "chat" && mode && (
             <>
-              <div className="bg-stone-800 rounded-lg p-3 border border-stone-600 text-sm text-stone-300">
-                <span className="text-amber-400 font-medium">モード: </span>
+              <div className="bg-[hsl(228,32%,13%)] rounded-lg p-3 border border-[hsl(228,20%,22%)] text-sm text-[hsl(213,32%,82%)]">
+                <span className="text-[hsl(51,100%,50%)] font-medium">モード: </span>
                 {mode === "rote" ? "RotE TB" : mode === "tw" ? "TW" : "GAC"}
                 {purpose && (
                   <>
-                    <span className="mx-2 text-stone-500">|</span>
-                    <span className="text-amber-400 font-medium">目的: </span>
+                    <span className="mx-2 text-[hsl(215,16%,47%)]">|</span>
+                    <span className="text-[hsl(51,100%,50%)] font-medium">目的: </span>
                     {purpose === "platoon" && "小隊配置の最大化"}
                     {purpose === "combat_mission" && "通常戦闘ミッション貢献"}
                     {purpose === "special_mission" && "スペシャルミッションクリア"}
@@ -266,7 +274,7 @@ export default function AdvisorPage() {
                   setStartError(null);
                   setStep("mode");
                 }}
-                className="text-sm text-stone-400 hover:text-stone-200 underline"
+                className="text-sm text-[hsl(215,16%,47%)] hover:text-white underline"
               >
                 &larr; モード選択に戻る（新しい相談を始める）
               </button>

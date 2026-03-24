@@ -1,7 +1,7 @@
 "use client";
 
 import { Characters, Property, Skills } from "@/types/characters/characters";
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 
 export const useSearchTerm = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -14,10 +14,8 @@ export const useSearchResults = (
   selectedProperty: string[],
   selectedSkill: string[],
 ) => {
-  const [searchResults, setSearchResults] = useState<Characters[]>(char);
-
-  useEffect(() => {
-    const results = char.filter(
+  const searchResults = useMemo(() => {
+    return char.filter(
       (item) =>
         (new RegExp(searchTerm, "i").test(item.name) ||
           new RegExp(searchTerm, "i").test(item.property as string) ||
@@ -29,7 +27,6 @@ export const useSearchResults = (
         (selectedSkill.length === 0 ||
           selectedSkill.every((skill) => item.skill.includes(skill as Skills))),
     );
-    setSearchResults(results);
   }, [char, searchTerm, selectedProperty, selectedSkill]);
 
   return searchResults;

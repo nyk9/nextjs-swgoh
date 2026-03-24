@@ -4,80 +4,44 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    /* SWGoH Deep Space palette */
+    --swgoh-bg-deep: 228 40% 8%;
+    --swgoh-bg-card: 228 32% 13%;
+    --swgoh-bg-surface: 228 28% 18%;
+    --swgoh-gold: 51 100% 50%;
+    --swgoh-gold-dim: 43 80% 42%;
+    --swgoh-force-blue: 199 92% 64%;
+    --swgoh-sith-red: 0 84% 60%;
+    --swgoh-text: 213 32% 82%;
+    --swgoh-subtext: 215 16% 47%;
+    --swgoh-border: 228 20% 22%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-
-    --destructive: 0 84.2% 60.2%;
+    /* shadcn/ui variables */
+    --background: 228 40% 8%;
+    --foreground: 213 32% 82%;
+    --card: 228 32% 13%;
+    --card-foreground: 213 32% 82%;
+    --popover: 228 32% 13%;
+    --popover-foreground: 213 32% 82%;
+    --primary: 51 100% 50%;
+    --primary-foreground: 228 40% 8%;
+    --secondary: 228 28% 18%;
+    --secondary-foreground: 213 32% 82%;
+    --muted: 228 20% 22%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 199 92% 64%;
+    --accent-foreground: 228 40% 8%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-
+    --border: 228 20% 22%;
+    --input: 228 20% 22%;
+    --ring: 51 100% 50%;
     --radius: 0.5rem;
-
-    --chart-1: 12 76% 61%;
-
-    --chart-2: 173 58% 39%;
-
-    --chart-3: 197 37% 24%;
-
-    --chart-4: 43 74% 66%;
-
-    --chart-5: 27 87% 67%;
-  }
-
-  .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --chart-1: 51 100% 50%;
+    --chart-2: 199 92% 64%;
+    --chart-3: 0 84% 60%;
+    --chart-4: 43 80% 42%;
+    --chart-5: 280 65% 60%;
   }
 }
 
@@ -85,18 +49,115 @@
   * {
     @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-white;
+    @apply bg-background text-foreground;
+    background-color: hsl(228, 40%, 7%);
+    /* Star field: random dots */
+    background-image:
+      radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 25% 40%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 40% 8%, rgba(255,255,255,0.25) 0%, transparent 100%),
+      radial-gradient(1px 1px at 55% 65%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 70% 25%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 80% 80%, rgba(255,255,255,0.15) 0%, transparent 100%),
+      radial-gradient(1px 1px at 90% 50%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 15% 70%, rgba(255,255,255,0.15) 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 60% 90%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 35% 55%, rgba(255,255,255,0.1) 0%, transparent 100%),
+      radial-gradient(1px 1px at 85% 35%, rgba(255,255,255,0.15) 0%, transparent 100%),
+      radial-gradient(1px 1px at 5% 90%, rgba(255,255,255,0.1) 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 47% 47%, rgba(255,255,255,0.12) 0%, transparent 100%),
+      radial-gradient(1px 1px at 92% 12%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 68% 55%, rgba(255,255,255,0.1) 0%, transparent 100%),
+      /* Nebula glows */
+      radial-gradient(ellipse 60% 40% at 15% 50%, hsla(228, 55%, 18%, 0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 60% at 85% 20%, hsla(199, 50%, 15%, 0.4) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 50% at 50% 85%, hsla(228, 40%, 12%, 0.5) 0%, transparent 70%);
+    background-attachment: fixed;
+    background-size: 100% 100%;
   }
 }
 
-
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
+/* Utility classes for SWGoH theme */
+@layer utilities {
+  .swgoh-glow-gold {
+    box-shadow: 0 0 20px hsla(51, 100%, 50%, 0.25), 0 0 60px hsla(51, 100%, 50%, 0.08), inset 0 1px 0 hsla(51, 100%, 80%, 0.1);
   }
-  body {
-    @apply bg-background text-foreground;
+  .swgoh-glow-gold-strong {
+    box-shadow: 0 0 30px hsla(51, 100%, 50%, 0.4), 0 0 80px hsla(51, 100%, 50%, 0.15);
+  }
+  .swgoh-glow-blue {
+    box-shadow: 0 0 20px hsla(199, 92%, 64%, 0.25), 0 0 60px hsla(199, 92%, 64%, 0.08), inset 0 1px 0 hsla(199, 92%, 80%, 0.1);
+  }
+  .swgoh-glow-blue-strong {
+    box-shadow: 0 0 30px hsla(199, 92%, 64%, 0.4), 0 0 80px hsla(199, 92%, 64%, 0.15);
+  }
+  .swgoh-glow-red {
+    box-shadow: 0 0 20px hsla(0, 84%, 60%, 0.25), 0 0 60px hsla(0, 84%, 60%, 0.08), inset 0 1px 0 hsla(0, 84%, 80%, 0.1);
+  }
+  .swgoh-glow-red-strong {
+    box-shadow: 0 0 30px hsla(0, 84%, 60%, 0.4), 0 0 80px hsla(0, 84%, 60%, 0.15);
+  }
+  .swgoh-card {
+    @apply bg-[hsl(var(--swgoh-bg-card))] border border-[hsl(var(--swgoh-border))] rounded-lg;
+  }
+  .swgoh-surface {
+    @apply bg-[hsl(var(--swgoh-bg-surface))];
+  }
+  .text-swgoh-gold {
+    color: hsl(var(--swgoh-gold));
+  }
+  .text-swgoh-blue {
+    color: hsl(var(--swgoh-force-blue));
+  }
+  .text-swgoh-red {
+    color: hsl(var(--swgoh-sith-red));
+  }
+  .text-swgoh-sub {
+    color: hsl(var(--swgoh-subtext));
+  }
+  /* Title glow effect */
+  .title-glow-gold {
+    text-shadow:
+      0 0 20px hsla(51, 100%, 50%, 0.6),
+      0 0 40px hsla(51, 100%, 50%, 0.3),
+      0 0 80px hsla(51, 100%, 50%, 0.1);
+  }
+  .title-glow-blue {
+    text-shadow:
+      0 0 20px hsla(199, 92%, 64%, 0.6),
+      0 0 40px hsla(199, 92%, 64%, 0.3);
+  }
+  /* Card gradient backgrounds */
+  .card-bg-blue {
+    background: linear-gradient(135deg, hsl(228, 32%, 13%) 0%, hsl(210, 40%, 16%) 100%);
+  }
+  .card-bg-gold {
+    background: linear-gradient(135deg, hsl(228, 32%, 13%) 0%, hsl(40, 30%, 16%) 100%);
+  }
+  .card-bg-red {
+    background: linear-gradient(135deg, hsl(228, 32%, 13%) 0%, hsl(0, 25%, 16%) 100%);
+  }
+  /* Animated scan line */
+  @keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+  }
+  .scanline::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, hsla(199, 92%, 64%, 0.03), hsla(199, 92%, 64%, 0.06), hsla(199, 92%, 64%, 0.03), transparent);
+    animation: scanline 8s linear infinite;
+    pointer-events: none;
+    z-index: 999;
   }
 }

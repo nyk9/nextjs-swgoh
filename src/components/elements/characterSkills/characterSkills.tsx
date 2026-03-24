@@ -49,7 +49,7 @@ export default async function CharacterSkills(params: { url: string }) {
     }
     return (
       <>
-        <h1 className="flex text-2xl">
+        <h2 className="flex items-center gap-2 text-2xl text-white mb-4">
           <Image
             alt={data[abilityIndex].character_name}
             src={data[abilityIndex].character_image}
@@ -58,14 +58,14 @@ export default async function CharacterSkills(params: { url: string }) {
             unoptimized={true}
           />
           <span>{data[abilityIndex].character_name}</span>
-        </h1>
+        </h2>
         {data[abilityIndex].ability.map((item: Abilities) => {
           return (
             <div
               key={item.name_jp}
-              className="border border-blue-300 mt-1 bg-gradient-to-r from-neutral-700 to-neutral-800"
+              className="rounded-lg border border-[hsl(228,20%,22%)] bg-[hsl(228,32%,13%)] mt-3 p-4"
             >
-              <h1 className="">
+              <h3 className="flex flex-wrap items-center gap-2">
                 <Image
                   src={item.image}
                   alt={item.name_jp}
@@ -151,7 +151,7 @@ export default async function CharacterSkills(params: { url: string }) {
                     <></>
                   )}
                 </div>
-              </h1>
+              </h3>
               <div className="">
                 {item.description_jp.includes(">") ||
                 item.description_jp.includes("*") ||

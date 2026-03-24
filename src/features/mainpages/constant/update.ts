@@ -8,6 +8,12 @@ export type Updates = {
 const updates: Updates[] = [
   // 最新の情報を一番上に持っていきたいので、配列の追加は上に記述する。
   {
+    ver: 3.0,
+    title: "AI育成アドバイザー機能追加 & UI全面リニューアル",
+    date: "2026/03",
+    detail: "AIによる育成アドバイス機能を追加。サイト全体のデザインをSWGoH世界観に統一",
+  },
+  {
     ver: 2.0,
     title: "TWカウンター板機能追加",
     date: "2024/07/03",
