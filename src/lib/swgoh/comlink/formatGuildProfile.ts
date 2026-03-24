@@ -48,7 +48,7 @@ function calcPriorityScore(
   agg: GuildUnitAggregation,
   totalMembers: number,
 ): number {
-  const ownershipRate = agg.memberCount / totalMembers;
+  const ownershipRate = totalMembers > 0 ? agg.memberCount / totalMembers : 0;
   const highRelicCount = Object.entries(agg.byRelicLevel)
     .filter(([level]) => Number(level) >= HIGH_RELIC_THRESHOLD)
     .reduce((sum, [, count]) => sum + count, 0);
@@ -91,7 +91,7 @@ export function formatGuildProfile(agg: GuildAggregation): string {
 
   // 育成優先度スコア降順でソート
   const sorted = relevantUnits.sort(
-    (a, b) => calcPriorityScore(b, agg.memberCount) - calcPriorityScore(a, agg.memberCount),
+    (a, b) => calcPriorityScore(b, agg.totalMemberCount) - calcPriorityScore(a, agg.totalMemberCount),
   );
 
   // 所持率が低い（育成不足）ユニットと高いユニットに分類
@@ -99,7 +99,7 @@ export function formatGuildProfile(agg: GuildAggregation): string {
   const sufficient: GuildUnitAggregation[] = [];
 
   for (const u of sorted) {
-    if (u.memberCount / agg.memberCount < LOW_OWNERSHIP_THRESHOLD) {
+    if (u.memberCount / agg.totalMemberCount < LOW_OWNERSHIP_THRESHOLD) {
       shortage.push(u);
     } else {
       sufficient.push(u);
