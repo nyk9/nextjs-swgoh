@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 
 export const Footer = () => {
     return (
@@ -12,11 +13,11 @@ export const Footer = () => {
 
                 <Separator className="my-2" />
                 <div className="flex h-5 items-center space-x-4 text-sm">
-                    {/* <Link href="/privacy-policy"> */}
-                    <div> プライバシーポリシー・免責事項 </div>
-                    {/* </Link> */}
+                    <Link href="/privacy-policy" className="hover:underline">
+                        プライバシーポリシー・免責事項
+                    </Link>
                     <Separator orientation="vertical" className="bg-red-900" />
-                    <div>a</div>
+                    <div>© {new Date().getFullYear()} swgoh4jp.com</div>
                 </div>
             </footer>
         </>

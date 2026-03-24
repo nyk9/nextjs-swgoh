@@ -86,7 +86,7 @@ export default function AdvisorChat({
   };
 
   return (
-    <div className="bg-stone-800 rounded-lg border border-stone-600 flex flex-col h-[600px]">
+    <div className="bg-stone-800 rounded-lg border border-stone-600 flex flex-col h-[calc(100dvh-200px)] min-h-[300px] max-h-[600px]">
       {/* チャット履歴 */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {displayMessages.length === 0 && (

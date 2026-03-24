@@ -1,10 +1,26 @@
 "use client";
 
 import { Characters, Property, Skills } from "@/types/characters/characters";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export const useSearchTerm = () => {
-  const [searchTerm, setSearchTerm] = useState<string>("");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const searchTerm = searchParams.get("q") ?? "";
+
+  const setSearchTerm = (value: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (value) {
+      params.set("q", value);
+    } else {
+      params.delete("q");
+    }
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+  };
+
   return { searchTerm, setSearchTerm };
 };
 
@@ -36,14 +52,28 @@ export const useSearchResults = (
 };
 
 export const usePropertyChange = () => {
-  const [selectedProperty, setSelectedProperty] = useState<string[]>([]);
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const selectedProperty = searchParams.get("prop")
+    ? searchParams.get("prop")!.split(",")
+    : [];
 
   const handlePropertyChange = (property: string) => {
     const isSelected = selectedProperty.includes(property);
     const updateProperty = isSelected
       ? selectedProperty.filter((prop) => prop !== property)
       : [...selectedProperty, property];
-    setSelectedProperty(updateProperty);
+
+    const params = new URLSearchParams(searchParams.toString());
+    if (updateProperty.length > 0) {
+      params.set("prop", updateProperty.join(","));
+    } else {
+      params.delete("prop");
+    }
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+
     return updateProperty;
   };
 
@@ -51,14 +81,28 @@ export const usePropertyChange = () => {
 };
 
 export const useSkillChange = () => {
-  const [selectedSkill, setSelectedSkill] = useState<string[]>([]);
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const selectedSkill = searchParams.get("skill")
+    ? searchParams.get("skill")!.split(",")
+    : [];
 
   const handleSkillChange = (skill: string) => {
     const isSelected = selectedSkill.includes(skill);
     const updateSkill = isSelected
       ? selectedSkill.filter((s) => s !== skill)
       : [...selectedSkill, skill];
-    setSelectedSkill(updateSkill);
+
+    const params = new URLSearchParams(searchParams.toString());
+    if (updateSkill.length > 0) {
+      params.set("skill", updateSkill.join(","));
+    } else {
+      params.delete("skill");
+    }
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+
     return updateSkill;
   };
 

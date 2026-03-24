@@ -5,7 +5,7 @@ import propertyButtons from "@/features/characterlist/constants/property";
 import skillButtons from "@/features/characterlist/constants/skillEffect";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { Suspense } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import characters from "../../data/characters";
 import {
@@ -18,6 +18,14 @@ import {
 import "./styles.css";
 
 export default function Character() {
+  return (
+    <Suspense fallback={<div className="bg-neutral-500 min-h-screen p-4 text-white">読み込み中...</div>}>
+      <CharacterContent />
+    </Suspense>
+  );
+}
+
+function CharacterContent() {
   const { searchTerm, setSearchTerm } = useSearchTerm();
   const { selectedProperty, handlePropertyChange } = usePropertyChange();
   const { selectedSkill, handleSkillChange } = useSkillChange();
