@@ -13,6 +13,13 @@ const NAV_ITEMS = [
     accent: "from-cyan-400/20 to-blue-500/20",
   },
   {
+    href: "/ships",
+    title: "艦隊図鑑",
+    desc: "艦船を派閥・役割・パイロットで検索。艦隊編成の起点に。",
+    badge: "New",
+    accent: "from-emerald-400/20 to-teal-500/20",
+  },
+  {
     href: "/advisor",
     title: "育成アドバイザー",
     desc: "アライコードから、今やるべき育成を優先度順に提案。",
@@ -152,7 +159,7 @@ export default function Home() {
             </h2>
             <span className="text-xs font-medium text-white/50">最短導線</span>
           </div>
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {NAV_ITEMS.map((item) => (
               <Link key={item.href} href={item.href} className="group">
                 <article className="relative h-full overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.06]">
@@ -178,20 +185,6 @@ export default function Home() {
                 </article>
               </Link>
             ))}
-
-            <article className="rounded-2xl border border-dashed border-white/20 bg-white/[0.02] p-5 md:col-span-3">
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <div>
-                  <p className="text-sm font-semibold text-white/80">Ships</p>
-                  <p className="text-xs text-white/50">
-                    艦隊コンテンツは現在準備中です
-                  </p>
-                </div>
-                <span className="rounded-full border border-white/20 px-2.5 py-1 text-[11px] text-white/55">
-                  Coming Soon
-                </span>
-              </div>
-            </article>
           </div>
         </section>
 
