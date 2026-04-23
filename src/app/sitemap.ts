@@ -1,0 +1,73 @@
+import type { MetadataRoute } from "next";
+import characters from "@/data/characters";
+
+const BASE_URL = "https://swgoh4jp.com";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+
+  const staticRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: `${BASE_URL}/characters`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/ships`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/advisor`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/TWCounters`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/about`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${BASE_URL}/privacy-policy`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+  ];
+
+  const seen = new Set<string>();
+  const characterRoutes: MetadataRoute.Sitemap = [];
+  for (const c of characters) {
+    const raw = (c.url ?? "").trim();
+    if (!raw.startsWith("/characters/")) continue;
+    const slug = raw.replace(/^\/characters\//, "").replace(/\/$/, "");
+    if (!slug) continue;
+    const url = `${BASE_URL}/characters/${encodeURIComponent(slug)}`;
+    if (seen.has(url)) continue;
+    seen.add(url);
+    characterRoutes.push({
+      url,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    });
+  }
+
+  return [...staticRoutes, ...characterRoutes];
+}

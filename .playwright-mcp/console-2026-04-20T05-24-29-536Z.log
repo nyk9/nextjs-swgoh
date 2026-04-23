@@ -1,0 +1,5 @@
+[    4075ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc06._.js:14475
+[    4613ms] [LOG] %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit @ https://va.vercel-scripts.com/v1/script.debug.js:0
+[    4613ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3001/ships color: rgb(120, 120, 120) color: inherit {o: http://localhost:3001/ships, sv: 0.1.3, sdkn: @vercel/analytics, sdkv: 1.1.1, ts: 1776662674149} /_vercel/insights/view @ https://va.vercel-scripts.com/v1/script.debug.js:0
+[    4616ms] [LOG] %c[Vercel Speed Insights]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit @ https://va.vercel-scripts.com/v1/speed-insights/script.debug.js:0
+[    4866ms] [LOG] [Fast Refresh] done in NaNms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_client_20b209c9._.js:5557

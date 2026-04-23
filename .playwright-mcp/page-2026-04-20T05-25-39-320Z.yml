@@ -1,0 +1,118 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "SWGoH初心者応援データベース" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - menubar [ref=e5]:
+        - menuitem [ref=e6] [cursor=pointer]:
+          - img [ref=e7]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - article [ref=e13]:
+          - paragraph [ref=e14]: "STAR WARS: GALAXY OF HEROES"
+          - heading "銀河の英雄 初心者応援データベース" [level=1] [ref=e15]:
+            - text: 銀河の英雄
+            - text: 初心者応援データベース
+          - paragraph [ref=e16]: 「何を育てるべきか」「どの編成が刺さるか」を、迷わず判断できる情報ハブ。 調べる時間を短縮して、実戦と育成の意思決定を速くします。
+          - generic [ref=e17]:
+            - link "まずはキャラを探す" [ref=e18] [cursor=pointer]:
+              - /url: /characters
+            - link "育成優先度を診断する" [ref=e19] [cursor=pointer]:
+              - /url: /advisor
+        - complementary [ref=e20]:
+          - paragraph [ref=e21]: QUICK ACCESS
+          - list [ref=e22]:
+            - listitem [ref=e23]:
+              - link "swgoh.gg ↗" [ref=e24] [cursor=pointer]:
+                - /url: https://swgoh.gg/
+                - generic [ref=e25]: swgoh.gg
+                - generic [ref=e26]: ↗
+            - listitem [ref=e27]:
+              - link "Discord ↗" [ref=e28] [cursor=pointer]:
+                - /url: https://discord.gg/yX3pS2WemD
+                - generic [ref=e29]: Discord
+                - generic [ref=e30]: ↗
+            - listitem [ref=e31]:
+              - link "GitHub ↗" [ref=e32] [cursor=pointer]:
+                - /url: https://github.com/nyk9/nextjs-swgoh
+                - generic [ref=e33]: GitHub
+                - generic [ref=e34]: ↗
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - heading "目的から選ぶ" [level=2] [ref=e37]
+          - generic [ref=e38]: 最短導線
+        - generic [ref=e39]:
+          - link [ref=e40] [cursor=pointer]:
+            - /url: /characters
+            - article [ref=e41]:
+              - generic [ref=e43]:
+                - generic [ref=e44]:
+                  - generic [ref=e45]: 人気
+                  - generic [ref=e46]: →
+                - heading "キャラクター図鑑" [level=3] [ref=e47]
+                - paragraph [ref=e48]: 全キャラを横断検索。属性・ロール・スキル理解を最短で。
+          - link [ref=e49] [cursor=pointer]:
+            - /url: /ships
+            - article [ref=e50]:
+              - generic [ref=e52]:
+                - generic [ref=e53]:
+                  - generic [ref=e54]: New
+                  - generic [ref=e55]: →
+                - heading "艦隊図鑑" [level=3] [ref=e56]
+                - paragraph [ref=e57]: 艦船を派閥・役割・パイロットで検索。艦隊編成の起点に。
+          - link [ref=e58] [cursor=pointer]:
+            - /url: /advisor
+            - article [ref=e59]:
+              - generic [ref=e61]:
+                - generic [ref=e62]:
+                  - generic [ref=e63]: 注目
+                  - generic [ref=e64]: →
+                - heading "育成アドバイザー" [level=3] [ref=e65]
+                - paragraph [ref=e66]: アライコードから、今やるべき育成を優先度順に提案。
+          - link [ref=e67] [cursor=pointer]:
+            - /url: /TWCounters
+            - article [ref=e68]:
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e72]: 実戦
+                  - generic [ref=e73]: →
+                - heading "TW カウンター" [level=3] [ref=e74]
+                - paragraph [ref=e75]: 相手編成に対する実戦的な勝ち筋を素早く確認。
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - heading "最新アップデート" [level=2] [ref=e78]
+          - generic [ref=e79]: 鮮度の高い情報
+        - list [ref=e80]:
+          - listitem [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e83]: 2026/03
+              - generic [ref=e84]: v3
+            - paragraph [ref=e85]: AI育成アドバイザー機能追加 & UI全面リニューアル
+            - paragraph [ref=e86]: AIによる育成アドバイス機能を追加。サイト全体のデザインをSWGoH世界観に統一
+          - listitem [ref=e87]:
+            - generic [ref=e88]:
+              - generic [ref=e89]: 2024/07/03
+              - generic [ref=e90]: v2
+            - paragraph [ref=e91]: TWカウンター板機能追加
+            - paragraph [ref=e92]: 不具合がまだあるが、カウンターを入力、表示する機能を追加
+          - listitem [ref=e93]:
+            - generic [ref=e94]:
+              - generic [ref=e95]: 2024/02/07
+              - generic [ref=e96]: v1.3
+            - paragraph [ref=e97]: キャラ一覧完成
+            - paragraph [ref=e98]: スキル効果での絞り込み検索のを実装 レスポンシブデザインを適応(第一段)
+      - generic [ref=e99]:
+        - link "About" [ref=e100] [cursor=pointer]:
+          - /url: /about
+        - link "プライバシーポリシー" [ref=e101] [cursor=pointer]:
+          - /url: /privacy-policy
+  - contentinfo [ref=e102]:
+    - generic [ref=e103]:
+      - paragraph [ref=e104]: swgoh4jp.com is not affiliated with EA, EA Capital Games, Disney or Lucasfilm LTD.
+      - generic [ref=e105]:
+        - link "プライバシーポリシー" [ref=e106] [cursor=pointer]:
+          - /url: /privacy-policy
+        - generic [ref=e107]: "|"
+        - generic [ref=e108]: © 2026 swgoh4jp.com
+  - alert [ref=e109]

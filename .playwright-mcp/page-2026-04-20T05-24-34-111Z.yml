@@ -1,0 +1,478 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "SWGoH初心者応援データベース" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - menubar [ref=e5]:
+        - menuitem [ref=e6] [cursor=pointer]:
+          - img [ref=e7]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - link "← トップ" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - link "キャラクター図鑑へ" [ref=e14] [cursor=pointer]:
+          - /url: /characters
+      - generic [ref=e15]:
+        - article [ref=e16]:
+          - paragraph [ref=e17]: SHIP INDEX
+          - heading "艦隊図鑑" [level=1] [ref=e18]
+          - paragraph [ref=e19]: 名前・パイロット・派閥・役割で横断フィルター。艦隊編成に必要な情報へ、最短で到達できます。
+          - generic [ref=e20]:
+            - generic [ref=e21]: 全 53 隻
+            - generic [ref=e22]: 該当率 100%
+        - complementary [ref=e23]:
+          - paragraph [ref=e24]: RESULT SNAPSHOT
+          - paragraph [ref=e25]: "53"
+          - paragraph [ref=e26]: マッチした艦船
+          - button "条件をリセット" [disabled] [ref=e27]
+      - generic [ref=e29]:
+        - textbox "艦船検索" [ref=e31]:
+          - /placeholder: 艦名・パイロット・派閥で検索（例：ファルコン）
+        - button "フィルターを開く" [ref=e32] [cursor=pointer]
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - heading "検索結果" [level=2] [ref=e35]
+          - paragraph [ref=e36]: 53 / 53 件
+        - generic [ref=e37]:
+          - article [ref=e38]:
+            - generic [ref=e39]:
+              - heading "キマイラ" [level=3] [ref=e40]
+              - generic [ref=e41]:
+                - img "キマイラ" [ref=e43]
+                - generic [ref=e44]:
+                  - paragraph [ref=e45]: "パイロット: グランド・アドミラル・スローン"
+                  - paragraph [ref=e46]: ダークサイド、帝国軍、インペリアル・レムナント
+            - generic [ref=e48]: キャピタルシップ
+          - article [ref=e49]:
+            - generic [ref=e50]:
+              - heading "エグゼクター" [level=3] [ref=e51]
+              - generic [ref=e52]:
+                - img "エグゼクター" [ref=e54]
+                - generic [ref=e55]:
+                  - paragraph [ref=e56]: "パイロット: ダークサイド・ベイダー"
+                  - paragraph [ref=e57]: ダークサイド、帝国軍
+            - generic [ref=e59]: キャピタルシップ
+          - article [ref=e60]:
+            - generic [ref=e61]:
+              - heading "フィナライザー" [level=3] [ref=e62]
+              - generic [ref=e63]:
+                - img "フィナライザー" [ref=e65]
+                - generic [ref=e66]:
+                  - paragraph [ref=e67]: "パイロット: カイロ・レン"
+                  - paragraph [ref=e68]: ダークサイド、ファースト・オーダー
+            - generic [ref=e70]: キャピタルシップ
+          - article [ref=e71]:
+            - generic [ref=e72]:
+              - heading "リヴァイアサン" [level=3] [ref=e73]
+              - generic [ref=e74]:
+                - img "リヴァイアサン" [ref=e76]
+                - generic [ref=e77]:
+                  - paragraph [ref=e78]: "パイロット: ダース・マラク"
+                  - paragraph [ref=e79]: ダークサイド、シス帝国、旧共和国
+            - generic [ref=e81]: キャピタルシップ
+          - article [ref=e82]:
+            - generic [ref=e83]:
+              - heading "マレヴォランス" [level=3] [ref=e84]
+              - generic [ref=e85]:
+                - img "マレヴォランス" [ref=e87]
+                - generic [ref=e88]:
+                  - paragraph [ref=e89]: "パイロット: ジェネラル・グリーヴァス"
+                  - paragraph [ref=e90]: ダークサイド、分離主義者、ドロイド
+            - generic [ref=e92]: キャピタルシップ
+          - article [ref=e93]:
+            - generic [ref=e94]:
+              - heading "モン・カラマリ巡洋艦" [level=3] [ref=e95]
+              - generic [ref=e96]:
+                - img "モン・カラマリ巡洋艦" [ref=e98]
+                - generic [ref=e99]:
+                  - paragraph [ref=e100]: "パイロット: アクバー提督"
+                  - paragraph [ref=e101]: ライトサイド、反乱軍
+            - generic [ref=e103]: キャピタルシップ
+          - article [ref=e104]:
+            - generic [ref=e105]:
+              - heading "ネゴシエーター" [level=3] [ref=e106]
+              - generic [ref=e107]:
+                - img "ネゴシエーター" [ref=e109]
+                - generic [ref=e110]:
+                  - paragraph [ref=e111]: "パイロット: ジェネラル・ケノービ"
+                  - paragraph [ref=e112]: ライトサイド、銀河共和国、ジェダイ
+            - generic [ref=e114]: キャピタルシップ
+          - article [ref=e115]:
+            - generic [ref=e116]:
+              - heading "プロフンディティ" [level=3] [ref=e117]
+              - generic [ref=e118]:
+                - img "プロフンディティ" [ref=e120]
+                - generic [ref=e121]:
+                  - paragraph [ref=e122]: "パイロット: ラダス提督"
+                  - paragraph [ref=e123]: ライトサイド、反乱軍、ローグ・ワン
+            - generic [ref=e125]: キャピタルシップ
+          - article [ref=e126]:
+            - generic [ref=e127]:
+              - heading "フューリー級インターセプター" [level=3] [ref=e128]
+              - generic [ref=e129]:
+                - img "フューリー級インターセプター" [ref=e131]
+                - generic [ref=e132]:
+                  - paragraph [ref=e133]: "パイロット: シス・エターナル・エンペラー"
+                  - paragraph [ref=e134]: ダークサイド、シス帝国
+            - generic [ref=e136]: キャピタルシップ
+          - article [ref=e137]:
+            - generic [ref=e138]:
+              - heading "エグゼクトリックス（スターデストロイヤー）" [level=3] [ref=e139]
+              - generic [ref=e140]:
+                - img "エグゼクトリックス（スターデストロイヤー）" [ref=e142]
+                - generic [ref=e143]:
+                  - paragraph [ref=e144]: "パイロット: ターキン総督"
+                  - paragraph [ref=e145]: ダークサイド、帝国軍
+            - generic [ref=e147]: キャピタルシップ
+          - article [ref=e148]:
+            - generic [ref=e149]:
+              - heading "ベネター" [level=3] [ref=e150]
+              - generic [ref=e151]:
+                - img "ベネター" [ref=e153]
+                - generic [ref=e154]:
+                  - paragraph [ref=e155]: "パイロット: アソーカ・タノ"
+                  - paragraph [ref=e156]: ライトサイド、銀河共和国、ジェダイ
+            - generic [ref=e158]: キャピタルシップ
+          - article [ref=e159]:
+            - generic [ref=e160]:
+              - heading "アソーカのジェダイ・スターファイター" [level=3] [ref=e161]
+              - generic [ref=e162]:
+                - img "アソーカのジェダイ・スターファイター" [ref=e164]
+                - generic [ref=e165]:
+                  - paragraph [ref=e166]: "パイロット: アソーカ・タノ"
+                  - paragraph [ref=e167]: ライトサイド、銀河共和国、ジェダイ
+            - generic [ref=e169]: アタッカー
+          - article [ref=e170]:
+            - generic [ref=e171]:
+              - heading "アナキンのジェダイ・スターファイター" [level=3] [ref=e172]
+              - generic [ref=e173]:
+                - img "アナキンのジェダイ・スターファイター" [ref=e175]
+                - generic [ref=e176]:
+                  - paragraph [ref=e177]: "パイロット: アナキン・スカイウォーカー"
+                  - paragraph [ref=e178]: ライトサイド、銀河共和国、ジェダイ
+            - generic [ref=e180]: アタッカー
+          - article [ref=e181]:
+            - generic [ref=e182]:
+              - heading "アナキンのEta-2アクティス" [level=3] [ref=e183]
+              - generic [ref=e184]:
+                - img "アナキンのEta-2アクティス" [ref=e186]
+                - generic [ref=e187]:
+                  - paragraph [ref=e188]: "パイロット: ジェダイ・ナイト・アナキン"
+                  - paragraph [ref=e189]: ライトサイド、銀河共和国、ジェダイ
+            - generic [ref=e191]: アタッカー
+          - article [ref=e192]:
+            - generic [ref=e193]:
+              - heading "プロ・クーンのブレード・オブ・ドリン" [level=3] [ref=e194]
+              - generic [ref=e195]:
+                - img "プロ・クーンのブレード・オブ・ドリン" [ref=e197]
+                - generic [ref=e198]:
+                  - paragraph [ref=e199]: "パイロット: プロ・クーン"
+                  - paragraph [ref=e200]: ライトサイド、銀河共和国、ジェダイ
+            - generic [ref=e202]: サポート
+          - article [ref=e203]:
+            - generic [ref=e204]:
+              - heading "ジェダイ・コンスラー・スターファイター" [level=3] [ref=e205]
+              - generic [ref=e206]:
+                - img "ジェダイ・コンスラー・スターファイター" [ref=e208]
+                - generic [ref=e209]:
+                  - paragraph [ref=e210]: "パイロット: ジェダイ・コンスラー"
+                  - paragraph [ref=e211]: ライトサイド、銀河共和国、ジェダイ
+            - generic [ref=e213]: サポート
+          - article [ref=e214]:
+            - generic [ref=e215]:
+              - heading "BTL-B Y-ウィング" [level=3] [ref=e216]
+              - generic [ref=e217]:
+                - img "BTL-B Y-ウィング" [ref=e219]
+                - generic [ref=e220]:
+                  - paragraph [ref=e221]: "パイロット: クローン・パイロット"
+                  - paragraph [ref=e222]: ライトサイド、銀河共和国、クローン・トルーパー
+            - generic [ref=e224]: アタッカー
+          - article [ref=e225]:
+            - generic [ref=e226]:
+              - heading "ジオノージアン・ソルジャーのスターファイター" [level=3] [ref=e227]
+              - generic [ref=e228]:
+                - img "ジオノージアン・ソルジャーのスターファイター" [ref=e230]
+                - generic [ref=e231]:
+                  - paragraph [ref=e232]: "パイロット: ジオノージアン・ソルジャー"
+                  - paragraph [ref=e233]: ダークサイド、分離主義者、ジオノージアン
+            - generic [ref=e235]: アタッカー
+          - article [ref=e236]:
+            - generic [ref=e237]:
+              - heading "ジオノージアン・スパイのスターファイター" [level=3] [ref=e238]
+              - generic [ref=e239]:
+                - img "ジオノージアン・スパイのスターファイター" [ref=e241]
+                - generic [ref=e242]:
+                  - paragraph [ref=e243]: "パイロット: ジオノージアン・スパイ"
+                  - paragraph [ref=e244]: ダークサイド、分離主義者、ジオノージアン
+            - generic [ref=e246]: サポート
+          - article [ref=e247]:
+            - generic [ref=e248]:
+              - heading "サン・ファクのジオノージアン・スターファイター" [level=3] [ref=e249]
+              - generic [ref=e250]:
+                - img "サン・ファクのジオノージアン・スターファイター" [ref=e252]
+                - generic [ref=e253]:
+                  - paragraph [ref=e254]: "パイロット: サン・ファク"
+                  - paragraph [ref=e255]: ダークサイド、分離主義者、ジオノージアン
+            - generic [ref=e257]: タンク
+          - article [ref=e258]:
+            - generic [ref=e259]:
+              - heading "ハイエナ・ボマー" [level=3] [ref=e260]
+              - generic [ref=e261]:
+                - img "ハイエナ・ボマー" [ref=e263]
+                - paragraph [ref=e265]: ダークサイド、分離主義者、ドロイド
+            - generic [ref=e267]: アタッカー
+          - article [ref=e268]:
+            - generic [ref=e269]:
+              - heading "HMPドロイド・ガンシップ" [level=3] [ref=e270]
+              - generic [ref=e271]:
+                - img "HMPドロイド・ガンシップ" [ref=e273]
+                - paragraph [ref=e275]: ダークサイド、分離主義者、ドロイド
+            - generic [ref=e277]: サポート
+          - article [ref=e278]:
+            - generic [ref=e279]:
+              - heading "ヴァルチャー・ドロイド" [level=3] [ref=e280]
+              - generic [ref=e281]:
+                - img "ヴァルチャー・ドロイド" [ref=e283]
+                - paragraph [ref=e285]: ダークサイド、分離主義者、ドロイド
+            - generic [ref=e287]: アタッカー
+          - article [ref=e288]:
+            - generic [ref=e289]:
+              - heading "アンバラン・スターファイター" [level=3] [ref=e290]
+              - generic [ref=e291]:
+                - img "アンバラン・スターファイター" [ref=e293]
+                - paragraph [ref=e295]: ダークサイド、分離主義者
+            - generic [ref=e297]: アタッカー
+          - article [ref=e298]:
+            - generic [ref=e299]:
+              - heading "シス・ファイター" [level=3] [ref=e300]
+              - generic [ref=e301]:
+                - img "シス・ファイター" [ref=e303]
+                - paragraph [ref=e305]: ダークサイド、シス帝国、旧共和国
+            - generic [ref=e307]: アタッカー
+          - article [ref=e308]:
+            - generic [ref=e309]:
+              - heading "エボン・ホーク" [level=3] [ref=e310]
+              - generic [ref=e311]:
+                - img "エボン・ホーク" [ref=e313]
+                - paragraph [ref=e315]: ライトサイド、旧共和国、ならず者
+            - generic [ref=e317]: タンク
+          - article [ref=e318]:
+            - generic [ref=e319]:
+              - heading "ミレニアム・ファルコン（ハン）" [level=3] [ref=e320]
+              - generic [ref=e321]:
+                - img "ミレニアム・ファルコン（ハン）" [ref=e323]
+                - generic [ref=e324]:
+                  - paragraph [ref=e325]: "パイロット: ハン・ソロ"
+                  - paragraph [ref=e326]: ライトサイド、反乱軍、ならず者
+            - generic [ref=e328]: タンク
+          - article [ref=e329]:
+            - generic [ref=e330]:
+              - heading "ミレニアム・ファルコン（レイ）" [level=3] [ref=e331]
+              - generic [ref=e332]:
+                - img "ミレニアム・ファルコン（レイ）" [ref=e334]
+                - generic [ref=e335]:
+                  - paragraph [ref=e336]: "パイロット: レイ"
+                  - paragraph [ref=e337]: ライトサイド、レジスタンス
+            - generic [ref=e339]: タンク
+          - article [ref=e340]:
+            - generic [ref=e341]:
+              - heading "ゴースト" [level=3] [ref=e342]
+              - generic [ref=e343]:
+                - img "ゴースト" [ref=e345]
+                - generic [ref=e346]:
+                  - paragraph [ref=e347]: "パイロット: ヘラ・シンドゥーラ"
+                  - paragraph [ref=e348]: ライトサイド、反乱軍、フェニックス
+            - generic [ref=e350]: サポート
+          - article [ref=e351]:
+            - generic [ref=e352]:
+              - heading "ファントムII" [level=3] [ref=e353]
+              - generic [ref=e354]:
+                - img "ファントムII" [ref=e356]
+                - generic [ref=e357]:
+                  - paragraph [ref=e358]: "パイロット: エズラ・ブリッジャー"
+                  - paragraph [ref=e359]: ライトサイド、反乱軍、フェニックス
+            - generic [ref=e361]: アタッカー
+          - article [ref=e362]:
+            - generic [ref=e363]:
+              - heading "ビッグスのX-ウィング" [level=3] [ref=e364]
+              - generic [ref=e365]:
+                - img "ビッグスのX-ウィング" [ref=e367]
+                - generic [ref=e368]:
+                  - paragraph [ref=e369]: "パイロット: ビッグス・ダークライター"
+                  - paragraph [ref=e370]: ライトサイド、反乱軍、反乱軍ファイター
+            - generic [ref=e372]: アタッカー
+          - article [ref=e373]:
+            - generic [ref=e374]:
+              - heading "ウェッジのX-ウィング" [level=3] [ref=e375]
+              - generic [ref=e376]:
+                - img "ウェッジのX-ウィング" [ref=e378]
+                - generic [ref=e379]:
+                  - paragraph [ref=e380]: "パイロット: ウェッジ・アンティリーズ"
+                  - paragraph [ref=e381]: ライトサイド、反乱軍、反乱軍ファイター
+            - generic [ref=e383]: アタッカー
+          - article [ref=e384]:
+            - generic [ref=e385]:
+              - heading "A-ウィング" [level=3] [ref=e386]
+              - generic [ref=e387]:
+                - img "A-ウィング" [ref=e389]
+                - paragraph [ref=e391]: ライトサイド、反乱軍、反乱軍ファイター
+            - generic [ref=e393]: アタッカー
+          - article [ref=e394]:
+            - generic [ref=e395]:
+              - heading "B-ウィング" [level=3] [ref=e396]
+              - generic [ref=e397]:
+                - img "B-ウィング" [ref=e399]
+                - paragraph [ref=e401]: ライトサイド、反乱軍、反乱軍ファイター
+            - generic [ref=e403]: アタッカー
+          - article [ref=e404]:
+            - generic [ref=e405]:
+              - heading "Y-ウィング" [level=3] [ref=e406]
+              - generic [ref=e407]:
+                - img "Y-ウィング" [ref=e409]
+                - paragraph [ref=e411]: ライトサイド、反乱軍、反乱軍ファイター
+            - generic [ref=e413]: サポート
+          - article [ref=e414]:
+            - generic [ref=e415]:
+              - heading "パルチザン・ファイター" [level=3] [ref=e416]
+              - generic [ref=e417]:
+                - img "パルチザン・ファイター" [ref=e419]
+                - paragraph [ref=e421]: ライトサイド、反乱軍ファイター
+            - generic [ref=e423]: アタッカー
+          - article [ref=e424]:
+            - generic [ref=e425]:
+              - heading "ポー・ダメロンのX-ウィング（ブラック・ワン）" [level=3] [ref=e426]
+              - generic [ref=e427]:
+                - img "ポー・ダメロンのX-ウィング（ブラック・ワン）" [ref=e429]
+                - generic [ref=e430]:
+                  - paragraph [ref=e431]: "パイロット: ポー・ダメロン"
+                  - paragraph [ref=e432]: ライトサイド、レジスタンス
+            - generic [ref=e434]: アタッカー
+          - article [ref=e435]:
+            - generic [ref=e436]:
+              - heading "レジスタンスX-ウィング" [level=3] [ref=e437]
+              - generic [ref=e438]:
+                - img "レジスタンスX-ウィング" [ref=e440]
+                - paragraph [ref=e442]: ライトサイド、レジスタンス
+            - generic [ref=e444]: サポート
+          - article [ref=e445]:
+            - generic [ref=e446]:
+              - heading "TIEファイター" [level=3] [ref=e447]
+              - generic [ref=e448]:
+                - img "TIEファイター" [ref=e450]
+                - paragraph [ref=e452]: ダークサイド、帝国軍
+            - generic [ref=e454]: アタッカー
+          - article [ref=e455]:
+            - generic [ref=e456]:
+              - heading "TIEボマー" [level=3] [ref=e457]
+              - generic [ref=e458]:
+                - img "TIEボマー" [ref=e460]
+                - paragraph [ref=e462]: ダークサイド、帝国軍
+            - generic [ref=e464]: アタッカー
+          - article [ref=e465]:
+            - generic [ref=e466]:
+              - heading "TIEアドバンスドx1" [level=3] [ref=e467]
+              - generic [ref=e468]:
+                - img "TIEアドバンスドx1" [ref=e470]
+                - generic [ref=e471]:
+                  - paragraph [ref=e472]: "パイロット: ダース・ベイダー"
+                  - paragraph [ref=e473]: ダークサイド、帝国軍
+            - generic [ref=e475]: アタッカー
+          - article [ref=e476]:
+            - generic [ref=e477]:
+              - heading "TIEダガー" [level=3] [ref=e478]
+              - generic [ref=e479]:
+                - img "TIEダガー" [ref=e481]
+                - paragraph [ref=e483]: ダークサイド、帝国軍、インペリアル・レムナント
+            - generic [ref=e485]: アタッカー
+          - article [ref=e486]:
+            - generic [ref=e487]:
+              - heading "TIEディフェンダー" [level=3] [ref=e488]
+              - generic [ref=e489]:
+                - img "TIEディフェンダー" [ref=e491]
+                - paragraph [ref=e493]: ダークサイド、帝国軍、インペリアル・レムナント
+            - generic [ref=e495]: タンク
+          - article [ref=e496]:
+            - generic [ref=e497]:
+              - heading "TIEリーパー" [level=3] [ref=e498]
+              - generic [ref=e499]:
+                - img "TIEリーパー" [ref=e501]
+                - paragraph [ref=e503]: ダークサイド、帝国軍
+            - generic [ref=e505]: サポート
+          - article [ref=e506]:
+            - generic [ref=e507]:
+              - heading "TIEサイレンサー" [level=3] [ref=e508]
+              - generic [ref=e509]:
+                - img "TIEサイレンサー" [ref=e511]
+                - generic [ref=e512]:
+                  - paragraph [ref=e513]: "パイロット: カイロ・レン"
+                  - paragraph [ref=e514]: ダークサイド、ファースト・オーダー
+            - generic [ref=e516]: アタッカー
+          - article [ref=e517]:
+            - generic [ref=e518]:
+              - heading "TIEインターセプタープロトタイプ" [level=3] [ref=e519]
+              - generic [ref=e520]:
+                - img "TIEインターセプタープロトタイプ" [ref=e522]
+                - paragraph [ref=e524]: ダークサイド、帝国軍
+            - generic [ref=e526]: アタッカー
+          - article [ref=e527]:
+            - generic [ref=e528]:
+              - heading "ファースト・オーダー TIEファイター" [level=3] [ref=e529]
+              - generic [ref=e530]:
+                - img "ファースト・オーダー TIEファイター" [ref=e532]
+                - paragraph [ref=e534]: ダークサイド、ファースト・オーダー
+            - generic [ref=e536]: アタッカー
+          - article [ref=e537]:
+            - generic [ref=e538]:
+              - heading "ファースト・オーダー TIEエシュロン" [level=3] [ref=e539]
+              - generic [ref=e540]:
+                - img "ファースト・オーダー TIEエシュロン" [ref=e542]
+                - paragraph [ref=e544]: ダークサイド、ファースト・オーダー
+            - generic [ref=e546]: アタッカー
+          - article [ref=e547]:
+            - generic [ref=e548]:
+              - heading "ファースト・オーダー 特殊部隊TIE" [level=3] [ref=e549]
+              - generic [ref=e550]:
+                - img "ファースト・オーダー 特殊部隊TIE" [ref=e552]
+                - paragraph [ref=e554]: ダークサイド、ファースト・オーダー
+            - generic [ref=e556]: サポート
+          - article [ref=e557]:
+            - generic [ref=e558]:
+              - heading "B-28エクスティンクション級ボマー" [level=3] [ref=e559]
+              - generic [ref=e560]:
+                - img "B-28エクスティンクション級ボマー" [ref=e562]
+                - paragraph [ref=e564]: ダークサイド、帝国軍
+            - generic [ref=e566]: アタッカー
+          - article [ref=e567]:
+            - generic [ref=e568]:
+              - heading "スレーヴI" [level=3] [ref=e569]
+              - generic [ref=e570]:
+                - img "スレーヴI" [ref=e572]
+                - generic [ref=e573]:
+                  - paragraph [ref=e574]: "パイロット: ボバ・フェット"
+                  - paragraph [ref=e575]: ダークサイド、賞金稼ぎ、マンダロリアン
+            - generic [ref=e577]: タンク
+          - article [ref=e578]:
+            - generic [ref=e579]:
+              - heading "レイザークレスト" [level=3] [ref=e580]
+              - generic [ref=e581]:
+                - img "レイザークレスト" [ref=e583]
+                - generic [ref=e584]:
+                  - paragraph [ref=e585]: "パイロット: マンダロリアン"
+                  - paragraph [ref=e586]: ライトサイド、マンダロリアン、賞金稼ぎ
+            - generic [ref=e588]: タンク
+          - article [ref=e589]:
+            - generic [ref=e590]:
+              - heading "ガントレット・スターファイター" [level=3] [ref=e591]
+              - generic [ref=e592]:
+                - img "ガントレット・スターファイター" [ref=e594]
+                - paragraph [ref=e596]: ニュートラル、マンダロリアン
+            - generic [ref=e598]: アタッカー
+  - contentinfo [ref=e599]:
+    - generic [ref=e600]:
+      - paragraph [ref=e601]: swgoh4jp.com is not affiliated with EA, EA Capital Games, Disney or Lucasfilm LTD.
+      - generic [ref=e602]:
+        - link "プライバシーポリシー" [ref=e603] [cursor=pointer]:
+          - /url: /privacy-policy
+        - generic [ref=e604]: "|"
+        - generic [ref=e605]: © 2026 swgoh4jp.com

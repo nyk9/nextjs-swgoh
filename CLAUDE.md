@@ -6,13 +6,75 @@
 
 ## プロジェクト概要
 
-**Star Wars: Galaxy of Heroes (SWGoH)** プレイヤー向けの情報・ユーティリティサイト。
+**Star Wars: Galaxy of Heroes (SWGoH)** の日本語プレイヤー向け情報・ユーティリティサイト。
+**ベンチマーク: [swgoh.gg](https://swgoh.gg/)（月間 580 万 PV）の日本語版** という位置付け。
 キャラクター情報、TW カウンター、AI 育成アドバイスなどを提供する。
 
-- **URL（本番）**: Vercel にデプロイ
+- **URL（本番）**: [swgoh4jp.com](https://swgoh4jp.com) (Vercel)
 - **フレームワーク**: Next.js 15.4.8 (App Router) + React 19.0.1
 - **DB**: PostgreSQL (Neon) + Prisma 6
 - **パッケージマネージャー**: Bun
+
+---
+
+## 直近の最優先課題: SEO 整備（PV 増加）
+
+**現状**: 月間 約 60 PV（2026年4月時点）
+**目標**: Vercel Pro（$20/月）の収益化要件を満たすPV数へ
+
+Vercel の利用規約上、**Pro プラン（$20/月）に加入するまで収益化禁止**。
+まず PV を増やすことが最優先。
+
+### Analytics 現状
+- 流入元: Google 検索 50%以上 / Direct ほか
+- 地域: 日本 50%以上
+- デバイス: Windows 50%以上（デスクトップ中心）
+
+### SEO 基礎工事（Phase 1 完了 @ 2026-04-23）
+- [x] `src/app/sitemap.ts`（/sitemap.xml 自動生成、静的7件 + 276キャラ）
+- [x] `src/app/robots.ts`（/api/* を Disallow、Sitemap 指定）
+- [x] 全ページに `metadata`（title / description / OGP / canonical）
+  - `"use client"` ページは `layout.tsx` に metadata を定義（characters / ships / advisor / TWCounters）
+  - 非 client ページは `page.tsx` に `export const metadata`（about / privacy-policy）
+  - 動的ルートは `generateMetadata`（characters/[characterId]）
+- [x] JSON-LD 構造化データ（WebSite + Organization を root layout、BreadcrumbList をキャラ詳細）
+- [x] OGP 画像 1200×630（`src/app/opengraph-image.tsx` で `ImageResponse` による動的生成）
+
+### SEO 次の一手（未対応）
+- [ ] Google Search Console プロパティ登録＆ `layout.tsx` の `verification.google` 設定
+- [ ] Phase 0: `src/app/character/[baseId]/page.tsx` の空配列クラッシュを `notFound()` で防ぐ
+- [ ] Phase 0: `src/app/api/page.tsx`（typo あり）の削除 or noindex
+- [ ] Phase 2: 旧 `/character/:id` → 新 `/characters/:id` の 301 リダイレクト（内部リンク統一含む）
+- [ ] Phase 2: `Noto_Sans_JP` の `subsets` を JP に修正
+- [ ] Phase 2: `/`, `/characters`, `/ships` を server shell + client child に分離して SSR 強化
+- [ ] Phase 3: MDX ガイド記事でロングテール獲得（`/guides/[slug]`）
+- [ ] OGP 画像の日本語表示（Noto Sans JP の OTF/TTF を埋め込み、現在は Latin のみ）
+
+詳細計画は `docs/seo-improvement-plan-2026-04-20.md` 参照。
+
+---
+
+## 競合分析
+
+### メイン競合: swgoh.gg
+
+| 項目 | swgoh.gg | swgoh4jp.com |
+|------|----------|--------------|
+| 月間PV | 約 580 万（Semrush Dec 2024） | 約 60（2026年4月） |
+| 言語 | 英語 | **日本語**（差別化ポイント） |
+| キャラクター DB | ✅ | ✅ |
+| 艦船 DB | ✅ | ✅ |
+| プレイヤープロフィール | ✅（要登録） | ❌（Comlink API は実装済み） |
+| ギルドページ | ✅ | ❌ |
+| Meta レポート | ✅ | ❌ |
+| TW カウンター | ❌ | ✅ |
+| AI 育成アドバイザー | ❌ | ✅（独自機能） |
+| 収益モデル | Patreon $3/月（広告非表示・自動同期等） | 未実装 |
+
+### 収益化ロードマップ（PV 達成後）
+1. **月 1,000 PV** → Patreon / Ko-fi でサポーター募集
+2. **月 5,000 PV** → Vercel Pro 加入 + 広告（AdSense）検討
+3. **月 10,000 PV** → プレミアムプラン（swgoh.gg モデル参考: $3/月）
 
 ---
 
