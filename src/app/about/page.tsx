@@ -1,4 +1,26 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+const ABOUT_TITLE = "About｜サイトについて";
+const ABOUT_DESCRIPTION =
+  "SWGoH（銀河の英雄）日本語データベース swgoh4jp の運営方針・収録情報・利用技術について。初心者のための情報設計と、実戦で役立つ判断材料の提供を目指しています。";
+
+export const metadata: Metadata = {
+  title: ABOUT_TITLE,
+  description: ABOUT_DESCRIPTION,
+  alternates: { canonical: "/about" },
+  openGraph: {
+    type: "article",
+    url: "/about",
+    title: ABOUT_TITLE,
+    description: ABOUT_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: ABOUT_TITLE,
+    description: ABOUT_DESCRIPTION,
+  },
+};
 
 const TECH_STACK = [
   "Next.js 15",

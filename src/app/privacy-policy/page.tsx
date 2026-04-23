@@ -1,3 +1,30 @@
+import type { Metadata } from "next";
+
+const PRIVACY_TITLE = "プライバシーポリシー";
+const PRIVACY_DESCRIPTION =
+  "swgoh4jp（銀河の英雄 日本語データベース）のプライバシーポリシー。個人情報の取り扱い、Cookie、アクセス解析に関する方針を記載しています。";
+
+export const metadata: Metadata = {
+  title: PRIVACY_TITLE,
+  description: PRIVACY_DESCRIPTION,
+  alternates: { canonical: "/privacy-policy" },
+  openGraph: {
+    type: "article",
+    url: "/privacy-policy",
+    title: PRIVACY_TITLE,
+    description: PRIVACY_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary",
+    title: PRIVACY_TITLE,
+    description: PRIVACY_DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-neutral-700">

@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
-const TITLE = "TWカウンター板";
+const TITLE = "AI育成アドバイザー";
 const DESCRIPTION =
-  "SWGoH（銀河の英雄）テリトリー・ウォー（TW）で有効なカウンター編成を日本語で共有。相手リーダー・編成から勝ち筋を素早く確認できます。";
+  "アライコードを入力するだけで、SWGoH（銀河の英雄）のプレイヤーデータから今やるべき育成を優先度順に提案するAIアシスタント。RotE・TW・GACに対応。";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/TWCounters" },
+  alternates: { canonical: "/advisor" },
   openGraph: {
     type: "website",
-    url: "/TWCounters",
+    url: "/advisor",
     title: TITLE,
     description: DESCRIPTION,
   },
