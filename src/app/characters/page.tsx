@@ -340,13 +340,6 @@ export default function Character() {
                         ゲーム内説明
                       </Badge>
                     </Link>
-                    {char.character_base_id && (
-                      <Link href={`/character/${char.character_base_id}`}>
-                        <Badge className="cursor-pointer border-amber-200/25 bg-amber-300/10 text-[10px] text-amber-100 hover:bg-amber-300/18">
-                          SWGOH.GG
-                        </Badge>
-                      </Link>
-                    )}
                   </div>
                 </article>
               ))}
