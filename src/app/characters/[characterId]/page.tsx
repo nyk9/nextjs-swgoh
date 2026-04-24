@@ -18,7 +18,8 @@ function findCharacter(characterId: string): Characters | undefined {
     const slug = (c.url ?? "")
       .replace(/^\/characters\//, "")
       .replace(/\/$/, "");
-    return slug && candidates.has(slug);
+    if (slug && candidates.has(slug)) return true;
+    return Boolean(c.character_base_id && candidates.has(c.character_base_id));
   });
 }
 

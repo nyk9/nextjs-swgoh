@@ -1,5 +1,6 @@
 import abilitiesList from "@/types/swgoh/abilitieLists/abilitiesList";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 export default async function Page(props: { params: Promise<{ baseId: string }> }) {
   const params = await props.params;
@@ -14,6 +15,7 @@ export default async function Page(props: { params: Promise<{ baseId: string }> 
       list.push(data[i]);
     }
   }
+  if (list.length === 0) notFound();
   return (
     <div className="bg-neutral-500">
       <h2>{list[0].character_base_id}</h2>
