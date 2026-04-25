@@ -7,6 +7,7 @@ import type { ChatMessage } from "@/lib/swgoh/advisor/client";
 import { createModel, DEFAULT_PROVIDER } from "@/lib/swgoh/advisor/providers";
 import { buildSystemPrompt } from "@/lib/swgoh/advisor/prompt";
 import type { ModeSelection, RotePurpose } from "@/lib/swgoh/advisor/prompt";
+import { checkRateLimit, rateLimitHeaders } from "@/lib/rateLimit";
 
 interface ChatRequestBody {
   allycode: string;
@@ -17,6 +18,14 @@ interface ChatRequestBody {
 }
 
 export async function POST(request: NextRequest) {
+  const rl = await checkRateLimit(request);
+  if (!rl.ok) {
+    return NextResponse.json(
+      { error: "リクエスト制限に達しました。明日また試してください。" },
+      { status: 429, headers: rateLimitHeaders(rl) },
+    );
+  }
+
   let body: ChatRequestBody;
   try {
     body = await request.json();
@@ -100,7 +109,7 @@ export async function POST(request: NextRequest) {
       { model },
     );
 
-    return NextResponse.json({ reply });
+    return NextResponse.json({ reply }, { headers: rateLimitHeaders(rl) });
   } catch (error) {
     if (error instanceof ComlinkError) {
       return NextResponse.json(

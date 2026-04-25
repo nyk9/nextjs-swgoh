@@ -2,8 +2,17 @@ import { NextRequest, NextResponse } from "next/server";
 import { fetchPlayerData } from "@/lib/swgoh/comlink/client";
 import { formatPlayer, getUnitsAboveMinRelic } from "@/lib/swgoh/comlink/formatPlayer";
 import { ComlinkError } from "@/lib/swgoh/comlink/client";
+import { checkRateLimit, rateLimitHeaders } from "@/lib/rateLimit";
 
 export async function GET(request: NextRequest) {
+  const rl = await checkRateLimit(request);
+  if (!rl.ok) {
+    return NextResponse.json(
+      { error: "リクエスト制限に達しました。明日また試してください。" },
+      { status: 429, headers: rateLimitHeaders(rl) },
+    );
+  }
+
   const searchParams = request.nextUrl.searchParams;
   const allycode = searchParams.get("allycode");
 
@@ -28,16 +37,19 @@ export async function GET(request: NextRequest) {
     const player = formatPlayer(raw);
     const topUnits = getUnitsAboveMinRelic(player, 5);
 
-    return NextResponse.json({
-      name: player.name,
-      allyCode: player.allyCode,
-      level: player.level,
-      guildName: player.guildName,
-      galacticPower: player.galacticPower,
-      characterGalacticPower: player.characterGalacticPower,
-      shipGalacticPower: player.shipGalacticPower,
-      topUnits,
-    });
+    return NextResponse.json(
+      {
+        name: player.name,
+        allyCode: player.allyCode,
+        level: player.level,
+        guildName: player.guildName,
+        galacticPower: player.galacticPower,
+        characterGalacticPower: player.characterGalacticPower,
+        shipGalacticPower: player.shipGalacticPower,
+        topUnits,
+      },
+      { headers: rateLimitHeaders(rl) },
+    );
   } catch (error) {
     if (error instanceof ComlinkError) {
       const status = error.statusCode === 404 ? 404 : 502;

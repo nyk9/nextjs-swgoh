@@ -76,6 +76,41 @@ export default function PrivacyPolicy() {
         </div>
       </div>
       <div>
+        <h2 className="m-2 text-2xl">広告配信について</h2>
+        <p className="m-2">
+          当サイトでは、将来的に第三者配信の広告サービス（Google AdSense
+          など）を利用する可能性があります。
+          これらの広告配信事業者は、ユーザーの興味に基づいた商品・サービスの広告を表示するため、
+          当サイトや他サイトへのアクセス情報「Cookie（氏名、住所、メールアドレス、電話番号は含まれません）」を使用することがあります。
+        </p>
+        <p className="m-2">
+          Google AdSense および DoubleClick Cookie
+          については、以下のリンクから無効化することができます。
+          <br />
+          <a
+            href="https://www.google.com/settings/ads"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            広告のカスタマイズ設定（Google）
+          </a>
+        </p>
+        <p className="m-2">
+          第三者配信事業者がCookieを使用することにより、ユーザーがそのサイトや他のサイトに過去にアクセスした際の情報に基づいて広告を配信することがあります。
+          AdSenseの仕組みや、ユーザーがパーソナライズ広告に使用される情報を管理する方法については、
+          <a
+            href="https://policies.google.com/technologies/ads"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Googleの広告ポリシー
+          </a>
+          をご確認ください。
+        </p>
+      </div>
+      <div>
         <h1 className="mt-10 text-center text-5xl">免責事項</h1>
         <div>
           <h4 className="m-2 text-2xl">情報の正確性と完全性</h4>
