@@ -13,6 +13,9 @@
 /.next/
 /out/
 
+# claude code
+/.claude/scheduled_tasks.lock
+
 # production
 /build
 
@@ -51,5 +54,5 @@ yarn.lock
 # bun
 bun.lockb
 
-# pnpm 
+# pnpm
 pnpm-lock.yaml

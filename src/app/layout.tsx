@@ -10,6 +10,8 @@ const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-body",
+  display: "swap",
+  preload: false,
 });
 
 const SITE_NAME = "銀河の英雄 日本語データベース";
@@ -51,6 +53,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
       "max-video-preview": -1,
     },
+  },
+  verification: {
+    google: "G91Jo4Gb6L6JSPU9oHvXxeig2H-QgAs697o9pfwi5jQ",
   },
 };
 

@@ -6,6 +6,12 @@ import Link from "next/link";
 
 const SITE_URL = "https://swgoh4jp.com";
 
+function extractSlug(character: Characters): string {
+  return (character.url ?? "")
+    .replace(/^\/characters\//, "")
+    .replace(/\/$/, "");
+}
+
 function findCharacter(characterId: string): Characters | undefined {
   let decoded = characterId;
   try {
@@ -15,11 +21,16 @@ function findCharacter(characterId: string): Characters | undefined {
   }
   const candidates = new Set([characterId, decoded]);
   return characters.find((c) => {
-    const slug = (c.url ?? "")
-      .replace(/^\/characters\//, "")
-      .replace(/\/$/, "");
+    const slug = extractSlug(c);
     return slug && candidates.has(slug);
   });
+}
+
+export async function generateStaticParams() {
+  return characters
+    .map((c) => extractSlug(c))
+    .filter((slug) => slug.length > 0)
+    .map((slug) => ({ characterId: slug }));
 }
 
 function formatProperty(property: Characters["property"]): string {
