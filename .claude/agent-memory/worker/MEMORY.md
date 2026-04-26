@@ -1,0 +1,2 @@
+- [Skill renderer marker convention](project_skill_renderer_markers.md) — description_jp の色マーカーは単一文字。冒頭コメントの 2 文字仕様は古い
+- [Comlink /data segment 0 quirks](project_comlink_data_shapes.md) — 329MB データの構造・skill id プレフィックス・ult / 付与の特殊経路
