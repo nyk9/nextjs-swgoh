@@ -1,0 +1,1085 @@
+[
+  {
+    "name": "皇帝のシャトル",
+    "base_id": "EMPERORSSHUTTLE",
+    "src": "/charui/tex.charui_imperialshuttle.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍",
+      "シス"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "パルパティーン皇帝"
+  },
+  {
+    "name": "反乱軍Bウイング",
+    "base_id": "BWINGREBEL",
+    "src": "/charui/tex.charui_bwingrebel.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "キャプテン・ドロガン"
+  },
+  {
+    "name": "ネゴシエーター",
+    "base_id": "CAPITALNEGOTIATOR",
+    "src": "/charui/tex.charui_negotiator.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "ケノービ将軍"
+  },
+  {
+    "name": "サン・ファクのジオノージアン・スターファイター",
+    "base_id": "GEONOSIANSTARFIGHTER1",
+    "src": "/charui/tex.charui_geonosis_fighter_sunfac.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ジオノージアン"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "pilot": "サン・ファク"
+  },
+  {
+    "name": "ジオノージアン兵士のスターファイター",
+    "base_id": "GEONOSIANSTARFIGHTER2",
+    "src": "/charui/tex.charui_geonosis_fighter_soldier.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ジオノージアン"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ジオノージアン兵士"
+  },
+  {
+    "name": "サイス",
+    "base_id": "SCYTHE",
+    "src": "/charui/tex.charui_scythe.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "大尋問官"
+  },
+  {
+    "name": "アウトライダー",
+    "base_id": "OUTRIDER",
+    "src": "/charui/tex.charui_outrider.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "ならず者"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "ダッシュ・レンダー"
+  },
+  {
+    "name": "ジオノージアン・スパイのスターファイター",
+    "base_id": "GEONOSIANSTARFIGHTER3",
+    "src": "/charui/tex.charui_geonosis_fighter_spy.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ジオノージアン"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ジオノージアン・スパイ"
+  },
+  {
+    "name": "レジスタンスXウイング",
+    "base_id": "XWINGRESISTANCE",
+    "src": "/charui/tex.charui_xwing_resistance.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "レジスタンス・パイロット"
+  },
+  {
+    "name": "ハウンズ・トゥース",
+    "base_id": "HOUNDSTOOTH",
+    "src": "/charui/tex.charui_houndstooth.png",
+    "faction": [
+      "ダークサイド",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "pilot": "ボスク"
+  },
+  {
+    "name": "クローン・サージェントのARC-170",
+    "base_id": "ARC170CLONESERGEANT",
+    "src": "/charui/tex.charui_arc170.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "クローン・トルーパー"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "pilot": "クローン・サージェント(フェーズⅠ)"
+  },
+  {
+    "name": "ファースト・オーダーTIEファイター",
+    "base_id": "TIEFIGHTERFIRSTORDER",
+    "src": "/charui/tex.charui_firstorder_tiefighter.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ファースト・オーダーTIEパイロット"
+  },
+  {
+    "name": "ジェダイ・コンシュラーのスターファイター",
+    "base_id": "JEDISTARFIGHTERCONSULAR",
+    "src": "/charui/tex.charui_jedi_fighter.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "ジェダイ・コンシュラー"
+  },
+  {
+    "name": "マレボランス",
+    "base_id": "CAPITALMALEVOLENCE",
+    "src": "/charui/tex.charui_malevolence.png",
+    "faction": [
+      "ダークサイド",
+      "ドロイド",
+      "分離主義者"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "グリーヴァス将軍"
+  },
+  {
+    "name": "シス・ファイター",
+    "base_id": "SITHFIGHTER",
+    "src": "/charui/tex.charui_sithfighter.png",
+    "faction": [
+      "ダークサイド",
+      "シス",
+      "シス帝国"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "シス・アサシン"
+  },
+  {
+    "name": "ザナドゥ・ブラッド",
+    "base_id": "XANADUBLOOD",
+    "src": "/charui/tex.charui_xanadublood.png",
+    "faction": [
+      "ダークサイド",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "キャド・ベイン"
+  },
+  {
+    "name": "フューリー級インターセプター",
+    "base_id": "FURYCLASSINTERCEPTOR",
+    "src": "/charui/tex.charui_furyclassinterceptor.png",
+    "faction": [
+      "ダークサイド",
+      "シス",
+      "シス帝国"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "ダース・マルガス"
+  },
+  {
+    "name": "キメラ",
+    "base_id": "CAPITALCHIMAERA",
+    "src": "/charui/tex.charui_chimaera.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "スローン大提督"
+  },
+  {
+    "name": "パニッシング・ワン",
+    "base_id": "PUNISHINGONE",
+    "src": "/charui/tex.charui_punishingone.png",
+    "faction": [
+      "ダークサイド",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "デンガー"
+  },
+  {
+    "name": "マークVIインターセプター",
+    "base_id": "SITHSUPREMACYCLASS",
+    "src": "/charui/tex.charui_sithsupremacyclass.png",
+    "faction": [
+      "ダークサイド",
+      "シス",
+      "シス帝国"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "シス帝国トルーパー"
+  },
+  {
+    "name": "B-28エクスティンクション級ボマー",
+    "base_id": "SITHBOMBER",
+    "src": "/charui/tex.charui_b28extinctionclassbomber.png",
+    "faction": [
+      "ダークサイド",
+      "シス",
+      "シス帝国"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "pilot": "シス・マローダー"
+  },
+  {
+    "name": "TIEサイレンサー",
+    "base_id": "TIESILENCER",
+    "src": "/charui/tex.charui_tie_silencer.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "カイロ・レン(マスクなし)"
+  },
+  {
+    "name": "TIEリーパー",
+    "base_id": "TIEREAPER",
+    "src": "/charui/tex.charui_tiereaper.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "デス・トルーパー"
+  },
+  {
+    "name": "ビスタンのUウイング",
+    "base_id": "UWINGSCARIF",
+    "src": "/charui/tex.charui_uwing.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "ローグ・ワン"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "ビスタン"
+  },
+  {
+    "name": "リヴァイアサン",
+    "base_id": "CAPITALLEVIATHAN",
+    "src": "/charui/tex.charui_leviathan.png",
+    "faction": [
+      "ダークサイド",
+      "シス",
+      "シス帝国"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "ダース・レヴァン"
+  },
+  {
+    "name": "ガントレット・スターファイター",
+    "base_id": "GAUNTLETSTARFIGHTER",
+    "src": "/charui/tex.charui_gauntlet.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "ガー・サクソン"
+  },
+  {
+    "name": "バルチャー・ドロイド",
+    "base_id": "VULTUREDROID",
+    "src": "/charui/tex.charui_vulturedroid.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ドロイド"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": ""
+  },
+  {
+    "name": "エンデュアランス",
+    "base_id": "CAPITALJEDICRUISER",
+    "src": "/charui/tex.charui_venator.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "メイス・ウィンドゥ"
+  },
+  {
+    "name": "ラダス",
+    "base_id": "CAPITALRADDUS",
+    "src": "/charui/tex.charui_raddus.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "アミリン・ホルド"
+  },
+  {
+    "name": "レックスのARC-170",
+    "base_id": "ARC170REX",
+    "src": "/charui/tex.charui_arc170_02.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "クローン・トルーパー"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "pilot": "CT-7567 “レックス”"
+  },
+  {
+    "name": "IG-2000",
+    "base_id": "IG2000",
+    "src": "/charui/tex.charui_ig2000.png",
+    "faction": [
+      "ダークサイド",
+      "賞金稼ぎ",
+      "ならず者",
+      "ドロイド"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "IG-88"
+  },
+  {
+    "name": "プロファンディティ",
+    "base_id": "CAPITALPROFUNDITY",
+    "src": "/charui/tex.charui_profundity.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "ラダス提督"
+  },
+  {
+    "name": "BTL-B Yウイング・スターファイター",
+    "base_id": "YWINGCLONEWARS",
+    "src": "/charui/tex.charui_ywing_btlb.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": ""
+  },
+  {
+    "name": "TIEダガー",
+    "base_id": "TIEDAGGER",
+    "src": "/charui/tex.charui_tiedagger.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー",
+      "シス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "シス・トルーパー"
+  },
+  {
+    "name": "カマパンス",
+    "base_id": "COMEUPPANCE",
+    "src": "/charui/tex.charui_comeuppance.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス",
+      "ならず者"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "ゾリ・ブリス"
+  },
+  {
+    "name": "ホーム・ワン",
+    "base_id": "CAPITALMONCALAMARICRUISER",
+    "src": "/charui/tex.charui_moncalamarilibertycruiser.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "アクバー提督"
+  },
+  {
+    "name": "ファースト・オーダー特殊部隊TIEファイター",
+    "base_id": "TIEFIGHTERFOSF",
+    "src": "/charui/tex.charui_fosf_tie_fighter.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ファースト・オーダー特殊部隊TIEパイロット"
+  },
+  {
+    "name": "ランドのミレニアム・ファルコン",
+    "base_id": "MILLENNIUMFALCONPRISTINE",
+    "src": "/charui/tex.charui_mil_fal_pristine.png",
+    "faction": [
+      "ライトサイド",
+      "ならず者"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ヤング・ランド・カルリジアン"
+  },
+  {
+    "name": "ポー・ダメロンのXウイング",
+    "base_id": "XWINGBLACKONE",
+    "src": "/charui/tex.charui_xwing_blackone.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ポー・ダメロン"
+  },
+  {
+    "name": "マローダー",
+    "base_id": "MARAUDER",
+    "src": "/charui/tex.charui_marauder.png",
+    "faction": [
+      "ライトサイド",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "テック"
+  },
+  {
+    "name": "TIEアドバンストX1",
+    "base_id": "TIEADVANCED",
+    "src": "/charui/tex.charui_tieadvanced.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍",
+      "シス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ダース・ベイダー"
+  },
+  {
+    "name": "TIEディフェンダー",
+    "base_id": "TIEDEFENDER",
+    "src": "/charui/tex.charui_tiedefender.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "アイデン・ヴェルシオ"
+  },
+  {
+    "name": "ファントムII",
+    "base_id": "PHANTOM2",
+    "src": "/charui/tex.charui_phantom2.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "フェニックス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "サビーヌ・レン"
+  },
+  {
+    "name": "帝国軍TIEボマー",
+    "base_id": "TIEBOMBERIMPERIAL",
+    "src": "/charui/tex.charui_tiebomber.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": ""
+  },
+  {
+    "name": "アナキンのEta-2スターファイター",
+    "base_id": "JEDISTARFIGHTERANAKIN",
+    "src": "/charui/tex.charui_jedi_fighter_anakin.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ジェダイ・ナイト・アナキン"
+  },
+  {
+    "name": "ゴースト",
+    "base_id": "GHOST",
+    "src": "/charui/tex.charui_ghost.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "フェニックス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ヘラ・シンドゥーラ"
+  },
+  {
+    "name": "ハンのミレニアム・ファルコン",
+    "base_id": "MILLENNIUMFALCON",
+    "src": "/charui/tex.charui_mfalcon.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "ならず者"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ハン・ソロ"
+  },
+  {
+    "name": "エグゼキュートリクス",
+    "base_id": "CAPITALSTARDESTROYER",
+    "src": "/charui/tex.charui_stardestroyer.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "グランドモフ・ターキン"
+  },
+  {
+    "name": "レイヴンズ・クロウ",
+    "base_id": "RAVENSCLAW",
+    "src": "/charui/tex.charui_ravensclaw.png",
+    "faction": [
+      "ライトサイド",
+      "ジェダイ",
+      "反乱軍"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "カイル・カターン"
+  },
+  {
+    "name": "ウェッジ・アンティリーズのXウイング",
+    "base_id": "XWINGRED2",
+    "src": "/charui/tex.charui_xwing_red2.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ウェッジ・アンティリーズ"
+  },
+  {
+    "name": "ハイエナ・ボマー",
+    "base_id": "HYENABOMBER",
+    "src": "/charui/tex.charui_hyenabomber.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ドロイド"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": ""
+  },
+  {
+    "name": "ビッグズ・ダークライターのXウイング",
+    "base_id": "XWINGRED3",
+    "src": "/charui/tex.charui_xwing_red3.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "pilot": "ビッグズ・ダークライター"
+  },
+  {
+    "name": "レイザークレスト",
+    "base_id": "RAZORCREST",
+    "src": "/charui/tex.charui_razorcrest.png",
+    "faction": [
+      "ライトサイド",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "マンダロリアン(ベスカー・アーマー)"
+  },
+  {
+    "name": "MG-100スターフォートレスSF-17",
+    "base_id": "MG100STARFORTRESSSF17",
+    "src": "/charui/tex.charui_mg100.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "pilot": "ローズ・ティコ"
+  },
+  {
+    "name": "ラダス",
+    "base_id": "CAPITALRADDUS_EVENT",
+    "src": "/charui/tex.charui_raddus.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "AMILYNHOLDO_RADDUS"
+  },
+  {
+    "name": "エボン・ホーク",
+    "base_id": "EBONHAWK",
+    "src": "/charui/tex.charui_ebonhawk.png",
+    "faction": [
+      "ライトサイド",
+      "旧共和国"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "カース・オナシ"
+  },
+  {
+    "name": "レイのミレニアム・ファルコン",
+    "base_id": "MILLENNIUMFALCONEP7",
+    "src": "/charui/tex.charui_mfalcon_ep7.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "レイ"
+  },
+  {
+    "name": "デヴァステーター",
+    "base_id": "FOTF_DEVASTATOR",
+    "src": "/charui/tex.charui_stardestroyer_vader.png",
+    "faction": [
+      "帝国軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "FOTF_VADER"
+  },
+  {
+    "name": "ファイナライザー",
+    "base_id": "CAPITALFINALIZER",
+    "src": "/charui/tex.charui_finalizer.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "ハックス将軍"
+  },
+  {
+    "name": "ローグ・ワン",
+    "base_id": "ROGUEONESHIP",
+    "src": "/charui/tex.charui_rogueoneship.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "ローグ・ワン"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "ボーディー・ルック"
+  },
+  {
+    "name": "プロ・クーンのジェダイ・スターファイター",
+    "base_id": "BLADEOFDORIN",
+    "src": "/charui/tex.charui_jedi_fighter_bladeofdorin.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "プロ・クーン"
+  },
+  {
+    "name": "ファイナライザー",
+    "base_id": "CAPITALFINALIZER_EVENT",
+    "src": "/charui/tex.charui_finalizer.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "GENERALHUX_EVENT"
+  },
+  {
+    "name": "帝国軍TIEファイター",
+    "base_id": "TIEFIGHTERIMPERIAL",
+    "src": "/charui/tex.charui_tiefighter.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "TIEファイター・パイロット"
+  },
+  {
+    "name": "TIEエシュロン",
+    "base_id": "FIRSTORDERTIEECHELON",
+    "src": "/charui/tex.charui_firstordertieechelon.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "pilot": "ファースト・オーダー・オフィサー"
+  },
+  {
+    "name": "TIE/INインターセプタープロトタイプ",
+    "base_id": "TIEINTERCEPTOR",
+    "src": "/charui/tex.charui_tie_interceptor_prototype.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "セカンド・シスター"
+  },
+  {
+    "name": "キャシアンのUウイング",
+    "base_id": "UWINGROGUEONE",
+    "src": "/charui/tex.charui_uwing_hero.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "ローグ・ワン"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "キャシアン・アンドー"
+  },
+  {
+    "name": "反乱軍Yウイング",
+    "base_id": "YWINGREBEL",
+    "src": "/charui/tex.charui_ywing.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": ""
+  },
+  {
+    "name": "GR-75",
+    "base_id": "JKL_GR75",
+    "src": "/charui/tex.charui_gr75.png",
+    "faction": [
+      "反乱軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "JKL_PILOT"
+  },
+  {
+    "name": "スレーヴI",
+    "base_id": "SLAVE1",
+    "src": "/charui/tex.charui_slave1.png",
+    "faction": [
+      "ダークサイド",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "ボバ・フェット"
+  },
+  {
+    "name": "バルチャー・ドロイド",
+    "base_id": "VULTUREDROID_tb",
+    "src": "/charui/tex.charui_vulturedroid.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ドロイド"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": ""
+  },
+  {
+    "name": "カイロ・レンのコマンド・シャトル",
+    "base_id": "COMMANDSHUTTLE",
+    "src": "/charui/tex.charui_upsilon_shuttle_kylo.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "カイロ・レン"
+  },
+  {
+    "name": "エグゼクター",
+    "base_id": "CAPITALEXECUTOR",
+    "src": "/charui/tex.charui_executor.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "pilot": "ピエット提督"
+  },
+  {
+    "name": "アソーカ・タノのジェダイ・スターファイター",
+    "base_id": "JEDISTARFIGHTERAHSOKATANO",
+    "src": "/charui/tex.charui_jedi_fighter_ahsoka.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "pilot": "アソーカ・タノ"
+  },
+  {
+    "name": "シミター",
+    "base_id": "SITHINFILTRATOR",
+    "src": "/charui/tex.charui_sithinfiltrator.png",
+    "faction": [
+      "ダークサイド",
+      "シス"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "pilot": "ダース・モール"
+  },
+  {
+    "name": "アンバラン・スターファイター",
+    "base_id": "UMBARANSTARFIGHTER",
+    "src": "/charui/tex.charui_umbaran_star_fighter.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "クローン・トルーパー"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "pilot": "CT-5555 “ファイブス”"
+  }
+]

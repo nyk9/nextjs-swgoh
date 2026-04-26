@@ -6,6 +6,7 @@ export type Characters = {
   abbreviation: string;
   skill: Skills[];
   url: string;
+  is_event_variant?: boolean;
 };
 
 export type Property =

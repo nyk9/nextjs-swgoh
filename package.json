@@ -9,7 +9,9 @@
     "generate": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "extract-aliases": "bun run scripts/extract-aliases.ts",
+    "sync:units": "bun --max-old-space-size=4096 run scripts/sync-units.ts"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.64",
