@@ -16,7 +16,7 @@ const nextConfig = {
     return [
       {
         source: "/character/:baseId*",
-        destination: "/characters",
+        destination: "/characters/:baseId*",
         permanent: true,
       },
     ];
