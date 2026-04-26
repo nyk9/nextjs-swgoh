@@ -1,18 +1,20 @@
 import { BBCodeText } from "@/components/elements/BBCodeText";
-import { Abilities } from "@/types/abilities/abilities";
+import abilitiesRaw from "@/data/.generated/abilities.json";
+import { Abilities, CharacterAbilities } from "@/types/abilities/abilities";
+import fs from "node:fs";
 import Image from "next/image";
+import path from "node:path";
+
+const abilitiesPath = path.join(
+  process.cwd(),
+  "src/data/.generated/abilities.json",
+);
+const lastUpdated = fs.statSync(abilitiesPath).mtime.toISOString();
+const data: CharacterAbilities[] = (
+  abilitiesRaw as Omit<CharacterAbilities, "last_updated">[]
+).map((a) => ({ ...a, last_updated: lastUpdated }));
 
 export default async function CharacterSkills(params: { url: string }) {
-  const apilink: string = "https://swgoh4jp.com/api/characterAbilities";
-  const res: globalThis.Response = await fetch(apilink, {
-    next: {
-      revalidate: 3 * 60 * 60,
-    },
-  });
-  if (!res.ok) {
-    throw new Error("Error!!!");
-  }
-  const data = await res.json();
   let abilityIndex: number = -1;
   for (let i: number = 0; i < data.length; i++) {
     if (data[i].id === params.url) {
