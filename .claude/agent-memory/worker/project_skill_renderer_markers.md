@@ -1,18 +1,15 @@
 ---
-name: skill description marker convention
-description: characterAbilities の description_jp が使う色マーカーは「単一文字」。コメントのドキュメントは古い。
+name: skill description renderer (BBCode raw)
+description: characterSkills は description_jp の Comlink BBCode を BBCodeText でレンダリングする。レガシーの `*$#+` 単一文字マーカー時代の自前パーサは Step 4 で全廃した。
 type: project
 ---
 
-`src/components/elements/characterSkills/characterSkills.tsx` がスキル説明文を描画する際のマーカー仕様（実装が真実）:
+`src/components/elements/characterSkills/characterSkills.tsx` のレンダリング方針（Step 4 / 2026-04-26 完了）:
 
-- `>` （単一）→ 改行
-- `*foo*` → 黄色（キーワード強調）
-- `#foo#` → オレンジ（アルティメットチャージ）
-- `$foo$` → 太字+大きめ（オミクロン条件見出し）
-- `+foo+` → 薄水色（役割など）
+- description_jp は Comlink JPN locale の **BBCode raw text**（`[c][HEXHEX]...[-][/c]`, `[b]...[/b]`, リテラル `\n`）を保存している
+- 表示は `src/components/elements/BBCodeText.tsx` がフルカバー
+- 旧データ時代の単一文字マーカー（`*foo*` 黄色 / `#foo#` オレンジ / `$foo$` 太字 / `+foo+` 薄水色 / `>` 改行）を split で再帰処理する 200 行の自前パーサは削除済み
+- Step 4 以降に generated/abilities.json へ自前マーカーを書き戻すと表示が壊れる
 
-`src/data/characterAbilities.ts` の冒頭コメントは「`**` `##` `$$` `++` 等の **2 文字** マーカー」を謳っているが、レンダラ実装と既存データはどちらも **単一文字**。古い手書きコメントなので信用しない。
-
-**Why:** Comlink からの BBCode (`[c][F0FF23]...[-][/c]`, `[b]...[/b]`, `\n`) を変換するときに 2 文字マーカーを使うと表示崩れする。
-**How to apply:** sync スクリプトの markdownConverter / 説明文を扱う新規コードでは必ず単一文字マーカーで出力すること。
+**Why:** Step 3 で description_jp は BBCode raw 保存に切り替わった（feedback `bbcode_raw_storage` 参照）。BBCodeText は `[c][HEX]` / `[b]` / `\n` / リテラル `\\n` を表現できるので、自前マーカーは不要になった。
+**How to apply:** description 表示を変更するときは BBCodeText API（parseBBCode + renderNodes）を拡張する。新しい色味を出したい場合は Comlink 側で `[c][HEX]...[-][/c]` を吐かせるか、別途 markdown converter を sync 側に追加する（ページ側で再パースしない）。

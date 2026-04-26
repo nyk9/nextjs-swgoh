@@ -1,10 +1,14 @@
 import type { MetadataRoute } from "next";
-import characters from "@/data/characters";
+import units from "@/data/.generated/units.json";
+import type { Characters } from "@/types/characters/characters";
 
 const BASE_URL = "https://swgoh4jp.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  const characters = (units as Characters[]).filter(
+    (c) => c.is_event_variant !== true,
+  );
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {

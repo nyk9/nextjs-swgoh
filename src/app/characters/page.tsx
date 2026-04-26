@@ -7,7 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useMemo } from "react";
 import { IoCloseOutline } from "react-icons/io5";
-import characters from "../../data/characters";
+import unitsRaw from "@/data/.generated/units.json";
+import type { Characters } from "@/types/characters/characters";
 import {
   useButtonVisibility,
   usePropertyChange,
@@ -15,6 +16,10 @@ import {
   useSearchTerm,
   useSkillChange,
 } from "../../hooks/serchFilter";
+
+const characters = (unitsRaw as Characters[]).filter(
+  (c) => c.is_event_variant !== true,
+);
 
 const CORE_PROPERTIES = [
   "ライトサイド",

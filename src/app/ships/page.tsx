@@ -11,7 +11,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
-import ships from "../../data/ships";
+import shipsRaw from "@/data/.generated/ships.json";
+import type { Ship } from "@/types/ships/ships";
+
+const ships = shipsRaw as Ship[];
 
 type FilterTab = "faction" | "role";
 

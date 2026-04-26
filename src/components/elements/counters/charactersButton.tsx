@@ -1,5 +1,10 @@
-import characters from "@/data/characters";
+import unitsRaw from "@/data/.generated/units.json";
+import type { Characters } from "@/types/characters/characters";
 import { Input } from "@/components/ui/input";
+
+const characters = (unitsRaw as Characters[]).filter(
+  (c) => c.is_event_variant !== true,
+);
 import {
   DropdownMenu,
   DropdownMenuContent,

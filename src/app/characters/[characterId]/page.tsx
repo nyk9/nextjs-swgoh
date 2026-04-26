@@ -1,10 +1,14 @@
 import CharacterSkills from "@/components/elements/characterSkills/characterSkills";
-import characters from "@/data/characters";
+import unitsRaw from "@/data/.generated/units.json";
 import type { Characters } from "@/types/characters/characters";
 import type { Metadata } from "next";
 import Link from "next/link";
 
 const SITE_URL = "https://swgoh4jp.com";
+
+const characters = (unitsRaw as Characters[]).filter(
+  (c) => c.is_event_variant !== true,
+);
 
 function extractSlug(character: Characters): string {
   return (character.url ?? "")
