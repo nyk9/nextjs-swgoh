@@ -11,9 +11,9 @@
  *   再エクスポートされている型に依存できないので、ランタイムで全候補値の配列を渡す。
  *   呼び出し側で型互換を担保すること。
  *
- * - マッチが 0 件だった場合は `console.warn` し、呼び出し側で
- *   `unknown-tags.md` の "Skills with no matched tags" セクションに積めるよう
- *   `matchCount` を返す。
+ * - マッチ件数は `matchCount` として返し、呼び出し側で
+ *   0 件判定や `unknown-tags.md` の "Skills with no matched tags"
+ *   セクションへの集約に利用できるようにする。
  */
 
 import type { Skills } from "@/types/characters/characters";
