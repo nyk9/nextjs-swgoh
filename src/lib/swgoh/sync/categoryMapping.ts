@@ -143,8 +143,9 @@ export function mapCategoryIds(
       continue;
     }
 
-    // 3. unknown 候補を絞り込み: 役割系・派閥系の ID だけ報告対象にし、
-    //    selftag_* / any_* / conq_* / release_* / reduced_* 等のノイズは無視する。
+    // 3. unknown 候補を絞り込み: `alignment_` / `role_` / `affiliation_` に加え、
+    //    現状は `species_` / `profession_` も報告対象とする。
+    //    `selftag_*` / `any_*` / `conq_*` / `release_*` / `reduced_*` 等のノイズは無視する。
     if (isReportableUnknown(id)) {
       unknown.push(id);
     }
