@@ -44,10 +44,20 @@ Vercel の利用規約上、**Pro プラン（$20/月）に加入するまで収
 - [x] Google Search Console verification 設定（`layout.tsx` の `verification.google`）→ プロパティ登録は GSC 上で別途実施
 - [x] Phase 0: 旧 `/character/[baseId]/page.tsx` を削除（`/characters/[characterId]` に統合済み）
 - [x] Phase 0: `/api/page.tsx`（typo）を削除
+- [x] Phase 0: AI API レート制限（`src/lib/rateLimit.ts`、Vercel Redis、IP あたり 5 req / 24h）
 - [x] Phase 2: 旧 `/character/:id*` → 新 `/characters/:id*` の 301 リダイレクト（next.config.js）
-- [ ] Phase 2: `/`, `/characters`, `/ships` を server shell + client child に分離して SSR 強化
+- [x] Phase 2: `/`, `/characters`, `/ships` を server shell + client child に分離して SSR 強化（2026-05-03 完了）
+  - 一覧 2 ページは `?q=` / `?factions=`,`?roles=` / `?properties=`,`?skills=` の URL クエリ駆動。シェア可能・リロード復元可
+  - 共通基盤: `src/hooks/useUrlFilterState.ts`（`useUrlString` / `useUrlList` / `useUrlReset`）
+  - 既存の未エスケープ regex（`serchFilter.ts` の ReDoS）は `normalize+includes` への置換で根本除去
+- [ ] Phase 2: `/ships/[shipId]` 詳細ページ新規実装（潜在 +53 URL、`/characters/[characterId]` と共通の unit-detail コンポーネント化）
 - [ ] Phase 3: MDX ガイド記事でロングテール獲得（`/guides/[slug]`）
 - [ ] OGP 画像の日本語表示（Noto Sans JP の OTF/TTF を埋め込み、現在は Latin のみ）
+
+### SSR 化メモ（2026-05-03）
+- 一覧ページは Suspense でラップして `useSearchParams()` を使用 → 静的事前レンダリング（○ Static）が維持される
+- 初期 HTML には全件（is_event_variant 除外後の通常キャラ全 276 件 + 全艦船 75 件）が含まれる。クエリ付きアクセスでは hydration 後にクライアント側でフィルタ適用（軽い flicker は SEO 優先のトレードオフとして許容）
+- canonical は `/characters` / `/ships`（クエリ無し）に固定。フィルタ URL は重複インデックス防止のため Google には集約される設計
 
 > **メモ**: `Noto_Sans_JP` の `subsets` を `"japanese"` に変更するタスクは取り下げ。next/font/google の font-data.json では Noto Sans JP に `cyrillic / latin / latin-ext / vietnamese` しか定義されておらず、`"japanese"` を渡すとビルドエラーになる。日本語グリフは `unicode-range` 経由で動的に読み込まれるため `subsets: ["latin"]` + `preload: false` で問題なし。
 
@@ -100,10 +110,18 @@ scripts/
 └── sync-units.ts               # Comlink → .generated/*.json 生成（bun run sync:units）
 src/
 ├── app/
-│   ├── page.tsx                    # ホームページ（ナビゲーションカード一覧）
+│   ├── page.tsx                    # ホームページ（server component）
 │   ├── about/                      # About ページ
 │   ├── characters/                 # キャラクター一覧・詳細
-│   ├── TWCounters/                 # TW カウンター（Prisma DB 参照）
+│   │   ├── page.tsx                # server component（is_event_variant 除外して全件渡す）
+│   │   ├── _components/
+│   │   │   └── CharactersListClient.tsx  # URL クエリ駆動フィルタ UI
+│   │   └── [characterId]/page.tsx  # SSG（generateStaticParams + generateMetadata）
+│   ├── ships/                      # 艦船一覧
+│   │   ├── page.tsx                # server component
+│   │   └── _components/
+│   │       └── ShipsListClient.tsx # URL クエリ駆動フィルタ UI
+│   ├── TWCounters/                 # TW カウンター（Prisma DB 参照、force-dynamic）
 │   ├── advisor/                    # AI 育成アドバイザー（チャット UI）
 │   └── api/
 │       ├── characters/             # キャラクターデータ API
@@ -111,8 +129,8 @@ src/
 │       ├── counters/               # カウンターデータ API
 │       ├── swgohgg/                # swgoh.gg データ取得 API（未使用、削除予定）
 │       └── advice/
-│           ├── player/             # GET ?allycode=xxx → プレイヤーデータ
-│           └── chat/               # POST → AI チャット
+│           ├── player/             # GET ?allycode=xxx → プレイヤーデータ（rate limited）
+│           └── chat/               # POST → AI チャット（rate limited）
 ├── components/elements/
 │   └── BBCodeText.tsx              # BBCode → JSX レンダラ（[b][c][COLOR][\n] 対応）
 ├── data/
@@ -121,8 +139,15 @@ src/
 │       ├── units.json              # キャラ 430 件（is_event_variant フラグ付き）
 │       ├── ships.json              # 艦船 75 件
 │       └── abilities.json          # アビリティ 430 件（スキル計 1,807）
+├── features/
+│   └── shiplist/
+│       ├── filterShips.ts          # 純粋なフィルタ関数（normalize+includes）
+│       └── constants/              # SHIP_FACTIONS / SHIP_ROLES 等
+├── hooks/
+│   └── useUrlFilterState.ts        # searchParams ↔ state の双方向同期 hook
 └── lib/
     ├── prisma/prismaClient.ts      # Prisma シングルトン
+    ├── rateLimit.ts                # Vercel Redis ベースの IP 制限（advice 系で使用）
     └── swgoh/                      # SWGoH コアロジック
         ├── comlink/                # Comlink HTTP クライアント・型・整形
         │   ├── client.ts           # /player /guild（アドバイザー用、変更禁止）
