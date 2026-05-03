@@ -1,8 +1,9 @@
-"use client";
-
 import Link from "next/link";
-import { useMemo } from "react";
 import updates, { Updates } from "../features/mainpages/constant/update";
+
+const LATEST_UPDATES: Updates[] = [...updates]
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  .slice(0, 3);
 
 const NAV_ITEMS = [
   {
@@ -65,14 +66,6 @@ function UpdateCard({ item }: { item: Updates }) {
 }
 
 export default function Home() {
-  const allUpdates: Updates[] = updates;
-
-  const latestUpdates = useMemo(() => {
-    return [...allUpdates]
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-      .slice(0, 3);
-  }, [allUpdates]);
-
   return (
     <main className="relative min-h-screen overflow-hidden bg-[hsl(220,16%,6%)] text-white">
       {/* Background layers */}
@@ -199,7 +192,7 @@ export default function Home() {
             </span>
           </div>
           <ul className="grid gap-3 md:grid-cols-3">
-            {latestUpdates.map((u) => (
+            {LATEST_UPDATES.map((u) => (
               <UpdateCard key={`${u.ver}-${u.date}`} item={u} />
             ))}
           </ul>
