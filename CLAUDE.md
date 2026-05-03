@@ -31,7 +31,7 @@ Vercel の利用規約上、**Pro プラン（$20/月）に加入するまで収
 - デバイス: Windows 50%以上（デスクトップ中心）
 
 ### SEO 基礎工事（Phase 1 完了 @ 2026-04-23）
-- [x] `src/app/sitemap.ts`（/sitemap.xml 自動生成、静的7件 + 276キャラ）
+- [x] `src/app/sitemap.ts`（/sitemap.xml 自動生成、静的7件 + キャラ詳細 + 艦船詳細）
 - [x] `src/app/robots.ts`（/api/* を Disallow、Sitemap 指定）
 - [x] 全ページに `metadata`（title / description / OGP / canonical）
   - `"use client"` ページは `layout.tsx` に metadata を定義（characters / ships / advisor / TWCounters）
@@ -50,13 +50,18 @@ Vercel の利用規約上、**Pro プラン（$20/月）に加入するまで収
   - 一覧 2 ページは `?q=` / `?factions=`,`?roles=` / `?properties=`,`?skills=` の URL クエリ駆動。シェア可能・リロード復元可
   - 共通基盤: `src/hooks/useUrlFilterState.ts`（`useUrlString` / `useUrlList` / `useUrlReset`）
   - 既存の未エスケープ regex（`serchFilter.ts` の ReDoS）は `normalize+includes` への置換で根本除去
-- [ ] Phase 2: `/ships/[shipId]` 詳細ページ新規実装（潜在 +53 URL、`/characters/[characterId]` と共通の unit-detail コンポーネント化）
+- [x] Phase 2: `/ships/[shipId]` 詳細ページ新規実装（2026-05-03 完了、+72 URL）
+  - `src/components/unit-detail/UnitDetail.tsx` をキャラ・艦船共通の Server Component として新設、旧 `characterSkills.tsx` は削除
+  - `sync-units.ts` を拡張し `Ship` に `description_jp` / `crew_base_ids` / `url` / `is_event_variant` を、新規 `ship_abilities.json` を出力
+  - `ShipCard` を `<Link>` で詳細ページに接続、sitemap に shipRoutes を追加
+  - 詳細ページで乗員 → キャラ詳細への内部リンクを生成（艦船 → キャラの片方向のみ）
 - [ ] Phase 3: MDX ガイド記事でロングテール獲得（`/guides/[slug]`）
 - [ ] OGP 画像の日本語表示（Noto Sans JP の OTF/TTF を埋め込み、現在は Latin のみ）
+- [ ] Privacy policy に AdSense Cookie 文言追加（Phase 4 申請前まで）
 
 ### SSR 化メモ（2026-05-03）
 - 一覧ページは Suspense でラップして `useSearchParams()` を使用 → 静的事前レンダリング（○ Static）が維持される
-- 初期 HTML には全件（is_event_variant 除外後の通常キャラ全 276 件 + 全艦船 75 件）が含まれる。クエリ付きアクセスでは hydration 後にクライアント側でフィルタ適用（軽い flicker は SEO 優先のトレードオフとして許容）
+- 初期 HTML には全件（is_event_variant 除外後の通常キャラ・艦船すべて）が含まれる。クエリ付きアクセスでは hydration 後にクライアント側でフィルタ適用（軽い flicker は SEO 優先のトレードオフとして許容）
 - canonical は `/characters` / `/ships`（クエリ無し）に固定。フィルタ URL は重複インデックス防止のため Google には集約される設計
 
 > **メモ**: `Noto_Sans_JP` の `subsets` を `"japanese"` に変更するタスクは取り下げ。next/font/google の font-data.json では Noto Sans JP に `cyrillic / latin / latin-ext / vietnamese` しか定義されておらず、`"japanese"` を渡すとビルドエラーになる。日本語グリフは `unicode-range` 経由で動的に読み込まれるため `subsets: ["latin"]` + `preload: false` で問題なし。
@@ -116,11 +121,12 @@ src/
 │   │   ├── page.tsx                # server component（is_event_variant 除外して全件渡す）
 │   │   ├── _components/
 │   │   │   └── CharactersListClient.tsx  # URL クエリ駆動フィルタ UI
-│   │   └── [characterId]/page.tsx  # SSG（generateStaticParams + generateMetadata）
-│   ├── ships/                      # 艦船一覧
+│   │   └── [characterId]/page.tsx  # SSG（generateStaticParams + UnitDetail 利用）
+│   ├── ships/                      # 艦船一覧・詳細
 │   │   ├── page.tsx                # server component
-│   │   └── _components/
-│   │       └── ShipsListClient.tsx # URL クエリ駆動フィルタ UI
+│   │   ├── _components/
+│   │   │   └── ShipsListClient.tsx # URL クエリ駆動フィルタ UI、ShipCard を Link 化
+│   │   └── [shipId]/page.tsx       # SSG（base_id 小文字 slug、UnitDetail + 乗員リンク）
 │   ├── TWCounters/                 # TW カウンター（Prisma DB 参照、force-dynamic）
 │   ├── advisor/                    # AI 育成アドバイザー（チャット UI）
 │   └── api/
@@ -131,14 +137,18 @@ src/
 │       └── advice/
 │           ├── player/             # GET ?allycode=xxx → プレイヤーデータ（rate limited）
 │           └── chat/               # POST → AI チャット（rate limited）
-├── components/elements/
-│   └── BBCodeText.tsx              # BBCode → JSX レンダラ（[b][c][COLOR][\n] 対応）
+├── components/
+│   ├── elements/
+│   │   └── BBCodeText.tsx          # BBCode → JSX レンダラ（[b][c][COLOR][\n] 対応）
+│   └── unit-detail/
+│       └── UnitDetail.tsx          # キャラ・艦船共通の詳細描画 Server Component
 ├── data/
-│   ├── aliases.ts                  # 手書き abbreviation / url_slug（sync で上書きされない）
+│   ├── aliases.ts                  # 手書き abbreviation / url_slug（キャラ用、sync で上書きされない）
 │   └── .generated/                 # sync-units.ts が生成（コミット対象）
-│       ├── units.json              # キャラ 430 件（is_event_variant フラグ付き）
-│       ├── ships.json              # 艦船 75 件
-│       └── abilities.json          # アビリティ 430 件（スキル計 1,807）
+│       ├── units.json              # キャラ（is_event_variant フラグ付き）
+│       ├── ships.json              # 艦船（is_event_variant フラグ付き、url は base_id 小文字）
+│       ├── abilities.json          # キャラスキル
+│       └── ship_abilities.json     # 艦船スキル（base_id をキー）
 ├── features/
 │   └── shiplist/
 │       ├── filterShips.ts          # 純粋なフィルタ関数（normalize+includes）
@@ -256,8 +266,8 @@ COMLINK_URL=http://localhost:5001 bun run sync:units
 
 ### is_event_variant フラグ
 
-- `_EVENT` / `_INHERIT` / `_RAID` / `_GLE_` 等のサフィックスを持つバリアント 78 件に `is_event_variant: true` を付与
-- ページ側で `is_event_variant !== true` でフィルタして通常キャラのみ表示する
+- `_EVENT` / `_INHERIT` / `_RAID` / `_GLE_` 等のサフィックスを持つバリアントに `is_event_variant: true` を付与（キャラ・艦船とも適用）
+- 一覧ページ・sitemap・`generateStaticParams` で `is_event_variant !== true` フィルタを掛けて通常キャラ／艦船のみ公開する
 
 ### 既知の制約
 
