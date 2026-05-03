@@ -17,6 +17,7 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | `role_capital` | 15 |
 | `profession_clonetrooper_ls` | 14 |
 | `profession_pirate` | 14 |
+| `affiliation_newrepublic` | 12 |
 | `affiliation_501st_clone` | 11 |
 | `affiliation_sithlord` | 11 |
 | `affiliation_leias` | 10 |
@@ -36,6 +37,7 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | `affiliation_vaders` | 6 |
 | `affiliation_212th` | 5 |
 | `affiliation_reys` | 5 |
+| `profession_constable` | 5 |
 | `profession_translator` | 5 |
 | `species_jawa` | 5 |
 | `affiliation_ahsokas` | 4 |
@@ -43,7 +45,6 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | `affiliation_kylos` | 4 |
 | `affiliation_prisfalconcrew` | 4 |
 | `affiliation_resfalconcrew` | 4 |
-| `profession_constable` | 4 |
 | `affiliation_asajj` | 3 |
 | `affiliation_bobafetts` | 3 |
 | `affiliation_el16` | 3 |
@@ -110,6 +111,12 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | AMILYNHOLDO_RADDUS | バンカーバスター (特殊スキル) |
 | APPO | 帝国軍の行進 (通常スキル) |
 | APPO | ベイダーズ・フィスト (ユニークスキル) |
+| ARC170CLONESERGEANT | ウイング・キャノン (通常スキル) |
+| ARC170CLONESERGEANT | オーバーチャージ (特殊スキル) |
+| ARC170CLONESERGEANT | 構造強化 (付与スキル) |
+| ARC170REX | ヘアトリガー (通常スキル) |
+| ARC170REX | 準備万端 (ユニークスキル) |
+| ARC170REX | 誰も見捨てはしない (付与スキル) |
 | ARCTROOPER501ST | クロスファイア (通常スキル) |
 | ARCTROOPER501ST_GLE_INHERIT | クロスファイア (通常スキル) |
 | ASAJJDARKDISCIPLE | 迅速攻撃 (通常スキル) |
@@ -152,6 +159,9 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | BIGGSDARKLIGHTER | アドレナリンラッシュ (ユニークスキル) |
 | BISTAN | ガンナーの戦術 (特殊スキル) |
 | BISTAN | 奮起 (ユニークスキル) |
+| BLADEOFDORIN | コーディネート・アサルト (通常スキル) |
+| BLADEOFDORIN | 共和国の翼 (特殊スキル) |
+| BLADEOFDORIN | 第104大隊司令官 (付与スキル) |
 | BODHIROOK | 標的捕捉 (通常スキル) |
 | BOKATAN | クリップリング・ストライク (特殊スキル) |
 | BOOMADIER | グランド・アーミー・スペシャリスト (ユニークスキル) |
@@ -165,6 +175,10 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | BT1 | オーバーチャージ・レーザー (通常スキル) |
 | BT1 | 破壊工作 (特殊スキル) |
 | BT1 | 殺りくの相棒 (ユニークスキル) |
+| BWINGREBEL | ガーヒルR-9X重レーザー砲 (通常スキル) |
+| BWINGREBEL | ブロッケード・バスター (特殊スキル) |
+| BWINGREBEL | 戦術機動 (ユニークスキル) |
+| BWINGREBEL | コース維持 (付与スキル) |
 | C3POCHEWBACCA | フランティックショット (通常スキル) |
 | C3POLEGENDARY | 仲裁 (ユニークスキル) |
 | C3POLEGENDARY_JKL_EVENT | 仲裁 (ユニークスキル) |
@@ -175,6 +189,58 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | CALKESTIS | オーバーヘッド・スラッシュ (通常スキル) |
 | CALKESTIS | 俺はあきらめない (ユニークスキル) |
 | CANDEROUSORDO | エンドレスアサルト (通常スキル) |
+| CAPITALCHIMAERA | 戦術計算 (通常スキル) |
+| CAPITALCHIMAERA | 戦争術 (特殊スキル) |
+| CAPITALCHIMAERA | ファイロン社製07トラクター・ビーム (特殊スキル) |
+| CAPITALCHIMAERA | 熱き忠誠 (ユニークスキル) |
+| CAPITALEXECUTOR | 型破りな方法 (通常スキル) |
+| CAPITALEXECUTOR | ブリーチ・プロトコル (特殊スキル) |
+| CAPITALEXECUTOR | 敵の退路をふさいでいればよい (特殊スキル) |
+| CAPITALEXECUTOR | 何か特別な計画があるらしい (特殊スキル) |
+| CAPITALFINALIZER | 壊滅 (通常スキル) |
+| CAPITALFINALIZER | 制圧 (特殊スキル) |
+| CAPITALFINALIZER | 破壊 (特殊スキル) |
+| CAPITALFINALIZER | 希望の消滅 (特殊スキル) |
+| CAPITALFINALIZER_EVENT | 壊滅 (通常スキル) |
+| CAPITALFINALIZER_EVENT | 制圧 (特殊スキル) |
+| CAPITALFINALIZER_EVENT | 破壊 (特殊スキル) |
+| CAPITALFINALIZER_EVENT | 希望の消滅 (特殊スキル) |
+| CAPITALJEDICRUISER | ストライク・トゥルー (通常スキル) |
+| CAPITALJEDICRUISER | 固守 (特殊スキル) |
+| CAPITALJEDICRUISER | 運命は勇者に味方する (特殊スキル) |
+| CAPITALJEDICRUISER | 栄誉と力 (ユニークスキル) |
+| CAPITALLEVIATHAN | 破滅の一斉攻撃 (通常スキル) |
+| CAPITALLEVIATHAN | ハンガー破壊工作 (特殊スキル) |
+| CAPITALLEVIATHAN | エンジン破壊工作 (特殊スキル) |
+| CAPITALLEVIATHAN | ブリッジ制圧 (特殊スキル) |
+| CAPITALMALEVOLENCE | 撃て！ (通常スキル) |
+| CAPITALMALEVOLENCE | チャージング・マレボランス (特殊スキル) |
+| CAPITALMALEVOLENCE | 全キャノン発射！ (特殊スキル) |
+| CAPITALMALEVOLENCE | イオン・キャノン発射！ (特殊スキル) |
+| CAPITALMONCALAMARICRUISER | モン・カル・キャノン (通常スキル) |
+| CAPITALMONCALAMARICRUISER | アドバンテージ確保 (特殊スキル) |
+| CAPITALMONCALAMARICRUISER | 反抗の一斉射撃 (特殊スキル) |
+| CAPITALMONCALAMARICRUISER | マスタープラン (特殊スキル) |
+| CAPITALNEGOTIATOR | 絶妙なタイミング (通常スキル) |
+| CAPITALNEGOTIATOR | 共和国の保護 (特殊スキル) |
+| CAPITALNEGOTIATOR | 動員 (特殊スキル) |
+| CAPITALNEGOTIATOR | Yウイングアサルト (特殊スキル) |
+| CAPITALPROFUNDITY | もう引き返せない (通常スキル) |
+| CAPITALPROFUNDITY | 型破りな機動作戦 (特殊スキル) |
+| CAPITALPROFUNDITY | 反乱軍艦隊到着 (特殊スキル) |
+| CAPITALPROFUNDITY | 提督、設計図を入手した (特殊スキル) |
+| CAPITALRADDUS | エース・マヌーバー (通常スキル) |
+| CAPITALRADDUS | リチャージ・ディフレクター (特殊スキル) |
+| CAPITALRADDUS | アウトラスト (特殊スキル) |
+| CAPITALRADDUS | ホルド・マヌーバー (特殊スキル) |
+| CAPITALRADDUS_EVENT | エース・マヌーバー (通常スキル) |
+| CAPITALRADDUS_EVENT | リチャージ・ディフレクター (特殊スキル) |
+| CAPITALRADDUS_EVENT | アウトラスト (特殊スキル) |
+| CAPITALRADDUS_EVENT | ホルド・マヌーバー (特殊スキル) |
+| CAPITALSTARDESTROYER | ターボレーザー・バッテリー (通常スキル) |
+| CAPITALSTARDESTROYER | 執行命令 (特殊スキル) |
+| CAPITALSTARDESTROYER | ヘビー・イオン・キャノン (特殊スキル) |
+| CAPITALSTARDESTROYER | 帝国アサルト (特殊スキル) |
 | CAPTAINDROGAN | 同時射撃 (通常スキル) |
 | CAPTAINENOCH | よい死を遂げろ (通常スキル) |
 | CAPTAINENOCH | 不気味な歩哨 (ユニークスキル) |
@@ -228,11 +294,18 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | COLONELSTARCK | 衰弱弾 (通常スキル) |
 | COLONELSTARCK | 全波長スキャン (特殊スキル) |
 | COLONELSTARCK | ブリザード4集中砲火 (特殊スキル) |
+| COMEUPPANCE | IX4-Bレーザーキャノン (通常スキル) |
+| COMEUPPANCE | 一緒に来たいか？ (特殊スキル) |
+| COMEUPPANCE | スパイスランニング戦術 (ユニークスキル) |
+| COMEUPPANCE | 当ててみろ、スパイスランナー (付与スキル) |
 | COMMANDERAHSOKA | ジャーカイ・マスター (通常スキル) |
 | COMMANDERAHSOKA | 己の道 (ユニークスキル) |
 | COMMANDERLUKESKYWALKER | 運命の一撃 (通常スキル) |
 | COMMANDERLUKESKYWALKER_HOTH_JKL_EVENT | 運命の一撃 (通常スキル) |
 | COMMANDERLUKESKYWALKER_JKL_EVENT | 運命の一撃 (通常スキル) |
+| COMMANDSHUTTLE | 防御射撃 (通常スキル) |
+| COMMANDSHUTTLE | 高度ジャミングアレイ (特殊スキル) |
+| COMMANDSHUTTLE | ファースト・オーダー・エンフォーサー (付与スキル) |
 | CORUSCANTUNDERWORLDPOLICE | 非致死攻撃 (通常スキル) |
 | CORUSCANTUNDERWORLDPOLICE | 非致死性の群衆整理 (特殊スキル) |
 | CORUSCANTUNDERWORLDPOLICE | ノンリーサル・スペシャリスト (ユニークスキル) |
@@ -293,6 +366,9 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | DISGUISEDCLONETROOPER | デコイスクワッド5 (ユニークスキル) |
 | DOCTORAPHRA | 破壊発掘 (通常スキル) |
 | DROIDEKA | ツイン・ブラスターキャノン (通常スキル) |
+| EBONHAWK | 重レーザータレット (通常スキル) |
+| EBONHAWK | クリティカルカーゴ (ユニークスキル) |
+| EBONHAWK | 特別配送 (付与スキル) |
 | EETHKOTH | ブリーチ・ストライク (通常スキル) |
 | EETHKOTH | フォースプッシュ (特殊スキル) |
 | EETHKOTH | 対ドロイド・スペシャリスト (ユニークスキル) |
@@ -300,6 +376,9 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | EIGHTHBROTHER | もうたくさんだ (リーダースキル) |
 | EIGHTHBROTHER | 忍耐 (ユニークスキル) |
 | EMBO | 分解ショット (通常スキル) |
+| EMPERORSSHUTTLE | アグレッシブ・オフェンス (通常スキル) |
+| EMPERORSSHUTTLE | 歴戦の陣形 (ユニークスキル) |
+| EMPERORSSHUTTLE | 帝国軍の罠 (付与スキル) |
 | EWOKELDER | ガイド・ストライク (通常スキル) |
 | EWOKSCOUT | イウォークの奇襲 (通常スキル) |
 | EWOKSCOUT | ラッシュ・アタック (特殊スキル) |
@@ -319,16 +398,30 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | FIRSTORDEREXECUTIONER | ジャッジメント (通常スキル) |
 | FIRSTORDEROFFICERMALE | 足止め攻撃 (特殊スキル) |
 | FIRSTORDERSPECIALFORCESPILOT | ドラムファイア (特殊スキル) |
+| FIRSTORDERTIEECHELON | ハント開始 (通常スキル) |
+| FIRSTORDERTIEECHELON | ファースト・オーダーの力 (ユニークスキル) |
+| FIRSTORDERTIEECHELON | ファースト・オーダーのヴァンガード (付与スキル) |
 | FIRSTORDERTIEPILOT | ガン・ダウン (特殊スキル) |
 | FIRSTORDERTROOPER | 妨害攻撃 (通常スキル) |
 | FOSITHTROOPER | リベンジブラスト (特殊スキル) |
+| FOTF_DEVASTATOR | XX-9ターボレーザーバッテリー (通常スキル) |
+| FOTF_DEVASTATOR | 勇猛采配 (特殊スキル) |
+| FOTF_DEVASTATOR | イオン・キャノン集中砲火 (特殊スキル) |
+| FOTF_DEVASTATOR | 帝国の猛襲 (特殊スキル) |
 | FOTF_VADER | 淘汰の刃 (特殊スキル) |
 | FOTF_VADER | 恐怖による奮起 (リーダースキル) |
 | FOTF_VADER | 逃げ道はない (ユニークスキル) |
 | FULCRUMAHSOKA | バランス攻撃 (通常スキル) |
 | FULCRUMAHSOKA | ワールウィンド (特殊スキル) |
+| FURYCLASSINTERCEPTOR | エンミティ級高精度レーザー砲 (通常スキル) |
+| FURYCLASSINTERCEPTOR | 力への道 (特殊スキル) |
+| FURYCLASSINTERCEPTOR | 銀河の炎 (ユニークスキル) |
+| FURYCLASSINTERCEPTOR | コリバンの憤怒 (付与スキル) |
 | GARSAXON | オン・ザ・ハント (通常スキル) |
 | GARSAXON | 精密奇襲 (特殊スキル) |
+| GAUNTLETSTARFIGHTER | ガントレット・アサルト (通常スキル) |
+| GAUNTLETSTARFIGHTER | 高度機動性 (ユニークスキル) |
+| GAUNTLETSTARFIGHTER | マンダロアの総督 (付与スキル) |
 | GENERALHUX | 邪悪な陰謀 (特殊スキル) |
 | GENERALHUX | ファースト・オーダーにひれ伏せ (リーダースキル) |
 | GENERALHUX_EVENT | 邪悪な陰謀 (特殊スキル) |
@@ -346,6 +439,18 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | GEONOSIANSOLDIER | アグレッシブ・アドバンス (通常スキル) |
 | GEONOSIANSOLDIER | ハイヴの戦術 (ユニークスキル) |
 | GEONOSIANSPY | フェイント (通常スキル) |
+| GEONOSIANSTARFIGHTER1 | 制空権 (通常スキル) |
+| GEONOSIANSTARFIGHTER1 | 恩讐 (ユニークスキル) |
+| GEONOSIANSTARFIGHTER1 | リパルサーアレイ - 制御 (付与スキル) |
+| GEONOSIANSTARFIGHTER2 | 最前線 (通常スキル) |
+| GEONOSIANSTARFIGHTER2 | リパルサーアレイ - 誘導 (付与スキル) |
+| GEONOSIANSTARFIGHTER2 | スウォーム攻撃 (ユニークスキル) |
+| GEONOSIANSTARFIGHTER3 | アンダーマイン (通常スキル) |
+| GEONOSIANSTARFIGHTER3 | 極秘作戦 (ユニークスキル) |
+| GEONOSIANSTARFIGHTER3 | リパルサーアレイ - 策略 (付与スキル) |
+| GHOST | MS-2Bツインレーザーキャノン (通常スキル) |
+| GHOST | センサースクランブラー (ユニークスキル) |
+| GHOST | 偵察 (付与スキル) |
 | GLAHSOKATANO | イージスチャージ (通常スキル) |
 | GLAHSOKATANO | 反抗の決意 (特殊スキル) |
 | GLAHSOKATANO_GLE_INHERIT | イージスチャージ (通常スキル) |
@@ -390,6 +495,9 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | HOTHREBELSOLDIER | 支援射撃 (通常スキル) |
 | HOTHREBELSOLDIER | 戦線維持 (特殊スキル) |
 | HOTHREBELSOLDIER | 反乱軍の気勢 (ユニークスキル) |
+| HOUNDSTOOTH | トゥース・アンド・ネイル (通常スキル) |
+| HOUNDSTOOTH | 執拗な攻撃 (特殊スキル) |
+| HOUNDSTOOTH | 安全な狩り (付与スキル) |
 | HUMANTHUG | ダーティーファイト (通常スキル) |
 | HUMANTHUG | アンダーワールドの活力 (ユニークスキル) |
 | HUMANTHUG_GLE_INHERIT | ダーティーファイト (通常スキル) |
@@ -397,10 +505,17 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | HUNTERS3 | DC-17ブラスター (通常スキル) |
 | HUYANG | ドロイド・ボクサー (通常スキル) |
 | HUYANG | 補助グラップラー (特殊スキル) |
+| HYENABOMBER | 精密ブラスト (通常スキル) |
+| HYENABOMBER | シンクロ・サルボ (特殊スキル) |
+| HYENABOMBER | チャター (ユニークスキル) |
+| HYENABOMBER | フォトレセプター (付与スキル) |
 | IG11 | センサリーアドバンテージ (通常スキル) |
 | IG11 | 機能: プロテクト (特殊スキル) |
 | IG11_MANDALORIAN_EVENT | センサリーアドバンテージ (通常スキル) |
 | IG11_MANDALORIAN_EVENT | 機能: プロテクト (特殊スキル) |
+| IG2000 | 弱点特定 (通常スキル) |
+| IG2000 | 慣性制動機解除 (特殊スキル) |
+| IG2000 | スライスシークエンス開始 (付与スキル) |
 | IG86SENTINELDROID | プリサイス・ストライク (通常スキル) |
 | IG86SENTINELDROID | ドロイドチーム戦術 (ユニークスキル) |
 | IG88 | 機略に優れた追跡者 (リーダースキル) |
@@ -434,6 +549,17 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | JEDIKNIGHTREVAN | フェローシャスチャージ (通常スキル) |
 | JEDIMASTERKENOBI_GLE_INHERIT_T6 | 終わりだ (アルティメットスキル) |
 | JEDIMASTERMACEWINDU | シャッターポイント (通常スキル) |
+| JEDISTARFIGHTERAHSOKATANO | 反射ショット (通常スキル) |
+| JEDISTARFIGHTERAHSOKATANO | シャットダウン (特殊スキル) |
+| JEDISTARFIGHTERAHSOKATANO | カニング・マヌーバー (付与スキル) |
+| JEDISTARFIGHTERANAKIN | ロックオン (通常スキル) |
+| JEDISTARFIGHTERANAKIN | 妨害アサルト (特殊スキル) |
+| JEDISTARFIGHTERANAKIN | アグレッシブ・アプローチ (付与スキル) |
+| JEDISTARFIGHTERCONSULAR | 共和国の守護者 (通常スキル) |
+| JEDISTARFIGHTERCONSULAR | ガード・アサルト (特殊スキル) |
+| JEDISTARFIGHTERCONSULAR | 共和国の守護者 (付与スキル) |
+| JKL_GR75 | 迅速回避 (通常スキル) |
+| JKL_GR75 | 反乱軍の決意 (特殊スキル) |
 | JKL_PILOT | 支援射撃 (通常スキル) |
 | JKL_PILOT | 戦線維持 (特殊スキル) |
 | JKL_PILOT | 反乱軍の気勢 (ユニークスキル) |
@@ -496,6 +622,9 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | MAJORPARTAGAZ | 指揮系統 (ユニークスキル) |
 | MANDALORBOKATAN | マンダロアの道 (リーダースキル) |
 | MARAJADE | 計算された射撃 (通常スキル) |
+| MARAUDER | 兵士以上 (通常スキル) |
+| MARAUDER | ゴンキー (ユニークスキル) |
+| MARAUDER | 不良分隊、到着！ (付与スキル) |
 | MARROK | スピニングスラッシュ (通常スキル) |
 | MARROK | 捨て身の逃走 (特殊スキル) |
 | MARROK | 仮面の狩人 (ユニークスキル) |
@@ -509,6 +638,18 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | MAZKANATA | 全知の眼 (特殊スキル) |
 | MERRIN | 霊液弾 (通常スキル) |
 | MERRIN | ダソミアがお前の墓となる (特殊スキル) |
+| MG100STARFORTRESSSF17 | ガンナー、注意しろ (通常スキル) |
+| MG100STARFORTRESSSF17 | スイート・スポット (ユニークスキル) |
+| MG100STARFORTRESSSF17 | オールクリア、爆撃隊の出番だ (付与スキル) |
+| MILLENNIUMFALCON | 特殊改造 (通常スキル) |
+| MILLENNIUMFALCON | 油断大敵 (ユニークスキル) |
+| MILLENNIUMFALCON | ヤーフー！ (付与スキル) |
+| MILLENNIUMFALCONEP7 | 4連レーザー (通常スキル) |
+| MILLENNIUMFALCONEP7 | 逆境打破 (ユニークスキル) |
+| MILLENNIUMFALCONEP7 | 噴射加速器 (付与スキル) |
+| MILLENNIUMFALCONPRISTINE | ダブルダウン (通常スキル) |
+| MILLENNIUMFALCONPRISTINE | コイントス (ユニークスキル) |
+| MILLENNIUMFALCONPRISTINE | オールイン (付与スキル) |
 | MISSIONVAO | まばたき禁止 (通常スキル) |
 | MOFFGIDEONS1 | 戦術的配備 (リーダースキル) |
 | MOFFGIDEONS1_SPEEDERBIKERAID | 戦術的配備 (リーダースキル) |
@@ -533,6 +674,10 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | OLDBENKENOBI | マインド・トリック (特殊スキル) |
 | OLDBENKENOBI | 真なる守護者 (特殊スキル) |
 | OLDBENKENOBI | ジェダイの老騎士 (リーダースキル) |
+| OUTRIDER | 違法レーザー砲 (通常スキル) |
+| OUTRIDER | 隠しコンカッション・ミサイル (特殊スキル) |
+| OUTRIDER | 極秘情報 (ユニークスキル) |
+| OUTRIDER | 不正改造 (付与スキル) |
 | PADAWANOBIWAN | リダイレクトブラスト (特殊スキル) |
 | PADAWANSABINE | 老練の一閃 (通常スキル) |
 | PADAWANSABINE | 後退戦術 (特殊スキル) |
@@ -543,6 +688,9 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | PAO | ピパダのため (ユニークスキル) |
 | PAPLOO | 警戒者の一撃 (通常スキル) |
 | PAPLOO | 陽動 (特殊スキル) |
+| PHANTOM2 | スリップ・アウェイ (通常スキル) |
+| PHANTOM2 | 陽動戦術 (ユニークスキル) |
+| PHANTOM2 | 隠密攻撃 (付与スキル) |
 | PHASMA | 一斉攻撃 (特殊スキル) |
 | PLOKOON | 制圧ブロー (通常スキル) |
 | PLOKOON | フォース・ジャッジメント (特殊スキル) |
@@ -560,6 +708,10 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | PRINCESSLEIA_GL_EVENT | ヘアトリガー (通常スキル) |
 | PRINCESSLEIA_GL_EVENT | 反乱同盟軍の心臓 (リーダースキル) |
 | PRINCESSLEIA_GLE_INHERIT | ヘアトリガー (通常スキル) |
+| PUNISHINGONE | 4連レーザー砲 (通常スキル) |
+| PUNISHINGONE | 破壊コンボ (特殊スキル) |
+| PUNISHINGONE | ジャンプマスター5000 (ユニークスキル) |
+| PUNISHINGONE | スキップ・トレーサー (付与スキル) |
 | QUEENAMIDALA | 民と共に (リーダースキル) |
 | QUIGGOLD | 一等航海士 (ユニークスキル) |
 | QUIGONJINN | 謙虚な一撃 (特殊スキル) |
@@ -567,7 +719,19 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | QUIGONJINN | 俊敏性訓練 (リーダースキル) |
 | R2D2_LEGENDARY | 戦闘分析 (ユニークスキル) |
 | R2D2_LEGENDARY | 計算処理 (ユニークスキル) |
+| R5D4 | タクティカルサポート (特殊スキル) |
+| RANGERZEB | ラサット執行者 (ユニークスキル) |
 | RANGETROOPER | エイミング (通常スキル) |
+| RAVENSCLAW | フォース誘導式レーザー砲 (通常スキル) |
+| RAVENSCLAW | 太陽光 (特殊スキル) |
+| RAVENSCLAW | 形勢操作 (ユニークスキル) |
+| RAVENSCLAW | シールド破壊 (付与スキル) |
+| RAZORCREST | 最重要指名手配 (通常スキル) |
+| RAZORCREST | 追い込み掃射攻撃 (特殊スキル) |
+| RAZORCREST | 信頼できる輸送船 (ユニークスキル) |
+| RAZORCREST | 前帝国トランスポンダー (付与スキル) |
+| REMNANTSNOWCOMMANDER | 潜伏 (特殊スキル) |
+| REMNANTSNOWCOMMANDER | ライフルバット (特殊スキル) |
 | RESISTANCEPILOT | 腰だめ撃ち (通常スキル) |
 | RESISTANCEPILOT | オン・ザ・フライ (ユニークスキル) |
 | RESISTANCETROOPER | 好機攻撃 (特殊スキル) |
@@ -577,6 +741,9 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | REYJEDITRAINING | 気高き守護者 (ユニークスキル) |
 | REYJEDITRAINING_GLEVENT | 連続ストライク (通常スキル) |
 | REYJEDITRAINING_GLEVENT | 気高き守護者 (ユニークスキル) |
+| ROGUEONESHIP | カバートバラージ (通常スキル) |
+| ROGUEONESHIP | SW-0608 (ユニークスキル) |
+| ROGUEONESHIP | よし、揃った (付与スキル) |
 | ROSETICO | カレイジャスショット (通常スキル) |
 | ROSETICO | 不屈の闘志 (特殊スキル) |
 | ROSETICO | ショックプロッドストライク (特殊スキル) |
@@ -592,6 +759,9 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | SCARIFREBEL | 爆破突入 (特殊スキル) |
 | SCORCH | 絶大な力で根絶せよ (通常スキル) |
 | SCORCH | プロトコルに従う (ユニークスキル) |
+| SCYTHE | GA-60sレーザー砲 (通常スキル) |
+| SCYTHE | 二手先の動き (ユニークスキル) |
+| SCYTHE | 驚異と恐怖 (付与スキル) |
 | SECONDSISTER | 奴らに勝利などない (リーダースキル) |
 | SECONDSISTER | 忍耐 (ユニークスキル) |
 | SEVENTHSISTER | ハズレ (リーダースキル) |
@@ -603,10 +773,27 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | SHINHATI | あとは任せて (特殊スキル) |
 | SHINHATI | お前には何の力もない (ユニークスキル) |
 | SHORETROOPER | 武器破壊 (通常スキル) |
+| SITHBOMBER | レーザー集中砲火 (通常スキル) |
+| SITHBOMBER | 重要ターゲット (ユニークスキル) |
+| SITHBOMBER | ボマー支援 (付与スキル) |
+| SITHFIGHTER | スタイフル (通常スキル) |
+| SITHFIGHTER | スウォーム戦術 (ユニークスキル) |
+| SITHFIGHTER | 超機動力 (付与スキル) |
+| SITHINFILTRATOR | ドレッド・キャノン (通常スキル) |
+| SITHINFILTRATOR | 潜在脅威 (ユニークスキル) |
+| SITHINFILTRATOR | 漂いし影 (付与スキル) |
 | SITHMARAUDER | 情熱が与えし強さ (通常スキル) |
 | SITHMARAUDER | フォースは解放をもたらす (ユニークスキル) |
+| SITHSUPREMACYCLASS | デッドリースタック (通常スキル) |
+| SITHSUPREMACYCLASS | 逃がさない (特殊スキル) |
+| SITHSUPREMACYCLASS | むさぼる犠牲 (特殊スキル) |
+| SITHSUPREMACYCLASS | 究極の帝国 (付与スキル) |
 | SITHTROOPER | ディスラプターブラスト (通常スキル) |
 | SITHTROOPER | クリムゾン・バレッジ (特殊スキル) |
+| SLAVE1 | 回転ツイン・ブラスターキャノン (通常スキル) |
+| SLAVE1 | サイズミック・チャージ (特殊スキル) |
+| SLAVE1 | 総攻撃 (付与スキル) |
+| SLAVE1 | 死体では困る (ユニークスキル) |
 | SM33 | ばらばら (特殊スキル) |
 | SMUGGLERCHEWBACCA | 爆発ボルト (通常スキル) |
 | SMUGGLERCHEWBACCA | フュリアス・ブロー (特殊スキル) |
@@ -652,7 +839,41 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | THEMANDALORIANBESKARARMOR_JOURNEY_EVENT_TIER4 | 歴戦の戦術 (リーダースキル) |
 | THIRDSISTER | 不屈の猛攻 (特殊スキル) |
 | THIRDSISTER | 短気 (ユニークスキル) |
+| TIEADVANCED | デッドリー・アキュラシー (通常スキル) |
+| TIEADVANCED | 高度照準システム (ユニークスキル) |
+| TIEADVANCED | 恐ろしき存在 (付与スキル) |
+| TIEBOMBERIMPERIAL | L-s1レーザーキャノン (通常スキル) |
+| TIEBOMBERIMPERIAL | プロトン爆撃 (特殊スキル) |
+| TIEBOMBERIMPERIAL | デュアルポッドデザイン (ユニークスキル) |
+| TIEBOMBERIMPERIAL | 予備兵器 (付与スキル) |
+| TIEDAGGER | シス・プレシジョン (通常スキル) |
+| TIEDAGGER | L-7.0重レーザー砲 (特殊スキル) |
+| TIEDAGGER | 皇帝の命令 (ユニークスキル) |
+| TIEDAGGER | 先読み (付与スキル) |
+| TIEDEFENDER | 翼端L-s9.3レーザーキャノン (通常スキル) |
+| TIEDEFENDER | P-sz9.7ツイン・イオン・エンジン (ユニークスキル) |
+| TIEDEFENDER | TIE/x7 (ユニークスキル) |
+| TIEDEFENDER | 特殊部隊だなんて聞いてない (付与スキル) |
+| TIEFIGHTERFIRSTORDER | 目標捕捉 (通常スキル) |
+| TIEFIGHTERFIRSTORDER | 容赦なき追撃 (ユニークスキル) |
+| TIEFIGHTERFIRSTORDER | レイド・コミュニケーション・プロトコル (付与スキル) |
+| TIEFIGHTERFOSF | L-s9.6レーザーキャノン (通常スキル) |
+| TIEFIGHTERFOSF | ダブル・オフェンス (特殊スキル) |
+| TIEFIGHTERFOSF | 高精度 (付与スキル) |
+| TIEFIGHTERIMPERIAL | L-s1レーザーキャノン (通常スキル) |
+| TIEFIGHTERIMPERIAL | T-s8照準コンピューター (特殊スキル) |
+| TIEFIGHTERIMPERIAL | ツイン・イオン・エンジン (付与スキル) |
 | TIEFIGHTERPILOT | 照準コンピューター (通常スキル) |
+| TIEINTERCEPTOR | L-s9.3レーザーキャノン (通常スキル) |
+| TIEINTERCEPTOR | オートスラスター・マヌーバー (特殊スキル) |
+| TIEINTERCEPTOR | プロトタイプデザイン (ユニークスキル) |
+| TIEINTERCEPTOR | 予測可能 (付与スキル) |
+| TIEREAPER | 防衛砲撃 (通常スキル) |
+| TIEREAPER | 過酷な旅 (ユニークスキル) |
+| TIEREAPER | 防衛陣形 (付与スキル) |
+| TIESILENCER | 破壊的前進 (通常スキル) |
+| TIESILENCER | 優勢圧倒 (特殊スキル) |
+| TIESILENCER | アフターバーナー (付与スキル) |
 | TRENCH | 正味プラス (特殊スキル) |
 | TRENCH | 荒くれ戦術家 (リーダースキル) |
 | TRENCH | 恐怖が匂う、いい匂いだ (ユニークスキル) |
@@ -663,10 +884,19 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | UGNAUGHT | ブレーク・オープン (通常スキル) |
 | UGNAUGHT | ドロイドエキスパート (特殊スキル) |
 | UGNAUGHT | 先回り (ユニークスキル) |
+| UMBARANSTARFIGHTER | プラズマ兵器 (通常スキル) |
+| UMBARANSTARFIGHTER | 無謀操縦 (ユニークスキル) |
+| UMBARANSTARFIGHTER | 高度防衛システム (付与スキル) |
 | URORRURRR | ガダッフィ・スラム (通常スキル) |
 | URORRURRR | 隠密隊 (特殊スキル) |
 | URORRURRR | 奇襲本能 (ユニークスキル) |
 | URORRURRR | タスケン族長 (リーダースキル) |
+| UWINGROGUEONE | トレイルブレーザー (通常スキル) |
+| UWINGROGUEONE | 接触回避 (ユニークスキル) |
+| UWINGROGUEONE | 反乱軍の偵察 (付与スキル) |
+| UWINGSCARIF | 初動 (通常スキル) |
+| UWINGSCARIF | 戦略通信 (ユニークスキル) |
+| UWINGSCARIF | 4連スラスター (付与スキル) |
 | VADER | 淘汰の刃 (特殊スキル) |
 | VADER | 恐怖による奮起 (リーダースキル) |
 | VADER | 逃げ道はない (ユニークスキル) |
@@ -683,6 +913,14 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | VEERS_SPEEDERBIKERAID | 帝国アサルト・コマンダー (リーダースキル) |
 | VISASMARR | テレキネシスブラスト (通常スキル) |
 | VISASMARR | 貫通ストライク (特殊スキル) |
+| VULTUREDROID | 容赦ない攻撃 (通常スキル) |
+| VULTUREDROID | ディスコードミサイル (特殊スキル) |
+| VULTUREDROID | 群れ成す恐怖 (ユニークスキル) |
+| VULTUREDROID | バズ・ドロイド弾幕 (付与スキル) |
+| VULTUREDROID_tb | アンリレンティング・アサルト (通常スキル) |
+| VULTUREDROID_tb | ディスコードミサイル (特殊スキル) |
+| VULTUREDROID_tb | 無人の恐怖 (ユニークスキル) |
+| VULTUREDROID_tb | 工作ドロイド (付与スキル) |
 | WAMPA | アイスブレイカー (特殊スキル) |
 | WEDGEANTILLES | レッド中隊ストライク (特殊スキル) |
 | WEDGEANTILLES | レッド・リーダー (ユニークスキル) |
@@ -693,10 +931,33 @@ scripts/sync-units.ts 実行時に閉集合（Property / Skills / ability_type�
 | WRECKERS3 | 渾身の一撃 (特殊スキル) |
 | WRECKERS3 | 即席武器 (特殊スキル) |
 | WRECKERS3 | 前に出なきゃ勝てないぞ (ユニークスキル) |
+| XANADUBLOOD | 船体破損 (通常スキル) |
+| XANADUBLOOD | ローグ・マヌーバー (特殊スキル) |
+| XANADUBLOOD | イントゥ・ザ・ブリーチ (付与スキル) |
+| XWINGBLACKONE | 全方位対処 (通常スキル) |
+| XWINGBLACKONE | 青天の霹靂 (特殊スキル) |
+| XWINGBLACKONE | 劇的登場 (付与スキル) |
+| XWINGRED2 | KX9レーザーキャノン (通常スキル) |
+| XWINGRED2 | 先陣 (ユニークスキル) |
+| XWINGRED2 | 脆弱性利用 (付与スキル) |
+| XWINGRED3 | 的中 (通常スキル) |
+| XWINGRED3 | デアリング・アサルト (ユニークスキル) |
+| XWINGRED3 | エンジン調整 (付与スキル) |
+| XWINGRESISTANCE | 猛追撃 (通常スキル) |
+| XWINGRESISTANCE | かく乱 (特殊スキル) |
+| XWINGRESISTANCE | 分隊陣形 (付与スキル) |
 | YODACHEWBACCA | ファースと共にあれ (通常スキル) |
 | YODACHEWBACCA | ファースの覚醒 (特殊スキル) |
 | YOUNGCHEWBACCA | ザ・ビースト (ユニークスキル) |
 | YOUNGLANDO | ホットハンド (特殊スキル) |
+| YWINGCLONEWARS | ツイン・レーザーキャノン (通常スキル) |
+| YWINGCLONEWARS | 魚雷発射！ (特殊スキル) |
+| YWINGCLONEWARS | 支援開始 (付与スキル) |
+| YWINGCLONEWARS | アストロメク・アドバンテージ (ユニークスキル) |
+| YWINGREBEL | SW-4イオン・キャノン (通常スキル) |
+| YWINGREBEL | イオン魚雷 (特殊スキル) |
+| YWINGREBEL | 反乱軍追跡コンピューター (付与スキル) |
+| YWINGREBEL | チェンパット社製シールド発生装置 (ユニークスキル) |
 | ZAALBAR | パワーブラスト (特殊スキル) |
 | ZAMWESELL | 変身能力 (ユニークスキル) |
 | ZORIIBLISS_V2 | ツインE-851ブラスター (通常スキル) |

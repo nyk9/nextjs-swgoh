@@ -122,6 +122,29 @@
     "is_event_variant": true
   },
   {
+    "name": "カーソン・テヴァ大尉",
+    "character_base_id": "CARSONTEVA",
+    "src": "/charui/tex.charui_carsonteva.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "報復",
+      "報復効果",
+      "アシスト",
+      "解除不可",
+      "クリティカル率低下",
+      "有効性低下",
+      "エクスポーズ",
+      "カウンター"
+    ],
+    "url": "/characters/CARSONTEVA"
+  },
+  {
     "name": "プリンセス・ニーサ",
     "character_base_id": "PRINCESSKNEESAA_SPEEDERBIKERAID",
     "src": "/charui/tex.charui_princesskneesaa.png",
@@ -2036,6 +2059,22 @@
       "防御力上昇"
     ],
     "url": "/characters/Master-Qui-Gon"
+  },
+  {
+    "name": "ゼブ・オレリオス(新共和国パイロット)",
+    "character_base_id": "RANGERZEB",
+    "src": "/charui/tex.charui_rangerzeb.png",
+    "property": [
+      "ライトサイド",
+      "タンク"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "精度低下",
+      "誘発",
+      "攻撃力上昇"
+    ],
+    "url": "/characters/RANGERZEB"
   },
   {
     "name": "イウォーク・スカウト",
@@ -4250,7 +4289,8 @@
       "ダークサイド",
       "アタッカー",
       "帝国軍",
-      "帝国軍トルーパー"
+      "帝国軍トルーパー",
+      "インペリアル・レムナント"
     ],
     "abbreviation": "Snowtrooper snow trooper",
     "skill": [],
@@ -4598,6 +4638,30 @@
     "url": "/characters/LORDVADER_GLE"
   },
   {
+    "name": "R5-D4",
+    "character_base_id": "R5D4",
+    "src": "/charui/tex.charui_r5d4.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ドロイド",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "時間経過ダメージ",
+      "解除不可",
+      "クールダウン状態から開始",
+      "固定ダメージ",
+      "耐性発揮",
+      "耐性発揮不可",
+      "ベスカー・アーマー",
+      "ホイッスリング・バード"
+    ],
+    "url": "/characters/R5D4"
+  },
+  {
     "name": "アソーカ・タノ",
     "character_base_id": "GLAHSOKATANO_GLE_INHERIT",
     "src": "/charui/tex.charui_ahsokatanogray.png",
@@ -4660,7 +4724,7 @@
     "url": "/characters/Chief-Chirpa"
   },
   {
-    "name": "ガラゼブ・“ゼブ”・オレリオス",
+    "name": "ガラゼブ“ゼブ”オレリオス",
     "character_base_id": "ZEBS3",
     "src": "/charui/tex.charui_zeb_s3.png",
     "property": [
@@ -5690,6 +5754,26 @@
       "スタック可能"
     ],
     "url": "/characters/Veteran-Smuggler-Chewbacca"
+  },
+  {
+    "name": "スノートルーパー・コマンダー",
+    "character_base_id": "REMNANTSNOWCOMMANDER",
+    "src": "/charui/tex.charui_remnantsnowcommander.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "無防備",
+      "回復",
+      "スタック可能"
+    ],
+    "url": "/characters/REMNANTSNOWCOMMANDER"
   },
   {
     "name": "キャプテン・イサノ",

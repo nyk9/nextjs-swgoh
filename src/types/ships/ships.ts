@@ -40,4 +40,7 @@ export type Ship = {
   abbreviation: string;
   pilot?: string;
   url?: string;
+  description_jp?: string;
+  crew_base_ids?: string[];
+  is_event_variant?: boolean;
 };

@@ -23,3 +23,11 @@ export type CharacterAbilities = {
   ability: Abilities[];
   last_updated: string;
 };
+
+export type ShipAbilities = {
+  base_id: string;
+  ship_name: string;
+  ship_image: string;
+  ability: Abilities[];
+  last_updated: string;
+};

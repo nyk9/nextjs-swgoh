@@ -44,6 +44,7 @@ import type {
 import type {
   Abilities,
   CharacterAbilities,
+  ShipAbilities,
 } from "../src/types/abilities/abilities";
 import type { Ship, ShipFaction, ShipRole } from "../src/types/ships/ships";
 
@@ -56,6 +57,7 @@ const OUT_DIR = path.join(ROOT, "src/data/.generated");
 const UNITS_OUT = path.join(OUT_DIR, "units.json");
 const ABILITIES_OUT = path.join(OUT_DIR, "abilities.json");
 const SHIPS_OUT = path.join(OUT_DIR, "ships.json");
+const SHIP_ABILITIES_OUT = path.join(OUT_DIR, "ship_abilities.json");
 const UNKNOWN_MD_OUT = path.join(ROOT, "docs/data-sync/unknown-tags.md");
 
 const DEFAULT_LAST_UPDATED = (() => {
@@ -216,14 +218,20 @@ async function main(): Promise<void> {
     abilitiesOut.push(built.abilities);
   }
 
-  const shipsOut: Ship[] = ships.map((s) =>
-    buildShip({
+  const shipsOut: Ship[] = [];
+  const shipAbilitiesOut: ShipAbilities[] = [];
+  for (const s of ships) {
+    const built = buildShip({
       unit: s,
       locale,
+      skillById,
+      abilityById,
       categoryIndex,
       logger,
-    }),
-  );
+    });
+    shipsOut.push(built.ship);
+    shipAbilitiesOut.push(built.abilities);
+  }
 
   // 10. unknown-tags.md
   if (!dryRun) {
@@ -235,10 +243,16 @@ async function main(): Promise<void> {
       "utf8",
     );
     await writeFile(SHIPS_OUT, JSON.stringify(shipsOut, null, 2), "utf8");
+    await writeFile(
+      SHIP_ABILITIES_OUT,
+      JSON.stringify(shipAbilitiesOut, null, 2),
+      "utf8",
+    );
     await logger.writeMarkdown(UNKNOWN_MD_OUT);
     console.log(`[sync-units] wrote ${UNITS_OUT}`);
     console.log(`[sync-units] wrote ${ABILITIES_OUT}`);
     console.log(`[sync-units] wrote ${SHIPS_OUT}`);
+    console.log(`[sync-units] wrote ${SHIP_ABILITIES_OUT}`);
     console.log(`[sync-units] wrote ${UNKNOWN_MD_OUT}`);
   } else {
     console.log("[sync-units] dry-run: ファイルは書き出していません");
@@ -249,10 +263,15 @@ async function main(): Promise<void> {
     (acc, c) => acc + c.ability.length,
     0,
   );
+  const totalShipAbilities = shipAbilitiesOut.reduce(
+    (acc, s) => acc + s.ability.length,
+    0,
+  );
   console.log("[sync-units] summary:");
   console.log(`  characters    : ${unitsOut.length}`);
   console.log(`  ships         : ${shipsOut.length}`);
   console.log(`  abilities     : ${totalAbilities}`);
+  console.log(`  ship_abilities: ${totalShipAbilities}`);
   console.log(
     `  unknown categoryIds          : ${logger.unknownCategoryCount}`,
   );
@@ -561,8 +580,15 @@ function formatEnglishName(nameKey: string | undefined): string {
 interface BuildShipDeps {
   unit: ComlinkUnit;
   locale: Map<string, string>;
+  skillById: Map<string, ComlinkSkill>;
+  abilityById: Map<string, ComlinkAbility>;
   categoryIndex: ReturnType<typeof buildCategoryIndex>;
   logger: UnknownTagsLogger;
+}
+
+interface BuildShipResult {
+  ship: Ship;
+  abilities: ShipAbilities;
 }
 
 const SHIP_FACTION_VALUES: ReadonlySet<ShipFaction> = new Set<ShipFaction>([
@@ -593,11 +619,15 @@ const SHIP_FACTION_VALUES: ReadonlySet<ShipFaction> = new Set<ShipFaction>([
   "分離主義者",
 ]);
 
-function buildShip(deps: BuildShipDeps): Ship {
-  const { unit, locale, categoryIndex, logger } = deps;
+function buildShip(deps: BuildShipDeps): BuildShipResult {
+  const { unit, locale, skillById, abilityById, categoryIndex, logger } = deps;
   const baseId = unit.baseId;
   const name = cleanLocaleName(locale.get(unit.nameKey) ?? unit.nameKey);
   const src = `/charui/${unit.thumbnailName}.png`;
+
+  // 説明文 (BBCode raw)
+  const description_jp =
+    typeof unit.descKey === "string" ? (locale.get(unit.descKey) ?? "") : "";
 
   // role 判定: shipclass_capitalship → キャピタルシップ、role_attacker/support/tank → そのまま
   let role: ShipRole | undefined;
@@ -631,9 +661,12 @@ function buildShip(deps: BuildShipDeps): Ship {
     }
   }
 
-  // pilot
+  // crew (pilot 含む全乗員)
   const crew = (unit.crew ?? []) as Array<{ unitId?: string }>;
-  const pilotBaseId = crew.find((c) => typeof c.unitId === "string")?.unitId;
+  const crewBaseIds = crew
+    .map((c) => (typeof c.unitId === "string" ? c.unitId : ""))
+    .filter((id) => id.length > 0);
+  const pilotBaseId = crewBaseIds[0];
   const pilot =
     pilotBaseId && pilotBaseId.length > 0
       ? cleanLocaleName(
@@ -643,7 +676,50 @@ function buildShip(deps: BuildShipDeps): Ship {
 
   const alias = ALIASES[baseId];
   const abbreviation = alias?.abbreviation ?? "";
-  const slug = alias?.url_slug;
+  const slug = alias?.url_slug ?? baseId.toLowerCase();
+
+  // skillReference / limitBreakRef からアビリティを集める（buildCharacter と同パターン）
+  const abilityList: Abilities[] = [];
+
+  const skillRefs = (unit.skillReference ?? []) as SkillRef[];
+  for (const ref of skillRefs) {
+    const skillId = ref.skillId;
+    if (!skillId) continue;
+    const skill = skillById.get(skillId);
+    if (!skill) continue;
+    const ability = skill.abilityReference
+      ? abilityById.get(skill.abilityReference)
+      : undefined;
+    const built = buildAbility({
+      skillId,
+      skill,
+      ability,
+      locale,
+      skillVocabulary: [],
+      characterBaseId: baseId,
+      logger,
+    });
+    if (built) abilityList.push(built.ability);
+  }
+
+  const limitBreakRefs = (unit.limitBreakRef ?? []) as AbilityRef[];
+  for (const ref of limitBreakRefs) {
+    const abilityId = ref.abilityId;
+    if (!abilityId) continue;
+    if (!abilityId.startsWith("ultimateability_")) continue;
+    const ability = abilityById.get(abilityId);
+    if (!ability) continue;
+    const built = buildAbility({
+      skillId: undefined,
+      skill: undefined,
+      ability,
+      locale,
+      skillVocabulary: [],
+      characterBaseId: baseId,
+      logger,
+    });
+    if (built) abilityList.push(built.ability);
+  }
 
   const ship: Ship = {
     name,
@@ -652,10 +728,22 @@ function buildShip(deps: BuildShipDeps): Ship {
     faction: factions,
     role: roleArr,
     abbreviation,
+    url: `/ships/${slug}`,
   };
   if (pilot) ship.pilot = pilot;
-  if (slug) ship.url = `/ships/${slug}`;
-  return ship;
+  if (description_jp) ship.description_jp = description_jp;
+  if (crewBaseIds.length > 0) ship.crew_base_ids = crewBaseIds;
+  if (isEventVariant(baseId)) ship.is_event_variant = true;
+
+  const shipAbilities: ShipAbilities = {
+    base_id: baseId,
+    ship_name: name,
+    ship_image: src,
+    ability: abilityList,
+    last_updated: DEFAULT_LAST_UPDATED,
+  };
+
+  return { ship, abilities: shipAbilities };
 }
 
 // ----------------------------------------------------------------------------

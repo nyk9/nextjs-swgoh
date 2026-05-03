@@ -67,7 +67,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "EZRABRIDGERS3_GLE_INHERIT",
@@ -117,7 +117,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Echo",
@@ -167,7 +167,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Qui-Gon-Jinn",
@@ -217,7 +217,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Rose-Tico",
@@ -267,7 +267,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JEDIKNIGHTLUKE_GLE_INHERIT",
@@ -327,7 +327,56 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "id": "CARSONTEVA",
+    "character_name": "カーソン・テヴァ大尉",
+    "character_image": "/charui/tex.charui_carsonteva.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "合図次第",
+        "name_eng": "Basicability Carsonteva",
+        "image": "/ability/tex.ability_carsonteva_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、1ターンの報復効果を得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "平和維持",
+        "name_eng": "Specialability Carsonteva01",
+        "image": "/ability/tex.ability_carsonteva_special01.png",
+        "description_jp": "ターゲットに物理ダメージを3回与え、指定した味方をアシストに呼ぶ。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "不正作戦",
+        "name_eng": "Uniqueability Carsonteva01",
+        "image": "/abilityui/tex.abilityui_passive_unauthorizedmission.png",
+        "description_jp": "各遭遇開始時、全ての味方新共和国のタンクが1ターンの報復を得る(解除不可)。味方新共和国に弱体化効果が発生するたび、敵全体に1ターンのクリティカル率低下と有効性低下を発生させる。",
+        "is_omega": true,
+        "is_zeta": true,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "リーダースキル",
+        "name_jp": "アデルフィ・レンジャーのキャプテン",
+        "name_eng": "Leaderability Carsonteva",
+        "image": "/abilityui/tex.abilityui_passive_captainoftheadelphirangers.png",
+        "description_jp": "バトル開始時、新共和国の味方全体の精度とクリティカルダメージが50%上昇する。味方がカウンター攻撃を行うたび、その敵は1ターンのエクスポーズ状態になる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": true
+      }
+    ],
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "PRINCESSKNEESAA_SPEEDERBIKERAID",
@@ -345,7 +394,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GRIEVOUS_MARQUEE",
@@ -405,7 +454,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Lobot",
@@ -464,7 +513,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Amilyn-Holdo",
@@ -514,7 +563,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Leia-Organa",
@@ -594,7 +643,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ewoke-Elder",
@@ -634,7 +683,7 @@
         "cooldown": 8
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Plo-Koon",
@@ -684,7 +733,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ARC-Trooper",
@@ -723,7 +772,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Geonosian-Spy",
@@ -773,7 +822,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "PADAWANSABINE",
@@ -823,7 +872,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "First-Order-TIE-Pilot",
@@ -862,7 +911,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "OPERATIVE",
@@ -911,7 +960,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BB-8",
@@ -970,7 +1019,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "WEDGEANTILLES_SPEEDERBIKERAID",
@@ -998,7 +1047,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Logray",
@@ -1048,7 +1097,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "URoRRuRRR",
@@ -1097,7 +1146,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Mission-Vao",
@@ -1146,7 +1195,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CHEWBACCALEGENDARY_SPEEDERBIKERAID",
@@ -1174,7 +1223,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Doctor-Aphra",
@@ -1234,7 +1283,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Luminara-Unduli",
@@ -1284,7 +1333,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CLONETROOPERP2FORESTSCOUT_V2",
@@ -1313,7 +1362,7 @@
         "cooldown": 3
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Starkiller",
@@ -1373,7 +1422,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "MAZKANATA",
@@ -1433,7 +1482,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "WICKET_SPEEDERBIKERAID",
@@ -1451,7 +1500,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Sith-Eternal-Emperor",
@@ -1531,7 +1580,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Wicket",
@@ -1581,7 +1630,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "TEEBO_SPEEDERBIKERAID",
@@ -1599,7 +1648,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Chewbacca",
@@ -1659,7 +1708,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ahsoka-Tano",
@@ -1708,7 +1757,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Wat-Tambor",
@@ -1757,7 +1806,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "LOGRAY_SPEEDERBIKERAID",
@@ -1775,7 +1824,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Nihilus",
@@ -1835,7 +1884,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "General-Hux",
@@ -1895,7 +1944,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Admiral-Trench",
@@ -1944,7 +1993,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Captain-Enok",
@@ -1993,14 +2042,14 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "KYLOREN_DUEL",
     "character_name": "カイロ・レン最高指導者",
     "character_image": "/charui/tex.charui_kyloren_tros.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Malak",
@@ -2060,7 +2109,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Resistance-Hero-Poe",
@@ -2110,7 +2159,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Skiff-Guard-Lando-Calrissian",
@@ -2160,7 +2209,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BIGGSDARKLIGHTER",
@@ -2199,7 +2248,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jolee-Bindo",
@@ -2259,7 +2308,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "COBBVANTH",
@@ -2319,7 +2368,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Clone-Sergeant-Phase-I",
@@ -2358,7 +2407,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "HUNTERS3",
@@ -2418,7 +2467,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Teebo",
@@ -2468,7 +2517,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Clone-Wars-Chewbacca",
@@ -2518,7 +2567,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "YODACHEWBACCA",
@@ -2568,7 +2617,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BADBATCHTECH_GLE",
@@ -2618,7 +2667,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "MARROK",
@@ -2677,7 +2726,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Royal-Guard",
@@ -2716,7 +2765,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "MAULHATEFUELED",
@@ -2776,7 +2825,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "DEDRAMEERO",
@@ -2836,7 +2885,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Lord-Vader",
@@ -2916,7 +2965,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CAPTAINDROGAN_SPEEDERBIKERAID",
@@ -2934,7 +2983,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ADMINISTRATORLANDO_GL_EVENT",
@@ -2983,7 +3032,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "THEMANDALORIAN_JOURNEY_EVENT",
@@ -3042,7 +3091,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jawa-Scavenger",
@@ -3091,7 +3140,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "HUYANG",
@@ -3141,7 +3190,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Gungan-Phalanx",
@@ -3191,7 +3240,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Aurra-Sing",
@@ -3261,7 +3310,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "STARKILLER_LEGACYEVENT",
@@ -3321,7 +3370,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Cad-Bane",
@@ -3380,7 +3429,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GENERALSYNDULLA",
@@ -3424,7 +3473,7 @@
         "name_jp": "新共和国将軍",
         "name_eng": "Leaderability Generalsyndulla",
         "image": "/abilityui/tex.abilityui_passive_newrepublicgeneral.png",
-        "description_jp": "バトル開始時、味方スペクターとガラゼブ・“ゼブ”・オレリオスの最大HPと最大プロテクションが50%上昇し、1ターンの間スピードが150上昇する。",
+        "description_jp": "バトル開始時、味方スペクターとガラゼブ“ゼブ”オレリオスの最大HPと最大プロテクションが50%上昇し、1ターンの間スピードが150上昇する。",
         "is_omega": true,
         "is_zeta": false,
         "is_omicron": false
@@ -3440,7 +3489,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Captain-Phasma",
@@ -3490,7 +3539,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Shin-Hati",
@@ -3550,7 +3599,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CHIEFCHIRPA_SPEEDERBIKERAID",
@@ -3568,7 +3617,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Finn",
@@ -3618,7 +3667,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ADMINISTRATORLANDO_SPEEDERBIKERAID",
@@ -3646,7 +3695,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Resistance-Trooper",
@@ -3685,7 +3734,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Nute-Gunray",
@@ -3745,7 +3794,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Iden-Versio",
@@ -3805,7 +3854,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "APPO",
@@ -3855,7 +3904,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "HANSOLO_SPEEDERBIKERAID",
@@ -3873,7 +3922,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BADBATCHWRECKER_GLE",
@@ -3923,7 +3972,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "THEMANDALORIANBESKARARMOR_JOURNEY_EVENT_TIER4",
@@ -3972,7 +4021,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Hoth-Rebel-Scout",
@@ -4011,7 +4060,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "VADERDUELSEND",
@@ -4071,14 +4120,14 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "TKTROOPER_EVENT",
     "character_name": "TKストームトルーパー",
     "character_image": "/charui/tex.charui_tkstormtrooper.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "First-Order-Stormtrooper",
@@ -4117,7 +4166,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CASSIANUNDERCOVER",
@@ -4177,7 +4226,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ADMIRALACKBAR_SPEEDERBIKERAID",
@@ -4195,7 +4244,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "KXSECURITYDROID_JGEVENT_1",
@@ -4244,7 +4293,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "KXSECURITYDROID_JGEVENT_2",
@@ -4293,7 +4342,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Stormtrooper-Han",
@@ -4342,7 +4391,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "STAP",
@@ -4392,7 +4441,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GLHONDO",
@@ -4472,7 +4521,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Mob-Enforcer",
@@ -4511,7 +4560,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Vandor-Chewbacca",
@@ -4560,7 +4609,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Admiral-Piett",
@@ -4620,7 +4669,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ASAJVENTRESS_BOUNTYHUNTER",
@@ -4680,7 +4729,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Kuiil",
@@ -4730,7 +4779,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "THE-Armorer",
@@ -4790,7 +4839,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Eight-Brother",
@@ -4860,7 +4909,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ki-Adi-Mundi",
@@ -4920,7 +4969,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "AWAKENEDREY",
@@ -4959,7 +5008,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Count-Dooku",
@@ -5019,7 +5068,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Captain-Drogan",
@@ -5069,7 +5118,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Master-Qui-Gon",
@@ -5119,7 +5168,57 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "id": "RANGERZEB",
+    "character_name": "ゼブ・オレリオス(新共和国パイロット)",
+    "character_image": "/charui/tex.charui_rangerzeb.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "制圧集中砲火",
+        "name_eng": "Basicability Rangerzeb",
+        "image": "/ability/tex.ability_rangerzeb_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、1ターンの精度低下を発生させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "壊滅の掃討",
+        "name_eng": "Specialability Rangerzeb01",
+        "image": "/ability/tex.ability_rangerzeb_special01.png",
+        "description_jp": "敵全体に物理ダメージを与え、1ターンの間誘発する。",
+        "is_omega": true,
+        "is_zeta": true,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "戦術的逆転",
+        "name_eng": "Specialability Rangerzeb02",
+        "image": "/ability/tex.ability_rangerzeb_special02.png",
+        "description_jp": "ターゲットに最大HP5%分の物理ダメージを与える。指定した味方が新共和国の場合、その役割に応じて1ターンの追加効果を得る:\\n\\n[c][B5E7F5]- アタッカー:[-][/c] 味方新共和国全体は攻撃力上昇を得る",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "ラサット執行者",
+        "name_eng": "Uniqueability Rangerzeb01",
+        "image": "/abilityui/tex.abilityui_passive_pitfighter.png",
+        "description_jp": "ゼブ・オレリオス(新共和国パイロット)は回避力が10%上昇し、クリティカル回避力を5%得て、味方新共和国1体につき最大HPと最大プロテクションを2%得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": true
+      }
+    ],
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "EWOKSCOUT_SPEEDERBIKERAID",
@@ -5137,7 +5236,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "IG11_MANDALORIAN_EVENT",
@@ -5177,7 +5276,7 @@
         "cooldown": 3
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jabba-The-Hutt",
@@ -5267,7 +5366,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ninth-Sister",
@@ -5337,7 +5436,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Rey-Jedi-Trainig",
@@ -5407,7 +5506,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Chief-Nebit",
@@ -5457,7 +5556,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Hoth-Rebel-Soldier",
@@ -5496,7 +5595,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JABBATHEHUTT_GLE_INHERIT",
@@ -5566,7 +5665,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CT210408_GLE_INHERIT",
@@ -5605,7 +5704,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Denger",
@@ -5675,7 +5774,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "KIX",
@@ -5725,7 +5824,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CC-2224-Cody",
@@ -5775,7 +5874,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Resistance-Hero-Finn",
@@ -5825,7 +5924,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Bastila-Shan-Fallen",
@@ -5895,7 +5994,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GLHONDO_GLE_INHERIT",
@@ -5975,7 +6074,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "First-Order-SF-TIE-Pilot",
@@ -6015,7 +6114,7 @@
         "cooldown": 3
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BOBAFETT_GLE_INHERIT",
@@ -6085,7 +6184,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Shore-Trooper",
@@ -6124,7 +6223,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Dark-Trooper",
@@ -6174,7 +6273,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Princess-Kneesaa",
@@ -6224,7 +6323,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Hondo-Ohnaca",
@@ -6284,7 +6383,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "General-Kenobi",
@@ -6344,7 +6443,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Moff-Gideon",
@@ -6404,7 +6503,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Nightsister-Spirit",
@@ -6443,7 +6542,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Queen-Amidala",
@@ -6503,7 +6602,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Kit-Fisto",
@@ -6552,7 +6651,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Wrecker",
@@ -6602,7 +6701,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "IG-88",
@@ -6661,7 +6760,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "PRINCESSLEIA_GLE_INHERIT",
@@ -6690,7 +6789,7 @@
         "cooldown": 4
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BADBATCHHUNTER",
@@ -6740,7 +6839,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GLE_AWAKENEDREY",
@@ -6779,7 +6878,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BATCHERS3",
@@ -6829,7 +6928,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "50R-T",
@@ -6889,7 +6988,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Third-Sister",
@@ -6959,14 +7058,14 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "REY_DUEL",
     "character_name": "レイ",
     "character_image": "/charui/tex.charui_rey_tros.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "C-3PO",
@@ -7045,7 +7144,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GREEFKARGA_MANDALORIAN_EVENT",
@@ -7115,7 +7214,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GENERALSKYWALKER_GLE_INHERIT",
@@ -7185,7 +7284,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GENERALKENOBI_GLE_INHERIT_VADER",
@@ -7245,7 +7344,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "IG90",
@@ -7304,7 +7403,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BADBATCHHUNTER_GLE",
@@ -7354,7 +7453,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Captaion-Han-Solo",
@@ -7404,7 +7503,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Bodhi-Rook",
@@ -7454,7 +7553,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Dark-Trooper-Moff-Gideon",
@@ -7514,7 +7613,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Boushh-Leia-Organa",
@@ -7583,7 +7682,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "T3-M4",
@@ -7643,7 +7742,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Embo",
@@ -7702,7 +7801,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Visas-Marr",
@@ -7752,7 +7851,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Tusken-Warrior",
@@ -7802,7 +7901,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jedi-Master-Luke-Skywalker",
@@ -7882,7 +7981,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Imperial-Super-Commando",
@@ -7931,7 +8030,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Boba-Fett",
@@ -8001,7 +8100,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Captain-Tarpals",
@@ -8051,7 +8150,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "PAPLOO_SPEEDERBIKERAID",
@@ -8069,7 +8168,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Imperial-Probe-Droid",
@@ -8129,7 +8228,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Rey",
@@ -8207,7 +8306,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "LORDVADER_GLE_INHERIT",
@@ -8277,7 +8376,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "COMMANDERLUKESKYWALKER_JKL_EVENT",
@@ -8347,7 +8446,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Second-Sister",
@@ -8417,7 +8516,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Veteran-Smuggler-Han-Solo",
@@ -8466,7 +8565,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "COMMANDERLUKESKYWALKER_HOTH_JKL_EVENT",
@@ -8536,7 +8635,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Qira",
@@ -8596,7 +8695,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CHEWBACCALEGENDARY_JKL_EVENT",
@@ -8656,7 +8755,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Morgan-Elsbeth",
@@ -8706,7 +8805,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CAPTAINREX_SPEEDERBIKERAID",
@@ -8724,7 +8823,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Kanan-Jarrus",
@@ -8774,7 +8873,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Magmatrooper",
@@ -8813,7 +8912,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "PRINCESSLEIA_GL_EVENT",
@@ -8862,7 +8961,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Kyle-Katarn",
@@ -8912,7 +9011,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Paz-Vizsla",
@@ -8962,7 +9061,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ezra-Bridger-Exile",
@@ -9022,7 +9121,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Aayla-Secura",
@@ -9081,7 +9180,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Obi-Wan-Kenobi-Old-Ben",
@@ -9141,7 +9240,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Hera-Syndulla",
@@ -9191,7 +9290,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "SITHPALPATINE_GL_EVENT",
@@ -9271,7 +9370,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "THEMANDALORIANBESKARARMOR_JOURNEY_EVENT",
@@ -9320,14 +9419,14 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "NIKTOTHUG_GLE_INHERIT",
     "character_name": "ニクト・サグ",
     "character_image": "/charui/tex.charui_niktothug_01.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "IG-100-MagnaGuard",
@@ -9377,14 +9476,14 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GLAHSOKA_GLAHSOKAEVENT",
     "character_name": "アソーカ・タノ",
     "character_image": "/charui/tex.charui_ahsokatanogray.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Mother-Talzin",
@@ -9444,7 +9543,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Death-Trooper",
@@ -9494,7 +9593,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JEDIMASTERMACEWINDU",
@@ -9554,7 +9653,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "SATELESHAN",
@@ -9614,7 +9713,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "VANE",
@@ -9664,7 +9763,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GENERALHUX_EVENT",
@@ -9724,7 +9823,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Admiral-Raddus",
@@ -9784,7 +9883,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "K-2SO",
@@ -9833,7 +9932,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Padme-Amidala",
@@ -9893,7 +9992,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Wampa",
@@ -9953,7 +10052,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "DARKREY",
@@ -10013,7 +10112,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Saw-Gerrera",
@@ -10062,7 +10161,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Mace-Windu",
@@ -10132,7 +10231,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "HOTHLEIA_JKL_EVENT",
@@ -10181,7 +10280,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Sith-Assassin",
@@ -10221,7 +10320,7 @@
         "cooldown": 4
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jyn-Erso",
@@ -10281,7 +10380,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BRUTUS",
@@ -10331,7 +10430,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Sion",
@@ -10392,7 +10491,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Poggle",
@@ -10441,7 +10540,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CT-21-0408-Echo",
@@ -10490,7 +10589,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CC2224_GLE_INHERIT",
@@ -10540,7 +10639,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Droideka",
@@ -10590,7 +10689,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "VANGUARDTEMPLEGUARD",
@@ -10640,7 +10739,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Princess-Leia",
@@ -10689,7 +10788,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Seventh-Sister",
@@ -10759,7 +10858,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ugnaught",
@@ -10798,7 +10897,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Snowtrooper",
@@ -10837,7 +10936,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "VEL",
@@ -10886,7 +10985,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "First-Order-Officer",
@@ -10926,7 +11025,7 @@
         "cooldown": 3
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Vader",
@@ -10997,7 +11096,7 @@
         "cooldown": 9
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GRANDMASTERLUKE_GL_EVENT",
@@ -11077,7 +11176,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ima-Gun-Di",
@@ -11126,7 +11225,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Bo-Katan-Mandalor",
@@ -11186,7 +11285,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Great-Mothers",
@@ -11235,7 +11334,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Baze-Malbus",
@@ -11295,7 +11394,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "HERASYNDULLAS3_SPEEDERBIKERAID",
@@ -11313,7 +11412,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Emperor-Palpatine",
@@ -11373,7 +11472,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Lando-Calrissian",
@@ -11422,7 +11521,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "SHORETROOPER_SPEEDERBIKERAID",
@@ -11440,7 +11539,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Sun-Fac",
@@ -11490,7 +11589,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JOCASTANU",
@@ -11540,14 +11639,14 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CARTELSABOTEUR_GLE_INHERIT",
     "character_name": "カルテル・サボタージュ",
     "character_image": "/charui/tex.charui_weequaysaboteur.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "LORDVADER_GLE",
@@ -11627,7 +11726,57 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "id": "R5D4",
+    "character_name": "R5-D4",
+    "character_image": "/charui/tex.charui_r5d4.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "レッド・ワン",
+        "name_eng": "Basicability R5d4",
+        "image": "/ability/tex.ability_r5d4_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、1ターンの間、時間経過ダメージのスタックを1発生させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "タクティカルサポート",
+        "name_eng": "Specialability R5d401",
+        "image": "/ability/tex.ability_r5d4_special01.png",
+        "description_jp": "味方全体は勢力と役割に応じてボーナスを得る:\\n\\n[c][B5E7F5]- アタッカー:[-][/c] 味方反乱軍は1ターンの間挑発を無効化する\\n[c][B5E7F5]- ヒーラーおよびサポート:[-][/c] 味方新共和国と反乱軍のクリティカル回避力が2ターンの間25%上昇する\\n[c][B5E7F5]- タンク:[-][/c] 味方新共和国は2ターンの挑発を行う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "バッド・モチベーター",
+        "name_eng": "Specialability R5d402",
+        "image": "/ability/tex.ability_r5d4_special02.png",
+        "description_jp": "R5-D4は遭遇終了まで全てのプロテクションを失い、その量に等しい最大HPを得る。R5-D4は自身の最大HPの25%分の固定ダメージを敵全体に与え、自身のHPが1になる。R5-D4は2ターンの間スタン状態になる(解除不可)。\\n\\nこのスキルはクールダウン状態から開始する(回避、耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 75
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "冒険特化",
+        "name_eng": "Uniqueability R5d401",
+        "image": "/abilityui/tex.abilityui_passive_astromechbuiltforadventure.png",
+        "description_jp": "各遭遇開始時、味方反乱軍全体の最大プロテクションが遭遇終了まで5%上昇する。\\n\\nR5-D4は時間経過ダメージのスタックを発生させるたび、バッド・モチベーターのクールダウンが1減少し、マンダロリアン(ベスカー・アーマー)がホイッスリング・バードを持っている場合は、ホイッスリング・バードのスタックを1得る(最大20)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": true
+      }
+    ],
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GLAHSOKATANO_GLE_INHERIT",
@@ -11697,7 +11846,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Sidious",
@@ -11746,7 +11895,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Chief-Chirpa",
@@ -11796,11 +11945,11 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Garazeb-Zeb-Orrelios",
-    "character_name": "ガラゼブ・“ゼブ”・オレリオス",
+    "character_name": "ガラゼブ“ゼブ”オレリオス",
     "character_image": "/charui/tex.charui_zeb_s3.png",
     "ability": [
       {
@@ -11846,14 +11995,14 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JARJARBINKS_EVENT",
     "character_name": "ジャー・ジャー・ビンクス",
     "character_image": "/charui/tex.charui_jarjarbinks.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ZUCKUSS",
@@ -11923,7 +12072,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "KLEYA",
@@ -11973,7 +12122,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jar-Jar-Binks",
@@ -12033,7 +12182,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Boss-Nass",
@@ -12093,7 +12242,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "0-0-0",
@@ -12142,7 +12291,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GLHONDO_GLE_INHERIT_NOULT",
@@ -12212,7 +12361,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Nightsister-Initiate",
@@ -12262,7 +12411,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "REYJEDITRAINING_GLEVENT",
@@ -12332,7 +12481,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Geonosian-Brood-Alpha",
@@ -12402,7 +12551,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Nightsister-Acolyte",
@@ -12441,7 +12590,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "STRANGER",
@@ -12501,7 +12650,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "SCOUTTROOPER_V3_SPEEDERBIKERAID",
@@ -12519,7 +12668,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "SM33",
@@ -12569,7 +12718,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BAYLANSKOLL",
@@ -12639,7 +12788,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Bane",
@@ -12699,7 +12848,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Geonosian-Soldier",
@@ -12738,7 +12887,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Cal-Kestis",
@@ -12788,7 +12937,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JKL_PILOT",
@@ -12827,7 +12976,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Maul",
@@ -12876,7 +13025,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jawa",
@@ -12915,7 +13064,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "IMPERIALSUPERCOMMANDO_PROVING_GROUNDS",
@@ -12954,7 +13103,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Bossk",
@@ -13024,7 +13173,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Resistance^Pilot",
@@ -13063,7 +13212,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jedi-Knight-Luke-Skywalker/",
@@ -13123,7 +13272,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "DEATHTROOPER_SPEEDERBIKERAID",
@@ -13141,7 +13290,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "DEATHTROOPERPERIDEA",
@@ -13191,14 +13340,14 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "EWOKELDER_SPEEDERBIKERAID",
     "character_name": "イウォーク・エルダー",
     "character_image": "/charui/tex.charui_ewok_chief.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "General-Veers",
@@ -13247,7 +13396,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "DEPABILLABA",
@@ -13297,7 +13446,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Pao",
@@ -13347,7 +13496,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Revan",
@@ -13417,7 +13566,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "QUIGGOLD",
@@ -13466,7 +13615,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Dathcha",
@@ -13515,7 +13664,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GENERALKENOBI_GLE_INHERIT",
@@ -13575,7 +13724,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Fennec-Shand",
@@ -13634,7 +13783,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jedi-Master-Kenobi",
@@ -13714,7 +13863,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jedi-Knight-Anakin",
@@ -13763,7 +13912,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Cere-Junda",
@@ -13823,7 +13972,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Boba-Fett-Scion-of-Jango",
@@ -13891,7 +14040,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ben-Solo",
@@ -13951,7 +14100,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Young-Han-Solo",
@@ -14001,7 +14150,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jedi-Consular",
@@ -14041,7 +14190,7 @@
         "cooldown": 3
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "TIE-Fighter-Pilot",
@@ -14080,7 +14229,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "B1-Battle-Droid",
@@ -14128,7 +14277,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JEDIMASTERKENOBI_GLE_INHERIT_T6",
@@ -14208,7 +14357,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ARCTROOPER501ST_GLE_INHERIT",
@@ -14247,7 +14396,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Coruscant-Underworld-Police",
@@ -14286,7 +14435,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Gamorrean-Guard",
@@ -14336,7 +14485,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Zaalbar",
@@ -14385,7 +14534,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ewoke-Scout",
@@ -14424,7 +14573,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Veteran-Smuggler-Chewbacca",
@@ -14473,7 +14622,67 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "id": "REMNANTSNOWCOMMANDER",
+    "character_name": "スノートルーパー・コマンダー",
+    "character_image": "/charui/tex.charui_remnantsnowcommander.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "T-21Bブラスター・ライフル",
+        "name_eng": "Basicability Remnantsnowcommander",
+        "image": "/ability/tex.ability_remnantsnowcommander_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、1ターンの間無防備状態にする。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "潜伏",
+        "name_eng": "Specialability Remnantsnowcommander01",
+        "image": "/ability/tex.ability_remnantsnowcommander_special01.png",
+        "description_jp": "1ターンの間、防御力が50%上昇し、挑発を得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ライフルバット",
+        "name_eng": "Specialability Remnantsnowcommander02",
+        "image": "/ability/tex.ability_remnantsnowcommander_special02.png",
+        "description_jp": "ターゲットに物理ダメージを与える。スノートルーパーとTIEファイター・パイロットは、1ターンの間、スノートルーパー・コマンダーの防御力の50%に等しい攻撃力を得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "リーダースキル",
+        "name_jp": "ウォーロードの執行者",
+        "name_eng": "Leaderability Remnantsnowcommander",
+        "image": "/abilityui/tex.abilityui_passive_empire.png",
+        "description_jp": "味方インペリアル・レムナント全体は最大HPと最大プロテクションが30%上昇する。味方インペリアル・レムナントのHPが初めて30%を下回ると、HPとプロテクションが30%回復する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": true
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "ホワイトアウト領域",
+        "name_eng": "Uniqueability Remnantsnowcommander01",
+        "image": "/abilityui/tex.abilityui_passive_snowflake.png",
+        "description_jp": "スノートルーパー・コマンダーが挑発している間、敵からダメージを受けるたび、インペリアル・レムナントの味方全体がバトル終了まで防御突破力を10%得る(スタック可能、最大100%)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ITHANO",
@@ -14533,7 +14742,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "MAGMATROOPER_SPEEDERBIKERAID",
@@ -14551,7 +14760,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Nightsister-Zombie",
@@ -14600,7 +14809,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CT5555_GLE_INHERIT",
@@ -14659,7 +14868,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Old-Daka",
@@ -14708,7 +14917,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "The-Mandalorian-Beskar-Armor",
@@ -14768,7 +14977,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CLONETROOPERP2FORESTSCOUT",
@@ -14797,7 +15006,7 @@
         "cooldown": 3
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "B2-Super-Battle-Droid",
@@ -14846,7 +15055,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Mon-Mothma",
@@ -14906,7 +15115,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "SCORCH",
@@ -14956,7 +15165,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Storm-Trooper",
@@ -14995,7 +15204,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Admiral-Ackbar",
@@ -15045,7 +15254,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Scarif-Rebel-Pathfinder",
@@ -15084,7 +15293,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Zam-Wesell",
@@ -15154,7 +15363,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "C3POLEGENDARY_SPEEDERBIKERAID",
@@ -15212,7 +15421,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CT-7567-Rex",
@@ -15272,7 +15481,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GENERALSKYWALKER_GLE_INHERIT_T3",
@@ -15332,7 +15541,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "THEMANDALORIAN_MUDDY",
@@ -15391,7 +15600,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CT7567_GLE_INHERIT",
@@ -15420,7 +15629,7 @@
         "cooldown": 4
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "R2-D2",
@@ -15480,7 +15689,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GENERALKENOBI_GLE",
@@ -15540,7 +15749,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jedi-Knight-Cal-Kestis",
@@ -15608,7 +15817,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Commander-Ahsoka-Tano",
@@ -15658,7 +15867,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Paploo",
@@ -15708,7 +15917,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Colonel-Starck",
@@ -15758,7 +15967,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Captain-Rex",
@@ -15808,7 +16017,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "General-Skywalker",
@@ -15878,7 +16087,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "IG-86-Sntinel-Droid",
@@ -15917,7 +16126,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CINTA",
@@ -15966,7 +16175,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GLLEIA_SPEEDERBIKERAID",
@@ -16004,7 +16213,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Sabine-Wren",
@@ -16054,7 +16263,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Savage-Opress",
@@ -16103,7 +16312,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CLONETROOPER212_GLE",
@@ -16142,7 +16351,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Enfys-Nest",
@@ -16192,7 +16401,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "VADER_JKL_EVENT",
@@ -16252,7 +16461,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Rey-Scavenger",
@@ -16302,7 +16511,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ADMINISTRATORLANDO_JKL_EVENT",
@@ -16351,7 +16560,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Bo-Katan-Kryze",
@@ -16400,7 +16609,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Canderous-Ordo",
@@ -16449,7 +16658,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Director-Krennic",
@@ -16519,7 +16728,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Poe-Dameron",
@@ -16568,7 +16777,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Krrsantan",
@@ -16638,7 +16847,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Omega",
@@ -16688,7 +16897,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "KYLORENUNMASKED_GLEVENT",
@@ -16748,7 +16957,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CLONEVETERAN212_GLE",
@@ -16807,7 +17016,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "FOTF_VADER",
@@ -16867,7 +17076,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Chirrut-Imwe",
@@ -16927,7 +17136,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "OMEGAS3",
@@ -16987,7 +17196,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JEDIMASTERKENOBI_GLE_INHERIT",
@@ -17057,7 +17266,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "HANSOLO_GL_EVENT",
@@ -17107,7 +17316,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "INQUISITORBARRISS",
@@ -17177,7 +17386,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Sith-Marauder",
@@ -17216,7 +17425,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "WRECKERS3",
@@ -17276,7 +17485,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Barriss-Offee",
@@ -17325,7 +17534,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Zorri-Bliss",
@@ -17385,7 +17594,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Asajj-Ventress",
@@ -17445,7 +17654,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Young-Lando-Calrissian",
@@ -17495,7 +17704,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Commander-Luke-Skywalker",
@@ -17565,7 +17774,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Maul",
@@ -17624,7 +17833,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "C3POLEGENDARY_JKL_EVENT",
@@ -17703,7 +17912,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Gar-Saxon",
@@ -17752,7 +17961,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "L3-37",
@@ -17801,7 +18010,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Gungan-Boomadier",
@@ -17851,7 +18060,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Grand-Moff-Tarkin",
@@ -17911,7 +18120,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Sith-Trooper",
@@ -17961,7 +18170,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Shaak-Ti",
@@ -18021,7 +18230,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Cara-Dune",
@@ -18070,7 +18279,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Fifth-Brother",
@@ -18140,7 +18349,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "DISGUISEDCLONETROOPER",
@@ -18189,7 +18398,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Han-Solo",
@@ -18239,7 +18448,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Greef-Karga",
@@ -18309,7 +18518,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "KXSECURITYDROID",
@@ -18358,7 +18567,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Luthen-Rael",
@@ -18408,7 +18617,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Tusken-Shaman",
@@ -18447,7 +18656,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Kylo-Ren",
@@ -18497,7 +18706,7 @@
         "cooldown": 3
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Greedo",
@@ -18567,7 +18776,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jedi-Knight-Revan",
@@ -18637,7 +18846,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Tusken-Chief",
@@ -18686,7 +18895,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ezra-Bridger",
@@ -18736,7 +18945,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "STORMTROOPER_SPEEDERBIKERAID",
@@ -18754,7 +18963,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Threepio-Chewie",
@@ -18804,7 +19013,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Renge-Trooper",
@@ -18843,7 +19052,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "RANGETROOPER_SPEEDERBIKERAID",
@@ -18861,7 +19070,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JEDIKNIGHTLUKE_SPEEDERBIKERAID",
@@ -18889,14 +19098,14 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CARTELBRUISER_GLE_INHERIT",
     "character_name": "カルテル・ブルーザー",
     "character_image": "/charui/tex.charui_jabbasenforcer.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Wedge-Antilles",
@@ -18945,7 +19154,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "STORMTROOPERLUKE",
@@ -19005,7 +19214,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GLLEIA_GLE_INHERIT_STANDARD",
@@ -19085,7 +19294,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Tron-Malicos",
@@ -19145,7 +19354,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Padawan-Obi-Wan",
@@ -19195,7 +19404,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Tech",
@@ -19245,7 +19454,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "HUMANTHUG_GLE_INHERIT",
@@ -19284,7 +19493,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "AMILYNHOLDO_RADDUS",
@@ -19334,7 +19543,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Bistan",
@@ -19384,7 +19593,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "IG-11",
@@ -19434,7 +19643,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "IG-12-Grogu",
@@ -19484,7 +19693,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "First-Order-Executioner",
@@ -19523,7 +19732,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "The-Mandalorian",
@@ -19582,7 +19791,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GAMORREANGUARD_GLE_INHERIT",
@@ -19622,7 +19831,7 @@
         "cooldown": 4
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Dash-Rendar",
@@ -19682,7 +19891,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Talon",
@@ -19742,7 +19951,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "NIGHTTROOPER",
@@ -19792,7 +20001,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Rebel-Officer-Leia-Organa",
@@ -19841,7 +20050,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jango-Fett",
@@ -19911,7 +20120,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "General-Grievous",
@@ -19971,7 +20180,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jawa-Engineer",
@@ -20021,7 +20230,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Tusken-Raider",
@@ -20060,7 +20269,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CROSSHAIRS3",
@@ -20110,7 +20319,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Sith-Empire-Troper",
@@ -20149,7 +20358,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Ahsoka-Tano-Fulcrum",
@@ -20199,7 +20408,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Chopper",
@@ -20249,7 +20458,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Grand-Master-Yoda",
@@ -20310,7 +20519,7 @@
         "cooldown": 4
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Traya",
@@ -20370,7 +20579,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Supreme-Leader-kylo-Ren",
@@ -20450,7 +20659,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Mara-Jade-The-Empeors-Hand",
@@ -20500,7 +20709,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Carth-Onasi",
@@ -20549,7 +20758,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Kylo-Ren-Unmasked",
@@ -20609,7 +20818,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CAPTAINSILVO",
@@ -20669,7 +20878,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "VEERS_SPEEDERBIKERAID",
@@ -20697,7 +20906,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "4LOM",
@@ -20767,14 +20976,14 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JEDIKNIGHTLUKE_ENDOR_GLE_INHERIT",
     "character_name": "ジェダイ・ナイト・ルーク・スカイウォーカー",
     "character_image": "/charui/tex.charui_luke_jediknight.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "MOFFGIDEONS1_SPEEDERBIKERAID",
@@ -20802,7 +21011,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Jedi-Knight-Guardian",
@@ -20841,7 +21050,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "BT-1",
@@ -20890,7 +21099,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Darth-Malgus",
@@ -20950,7 +21159,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "COLONELSTARCK_SPEEDERBIKERAID",
@@ -20968,7 +21177,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Sana-Starros",
@@ -21028,7 +21237,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Hermit-Yoda",
@@ -21088,7 +21297,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Kelleran-Beq",
@@ -21148,7 +21357,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "HK-47",
@@ -21218,7 +21427,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Merrin",
@@ -21278,7 +21487,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Grand-Admiral-Thrawn",
@@ -21338,7 +21547,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Eeth-Koth",
@@ -21387,7 +21596,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ASAJJDARKDISCIPLE",
@@ -21457,14 +21666,14 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GLLEIA_GLE_INHERIT",
     "character_name": "レイア・オーガナ",
     "character_image": "/charui/tex.charui_leiaendor.png",
     "ability": [],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "GLAHSOKATANO",
@@ -21544,7 +21753,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Talia",
@@ -21594,7 +21803,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "IDENVERSIOEMPIRE_SPEEDERBIKERAID",
@@ -21622,7 +21831,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "JUHANI",
@@ -21672,7 +21881,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Tarfful",
@@ -21732,7 +21941,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "ADMIRALPIETT_SPEEDERBIKERAID",
@@ -21760,7 +21969,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CT-5555-Fives",
@@ -21819,7 +22028,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "CARADUNE_MANDALORIAN_EVENT",
@@ -21868,7 +22077,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Cassian-Andor",
@@ -21918,7 +22127,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Scout-Trooper",
@@ -21968,7 +22177,7 @@
         "is_omicron": true
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Luke-Skywalker-Farmboy",
@@ -22017,7 +22226,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "Bastila-Shan",
@@ -22087,7 +22296,7 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   },
   {
     "id": "MAJORPARTAGAZ",
@@ -22146,6 +22355,6 @@
         "is_omicron": false
       }
     ],
-    "last_updated": "2026年4月26日"
+    "last_updated": "2026年5月3日"
   }
 ]
