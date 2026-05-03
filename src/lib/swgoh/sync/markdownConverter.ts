@@ -1,6 +1,6 @@
 /**
  * Comlink の説明文に含まれる BBCode 風マークアップを、
- * このサイトのスキル説明レンダラ（`src/components/elements/characterSkills/characterSkills.tsx`）が
+ * このサイトのスキル説明レンダラ（`src/components/unit-detail/UnitDetail.tsx` + `src/components/elements/BBCodeText.tsx`）が
  * 解釈できる「単一文字マーカー形式」に変換する。
  *
  * レンダラの仕様:

@@ -1,32 +1,32 @@
-import { BBCodeText } from "@/components/elements/BBCodeText";
-import abilitiesRaw from "@/data/.generated/abilities.json";
-import { Abilities, CharacterAbilities } from "@/types/abilities/abilities";
-import fs from "node:fs";
+import type { ReactNode } from "react";
 import Image from "next/image";
-import path from "node:path";
 
-const abilitiesPath = path.join(
-  process.cwd(),
-  "src/data/.generated/abilities.json",
-);
-const lastUpdated = fs.statSync(abilitiesPath).mtime.toISOString();
-const data: CharacterAbilities[] = (
-  abilitiesRaw as Omit<CharacterAbilities, "last_updated">[]
-).map((a) => ({ ...a, last_updated: lastUpdated }));
+import { BBCodeText } from "@/components/elements/BBCodeText";
+import type { Abilities } from "@/types/abilities/abilities";
 
-export default async function CharacterSkills(params: { url: string }) {
-  let abilityIndex: number = -1;
-  for (let i: number = 0; i < data.length; i++) {
-    if (data[i].id === params.url) {
-      abilityIndex = i;
-      break;
-    }
-  }
+export interface UnitDetailProps {
+  name: string;
+  image: string;
+  subtitle?: ReactNode;
+  description?: string;
+  abilities: Abilities[];
+  lastUpdated: string;
+  notFound?: boolean;
+}
 
-  if (abilityIndex == -1) {
+export default function UnitDetail({
+  name,
+  image,
+  subtitle,
+  description,
+  abilities,
+  lastUpdated,
+  notFound,
+}: UnitDetailProps) {
+  if (notFound) {
     return (
       <p className="text-[hsl(220,10%,52%)]">
-        このキャラクターのページは存在しません。
+        このページは存在しません。
         <br />
         URLが間違っているか、現在制作中です。
       </p>
@@ -35,19 +35,31 @@ export default async function CharacterSkills(params: { url: string }) {
 
   return (
     <>
-      <h2 className="flex items-center gap-3 text-lg font-medium text-white mb-5">
+      <h2 className="flex items-center gap-3 text-lg font-medium text-white mb-3">
         <Image
-          alt={data[abilityIndex].character_name}
-          src={data[abilityIndex].character_image}
+          alt={name}
+          src={image}
           width={48}
           height={48}
           className="rounded"
           unoptimized={true}
         />
-        <span>{data[abilityIndex].character_name}</span>
+        <span>{name}</span>
       </h2>
-      {data[abilityIndex].ability.map((item: Abilities) => {
-        return (
+      {subtitle ? (
+        <div className="text-sm text-[hsl(220,10%,52%)] mb-3">{subtitle}</div>
+      ) : null}
+      {description ? (
+        <div className="rounded border border-[hsl(220,12%,14%)] bg-[hsl(220,16%,10%)] p-4 mb-4 text-sm text-[hsl(220,14%,82%)] leading-relaxed">
+          <BBCodeText text={description} className="block whitespace-pre-wrap" />
+        </div>
+      ) : null}
+      {abilities.length === 0 ? (
+        <p className="text-sm text-[hsl(220,10%,52%)]">
+          スキル情報は準備中です。
+        </p>
+      ) : (
+        abilities.map((item) => (
           <div
             key={item.name_jp}
             className="rounded border border-[hsl(220,12%,14%)] bg-[hsl(220,16%,10%)] mt-2 p-4"
@@ -139,10 +151,10 @@ export default async function CharacterSkills(params: { url: string }) {
               />
             </div>
           </div>
-        );
-      })}
+        ))
+      )}
       <p className="text-xs text-[hsl(220,8%,36%)] mt-4">
-        最終更新日: {data[abilityIndex].last_updated}
+        最終更新日: {lastUpdated}
       </p>
     </>
   );

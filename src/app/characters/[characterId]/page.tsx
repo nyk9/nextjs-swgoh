@@ -1,5 +1,13 @@
-import CharacterSkills from "@/components/elements/characterSkills/characterSkills";
+import fs from "node:fs";
+import path from "node:path";
+
+import abilitiesRaw from "@/data/.generated/abilities.json";
 import unitsRaw from "@/data/.generated/units.json";
+import UnitDetail from "@/components/unit-detail/UnitDetail";
+import type {
+  Abilities,
+  CharacterAbilities,
+} from "@/types/abilities/abilities";
 import type { Characters } from "@/types/characters/characters";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -9,6 +17,22 @@ const SITE_URL = "https://swgoh4jp.com";
 const characters = (unitsRaw as Characters[]).filter(
   (c) => c.is_event_variant !== true,
 );
+
+const abilitiesById = new Map<string, CharacterAbilities>();
+for (const item of abilitiesRaw as Omit<CharacterAbilities, "last_updated">[]) {
+  abilitiesById.set(item.id, { ...item, last_updated: "" });
+}
+
+const ABILITIES_LAST_UPDATED = (() => {
+  try {
+    const stat = fs.statSync(
+      path.join(process.cwd(), "src/data/.generated/abilities.json"),
+    );
+    return stat.mtime.toISOString();
+  } catch {
+    return "";
+  }
+})();
 
 function extractSlug(character: Characters): string {
   return (character.url ?? "")
@@ -28,6 +52,12 @@ function findCharacter(characterId: string): Characters | undefined {
     const slug = extractSlug(c);
     return slug && candidates.has(slug);
   });
+}
+
+function resolveAbilities(character: Characters | undefined): Abilities[] {
+  if (!character) return [];
+  const slug = extractSlug(character);
+  return abilitiesById.get(slug)?.ability ?? [];
 }
 
 export async function generateStaticParams() {
@@ -88,6 +118,7 @@ export default async function CharacterDetail(props: {
 }) {
   const params = await props.params;
   const character = findCharacter(params.characterId);
+  const abilities = resolveAbilities(character);
 
   const breadcrumb = {
     "@context": "https://schema.org",
@@ -126,7 +157,13 @@ export default async function CharacterDetail(props: {
           ← キャラクター一覧
         </Link>
         <div className="mt-4">
-          <CharacterSkills url={params.characterId} />
+          <UnitDetail
+            name={character?.name ?? params.characterId}
+            image={character?.src ?? ""}
+            abilities={abilities}
+            lastUpdated={ABILITIES_LAST_UPDATED}
+            notFound={!character}
+          />
         </div>
       </div>
       <script
