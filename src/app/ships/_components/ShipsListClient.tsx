@@ -503,7 +503,9 @@ function ResultGrid({
 }
 
 function ShipCard({ ship }: { ship: Ship }) {
-  return (
+  const href = ship.url ?? (ship.base_id ? `/ships/${ship.base_id.toLowerCase()}` : null);
+
+  const cardBody = (
     <article className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.06]">
       <div className="p-4">
         <h3 className="mb-3 line-clamp-2 text-sm font-bold leading-snug text-white">
@@ -543,5 +545,16 @@ function ShipCard({ ship }: { ship: Ship }) {
         ))}
       </div>
     </article>
+  );
+
+  if (!href) return cardBody;
+
+  return (
+    <Link
+      href={href}
+      className="block rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/40"
+    >
+      {cardBody}
+    </Link>
   );
 }
