@@ -3,8 +3,17 @@ import { fetchPlayerData } from "@/lib/swgoh/comlink/client";
 import { formatPlayer, getUnitsAboveMinRelic } from "@/lib/swgoh/comlink/formatPlayer";
 import { ComlinkError } from "@/lib/swgoh/comlink/client";
 import { checkRateLimit, rateLimitHeaders } from "@/lib/rateLimit";
+import { getCurrentUser } from "@/lib/auth/guards";
 
 export async function GET(request: NextRequest) {
+  const user = await getCurrentUser();
+  if (!user) {
+    return NextResponse.json(
+      { error: "ログインが必要です" },
+      { status: 401 },
+    );
+  }
+
   const rl = await checkRateLimit(request);
   if (!rl.ok) {
     return NextResponse.json(
