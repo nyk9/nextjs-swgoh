@@ -1,7 +1,8 @@
-const path = require('path');
+import createMDX from "@next/mdx";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
   images: {
     remotePatterns: [
       {
@@ -23,13 +24,10 @@ const nextConfig = {
   },
 };
 
-module.exports = {
-  ...nextConfig,
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@': path.join(__dirname, 'src'),
-    }
-    return config
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: ["remark-frontmatter", "remark-gfm"],
   },
-};
+});
+
+export default withMDX(nextConfig);
