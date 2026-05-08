@@ -1,0 +1,2 @@
+- [Skill renderer (BBCode raw)](project_skill_renderer_markers.md) — characterSkills は BBCodeText で描画。`*$#+` 自前マーカーパーサは Step 4 で全廃
+- [Comlink /data segment 0 quirks](project_comlink_data_shapes.md) — 329MB データの構造・skill id プレフィックス・ult / 付与の特殊経路

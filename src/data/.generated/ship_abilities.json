@@ -1,0 +1,3232 @@
+[
+  {
+    "base_id": "EMPERORSSHUTTLE",
+    "ship_name": "皇帝のシャトル",
+    "ship_image": "/charui/tex.charui_imperialshuttle.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "アグレッシブ・オフェンス",
+        "name_eng": "Basicability Emperorsshuttle",
+        "image": "/ability/tex.ability_imperialshuttle_basic.png",
+        "description_jp": "ターゲットに特殊ダメージを与える。\\n\\n[c][f0ff23]ターゲットロック:[-][/c] 50%の確率でターゲットに2ターンのクリティカルダメージ低下を発生させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "歴戦の陣形",
+        "name_eng": "Uniqueability Emperorsshuttle01",
+        "image": "/abilityui/tex.abilityui_passive_targetlock.png",
+        "description_jp": "ターゲットロック状態の敵からダメージを受けると皇帝のシャトルの弱体効果が全て解除される。クリティカルヒット時、味方帝国軍とシスに50%の確率で2ターンのプロテクション上昇(5%)が発生する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "帝国軍の罠",
+        "name_eng": "Hardwareability Emperorsshuttle01",
+        "image": "/abilityui/tex.abilityui_passive_empire.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 皇帝のシャトルのプロテクションが25%上昇し、2ターンのクリティカルヒット耐性を得る。味方帝国軍およびシスの攻撃力が2ターンの間上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "BWINGREBEL",
+    "ship_name": "反乱軍Bウイング",
+    "ship_image": "/charui/tex.charui_bwingrebel.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ガーヒルR-9X重レーザー砲",
+        "name_eng": "Basicability Bwingrebel",
+        "image": "/ability/tex.ability_bwingrebel_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ターゲットに1ターンの回避力低下を発生させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ブロッケード・バスター",
+        "name_eng": "Specialability Bwingrebel01",
+        "image": "/ability/tex.ability_bwingrebel_special01.png",
+        "description_jp": "敵全体に物理ダメージを与え、2ターンの間、精度低下を発生させる。\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ターゲットロックが発生している敵全体を1ターンの間めまい状態にする。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "戦術機動",
+        "name_eng": "Uniqueability Bwingrebel01",
+        "image": "/abilityui/tex.abilityui_passive_tacticalmaneuver.png",
+        "description_jp": "バトル開始時、味方主力シップがホーム・ワンの場合、バトル終了まで最大HPが5%上昇する。\\n\\n反乱軍Bウイングが敵からダメージを受けるたび、ターンメーターが10%上昇し、2ターンの報復効果を得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "コース維持",
+        "name_eng": "Hardwareability Bwingrebel",
+        "image": "/abilityui/tex.abilityui_passive_rebel.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方反乱軍に1ターンのアドバンテージを付与する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALNEGOTIATOR",
+    "ship_name": "ネゴシエーター",
+    "ship_image": "/charui/tex.charui_negotiator.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "絶妙なタイミング",
+        "name_eng": "Basicability Capitalnegotiator",
+        "image": "/ability/tex.ability_negotiator_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、指定した味方に2ターンのクリティカルヒット耐性を与える。\\n\\n[c][ffff33]ターゲットロック:[-][/c] 2ターンの攻撃力低下を発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "共和国の保護",
+        "name_eng": "Specialability Capitalnegotiator01",
+        "image": "/ability/tex.ability_negotiator_special01.png",
+        "description_jp": "指定した味方の攻撃力を2ターン上昇させ、味方銀河共和国全体に1ターンの[c][f0ff23]永遠の忠誠[-][/c]効果を付与する。この効果はコピー、解除、阻止できない。味方全体に2ターンのプロテクション上昇(10%)が発生する。\\n\\n[c][f0ff23]永遠の忠誠:[-][/c] シップが戦闘不能になっていない場合、敵の最初の攻撃(アシスト含む)で戦闘不能にならない。HPが1%に減少すると、2ターンのステルス効果とプロテクション上昇(50%)が発生し、HPが25%回復する。その後この強化効果は失われる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 5
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "動員",
+        "name_eng": "Specialability Capitalnegotiator02",
+        "image": "/ability/tex.ability_negotiator_special02.png",
+        "description_jp": "敵全体に物理ダメージを与え、2ターンの間めまい状態にする。ターゲットロックが発生していないランダムな敵2機に2ターンのターゲットロックを発生させる。味方全体のターンメーターが10%上昇する。味方銀河共和国全体に2ターンの[c][ffff33]武勇[-][/c]効果が発生し、その後武勇状態の味方全体をアシストに呼ぶ。\\n\\n[c][ffff33]武勇:[-][/c] 味方銀河共和国主力シップのターンメーターが15%上昇し、ターン終了時にアルティメットスキルのクールダウンが1減少する\\n",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "Yウイングアサルト",
+        "name_eng": "Specialability Capitalnegotiator03",
+        "image": "/ability/tex.ability_negotiator_special03.png",
+        "description_jp": "敵全体に物理ダメージを与え、1ターンの[c][f0ff23]コンカッションマイン[-][/c]を3個設置し、敵全体のクールダウンを最大まで増加させる(主力シップは除く)。コンカッションマインは解除、阻止、耐性発揮できない。このスキルは回避できず、クールダウン状態から開始する。\\n\\n[c][f0ff23]コンカッションマイン:[-][/c] 爆発時にターゲットの最大HP10%分のダメージを与え、2ターンの間めまい状態にする。解除不可。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 12
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "GEONOSIANSTARFIGHTER1",
+    "ship_name": "サン・ファクのジオノージアン・スターファイター",
+    "ship_image": "/charui/tex.charui_geonosis_fighter_sunfac.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "制空権",
+        "name_eng": "Basicability Geonosianstarfighter1",
+        "image": "/ability/tex.ability_geonosis_fighter_sunfac_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。ターン外に攻撃を行った場合、さらに2ターンのターゲットロックを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "恩讐",
+        "name_eng": "Uniqueability Geonosianstarfighter101",
+        "image": "/abilityui/tex.abilityui_passive_def_resistance.png",
+        "description_jp": "強化発生中の敵がターンを開始すると、サン・ファクのジオノージアン・スターファイターのターンメーターが10%、防御力が20%上昇し、その敵のターン終了まで挑発を行う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "リパルサーアレイ - 制御",
+        "name_eng": "Hardwareability Geonosianstarfighter01",
+        "image": "/abilityui/tex.abilityui_passive_stun.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ターゲットを1ターンの間スタン状態にする（回避、耐性発揮不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "GEONOSIANSTARFIGHTER2",
+    "ship_name": "ジオノージアン兵士のスターファイター",
+    "ship_image": "/charui/tex.charui_geonosis_fighter_soldier.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "最前線",
+        "name_eng": "Basicability Geonosianstarfighter2",
+        "image": "/ability/tex.ability_geonosis_fighter_soldier_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、ターンメーターを15%減少させる(強化発生中の敵には効果2倍)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "リパルサーアレイ - 誘導",
+        "name_eng": "Hardwareability Geonosianstarfighter201",
+        "image": "/abilityui/tex.abilityui_passive_attack_buff.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ジオノージアン兵士のスターファイターは2ターン間攻撃力が上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "スウォーム攻撃",
+        "name_eng": "Uniqueability Geonosianstarfighter201",
+        "image": "/abilityui/tex.abilityui_passive_assist.png",
+        "description_jp": "味方が自ターン中にスキルを使用すると、ジオノージアン兵士のスターファイターが15%の確率でアシストする(ダメージは40%減少)。味方分離主義者に対しては、この成功率が2倍になる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "SCYTHE",
+    "ship_name": "サイス",
+    "ship_image": "/charui/tex.charui_scythe.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "GA-60sレーザー砲",
+        "name_eng": "Basicability Scythe",
+        "image": "/ability/tex.ability_scythe_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンの間防御力を低下させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "二手先の動き",
+        "name_eng": "Uniqueability Scythe01",
+        "image": "/abilityui/tex.abilityui_leader_inquisitor.png",
+        "description_jp": "味方帝国軍シップの最大HPと攻撃力が10%上昇する。敵主力シップがジェダイの場合、味方帝国軍シップの最大HPがさらに35%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "驚異と恐怖",
+        "name_eng": "Hardwareability Scythe",
+        "image": "/abilityui/tex.abilityui_passive_empire.png",
+        "description_jp": "敵ジェダイに2ターンの間スピード低下を発生させる(回避、耐性発揮不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "OUTRIDER",
+    "ship_name": "アウトライダー",
+    "ship_image": "/charui/tex.charui_outrider.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "違法レーザー砲",
+        "name_eng": "Basicability Outrider",
+        "image": "/ability/tex.ability_outrider_basic.png",
+        "description_jp": "ターゲットに物理ダメージを3回与える。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "隠しコンカッション・ミサイル",
+        "name_eng": "Specialability Outrider01",
+        "image": "/ability/tex.ability_outrider_special01.png",
+        "description_jp": "ターゲットに物理ダメージを5回与え、2ターンのターゲットロックを発生させる(耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "極秘情報",
+        "name_eng": "Uniqueability Outrider",
+        "image": "/abilityui/tex.abilityui_passive_criticalintel.png",
+        "description_jp": "アウトライダーのクリティカル率が10%上昇し、戦闘不能になるまで付与スキル[c][f0ff23]「データ転送」[-][/c]を得る。\\n\\n[c][f0ff23]データ転送:[-][/c] 1バトルにつき1回のみ使用可能。使用するにはダウンロード進捗を100%にする必要がある。\\n\\n反乱軍の味方全体の弱体化効果を全て解除し、HPとプロテクションを50%回復する。反乱軍の味方全体に遭遇終了まで[c][f0ff23]スプローザ・スパコン[-][/c]を付与する(コピー、解除、阻止不可)。\\n\\n[c][f0ff23]スプローザ・スパコン:[-][/c] クリティカル率が100%上昇し、シップの役割に応じた追加ボーナスが発生する。\\n\\n- [c][B5E7F5]アタッカー:[-][/c] ターン開始時、敵全体のステルスと挑発を解除し、ランダムな敵に1ターンの防御力低下を発生させる\\n- [c][B5E7F5]タンク:[-][/c] このシップがダメージを受けるたび、反乱軍の味方全体のHPとプロテクションが10%回復する\\n- [c][B5E7F5]サポートまたはヒーラー:[-][/c] ターン開始時、ランダムな敵に2ターンのターゲットロックを発生させ、ターンメーターを20%減少させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "不正改造",
+        "name_eng": "Hardwareability Outrider",
+        "image": "/abilityui/tex.abilityui_passive_systems.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] この遭遇で味方反乱軍主力シップが呼んだ反乱軍の増援ごとに、反乱軍の味方全体のダウンロード進捗が10%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "GEONOSIANSTARFIGHTER3",
+    "ship_name": "ジオノージアン・スパイのスターファイター",
+    "ship_image": "/charui/tex.charui_geonosis_fighter_spy.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "アンダーマイン",
+        "name_eng": "Basicability Geonosianstarfighter3",
+        "image": "/ability/tex.ability_geonosis_fighter_spy_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。強化の発生している敵に対して、この攻撃のダメージは25%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "極秘作戦",
+        "name_eng": "Uniqueability Geonosianstarfighter301",
+        "image": "/abilityui/tex.abilityui_passive_cloak.png",
+        "description_jp": "ステルス状態の間、ジオノージアン・スパイのスターファイターのクリティカルダメージが10%上昇する。ステルス効果が発生していない間は、回避力が5%上昇する。ダメージを受けると、50%の確率で1ターンのステルス効果を得る",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "リパルサーアレイ - 策略",
+        "name_eng": "Hardwareability Geonosianstarfighter301",
+        "image": "/abilityui/tex.abilityui_passive_taunt.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ターゲットを1ターンの間スタン状態にする(回避、耐性発揮不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "XWINGRESISTANCE",
+    "ship_name": "レジスタンスXウイング",
+    "ship_image": "/charui/tex.charui_xwing_resistance.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "猛追撃",
+        "name_eng": "Basicability Xwingresistance",
+        "image": "/ability/tex.ability_xwing_resistance_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ターゲットを2ターンの間エクスポーズ状態にする",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "かく乱",
+        "name_eng": "Specialability Xwingresistance02",
+        "image": "/ability/tex.ability_xwing_resistance_special02.png",
+        "description_jp": "ターゲットの強化を全て解除する。ターゲットを2ターンの間めまい状態にして、ターンメーターを5%減少させる。また25%の確率で別のランダムな敵1機にも同じ効果を発生させる。このスキルには回避、耐性発揮が行えない",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "分隊陣形",
+        "name_eng": "Hardwareability Xwingresistance01",
+        "image": "/abilityui/tex.abilityui_passive_assist.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方がターン中に通常攻撃を行うと、レジスタンスXウイングが20%の確率でアシストする(ダメージは50%減少)。味方レジスタンスに対しては確率が2倍になる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "HOUNDSTOOTH",
+    "ship_name": "ハウンズ・トゥース",
+    "ship_image": "/charui/tex.charui_houndstooth.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "トゥース・アンド・ネイル",
+        "name_eng": "Basicability Houndstooth",
+        "image": "/ability/tex.ability_houndstooth_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、ハウンズ・トゥースから弱体効果を全て解除する。ハウンズ・トゥースが挑発をしている場合、HPが10%回復する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "執拗な攻撃",
+        "name_eng": "Specialability Houndstooth01",
+        "image": "/ability/tex.ability_houndstooth_special01.png",
+        "description_jp": "ターゲットに物理ダメージを与え、3ターン破損状態にする(回避不可)。ハウンズ・トゥースは2ターンの間挑発を行う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "安全な狩り",
+        "name_eng": "Hardwareability Houndstooth01",
+        "image": "/ability/tex.ability_passive_elite.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方全体の抵抗力を10%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "ARC170CLONESERGEANT",
+    "ship_name": "クローン・サージェントのARC-170",
+    "ship_image": "/charui/tex.charui_arc170.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ウイング・キャノン",
+        "name_eng": "Basicability Arc170clonesergeant",
+        "image": "/ability/tex.ability_arc170_clonesergeant_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、50%の確率で2ターンのターゲットロックを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "オーバーチャージ",
+        "name_eng": "Specialability Arc170clonesergeant02",
+        "image": "/ability/tex.ability_arc170_clonesergeant_special02.png",
+        "description_jp": "クローン・サージェントのARC-170の防御力が2ターンの間上昇し、プロテクションが35%回復する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "構造強化",
+        "name_eng": "Hardwareability Arc170clonesergeant01",
+        "image": "/abilityui/tex.abilityui_passive_taunt.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] プロテクションがある間、クローン・サージェントのARC-170が挑発を行う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "TIEFIGHTERFIRSTORDER",
+    "ship_name": "ファースト・オーダーTIEファイター",
+    "ship_image": "/charui/tex.charui_firstorder_tiefighter.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "目標捕捉",
+        "name_eng": "Basicability Tiefighterfirstorder",
+        "image": "/ability/tex.ability_firstorder_tiefighter_basic.png",
+        "description_jp": "物理ダメージを与え、20%の確率でもう一度攻撃する。各攻撃は40%の確率で2ターンのターゲットロックを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "容赦なき追撃",
+        "name_eng": "Uniqueability Tiefighterfirstorder01",
+        "image": "/abilityui/tex.abilityui_passive_targetlock.png",
+        "description_jp": "ターゲットロック状態の敵が攻撃ダメージを受けると、ファースト・オーダーTIEファイターのターンメーターが2%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "レイド・コミュニケーション・プロトコル",
+        "name_eng": "Hardwareability Tiefighterfirstorder01",
+        "image": "/abilityui/tex.abilityui_passive_speed.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ターゲットに2ターンのターゲットロックを発生させる(回避、耐性発揮不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "JEDISTARFIGHTERCONSULAR",
+    "ship_name": "ジェダイ・コンシュラーのスターファイター",
+    "ship_image": "/charui/tex.charui_jedi_fighter.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "共和国の守護者",
+        "name_eng": "Basicability Jedistarfighterconsular",
+        "image": "/ability/tex.ability_jedi_fighter_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、40%の確率で2ターンの間防御力が上昇する\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ランダムな味方1機の防御力を2ターンの間上昇させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ガード・アサルト",
+        "name_eng": "Specialability Jedistarfighterconsular01",
+        "image": "/ability/tex.ability_jedi_fighter_special01.png",
+        "description_jp": "ターゲットに特殊ダメージを与え、指定した味方をアシストに呼ぶ。ジェダイ・コンシュラーのスターファイターおよび指定した味方は、2ターンの間プロテクションが30%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "共和国の守護者",
+        "name_eng": "Hardwareability Jedistarfighterconsular01",
+        "image": "/abilityui/tex.abilityui_passive_hp.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方全体のプロテクションが10%回復する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALMALEVOLENCE",
+    "ship_name": "マレボランス",
+    "ship_image": "/charui/tex.charui_malevolence.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "撃て！",
+        "name_eng": "Basicability Capitalmalevolence",
+        "image": "/ability/tex.ability_malevolence_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、1ターンのスタンを発生させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "チャージング・マレボランス",
+        "name_eng": "Specialability Capitalmalevolence01",
+        "image": "/ability/tex.ability_malevolence_special01.png",
+        "description_jp": "指定した味方から全ての弱体を解除し、2ターンの[c][F0FF23]オーバーチャージ[-][/c]を1つスタックさせる。味方全体のターンメーターが5%上昇する。\\n\\n[c][F0FF23]オーバーチャージ:[-][/c] スタック1つにつき、攻撃力と防御力+20%(最大5スタック)。コピー不可",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "全キャノン発射！",
+        "name_eng": "Specialability Capitalmalevolence02",
+        "image": "/ability/tex.ability_malevolence_special02.png",
+        "description_jp": "敵全体に2ターンの攻撃力低下を発生させ、物理ダメージを与える。この攻撃はオーバーチャージ状態の味方シップ1機につき、ダメージが5%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "イオン・キャノン発射！",
+        "name_eng": "Specialability Capitalmalevolence03",
+        "image": "/ability/tex.ability_malevolence_special03.png",
+        "description_jp": "1ターンの間、敵主力シップをスタン状態にする。敵全体の強化効果を解除し、全てのプロテクションとターンメーター10%を取り除く(主力シップを含む)。効果を受けた敵は、バトル終了までプロテクション回復やボーナスプロテクションの入手ができなくなる。これらの効果は解除、回避、耐性発揮できない。このスキルはクールダウン状態から開始する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 5
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "SITHFIGHTER",
+    "ship_name": "シス・ファイター",
+    "ship_image": "/charui/tex.charui_sithfighter.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "スタイフル",
+        "name_eng": "Basicability Sithfighter",
+        "image": "/ability/tex.ability_sithfighter_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンの間、回復無効状態にする",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "スウォーム戦術",
+        "name_eng": "Uniqueability Sithfighter01",
+        "image": "/abilityui/tex.abilityui_passive_penetration.png",
+        "description_jp": "シス・ファイターの攻撃が弱体発生中の敵のプロテクションを無効化する\\n\\nHPが100%ではない状態で味方シスが敵にダメージを与えると、その味方は2ターンのフォアサイトと防御突破力を得る。敵1体のHPが100%を下回ると、シス全体のターンメーターが5%上昇する。シス・ファイターはクリティカルヒットを与えることができない",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "超機動力",
+        "name_eng": "Hardwareability Sithfighter01",
+        "image": "/abilityui/tex.abilityui_passive_foresight.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 増援として参戦した際、および味方シスがクリティカルヒットを決めた際に、シス・ファイターに2ターンのフォアサイトが発生する。フォアサイトが発生している間は、各ターン開始時にシス・ファイターの攻撃力が10%上昇し最大HPの20%が失われる(スタック可能)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "XANADUBLOOD",
+    "ship_name": "ザナドゥ・ブラッド",
+    "ship_image": "/charui/tex.charui_xanadublood.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "船体破損",
+        "name_eng": "Basicability Xanadublood Name V2",
+        "image": "/ability/tex.ability_xanadublood_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、35%の確率で再攻撃を行い、70%の確率で2ターンの破損状態を発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ローグ・マヌーバー",
+        "name_eng": "Specialability Xanadublood01 Name V2",
+        "image": "/ability/tex.ability_xanadublood_special01.png",
+        "description_jp": "敵全体に物理ダメージを与え、最弱の敵にターゲットロックを発生させる。その後、指定した味方をアシストに呼ぶ\\n\\n[c][f0ff23]ターゲットロック:[-][/c] 2ターンの間破損状態にする",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "イントゥ・ザ・ブリーチ",
+        "name_eng": "Hardwareability Xanadublood01",
+        "image": "/abilityui/tex.abilityui_passive_breach.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ターゲットを2ターン破損状態にする(回避、耐性発揮不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "FURYCLASSINTERCEPTOR",
+    "ship_name": "フューリー級インターセプター",
+    "ship_image": "/charui/tex.charui_furyclassinterceptor.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "エンミティ級高精度レーザー砲",
+        "name_eng": "Basicability Furyclassinterceptor",
+        "image": "/ability/tex.ability_furyclassinterceptor_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。他の敵に発生しているスキルブロック、コンカッションマイン、回復無効、HP低下ごとに、1ターンの間、ターゲットにそれらの弱体化効果を発生させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "力への道",
+        "name_eng": "Specialability Furyclassinterceptor02",
+        "image": "/ability/tex.ability_furyclassinterceptor_special02.png",
+        "description_jp": "シスとシス帝国の味方全体をアシストに呼ぶ。アクティブな味方シスおよびシス帝国ごとにターゲットに弱体化効果を発生させる(両方に属する味方は2回カウントされる)。\\n\\n[c][FFFF33]味方1体以上:[-][/c] 2ターンの間、回復無効を発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 8
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "銀河の炎",
+        "name_eng": "Uniqueability Furyclassinterceptor01",
+        "image": "/abilityui/tex.abilityui_passive_faction_sithempire.png",
+        "description_jp": "味方シスの抵抗力が10%上昇する(味方シス帝国の場合は2倍)。バトル開始時、シス帝国タンクが2ターンの挑発を行う。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "コリバンの憤怒",
+        "name_eng": "Hardwareability Furyclassinterceptor",
+        "image": "/abilityui/tex.abilityui_passive_rageofkorriban.png",
+        "description_jp": "[c][FFFF33]戦闘開始:[-][/c] シスの味方全体が1ターンの断固たる決意のスタックを得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALCHIMAERA",
+    "ship_name": "キメラ",
+    "ship_image": "/charui/tex.charui_chimaera.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "戦術計算",
+        "name_eng": "Basicability Capitalchimaera",
+        "image": "/ability/tex.ability_chimaera_basic.png",
+        "description_jp": "指定した味方をアシストに呼ぶ。アシストは攻撃力が10%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "戦争術",
+        "name_eng": "Specialability Capitalchimaera01",
+        "image": "/ability/tex.ability_chimaera_special01.png",
+        "description_jp": "味方全体のHPが10%回復し、2ターンの強化が発生する\\n - [c][B5E7F5]アタッカー:[-][/c] 攻撃力が上昇する\\n - [c][B5E7F5]サポート:[-][/c] フォアサイト\\n - [c][B5E7F5]タンク:[-][/c] 防御力が上昇する\\n\\n敵全体に2ターンの弱体が発生する。これらの効果は回避できない\\n - [c][B5E7F5]アタッカー:[-][/c] 攻撃力が低下する\\n - [c][B5E7F5]サポート:[-][/c] スキルブロック\\n - [c][B5E7F5]タンク:[-][/c] 防御力が低下する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ファイロン社製07トラクター・ビーム",
+        "name_eng": "Specialability Capitalchimaera02 Name V2",
+        "image": "/ability/tex.ability_chimaera_special02.png",
+        "description_jp": "敵全体に特殊ダメージを与え、ターンメーターを5%減少させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "熱き忠誠",
+        "name_eng": "Uniqueability Capitalchimaera01",
+        "image": "/abilityui/tex.abilityui_passive_crit_buff.png",
+        "description_jp": "味方全体のクリティカルダメージが10%上昇し(味方帝国軍は上昇量2倍)、クリティカル率が15%上昇する。敵が戦闘不能になると、味方全体の抵抗力がバトル終了まで5%上昇する(スタック可能)\\n\\n[c][FFCC33]増援ボーナス:[-][/c] 2ターンの間クリティカル率が上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "PUNISHINGONE",
+    "ship_name": "パニッシング・ワン",
+    "ship_image": "/charui/tex.charui_punishingone.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "4連レーザー砲",
+        "name_eng": "Basicability Punishingone",
+        "image": "/ability/tex.ability_punishingone_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "破壊コンボ",
+        "name_eng": "Specialability Punishingone01",
+        "image": "/ability/tex.ability_punishingone_special01.png",
+        "description_jp": "敵全体に物理ダメージを与え、指定した味方賞金稼ぎをアシストに呼ぶ。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "ジャンプマスター5000",
+        "name_eng": "Uniqueability Punishingone01",
+        "image": "/abilityui/tex.abilityui_passive_jumpmaster5000.png",
+        "description_jp": "バトル開始時または増援時、パニッシング・ワンのスピードが、味方賞金稼ぎごとに3、敵ライトサイド(主力シップを含む)ごとに6上昇する。敵がターン外に攻撃するたび、「ウォンテッドデッド」のクールダウンが1減少する(敵がライトサイドの場合は3倍)。敵がターン外にパニッシング・ワンを攻撃するたび、パニッシング・ワンのHPとプロテクションが10%回復する。\\n\\nパニッシング・ワンがアクティブな間、破損状態の敵のHPとプロテクションの回復が25%減少する。デスマーク状態の敵はHPとプロテクションを回復できず、デスマーク状態の敵が戦闘不能になるたび、味方賞金稼ぎの防御力が1ターンの間100%上昇し、プロテクションが100%回復する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "スキップ・トレーサー",
+        "name_eng": "Hardwareability Punishingone",
+        "image": "/abilityui/tex.abilityui_passive_penetration.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] パニッシング・ワンは1ターンの防御突破力上昇を得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "SITHSUPREMACYCLASS",
+    "ship_name": "マークVIインターセプター",
+    "ship_image": "/charui/tex.charui_sithsupremacyclass.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "デッドリースタック",
+        "name_eng": "Basicability Sithsupremacyclass",
+        "image": "/ability/tex.ability_sithsupremacyclass_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "逃がさない",
+        "name_eng": "Specialability Sithsupremacyclass01",
+        "image": "/ability/tex.ability_sithsupremacyclass_special01.png",
+        "description_jp": "ターゲットに特殊ダメージを与え、他の味方1体をアシストに呼ぶ。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "むさぼる犠牲",
+        "name_eng": "Specialability Sithsupremacyclass02",
+        "image": "/ability/tex.ability_sithsupremacyclass_special02.png",
+        "description_jp": "敵全体に特殊ダメージを与える。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "究極の帝国",
+        "name_eng": "Hardwareability Sithsupremacyclass",
+        "image": "/abilityui/tex.abilityui_passive_faction_sithempire.png",
+        "description_jp": "[c][FFFF33]戦闘開始:[-][/c] 味方増援シップごとに、「むさぼる群れ」のスタックを3得る",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "SITHBOMBER",
+    "ship_name": "B-28エクスティンクション級ボマー",
+    "ship_image": "/charui/tex.charui_b28extinctionclassbomber.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "レーザー集中砲火",
+        "name_eng": "Basicability Sithbomber",
+        "image": "/ability/tex.ability_b28extinctionclassbomber_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。クリティカルヒットになると、50%の確率でB-28に2ターンの防御力上昇が発生する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "重要ターゲット",
+        "name_eng": "Uniqueability Sithbomber01",
+        "image": "/abilityui/tex.abilityui_passive_taunt.png",
+        "description_jp": "味方シスが初めてダメージを受けた際または味方シス1体のHPが100%を切ると常に、B-28が2ターンの挑発を行う\\n\\nコンカッションマインが敵に起爆する毎にB-28のプロテクションが5%回復する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "ボマー支援",
+        "name_eng": "Hardwareability Sithbomber01",
+        "image": "/abilityui/tex.abilityui_passive_sith.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 敵全体に [c][f0ff23]コンカッションマイン[-][/c]を仕掛ける(回避不可)。1ターン後、コンカッションマインが起爆する\\n\\n[c][f0ff23]コンカッションマイン[-][/c]: 起爆時にターゲットの最大HP10%分のダメージを与え、2ターンの間めまい状態にする(解除不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "TIESILENCER",
+    "ship_name": "TIEサイレンサー",
+    "ship_image": "/charui/tex.charui_tie_silencer.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "破壊的前進",
+        "name_eng": "Basicability Tiesilencer",
+        "image": "/ability/tex.ability_tiesilencer_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、ターゲットのターンメーターが50%を上回っている場合1ターンの間スタン状態にする。そうでない場合は2ターンのアドバンテージが発生する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "優勢圧倒",
+        "name_eng": "Specialability Tiesilencer01",
+        "image": "/ability/tex.ability_tiesilencer_special01.png",
+        "description_jp": "ターゲットに物理ダメージを与える。TIEサイレンサーにアドバンテージが発生している場合、この攻撃のダメージが50%増加する。この攻撃で敵を戦闘不能にできた場合、ターンメーターが20%上昇し、2ターンのフォアサイトが発生する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "アフターバーナー",
+        "name_eng": "Hardwareability Tiesilencer01",
+        "image": "/abilityui/tex.abilityui_passive_attack_buff.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] TIEサイレンサーの攻撃力が15%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "TIEREAPER",
+    "ship_name": "TIEリーパー",
+    "ship_image": "/charui/tex.charui_tiereaper.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "防衛砲撃",
+        "name_eng": "Basicability Tiereaper",
+        "image": "/ability/tex.ability_tiereaper_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、その敵が弱体されていない場合は1ターンの間攻撃力を低下させる。反乱軍はこの効果に耐性発揮が行えない",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "過酷な旅",
+        "name_eng": "Uniqueability Tiereaper01",
+        "image": "/abilityui/tex.abilityui_passive_kill.png",
+        "description_jp": "いずれかのシップが撃破されると、敵主力シップのターンメーターが5%減少する(耐性発揮不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "防衛陣形",
+        "name_eng": "Hardwareability Tiereaper01",
+        "image": "/abilityui/tex.abilityui_passive_systems.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 敵全体のターンメーターを10%減少させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "UWINGSCARIF",
+    "ship_name": "ビスタンのUウイング",
+    "ship_image": "/charui/tex.charui_uwing.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "初動",
+        "name_eng": "Basicability Uwingscarif",
+        "image": "/ability/tex.ability_uwing_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える(回避不可)。ビスタンのUウイングがステルス状態の場合、この攻撃は防御力を無効化する\\n\\n[c][f0ff23]ターゲットロック:[-][/c] 2ターンの抵抗力低下を発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "戦略通信",
+        "name_eng": "Uniqueability Uwingscarif02",
+        "image": "/abilityui/tex.abilityui_passive_scanner.png",
+        "description_jp": "ビスタンのUウイングがアクティブな間、味方がとどめの攻撃を行うと、その味方のターンメーターが4%上昇する。その味方が反乱軍の場合、ビスタンのUウイングのターンメーターも同量上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "4連スラスター",
+        "name_eng": "Hardwareability Uwingscarif01",
+        "image": "/abilityui/tex.abilityui_passive_cloak.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ビスタンのUウイングが2ターンの間ステルス状態になる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALLEVIATHAN",
+    "ship_name": "リヴァイアサン",
+    "ship_image": "/charui/tex.charui_leviathan.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "破滅の一斉攻撃",
+        "name_eng": "Basicability Leviathan",
+        "image": "/ability/tex.ability_leviathan_basic.png",
+        "description_jp": "ターゲットに特殊ダメージを与え、2ターンのショックを発生させる。ターゲットが既にショック状態の場合、効果が発生していないランダムな敵1体に2ターンの疑心を発生させる。この遭遇で「ブリッジ制圧」が使用されている場合、ターゲットの強化効果を全て解除し、1ターンの恐怖を発生させる(解除、耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ハンガー破壊工作",
+        "name_eng": "Specialability Capitalleviathan02",
+        "image": "/ability/tex.ability_leviathan_special01.png",
+        "description_jp": "[c][ffff33]1バトルにつき1回のみ使用可能。[-][/c] 2ターンの間、味方シスがクリティカルヒット耐性を得て、指定した味方のHPが15%回復する。敵主力シップがライトサイドの場合、増援要請のクールダウンが1増加する。\\n\\n[c][ffff33]味方シスシップが弱体化効果を15個発生させていなければ、このスキルは使用できない。[-][/c]",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "エンジン破壊工作",
+        "name_eng": "Specialability Capitalleviathan01",
+        "image": "/ability/tex.ability_leviathan_special02.png",
+        "description_jp": "[c][ffff33]1バトルにつき1回のみ使用可能。[-][/c] 3ターンの間、指定した味方シスに破損耐性が発生する。遭遇終了まで、敵主力シップのスピードを5%減少させる。また、ターンメーターを30%減少させる(耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ブリッジ制圧",
+        "name_eng": "Specialability Capitalleviathan03",
+        "image": "/ability/tex.ability_leviathan_special03.png",
+        "description_jp": "[c][ffff33]1バトルにつき1回のみ使用可能。[-][/c] 敵主力シップの制御を奪い、クールダウンをリセットして、ボーナスターンを付与する。制御中は増援要請が不可になり、アルティメットスキルのクールダウンが各ターン開始時に最大値に設定される。このスキルはクールダウン状態から開始する。味方シスに弱体化効果が初めて50個発生すると、クールダウンが1減少する。\\n\\n[c][ffff33]このスキルは、同じ遭遇で「エンジン破壊工作」と「ハンガー破壊工作」を行わない限り使用できない。[-][/c]",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 5
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "GAUNTLETSTARFIGHTER",
+    "ship_name": "ガントレット・スターファイター",
+    "ship_image": "/charui/tex.charui_gauntlet.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ガントレット・アサルト",
+        "name_eng": "Basicability Gauntletstarfighter",
+        "image": "/ability/tex.ability_gauntlet_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ランダムな他の味方1機にターンメーター10%を付与する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "高度機動性",
+        "name_eng": "Uniqueability Gauntletstarfighter01",
+        "image": "/abilityui/tex.abilityui_passive_speed.png",
+        "description_jp": "ガントレット・スターファイターのスピードが20上昇する(アクティブな他の味方帝国軍1機ごとにさらに2上昇)。味方全体の防御力を10%上昇させる(味方帝国軍は2倍量)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "マンダロアの総督",
+        "name_eng": "Hardwareability Gauntletstarfighter01",
+        "image": "/abilityui/tex.abilityui_passive_protection.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方全体のプロテクションが10%回復する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "VULTUREDROID",
+    "ship_name": "バルチャー・ドロイド",
+    "ship_image": "/charui/tex.charui_vulturedroid.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "容赦ない攻撃",
+        "name_eng": "Basicability Vulturedroid Name V3",
+        "image": "/ability/tex.ability_vulturedroid_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。ターゲットに弱体が発生していた場合、この攻撃のクリティカルダメージが10%上昇する。この攻撃はバズ・ドロイドを取り除かない。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ディスコードミサイル",
+        "name_eng": "Specialability Vulturedroid01 Name V2",
+        "image": "/ability/tex.ability_vulturedroid_special02.png",
+        "description_jp": "ターゲットに物理ダメージを与え、[c][F0FF23]バズ・ドロイド[-][/c]を3体発生させる。バズ・ドロイドはコピー、耐性発揮できない。\\n\\n[c][F0FF23]バズ・ドロイド:[-][/c] ターン開始時にバズ・ドロイドが1体以上(最大3体)付いていると、防御力が50%減少しHPが5%失われる。攻撃またはコンカッションマインによるダメージを受けるとバズ・ドロイドを1体失う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "群れ成す恐怖",
+        "name_eng": "Uniqueability Vulturedroid01 Name V3",
+        "image": "/abilityui/tex.abilityui_passive_buzzdroid.png",
+        "description_jp": "味方分離主義者またはドロイドがターン中にスキルを使用し、敵にバズ・ドロイドが発生している場合、バルチャー・ドロイドは70%の確率でアシストを行う。\\n\\n各敵のターン開始時、敵にバズ・ドロイドが1体以上発生していると、バズ・ドロイドが3体にリセットされる。各ターン終了時に敵のバズ・ドロイドが解除されていた場合、その敵に1ターンのスキルブロックが発生する(耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "バズ・ドロイド弾幕",
+        "name_eng": "Hardwareability Vulturedroid01",
+        "image": "/abilityui/tex.abilityui_passive_systems.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 敵全体にバズ・ドロイドを1体発生させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALJEDICRUISER",
+    "ship_name": "エンデュアランス",
+    "ship_image": "/charui/tex.charui_venator.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ストライク・トゥルー",
+        "name_eng": "Basicability Capitaljedicruiser",
+        "image": "/ability/tex.ability_venator_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンのターゲットロックを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "固守",
+        "name_eng": "Specialability Capitaljedicruiser01",
+        "image": "/ability/tex.ability_venator_special01.png",
+        "description_jp": "指定した味方が2ターンのクリティカルヒット耐性を獲得し、プロテクションが40%回復する。指定した味方がタンクの場合、その味方は2ターンの間挑発する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "運命は勇者に味方する",
+        "name_eng": "Specialability Capitaljedicruiser02",
+        "image": "/ability/tex.ability_venator_special02.png",
+        "description_jp": "ターゲットとターゲットロック状態の敵全体に物理ダメージを与え、味方全体に2ターンの[c][ffff33]武勇[-][/c]を与える。ダメージを受けた敵ごとに、このスキルのクールダウンが1減少する。\\n\\n[c][ffff33]武勇:[-][/c] 味方銀河共和国主力シップのターンメーターが15%上昇し、ターン終了時にアルティメットスキルのクールダウンが1減少する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "栄誉と力",
+        "name_eng": "Uniqueability Capitaljedicruiser01",
+        "image": "/abilityui/tex.abilityui_passive_jedi.png",
+        "description_jp": "バトル開始時に配置された銀河共和国の味方シップ(主力シップを含む)ごとに、味方全体の防御力と攻撃力が5%上昇する。\\n\\n[c][FFCC33]増援ボーナス:[-][/c] 2ターンの間、増援が武勇を得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALRADDUS",
+    "ship_name": "ラダス",
+    "ship_image": "/charui/tex.charui_raddus.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "エース・マヌーバー",
+        "name_eng": "Basicability Capitalraddus",
+        "image": "/ability/tex.ability_raddus_basic.png",
+        "description_jp": "指定した味方はターンメーターが5%上昇し、2ターンのフォアサイトを得て、アシストを行う。アシストを行う味方がレジスタンスの場合、ターゲットを2ターンの間エクスポーズ状態にする(回避不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "リチャージ・ディフレクター",
+        "name_eng": "Specialability Capitalraddus01",
+        "image": "/ability/tex.ability_raddus_special01.png",
+        "description_jp": "指定した味方に、抵抗力上昇、2ターンの[c][f0ff23]偏向シールド[-][/c]、ターンメーター25%上昇が発生する。\\n\\n[c][f0ff23]偏向シールド:[-][/c] ターン開始時に、プロテクションが25%回復(味方レジスタンスは2倍)し、2ターンのフォアサイトが発生する。コピー不可。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "アウトラスト",
+        "name_eng": "Specialability Capitalraddus02",
+        "image": "/ability/tex.ability_raddus_special02.png",
+        "description_jp": "味方全体のプロテクションが2ターンの間20%上昇し、プロテクションが20%回復、ターンメーターが20%上昇する。味方レジスタンス全体に2ターンの偏向シールドを付与する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ホルド・マヌーバー",
+        "name_eng": "Specialability Capitalraddus03",
+        "image": "/ability/tex.ability_raddus_special03.png",
+        "description_jp": "味方全体の弱体効果を全て解除し、味方全体のターンメーターを60%上昇させる。\\n\\nラダスを犠牲にすることで敵の主力シップを破壊し、味方をランダムで増援に呼ぶ。\\n\\nこのスキルは回避できず、クールダウン状態から開始する。またフォアサイト状態の味方レジスタンスが特殊スキルを使用するたび、このスキルのクールダウンが1減少する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 10
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "ARC170REX",
+    "ship_name": "レックスのARC-170",
+    "ship_image": "/charui/tex.charui_arc170_02.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ヘアトリガー",
+        "name_eng": "Basicability Arc170rex",
+        "image": "/ability/tex.ability_arc170_rex_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、その敵に強化または弱体がない場合は2ターンのターゲットロックを発生させる。それ以外の場合はターンメーターを10%減少させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "準備万端",
+        "name_eng": "Uniqueability Arc170rex01",
+        "image": "/ability/tex.shipability_passive_shield.png",
+        "description_jp": "レックスのARC-170がアクティブな間、味方銀河共和国の抵抗力が5%上昇し、味方が弱体効果に対して耐性発揮を行うと、他の味方銀河共和国全てのプロテクションが5%回復する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "誰も見捨てはしない",
+        "name_eng": "Hardwareability Arc170rex01",
+        "image": "/abilityui/tex.abilityui_passive_systems.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方にそれぞれのタイプに応じた強化を2ターン付与する:\\n - [c][B5E7F5]タンク:[-][/c] 防御力上昇",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "IG2000",
+    "ship_name": "IG-2000",
+    "ship_image": "/charui/tex.charui_ig2000.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "弱点特定",
+        "name_eng": "Basicability Ig2000",
+        "image": "/ability/tex.ability_ig2000_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。その敵が破損状態の場合、もう一度攻撃する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "慣性制動機解除",
+        "name_eng": "Specialability Ig20001",
+        "image": "/ability/tex.ability_ig2000_special01.png",
+        "description_jp": "ターゲットに物理ダメージを与え、1ターンのスタンと2ターンのターゲットロックを発生させる。敵が破損状態の場合、この攻撃のダメージは25%増加する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "スライスシークエンス開始",
+        "name_eng": "Hardwareability Ig20001",
+        "image": "/abilityui/tex.abilityui_passive_targetlock.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ランダムな味方アタッカー1体の攻撃力を1ターン上昇させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALPROFUNDITY",
+    "ship_name": "プロファンディティ",
+    "ship_image": "/charui/tex.charui_profundity.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "もう引き返せない",
+        "name_eng": "Basicability Capitalprofundity",
+        "image": "/ability/tex.ability_profundity_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。\\n\\nプロファンディティがターン外にアシストに呼ばれた場合、1ターンのめまい効果を発生させる(耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "型破りな機動作戦",
+        "name_eng": "Specialability Capitalprofundity01",
+        "image": "/ability/tex.ability_profundity_special01.png",
+        "description_jp": "ダウンロードが4%増加する。指定した味方がアシストを行い、50%の減少ダメージを与える。\\n\\nターン終了時、ターゲットがこのターン中に受けた物理または特殊ダメージの回数ごとに、ターゲットに2ターンの弱体化効果を発生させる(耐性発揮不可)。\\n\\n- [c][ffff33]ダメージ1回以上発生:[-][/c] クリティカル率低下",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "反乱軍艦隊到着",
+        "name_eng": "Specialability Capitalprofundity02",
+        "image": "/ability/tex.ability_profundity_special02.png",
+        "description_jp": "味方反乱軍のHPが5%回復し、役割に応じたボーナスを得る:\\n\\n- [c][B5E7F5]アタッカー:[-][/c] 2ターンの間攻撃力が上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "提督、設計図を入手した",
+        "name_eng": "Specialability Capitalprofundity03",
+        "image": "/ability/tex.ability_profundity_ultimate.png",
+        "description_jp": "1バトルにつき1回のみ使用可能。敵の主力シップを取り除く。プロファンディティは特殊スキル[c][ffff33]「設計図確保」[-][/c]を得る。このスキルは回避・耐性発揮できず、使用するにはダウンロード進捗100%が必要。\\n\\n[c][ffff33]設計図確保:[-][/c] 味方全体に2ターンの間、アドバンテージ、クリティカルダメージ上昇、防御突破力、攻撃力上昇が発生する。このスキルはクールダウン状態から開始する(クールダウン: 4)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "YWINGCLONEWARS",
+    "ship_name": "BTL-B Yウイング・スターファイター",
+    "ship_image": "/charui/tex.charui_ywing_btlb.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ツイン・レーザーキャノン",
+        "name_eng": "Basicability Ywingclonewars",
+        "image": "/ability/tex.ability_ywing_btlb_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "魚雷発射！",
+        "name_eng": "Specialability Ywingclonewars01",
+        "image": "/ability/tex.ability_ywing_btlb_special01.png",
+        "description_jp": "ターゲットと最弱の敵に物理ダメージを与える。その後、Yウイングに2ターンの挑発とプロテクション上昇(20%)が発生する。この攻撃は回避できない。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "支援開始",
+        "name_eng": "Hardwareability Ywingclonewars01",
+        "image": "/abilityui/tex.abilityui_passive_taunt.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] Yウイングが2ターンの間挑発する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "アストロメク・アドバンテージ",
+        "name_eng": "Uniqueability Ywingclonewars01",
+        "image": "/abilityui/tex.abilityui_passive_flatmech.png",
+        "description_jp": "バトル開始時、生存中の増援を含む味方銀河共和国1機につき、Yウイングの最大プロテクションが5%上昇する。味方銀河共和国が敵からクリティカルヒットを受けるたび、YウイングのHPが5%回復し、味方シップの永遠の忠誠が切れると2ターンの間挑発する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "TIEDAGGER",
+    "ship_name": "TIEダガー",
+    "ship_image": "/charui/tex.charui_tiedagger.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "シス・プレシジョン",
+        "name_eng": "Basicability Tiedagger",
+        "image": "/ability/tex.ability_tiedagger_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "L-7.0重レーザー砲",
+        "name_eng": "Specialability Tiedagger01",
+        "image": "/ability/tex.ability_tiedagger_special01.png",
+        "description_jp": "敵全体に物理ダメージを与える",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "皇帝の命令",
+        "name_eng": "Uniqueability Tiedagger01",
+        "image": "/abilityui/tex.abilityui_passive_sith_e9.png",
+        "description_jp": "敵がターン外に攻撃するか、他の味方シスが解除可能な弱体化効果を受けるたび、[c][FFFF33]復讐[-][/c]のスタックを1得る。\\n\\n[c][FFFF33]復讐:[-][/c] 15スタックでシスの味方全体の弱体化効果を全て解除し、ボーナスターンを得る。その後、全てのスタックを失う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "先読み",
+        "name_eng": "Hardwareability Tiedagger",
+        "image": "/abilityui/tex.abilityui_passive_crit_buff.png",
+        "description_jp": "[c][FFFF33]戦闘開始:[-][/c] TIEダガーが復讐のスタックを5得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "COMEUPPANCE",
+    "ship_name": "カマパンス",
+    "ship_image": "/charui/tex.charui_comeuppance.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "IX4-Bレーザーキャノン",
+        "name_eng": "Basicability Comeuppance",
+        "image": "/ability/tex.ability_comeuppance_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "一緒に来たいか？",
+        "name_eng": "Specialability Comeuppance01",
+        "image": "/ability/tex.ability_comeuppance_special01.png",
+        "description_jp": "ターゲットを2ターンの間エクスポーズ状態にする(回避、耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "スパイスランニング戦術",
+        "name_eng": "Uniqueability Comeuppance01",
+        "image": "/abilityui/tex.abilityui_passive_protection.png",
+        "description_jp": "カマパンスの最大HPが10%。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "当ててみろ、スパイスランナー",
+        "name_eng": "Hardwareability Comeuppance",
+        "image": "/abilityui/tex.abilityui_passive_takeaguessspicerunner.png",
+        "description_jp": "[c][FFFF33]戦闘開始:[-][/c] 敵全体を1ターンのエクスポーズ状態にする(回避、耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALMONCALAMARICRUISER",
+    "ship_name": "ホーム・ワン",
+    "ship_image": "/charui/tex.charui_moncalamarilibertycruiser.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "モン・カル・キャノン",
+        "name_eng": "Basicability Capitalmoncalamaricruiser",
+        "image": "/ability/tex.ability_moncalamarilibertycruiser_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、ランダムな味方1機をアシストに呼ぶ",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "アドバンテージ確保",
+        "name_eng": "Specialability Capitalmoncalamaricruiser01",
+        "image": "/ability/tex.ability_moncalamarilibertycruiser_special01.png",
+        "description_jp": "指定した味方の弱体を全て解除する。その味方はHPが25%、プロテクションが25%回復し、他の味方全体に2ターンのアドバンテージが発生する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "反抗の一斉射撃",
+        "name_eng": "Specialability Capitalmoncalamaricruiser02",
+        "image": "/ability/tex.ability_moncalamarilibertycruiser_special02.png",
+        "description_jp": "敵全体に特殊ダメージを与え、ランダムな味方を2機アシストに呼ぶ",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "マスタープラン",
+        "name_eng": "Specialability Capitalmoncalamaricruiser03",
+        "image": "/ability/tex.ability_moncalamarilibertycruiser_special03.png",
+        "description_jp": "味方全体のターンメーターが10%上昇し、1ターンの[c][ffff33]マスタープラン[-][/c]効果が発生する(阻止、解除不可)。このスキルはクールダウン状態から開始する\\n\\n[c][ffff33]マスタープラン:[-][/c] このシップが自ターン中にスキルを使用すると、そのクールダウンがリセットされ、ターンメーターが100%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 5
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "TIEFIGHTERFOSF",
+    "ship_name": "ファースト・オーダー特殊部隊TIEファイター",
+    "ship_image": "/charui/tex.charui_fosf_tie_fighter.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "L-s9.6レーザーキャノン",
+        "name_eng": "Basicability Tiefighterfosf",
+        "image": "/ability/tex.ability_fosf_tiefighter_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。この攻撃がクリティカルヒットした場合、2ターンのターゲットロックを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ダブル・オフェンス",
+        "name_eng": "Specialability Tiefighterfosf01",
+        "image": "/ability/tex.ability_fosf_tiefighter_special01.png",
+        "description_jp": "敵全体に物理ダメージを与え、他の全てのシップに2ターンの時間経過ダメージ効果を発生させる(耐性発揮不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "高精度",
+        "name_eng": "Hardwareability Tiefighterfosf01",
+        "image": "/abilityui/tex.abilityui_passive_potency.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方全体の有効性が20%上昇する(味方ファースト・オーダーには効果2倍)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "MILLENNIUMFALCONPRISTINE",
+    "ship_name": "ランドのミレニアム・ファルコン",
+    "ship_image": "/charui/tex.charui_mil_fal_pristine.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ダブルダウン",
+        "name_eng": "Basicability Millenniumfalconpristine",
+        "image": "/ability/tex.ability_mil_fal_pristine_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、70%の確率で自分とランダムな味方1機の防御突破力を2ターンの間上昇させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "コイントス",
+        "name_eng": "Uniqueability Millenniumfalconpristine01",
+        "image": "/abilityui/tex.abilityui_passive_removeharmful.png",
+        "description_jp": "強化が発生していない敵1機ごとにファルコンのクリティカルダメージが5%上昇する。ターン開始時、ファルコンはそれぞれ30%の確率で、ランダムな味方1機の弱体を全て解除、ランダムな敵1機の強化を全て解除、ランダムな敵1機へのターゲットロック付与、ランダムな味方1機への2ターンのスピード上昇付与を行う。これらの効果には回避、耐性発揮が行えない",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "オールイン",
+        "name_eng": "Hardwareability Millenniumfalconpristine01",
+        "image": "/abilityui/tex.abilityui_passive_seizetheday.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 2ターンの間、ファルコンのクリティカルダメージが上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "XWINGBLACKONE",
+    "ship_name": "ポー・ダメロンのXウイング",
+    "ship_image": "/charui/tex.charui_xwing_blackone.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "全方位対処",
+        "name_eng": "Basicability Xwingblackone",
+        "image": "/ability/tex.ability_xwing_blackone_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ターゲットに2ターンのめまい効果を発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "青天の霹靂",
+        "name_eng": "Specialability Xwingblackone02",
+        "image": "/ability/tex.ability_xwing_blackone_special02.png",
+        "description_jp": "ポーのXウイングが3ターンの攻撃力上昇とフォアサイトを得て、プロテクションが35%回復し、ターンメーターが20%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "劇的登場",
+        "name_eng": "Hardwareability Xwingblackone01",
+        "image": "/abilityui/tex.abilityui_passive_attack_buff.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ポー・ダメロンのXウイングが2ターンの[c][ffff33]「劇的登場」[-][/c]効果を得る(コピー、解除、阻止不可)。\\n\\n[c][ffff33]劇的登場:[-][/c] 攻撃力+15%。このシップが敵を撃破した場合、ターンメーターが20%上昇し、2ターンの間劇的登場効果が発生する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "MARAUDER",
+    "ship_name": "マローダー",
+    "ship_image": "/charui/tex.charui_marauder.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "兵士以上",
+        "name_eng": "Basicability Marauder",
+        "image": "/ability/tex.ability_marauder_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンのターゲットロックを発生させる。ターゲットロックがまだ発生していないランダムな敵にも2ターンのターゲットロックを発生させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "ゴンキー",
+        "name_eng": "Uniqueability Marauder01",
+        "image": "/abilityui/tex.abilityui_passive_gonky.png",
+        "description_jp": "マローダーの攻撃力とプロテクションが5%上昇する。マローダーは特殊スキルを使用するたび、プロテクションが5%回復する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "不良分隊、到着！",
+        "name_eng": "Hardwareability Marauder",
+        "image": "/abilityui/tex.abilityui_passive_stealth.png",
+        "description_jp": "ターゲットに1ターンのターゲットロックを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "TIEADVANCED",
+    "ship_name": "TIEアドバンストX1",
+    "ship_image": "/charui/tex.charui_tieadvanced.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "デッドリー・アキュラシー",
+        "name_eng": "Basicability Tieadvanced",
+        "image": "/ability/tex.ability_tieadvanced_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンのターゲットロックを発生させる(回避、耐性発揮不可)\\n\\n[c][f0ff23]ターゲットロック:[-][/c] 3ターンの時間経過ダメージ効果を2つ発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "高度照準システム",
+        "name_eng": "Uniqueability Tieadvanced01",
+        "image": "/abilityui/tex.abilityui_passive_targetlock.png",
+        "description_jp": "ターゲットロック発生中の敵は抵抗力が10%低下する。敵のターゲットロックの効果が切れるとすぐに2ターンのターゲットロックを再発生させる。さらに、味方帝国軍はターゲットロック状態の敵を攻撃するとターンメーターが10%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "恐ろしき存在",
+        "name_eng": "Hardwareability Tieadvanced01",
+        "image": "/abilityui/tex.abilityui_passive_darkarts.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 敵全体に2ターンの時間経過ダメージ効果を2つ発生させる(回避不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "TIEDEFENDER",
+    "ship_name": "TIEディフェンダー",
+    "ship_image": "/charui/tex.charui_tiedefender.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "翼端L-s9.3レーザーキャノン",
+        "name_eng": "Basicability Tiedefender",
+        "image": "/ability/tex.ability_tiedefender_basic.png",
+        "description_jp": "物理ダメージを3回与える。クリティカルヒットが決まるごとに、30%の確率でTIEディフェンダーは「強靭な防御」のスタックを得る(最大1)。TIEディフェンダーに「特殊部隊」が発生している場合、この攻撃のクリティカル率が25%、クリティカルダメージが25%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "P-sz9.7ツイン・イオン・エンジン",
+        "name_eng": "Uniqueability Tiedefender01",
+        "image": "/abilityui/tex.abilityui_passive_Psz97twinionengine.png",
+        "description_jp": "TIEディフェンダーが攻撃を回避するたび、味方主力シップのターンメーターが2%上昇し、TIEディフェンダーに「特殊部隊」が発生している場合はさらに5%ターンメーターが上昇する。帝国軍主力シップの場合、この効果は2倍になる。TIEディフェンダーは帝国軍TIEファイターとしてカウントされる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "TIE/x7",
+        "name_eng": "Uniqueability Tiedefender02",
+        "image": "/abilityui/tex.abilityui_passive_protection.png",
+        "description_jp": "TIEディフェンダーの回避力が5%、攻撃力が10%、最大プロテクションが15%上昇する。TIEディフェンダーは「強靭な防御」を得るたび、プロテクションが10%回復する。TIEディフェンダーが回避すると、HPが5%、ターンメーターが5%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "特殊部隊だなんて聞いてない",
+        "name_eng": "Hardwareability Tiedefender",
+        "image": "/abilityui/tex.abilityui_passive_firstinlastout.png",
+        "description_jp": "TIEディフェンダーはバトル終了まで[c][ffff33]特殊部隊[-][/c]を得る。\\n\\n[c][ffff33]特殊部隊[-][/c]: スキルに追加効果を与える",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "PHANTOM2",
+    "ship_name": "ファントムII",
+    "ship_image": "/charui/tex.charui_phantom2.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "スリップ・アウェイ",
+        "name_eng": "Basicability Phantom2",
+        "image": "/ability/tex.ability_phantom2_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、50%の確率で2ターンの間ステルス効果が発生する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "陽動戦術",
+        "name_eng": "Uniqueability Phantom202",
+        "image": "/abilityui/tex.abilityui_passive_taunt.png",
+        "description_jp": "生存している味方反乱軍1機ごとにファントムIIの回避力が1%上昇する。さらに、ゴーストが弱体またはクリティカルヒットを受けると、ファントムIIがフォアサイトを得て次に回避が成功するまで挑発を行う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "隠密攻撃",
+        "name_eng": "Hardwareability Phantom201",
+        "image": "/abilityui/tex.abilityui_passive_systems.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ファントムIIに2ターンのステルス効果が発生する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "TIEBOMBERIMPERIAL",
+    "ship_name": "帝国軍TIEボマー",
+    "ship_image": "/charui/tex.charui_tiebomber.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "L-s1レーザーキャノン",
+        "name_eng": "Basicability Tiebomberimperial",
+        "image": "/ability/tex.ability_tiebomber_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、1ターンのターゲットロックを発生させる。\\n\\n[c][f0ff23]ターゲットロック:[-][/c] 1ターンの炎上を発生させる。\\n",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "プロトン爆撃",
+        "name_eng": "Specialability Tiebomberimperial01",
+        "image": "/ability/tex.ability_tiebomber_special01.png",
+        "description_jp": "敵全体の強化効果を全て解除する。その後、物理ダメージを与え、50%の確率で2ターンの炎上を発生させる。このスキルは回避できない。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "デュアルポッドデザイン",
+        "name_eng": "Uniqueability Tiebomberimperial01",
+        "image": "/abilityui/tex.abilityui_passive_empire.png",
+        "description_jp": "帝国軍TIEボマーがバトルに参加すると、味方主力シップを含むアクティブな味方帝国軍1機ごとに最大プロテクションが10%上昇し、味方帝国軍が増援でバトルに参加するたび、最大プロテクションが10%上昇する。\\n\\n敵がターゲットロック状態でTIEボマーがまだ挑発をしていない場合、ターン終了時に帝国軍TIEボマーは挑発を行う。ターゲットロック状態の敵がいない場合、この効果はターン終了時に切れる。敵反乱軍にターゲットロックが発生している間、敵反乱軍全体が与えるダメージは25%の減少ダメージになる。\\n\\n敵に炎上が発生している間、敵の攻撃力が25%減少する(敵ライトサイドはその2倍)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "予備兵器",
+        "name_eng": "Hardwareability Tiebomberimperial",
+        "image": "/abilityui/tex.abilityui_passive_bomb.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 敵全体に2ターンの炎上を発生させる。このスキルは回避できない。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "JEDISTARFIGHTERANAKIN",
+    "ship_name": "アナキンのEta-2スターファイター",
+    "ship_image": "/charui/tex.charui_jedi_fighter_anakin.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ロックオン",
+        "name_eng": "Basicability Jedistarfighteranakin Name V2",
+        "image": "/ability/tex.ability_jedi_fighter_anakin_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンのターゲットロックを発生させる。この攻撃は回避できない\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ランダムな味方1機に2ターンの武勇効果を付与する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "妨害アサルト",
+        "name_eng": "Specialability Jedistarfighteranakin01 Name V2",
+        "image": "/ability/tex.ability_jedi_fighter_anakin_special01.png",
+        "description_jp": "敵全体に物理ダメージを与え、ターゲットに2ターンの回復無効と強化無効を発生させる。攻撃がクリティカルヒットになる毎にアナキンのスターファイターのプロテクションが2ターンの間10%上昇する(スタック可能)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "アグレッシブ・アプローチ",
+        "name_eng": "Hardwareability Jedistarfighteranakin01",
+        "image": "/abilityui/tex.abilityui_passive_accuracy.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方全体の精度を2ターン上昇させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "GHOST",
+    "ship_name": "ゴースト",
+    "ship_image": "/charui/tex.charui_ghost.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "MS-2Bツインレーザーキャノン",
+        "name_eng": "Basicability Ghost",
+        "image": "/ability/tex.ability_ghost_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。ゴーストがステルス状態の場合、この攻撃は必ずクリティカルヒットする",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "センサースクランブラー",
+        "name_eng": "Uniqueability Ghost01",
+        "image": "/abilityui/tex.abilityui_passive_potency.png",
+        "description_jp": "敵全体の有効性が10%減少する。味方が敵の弱体に耐性発揮すると、ゴーストはその敵に2ターンのスピード低下を発生させる。この効果には耐性発揮が行えない。さらに、ファントムIIがいる場合、ゴーストはターゲットロックされない",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "偵察",
+        "name_eng": "Hardwareability Ghost01",
+        "image": "/abilityui/tex.abilityui_passive_crit_buff.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 敵全体のクリティカル率を1ターンの間低下させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "MILLENNIUMFALCON",
+    "ship_name": "ハンのミレニアム・ファルコン",
+    "ship_image": "/charui/tex.charui_mfalcon.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "特殊改造",
+        "name_eng": "Basicability Millenniumfalcon Name V2",
+        "image": "/ability/tex.ability_mfalcon_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、50%の確率でランダムな味方反乱軍1体をアシストに呼ぶ。クリティカルヒット時には2ターンのターゲットロックを発生させる。味方主力シップが反乱軍でアクティブな場合、ターゲットの強化を全て解除する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "油断大敵",
+        "name_eng": "Uniqueability Millenniumfalcon01",
+        "image": "/abilityui/tex.abilityui_passive_rebel.png",
+        "description_jp": "味方全体のクリティカル率が5%上昇する(味方反乱軍は上昇量2倍)。味方反乱軍が各自のターン中にスキルを使用すると30%の確率でファルコンがアシストを行う。味方が増援を呼ぶと、ファルコンが精度を2ターン上昇させる。その味方が反乱軍の場合、さらにクリティカルダメージが1ターン上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "ヤーフー！",
+        "name_eng": "Hardwareability Millenniumfalcon01",
+        "image": "/abilityui/tex.abilityui_passive_assist.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 他の味方全体に2ターンのフォアサイトを付与する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALSTARDESTROYER",
+    "ship_name": "エグゼキュートリクス",
+    "ship_image": "/charui/tex.charui_stardestroyer.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ターボレーザー・バッテリー",
+        "name_eng": "Basicability Capitalstardestroyer",
+        "image": "/ability/tex.ability_stardestroyer_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンの間抵抗力を低下させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "執行命令",
+        "name_eng": "Specialability Capitalstardestroyer01",
+        "image": "/ability/tex.ability_stardestroyer_special01.png",
+        "description_jp": "味方全体に15%のターンメーター上昇と攻撃力上昇が1ターン発生する。味方帝国軍はさらに1ターンの間有効性が上昇する。このスキルはクールダウン状態から開始する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 2
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ヘビー・イオン・キャノン",
+        "name_eng": "Specialability Capitalstardestroyer02",
+        "image": "/ability/tex.ability_stardestroyer_special02.png",
+        "description_jp": "敵全体に物理ダメージを与え、40%の確率で1ターンのスキルブロックを発生させる。弱体発生中の敵に対しては20%の追加ダメージを与える。その後、エグゼキュートリクスは50%の確率で弱体発生中の敵全体に2ターンのエクスポーズを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "帝国アサルト",
+        "name_eng": "Specialability Capitalstardestroyer03",
+        "image": "/ability/tex.ability_stardestroyer_special03.png",
+        "description_jp": "複数のランダムな敵に12回物理ダメージを与える。これらの攻撃は回避できない。ターゲットロック状態の敵はさらに1ターンの間スタン状態になる。このスキルはクールダウン状態から開始する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 5
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "RAVENSCLAW",
+    "ship_name": "レイヴンズ・クロウ",
+    "ship_image": "/charui/tex.charui_ravensclaw.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "フォース誘導式レーザー砲",
+        "name_eng": "Basicability Ravensclaw",
+        "image": "/ability/tex.ability_ravensclaw_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "太陽光",
+        "name_eng": "Specialability Ravensclaw01",
+        "image": "/ability/tex.ability_ravensclaw_special01.png",
+        "description_jp": "敵全体に物理ダメージを与える。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "形勢操作",
+        "name_eng": "Uniqueability Ravensclaw01",
+        "image": "/abilityui/tex.abilityui_passive_uniqueability.png",
+        "description_jp": "バトル開始時または増援時、ならず者以外のアクティブな味方反乱軍ごとに、レイヴンズ・クロウの最大HPが40%上昇(バトル終了まで)。レイヴンズ・クロウの攻撃は回避できない。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "シールド破壊",
+        "name_eng": "Hardwareability Ravensclaw",
+        "image": "/abilityui/tex.abilityui_passive_cloak.png",
+        "description_jp": "[c][ffff33]戦闘開始:[-][/c] レイヴンズ・クロウに2ターンのステルス効果が発生する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "XWINGRED2",
+    "ship_name": "ウェッジ・アンティリーズのXウイング",
+    "ship_image": "/charui/tex.charui_xwing_red2.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "KX9レーザーキャノン",
+        "name_eng": "Basicability Xwingred2",
+        "image": "/ability/tex.ability_xwing_red2_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンの時間経過ダメージを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "先陣",
+        "name_eng": "Uniqueability Xwingred201",
+        "image": "/abilityui/tex.abilityui_passive_assist.png",
+        "description_jp": "ターン外に攻撃を行うと、ウェッジ・アンティリーズのXウイングのターンメーターが10%上昇する。強化発生中の敵1機ごとに、ウェッジ・アンティリーズのXウイングのスピードが10、クリティカル率が5%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "脆弱性利用",
+        "name_eng": "Hardwareability Xwingred201",
+        "image": "/abilityui/tex.abilityui_passive_removeharmful.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ターゲットに2ターンの強化無効を発生させる(耐性発揮不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "HYENABOMBER",
+    "ship_name": "ハイエナ・ボマー",
+    "ship_image": "/charui/tex.charui_hyenabomber.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "精密ブラスト",
+        "name_eng": "Basicability Hyenabomber",
+        "image": "/ability/tex.ability_hyenabomber_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "シンクロ・サルボ",
+        "name_eng": "Specialability Hyenabomber01",
+        "image": "/ability/tex.ability_hyenabomber_special01.png",
+        "description_jp": "敵全体に物理ダメージを与え、バズ･ドロイド1体を発生させる(耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "チャター",
+        "name_eng": "Uniqueability Hyenabomber01",
+        "image": "/abilityui/tex.abilityui_passive_faction_separatist.png",
+        "description_jp": "味方分離主義者ごとにハイエナ・ボマーの防御力が20%上昇し、味方ドロイドごとに抵抗力が4%上昇する。\\n\\nまた敵にバズ･ドロイドが発生するか味方バルチャー･ドロイドのHPが50%を下回ると、1ターンの間挑発をおこなう。\\n\\n味方分離主義者がターゲットロックされると、その味方は2ターンのクリティカルヒット耐性を得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "フォトレセプター",
+        "name_eng": "Hardwareability Hyenabomber01",
+        "image": "/abilityui/tex.abilityui_passive_accuracy.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方分離主義者の精度が25%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "XWINGRED3",
+    "ship_name": "ビッグズ・ダークライターのXウイング",
+    "ship_image": "/charui/tex.charui_xwing_red3.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "的中",
+        "name_eng": "Basicability Xwingred301",
+        "image": "/ability/tex.ability_xwing_red3_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、クリティカルヒット時には2ターンのターゲットロックを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "デアリング・アサルト",
+        "name_eng": "Uniqueability Xwingred301",
+        "image": "/abilityui/tex.abilityui_passive_targetlock.png",
+        "description_jp": "敵がターゲットロック状態になると、ビッグズ・ダークライターのXウイングのプロテクションが20%回復し、2ターンの挑発を行う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "エンジン調整",
+        "name_eng": "Hardwareability Xwingred301",
+        "image": "/abilityui/tex.abilityui_passive_protection.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 2ターンの間、ビッグズ・ダークライターのXウイングのプロテクションが15%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "RAZORCREST",
+    "ship_name": "レイザークレスト",
+    "ship_image": "/charui/tex.charui_razorcrest.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "最重要指名手配",
+        "name_eng": "Basicability Razorcrest",
+        "image": "/ability/tex.ability_razorcrest_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。ターゲットが既に破損状態の場合、2ターンの間マーク状態にする(回避、耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "追い込み掃射攻撃",
+        "name_eng": "Specialability Razorcrest01",
+        "image": "/ability/tex.ability_razorcrest_special01.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンの間破損状態にし、指定した味方賞金稼ぎをアシストに呼ぶ。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "信頼できる輸送船",
+        "name_eng": "Uniqueability Razorcrest02",
+        "image": "/abilityui/tex.abilityui_passive_cloak.png",
+        "description_jp": "バトル開始時、レイザークレストは[c][ffff33]強化装甲[-][/c]のスタックを1得る(コピー、解除、阻止不可)。レイザークレストのHPが初めて1%まで減少すると、HPが30%回復し、強化装甲のスタックを3得る。\\n\\n[c][ffff33]強化装甲:[-][/c] スタック1つにつき防御力が250%上昇する。ダメージを受けると強化装甲のスタックを1失う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "前帝国トランスポンダー",
+        "name_eng": "Hardwareability Razorcrest",
+        "image": "/abilityui/tex.abilityui_passive_scanner.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] レイザークレストに1ターンのステルス効果が発生する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "MG100STARFORTRESSSF17",
+    "ship_name": "MG-100スターフォートレスSF-17",
+    "ship_image": "/charui/tex.charui_mg100.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ガンナー、注意しろ",
+        "name_eng": "Basicability Mg100starfortresssf17",
+        "image": "/ability/tex.ability_mg100_basic.png",
+        "description_jp": "物理ダメージを与える。\\n\\nターゲットに「スイート・スポット」のスタックが5つある場合、プロテクションが5%回復する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "スイート・スポット",
+        "name_eng": "Uniqueability Mg100starfortresssf1701",
+        "image": "/abilityui/tex.abilityui_passive_sweetspot.png",
+        "description_jp": "スターフォートレスは挑発中、カウンター率が10%上昇する。\\n\\nスターフォートレスがフォアサイトを得るたび、スターフォートレスはそれを解除し、代わりに2ターンのクリティカルヒット耐性を得る。\\n\\n味方レジスタンスが敵にダメージを与えるたび、遭遇終了またはスターフォートレスが戦闘不能になるまで、敵に「スイート・スポット」のスタックを発生させる(最大5)。\\n\\n[c][f0ff23]スイート・スポット:[-][/c] 「スイート・スポット」を使用するスキルの効果が増加する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "オールクリア、爆撃隊の出番だ",
+        "name_eng": "Hardwareability Mg100starfortresssf17",
+        "image": "/abilityui/tex.abilityui_passive_hardware.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 敵全体に「スイート・スポット」のスタックを1発生させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALRADDUS_EVENT",
+    "ship_name": "ラダス",
+    "ship_image": "/charui/tex.charui_raddus.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "エース・マヌーバー",
+        "name_eng": "Basicability Capitalraddus",
+        "image": "/ability/tex.ability_raddus_basic.png",
+        "description_jp": "指定した味方はターンメーターが5%上昇し、2ターンのフォアサイトを得て、アシストを行う。アシストを行う味方がレジスタンスの場合、ターゲットを2ターンの間エクスポーズ状態にする(回避不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "リチャージ・ディフレクター",
+        "name_eng": "Specialability Capitalraddus01",
+        "image": "/ability/tex.ability_raddus_special01.png",
+        "description_jp": "指定した味方に、抵抗力上昇、2ターンの[c][f0ff23]偏向シールド[-][/c]、ターンメーター25%上昇が発生する。\\n\\n[c][f0ff23]偏向シールド:[-][/c] ターン開始時に、プロテクションが25%回復(味方レジスタンスは2倍)し、2ターンのフォアサイトが発生する。コピー不可。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "アウトラスト",
+        "name_eng": "Specialability Capitalraddus02",
+        "image": "/ability/tex.ability_raddus_special02.png",
+        "description_jp": "味方全体のプロテクションが2ターンの間20%上昇し、プロテクションが20%回復、ターンメーターが20%上昇する。味方レジスタンス全体に2ターンの偏向シールドを付与する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ホルド・マヌーバー",
+        "name_eng": "Specialability Capitalraddus03",
+        "image": "/ability/tex.ability_raddus_special03.png",
+        "description_jp": "味方全体の弱体効果を全て解除し、味方全体のターンメーターを60%上昇させる。\\n\\nラダスを犠牲にすることで敵の主力シップを破壊し、味方をランダムで増援に呼ぶ。\\n\\nこのスキルは回避できず、クールダウン状態から開始する。またフォアサイト状態の味方レジスタンスが特殊スキルを使用するたび、このスキルのクールダウンが1減少する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 10
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "EBONHAWK",
+    "ship_name": "エボン・ホーク",
+    "ship_image": "/charui/tex.charui_ebonhawk.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "重レーザータレット",
+        "name_eng": "Basicability Ebonhawk",
+        "image": "/ability/tex.ability_ebonhawk_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、50%の確率で再攻撃を行う。攻撃のたびに強化効果が発生しているランダムな味方1機のターンメーターを5%上昇させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "クリティカルカーゴ",
+        "name_eng": "Uniqueability Ebonhawk01",
+        "image": "/abilityui/tex.abilityui_passive_def.png",
+        "description_jp": "エボン・ホークは、クリティカルヒットを与えるごとに50%の確率で1ターンのフォアサイトを得る。味方1機につき防御力が5%上昇する(カーゴシップの場合は2倍)。またクリティカルヒットを与えるたび、味方全体の有効性が10%上昇し、エボン・ホークのターンメーターが10%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "特別配送",
+        "name_eng": "Hardwareability Ebonhawk01",
+        "image": "/abilityui/tex.abilityui_passive_systems.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方全体のターゲットロックを解除し、2ターンの間チャフ状態にする。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "MILLENNIUMFALCONEP7",
+    "ship_name": "レイのミレニアム・ファルコン",
+    "ship_image": "/charui/tex.charui_mfalcon_ep7.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "4連レーザー",
+        "name_eng": "Basicability Millenniumfalconep701",
+        "image": "/ability/tex.ability_mfalcon_VII_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、50%の確率で2回目の攻撃を行う。ファルコンに強化が発生している場合、さらにもう一度攻撃を行う。2回目以降の攻撃はダメージが75%減少する\\n\\n[c][f0ff23]ターゲットロック:[-][/c] この攻撃に追加ヒットが発生する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "逆境打破",
+        "name_eng": "Uniqueability Millenniumfalconep701",
+        "image": "/abilityui/tex.abilityui_passive_targetlock.png",
+        "description_jp": "ダメージを受けると、ファルコンのターンメーターが5%、攻撃力が2%上昇する(スタック可能)。強化発生中に攻撃を受けた場合、攻撃者に対してターゲットロックを発生させる(耐性発揮不可)。さらに、ファルコンが逆噴射状態の間は防御力が100%上昇し、そうでない場合は回避力が15%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "噴射加速器",
+        "name_eng": "Hardwareability Millenniumfalconep701",
+        "image": "/abilityui/tex.abilityui_passive_counterattack.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ファルコンに逆噴射のスタックが1つ発生する。\\n\\n[c][ffff33]逆噴射:[-][/c] カウンター率が100%上昇する。ファルコンが通常攻撃を行うと、スタックが1消費されてターンメーターが50%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "FOTF_DEVASTATOR",
+    "ship_name": "デヴァステーター",
+    "ship_image": "/charui/tex.charui_stardestroyer_vader.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "XX-9ターボレーザーバッテリー",
+        "name_eng": "Basicability Fotf Devastator",
+        "image": "/ability/tex.ability_stardestroyer_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンの間抵抗力を低下させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "勇猛采配",
+        "name_eng": "Specialability Fotf Devastator01",
+        "image": "/ability/tex.ability_devastator_special01.png",
+        "description_jp": "味方全体に15%のターンメーター上昇、攻撃力上昇、有効性上昇が1ターン発生する。このスキルはクールダウン状態から開始する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 2
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "イオン・キャノン集中砲火",
+        "name_eng": "Specialability Fotf Devastator02",
+        "image": "/ability/tex.ability_stardestroyer_special02.png",
+        "description_jp": "敵全体に物理ダメージを与え、40%の確率で1ターンのスキルブロックを発生させる。弱体発生中の敵に対しては20%の追加ダメージを与える。その後、デヴァステーターは50%の確率で弱体発生中の敵全体に2ターンのエクスポーズを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "帝国の猛襲",
+        "name_eng": "Specialability Fotf Devastator03",
+        "image": "/ability/tex.ability_stardestroyer_special03.png",
+        "description_jp": "複数のランダムな敵に12回物理ダメージを与える。これらの攻撃は回避できない。ターゲットロック状態の敵はさらに1ターンの間スタン状態になる。このスキルはクールダウン状態から開始する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 5
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALFINALIZER",
+    "ship_name": "ファイナライザー",
+    "ship_image": "/charui/tex.charui_finalizer.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "壊滅",
+        "name_eng": "Basicability Capitalfinalizer",
+        "image": "/ability/tex.ability_finalizer_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。ターゲットがハント状態の場合、2度目のダメージを与える。指定した味方のクリティカルダメージが2ターンの間上昇し、さらにその味方がファースト・オーダーの場合はアシストに呼ぶ(ダメージは50%減少)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "制圧",
+        "name_eng": "Specialability Capitalfinalizer01",
+        "image": "/ability/tex.ability_finalizer_special01.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンの攻撃力低下とターゲットロックを発生させる。ターゲットがレジスタンスまたはハント状態の場合、これらの効果は耐性発揮できない。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 2
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "破壊",
+        "name_eng": "Specialability Capitalfinalizer02",
+        "image": "/ability/tex.ability_finalizer_special02.png",
+        "description_jp": "敵全体に物理ダメージを与える。この攻撃のダメージは、ハント状態の敵ごとに25%増加する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "希望の消滅",
+        "name_eng": "Specialability Capitalfinalizer03",
+        "image": "/ability/tex.ability_finalizer_special03.png",
+        "description_jp": "[c][F0FF23]ハント[-][/c]状態の敵全体のターンメーターが35%減少し、ターゲットは戦闘不能になるまでハント状態になる(コピー、解除、阻止、耐性発揮不可)。その後、ターゲットに物理ダメージを与える。\\n\\nこのスキルは回避できず、バトル開始時に使用できる。\\n\\n[c][F0FF23]ハント:[-][/c] ターン外の攻撃で与えるダメージが75%減少し、ボーナスターンメーターを獲得できなくなる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "ROGUEONESHIP",
+    "ship_name": "ローグ・ワン",
+    "ship_image": "/charui/tex.charui_rogueoneship.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "カバートバラージ",
+        "name_eng": "Basicability Rogueoneship",
+        "image": "/ability/tex.ability_rogueoneship_basic.png",
+        "description_jp": "ターゲットに特殊ダメージを2回与え、2ターンのターゲットロックを発生させる。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "SW-0608",
+        "name_eng": "Uniqueability Rogueoneship01",
+        "image": "/abilityui/tex.abilityui_passive_sw_0608.png",
+        "description_jp": "バトル開始時、味方主力シップがプロファンディティの場合、ローグ・ワンの最大HPが10%上昇する。\\n\\n味方が敵の攻撃を回避するたび、2ターンのスピード上昇を得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "よし、揃った",
+        "name_eng": "Hardwareability Rogueoneship",
+        "image": "/abilityui/tex.abilityui_passive_theresmoreofus.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 敵全体に2ターンの回復無効を発生させる(回避、耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "BLADEOFDORIN",
+    "ship_name": "プロ・クーンのジェダイ・スターファイター",
+    "ship_image": "/charui/tex.charui_jedi_fighter_bladeofdorin.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "コーディネート・アサルト",
+        "name_eng": "Basicability Bladeofdorin",
+        "image": "/ability/tex.ability_jedi_fighter_bladeofdorin_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、40%の確率で2ターンのプロテクション上昇(15%)を得る\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ランダムな味方1機に2ターンのプロテクション上昇(15%)を付与する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "共和国の翼",
+        "name_eng": "Specialability Bladeofdorin02",
+        "image": "/ability/tex.ability_jedi_fighter_bladeofdorin_special02.png",
+        "description_jp": "指定した味方の弱体を全て解除し、2ターンの間プロテクションを20%上昇させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "第104大隊司令官",
+        "name_eng": "Hardwareability Passive Bladeofdorin01",
+        "image": "/abilityui/tex.abilityui_passive_heal_buff.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 味方全体のHPが20%、プロテクションが20%回復する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALFINALIZER_EVENT",
+    "ship_name": "ファイナライザー",
+    "ship_image": "/charui/tex.charui_finalizer.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "壊滅",
+        "name_eng": "Basicability Capitalfinalizer",
+        "image": "/ability/tex.ability_finalizer_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。ターゲットがハント状態の場合、2度目のダメージを与える。指定した味方のクリティカルダメージが2ターンの間上昇し、さらにその味方がファースト・オーダーの場合はアシストに呼ぶ(ダメージは50%減少)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "制圧",
+        "name_eng": "Specialability Capitalfinalizer01",
+        "image": "/ability/tex.ability_finalizer_special01.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンの攻撃力低下とターゲットロックを発生させる。ターゲットがレジスタンスまたはハント状態の場合、これらの効果は耐性発揮できない。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 2
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "破壊",
+        "name_eng": "Specialability Capitalfinalizer02",
+        "image": "/ability/tex.ability_finalizer_special02.png",
+        "description_jp": "敵全体に物理ダメージを与える。この攻撃のダメージは、ハント状態の敵ごとに25%増加する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "希望の消滅",
+        "name_eng": "Specialability Capitalfinalizer03",
+        "image": "/ability/tex.ability_finalizer_special03.png",
+        "description_jp": "[c][F0FF23]ハント[-][/c]状態の敵全体のターンメーターが35%減少し、ターゲットは戦闘不能になるまでハント状態になる(コピー、解除、阻止、耐性発揮不可)。その後、ターゲットに物理ダメージを与える。\\n\\nこのスキルは回避できず、バトル開始時に使用できる。\\n\\n[c][F0FF23]ハント:[-][/c] ターン外の攻撃で与えるダメージが75%減少し、ボーナスターンメーターを獲得できなくなる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "TIEFIGHTERIMPERIAL",
+    "ship_name": "帝国軍TIEファイター",
+    "ship_image": "/charui/tex.charui_tiefighter.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "L-s1レーザーキャノン",
+        "name_eng": "Basicability Tiefighterimperial",
+        "image": "/ability/tex.ability_tiefighter_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、40%の確率で2ターンのターゲットロックを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "T-s8照準コンピューター",
+        "name_eng": "Specialability Tiefighterimperial01",
+        "image": "/ability/tex.ability_tiefighter_special01.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンのフォアサイトを得る\\n\\n[c][f0ff23]ターゲットロック:[-][/c] 1ターンの強化無効を発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "ツイン・イオン・エンジン",
+        "name_eng": "Hardwareability Tiefighterimperial01",
+        "image": "/abilityui/tex.abilityui_passive_scanner.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ターゲットのターンメーターを20%減少させる(回避、耐性発揮不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "FIRSTORDERTIEECHELON",
+    "ship_name": "TIEエシュロン",
+    "ship_image": "/charui/tex.charui_firstordertieechelon.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ハント開始",
+        "name_eng": "Basicability Firstordertieechelon",
+        "image": "/ability/tex.ability_firstordertieechelon_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "ファースト・オーダーの力",
+        "name_eng": "Uniqueability Firstordertieechelon01",
+        "image": "/abilityui/tex.abilityui_passive_def.png",
+        "description_jp": "各味方ファースト・オーダーのターン開始時、ステルス状態の味方ファースト・オーダーごとに、TIEエシュロンの防御力が1%上昇する(スタック可能)。味方ファースト・オーダーがクリティカルヒットを与えると、TIEエシュロンのHPとプロテクションが10%回復する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "ファースト・オーダーのヴァンガード",
+        "name_eng": "Hardwareability Firstordertieechelon",
+        "image": "/abilityui/tex.abilityui_passive_cloak.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] TIEエシュロンのプロテクションが2ターンの間10%上昇する。遭遇終了まで、味方ファースト・オーダーのステルス効果が切れるたび、1ターンの挑発を得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "TIEINTERCEPTOR",
+    "ship_name": "TIE/INインターセプタープロトタイプ",
+    "ship_image": "/charui/tex.charui_tie_interceptor_prototype.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "L-s9.3レーザーキャノン",
+        "name_eng": "Basicability Tieinterceptor",
+        "image": "/ability/tex.ability_tieinterceptorprototype_basic.png",
+        "description_jp": "ターゲットに物理ダメージを2回与える。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "オートスラスター・マヌーバー",
+        "name_eng": "Specialability Tieinterceptor01",
+        "image": "/ability/tex.ability_tieinterceptorprototype_special01.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンのフォアサイトを得る。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 2
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "プロトタイプデザイン",
+        "name_eng": "Uniqueability Tieinterceptor01",
+        "image": "/abilityui/tex.abilityui_passive_prototypedesign.png",
+        "description_jp": "TIE/INインターセプタープロトタイプが敵にクリティカルヒットを与えるたび、味方全体が帝国軍、尋問官、またはシスの場合、味方主力シップのターンメーターが1%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "予測可能",
+        "name_eng": "Hardwareability Tieinterceptor",
+        "image": "/abilityui/tex.abilityui_passive_howpredictable.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 帝国軍、尋問官、シスの味方全体の弱体化効果を解除する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "UWINGROGUEONE",
+    "ship_name": "キャシアンのUウイング",
+    "ship_image": "/charui/tex.charui_uwing_hero.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "トレイルブレーザー",
+        "name_eng": "Basicability Uwingrogueone",
+        "image": "/ability/tex.ability_uwing_hero_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、ターンメーターが5%上昇する\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ターンメーター上昇量が2倍になる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "接触回避",
+        "name_eng": "Uniqueability Uwingrogueone01",
+        "image": "/abilityui/tex.abilityui_passive_critimmunity.png",
+        "description_jp": "キャシアンのUウイングのカウンター率が30%上昇する。キャシアンのUウイングがアクティブな間、ターゲットロック状態の敵に攻撃されると、味方全体のクリティカル回避力が15%、防御力が10%上昇する。味方反乱軍に対しては、このボーナスが2倍となる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "反乱軍の偵察",
+        "name_eng": "Hardwareability Uwingrogueone01",
+        "image": "/abilityui/tex.abilityui_passive_systems.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ターゲットの強化を全て解除する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "YWINGREBEL",
+    "ship_name": "反乱軍Yウイング",
+    "ship_image": "/charui/tex.charui_ywing.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "SW-4イオン・キャノン",
+        "name_eng": "Basicability Ywingrebel",
+        "image": "/ability/tex.ability_rebelywing_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。まだ挑発していない場合、次のターン開始まで反乱軍Yウイングは挑発を行う。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "イオン魚雷",
+        "name_eng": "Specialability Ywingrebel01",
+        "image": "/ability/tex.ability_rebelywing_special01.png",
+        "description_jp": "ターゲットに2ターンの[c][F0FF23]シールド破壊[-][/c]を発生させ、物理ダメージを与える。Yウイングは2ターンの間挑発を行う。\\n\\n[c][F0FF23]シールド破壊:[-][/c] プロテクションが無効化され、プロテクション上昇とボーナスプロテクションが得られなくなる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "反乱軍追跡コンピューター",
+        "name_eng": "Hardwareability Ywingrebel01",
+        "image": "/abilityui/tex.abilityui_passive_taunt.png",
+        "description_jp": "[c][F0FF23]戦闘開始:[-][/c] 反乱軍Yウイングが戦闘不能になるまで、味方反乱軍のクリティカル率が1%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "チェンパット社製シールド発生装置",
+        "name_eng": "Uniqueability Ywingrebel01",
+        "image": "/abilityui/tex.abilityui_passive_flatmech.png",
+        "description_jp": "味方反乱軍が敵にクリティカルヒットを与えると、味方反乱軍のプロテクションが1%回復する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "JKL_GR75",
+    "ship_name": "GR-75",
+    "ship_image": "/charui/tex.charui_gr75.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "迅速回避",
+        "name_eng": "Basicability Gr75 Jkl",
+        "image": "/ability/tex.ability_gr75_basic.png",
+        "description_jp": "味方全体に3ターンの回避力上昇が発生する。既に味方に回避力上昇が発生している場合、ターンメーターが15%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "反乱軍の決意",
+        "name_eng": "Specialability Gr75 01",
+        "image": "/ability/tex.ability_gr75_special01.png",
+        "description_jp": "味方反乱軍全体のHPとプロテクションが50%回復する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 2
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "SLAVE1",
+    "ship_name": "スレーヴI",
+    "ship_image": "/charui/tex.charui_slave1.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "回転ツイン・ブラスターキャノン",
+        "name_eng": "Basicability Slave1 Name V2",
+        "image": "/ability/tex.ability_slave1_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、それぞれ40%の確率で2回目、3回目の攻撃を行う。各攻撃は40%の確率で2ターンのターゲットロックを発生させる。ただし2回目以降の攻撃はダメージが75%減少する\\n\\n[c][f0ff23]ターゲットロック:[-][/c] クリティカルヒットごとにターンメーターが20%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "サイズミック・チャージ",
+        "name_eng": "Specialability Slave102",
+        "image": "/ability/tex.ability_slave1_special02.png",
+        "description_jp": "敵全体に物理ダメージを与え、さらに対象の最大HPの20%相当となるボーナスダメージを与える。この攻撃はアーマーおよびプロテクションを無効化する。このスキルはクールダウン状態から開始する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "総攻撃",
+        "name_eng": "Hardwareability Slave101",
+        "image": "/abilityui/tex.abilityui_passive_systems.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] スレーヴⅠは2ターンの挑発と報復効果を得る。さらに、ターゲットに1ターンのスキルブロックを発生させる(回避、耐性発揮不可)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "死体では困る",
+        "name_eng": "Uniqueability Slave101",
+        "image": "/abilityui/tex.abilityui_passive_bobafett.png",
+        "description_jp": "バトル開始時または増援中、アクティブな敵ごとにスレーヴⅠの攻撃力が3%、クリティカル率が1%、スピードが2バトル終了まで上昇する。\\n\\nスレーヴⅠがアクティブな間にすべての敵が初めて同時に破損状態になるか、すべての敵に破損状態が発生している間にスレーヴⅠが戦場に出た場合、サイズミックチャージのクールダウンがリセットされる。\\n\\nスレーヴⅠがアクティブな間、破損状態の敵がターン外に攻撃するとダメージが10%減少する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "VULTUREDROID_tb",
+    "ship_name": "バルチャー・ドロイド",
+    "ship_image": "/charui/tex.charui_vulturedroid.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "アンリレンティング・アサルト",
+        "name_eng": "Basicability Vulturedroid Name V2",
+        "image": "/ability/tex.ability_vulturedroid_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。ターゲットに弱体が発生していた場合、この攻撃のクリティカルダメージが25%上昇する。この攻撃はバズ・ドロイドを取り除かない。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ディスコードミサイル",
+        "name_eng": "Specialability Vulturedroid01 Name V2",
+        "image": "/ability/tex.ability_vulturedroid_special02.png",
+        "description_jp": "ターゲットに物理ダメージを与え、バズ･ドロイドを3体発生させる。バズ･ドロイドはコピー、耐性発揮できない。\\n\\n[c][ffff33]バズ･ドロイド:[-][/c] 防御力0、常にクリティカルヒット、ダメージを受けるとバズ･ドロイドを1体失う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "無人の恐怖",
+        "name_eng": "Uniqueability Vulturedroid01 Name V2",
+        "image": "/abilityui/tex.abilityui_passive_kill.png",
+        "description_jp": "別の味方1体がバズ・ドロイド発生中の敵をターゲット中にスキルを使用すると、バルチャー・ドロイドが80%の確率でアシストする(ダメージは20%減少)。\\n\\n各敵のターン開始時、敵にバズ・ドロイドが1体以上発生している場合、バズ・ドロイド3体にリセットする。バズ・ドロイドがダメージ以外で解除させると、解除した敵に1ターンのスキルブロックが発生する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "工作ドロイド",
+        "name_eng": "Hardwareability Passive Vulturedroid01 Name V2",
+        "image": "/abilityui/tex.abilityui_passive_targetlock.png",
+        "description_jp": "敵全体にバズ・ドロイドが1体発生する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "COMMANDSHUTTLE",
+    "ship_name": "カイロ・レンのコマンド・シャトル",
+    "ship_image": "/charui/tex.charui_upsilon_shuttle_kylo.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "防御射撃",
+        "name_eng": "Basicability Commandshuttle",
+        "image": "/ability/tex.ability_upsilon_shuttle_kylo_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、2ターンの間プロテクションが20%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "高度ジャミングアレイ",
+        "name_eng": "Specialability Commandshuttle03",
+        "image": "/ability/tex.ability_upsilon_shuttle_kylo_special03.png",
+        "description_jp": "ターゲットの強化を全て解除し、それぞれ40%の確率で15%のターンメーター減少と2ターンの回復無効を発生させる(回避不可)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "ファースト・オーダー・エンフォーサー",
+        "name_eng": "Hardwareability Commandshuttle01",
+        "image": "/abilityui/tex.abilityui_passive_speed.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] カイロ・レンのコマンド・シャトルが、増援として呼び出された敵シップのターンメーターを10%減少させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "CAPITALEXECUTOR",
+    "ship_name": "エグゼクター",
+    "ship_image": "/charui/tex.charui_executor.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "型破りな方法",
+        "name_eng": "Basicability Capitalexecutor",
+        "image": "/ability/tex.ability_executor_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。アクティブな味方帝国軍1機ごとに与えるダメージが5%上昇する。アクティブな味方賞金稼ぎ1機ごとに与えるダメージが5%上昇する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "ブリーチ・プロトコル",
+        "name_eng": "Specialability Capitalexecutor01",
+        "image": "/ability/tex.ability_executor_special01.png",
+        "description_jp": "敵全体に物理ダメージを与える。味方賞金稼ぎ全てをアシストに呼ぶ(ダメージは25%減少)。ターゲットがターゲットロック状態の場合、味方帝国軍全てをアシストに呼ぶ(ダメージは50%減少)。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 4
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "敵の退路をふさいでいればよい",
+        "name_eng": "Specialability Capitalexecutor02",
+        "image": "/ability/tex.ability_executor_special02.png",
+        "description_jp": "味方賞金稼ぎの有効性が1ターン上昇する。\\n\\n指定した味方のHPとプロテクションが10%回復する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 5
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "何か特別な計画があるらしい",
+        "name_eng": "Specialability Capitalexecutor03",
+        "image": "/ability/tex.ability_executor_ultimate.png",
+        "description_jp": "敵主力シップを破壊する。味方は2ターンの間プロテクションが10%上昇する。敵主力シップがいない場合は、代わりにアクティブな敵シップを全て破壊する。このスキルは回避や耐性発揮ができず、クールダウン状態から開始し、敵シップに破損効果が発生するたび1減少する。",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 30
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "JEDISTARFIGHTERAHSOKATANO",
+    "ship_name": "アソーカ・タノのジェダイ・スターファイター",
+    "ship_image": "/charui/tex.charui_jedi_fighter_ahsoka.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "反射ショット",
+        "name_eng": "Basicability Jedistarfighterahsokatano",
+        "image": "/ability/tex.ability_jedi_fighter_ahsoka_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、40%の確率で2ターンの攻撃力上昇を得る\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ランダムな味方1機に2ターンの攻撃力上昇を付与する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "特殊スキル",
+        "name_jp": "シャットダウン",
+        "name_eng": "Specialability Jedistarfighterahsokatano01",
+        "image": "/ability/tex.ability_jedi_fighter_ahsoka_special01.png",
+        "description_jp": "ターゲットに物理ダメージを与え、発生している強化を全て解除する。敵が増援を呼ぶと、このスキルのクールダウンがリセットされ、アソーカのスターファイターのターンメーターが50%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false,
+        "cooldown": 3
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "カニング・マヌーバー",
+        "name_eng": "Hardwareability Jedistarfighterahsokatano01",
+        "image": "/abilityui/tex.abilityui_passive_heal_buff.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] ターゲットの強化を全て解除する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "SITHINFILTRATOR",
+    "ship_name": "シミター",
+    "ship_image": "/charui/tex.charui_sithinfiltrator.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "ドレッド・キャノン",
+        "name_eng": "Basicability Sithinfiltrator",
+        "image": "/ability/tex.ability_sithinfiltrator_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与える。シミターがステルス状態の場合、ターンメーターを60%減少させてステルスを失う",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "潜在脅威",
+        "name_eng": "Uniqueability Sithinfiltrator01",
+        "image": "/ability/tex.ability_sithinfiltrator_special02.png",
+        "description_jp": "ステルス状態の味方の攻撃力が5%上昇する。さらに、敵が増援を行うとシミターがその増援に2ターンの間ターゲットロックを発生させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "漂いし影",
+        "name_eng": "Hardwareability Sithinfiltrator01",
+        "image": "/abilityui/tex.abilityui_passive_crit_buff.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] シミターが戦闘不能になるまで味方全体のクリティカル率が5%上昇する(味方シスには効果2倍)",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  },
+  {
+    "base_id": "UMBARANSTARFIGHTER",
+    "ship_name": "アンバラン・スターファイター",
+    "ship_image": "/charui/tex.charui_umbaran_star_fighter.png",
+    "ability": [
+      {
+        "ability_type": "通常スキル",
+        "name_jp": "プラズマ兵器",
+        "name_eng": "Basicability Umbaranstarfighter",
+        "image": "/ability/tex.ability_umbaran_star_fighter_basic.png",
+        "description_jp": "ターゲットに物理ダメージを与え、それぞれ60%の確率で2ターンの攻撃力低下および防御力低下を発生させる\\n\\n[c][f0ff23]ターゲットロック:[-][/c] ターゲットの強化を全て解除する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "ユニークスキル",
+        "name_jp": "無謀操縦",
+        "name_eng": "Uniqueability Umbaranstarfighter01",
+        "image": "/ability/tex.ability_passive_thruster.png",
+        "description_jp": "アンバラン・スターファイターが攻撃を行うとターンメーターが5%上昇し、ターゲットのターンメーターも20%上昇する",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      },
+      {
+        "ability_type": "付与スキル",
+        "name_jp": "高度防衛システム",
+        "name_eng": "Hardwareability Umbaranstarfighter01",
+        "image": "/abilityui/tex.abilityui_passive_def.png",
+        "description_jp": "[c][f0ff23]戦闘開始:[-][/c] 敵全体のターンメーターを15%減少させる(回避不可)。2ターンの間味方全体の防御力を上昇させる",
+        "is_omega": true,
+        "is_zeta": false,
+        "is_omicron": false
+      }
+    ],
+    "last_updated": "2026年5月3日"
+  }
+]

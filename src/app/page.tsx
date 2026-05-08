@@ -1,8 +1,10 @@
-"use client";
-
 import Link from "next/link";
-import { useMemo } from "react";
 import updates, { Updates } from "../features/mainpages/constant/update";
+import { getAllGuides } from "@/lib/guides";
+
+const LATEST_UPDATES: Updates[] = [...updates]
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  .slice(0, 3);
 
 const NAV_ITEMS = [
   {
@@ -65,14 +67,7 @@ function UpdateCard({ item }: { item: Updates }) {
 }
 
 export default function Home() {
-  const allUpdates: Updates[] = updates;
-
-  const latestUpdates = useMemo(() => {
-    return [...allUpdates]
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-      .slice(0, 3);
-  }, [allUpdates]);
-
+  const latestGuides = getAllGuides().slice(0, 3);
   return (
     <main className="relative min-h-screen overflow-hidden bg-[hsl(220,16%,6%)] text-white">
       {/* Background layers */}
@@ -188,6 +183,49 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Guides section */}
+        {latestGuides.length > 0 && (
+          <section className="mb-10">
+            <div className="mb-4 flex items-end justify-between">
+              <h2 className="text-lg font-extrabold tracking-wide text-white/95 md:text-xl">
+                攻略ガイド
+              </h2>
+              <Link
+                href="/guides"
+                className="text-xs font-medium text-white/50 hover:text-white/85 transition-colors"
+              >
+                すべて見る →
+              </Link>
+            </div>
+            <ul className="grid gap-3 md:grid-cols-3">
+              {latestGuides.map((guide) => (
+                <li key={guide.slug}>
+                  <Link href={`/guides/${guide.slug}`} className="group block h-full">
+                    <article className="h-full rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-white/20 hover:bg-white/[0.05]">
+                      <div className="flex flex-wrap gap-1.5 mb-2">
+                        {guide.tags?.slice(0, 2).map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-[10px] px-2 py-0.5 rounded-full border border-white/15 text-white/50"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <h3 className="text-sm font-semibold leading-snug text-white/90 group-hover:text-white transition-colors mb-1">
+                        {guide.title}
+                      </h3>
+                      <p className="text-xs leading-relaxed text-white/55 line-clamp-2">
+                        {guide.description}
+                      </p>
+                    </article>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         {/* Update section */}
         <section className="mb-10">
           <div className="mb-4 flex items-end justify-between">
@@ -199,7 +237,7 @@ export default function Home() {
             </span>
           </div>
           <ul className="grid gap-3 md:grid-cols-3">
-            {latestUpdates.map((u) => (
+            {LATEST_UPDATES.map((u) => (
               <UpdateCard key={`${u.ver}-${u.date}`} item={u} />
             ))}
           </ul>

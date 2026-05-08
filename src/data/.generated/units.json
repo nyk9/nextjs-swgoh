@@ -1,0 +1,8782 @@
+[
+  {
+    "name": "大尋問官",
+    "character_base_id": "GRANDINQUISITOR",
+    "src": "/charui/tex.charui_grandinquisitor.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "尋問官",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "GI gi Grand Inquisitor grand inquisitor Ready to Die?",
+    "skill": [
+      "粛清",
+      "耐性発揮",
+      "耐性発揮不可",
+      "攻撃力上昇",
+      "拷問",
+      "スタック可能",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Grand-Inquisitor"
+  },
+  {
+    "name": "「ジャバ・ザ・ハット」",
+    "character_base_id": "EZRABRIDGERS3_GLE_INHERIT",
+    "src": "/charui/tex.charui_ezra_s3.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ジェダイ",
+      "フェニックス",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "プロテクション上昇",
+      "スタック可能"
+    ],
+    "url": "/characters/EZRABRIDGERS3_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "エコー",
+    "character_base_id": "BADBATCHECHO",
+    "src": "/charui/tex.charui_bb_echo.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "バッド・バッチ",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "Echo echo Bad Batch BB",
+    "skill": [
+      "回避力上昇",
+      "防御力上昇",
+      "アシスト",
+      "エクスポーズ",
+      "強化無効",
+      "回復"
+    ],
+    "url": "/characters/Echo"
+  },
+  {
+    "name": "クワイ＝ガン・ジン",
+    "character_base_id": "QUIGONJINN",
+    "src": "/charui/tex.charui_quigon.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "QGJ qgj Gui-Gon Jinn gui gon jinn",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/Qui-Gon-Jinn"
+  },
+  {
+    "name": "ローズ・ティコ",
+    "character_base_id": "ROSETICO",
+    "src": "/charui/tex.charui_rose.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "レジスタンス"
+    ],
+    "abbreviation": "Rose Tico rose tico",
+    "skill": [
+      "エクスポーズ"
+    ],
+    "url": "/characters/Rose-Tico"
+  },
+  {
+    "name": "ジェダイ・ナイト・ルーク・スカイウォーカー",
+    "character_base_id": "JEDIKNIGHTLUKE_GLE_INHERIT",
+    "src": "/charui/tex.charui_luke_jediknight.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ジェダイ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "カウンター",
+      "スタック可能",
+      "アシスト",
+      "ジェダイ・ナイト",
+      "ジェダイの意志",
+      "阻止不可",
+      "耐性発揮",
+      "無防備"
+    ],
+    "url": "/characters/JEDIKNIGHTLUKE_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "カーソン・テヴァ大尉",
+    "character_base_id": "CARSONTEVA",
+    "src": "/charui/tex.charui_carsonteva.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "報復",
+      "報復効果",
+      "アシスト",
+      "解除不可",
+      "クリティカル率低下",
+      "有効性低下",
+      "エクスポーズ",
+      "カウンター"
+    ],
+    "url": "/characters/CARSONTEVA"
+  },
+  {
+    "name": "プリンセス・ニーサ",
+    "character_base_id": "PRINCESSKNEESAA_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_princesskneesaa.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "イウォーク"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/PRINCESSKNEESAA_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "グリーヴァス将軍",
+    "character_base_id": "GRIEVOUS_MARQUEE",
+    "src": "/charui/tex.charui_grievous.png",
+    "property": [
+      "ダークサイド",
+      "ドロイド",
+      "アタッカー",
+      "分離主義者",
+      "リーダー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復",
+      "回復無効",
+      "カウンター",
+      "ターゲットロック",
+      "耐性発揮",
+      "耐性発揮不可",
+      "マーク状態",
+      "スタック可能"
+    ],
+    "url": "/characters/GRIEVOUS_MARQUEE"
+  },
+  {
+    "name": "ロボト",
+    "character_base_id": "LOBOT",
+    "src": "/charui/tex.charui_lobot.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "Lobot lobot",
+    "skill": [
+      "回復"
+    ],
+    "url": "/characters/Lobot"
+  },
+  {
+    "name": "アミリン・ホルド",
+    "character_base_id": "AMILYNHOLDO",
+    "src": "/charui/tex.charui_holdo.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "レジスタンス",
+      "艦隊司令官"
+    ],
+    "abbreviation": "Amilyn Holdo amilyn holdo 中将",
+    "skill": [
+      "フォアサイト",
+      "回復"
+    ],
+    "url": "/characters/Amilyn-Holdo"
+  },
+  {
+    "name": "レイア・オーガナ",
+    "character_base_id": "GLLEIA",
+    "src": "/charui/tex.charui_leiaendor.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "GL GLレイア gl Geractic Legends garactic legends Leia Organa leia organa",
+    "skill": [
+      "報復",
+      "報復効果",
+      "阻止不可",
+      "耐性発揮",
+      "不意打ち",
+      "プロテクション上昇",
+      "ボーナスプロテクション",
+      "待ち伏せ",
+      "クリティカルダメージ低下",
+      "クリティカル率低下",
+      "固定ダメージ",
+      "耐性発揮不可",
+      "抵抗力低下",
+      "防御力低下",
+      "無防備",
+      "有効性低下",
+      "炎上",
+      "回復",
+      "スタック可能",
+      "ダメージ耐性",
+      "復活",
+      "ボーナスターン",
+      "アシスト",
+      "エクスポーズ",
+      "恐れ知らず",
+      "ステルス",
+      "チャージ",
+      "大ダメージ",
+      "カウンター",
+      "行動喚起",
+      "抵抗力上昇",
+      "破砕"
+    ],
+    "url": "/characters/Leia-Organa"
+  },
+  {
+    "name": "イウォーク・エルダー",
+    "character_base_id": "EWOKELDER",
+    "src": "/charui/tex.charui_ewok_chief.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー",
+      "イウォーク"
+    ],
+    "abbreviation": "Ewok Elder ewok elder",
+    "skill": [
+      "回復",
+      "復活",
+      "アシスト"
+    ],
+    "url": "/characters/Ewoke-Elder"
+  },
+  {
+    "name": "プロ・クーン",
+    "character_base_id": "PLOKOON",
+    "src": "/charui/tex.charui_plokoon.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Plo Koon plo koon",
+    "skill": [
+      "ステルス"
+    ],
+    "url": "/characters/Plo-Koon"
+  },
+  {
+    "name": "ARCトルーパー",
+    "character_base_id": "ARCTROOPER501ST",
+    "src": "/charui/tex.charui_trooperclone_arc.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "第501軍団",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "ARC アーク",
+    "skill": [
+      "アシスト",
+      "指令",
+      "カウンター",
+      "復活"
+    ],
+    "url": "/characters/ARC-Trooper"
+  },
+  {
+    "name": "ジオノージアン・スパイ",
+    "character_base_id": "GEONOSIANSPY",
+    "src": "/charui/tex.charui_geonosian_spy.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ジオノージアン",
+      "分離主義者"
+    ],
+    "abbreviation": "Geonosian Spy geo Geo geonosian spy 蟲",
+    "skill": [
+      "ステルス",
+      "エクスポーズ",
+      "有効性上昇"
+    ],
+    "url": "/characters/Geonosian-Spy"
+  },
+  {
+    "name": "サビーヌ・レン(パダワン)",
+    "character_base_id": "PADAWANSABINE",
+    "src": "/charui/tex.charui_padawansabine.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "マンダロリアン",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "固定状態",
+      "カウンター",
+      "決意",
+      "先祖の決意",
+      "阻止不可",
+      "フォースの繋がり"
+    ],
+    "url": "/characters/PADAWANSABINE"
+  },
+  {
+    "name": "ファースト・オーダーTIEパイロット",
+    "character_base_id": "FIRSTORDERTIEPILOT",
+    "src": "/charui/tex.charui_firstordertiepilot.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ファースト・オーダー"
+    ],
+    "abbreviation": "First Order TIE Pilot first order tie pilot FOTP fotp",
+    "skill": [
+      "アドバンテージ"
+    ],
+    "url": "/characters/First-Order-TIE-Pilot"
+  },
+  {
+    "name": "CX-2",
+    "character_base_id": "OPERATIVE",
+    "src": "/charui/tex.charui_operative.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "クローン・トルーパー",
+      "帝国軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ステルス",
+      "無防備",
+      "ボーナスプロテクション"
+    ],
+    "url": "/characters/OPERATIVE"
+  },
+  {
+    "name": "BB-8",
+    "character_base_id": "BB8",
+    "src": "/charui/tex.charui_bb8.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ドロイド",
+      "レジスタンス"
+    ],
+    "abbreviation": "bb-8 bb8",
+    "skill": [
+      "エクスポーズ",
+      "回復",
+      "クールダウン状態から開始",
+      "カウンター",
+      "フォアサイト"
+    ],
+    "url": "/characters/BB-8"
+  },
+  {
+    "name": "ウェッジ・アンティリーズ",
+    "character_base_id": "WEDGEANTILLES_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_rebelpilot_wedge.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復"
+    ],
+    "url": "/characters/WEDGEANTILLES_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "ログレイ",
+    "character_base_id": "LOGRAY",
+    "src": "/charui/tex.charui_ewok_logray.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "イウォーク"
+    ],
+    "abbreviation": "Logray logray",
+    "skill": [
+      "フォアサイト"
+    ],
+    "url": "/characters/Logray"
+  },
+  {
+    "name": "ア゛ウァア゛ゥア゛ウウ",
+    "character_base_id": "URORRURRR",
+    "src": "/charui/tex.charui_urorrurrr.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "タスケン"
+    ],
+    "abbreviation": "URoRRuR'R'R urorrurrr アウァアゥアウウ あうぁあぅあうう ",
+    "skill": [],
+    "url": "/characters/URoRRuRRR"
+  },
+  {
+    "name": "ミッション・ヴァオ",
+    "character_base_id": "MISSIONVAO",
+    "src": "/charui/tex.charui_mission.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "旧共和国",
+      "ならず者"
+    ],
+    "abbreviation": "MV Mission Vao mission vao",
+    "skill": [
+      "暗闇",
+      "ステルス",
+      "回避不可",
+      "時間経過ダメージ",
+      "回復",
+      "スタック可能"
+    ],
+    "url": "/characters/Mission-Vao"
+  },
+  {
+    "name": "チューバッカ",
+    "character_base_id": "CHEWBACCALEGENDARY_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_chewbacca_ot.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "ならず者",
+      "ウーキー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "ガード",
+      "ボーナスダメージ"
+    ],
+    "url": "/characters/CHEWBACCALEGENDARY_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "ドクター・アフラ",
+    "character_base_id": "DOCTORAPHRA",
+    "src": "/charui/tex.charui_doctoraphra.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ならず者"
+    ],
+    "abbreviation": "Doctor Aphra doctor aphra",
+    "skill": [
+      "精度低下",
+      "カウンター",
+      "カウンター不可",
+      "エクスポーズ",
+      "サイフォン",
+      "スピード低下",
+      "耐性発揮",
+      "耐性発揮不可",
+      "プロテクション上昇"
+    ],
+    "url": "/characters/Doctor-Aphra"
+  },
+  {
+    "name": "ルミナーラ・アンドゥリ",
+    "character_base_id": "LUMINARAUNDULI",
+    "src": "/charui/tex.charui_luminara.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Luminara Unduli luminara unduli",
+    "skill": [
+      "回復"
+    ],
+    "url": "/characters/Luminara-Unduli"
+  },
+  {
+    "name": "クローン・スカウト・トルーパー",
+    "character_base_id": "CLONETROOPERP2FORESTSCOUT_V2",
+    "src": "/charui/tex.charui_clonetrooperp2forestscout.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "クローン・トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "エクスポーズ",
+      "スピード低下"
+    ],
+    "url": "/characters/CLONETROOPERP2FORESTSCOUT_V2"
+  },
+  {
+    "name": "スターキラー",
+    "character_base_id": "STARKILLER",
+    "src": "/charui/tex.charui_starkiller.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "SK sk Starkiller sterkiller ギャレン・マレック Galen Marek galen marek",
+    "skill": [
+      "解放",
+      "回復",
+      "回復無効",
+      "強化無効",
+      "耐性発揮",
+      "耐性発揮不可",
+      "無防備",
+      "回避不可",
+      "フォースエネルギー",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Starkiller"
+  },
+  {
+    "name": "マズ・カナタ",
+    "character_base_id": "MAZKANATA",
+    "src": "/charui/tex.charui_mazkanata.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "ならず者",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "エクスポーズ",
+      "耐性発揮",
+      "フォアサイト",
+      "恩恵",
+      "阻止不可"
+    ],
+    "url": "/characters/MAZKANATA"
+  },
+  {
+    "name": "ウィケット",
+    "character_base_id": "WICKET_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_ewok_wicket.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "イウォーク"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ステルス"
+    ],
+    "url": "/characters/WICKET_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "シス・エターナルの皇帝",
+    "character_base_id": "SITHPALPATINE",
+    "src": "/charui/tex.charui_espalpatine_pre.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "シス"
+    ],
+    "abbreviation": "SEE see Sith Eternal Emperor sith eternal eternal",
+    "skill": [
+      "カウンター",
+      "欺瞞",
+      "耐性発揮",
+      "耐性発揮不可",
+      "チャージ",
+      "アシスト",
+      "復活",
+      "ボーナスターン",
+      "連帯",
+      "エクスポーズ",
+      "大ダメージ",
+      "解除不可",
+      "回避不可",
+      "ショック"
+    ],
+    "url": "/characters/Sith-Eternal-Emperor"
+  },
+  {
+    "name": "ウィケット",
+    "character_base_id": "WICKET",
+    "src": "/charui/tex.charui_ewok_wicket.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "イウォーク"
+    ],
+    "abbreviation": "Wicket wicket",
+    "skill": [
+      "アシスト",
+      "ステルス"
+    ],
+    "url": "/characters/Wicket"
+  },
+  {
+    "name": "ティーボ",
+    "character_base_id": "TEEBO_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_ewok_teebo.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "イウォーク"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ステルス"
+    ],
+    "url": "/characters/TEEBO_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "チューバッカ",
+    "character_base_id": "CHEWBACCALEGENDARY",
+    "src": "/charui/tex.charui_chewbacca_ot.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "ならず者",
+      "ウーキー"
+    ],
+    "abbreviation": "Chewbacca chewbacca チューイ",
+    "skill": [
+      "アシスト",
+      "ガード",
+      "ボーナスダメージ"
+    ],
+    "url": "/characters/Chewbacca"
+  },
+  {
+    "name": "アソーカ・タノ(お調子者)",
+    "character_base_id": "AHSOKATANO",
+    "src": "/charui/tex.charui_ahsoka.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "第501軍団",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Ahsoka Tano ahsoka tano Snips",
+    "skill": [
+      "フォアサイト",
+      "回復",
+      "クリティカルヒット耐性",
+      "ジェダイ・ナイト"
+    ],
+    "url": "/characters/Ahsoka-Tano"
+  },
+  {
+    "name": "ワット･タンバー",
+    "character_base_id": "WATTAMBOR",
+    "src": "/charui/tex.charui_wattambor.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "分離主義者"
+    ],
+    "abbreviation": "Wat Tambor wat tambor",
+    "skill": [
+      "回復",
+      "時間経過回復",
+      "時間経過ダメージ",
+      "時間経過プロテクション",
+      "シールド発生装置",
+      "復活",
+      "ブラステック社製ウェポンモッド",
+      "アシスト",
+      "逃走"
+    ],
+    "url": "/characters/Wat-Tambor"
+  },
+  {
+    "name": "ログレイ",
+    "character_base_id": "LOGRAY_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_ewok_logray.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "イウォーク"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/LOGRAY_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "ダース・ナイアリス",
+    "character_base_id": "DARTHNIHILUS",
+    "src": "/charui/tex.charui_nihilus.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "シス"
+    ],
+    "abbreviation": "Darth Nihilus darth nihilus",
+    "skill": [
+      "耐性発揮",
+      "耐性発揮不可",
+      "回復",
+      "時間経過ダメージ",
+      "スタック可能"
+    ],
+    "url": "/characters/Darth-Nihilus"
+  },
+  {
+    "name": "ハックス将軍",
+    "character_base_id": "GENERALHUX",
+    "src": "/charui/tex.charui_generalhux.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ファースト・オーダー",
+      "艦隊司令官"
+    ],
+    "abbreviation": "General Hux general hux ハグス将軍 Hugs",
+    "skill": [
+      "アドバンテージ",
+      "アシスト"
+    ],
+    "url": "/characters/General-Hux"
+  },
+  {
+    "name": "トレンチ提督",
+    "character_base_id": "TRENCH",
+    "src": "/charui/tex.charui_admiraltrench.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "分離主義者"
+    ],
+    "abbreviation": "Admiral Trench admiral trench",
+    "skill": [
+      "ショック"
+    ],
+    "url": "/characters/Admiral-Trench"
+  },
+  {
+    "name": "キャプテン・イノック",
+    "character_base_id": "CAPTAINENOCH",
+    "src": "/charui/tex.charui_captainenoch.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "インペリアル・レムナント"
+    ],
+    "abbreviation": "Captain Enok captain enok",
+    "skill": [
+      "プロテクション上昇",
+      "回避不可",
+      "回復",
+      "減衰",
+      "固定ダメージ",
+      "阻止不可"
+    ],
+    "url": "/characters/Captain-Enok"
+  },
+  {
+    "name": "カイロ・レン最高指導者",
+    "character_base_id": "KYLOREN_DUEL",
+    "src": "/charui/tex.charui_kyloren_tros.png",
+    "property": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/KYLOREN_DUEL"
+  },
+  {
+    "name": "ダース・マラック",
+    "character_base_id": "DARTHMALAK",
+    "src": "/charui/tex.charui_darthmalak.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "シス",
+      "シス帝国"
+    ],
+    "abbreviation": "Darth Malak darth malak",
+    "skill": [
+      "ショック",
+      "回復",
+      "回復無効",
+      "カウンター",
+      "クールダウン状態から開始",
+      "阻止不可",
+      "ダーク・インフュージョン",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Darth-Malak"
+  },
+  {
+    "name": "レジスタンスの英雄ポー",
+    "character_base_id": "EPIXPOE",
+    "src": "/charui/tex.charui_poe_tros.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "レジスタンス"
+    ],
+    "abbreviation": "Resistance Hero Poe resistance hero poe",
+    "skill": [
+      "触発",
+      "無防備",
+      "よろめき",
+      "強化無効",
+      "回避不可",
+      "ボーナスダメージ"
+    ],
+    "url": "/characters/Resistance-Hero-Poe"
+  },
+  {
+    "name": "スキッフ・ガード(ランド・カルリジアン)",
+    "character_base_id": "UNDERCOVERLANDO",
+    "src": "/charui/tex.charui_undercoverlando.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "Skiff Guard Lando Calrissian skiff guard lando calrissian ",
+    "skill": [
+      "ガード",
+      "コピー不可",
+      "スタック可能",
+      "潜伏"
+    ],
+    "url": "/characters/Skiff-Guard-Lando-Calrissian"
+  },
+  {
+    "name": "ビッグズ・ダークライター",
+    "character_base_id": "BIGGSDARKLIGHTER",
+    "src": "/charui/tex.charui_rebelpilot_biggs.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "Biggs Darklighter biggs darklighter",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/BIGGSDARKLIGHTER"
+  },
+  {
+    "name": "ジョリー・ビンド",
+    "character_base_id": "JOLEEBINDO",
+    "src": "/charui/tex.charui_joleebindo.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー",
+      "ジェダイ",
+      "旧共和国"
+    ],
+    "abbreviation": "Jolee Bindo jolee bindo どうあがいてもジョリービンド",
+    "skill": [
+      "回復",
+      "アシスト"
+    ],
+    "url": "/characters/Jolee-Bindo"
+  },
+  {
+    "name": "コブ・ヴァンス",
+    "character_base_id": "COBBVANTH",
+    "src": "/charui/tex.charui_cobbvanth.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "抵抗力上昇",
+      "回避不可",
+      "耐性発揮",
+      "耐性発揮不可"
+    ],
+    "url": "/characters/COBBVANTH"
+  },
+  {
+    "name": "クローン・サージェント(フェーズⅠ)",
+    "character_base_id": "CLONESERGEANTPHASEI",
+    "src": "/charui/tex.charui_trooperclonegreen.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "Clone Sergent - Phase Ⅰ I クローンサージェント クローン サージェント",
+    "skill": [],
+    "url": "/characters/Clone-Sergeant-Phase-I"
+  },
+  {
+    "name": "ハンター(傭兵)",
+    "character_base_id": "HUNTERS3",
+    "src": "/charui/tex.charui_hunters3.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "バッド・バッチ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "耐性発揮",
+      "耐性発揮不可",
+      "マーク状態",
+      "回避不可",
+      "クールダウン状態から開始",
+      "ショック",
+      "回復",
+      "雇われ兵"
+    ],
+    "url": "/characters/HUNTERS3"
+  },
+  {
+    "name": "ティーボ",
+    "character_base_id": "TEEBO",
+    "src": "/charui/tex.charui_ewok_teebo.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "イウォーク"
+    ],
+    "abbreviation": "Teebo teebo",
+    "skill": [
+      "ステルス"
+    ],
+    "url": "/characters/Teebo"
+  },
+  {
+    "name": "クローン大戦チューバッカ",
+    "character_base_id": "CLONEWARSCHEWBACCA",
+    "src": "/charui/tex.charui_chewbacca.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "銀河共和国",
+      "ならず者",
+      "ウーキー"
+    ],
+    "abbreviation": "Clone Wars Chewbacca チューイ clone wars chewbacca CWC cwc",
+    "skill": [
+      "回復"
+    ],
+    "url": "/characters/Clone-Wars-Chewbacca"
+  },
+  {
+    "name": "ヨーダ&チューイ",
+    "character_base_id": "YODACHEWBACCA",
+    "src": "/charui/tex.charui_yodachewbacca.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "銀河共和国",
+      "ジェダイ",
+      "ウーキー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復",
+      "フォアサイト"
+    ],
+    "url": "/characters/YODACHEWBACCA"
+  },
+  {
+    "name": "テック",
+    "character_base_id": "BADBATCHTECH_GLE",
+    "src": "/charui/tex.charui_bb_tech.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "バッド・バッチ",
+      "第501軍団",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ターゲットロック",
+      "回復",
+      "ステルス",
+      "通訳",
+      "有効性上昇",
+      "抵抗力上昇"
+    ],
+    "url": "/characters/BADBATCHTECH_GLE"
+  },
+  {
+    "name": "マロック",
+    "character_base_id": "MARROK",
+    "src": "/charui/tex.charui_marrok.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "尋問官",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "粛清",
+      "逃走",
+      "雇われ兵"
+    ],
+    "url": "/characters/MARROK"
+  },
+  {
+    "name": "ロイヤル・ガード",
+    "character_base_id": "ROYALGUARD",
+    "src": "/charui/tex.charui_royalguard.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "帝国軍"
+    ],
+    "abbreviation": "Royal Guard royal guard RG",
+    "skill": [
+      "ガード",
+      "防御力上昇",
+      "回復"
+    ],
+    "url": "/characters/Royal-Guard"
+  },
+  {
+    "name": "モール(憎悪)",
+    "character_base_id": "MAULHATEFUELED",
+    "src": "/charui/tex.charui_maulhatefueled.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "狂気の刃",
+      "阻止不可",
+      "耐性発揮",
+      "耐性発揮不可",
+      "破砕",
+      "回復",
+      "回復無効",
+      "ボーナスターン",
+      "ボーナスプロテクション",
+      "カウンター",
+      "救済",
+      "苦悩",
+      "憎悪"
+    ],
+    "url": "/characters/MAULHATEFUELED"
+  },
+  {
+    "name": "デドラ・ミーロ",
+    "character_base_id": "DEDRAMEERO",
+    "src": "/charui/tex.charui_dedrameero.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "帝国軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "耐性発揮",
+      "耐性発揮不可",
+      "ボーナスターン",
+      "エクスポーズ",
+      "回復",
+      "自信過剰"
+    ],
+    "url": "/characters/DEDRAMEERO"
+  },
+  {
+    "name": "ベイダー卿",
+    "character_base_id": "LORDVADER",
+    "src": "/charui/tex.charui_lordvader.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "シス"
+    ],
+    "abbreviation": "Lord Vader load vader GL gl Galactic Legend LV lv",
+    "skill": [
+      "共和国の灰",
+      "回復",
+      "回復無効",
+      "過小評価",
+      "強化無効",
+      "固定ダメージ",
+      "チャージ",
+      "時間経過ダメージ",
+      "スタック可能",
+      "耐性発揮",
+      "耐性発揮不可",
+      "サーマル・デトネーター",
+      "最大HP減少",
+      "マーク状態",
+      "ステルス",
+      "スピード上昇",
+      "大ダメージ",
+      "ショック",
+      "阻止不可",
+      "復活",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Lord-Vader"
+  },
+  {
+    "name": "キャプテン・ドロガン",
+    "character_base_id": "CAPTAINDROGAN_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_captaindrogan.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復"
+    ],
+    "url": "/characters/CAPTAINDROGAN_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "ランド・カルリジアン",
+    "character_base_id": "ADMINISTRATORLANDO_GL_EVENT",
+    "src": "/charui/tex.charui_landobespin.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ならず者",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/ADMINISTRATORLANDO_GL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "マンダロリアン",
+    "character_base_id": "THEMANDALORIAN_JOURNEY_EVENT",
+    "src": "/charui/tex.charui_mandalorian.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者",
+      "マンダロリアン"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "決意",
+      "賞金稼ぎの決意",
+      "回避不可",
+      "クリティカルダメージ上昇",
+      "クリティカル率上昇",
+      "ダメージ上昇",
+      "復活"
+    ],
+    "url": "/characters/THEMANDALORIAN_JOURNEY_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ジャワ・スカベンジャー",
+    "character_base_id": "JAWASCAVENGER",
+    "src": "/charui/tex.charui_jawa_scavenger.png",
+    "property": [
+      "ライトサイド",
+      "サポート"
+    ],
+    "abbreviation": "Jawa Scavenger jawa scavenger ジャワスカ",
+    "skill": [
+      "回復",
+      "回復無効",
+      "サーマル・デトネーター",
+      "抵抗力低下",
+      "防御力低下",
+      "ステルス"
+    ],
+    "url": "/characters/Jawa-Scavenger"
+  },
+  {
+    "name": "ヒュイヤン",
+    "character_base_id": "HUYANG",
+    "src": "/charui/tex.charui_huyang.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ドロイド"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "アドバンテージ",
+      "回復",
+      "攻撃力上昇",
+      "スタック可能",
+      "耐性発揮"
+    ],
+    "url": "/characters/HUYANG"
+  },
+  {
+    "name": "グンガン・ファランクス",
+    "character_base_id": "GUNGANPHALANX",
+    "src": "/charui/tex.charui_gunganphalanx.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "グンガン"
+    ],
+    "abbreviation": "Gungan Phalanx",
+    "skill": [],
+    "url": "/characters/Gungan-Phalanx"
+  },
+  {
+    "name": "オーラ・シング",
+    "character_base_id": "AURRA_SING",
+    "src": "/charui/tex.charui_aurrasing.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "abbreviation": "Aurra Sing aurra sing",
+    "skill": [
+      "ステルス",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Aurra-Sing"
+  },
+  {
+    "name": "スターキラー",
+    "character_base_id": "STARKILLER_LEGACYEVENT",
+    "src": "/charui/tex.charui_starkiller.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "解放",
+      "回復",
+      "回復無効",
+      "強化無効",
+      "耐性発揮",
+      "耐性発揮不可",
+      "フォースエネルギー",
+      "無防備",
+      "回避不可",
+      "カウンター",
+      "ボーナスターン"
+    ],
+    "url": "/characters/STARKILLER_LEGACYEVENT"
+  },
+  {
+    "name": "キャド・ベイン",
+    "character_base_id": "CADBANE",
+    "src": "/charui/tex.charui_cadbane.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "賞金稼ぎ",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "Cad Bane cad bane",
+    "skill": [
+      "精度低下",
+      "回復"
+    ],
+    "url": "/characters/Cad-Bane"
+  },
+  {
+    "name": "シンドゥーラ将軍",
+    "character_base_id": "GENERALSYNDULLA",
+    "src": "/charui/tex.charui_generalsyndulla.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "固定ダメージ",
+      "流浪"
+    ],
+    "url": "/characters/GENERALSYNDULLA"
+  },
+  {
+    "name": "キャプテン・ファズマ",
+    "character_base_id": "PHASMA",
+    "src": "/charui/tex.charui_phasma.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ファースト・オーダー"
+    ],
+    "abbreviation": "Captain Phasma captain phasma",
+    "skill": [
+      "アドバンテージ",
+      "アシスト"
+    ],
+    "url": "/characters/Captain-Phasma"
+  },
+  {
+    "name": "シン・ハティ",
+    "character_base_id": "SHINHATI",
+    "src": "/charui/tex.charui_shinhati.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Shin Hati",
+    "skill": [
+      "雇われ兵"
+    ],
+    "url": "/characters/Shin-Hati"
+  },
+  {
+    "name": "チャーパ族長",
+    "character_base_id": "CHIEFCHIRPA_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_ewok_chirpa.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "イウォーク"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/CHIEFCHIRPA_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "フィン",
+    "character_base_id": "FINN",
+    "src": "/charui/tex.charui_finnjakku.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "レジスタンス"
+    ],
+    "abbreviation": "Finn finn ジョン・ボイエガ",
+    "skill": [
+      "アドバンテージ",
+      "回復",
+      "防御力上昇",
+      "エクスポーズ"
+    ],
+    "url": "/characters/Finn"
+  },
+  {
+    "name": "ランド・カルリジアン",
+    "character_base_id": "ADMINISTRATORLANDO_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_landobespin.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/ADMINISTRATORLANDO_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "レジスタンス・トルーパー",
+    "character_base_id": "RESISTANCETROOPER",
+    "src": "/charui/tex.charui_resistancetrooper.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "レジスタンス"
+    ],
+    "abbreviation": "Resistance Trooper rasistance trooper レジトル",
+    "skill": [
+      "エクスポーズ"
+    ],
+    "url": "/characters/Resistance-Trooper"
+  },
+  {
+    "name": "ヌート・ガンレイ",
+    "character_base_id": "NUTEGUNRAY",
+    "src": "/charui/tex.charui_nutegunray.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ならず者",
+      "分離主義者"
+    ],
+    "abbreviation": "Nute Gunray nute gunray",
+    "skill": [
+      "強要",
+      "恩恵",
+      "回避不可",
+      "回復",
+      "スタック可能",
+      "スピード低下",
+      "アシスト",
+      "ステルス",
+      "復活"
+    ],
+    "url": "/characters/Nute-Gunray"
+  },
+  {
+    "name": "アイデン・ヴェルシオ",
+    "character_base_id": "IDENVERSIOEMPIRE",
+    "src": "/charui/tex.charui_idenversioempire.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "Iden iden Versio versio アイポン",
+    "skill": [
+      "回復",
+      "アシスト",
+      "回復無効",
+      "無防備",
+      "カウンター",
+      "プロテクション上昇"
+    ],
+    "url": "/characters/Iden-Versio"
+  },
+  {
+    "name": "CC-1119 “アポー”",
+    "character_base_id": "APPO",
+    "src": "/charui/tex.charui_appo.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "クローン・トルーパー",
+      "帝国軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "クリティカルダメージ上昇",
+      "ダメージ上昇",
+      "時間経過ダメージ"
+    ],
+    "url": "/characters/APPO"
+  },
+  {
+    "name": "ハン・ソロ",
+    "character_base_id": "HANSOLO_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_han.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "耐性発揮",
+      "耐性発揮不可",
+      "ボーナスターン"
+    ],
+    "url": "/characters/HANSOLO_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "レッカー",
+    "character_base_id": "BADBATCHWRECKER_GLE",
+    "src": "/charui/tex.charui_bb_wrecker.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "バッド・バッチ",
+      "第501軍団",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "逆上",
+      "回復",
+      "ステルス",
+      "抵抗力上昇",
+      "防御力上昇",
+      "怒り",
+      "阻止不可"
+    ],
+    "url": "/characters/BADBATCHWRECKER_GLE"
+  },
+  {
+    "name": "マンダロリアン(ベスカー・アーマー)",
+    "character_base_id": "THEMANDALORIANBESKARARMOR_JOURNEY_EVENT_TIER4",
+    "src": "/charui/tex.charui_mandobeskar.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ならず者",
+      "マンダロリアン"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "時間経過ダメージ",
+      "アシスト",
+      "カウンター",
+      "カウンター不可",
+      "固定ダメージ",
+      "ステルス",
+      "ベスカー・アーマー",
+      "ホイッスリング・バード",
+      "ボーナスターン"
+    ],
+    "url": "/characters/THEMANDALORIANBESKARARMOR_JOURNEY_EVENT_TIER4"
+  },
+  {
+    "name": "ホス反乱軍スカウト",
+    "character_base_id": "HOTHREBELSCOUT",
+    "src": "/charui/tex.charui_rebelhothscout.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "Hoth Rebel Scout hoth rebel scout",
+    "skill": [],
+    "url": "/characters/Hoth-Rebel-Scout"
+  },
+  {
+    "name": "ダース・ベイダー(決闘後)",
+    "character_base_id": "VADERDUELSEND",
+    "src": "/charui/tex.charui_vaderduelsend.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "シス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "耐性発揮",
+      "炎上",
+      "憎悪",
+      "阻止不可"
+    ],
+    "url": "/characters/VADERDUELSEND"
+  },
+  {
+    "name": "TKストームトルーパー",
+    "character_base_id": "TKTROOPER_EVENT",
+    "src": "/charui/tex.charui_tkstormtrooper.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/TKTROOPER_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ファースト・オーダー・ストームトルーパー",
+    "character_base_id": "FIRSTORDERTROOPER",
+    "src": "/charui/tex.charui_firstordertrooper.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ファースト・オーダー"
+    ],
+    "abbreviation": "First Order Stormtrooper first order stormtrooper FOST fost",
+    "skill": [
+      "アドバンテージ",
+      "カウンター"
+    ],
+    "url": "/characters/First-Order-Stormtrooper"
+  },
+  {
+    "name": "キャシアン・アンドー(潜伏)",
+    "character_base_id": "CASSIANUNDERCOVER",
+    "src": "/charui/tex.charui_cassianundercover.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "スピード低下",
+      "回避不可",
+      "固定ダメージ",
+      "耐性発揮",
+      "耐性発揮不可",
+      "カウンター",
+      "クリティカルヒット耐性",
+      "無防備"
+    ],
+    "url": "/characters/CASSIANUNDERCOVER"
+  },
+  {
+    "name": "アクバー提督",
+    "character_base_id": "ADMIRALACKBAR_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_ackbaradmiral.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "反乱軍",
+      "艦隊司令官"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/ADMIRALACKBAR_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "KXセキュリティ・ドロイド",
+    "character_base_id": "KXSECURITYDROID_JGEVENT_1",
+    "src": "/charui/tex.charui_kxsecuritydroid.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ドロイド",
+      "帝国軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "オーバーチャージ",
+      "チャージ"
+    ],
+    "url": "/characters/KXSECURITYDROID_JGEVENT_1"
+  },
+  {
+    "name": "KXセキュリティ・ドロイド",
+    "character_base_id": "KXSECURITYDROID_JGEVENT_2",
+    "src": "/charui/tex.charui_kxsecuritydroid.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ドロイド",
+      "帝国軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "オーバーチャージ",
+      "チャージ"
+    ],
+    "url": "/characters/KXSECURITYDROID_JGEVENT_2"
+  },
+  {
+    "name": "ハン(ストームトルーパー)",
+    "character_base_id": "STORMTROOPERHAN",
+    "src": "/charui/tex.charui_trooperstorm_han.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "反乱軍",
+      "ならず者"
+    ],
+    "abbreviation": "STハン Stormtrooper Han stormtrooper han solo Solo ソロ",
+    "skill": [],
+    "url": "/characters/Stormtrooper-Han"
+  },
+  {
+    "name": "STAP",
+    "character_base_id": "STAP",
+    "src": "/charui/tex.charui_stap.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ドロイド",
+      "分離主義者"
+    ],
+    "abbreviation": "stap STAP細胞はあります",
+    "skill": [
+      "ターゲットロック",
+      "オーバーチャージ",
+      "回復",
+      "阻止不可",
+      "チャージ",
+      "固定ダメージ",
+      "リチャージ"
+    ],
+    "url": "/characters/STAP"
+  },
+  {
+    "name": "海賊王ホンドー・オナカー",
+    "character_base_id": "GLHONDO",
+    "src": "/charui/tex.charui_glhondo.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "恩恵",
+      "チャージ",
+      "ステルス",
+      "耐性発揮",
+      "回復",
+      "大ダメージ",
+      "回避不可",
+      "クリティカルダメージ上昇",
+      "攻撃力上昇",
+      "脆弱",
+      "阻止不可",
+      "耐性発揮不可",
+      "ダメージ上昇",
+      "復活",
+      "ボーナスターン",
+      "防御力上昇",
+      "有利"
+    ],
+    "url": "/characters/GLHONDO"
+  },
+  {
+    "name": "モブ・エンフォーサー",
+    "character_base_id": "HUMANTHUG",
+    "src": "/charui/tex.charui_mob_enforcer.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "Mob Enforcer mob enforcer",
+    "skill": [
+      "サーマル・デトネーター"
+    ],
+    "url": "/characters/Mob-Enforcer"
+  },
+  {
+    "name": "ヴァンドア・チューバッカ",
+    "character_base_id": "YOUNGCHEWBACCA",
+    "src": "/charui/tex.charui_chewbacca_vandor.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "ならず者",
+      "ウーキー"
+    ],
+    "abbreviation": "Vandor Chewbacca ",
+    "skill": [
+      "アドバンテージ",
+      "回復",
+      "準備万端",
+      "プロテクション上昇",
+      "カウンター"
+    ],
+    "url": "/characters/Vandor-Chewbacca"
+  },
+  {
+    "name": "ピエット提督",
+    "character_base_id": "ADMIRALPIETT",
+    "src": "/charui/tex.charui_piett.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍",
+      "帝国軍トルーパー",
+      "艦隊司令官"
+    ],
+    "abbreviation": "Admiral Piett admiral piett",
+    "skill": [
+      "アシスト",
+      "攻撃力上昇",
+      "失敗不可避",
+      "スタック可能",
+      "ステルス",
+      "耐性発揮",
+      "耐性発揮不可",
+      "カウンター"
+    ],
+    "url": "/characters/Admiral-Piett"
+  },
+  {
+    "name": "アサージ・ヴェントレス",
+    "character_base_id": "ASAJVENTRESS_BOUNTYHUNTER",
+    "src": "/charui/tex.charui_ventress_bountyhunter.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ナイトシスター",
+      "分離主義者",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復",
+      "スタック可能"
+    ],
+    "url": "/characters/ASAJVENTRESS_BOUNTYHUNTER"
+  },
+  {
+    "name": "クイール",
+    "character_base_id": "KUIIL",
+    "src": "/charui/tex.charui_kuiil.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ならず者"
+    ],
+    "abbreviation": "Kuiil kuiil",
+    "skill": [
+      "炎上",
+      "ショック",
+      "スピード低下",
+      "回復"
+    ],
+    "url": "/characters/Kuiil"
+  },
+  {
+    "name": "アーマラー",
+    "character_base_id": "ARMORER",
+    "src": "/charui/tex.charui_armorer.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "マンダロリアン"
+    ],
+    "abbreviation": "Armorer armorer",
+    "skill": [
+      "アーマー破壊",
+      "ベスカー・インゴット",
+      "回復",
+      "阻止不可",
+      "ベスカー・アーマー",
+      "アシスト"
+    ],
+    "url": "/characters/THE-Armorer"
+  },
+  {
+    "name": "エイス・ブラザー",
+    "character_base_id": "EIGHTHBROTHER",
+    "src": "/charui/tex.charui_eighthbrother.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "尋問官",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "8B 8b Eighth Brother eighth brother",
+    "skill": [
+      "ステルス",
+      "炎上",
+      "精度低下",
+      "回復",
+      "回復無効",
+      "粛清",
+      "スピード低下",
+      "耐性発揮"
+    ],
+    "url": "/characters/Eight-Brother"
+  },
+  {
+    "name": "キ＝アディ＝ムンディ",
+    "character_base_id": "KIADIMUNDI",
+    "src": "/charui/tex.charui_kiadimundi.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "KAM kam Ki- Adi-Mundi Ki Adi Mundi ki-adi-mundi ki adi mundi",
+    "skill": [
+      "アタル・フォーム",
+      "カウンター",
+      "クリティカルヒット耐性",
+      "マカシ・フォーム",
+      "アーマー破壊",
+      "回復"
+    ],
+    "url": "/characters/Ki-Adi-Mundi"
+  },
+  {
+    "name": "レイ",
+    "character_base_id": "AWAKENEDREY",
+    "src": "/charui/tex.charui_reyjakku.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "レジスタンス",
+      "リーダー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "フォアサイト"
+    ],
+    "url": "/characters/AWAKENEDREY"
+  },
+  {
+    "name": "ドゥークー伯爵",
+    "character_base_id": "COUNTDOOKU",
+    "src": "/charui/tex.charui_dooku.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "分離主義者",
+      "シス"
+    ],
+    "abbreviation": "Count Dooku cout dooku ウィリウォンカ",
+    "skill": [
+      "ショック",
+      "切り返し",
+      "コピー不可",
+      "カウンター",
+      "回復",
+      "回復無効",
+      "耐性発揮",
+      "耐性発揮不可",
+      "抵抗力低下"
+    ],
+    "url": "/characters/Count-Dooku"
+  },
+  {
+    "name": "キャプテン・ドロガン",
+    "character_base_id": "CAPTAINDROGAN",
+    "src": "/charui/tex.charui_captaindrogan.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "Captain Drogan captaion drogan",
+    "skill": [
+      "炎上",
+      "アシスト",
+      "回復",
+      "阻止不可",
+      "知略"
+    ],
+    "url": "/characters/Captain-Drogan"
+  },
+  {
+    "name": "マスター・クワイ＝ガン",
+    "character_base_id": "MASTERQUIGON",
+    "src": "/charui/tex.charui_masterquigon.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Master Qui-Gon qui gon",
+    "skill": [
+      "破損",
+      "スタック可能",
+      "アシスト",
+      "ターンメーター減少無効化",
+      "防御力上昇"
+    ],
+    "url": "/characters/Master-Qui-Gon"
+  },
+  {
+    "name": "ゼブ・オレリオス(新共和国パイロット)",
+    "character_base_id": "RANGERZEB",
+    "src": "/charui/tex.charui_rangerzeb.png",
+    "property": [
+      "ライトサイド",
+      "タンク"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "精度低下",
+      "誘発",
+      "攻撃力上昇"
+    ],
+    "url": "/characters/RANGERZEB"
+  },
+  {
+    "name": "イウォーク・スカウト",
+    "character_base_id": "EWOKSCOUT_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_ewok_scout.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "イウォーク"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/EWOKSCOUT_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "IG-11(賞金稼ぎ)",
+    "character_base_id": "IG11_MANDALORIAN_EVENT",
+    "src": "/charui/tex.charui_ig11.png",
+    "property": [
+      "ダークサイド",
+      "ヒーラー",
+      "賞金稼ぎ",
+      "ドロイド",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ターゲットロック",
+      "耐性発揮",
+      "耐性発揮不可"
+    ],
+    "url": "/characters/IG11_MANDALORIAN_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ジャバ・ザ・ハット",
+    "character_base_id": "JABBATHEHUTT",
+    "src": "/charui/tex.charui_jabbathehutt.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "賞金稼ぎ",
+      "ハット・カルテル"
+    ],
+    "abbreviation": "Jabba jabba The Hutt the hutt GL",
+    "skill": [
+      "アシスト",
+      "回復",
+      "クリティカルヒット無効",
+      "コピー不可",
+      "用心棒",
+      "サーマル・デトネーター",
+      "耐性発揮",
+      "耐性発揮不可",
+      "解除不可",
+      "クリティカルダメージ上昇",
+      "攻撃力上昇",
+      "好みの悪党",
+      "阻止不可",
+      "ダメージ上昇",
+      "ダメージ耐性",
+      "チャージ",
+      "復活",
+      "ボーナスターン",
+      "大ダメージ",
+      "アーマー破壊",
+      "カウンター",
+      "固定ダメージ"
+    ],
+    "url": "/characters/Jabba-The-Hutt"
+  },
+  {
+    "name": "ナインス・シスター",
+    "character_base_id": "NINTHSISTER",
+    "src": "/charui/tex.charui_ninthsister.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "帝国軍",
+      "尋問官",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "9s 9S Ninth Sister ninth sister マサナ・タイド Masana Tide masana ",
+    "skill": [
+      "粛清",
+      "回復",
+      "時間経過回復",
+      "時間経過ダメージ",
+      "耐性発揮",
+      "耐性発揮不可",
+      "スタック可能",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Ninth-Sister"
+  },
+  {
+    "name": "レイ(ジェダイ・トレーニング)",
+    "character_base_id": "REYJEDITRAINING",
+    "src": "/charui/tex.charui_rey_tlj.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "レジスタンス",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "RJT JTR 修行中レイ rjt jtr Rey(Jedi Trainig) rey jedi training",
+    "skill": [
+      "アシスト",
+      "回復",
+      "回復無効",
+      "耐性発揮",
+      "攻撃力低下",
+      "エクスポーズ",
+      "フォアサイト"
+    ],
+    "url": "/characters/Rey-Jedi-Trainig"
+  },
+  {
+    "name": "ネビット長老",
+    "character_base_id": "CHIEFNEBIT",
+    "src": "/charui/tex.charui_jawa_nebit.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー"
+    ],
+    "abbreviation": "Chief Nebit chief nebit",
+    "skill": [
+      "ステルス",
+      "プロテクション上昇",
+      "回復",
+      "時間経過回復",
+      "アシスト"
+    ],
+    "url": "/characters/Chief-Nebit"
+  },
+  {
+    "name": "ホス反乱軍兵士",
+    "character_base_id": "HOTHREBELSOLDIER",
+    "src": "/charui/tex.charui_rebelhoth.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "Hoth Rebel Soldier hoth rebel soldier",
+    "skill": [],
+    "url": "/characters/Hoth-Rebel-Soldier"
+  },
+  {
+    "name": "ジャバ・ザ・ハット",
+    "character_base_id": "JABBATHEHUTT_GLE_INHERIT",
+    "src": "/charui/tex.charui_jabbathehutt.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "賞金稼ぎ",
+      "ハット・カルテル"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "回復",
+      "クリティカルヒット無効",
+      "コピー不可",
+      "用心棒",
+      "サーマル・デトネーター",
+      "耐性発揮",
+      "耐性発揮不可",
+      "解除不可",
+      "クリティカルダメージ上昇",
+      "攻撃力上昇",
+      "好みの悪党",
+      "阻止不可",
+      "ダメージ上昇",
+      "ダメージ耐性",
+      "チャージ",
+      "復活",
+      "ボーナスターン"
+    ],
+    "url": "/characters/JABBATHEHUTT_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "第501軍団クローン・トルーパー",
+    "character_base_id": "CT210408_GLE_INHERIT",
+    "src": "/charui/tex.charui_trooperclone_echo.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "第501軍団",
+      "クローン・トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/CT210408_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "デンガー",
+    "character_base_id": "DENGAR",
+    "src": "/charui/tex.charui_dengar.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "abbreviation": "Denger denger",
+    "skill": [
+      "アシスト",
+      "カウンター",
+      "ステルス"
+    ],
+    "url": "/characters/Denger"
+  },
+  {
+    "name": "キックス",
+    "character_base_id": "KIX",
+    "src": "/charui/tex.charui_kix.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー",
+      "クローン・トルーパー",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "抵抗力上昇",
+      "回復",
+      "クリティカルヒット耐性",
+      "時間経過回復",
+      "時間経過プロテクション",
+      "プロテクション上昇",
+      "復活",
+      "恩恵",
+      "回避力上昇",
+      "ステルス",
+      "ボーナスプロテクション"
+    ],
+    "url": "/characters/KIX"
+  },
+  {
+    "name": "CC-2224 “コーディ”",
+    "character_base_id": "CC2224",
+    "src": "/charui/tex.charui_trooperclone_cody.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "Cody cody",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/CC-2224-Cody"
+  },
+  {
+    "name": "レジスタンスの英雄フィン",
+    "character_base_id": "EPIXFINN",
+    "src": "/charui/tex.charui_finn.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "レジスタンス"
+    ],
+    "abbreviation": "Resistance Hero Finn resistance hero finn",
+    "skill": [
+      "回復",
+      "回避不可",
+      "触発",
+      "アシスト",
+      "クリティカルヒット耐性",
+      "カウンター"
+    ],
+    "url": "/characters/Resistance-Hero-Finn"
+  },
+  {
+    "name": "バスティラ・シャン(フォールン)",
+    "character_base_id": "BASTILASHANDARK",
+    "src": "/charui/tex.charui_bastilashan_dark.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "シス",
+      "シス帝国"
+    ],
+    "abbreviation": "BSF bsf 闇バス Bastila Shan (Fallen) bastila shan fallen ",
+    "skill": [
+      "ショック",
+      "解除不可",
+      "回避不可",
+      "攻撃力低下",
+      "耐性発揮",
+      "カウンター",
+      "邪悪な戦闘瞑想",
+      "スタック可能",
+      "デスマーク"
+    ],
+    "url": "/characters/Bastila-Shan-Fallen"
+  },
+  {
+    "name": "海賊王ホンドー・オナカー",
+    "character_base_id": "GLHONDO_GLE_INHERIT",
+    "src": "/charui/tex.charui_glhondo.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "恩恵",
+      "チャージ",
+      "ステルス",
+      "耐性発揮",
+      "回復",
+      "大ダメージ",
+      "回避不可",
+      "クリティカルダメージ上昇",
+      "攻撃力上昇",
+      "脆弱",
+      "阻止不可",
+      "耐性発揮不可",
+      "ダメージ上昇",
+      "復活",
+      "ボーナスターン",
+      "防御力上昇",
+      "有利"
+    ],
+    "url": "/characters/GLHONDO_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ファースト・オーダー特殊部隊TIEパイロット",
+    "character_base_id": "FIRSTORDERSPECIALFORCESPILOT",
+    "src": "/charui/tex.charui_firstorder_pilot.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ファースト・オーダー"
+    ],
+    "abbreviation": "First Order SF TIE Pilot first order sf tie pilot special force",
+    "skill": [
+      "アドバンテージ",
+      "アシスト"
+    ],
+    "url": "/characters/First-Order-SF-TIE-Pilot"
+  },
+  {
+    "name": "ボバ・フェット",
+    "character_base_id": "BOBAFETT_GLE_INHERIT",
+    "src": "/charui/tex.charui_bobafett.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "時間経過ダメージ",
+      "復活",
+      "決意",
+      "賞金稼ぎの決意",
+      "ボーナスターン",
+      "サーマル・デトネーター"
+    ],
+    "url": "/characters/BOBAFETT_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ショアトルーパー",
+    "character_base_id": "SHORETROOPER",
+    "src": "/charui/tex.charui_troopershore.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "Shore Trooper shore trooper",
+    "skill": [
+      "回復",
+      "クリティカルヒット耐性"
+    ],
+    "url": "/characters/Shore-Trooper"
+  },
+  {
+    "name": "ダーク・トルーパー",
+    "character_base_id": "DARKTROOPER",
+    "src": "/charui/tex.charui_darktrooper.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ドロイド",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "Dark Trooper dark trooper",
+    "skill": [
+      "アドバンテージ",
+      "ダーク・トルーパー部隊",
+      "回復",
+      "復活"
+    ],
+    "url": "/characters/Dark-Trooper"
+  },
+  {
+    "name": "プリンセス・ニーサ",
+    "character_base_id": "PRINCESSKNEESAA",
+    "src": "/charui/tex.charui_princesskneesaa.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "イウォーク"
+    ],
+    "abbreviation": "Princess Kneesaa princess knersaa",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/Princess-Kneesaa"
+  },
+  {
+    "name": "ホンドー・オナカー",
+    "character_base_id": "HONDO",
+    "src": "/charui/tex.charui_hondoohnaka.png",
+    "property": [
+      "ニュートラル",
+      "サポート",
+      "ならず者"
+    ],
+    "abbreviation": "Hondo Ohnaca hondo ohnaca",
+    "skill": [
+      "阻止不可",
+      "身代金",
+      "アシスト",
+      "エクスポーズ",
+      "恩恵",
+      "逃走",
+      "人質",
+      "フォアサイト",
+      "回復"
+    ],
+    "url": "/characters/Hondo-Ohnaca"
+  },
+  {
+    "name": "ケノービ将軍",
+    "character_base_id": "GENERALKENOBI",
+    "src": "/charui/tex.charui_obiwangeneral.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ",
+      "反乱軍",
+      "艦隊司令官"
+    ],
+    "abbreviation": "GK gk General Kenobi general kenobi Hello There",
+    "skill": [
+      "フォアサイト",
+      "報復",
+      "報復効果",
+      "アシスト",
+      "攻撃力上昇",
+      "ジェダイ・ナイト",
+      "アドバンテージ",
+      "回復",
+      "ステルス",
+      "クリティカルヒット耐性"
+    ],
+    "url": "/characters/General-Kenobi"
+  },
+  {
+    "name": "モフ・ギデオン",
+    "character_base_id": "MOFFGIDEONS1",
+    "src": "/charui/tex.charui_moffgideon.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "Moff Gideon moff gideon Long Live the Empire",
+    "skill": [
+      "阻止不可",
+      "耐性発揮",
+      "洞察",
+      "アーマー破壊",
+      "アシスト",
+      "耐性発揮不可",
+      "戦意喪失"
+    ],
+    "url": "/characters/Moff-Gideon"
+  },
+  {
+    "name": "ナイトシスター・スピリット",
+    "character_base_id": "NIGHTSISTERSPIRIT",
+    "src": "/charui/tex.charui_nightsisters_wraith.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ナイトシスター"
+    ],
+    "abbreviation": "Nightsister Spirit nightsister spirit",
+    "skill": [
+      "フォアサイト"
+    ],
+    "url": "/characters/Nightsister-Spirit"
+  },
+  {
+    "name": "アミダラ女王",
+    "character_base_id": "QUEENAMIDALA",
+    "src": "/charui/tex.charui_queenamidala.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "銀河共和国"
+    ],
+    "abbreviation": "Queen Amidala",
+    "skill": [
+      "回避不可",
+      "侍女(おとり)",
+      "回復",
+      "阻止不可"
+    ],
+    "url": "/characters/Queen-Amidala"
+  },
+  {
+    "name": "キット・フィストー",
+    "character_base_id": "KITFISTO",
+    "src": "/charui/tex.charui_kitfisto.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Kit Fisto kit fisto",
+    "skill": [
+      "カウンター"
+    ],
+    "url": "/characters/Kit-Fisto"
+  },
+  {
+    "name": "レッカー",
+    "character_base_id": "BADBATCHWRECKER",
+    "src": "/charui/tex.charui_bb_wrecker.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "バッド・バッチ",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "Wrecker wrecker Bad Batch bad batch BB bb",
+    "skill": [
+      "逆上",
+      "回復",
+      "ステルス",
+      "抵抗力上昇",
+      "防御力上昇",
+      "怒り",
+      "阻止不可"
+    ],
+    "url": "/characters/Wrecker"
+  },
+  {
+    "name": "IG-88",
+    "character_base_id": "IG88",
+    "src": "/charui/tex.charui_ig88.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ドロイド",
+      "ならず者"
+    ],
+    "abbreviation": "IG88 ig-88 ig88",
+    "skill": [
+      "回復",
+      "回復無効",
+      "ターゲットロック",
+      "スタック可能"
+    ],
+    "url": "/characters/IG-88"
+  },
+  {
+    "name": "ハット・スレイヤー・レイア",
+    "character_base_id": "PRINCESSLEIA_GLE_INHERIT",
+    "src": "/charui/tex.charui_leia_princess.png",
+    "property": [
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "クリティカルダメージ上昇",
+      "ステルス",
+      "ダメージ上昇"
+    ],
+    "url": "/characters/PRINCESSLEIA_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ハンター",
+    "character_base_id": "BADBATCHHUNTER",
+    "src": "/charui/tex.charui_bb_hunter.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "バッド・バッチ",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "Bad Batch BB bad batch Hunter hunter",
+    "skill": [
+      "エクスポーズ",
+      "回避力上昇",
+      "ステルス",
+      "回避不可"
+    ],
+    "url": "/characters/BADBATCHHUNTER"
+  },
+  {
+    "name": "レイ",
+    "character_base_id": "GLE_AWAKENEDREY",
+    "src": "/charui/tex.charui_reyjakku.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "レジスタンス",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "フォアサイト"
+    ],
+    "url": "/characters/GLE_AWAKENEDREY"
+  },
+  {
+    "name": "バッチャー",
+    "character_base_id": "BATCHERS3",
+    "src": "/charui/tex.charui_batcher.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "バッド・バッチ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "スピード上昇",
+      "解除不可",
+      "回復",
+      "人質"
+    ],
+    "url": "/characters/BATCHERS3"
+  },
+  {
+    "name": "50R-T",
+    "character_base_id": "50RT",
+    "src": "/charui/tex.charui_50rt.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "ドロイド",
+      "旧共和国"
+    ],
+    "abbreviation": "shorty Shorty 50RT Sortie",
+    "skill": [
+      "ステルス"
+    ],
+    "url": "/characters/50R-T"
+  },
+  {
+    "name": "サード・シスター",
+    "character_base_id": "THIRDSISTER",
+    "src": "/charui/tex.charui_thirdsister.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "帝国軍",
+      "尋問官",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Reva reva リーヴァ 3s 3S Third Sister third sister 3rd",
+    "skill": [
+      "回避不可",
+      "粛清",
+      "回復",
+      "スタック可能",
+      "プロテクション上昇",
+      "憎悪",
+      "復活"
+    ],
+    "url": "/characters/Third-Sister"
+  },
+  {
+    "name": "レイ",
+    "character_base_id": "REY_DUEL",
+    "src": "/charui/tex.charui_rey_tros.png",
+    "property": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/REY_DUEL"
+  },
+  {
+    "name": "C-3PO",
+    "character_base_id": "C3POLEGENDARY",
+    "src": "/charui/tex.charui_c3p0.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ドロイド",
+      "銀河共和国",
+      "反乱軍",
+      "レジスタンス"
+    ],
+    "abbreviation": "3PO c3po",
+    "skill": [
+      "アシスト",
+      "カウンター",
+      "コピー不可",
+      "混乱状態",
+      "スタック可能",
+      "耐性発揮",
+      "耐性発揮不可",
+      "ボーナスターン",
+      "ボーナスターンメーター不可",
+      "防御力低下",
+      "ステルス",
+      "通訳",
+      "有効性上昇",
+      "逃走",
+      "エクスポーズ",
+      "回避不可",
+      "攻撃力低下"
+    ],
+    "url": "/characters/C-3PO"
+  },
+  {
+    "name": "グリーフ・カルガ",
+    "character_base_id": "GREEFKARGA_MANDALORIAN_EVENT",
+    "src": "/charui/tex.charui_greefkarga.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "回避不可",
+      "回復",
+      "報復",
+      "報復効果",
+      "カウンター",
+      "スタック可能",
+      "ステルス"
+    ],
+    "url": "/characters/GREEFKARGA_MANDALORIAN_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "スカイウォーカー将軍",
+    "character_base_id": "GENERALSKYWALKER_GLE_INHERIT",
+    "src": "/charui/tex.charui_generalanakin.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "第501軍団",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "怒り",
+      "アーマー破壊",
+      "アドバンス",
+      "回復",
+      "カバー",
+      "阻止不可",
+      "復活",
+      "耐性発揮",
+      "耐性発揮不可"
+    ],
+    "url": "/characters/GENERALSKYWALKER_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ケノービ将軍",
+    "character_base_id": "GENERALKENOBI_GLE_INHERIT_VADER",
+    "src": "/charui/tex.charui_globiwan.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "艦隊司令官",
+      "銀河共和国",
+      "ジェダイ",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "フォアサイト",
+      "報復",
+      "報復効果",
+      "アシスト",
+      "攻撃力上昇",
+      "ジェダイ・ナイト",
+      "アドバンテージ",
+      "回復",
+      "ステルス",
+      "クリティカルヒット耐性"
+    ],
+    "url": "/characters/GENERALKENOBI_GLE_INHERIT_VADER",
+    "is_event_variant": true
+  },
+  {
+    "name": "IG-90",
+    "character_base_id": "IG90",
+    "src": "/charui/tex.charui_ig-90.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "賞金稼ぎ",
+      "ドロイド",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復",
+      "カウンター",
+      "スピード低下",
+      "サイフォン"
+    ],
+    "url": "/characters/IG90"
+  },
+  {
+    "name": "ハンター",
+    "character_base_id": "BADBATCHHUNTER_GLE",
+    "src": "/charui/tex.charui_bb_hunter.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "バッド・バッチ",
+      "第501軍団",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "エクスポーズ",
+      "回避力上昇",
+      "ステルス",
+      "回避不可"
+    ],
+    "url": "/characters/BADBATCHHUNTER_GLE"
+  },
+  {
+    "name": "キャプテン・ハン・ソロ",
+    "character_base_id": "HOTHHAN",
+    "src": "/charui/tex.charui_hoth_han.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "反乱軍",
+      "ならず者"
+    ],
+    "abbreviation": "Captain Han Solo captain han solo Hoth hoth ホスハン CHOLO CHS cholo chs",
+    "skill": [
+      "耐性発揮",
+      "回復",
+      "復活"
+    ],
+    "url": "/characters/Captaion-Han-Solo"
+  },
+  {
+    "name": "ボーディー・ルック",
+    "character_base_id": "BODHIROOK",
+    "src": "/charui/tex.charui_bodhi.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ローグ・ワン"
+    ],
+    "abbreviation": "Bodhi Rook bodhi rook",
+    "skill": [
+      "アシスト",
+      "回避不可",
+      "攻撃力上昇"
+    ],
+    "url": "/characters/Bodhi-Rook"
+  },
+  {
+    "name": "モフ・ギデオン(ダーク・トルーパー)",
+    "character_base_id": "MOFFGIDEONS3",
+    "src": "/charui/tex.charui_moffgideons3.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "帝国軍",
+      "インペリアル・レムナント"
+    ],
+    "abbreviation": "Dark Trooper Moff Gideon dark trooper moff gideon Long Live the Empire DTMG",
+    "skill": [
+      "アシスト",
+      "精度上昇",
+      "回復"
+    ],
+    "url": "/characters/Dark-Trooper-Moff-Gideon"
+  },
+  {
+    "name": "ブーシ(レイア・オーガナ)",
+    "character_base_id": "BOUSHH",
+    "src": "/charui/tex.charui_boushh.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "Boushh (Leia Organa) boushh leia organa",
+    "skill": [
+      "サーマル・デトネーター",
+      "デッドリーブラフ"
+    ],
+    "url": "/characters/Boushh-Leia-Organa"
+  },
+  {
+    "name": "T3-M4",
+    "character_base_id": "T3_M4",
+    "src": "/charui/tex.charui_t3m4.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ドロイド",
+      "旧共和国"
+    ],
+    "abbreviation": "T3M4 t3-m4 t3m4",
+    "skill": [
+      "回復",
+      "クリティカル率低下",
+      "スタック可能",
+      "ターゲットロック"
+    ],
+    "url": "/characters/T3-M4"
+  },
+  {
+    "name": "エンボ",
+    "character_base_id": "EMBO",
+    "src": "/charui/tex.charui_embo.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "Embo",
+    "skill": [
+      "ボーナスダメージ",
+      "カウンター",
+      "フォアサイト",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Embo"
+  },
+  {
+    "name": "ヴィサス・マー",
+    "character_base_id": "VISASMARR",
+    "src": "/charui/tex.charui_visas.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Visas marr visas marr ",
+    "skill": [
+      "回復",
+      "カウンター"
+    ],
+    "url": "/characters/Visas-Marr"
+  },
+  {
+    "name": "タスケン・ウォリアー",
+    "character_base_id": "TUSKENHUNTRESS",
+    "src": "/charui/tex.charui_tuskenhuntress.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "タスケン"
+    ],
+    "abbreviation": "Tusken Warrior tusken warrior",
+    "skill": [
+      "時間経過ダメージ",
+      "防御力低下",
+      "モメンタム"
+    ],
+    "url": "/characters/Tusken-Warrior"
+  },
+  {
+    "name": "ジェダイ・マスター・ルーク・スカイウォーカー",
+    "character_base_id": "GRANDMASTERLUKE",
+    "src": "/charui/tex.charui_luke_jml.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "ジェダイ"
+    ],
+    "abbreviation": "JML jml Jedi Master Luke Skywalker jedi master luke skywalker",
+    "skill": [
+      "強化無効",
+      "スタック可能",
+      "アシスト",
+      "エクスポーズ",
+      "コピー不可",
+      "ジェダイの訓戒",
+      "耐性発揮",
+      "抵抗力低下",
+      "破損",
+      "回避不可",
+      "回復",
+      "固定ダメージ",
+      "大ダメージ",
+      "クリティカルダメージ上昇",
+      "クリティカル率上昇",
+      "ダメージ上昇",
+      "チャージ"
+    ],
+    "url": "/characters/Jedi-Master-Luke-Skywalker"
+  },
+  {
+    "name": "インペリアル・スーパー・コマンドー",
+    "character_base_id": "IMPERIALSUPERCOMMANDO",
+    "src": "/charui/tex.charui_imperial_super_commando.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "マンダロリアン"
+    ],
+    "abbreviation": "Imperial Super Commando imperial super commando",
+    "skill": [
+      "強化無効",
+      "カウンター"
+    ],
+    "url": "/characters/Imperial-Super-Commando"
+  },
+  {
+    "name": "ボバ・フェット",
+    "character_base_id": "BOBAFETT",
+    "src": "/charui/tex.charui_bobafett.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "Boba Fett BF boba fett ﾌｪｯ!!",
+    "skill": [
+      "時間経過ダメージ",
+      "復活",
+      "決意",
+      "賞金稼ぎの決意",
+      "ボーナスターン",
+      "サーマル・デトネーター"
+    ],
+    "url": "/characters/Boba-Fett"
+  },
+  {
+    "name": "キャプテン・ターパルス",
+    "character_base_id": "CAPTAINTARPALS",
+    "src": "/charui/tex.charui_captaintarpals.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "グンガン"
+    ],
+    "abbreviation": "Captain Tarpals",
+    "skill": [
+      "固定ダメージ",
+      "アシスト"
+    ],
+    "url": "/characters/Captain-Tarpals"
+  },
+  {
+    "name": "パプルー",
+    "character_base_id": "PAPLOO_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_ewok_paploo.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "イウォーク"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復",
+      "ステルス"
+    ],
+    "url": "/characters/PAPLOO_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "帝国軍偵察ドロイド",
+    "character_base_id": "IMPERIALPROBEDROID",
+    "src": "/charui/tex.charui_probedroid.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "ドロイド",
+      "帝国軍"
+    ],
+    "abbreviation": "Imperial Probe Droid IPD",
+    "skill": [
+      "エクスポーズ",
+      "ターゲットロック",
+      "大ダメージ",
+      "ボーナスダメージ",
+      "阻止不可",
+      "復活"
+    ],
+    "url": "/characters/Imperial-Probe-Droid"
+  },
+  {
+    "name": "レイ",
+    "character_base_id": "GLREY",
+    "src": "/charui/tex.charui_rey_tros.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "レジスタンス",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "GL Rey rey Garactic Legends garactic legends",
+    "skill": [
+      "クリティカルヒット耐性",
+      "ボーナスプロテクション",
+      "カウンター",
+      "大ダメージ",
+      "触発",
+      "スタック可能",
+      "ボーナスターン",
+      "クリティカルヒット不可",
+      "固定ダメージ",
+      "チャージ",
+      "防御力無効化"
+    ],
+    "url": "/characters/Rey"
+  },
+  {
+    "name": "ベイダー卿",
+    "character_base_id": "LORDVADER_GLE_INHERIT",
+    "src": "/charui/tex.charui_anakin_fallen.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "シス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "共和国の灰",
+      "回復",
+      "回復無効",
+      "過小評価",
+      "強化無効",
+      "固定ダメージ",
+      "チャージ",
+      "時間経過ダメージ",
+      "スタック可能",
+      "耐性発揮",
+      "耐性発揮不可",
+      "サーマル・デトネーター",
+      "最大HP減少",
+      "マーク状態",
+      "ステルス",
+      "スピード上昇",
+      "大ダメージ"
+    ],
+    "url": "/characters/LORDVADER_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ルーク・スカイウォーカー中佐",
+    "character_base_id": "COMMANDERLUKESKYWALKER_JKL_EVENT",
+    "src": "/charui/tex.charui_lukebespin.png",
+    "property": [
+      "ライトサイド",
+      "反乱軍",
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "抵抗力低下",
+      "回復",
+      "行動喚起",
+      "阻止不可",
+      "カウンター",
+      "耐性発揮"
+    ],
+    "url": "/characters/COMMANDERLUKESKYWALKER_JKL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "セカンド・シスター",
+    "character_base_id": "SECONDSISTER",
+    "src": "/charui/tex.charui_secondsister.png",
+    "property": [
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "尋問官",
+      "ダークサイド",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "2s 2S Second Sister second sister 2女 トリラ Trilla trilla",
+    "skill": [
+      "粛清",
+      "阻止不可",
+      "耐性発揮",
+      "耐性発揮不可",
+      "回避不可"
+    ],
+    "url": "/characters/Second-Sister"
+  },
+  {
+    "name": "スマグラー・ハン",
+    "character_base_id": "SMUGGLERHAN",
+    "src": "/charui/tex.charui_tfa_han.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "レジスタンス",
+      "ならず者"
+    ],
+    "abbreviation": "Vets vets veteran smuggler han solo Veteran Smuggler Han Solo",
+    "skill": [
+      "スタック可能",
+      "カウンター"
+    ],
+    "url": "/characters/Veteran-Smuggler-Han-Solo"
+  },
+  {
+    "name": "ルーク・スカイウォーカー中佐(ホス)",
+    "character_base_id": "COMMANDERLUKESKYWALKER_HOTH_JKL_EVENT",
+    "src": "/charui/tex.charui_rebelhoth_luke.png",
+    "property": [
+      "ライトサイド",
+      "反乱軍",
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "抵抗力低下",
+      "回復",
+      "行動喚起",
+      "カウンター",
+      "耐性発揮"
+    ],
+    "url": "/characters/COMMANDERLUKESKYWALKER_HOTH_JKL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "キーラ",
+    "character_base_id": "QIRA",
+    "src": "/charui/tex.charui_qira.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "ならず者"
+    ],
+    "abbreviation": "Qira qira",
+    "skill": [
+      "カウンター",
+      "攻撃力低下",
+      "準備万端",
+      "よろめき",
+      "アシスト",
+      "エクスポーズ",
+      "回復",
+      "スタック可能"
+    ],
+    "url": "/characters/Qira"
+  },
+  {
+    "name": "チューバッカ",
+    "character_base_id": "CHEWBACCALEGENDARY_JKL_EVENT",
+    "src": "/charui/tex.charui_chewbacca_ot.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ならず者",
+      "ウーキー",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "ガード",
+      "ボーナスダメージ"
+    ],
+    "url": "/characters/CHEWBACCALEGENDARY_JKL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "モーガン・エルズベス",
+    "character_base_id": "MORGANELSBETH",
+    "src": "/charui/tex.charui_morganelsbeth.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ナイトシスター"
+    ],
+    "abbreviation": "Morgan Elsbeth",
+    "skill": [
+      "回復",
+      "アシスト",
+      "ステルス",
+      "復活"
+    ],
+    "url": "/characters/Morgan-Elsbeth"
+  },
+  {
+    "name": "キャプテン・レックス",
+    "character_base_id": "CAPTAINREX_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_captainrex.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "クローン・トルーパー",
+      "フェニックス",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/CAPTAINREX_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "ケイナン・ジャラス",
+    "character_base_id": "KANANJARRUSS3",
+    "src": "/charui/tex.charui_kanan_s3.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "ジェダイ",
+      "フェニックス",
+      "反乱軍"
+    ],
+    "abbreviation": "Kanan Jarrus kanan jarrus Caleb Dume ケイレブ・デューム",
+    "skill": [
+      "耐性発揮",
+      "回復",
+      "カウンター"
+    ],
+    "url": "/characters/Kanan-Jarrus"
+  },
+  {
+    "name": "マグマトルーパー",
+    "character_base_id": "MAGMATROOPER",
+    "src": "/charui/tex.charui_trooperstorm_magma.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "Magmatrooper magmatrooper",
+    "skill": [
+      "耐性発揮"
+    ],
+    "url": "/characters/Magmatrooper"
+  },
+  {
+    "name": "レイア姫",
+    "character_base_id": "PRINCESSLEIA_GL_EVENT",
+    "src": "/charui/tex.charui_leia_princess.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "クリティカルダメージ上昇",
+      "ステルス",
+      "ダメージ上昇",
+      "回復"
+    ],
+    "url": "/characters/PRINCESSLEIA_GL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "カイル・カターン",
+    "character_base_id": "KYLEKATARN",
+    "src": "/charui/tex.charui_kylekatarn.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ジェダイ",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "Kyle Katarn kyle katarn",
+    "skill": [
+      "ジェダイ・ナイト",
+      "アシスト",
+      "カウンター",
+      "コピー不可",
+      "スタック可能",
+      "阻止不可",
+      "フォースの繋がり"
+    ],
+    "url": "/characters/Kyle-Katarn"
+  },
+  {
+    "name": "パズ・ヴィズラ",
+    "character_base_id": "PAZVIZSLA",
+    "src": "/charui/tex.charui_pazvizsla.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "マンダロリアン"
+    ],
+    "abbreviation": "Paz Vizsla paz vizsla",
+    "skill": [
+      "オーバーヒート",
+      "回避不可",
+      "強靭な防御",
+      "固定ダメージ",
+      "阻止不可",
+      "ヒート",
+      "回避力上昇",
+      "クリティカル回避力上昇",
+      "炎上"
+    ],
+    "url": "/characters/Paz-Vizsla"
+  },
+  {
+    "name": "エズラ・ブリッジャー(流浪)",
+    "character_base_id": "EZRAEXILE",
+    "src": "/charui/tex.charui_ezraexile.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ジェダイ"
+    ],
+    "abbreviation": "Ezra Bridger",
+    "skill": [
+      "スピード低下",
+      "解除不可",
+      "回復",
+      "切り返し",
+      "強靭な防御",
+      "スタック可能",
+      "抵抗力上昇",
+      "プロテクション上昇",
+      "防御力上昇",
+      "予備プラン",
+      "流浪",
+      "回復無効",
+      "攻撃力低下",
+      "耐性発揮",
+      "耐性発揮不可",
+      "恩恵",
+      "クリティカルダメージ上昇",
+      "ダメージ上昇",
+      "フォアサイト"
+    ],
+    "url": "/characters/Ezra-Bridger-Exile"
+  },
+  {
+    "name": "アイラ・セキュラ",
+    "character_base_id": "AAYLASECURA",
+    "src": "/charui/tex.charui_aaylasecura.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Aayla Secura aayla secura",
+    "skill": [
+      "アシスト",
+      "回復",
+      "カウンター",
+      "ガード",
+      "防御力低下"
+    ],
+    "url": "/characters/Aayla-Secura"
+  },
+  {
+    "name": "オビ＝ワン・ケノービ(ベン爺)",
+    "character_base_id": "OLDBENKENOBI",
+    "src": "/charui/tex.charui_obiwanep4.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "ジェダイ",
+      "反乱軍"
+    ],
+    "abbreviation": "OB ob Obi-Wan Kenobi (Old Ben) Obi Wan obi wan obi-wan Hello There ベン・ケノービ Ben ben ",
+    "skill": [
+      "回復",
+      "攻撃力上昇",
+      "スピード上昇"
+    ],
+    "url": "/characters/Obi-Wan-Kenobi-Old-Ben"
+  },
+  {
+    "name": "ヘラ・シンドゥーラ",
+    "character_base_id": "HERASYNDULLAS3",
+    "src": "/charui/tex.charui_hera_s3.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "フェニックス",
+      "反乱軍"
+    ],
+    "abbreviation": "Hera Syndulla hera syndulla",
+    "skill": [
+      "エクスポーズ",
+      "アシスト",
+      "回復",
+      "阻止不可",
+      "復活",
+      "予備プラン"
+    ],
+    "url": "/characters/Hera-Syndulla"
+  },
+  {
+    "name": "シス・エターナルの皇帝",
+    "character_base_id": "SITHPALPATINE_GL_EVENT",
+    "src": "/charui/tex.charui_espalpatine_pre.png",
+    "property": [
+      "ダークサイド",
+      "リーダー",
+      "アタッカー",
+      "シス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "カウンター",
+      "欺瞞",
+      "耐性発揮",
+      "耐性発揮不可",
+      "チャージ",
+      "アシスト",
+      "復活",
+      "ボーナスターン",
+      "連帯",
+      "エクスポーズ",
+      "大ダメージ",
+      "解除不可",
+      "回避不可",
+      "ショック"
+    ],
+    "url": "/characters/SITHPALPATINE_GL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "マンダロリアン(ベスカー・アーマー)",
+    "character_base_id": "THEMANDALORIANBESKARARMOR_JOURNEY_EVENT",
+    "src": "/charui/tex.charui_mandobeskar.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ならず者",
+      "マンダロリアン"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "時間経過ダメージ",
+      "アシスト",
+      "カウンター",
+      "カウンター不可",
+      "固定ダメージ",
+      "ステルス",
+      "ベスカー・アーマー",
+      "ホイッスリング・バード",
+      "ボーナスターン"
+    ],
+    "url": "/characters/THEMANDALORIANBESKARARMOR_JOURNEY_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ニクト・サグ",
+    "character_base_id": "NIKTOTHUG_GLE_INHERIT",
+    "src": "/charui/tex.charui_niktothug_01.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ハット・カルテル"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/NIKTOTHUG_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "IG-100マグナガード",
+    "character_base_id": "MAGNAGUARD",
+    "src": "/charui/tex.charui_magnaguard.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ドロイド",
+      "分離主義者"
+    ],
+    "abbreviation": "magunaguard Magunaguard",
+    "skill": [
+      "ターゲットロック",
+      "ガード",
+      "カウンター",
+      "ステルス",
+      "ボーナスターン"
+    ],
+    "url": "/characters/IG-100-MagnaGuard"
+  },
+  {
+    "name": "アソーカ・タノ",
+    "character_base_id": "GLAHSOKA_GLAHSOKAEVENT",
+    "src": "/charui/tex.charui_ahsokatanogray.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/GLAHSOKA_GLAHSOKAEVENT"
+  },
+  {
+    "name": "マザー・タルジン",
+    "character_base_id": "MOTHERTALZIN",
+    "src": "/charui/tex.charui_nightsisters_talzin.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ナイトシスター"
+    ],
+    "abbreviation": "Mother Talzin mother talzin",
+    "skill": [
+      "カウンター",
+      "カウンター不可",
+      "感染",
+      "回復",
+      "アシスト",
+      "復活",
+      "耐性発揮",
+      "回避不可"
+    ],
+    "url": "/characters/Mother-Talzin"
+  },
+  {
+    "name": "デス・トルーパー",
+    "character_base_id": "DEATHTROOPER",
+    "src": "/charui/tex.charui_trooperdeath.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "Death Trooper death trooper",
+    "skill": [
+      "回復",
+      "回復無効",
+      "復活"
+    ],
+    "url": "/characters/Death-Trooper"
+  },
+  {
+    "name": "ジェダイ・マスター・メイス・ウィンドゥ",
+    "character_base_id": "JEDIMASTERMACEWINDU",
+    "src": "/charui/tex.charui_jedimastermacewindu.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ガード",
+      "抵抗力上昇",
+      "攻撃力上昇",
+      "復活",
+      "固定ダメージ",
+      "フォアサイト",
+      "誘発"
+    ],
+    "url": "/characters/JEDIMASTERMACEWINDU"
+  },
+  {
+    "name": "サティール・シャン",
+    "character_base_id": "SATELESHAN",
+    "src": "/charui/tex.charui_sateleshan.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "ジェダイ",
+      "旧共和国"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "解除不可",
+      "スタック可能",
+      "マーク状態",
+      "防御力上昇",
+      "耐性発揮",
+      "抵抗力低下",
+      "プロテクション上昇"
+    ],
+    "url": "/characters/SATELESHAN"
+  },
+  {
+    "name": "ヴェイン",
+    "character_base_id": "VANE",
+    "src": "/charui/tex.charui_vane.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "攻撃力低下",
+      "恩恵",
+      "回避力上昇",
+      "粛清"
+    ],
+    "url": "/characters/VANE"
+  },
+  {
+    "name": "ハックス将軍",
+    "character_base_id": "GENERALHUX_EVENT",
+    "src": "/charui/tex.charui_generalhux.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ファースト・オーダー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アドバンテージ",
+      "アシスト"
+    ],
+    "url": "/characters/GENERALHUX_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ラダス提督",
+    "character_base_id": "ADMIRALRADDUS",
+    "src": "/charui/tex.charui_admiralraddus.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "反乱軍",
+      "ローグ・ワン",
+      "艦隊司令官"
+    ],
+    "abbreviation": "Admiral Raddus admiral raddus AdRad",
+    "skill": [
+      "プロテクション上昇",
+      "アシスト",
+      "回復",
+      "エクスポーズ",
+      "回復無効",
+      "固定ダメージ",
+      "耐性発揮",
+      "耐性発揮不可",
+      "復活",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Admiral-Raddus"
+  },
+  {
+    "name": "K-2SO",
+    "character_base_id": "K2SO",
+    "src": "/charui/tex.charui_k2so.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "ドロイド",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ローグ・ワン"
+    ],
+    "abbreviation": "K2SO k2so k-2so ",
+    "skill": [
+      "アシスト",
+      "カウンター"
+    ],
+    "url": "/characters/K-2SO"
+  },
+  {
+    "name": "パドメ・アミダラ",
+    "character_base_id": "PADMEAMIDALA",
+    "src": "/charui/tex.charui_padme_geonosis.png",
+    "property": [
+      "サポート",
+      "リーダー",
+      "ライトサイド",
+      "銀河共和国"
+    ],
+    "abbreviation": "Padme Padmé Amidala padme amidala padmé PA pa",
+    "skill": [
+      "回復",
+      "スタック可能",
+      "アシスト",
+      "解除不可",
+      "ジェダイ・ナイト",
+      "プロテクション上昇",
+      "ボーナスダメージ",
+      "勇気",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Padme-Amidala"
+  },
+  {
+    "name": "ワンパ",
+    "character_base_id": "WAMPA",
+    "src": "/charui/tex.charui_wampa.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー"
+    ],
+    "abbreviation": "Wampa wampa DE WANNA WANGA",
+    "skill": [
+      "エクスポーズ",
+      "時間経過ダメージ",
+      "よろめき",
+      "クールダウン状態から開始",
+      "スタック可能",
+      "プロテクション上昇",
+      "カウンター"
+    ],
+    "url": "/characters/Wampa"
+  },
+  {
+    "name": "レイ(ダークサイド・ヴィジョン)",
+    "character_base_id": "DARKREY",
+    "src": "/charui/tex.charui_darkrey.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ファースト・オーダー",
+      "シス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "固定ダメージ"
+    ],
+    "url": "/characters/DARKREY"
+  },
+  {
+    "name": "ソウ・ゲレラ",
+    "character_base_id": "SAWGERRERA",
+    "src": "/charui/tex.charui_sawgerrera.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "Saw Gerrera saw gerrera",
+    "skill": [
+      "暗闇",
+      "回復",
+      "時間経過回復",
+      "スタック可能"
+    ],
+    "url": "/characters/Saw-Gerrera"
+  },
+  {
+    "name": "メイス・ウィンドゥ",
+    "character_base_id": "MACEWINDU",
+    "src": "/charui/tex.charui_macewindu.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ",
+      "艦隊司令官"
+    ],
+    "abbreviation": "Mace Windu mace windu",
+    "skill": [
+      "回復",
+      "シャッターポイント",
+      "アシスト",
+      "強靭な防御",
+      "ステルス",
+      "耐性発揮",
+      "耐性発揮不可"
+    ],
+    "url": "/characters/Mace-Windu"
+  },
+  {
+    "name": "レイア・オーガナ(反乱軍オフィサー)(ベスピン)",
+    "character_base_id": "HOTHLEIA_JKL_EVENT",
+    "src": "/charui/tex.charui_leia_bespin.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "強化無効",
+      "カウンター",
+      "カウンター不可",
+      "フォアサイト",
+      "耐性発揮"
+    ],
+    "url": "/characters/HOTHLEIA_JKL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "シス・アサシン",
+    "character_base_id": "SITHASSASSIN",
+    "src": "/charui/tex.charui_sithassassin.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "シス",
+      "シス帝国"
+    ],
+    "abbreviation": "Sass Sith Assassin sith assassin",
+    "skill": [
+      "ステルス",
+      "フォアサイト"
+    ],
+    "url": "/characters/Sith-Assassin"
+  },
+  {
+    "name": "ジン・アーソ",
+    "character_base_id": "JYNERSO",
+    "src": "/charui/tex.charui_jyn.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ローグ・ワン"
+    ],
+    "abbreviation": "Jyn Erso jyn erso",
+    "skill": [
+      "アドバンテージ",
+      "復活",
+      "エクスポーズ",
+      "耐性発揮"
+    ],
+    "url": "/characters/Jyn-Erso"
+  },
+  {
+    "name": "ブルータス",
+    "character_base_id": "BRUTUS",
+    "src": "/charui/tex.charui_brutus.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "固定ダメージ",
+      "クリティカル率低下",
+      "精度低下",
+      "耐性発揮",
+      "恩恵",
+      "スタック可能"
+    ],
+    "url": "/characters/BRUTUS"
+  },
+  {
+    "name": "ダース・サイオン",
+    "character_base_id": "DARTHSION",
+    "src": "/charui/tex.charui_sion.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "シス"
+    ],
+    "abbreviation": "Darth Sion darth sion",
+    "skill": [
+      "ペイン",
+      "回復",
+      "クールダウン状態から開始",
+      "憎悪",
+      "阻止不可",
+      "復活"
+    ],
+    "url": "/characters/Darth-Sion"
+  },
+  {
+    "name": "ポグル",
+    "character_base_id": "POGGLETHELESSER",
+    "src": "/charui/tex.charui_geonosian_poggle.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ジオノージアン",
+      "分離主義者"
+    ],
+    "abbreviation": "Poggle poggle",
+    "skill": [
+      "アシスト",
+      "攻撃力上昇",
+      "集団意識",
+      "回復",
+      "ターゲットロック"
+    ],
+    "url": "/characters/Poggle"
+  },
+  {
+    "name": "CT-21-0408 “エコー”",
+    "character_base_id": "CT210408",
+    "src": "/charui/tex.charui_trooperclone_echo.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "第501軍団",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "Echo echo",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/CT-21-0408-Echo"
+  },
+  {
+    "name": "CC-2224 “コーディ”",
+    "character_base_id": "CC2224_GLE_INHERIT",
+    "src": "/charui/tex.charui_trooperclone_cody.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "クローン・トルーパー",
+      "銀河共和国",
+      "第501軍団"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/CC2224_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ドロイデカ",
+    "character_base_id": "DROIDEKA",
+    "src": "/charui/tex.charui_droideka.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ドロイド",
+      "分離主義者"
+    ],
+    "abbreviation": "DDk ddk Droideka droideka",
+    "skill": [
+      "クリティカルヒット不可",
+      "固定ダメージ",
+      "チャージ",
+      "回復",
+      "コピー不可",
+      "ダメージ耐性"
+    ],
+    "url": "/characters/Droideka"
+  },
+  {
+    "name": "テンプル・ガード",
+    "character_base_id": "VANGUARDTEMPLEGUARD",
+    "src": "/charui/tex.charui_vanguardtempleguard.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ガード",
+      "ステルス"
+    ],
+    "url": "/characters/VANGUARDTEMPLEGUARD"
+  },
+  {
+    "name": "レイア姫",
+    "character_base_id": "PRINCESSLEIA",
+    "src": "/charui/tex.charui_leia_princess.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "Princess Leia princess leia",
+    "skill": [
+      "クリティカルダメージ上昇",
+      "ステルス",
+      "ダメージ上昇",
+      "回復"
+    ],
+    "url": "/characters/Princess-Leia"
+  },
+  {
+    "name": "セブンス・シスター",
+    "character_base_id": "SEVENTHSISTER",
+    "src": "/charui/tex.charui_seventhsister.png",
+    "property": [
+      "ダークサイド",
+      "ヒーラー",
+      "リーダー",
+      "帝国軍",
+      "尋問官",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Seventh Sister seventh sister 7S 7s",
+    "skill": [
+      "攻撃力低下",
+      "粛清",
+      "耐性発揮",
+      "耐性発揮不可",
+      "回復",
+      "アシスト",
+      "回復無効",
+      "スピード低下",
+      "精度低下"
+    ],
+    "url": "/characters/Seventh-Sister"
+  },
+  {
+    "name": "アグノート",
+    "character_base_id": "UGNAUGHT",
+    "src": "/charui/tex.charui_ugnaught.png",
+    "property": [
+      "ライトサイド",
+      "サポート"
+    ],
+    "abbreviation": "Ugnaught ugnaught",
+    "skill": [],
+    "url": "/characters/Ugnaught"
+  },
+  {
+    "name": "スノートルーパー",
+    "character_base_id": "SNOWTROOPER",
+    "src": "/charui/tex.charui_troopersnow.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "帝国軍トルーパー",
+      "インペリアル・レムナント"
+    ],
+    "abbreviation": "Snowtrooper snow trooper",
+    "skill": [],
+    "url": "/characters/Snowtrooper"
+  },
+  {
+    "name": "ヴェル・サルサ",
+    "character_base_id": "VEL",
+    "src": "/charui/tex.charui_vel.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "強靭な防御",
+      "暗闇"
+    ],
+    "url": "/characters/VEL"
+  },
+  {
+    "name": "ファースト・オーダー・オフィサー",
+    "character_base_id": "FIRSTORDEROFFICERMALE",
+    "src": "/charui/tex.charui_firstorderofficer.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "ファースト・オーダー"
+    ],
+    "abbreviation": "First Order Officer FOO foo first order officer",
+    "skill": [
+      "アドバンテージ"
+    ],
+    "url": "/characters/First-Order-Officer"
+  },
+  {
+    "name": "ダース・ベイダー",
+    "character_base_id": "VADER",
+    "src": "/charui/tex.charui_vader.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "シス"
+    ],
+    "abbreviation": "Darth Vader darth vader",
+    "skill": [
+      "耐性発揮",
+      "カウンター",
+      "時間経過ダメージ",
+      "攻撃力上昇",
+      "ボーナスターン",
+      "無慈悲"
+    ],
+    "url": "/characters/Darth-Vader"
+  },
+  {
+    "name": "ジェダイ・マスター・ルーク・スカイウォーカー",
+    "character_base_id": "GRANDMASTERLUKE_GL_EVENT",
+    "src": "/charui/tex.charui_luke_jml.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "ジェダイ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "強化無効",
+      "スタック可能",
+      "アシスト",
+      "エクスポーズ",
+      "コピー不可",
+      "ジェダイの訓戒",
+      "耐性発揮",
+      "抵抗力低下",
+      "破損",
+      "回避不可",
+      "回復",
+      "固定ダメージ",
+      "大ダメージ",
+      "クリティカルダメージ上昇",
+      "クリティカル率上昇",
+      "ダメージ上昇",
+      "チャージ"
+    ],
+    "url": "/characters/GRANDMASTERLUKE_GL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "アイマ＝ガン・ダイ",
+    "character_base_id": "IMAGUNDI",
+    "src": "/charui/tex.charui_imagundi.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "アイマガンダイ Ima-Gun Di ",
+    "skill": [
+      "回復",
+      "カウンター"
+    ],
+    "url": "/characters/Ima-Gun-Di"
+  },
+  {
+    "name": "ボ＝カターン(マンダロア)",
+    "character_base_id": "MANDALORBOKATAN",
+    "src": "/charui/tex.charui_mandalorbokatan.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "マンダロリアン"
+    ],
+    "abbreviation": "Bo-Katan (Mand'alor) bo-katan mand'alor bokatan ",
+    "skill": [
+      "回避不可",
+      "アーマー破壊",
+      "アシスト",
+      "決意",
+      "固定ダメージ",
+      "スタック可能",
+      "先祖の決意",
+      "ボーナスプロテクション",
+      "マンダロア"
+    ],
+    "url": "/characters/Bo-Katan-Mandalor"
+  },
+  {
+    "name": "グレート・マザー",
+    "character_base_id": "GREATMOTHERS",
+    "src": "/charui/tex.charui_greatmothers.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ナイトシスター"
+    ],
+    "abbreviation": "Great Mothers",
+    "skill": [
+      "祝福",
+      "破滅",
+      "復活",
+      "復活不可",
+      "アシスト",
+      "運命を紡ぐ",
+      "影の賜物",
+      "時間経過ダメージ",
+      "ステルス",
+      "即戦闘不能",
+      "阻止不可",
+      "耐性発揮",
+      "耐性発揮不可",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Great-Mothers"
+  },
+  {
+    "name": "ベイズ・マルバス",
+    "character_base_id": "BAZEMALBUS",
+    "src": "/charui/tex.charui_bazemalbus.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ローグ・ワン"
+    ],
+    "abbreviation": "Baze Malbus baze malbus",
+    "skill": [
+      "アシスト",
+      "報復",
+      "報復効果"
+    ],
+    "url": "/characters/Baze-Malbus"
+  },
+  {
+    "name": "ヘラ・シンドゥーラ",
+    "character_base_id": "HERASYNDULLAS3_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_hera_s3.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "フェニックス",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/HERASYNDULLAS3_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "パルパティーン皇帝",
+    "character_base_id": "EMPERORPALPATINE",
+    "src": "/charui/tex.charui_palpatineemperor.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍",
+      "シス"
+    ],
+    "abbreviation": "Emperor Palpatine emperor palpatine EP ep パワー ",
+    "skill": [
+      "回復",
+      "ショック",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Emperor-Palpatine"
+  },
+  {
+    "name": "ランド・カルリジアン",
+    "character_base_id": "ADMINISTRATORLANDO",
+    "src": "/charui/tex.charui_landobespin.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ならず者"
+    ],
+    "abbreviation": "Lando Calrissian lando calrissian ランド・カルリジアンからのお別れの挨拶",
+    "skill": [],
+    "url": "/characters/Lando-Calrissian"
+  },
+  {
+    "name": "ショアトルーパー",
+    "character_base_id": "SHORETROOPER_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_troopershore.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復"
+    ],
+    "url": "/characters/SHORETROOPER_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "サン・ファク",
+    "character_base_id": "SUNFAC",
+    "src": "/charui/tex.charui_geonosian_sunfac.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ジオノージアン",
+      "分離主義者"
+    ],
+    "abbreviation": "Sun Fac sun fac 蟲",
+    "skill": [
+      "回復",
+      "攻撃力低下",
+      "よろめき",
+      "カウンター",
+      "クリティカル率低下",
+      "集団意識",
+      "防御力上昇"
+    ],
+    "url": "/characters/Sun-Fac"
+  },
+  {
+    "name": "ジョカスタ・ヌー",
+    "character_base_id": "JOCASTANU",
+    "src": "/charui/tex.charui_jocastanu_blaster.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ガード",
+      "クールダウン状態から開始",
+      "サイフォン",
+      "耐性発揮",
+      "解除不可",
+      "回復",
+      "阻止不可",
+      "ダメージ耐性",
+      "フォアサイト",
+      "復活",
+      "復活不可",
+      "ボーナスターン"
+    ],
+    "url": "/characters/JOCASTANU"
+  },
+  {
+    "name": "カルテル・サボタージュ",
+    "character_base_id": "CARTELSABOTEUR_GLE_INHERIT",
+    "src": "/charui/tex.charui_weequaysaboteur.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "ハット・カルテル"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/CARTELSABOTEUR_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ベイダー卿",
+    "character_base_id": "LORDVADER_GLE",
+    "src": "/charui/tex.charui_anakin_fallen.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "シス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "共和国の灰",
+      "回復",
+      "回復無効",
+      "過小評価",
+      "強化無効",
+      "固定ダメージ",
+      "チャージ",
+      "時間経過ダメージ",
+      "スタック可能",
+      "耐性発揮",
+      "耐性発揮不可",
+      "サーマル・デトネーター",
+      "最大HP減少",
+      "マーク状態",
+      "ステルス",
+      "スピード上昇",
+      "大ダメージ"
+    ],
+    "url": "/characters/LORDVADER_GLE"
+  },
+  {
+    "name": "R5-D4",
+    "character_base_id": "R5D4",
+    "src": "/charui/tex.charui_r5d4.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ドロイド",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "時間経過ダメージ",
+      "解除不可",
+      "クールダウン状態から開始",
+      "固定ダメージ",
+      "耐性発揮",
+      "耐性発揮不可",
+      "ベスカー・アーマー",
+      "ホイッスリング・バード"
+    ],
+    "url": "/characters/R5D4"
+  },
+  {
+    "name": "アソーカ・タノ",
+    "character_base_id": "GLAHSOKATANO_GLE_INHERIT",
+    "src": "/charui/tex.charui_ahsokatanogray.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "耐性発揮",
+      "耐性発揮不可",
+      "解除不可",
+      "チャージ",
+      "ボーナスターン",
+      "流浪",
+      "カウンター",
+      "ダメージ耐性",
+      "大ダメージ"
+    ],
+    "url": "/characters/GLAHSOKATANO_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ダース・シディアス",
+    "character_base_id": "DARTHSIDIOUS",
+    "src": "/charui/tex.charui_sidious.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "シス"
+    ],
+    "abbreviation": "Darth Sidious darth sidious ",
+    "skill": [
+      "回復",
+      "回復無効",
+      "時間経過ダメージ"
+    ],
+    "url": "/characters/Darth-Sidious"
+  },
+  {
+    "name": "チャーパ族長",
+    "character_base_id": "CHIEFCHIRPA",
+    "src": "/charui/tex.charui_ewok_chirpa.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "イウォーク"
+    ],
+    "abbreviation": "Chief Chirpa chief chirpa",
+    "skill": [
+      "回復",
+      "時間経過回復",
+      "報復",
+      "報復効果",
+      "アシスト"
+    ],
+    "url": "/characters/Chief-Chirpa"
+  },
+  {
+    "name": "ガラゼブ“ゼブ”オレリオス",
+    "character_base_id": "ZEBS3",
+    "src": "/charui/tex.charui_zeb_s3.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "反乱軍",
+      "フェニックス"
+    ],
+    "abbreviation": "Garazeb \"Zeb\" Orrelios garazeb zeb orrelios",
+    "skill": [
+      "エクスポーズ",
+      "よろめき",
+      "耐性発揮",
+      "抵抗力上昇",
+      "プロテクション上昇",
+      "報復",
+      "回復"
+    ],
+    "url": "/characters/Garazeb-Zeb-Orrelios"
+  },
+  {
+    "name": "ジャー・ジャー・ビンクス",
+    "character_base_id": "JARJARBINKS_EVENT",
+    "src": "/charui/tex.charui_jarjarbinks.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "グンガン"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/JARJARBINKS_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ザッカス",
+    "character_base_id": "ZUCKUSS",
+    "src": "/charui/tex.charui_zuckuss.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "フォアサイト",
+      "ステルス"
+    ],
+    "url": "/characters/ZUCKUSS"
+  },
+  {
+    "name": "クレヤ・マーキ",
+    "character_base_id": "KLEYA",
+    "src": "/charui/tex.charui_kleya.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "ボーナスターン",
+      "炎上",
+      "知略"
+    ],
+    "url": "/characters/KLEYA"
+  },
+  {
+    "name": "ジャー・ジャー・ビンクス",
+    "character_base_id": "JARJARBINKS",
+    "src": "/charui/tex.charui_jarjarbinks.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "グンガン"
+    ],
+    "abbreviation": "Jar Jar Binks ",
+    "skill": [
+      "カウンター",
+      "カウンター不可",
+      "アシスト",
+      "暗闇",
+      "フォアサイト"
+    ],
+    "url": "/characters/Jar-Jar-Binks"
+  },
+  {
+    "name": "ボス・ナス",
+    "character_base_id": "BOSSNASS",
+    "src": "/charui/tex.charui_bossnass.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "グンガン"
+    ],
+    "abbreviation": "Boss Nass",
+    "skill": [
+      "アシスト",
+      "回復",
+      "攻撃力低下",
+      "スタック可能",
+      "無防備",
+      "報復",
+      "報復効果",
+      "エクスポーズ",
+      "時間経過ダメージ",
+      "シールド発生装置"
+    ],
+    "url": "/characters/Boss-Nass"
+  },
+  {
+    "name": "0-0-0",
+    "character_base_id": "TRIPLEZERO",
+    "src": "/charui/tex.charui_triplezero.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "ドロイド",
+      "ならず者"
+    ],
+    "abbreviation": "卵  タマゴ  000  triple-zero triple zero Triple Zero",
+    "skill": [
+      "拷問",
+      "耐性発揮",
+      "耐性発揮不可",
+      "通訳"
+    ],
+    "url": "/characters/0-0-0"
+  },
+  {
+    "name": "海賊王ホンドー・オナカー",
+    "character_base_id": "GLHONDO_GLE_INHERIT_NOULT",
+    "src": "/charui/tex.charui_glhondo.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "恩恵",
+      "チャージ",
+      "ステルス",
+      "耐性発揮",
+      "回復",
+      "大ダメージ"
+    ],
+    "url": "/characters/GLHONDO_GLE_INHERIT_NOULT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ナイトシスター・イニシエート",
+    "character_base_id": "NIGHTSISTERINITIATE",
+    "src": "/charui/tex.charui_nightsister_initiate.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ナイトシスター"
+    ],
+    "abbreviation": "Nightsister Initiate nightsister initiate",
+    "skill": [
+      "時間経過ダメージ",
+      "強化無効",
+      "カウンター"
+    ],
+    "url": "/characters/Nightsister-Initiate"
+  },
+  {
+    "name": "レイ",
+    "character_base_id": "REYJEDITRAINING_GLEVENT",
+    "src": "/charui/tex.charui_rey_tros.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "レジスタンス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "回復",
+      "回復無効",
+      "耐性発揮",
+      "攻撃力低下",
+      "エクスポーズ",
+      "フォアサイト"
+    ],
+    "url": "/characters/REYJEDITRAINING_GLEVENT"
+  },
+  {
+    "name": "ジオノージアン・ブルード・アルファ",
+    "character_base_id": "GEONOSIANBROODALPHA",
+    "src": "/charui/tex.charui_geonosian_broodalpha.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ジオノージアン",
+      "分離主義者"
+    ],
+    "abbreviation": "GBA gba Geonosian Brood Alpha geo Geo geonosian brood alpha 蟲",
+    "skill": [
+      "エクスポーズ",
+      "回復",
+      "アシスト",
+      "ジオノージアン・ブルード",
+      "集団意識",
+      "阻止不可",
+      "カウンター",
+      "逃走",
+      "復活",
+      "報復"
+    ],
+    "url": "/characters/Geonosian-Brood-Alpha"
+  },
+  {
+    "name": "ナイトシスター・アコライト",
+    "character_base_id": "NIGHTSISTERACOLYTE",
+    "src": "/charui/tex.charui_nightsister_acolyte.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ナイトシスター"
+    ],
+    "abbreviation": "Nightsister Acolyte nightsister acolyte",
+    "skill": [
+      "ステルス",
+      "回復"
+    ],
+    "url": "/characters/Nightsister-Acolyte"
+  },
+  {
+    "name": "ストレンジャー",
+    "character_base_id": "STRANGER",
+    "src": "/charui/tex.charui_stranger.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "シス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "阻止不可",
+      "報復",
+      "報復効果"
+    ],
+    "url": "/characters/STRANGER"
+  },
+  {
+    "name": "スカウト・トルーパー",
+    "character_base_id": "SCOUTTROOPER_V3_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_trooperscout.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復",
+      "ステルス"
+    ],
+    "url": "/characters/SCOUTTROOPER_V3_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "SM-33",
+    "character_base_id": "SM33",
+    "src": "/charui/tex.charui_sm33.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ドロイド",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "よろめき",
+      "炎上",
+      "時間経過ダメージ",
+      "スタック可能",
+      "阻止不可",
+      "ヒート",
+      "恩恵"
+    ],
+    "url": "/characters/SM33"
+  },
+  {
+    "name": "ベイラン・スコール",
+    "character_base_id": "BAYLANSKOLL",
+    "src": "/charui/tex.charui_baylanskoll.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "スタック可能",
+      "雇われ兵"
+    ],
+    "url": "/characters/BAYLANSKOLL"
+  },
+  {
+    "name": "ダース・ベイン",
+    "character_base_id": "DARTHBANE",
+    "src": "/charui/tex.charui_darthbane.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "シス"
+    ],
+    "abbreviation": "Darth Bane darth bane",
+    "skill": [
+      "サイフォン",
+      "スタック可能",
+      "耐性発揮",
+      "耐性発揮不可",
+      "回復",
+      "回復無効",
+      "欺瞞",
+      "チャージ",
+      "連帯",
+      "攻撃力上昇",
+      "スピード上昇",
+      "防御突破力上昇",
+      "回避力上昇",
+      "復活",
+      "ボーナスターン",
+      "防御力上昇"
+    ],
+    "url": "/characters/Darth-Bane"
+  },
+  {
+    "name": "ジオノージアン兵士",
+    "character_base_id": "GEONOSIANSOLDIER",
+    "src": "/charui/tex.charui_geonosian_soldier.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ジオノージアン",
+      "分離主義者"
+    ],
+    "abbreviation": "Geonosian Soldier geonosian soldier 蟲",
+    "skill": [
+      "アシスト",
+      "集団意識"
+    ],
+    "url": "/characters/Geonosian-Soldier"
+  },
+  {
+    "name": "カル・ケスティス",
+    "character_base_id": "CALKESTIS",
+    "src": "/charui/tex.charui_calkestis.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Cal Kestis cal kestis CK ck",
+    "skill": [
+      "回復",
+      "回避力低下"
+    ],
+    "url": "/characters/Cal-Kestis"
+  },
+  {
+    "name": "ホス反乱軍兵士",
+    "character_base_id": "JKL_PILOT",
+    "src": "/charui/tex.charui_rebelhoth.png",
+    "property": [
+      "アタッカー",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/JKL_PILOT"
+  },
+  {
+    "name": "ダース・モール",
+    "character_base_id": "MAUL",
+    "src": "/charui/tex.charui_maul.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "シス"
+    ],
+    "abbreviation": "Darth Maul darth maul",
+    "skill": [],
+    "url": "/characters/Darth-Maul"
+  },
+  {
+    "name": "ジャワ",
+    "character_base_id": "JAWA",
+    "src": "/charui/tex.charui_jawa_jawa.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー"
+    ],
+    "abbreviation": "Jawa jawa",
+    "skill": [],
+    "url": "/characters/Jawa"
+  },
+  {
+    "name": "インペリアル・スーパー・コマンドー",
+    "character_base_id": "IMPERIALSUPERCOMMANDO_PROVING_GROUNDS",
+    "src": "/charui/tex.charui_imperial_super_commando.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "マンダロリアン"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "強化無効",
+      "カウンター"
+    ],
+    "url": "/characters/IMPERIALSUPERCOMMANDO_PROVING_GROUNDS"
+  },
+  {
+    "name": "ボスク",
+    "character_base_id": "BOSSK",
+    "src": "/charui/tex.charui_bossk.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "abbreviation": "Bossk bossk お喋りトカゲ",
+    "skill": [
+      "アシスト",
+      "回復",
+      "フレンジー"
+    ],
+    "url": "/characters/Bossk"
+  },
+  {
+    "name": "レジスタンス・パイロット",
+    "character_base_id": "RESISTANCEPILOT",
+    "src": "/charui/tex.charui_resistancepilot.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "レジスタンス"
+    ],
+    "abbreviation": "Resistance Pilot resistane pilot レジパイ",
+    "skill": [
+      "エクスポーズ",
+      "フォアサイト"
+    ],
+    "url": "/characters/Resistance^Pilot"
+  },
+  {
+    "name": "ジェダイ・ナイト・ルーク・スカイウォーカー",
+    "character_base_id": "JEDIKNIGHTLUKE",
+    "src": "/charui/tex.charui_luke_jediknight.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ジェダイ"
+    ],
+    "abbreviation": "JKL jkl Jedi Knight Luke Skywalker jedi knight kuke skywalker",
+    "skill": [
+      "カウンター",
+      "スタック可能",
+      "アシスト",
+      "ジェダイ・ナイト",
+      "ジェダイの意志",
+      "阻止不可",
+      "耐性発揮",
+      "無防備"
+    ],
+    "url": "/characters/Jedi-Knight-Luke-Skywalker/"
+  },
+  {
+    "name": "デス・トルーパー",
+    "character_base_id": "DEATHTROOPER_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_trooperdeath.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復"
+    ],
+    "url": "/characters/DEATHTROOPER_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "デス・トルーパー(ペリディア)",
+    "character_base_id": "DEATHTROOPERPERIDEA",
+    "src": "/charui/tex.charui_deathtrooperperidea.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "インペリアル・レムナント",
+      "ナイトシスター"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "解除不可",
+      "回復",
+      "衰退",
+      "攻撃力低下"
+    ],
+    "url": "/characters/DEATHTROOPERPERIDEA"
+  },
+  {
+    "name": "イウォーク・エルダー",
+    "character_base_id": "EWOKELDER_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_ewok_chief.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー",
+      "イウォーク"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/EWOKELDER_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "ヴィアーズ将軍",
+    "character_base_id": "VEERS",
+    "src": "/charui/tex.charui_veers.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "General Veers general veers",
+    "skill": [
+      "スピード上昇",
+      "アシスト"
+    ],
+    "url": "/characters/General-Veers"
+  },
+  {
+    "name": "デパ・ビラバ",
+    "character_base_id": "DEPABILLABA",
+    "src": "/charui/tex.charui_depabillaba.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復",
+      "回復無効",
+      "ガード",
+      "防御突破力上昇",
+      "カウンター"
+    ],
+    "url": "/characters/DEPABILLABA"
+  },
+  {
+    "name": "パオ",
+    "character_base_id": "PAO",
+    "src": "/charui/tex.charui_pao.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ローグ・ワン"
+    ],
+    "abbreviation": "Pao pao",
+    "skill": [],
+    "url": "/characters/Pao"
+  },
+  {
+    "name": "ダース・レヴァン",
+    "character_base_id": "DARTHREVAN",
+    "src": "/charui/tex.charui_sithrevan.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "シス",
+      "シス帝国",
+      "艦隊司令官"
+    ],
+    "abbreviation": "DR dr 黒レヴァン Darth Revan darth revan",
+    "skill": [
+      "強化無効",
+      "ショック",
+      "回避不可",
+      "耐性発揮",
+      "デスマーク",
+      "獰猛",
+      "フォアサイト",
+      "邪悪な戦闘瞑想"
+    ],
+    "url": "/characters/Darth-Revan"
+  },
+  {
+    "name": "クウィゴルド",
+    "character_base_id": "QUIGGOLD",
+    "src": "/charui/tex.charui_quiggold.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "防御力低下",
+      "抵抗力低下",
+      "恩恵",
+      "コピー不可",
+      "仕返し"
+    ],
+    "url": "/characters/QUIGGOLD"
+  },
+  {
+    "name": "ダスチャ",
+    "character_base_id": "DATHCHA",
+    "src": "/charui/tex.charui_jawa_dathcha.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー"
+    ],
+    "abbreviation": "Dathcha dathcha",
+    "skill": [
+      "ステルス"
+    ],
+    "url": "/characters/Dathcha"
+  },
+  {
+    "name": "ケノービ将軍",
+    "character_base_id": "GENERALKENOBI_GLE_INHERIT",
+    "src": "/charui/tex.charui_globiwan.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "艦隊司令官",
+      "銀河共和国",
+      "ジェダイ",
+      "反乱軍",
+      "第501軍団"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "フォアサイト",
+      "報復",
+      "報復効果",
+      "アシスト",
+      "攻撃力上昇",
+      "ジェダイ・ナイト",
+      "アドバンテージ",
+      "回復",
+      "ステルス",
+      "クリティカルヒット耐性"
+    ],
+    "url": "/characters/GENERALKENOBI_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "フェネック・シャンド",
+    "character_base_id": "FENNECSHAND",
+    "src": "/charui/tex.charui_fennec.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "abbreviation": "Fennec Shand fennec shand",
+    "skill": [
+      "攻撃力上昇",
+      "熟練兵",
+      "アーマー破壊",
+      "自信過剰",
+      "耐性発揮",
+      "耐性発揮不可",
+      "決意",
+      "賞金稼ぎの決意",
+      "スタック可能",
+      "抵抗力上昇",
+      "ベスカー・アーマー",
+      "阻止不可"
+    ],
+    "url": "/characters/Fennec-Shand"
+  },
+  {
+    "name": "ジェダイ・マスター・ケノービ",
+    "character_base_id": "JEDIMASTERKENOBI",
+    "src": "/charui/tex.charui_globiwan.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "JMK jmk Jedi Master Kenobi jedi master kenobi GL Hello There",
+    "skill": [
+      "チャージ",
+      "アシスト",
+      "耐性発揮",
+      "耐性発揮不可",
+      "無防備",
+      "回復",
+      "阻止不可",
+      "ダメージ耐性",
+      "抵抗力上昇",
+      "フォアサイト",
+      "スタック可能",
+      "ステルス",
+      "大ダメージ",
+      "カウンター",
+      "カウンター不可"
+    ],
+    "url": "/characters/Jedi-Master-Kenobi"
+  },
+  {
+    "name": "ジェダイ・ナイト・アナキン",
+    "character_base_id": "ANAKINKNIGHT",
+    "src": "/charui/tex.charui_anakinknight.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "JKA jka Jedi Knight Anakin jedi knight anakin",
+    "skill": [
+      "回復",
+      "強化無効",
+      "攻撃力上昇",
+      "ボーナスターン",
+      "アドバンテージ"
+    ],
+    "url": "/characters/Jedi-Knight-Anakin"
+  },
+  {
+    "name": "シア・ジュンダ",
+    "character_base_id": "CEREJUNDA",
+    "src": "/charui/tex.charui_cerejunda.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "ならず者",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Cere Junda cere junda",
+    "skill": [
+      "ボーナスプロテクション",
+      "回避不可",
+      "クールダウン状態から開始"
+    ],
+    "url": "/characters/Cere-Junda"
+  },
+  {
+    "name": "ボバ・フェット(ジャンゴの“息子”)",
+    "character_base_id": "BOBAFETTSCION",
+    "src": "/charui/tex.charui_bobafettold.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "abbreviation": "大名 Daimyo BFSoJ SOJ SoJ soj bfsoj Boba Fett, Scion of Jango boba fett scion jango  ﾌｪｯ!!",
+    "skill": [
+      "阻止不可",
+      "モメンタム",
+      "アーマー破壊",
+      "抵抗力上昇",
+      "時間経過ダメージ",
+      "抵抗力低下",
+      "破損",
+      "有効性低下",
+      "決意",
+      "賞金稼ぎの決意"
+    ],
+    "url": "/characters/Boba-Fett-Scion-of-Jango"
+  },
+  {
+    "name": "ベン・ソロ",
+    "character_base_id": "BENSOLO",
+    "src": "/charui/tex.charui_bensolo.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Ben Solo ben solo ",
+    "skill": [],
+    "url": "/characters/Ben-Solo"
+  },
+  {
+    "name": "ヤング・ハン・ソロ",
+    "character_base_id": "YOUNGHAN",
+    "src": "/charui/tex.charui_han_young.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ならず者"
+    ],
+    "abbreviation": "Yolo yolo Young Han Solo young han solo",
+    "skill": [
+      "準備万端",
+      "スピード低下",
+      "スタック可能",
+      "プロテクション上昇",
+      "報復",
+      "報復効果",
+      "回復"
+    ],
+    "url": "/characters/Young-Han-Solo"
+  },
+  {
+    "name": "ジェダイ・コンシュラー",
+    "character_base_id": "JEDIKNIGHTCONSULAR",
+    "src": "/charui/tex.charui_jedi_consular_03.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Jedi Consular jedi consular",
+    "skill": [
+      "回復"
+    ],
+    "url": "/characters/Jedi-Consular"
+  },
+  {
+    "name": "TIEファイター・パイロット",
+    "character_base_id": "TIEFIGHTERPILOT",
+    "src": "/charui/tex.charui_tiepilot.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "インペリアル・レムナント"
+    ],
+    "abbreviation": "タイファイターパイロット tie TIE Fighter Pilot",
+    "skill": [
+      "強化無効",
+      "フォアサイト"
+    ],
+    "url": "/characters/TIE-Fighter-Pilot"
+  },
+  {
+    "name": "B1バトル・ドロイド",
+    "character_base_id": "B1BATTLEDROIDV2",
+    "src": "/charui/tex.charui_b1.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ドロイド",
+      "分離主義者"
+    ],
+    "abbreviation": "b1 ",
+    "skill": [
+      "回復",
+      "ターゲットロック",
+      "ドロイド大隊",
+      "アシスト",
+      "時間経過ダメージ",
+      "復活"
+    ],
+    "url": "/characters/B1-Battle-Droid"
+  },
+  {
+    "name": "ジェダイ・マスター・ケノービ",
+    "character_base_id": "JEDIMASTERKENOBI_GLE_INHERIT_T6",
+    "src": "/charui/tex.charui_globiwan.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "強化無効",
+      "チャージ",
+      "回復",
+      "回復無効",
+      "耐性発揮",
+      "耐性発揮不可",
+      "無防備",
+      "ダメージ耐性",
+      "抵抗力上昇",
+      "解除不可",
+      "大ダメージ"
+    ],
+    "url": "/characters/JEDIMASTERKENOBI_GLE_INHERIT_T6",
+    "is_event_variant": true
+  },
+  {
+    "name": "第501軍団ARCトルーパー",
+    "character_base_id": "ARCTROOPER501ST_GLE_INHERIT",
+    "src": "/charui/tex.charui_trooperclone_arc.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "第501軍団",
+      "クローン・トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "指令",
+      "カウンター",
+      "復活"
+    ],
+    "url": "/characters/ARCTROOPER501ST_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "コルサント・アンダーワールド警察隊",
+    "character_base_id": "CORUSCANTUNDERWORLDPOLICE",
+    "src": "/charui/tex.charui_coruscantpolice.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "銀河共和国"
+    ],
+    "abbreviation": "CUP cup Coruscant Underworld Police",
+    "skill": [],
+    "url": "/characters/Coruscant-Underworld-Police"
+  },
+  {
+    "name": "ガモーリアン・ガード",
+    "character_base_id": "GAMORREANGUARD",
+    "src": "/charui/tex.charui_gamorreanguard.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "Gamorrean Guard gamorrean guard",
+    "skill": [
+      "時間経過ダメージ",
+      "ガード",
+      "報復",
+      "報復効果",
+      "エクスポーズ",
+      "回復",
+      "防御力上昇"
+    ],
+    "url": "/characters/Gamorrean-Guard"
+  },
+  {
+    "name": "ザルバー",
+    "character_base_id": "ZAALBAR",
+    "src": "/charui/tex.charui_zaalbar.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "旧共和国",
+      "ならず者",
+      "ウーキー"
+    ],
+    "abbreviation": "Zaalbar",
+    "skill": [
+      "回復",
+      "スタック可能",
+      "報復",
+      "報復効果"
+    ],
+    "url": "/characters/Zaalbar"
+  },
+  {
+    "name": "イウォーク・スカウト",
+    "character_base_id": "EWOKSCOUT",
+    "src": "/charui/tex.charui_ewok_scout.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "イウォーク"
+    ],
+    "abbreviation": "Ewok Scout ewok scout",
+    "skill": [],
+    "url": "/characters/Ewoke-Scout"
+  },
+  {
+    "name": "スマグラー・チューバッカ",
+    "character_base_id": "SMUGGLERCHEWBACCA",
+    "src": "/charui/tex.charui_tfa_chewbacca.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "レジスタンス",
+      "ならず者",
+      "ウーキー"
+    ],
+    "abbreviation": "Vets Veteran Smuggler Chewbacca Chew vets veteran smuggler chewbacca",
+    "skill": [
+      "スタック可能"
+    ],
+    "url": "/characters/Veteran-Smuggler-Chewbacca"
+  },
+  {
+    "name": "スノートルーパー・コマンダー",
+    "character_base_id": "REMNANTSNOWCOMMANDER",
+    "src": "/charui/tex.charui_remnantsnowcommander.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "無防備",
+      "回復",
+      "スタック可能"
+    ],
+    "url": "/characters/REMNANTSNOWCOMMANDER"
+  },
+  {
+    "name": "キャプテン・イサノ",
+    "character_base_id": "ITHANO",
+    "src": "/charui/tex.charui_ithano.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "攻撃力上昇",
+      "エクスポーズ",
+      "恩恵"
+    ],
+    "url": "/characters/ITHANO"
+  },
+  {
+    "name": "マグマトルーパー",
+    "character_base_id": "MAGMATROOPER_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_trooperstorm_magma.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "耐性発揮"
+    ],
+    "url": "/characters/MAGMATROOPER_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "ナイトシスター・ゾンビ",
+    "character_base_id": "NIGHTSISTERZOMBIE",
+    "src": "/charui/tex.charui_nightsisters_zombie.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ナイトシスター"
+    ],
+    "abbreviation": "Nightsister Zombie nightsister zombie",
+    "skill": [
+      "スタック可能",
+      "阻止不可",
+      "復活",
+      "回復",
+      "スピード減少"
+    ],
+    "url": "/characters/Nightsister-Zombie"
+  },
+  {
+    "name": "第501軍団熟練兵",
+    "character_base_id": "CT5555_GLE_INHERIT",
+    "src": "/charui/tex.charui_trooperclone_fives.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "第501軍団",
+      "クローン・トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "熟練兵",
+      "カウンター",
+      "回復"
+    ],
+    "url": "/characters/CT5555_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "オールド・ダカ",
+    "character_base_id": "DAKA",
+    "src": "/charui/tex.charui_daka.png",
+    "property": [
+      "ダークサイド",
+      "ヒーラー",
+      "リーダー",
+      "ナイトシスター"
+    ],
+    "abbreviation": "Old Daka old daka ",
+    "skill": [
+      "回復",
+      "復活"
+    ],
+    "url": "/characters/Old-Daka"
+  },
+  {
+    "name": "マンダロリアン(ベスカー・アーマー)",
+    "character_base_id": "THEMANDALORIANBESKARARMOR",
+    "src": "/charui/tex.charui_mandobeskar.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "マンダロリアン",
+      "ならず者"
+    ],
+    "abbreviation": "BAM bam The Mandalorian (Beskar Armor) the mandalorian beskar armor",
+    "skill": [
+      "時間経過ダメージ",
+      "アシスト",
+      "カウンター",
+      "カウンター不可",
+      "固定ダメージ",
+      "ステルス",
+      "ベスカー・アーマー",
+      "ホイッスリング・バード",
+      "回避不可",
+      "回復",
+      "クールダウン状態から開始",
+      "阻止不可",
+      "ダメージ耐性",
+      "ボーナスターン"
+    ],
+    "url": "/characters/The-Mandalorian-Beskar-Armor"
+  },
+  {
+    "name": "クローン・スカウト・トルーパー",
+    "character_base_id": "CLONETROOPERP2FORESTSCOUT",
+    "src": "/charui/tex.charui_clonetrooperp2forestscout.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "クローン・トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "エクスポーズ",
+      "スピード低下"
+    ],
+    "url": "/characters/CLONETROOPERP2FORESTSCOUT"
+  },
+  {
+    "name": "B2スーパー・バトル・ドロイド",
+    "character_base_id": "B2SUPERBATTLEDROID",
+    "src": "/charui/tex.charui_b2.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ドロイド",
+      "分離主義者"
+    ],
+    "abbreviation": "b2 ",
+    "skill": [
+      "クリティカルダメージ低下",
+      "ターゲットロック",
+      "強化無効"
+    ],
+    "url": "/characters/B2-Super-Battle-Droid"
+  },
+  {
+    "name": "モン・モスマ",
+    "character_base_id": "MONMOTHMA",
+    "src": "/charui/tex.charui_monmothma.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "MM mm Mon Mothma mon mothma",
+    "skill": [
+      "回復",
+      "復活",
+      "逃走"
+    ],
+    "url": "/characters/Mon-Mothma"
+  },
+  {
+    "name": "RC-1262 “スコーチ”",
+    "character_base_id": "SCORCH",
+    "src": "/charui/tex.charui_scorch.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "クローン・トルーパー",
+      "帝国軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "時間経過ダメージ",
+      "プロテクション上昇"
+    ],
+    "url": "/characters/SCORCH"
+  },
+  {
+    "name": "ストームトルーパー",
+    "character_base_id": "STORMTROOPER",
+    "src": "/charui/tex.charui_trooperstorm.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "Storm Trooper storm trooper",
+    "skill": [],
+    "url": "/characters/Storm-Trooper"
+  },
+  {
+    "name": "アクバー提督",
+    "character_base_id": "ADMIRALACKBAR",
+    "src": "/charui/tex.charui_ackbaradmiral.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "反乱軍",
+      "艦隊司令官"
+    ],
+    "abbreviation": "Admiral Ackbar admiral ackbar AA ギアル・アクバー It's a trap",
+    "skill": [
+      "回復",
+      "軍略の天才",
+      "アシスト"
+    ],
+    "url": "/characters/Admiral-Ackbar"
+  },
+  {
+    "name": "スカリフ同盟軍パスファインダー",
+    "character_base_id": "SCARIFREBEL",
+    "src": "/charui/tex.charui_rebel_scarif.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ローグ・ワン"
+    ],
+    "abbreviation": "Scarif Rebel Pathfinder scarif path finder",
+    "skill": [
+      "復活"
+    ],
+    "url": "/characters/Scarif-Rebel-Pathfinder"
+  },
+  {
+    "name": "ザム・ウェセル",
+    "character_base_id": "ZAMWESELL",
+    "src": "/charui/tex.charui_zamwesell.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "abbreviation": "Zam Wesell zam wesell",
+    "skill": [
+      "サーマル・デトネーター",
+      "回避不可",
+      "回復"
+    ],
+    "url": "/characters/Zam-Wesell"
+  },
+  {
+    "name": "C-3PO",
+    "character_base_id": "C3POLEGENDARY_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_c3p0.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ドロイド",
+      "銀河共和国",
+      "反乱軍",
+      "レジスタンス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "通訳",
+      "逃走",
+      "エクスポーズ",
+      "回避不可",
+      "攻撃力低下"
+    ],
+    "url": "/characters/C3POLEGENDARY_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "CT-7567 “レックス”",
+    "character_base_id": "CT7567",
+    "src": "/charui/tex.charui_trooperclone_rex.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "第501軍団",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "Rex rex",
+    "skill": [
+      "クールダウン状態から開始",
+      "クリティカルヒット耐性"
+    ],
+    "url": "/characters/CT-7567-Rex"
+  },
+  {
+    "name": "スカイウォーカー将軍",
+    "character_base_id": "GENERALSKYWALKER_GLE_INHERIT_T3",
+    "src": "/charui/tex.charui_anakin_fallen.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "第501軍団",
+      "シス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "怒り",
+      "アーマー破壊",
+      "耐性発揮",
+      "耐性発揮不可"
+    ],
+    "url": "/characters/GENERALSKYWALKER_GLE_INHERIT_T3",
+    "is_event_variant": true
+  },
+  {
+    "name": "マンダロリアン",
+    "character_base_id": "THEMANDALORIAN_MUDDY",
+    "src": "/charui/tex.charui_mandalorian.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者",
+      "マンダロリアン"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "決意",
+      "賞金稼ぎの決意",
+      "回避不可",
+      "クリティカルダメージ上昇",
+      "クリティカル率上昇",
+      "ダメージ上昇",
+      "復活"
+    ],
+    "url": "/characters/THEMANDALORIAN_MUDDY"
+  },
+  {
+    "name": "第501軍団隊長",
+    "character_base_id": "CT7567_GLE_INHERIT",
+    "src": "/charui/tex.charui_trooperclone_rex.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "第501軍団",
+      "クローン・トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/CT7567_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "R2-D2",
+    "character_base_id": "R2D2_LEGENDARY",
+    "src": "/charui/tex.charui_astromech_r2d2.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ドロイド",
+      "銀河共和国",
+      "反乱軍",
+      "レジスタンス"
+    ],
+    "abbreviation": "R2D2 r2d2 d2-d2",
+    "skill": [
+      "炎上",
+      "ステルス",
+      "フォアサイト"
+    ],
+    "url": "/characters/R2-D2"
+  },
+  {
+    "name": "ケノービ将軍",
+    "character_base_id": "GENERALKENOBI_GLE",
+    "src": "/charui/tex.charui_obiwangeneral.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "艦隊司令官",
+      "銀河共和国",
+      "ジェダイ",
+      "反乱軍",
+      "第501軍団"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "フォアサイト",
+      "報復",
+      "報復効果"
+    ],
+    "url": "/characters/GENERALKENOBI_GLE"
+  },
+  {
+    "name": "ジェダイ・ナイト・カル・ケスティス",
+    "character_base_id": "JEDIKNIGHTCAL",
+    "src": "/charui/tex.charui_jediknightcal.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ジェダイ"
+    ],
+    "abbreviation": "JKCK JKC jkck jkc Jedi Knight Cal Kestis jedi knight cal kestis",
+    "skill": [
+      "ガード",
+      "ジェダイ・ナイト",
+      "ボーナスターン",
+      "向こう見ず",
+      "アドバンテージ",
+      "スタンス - ダブルブレード",
+      "アシスト",
+      "カウンター",
+      "スタンス - デュアルブレード",
+      "スタンス - クロスガード",
+      "回復"
+    ],
+    "url": "/characters/Jedi-Knight-Cal-Kestis"
+  },
+  {
+    "name": "アソーカ・タノ(コマンダー)",
+    "character_base_id": "COMMANDERAHSOKA",
+    "src": "/charui/tex.charui_commanderahsokatano.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "銀河共和国",
+      "ならず者",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "CAT Commander Ahsoka Tano ahsoka tano ",
+    "skill": [
+      "アシスト",
+      "回避力上昇",
+      "シエン・フォーム",
+      "スタック可能",
+      "阻止不可",
+      "アーマー破壊",
+      "クールダウン状態から開始",
+      "クリティカルダメージ上昇",
+      "ダメージ上昇"
+    ],
+    "url": "/characters/Commander-Ahsoka-Tano"
+  },
+  {
+    "name": "パプルー",
+    "character_base_id": "PAPLOO",
+    "src": "/charui/tex.charui_ewok_paploo.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "イウォーク"
+    ],
+    "abbreviation": "Paploo paploo",
+    "skill": [
+      "アシスト",
+      "回復",
+      "ステルス"
+    ],
+    "url": "/characters/Paploo"
+  },
+  {
+    "name": "スターク大佐",
+    "character_base_id": "COLONELSTARCK",
+    "src": "/charui/tex.charui_colonel_stark.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "Col.  Colonel Starck colonel starck",
+    "skill": [
+      "回復"
+    ],
+    "url": "/characters/Colonel-Starck"
+  },
+  {
+    "name": "キャプテン・レックス",
+    "character_base_id": "CAPTAINREX",
+    "src": "/charui/tex.charui_captainrex.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "クローン・トルーパー",
+      "フェニックス",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "CRex crex Captain Rex captain rex ",
+    "skill": [],
+    "url": "/characters/Captain-Rex"
+  },
+  {
+    "name": "スカイウォーカー将軍",
+    "character_base_id": "GENERALSKYWALKER",
+    "src": "/charui/tex.charui_generalanakin.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "第501軍団",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "GAS gas General Anakin Skywalker general anakin skywalker スカぴょん",
+    "skill": [
+      "怒り",
+      "アーマー破壊",
+      "アドバンス",
+      "回復",
+      "カバー",
+      "阻止不可",
+      "復活",
+      "耐性発揮",
+      "耐性発揮不可"
+    ],
+    "url": "/characters/General-Skywalker"
+  },
+  {
+    "name": "IG-86歩哨ドロイド",
+    "character_base_id": "IG86SENTINELDROID",
+    "src": "/charui/tex.charui_ig86.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ドロイド"
+    ],
+    "abbreviation": "IG86 ig-86 ig86 Sentinel Droid sentinel droid",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/IG-86-Sntinel-Droid"
+  },
+  {
+    "name": "シンタ・カース",
+    "character_base_id": "CINTA",
+    "src": "/charui/tex.charui_cinta.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "耐性発揮",
+      "ステルス",
+      "回復",
+      "強靭な防御"
+    ],
+    "url": "/characters/CINTA"
+  },
+  {
+    "name": "レイア・オーガナ",
+    "character_base_id": "GLLEIA_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_leiaendor.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "反乱軍",
+      "イウォーク"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "炎上",
+      "回復",
+      "固定ダメージ",
+      "スタック可能",
+      "ダメージ耐性",
+      "復活",
+      "プロテクション上昇",
+      "ボーナスターン",
+      "アシスト",
+      "エクスポーズ",
+      "恐れ知らず",
+      "ステルス",
+      "阻止不可",
+      "チャージ",
+      "大ダメージ"
+    ],
+    "url": "/characters/GLLEIA_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "サビーヌ・レン",
+    "character_base_id": "SABINEWRENS3",
+    "src": "/charui/tex.charui_sabine_s3.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "マンダロリアン",
+      "フェニックス",
+      "反乱軍"
+    ],
+    "abbreviation": "Sabine Wren sabine wren",
+    "skill": [
+      "アーマー破壊",
+      "エクスポーズ",
+      "カウンター",
+      "よろめき"
+    ],
+    "url": "/characters/Sabine-Wren"
+  },
+  {
+    "name": "サヴァージ・オプレス",
+    "character_base_id": "SAVAGEOPRESS",
+    "src": "/charui/tex.charui_savageopress.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "シス"
+    ],
+    "abbreviation": "Savage Opress savage opress",
+    "skill": [
+      "攻撃力低下",
+      "回避不可",
+      "クリティカル率上昇",
+      "大ダメージ",
+      "攻撃力上昇",
+      "防御力上昇"
+    ],
+    "url": "/characters/Savage-Opress"
+  },
+  {
+    "name": "第212軍団クローン・トルーパー",
+    "character_base_id": "CLONETROOPER212_GLE",
+    "src": "/charui/tex.charui_clone212.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "第501軍団",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回避不可",
+      "熟練兵"
+    ],
+    "url": "/characters/CLONETROOPER212_GLE"
+  },
+  {
+    "name": "エンフィス・ネスト",
+    "character_base_id": "ENFYSNEST",
+    "src": "/charui/tex.charui_enfys.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ならず者"
+    ],
+    "abbreviation": "Enfys Nest enfys nest",
+    "skill": [
+      "回復",
+      "クリティカル耐性",
+      "時間経過回復",
+      "ステルス",
+      "ダメージ耐性",
+      "抵抗力上昇",
+      "フォアサイト",
+      "強化無効",
+      "カウンター",
+      "恩恵",
+      "クリティカル率上昇",
+      "スタック可能",
+      "ボーナスプロテクション"
+    ],
+    "url": "/characters/Enfys-Nest"
+  },
+  {
+    "name": "ダース・ベイダー",
+    "character_base_id": "VADER_JKL_EVENT",
+    "src": "/charui/tex.charui_vader.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "シス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "耐性発揮",
+      "カウンター",
+      "時間経過ダメージ"
+    ],
+    "url": "/characters/VADER_JKL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "レイ(スカベンジャー)",
+    "character_base_id": "REY",
+    "src": "/charui/tex.charui_reyjakku.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "レジスタンス",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Rey (Scavenger) rey scavenger",
+    "skill": [
+      "フォアサイト"
+    ],
+    "url": "/characters/Rey-Scavenger"
+  },
+  {
+    "name": "ランド・カルリジアン",
+    "character_base_id": "ADMINISTRATORLANDO_JKL_EVENT",
+    "src": "/charui/tex.charui_landobespin.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ならず者",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/ADMINISTRATORLANDO_JKL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ボ＝カターン・クライズ",
+    "character_base_id": "BOKATAN",
+    "src": "/charui/tex.charui_bokatan.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "マンダロリアン",
+      "ならず者"
+    ],
+    "abbreviation": "Bo-Katan Kryze bo-katan kryze bokatan",
+    "skill": [
+      "脆弱",
+      "回復",
+      "アシスト",
+      "抵抗力上昇",
+      "防御力上昇"
+    ],
+    "url": "/characters/Bo-Katan-Kryze"
+  },
+  {
+    "name": "カンデラス・オルド",
+    "character_base_id": "CANDEROUSORDO",
+    "src": "/charui/tex.charui_canderous.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "マンダロリアン",
+      "旧共和国",
+      "ならず者"
+    ],
+    "abbreviation": "Canderous Ordo canderous ordo",
+    "skill": [
+      "攻撃力低下",
+      "時間経過ダメージ",
+      "デスマーク",
+      "マーク状態"
+    ],
+    "url": "/characters/Canderous-Ordo"
+  },
+  {
+    "name": "クレニック長官",
+    "character_base_id": "DIRECTORKRENNIC",
+    "src": "/charui/tex.charui_krennic.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍"
+    ],
+    "abbreviation": "Director Krennic 高須院長  クレニック院長",
+    "skill": [
+      "アシスト",
+      "よろめき",
+      "強化無効",
+      "スピード低下",
+      "耐性発揮"
+    ],
+    "url": "/characters/Director-Krennic"
+  },
+  {
+    "name": "ポー・ダメロン",
+    "character_base_id": "POE",
+    "src": "/charui/tex.charui_poe.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "レジスタンス"
+    ],
+    "abbreviation": "Poe Dameron poe dameron",
+    "skill": [
+      "エクスポーズ"
+    ],
+    "url": "/characters/Poe-Dameron"
+  },
+  {
+    "name": "クルルサンタン",
+    "character_base_id": "KRRSANTAN",
+    "src": "/charui/tex.charui_krrsantan.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "賞金稼ぎ",
+      "ハット・カルテル",
+      "ならず者",
+      "ウーキー"
+    ],
+    "abbreviation": "Krrsantan krrsantan",
+    "skill": [
+      "回避力低下",
+      "ショック",
+      "回復",
+      "防御力上昇",
+      "クリティカルダメージ低下",
+      "攻撃力低下",
+      "時間経過ダメージ",
+      "耐性発揮",
+      "耐性発揮不可",
+      "武装解除"
+    ],
+    "url": "/characters/Krrsantan"
+  },
+  {
+    "name": "オメガ",
+    "character_base_id": "BADBATCHOMEGA",
+    "src": "/charui/tex.charui_badbatchomega.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "バッド・バッチ",
+      "クローン・トルーパー"
+    ],
+    "abbreviation": "Omega Bad Batch BB",
+    "skill": [
+      "回避力上昇",
+      "暗闇",
+      "エクスポーズ",
+      "ステルス",
+      "プロテクション上昇",
+      "防御突破力上昇",
+      "スタック可能",
+      "防御力上昇"
+    ],
+    "url": "/characters/Omega"
+  },
+  {
+    "name": "カイロ・レン最高指導者",
+    "character_base_id": "KYLORENUNMASKED_GLEVENT",
+    "src": "/charui/tex.charui_kyloren_tros.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "ファースト・オーダー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復",
+      "アドバンテージ",
+      "カウンター"
+    ],
+    "url": "/characters/KYLORENUNMASKED_GLEVENT"
+  },
+  {
+    "name": "第212軍団熟練兵",
+    "character_base_id": "CLONEVETERAN212_GLE",
+    "src": "/charui/tex.charui_clone212.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "第501軍団",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "熟練兵",
+      "カウンター",
+      "回復",
+      "復活",
+      "時間経過プロテクション"
+    ],
+    "url": "/characters/CLONEVETERAN212_GLE"
+  },
+  {
+    "name": "ダース・ベイダー",
+    "character_base_id": "FOTF_VADER",
+    "src": "/charui/tex.charui_vader.png",
+    "property": [
+      "ダークサイド",
+      "帝国軍",
+      "シス",
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "耐性発揮",
+      "カウンター",
+      "時間経過ダメージ"
+    ],
+    "url": "/characters/FOTF_VADER"
+  },
+  {
+    "name": "チアルート・イムウェ",
+    "character_base_id": "CHIRRUTIMWE",
+    "src": "/charui/tex.charui_chirrut.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ローグ・ワン"
+    ],
+    "abbreviation": "Chirrut Îmwe chirrut imwe",
+    "skill": [
+      "回復",
+      "時間経過回復",
+      "アシスト",
+      "カウンター"
+    ],
+    "url": "/characters/Chirrut-Imwe"
+  },
+  {
+    "name": "オメガ(逃亡者)",
+    "character_base_id": "OMEGAS3",
+    "src": "/charui/tex.charui_omegas3.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "バッド・バッチ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "人質",
+      "回復",
+      "ステルス",
+      "阻止不可",
+      "射撃訓練",
+      "ボーナスターン"
+    ],
+    "url": "/characters/OMEGAS3"
+  },
+  {
+    "name": "ジェダイ・マスター・ケノービ",
+    "character_base_id": "JEDIMASTERKENOBI_GLE_INHERIT",
+    "src": "/charui/tex.charui_globiwan.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "強化無効",
+      "回復",
+      "回復無効",
+      "耐性発揮",
+      "耐性発揮不可",
+      "無防備",
+      "ダメージ耐性",
+      "抵抗力上昇",
+      "解除不可",
+      "大ダメージ"
+    ],
+    "url": "/characters/JEDIMASTERKENOBI_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ハン・ソロ",
+    "character_base_id": "HANSOLO_GL_EVENT",
+    "src": "/charui/tex.charui_han_sickness.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ならず者",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "耐性発揮",
+      "耐性発揮不可",
+      "ボーナスターン"
+    ],
+    "url": "/characters/HANSOLO_GL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "尋問官バリス",
+    "character_base_id": "INQUISITORBARRISS",
+    "src": "/charui/tex.charui_inquisitorbarriss.png",
+    "property": [
+      "ダークサイド",
+      "ヒーラー",
+      "リーダー",
+      "帝国軍",
+      "尋問官",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "解除不可",
+      "サイフォン",
+      "スタック可能",
+      "回復",
+      "時間経過回復",
+      "粛清",
+      "復活"
+    ],
+    "url": "/characters/INQUISITORBARRISS"
+  },
+  {
+    "name": "シス・マローダー",
+    "character_base_id": "SITHMARAUDER",
+    "src": "/charui/tex.charui_sithmarauder.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "シス",
+      "シス帝国"
+    ],
+    "abbreviation": "Sith Marauder sith marauder",
+    "skill": [
+      "耐性発揮",
+      "耐性発揮不可"
+    ],
+    "url": "/characters/Sith-Marauder"
+  },
+  {
+    "name": "レッカー(傭兵)",
+    "character_base_id": "WRECKERS3",
+    "src": "/charui/tex.charui_wreckers3.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "バッド・バッチ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "雇われ兵"
+    ],
+    "url": "/characters/WRECKERS3"
+  },
+  {
+    "name": "バリス・オフィー",
+    "character_base_id": "BARRISSOFFEE",
+    "src": "/charui/tex.charui_barriss_light.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Barriss Offee barriss offee",
+    "skill": [
+      "回復",
+      "回復無効"
+    ],
+    "url": "/characters/Barriss-Offee"
+  },
+  {
+    "name": "ゾリ・ブリス",
+    "character_base_id": "ZORIIBLISS_V2",
+    "src": "/charui/tex.charui_zoriibliss.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "レジスタンス",
+      "ならず者"
+    ],
+    "abbreviation": "Zorri Bliss zorri bliss",
+    "skill": [
+      "ステルス"
+    ],
+    "url": "/characters/Zorri-Bliss"
+  },
+  {
+    "name": "アサージ・ヴェントレス",
+    "character_base_id": "ASAJVENTRESS",
+    "src": "/charui/tex.charui_ventress.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ナイトシスター",
+      "分離主義者",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Asajj Ventress asajj ventress AV ",
+    "skill": [
+      "回復",
+      "スタック可能"
+    ],
+    "url": "/characters/Asajj-Ventress"
+  },
+  {
+    "name": "ヤング・ランド・カルリジアン",
+    "character_base_id": "YOUNGLANDO",
+    "src": "/charui/tex.charui_younglando.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ならず者"
+    ],
+    "abbreviation": "Young Lando Calrissian young lando calrissian",
+    "skill": [
+      "カウンター",
+      "準備万端"
+    ],
+    "url": "/characters/Young-Lando-Calrissian"
+  },
+  {
+    "name": "ルーク・スカイウォーカー中佐",
+    "character_base_id": "COMMANDERLUKESKYWALKER",
+    "src": "/charui/tex.charui_lukebespin.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "CLS cls Commander Luke Skywalker commander luke skywalker",
+    "skill": [
+      "抵抗力低下",
+      "回復",
+      "行動喚起",
+      "阻止不可",
+      "カウンター",
+      "耐性発揮"
+    ],
+    "url": "/characters/Commander-Luke-Skywalker"
+  },
+  {
+    "name": "モール",
+    "character_base_id": "MAULS7",
+    "src": "/charui/tex.charui_maul_cyborg.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "マンダロリアン",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Maul maul",
+    "skill": [
+      "苦悩",
+      "スタック可能",
+      "攻撃力低下",
+      "カウンター",
+      "強化無効",
+      "固定ダメージ",
+      "ボーナスターン",
+      "フレンジー",
+      "報復",
+      "報復効果",
+      "アシスト",
+      "阻止不可",
+      "マンダロア"
+    ],
+    "url": "/characters/Maul"
+  },
+  {
+    "name": "C-3PO",
+    "character_base_id": "C3POLEGENDARY_JKL_EVENT",
+    "src": "/charui/tex.charui_c3p0.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ドロイド",
+      "銀河共和国",
+      "反乱軍",
+      "レジスタンス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト",
+      "カウンター",
+      "コピー不可",
+      "混乱状態",
+      "スタック可能",
+      "耐性発揮",
+      "耐性発揮不可",
+      "ボーナスターン",
+      "ボーナスターンメーター不可",
+      "防御力低下",
+      "ステルス",
+      "通訳",
+      "有効性上昇",
+      "逃走",
+      "エクスポーズ",
+      "回避不可",
+      "攻撃力低下"
+    ],
+    "url": "/characters/C3POLEGENDARY_JKL_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ガー・サクソン",
+    "character_base_id": "GARSAXON",
+    "src": "/charui/tex.charui_gar_saxon.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "帝国軍",
+      "マンダロリアン"
+    ],
+    "abbreviation": "Gar Saxon gar saxon",
+    "skill": [
+      "アシスト",
+      "カウンター"
+    ],
+    "url": "/characters/Gar-Saxon"
+  },
+  {
+    "name": "L3-37",
+    "character_base_id": "L3_37",
+    "src": "/charui/tex.charui_l337.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "ドロイド",
+      "ならず者"
+    ],
+    "abbreviation": "L337 l3-37 l337",
+    "skill": [
+      "準備万端",
+      "スタック可能",
+      "回復",
+      "カウンター"
+    ],
+    "url": "/characters/L3-37"
+  },
+  {
+    "name": "グンガン・ブーマディア",
+    "character_base_id": "BOOMADIER",
+    "src": "/charui/tex.charui_gunganboomadier.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "グンガン"
+    ],
+    "abbreviation": "Gungan Boomadier",
+    "skill": [
+      "スピード上昇",
+      "シールド発生装置",
+      "チャージ",
+      "リチャージ"
+    ],
+    "url": "/characters/Gungan-Boomadier"
+  },
+  {
+    "name": "グランドモフ・ターキン",
+    "character_base_id": "GRANDMOFFTARKIN",
+    "src": "/charui/tex.charui_tarkinadmiral.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍",
+      "艦隊司令官"
+    ],
+    "abbreviation": "Grand Moff Tarkin ターキン総督 grand moff tarkin GMT gmt",
+    "skill": [
+      "耐性発揮",
+      "耐性発揮不可",
+      "防御力低下"
+    ],
+    "url": "/characters/Grand-Moff-Tarkin"
+  },
+  {
+    "name": "シス・トルーパー",
+    "character_base_id": "FOSITHTROOPER",
+    "src": "/charui/tex.charui_firstorder_sithtrooper.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ファースト・オーダー",
+      "シス"
+    ],
+    "abbreviation": "SiT SithT Sith Trooper sith trooper シストル",
+    "skill": [
+      "クリティカルヒット耐性",
+      "アシスト",
+      "アドバンテージ"
+    ],
+    "url": "/characters/Sith-Trooper"
+  },
+  {
+    "name": "シャアク・ティー",
+    "character_base_id": "SHAAKTI",
+    "src": "/charui/tex.charui_shaakti.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "釈 Shaak Ti shaak ti",
+    "skill": [
+      "攻撃力上昇",
+      "アシスト",
+      "クリティカルヒット耐性",
+      "クリティカル率上昇",
+      "ステルス",
+      "スピード上昇",
+      "抵抗力上昇",
+      "回復"
+    ],
+    "url": "/characters/Shaak-Ti"
+  },
+  {
+    "name": "カーラ・デューン",
+    "character_base_id": "CARADUNE",
+    "src": "/charui/tex.charui_caradune.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ならず者"
+    ],
+    "abbreviation": "Cara Dune cara dune",
+    "skill": [
+      "ステルス",
+      "クリティカルヒット耐性"
+    ],
+    "url": "/characters/Cara-Dune"
+  },
+  {
+    "name": "フィフス・ブラザー",
+    "character_base_id": "FIFTHBROTHER",
+    "src": "/charui/tex.charui_fifthbrother.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍",
+      "尋問官",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Fifth Brother 5b 5B fifth brother",
+    "skill": [
+      "攻撃力低下",
+      "よろめき",
+      "回復",
+      "カウンター"
+    ],
+    "url": "/characters/Fifth-Brother"
+  },
+  {
+    "name": "クローン・トルーパー(変装)",
+    "character_base_id": "DISGUISEDCLONETROOPER",
+    "src": "/charui/tex.charui_disguisedclonetrooper.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "クローン・トルーパー",
+      "帝国軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "時間経過ダメージ",
+      "スタック可能",
+      "回復",
+      "ステルス"
+    ],
+    "url": "/characters/DISGUISEDCLONETROOPER"
+  },
+  {
+    "name": "ハン・ソロ",
+    "character_base_id": "HANSOLO",
+    "src": "/charui/tex.charui_han.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "ならず者"
+    ],
+    "abbreviation": "Han Solo han solo",
+    "skill": [
+      "耐性発揮",
+      "耐性発揮不可",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Han-Solo"
+  },
+  {
+    "name": "グリーフ・カルガ",
+    "character_base_id": "GREEFKARGA",
+    "src": "/charui/tex.charui_greefkarga.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "abbreviation": "Greef Karga greef karga",
+    "skill": [
+      "アシスト",
+      "回避不可",
+      "回復",
+      "報復",
+      "報復効果",
+      "カウンター",
+      "スタック可能",
+      "ステルス"
+    ],
+    "url": "/characters/Greef-Karga"
+  },
+  {
+    "name": "KXセキュリティ・ドロイド",
+    "character_base_id": "KXSECURITYDROID",
+    "src": "/charui/tex.charui_kxsecuritydroid.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ドロイド",
+      "帝国軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "オーバーチャージ",
+      "チャージ"
+    ],
+    "url": "/characters/KXSECURITYDROID"
+  },
+  {
+    "name": "ルーセン・レイエル",
+    "character_base_id": "LUTHENRAEL",
+    "src": "/charui/tex.charui_luthenrael.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "Luthen Rael",
+    "skill": [
+      "回復",
+      "回復無効",
+      "スタック可能",
+      "スピード上昇",
+      "解除不可",
+      "ステルス",
+      "耐性発揮",
+      "耐性発揮不可",
+      "防御力低下",
+      "報復",
+      "報復効果",
+      "マーク状態"
+    ],
+    "url": "/characters/Luthen-Rael"
+  },
+  {
+    "name": "タスケン・シャーマン",
+    "character_base_id": "TUSKENSHAMAN",
+    "src": "/charui/tex.charui_tuskenshaman.png",
+    "property": [
+      "ダークサイド",
+      "ヒーラー",
+      "タスケン"
+    ],
+    "abbreviation": "Tusken Shaman tusken shaman",
+    "skill": [
+      "時間経過ダメージ",
+      "回復"
+    ],
+    "url": "/characters/Tusken-Shaman"
+  },
+  {
+    "name": "カイロ・レン",
+    "character_base_id": "KYLOREN",
+    "src": "/charui/tex.charui_kyloren.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ファースト・オーダー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Kylo Ren kylo ren",
+    "skill": [
+      "回復",
+      "回復無効",
+      "時間経過ダメージ",
+      "アドバンテージ",
+      "ボーナスダメージ",
+      "報復",
+      "報復効果",
+      "スタック可能"
+    ],
+    "url": "/characters/Kylo-Ren"
+  },
+  {
+    "name": "グリード",
+    "character_base_id": "GREEDO",
+    "src": "/charui/tex.charui_greedo.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "Greedo greedo",
+    "skill": [
+      "サーマル・デトネーター",
+      "耐性発揮",
+      "耐性発揮不可"
+    ],
+    "url": "/characters/Greedo"
+  },
+  {
+    "name": "ジェダイ・ナイトレヴァン",
+    "character_base_id": "JEDIKNIGHTREVAN",
+    "src": "/charui/tex.charui_jedirevan.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ジェダイ",
+      "旧共和国"
+    ],
+    "abbreviation": "JKR jkr Jedi Knight Revan jedi knight revan 白レヴァン ",
+    "skill": [
+      "クリティカルダメージ上昇",
+      "ダメージ上昇",
+      "フォアサイト",
+      "解除不可",
+      "耐性発揮",
+      "マーク状態",
+      "アシスト",
+      "アドバンテージ",
+      "カウンター",
+      "戦略的アドバンテージ",
+      "ボーナスターン",
+      "回復",
+      "ジェダイ・ナイト"
+    ],
+    "url": "/characters/Jedi-Knight-Revan"
+  },
+  {
+    "name": "タスケン族長",
+    "character_base_id": "TUSKENCHIEFTAIN",
+    "src": "/charui/tex.charui_tuskenchieftain.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "タスケン"
+    ],
+    "abbreviation": "Tusken Chief tusken chief",
+    "skill": [
+      "アシスト",
+      "プロテクション上昇",
+      "ボーナスターン",
+      "モメンタム",
+      "回復",
+      "時間経過ダメージ"
+    ],
+    "url": "/characters/Tusken-Chief"
+  },
+  {
+    "name": "エズラ・ブリッジャー",
+    "character_base_id": "EZRABRIDGERS3",
+    "src": "/charui/tex.charui_ezra_s3.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ジェダイ",
+      "フェニックス",
+      "反乱軍"
+    ],
+    "abbreviation": "Ezra Bridger ezra bridger",
+    "skill": [
+      "アシスト",
+      "プロテクション上昇",
+      "スタック可能"
+    ],
+    "url": "/characters/Ezra-Bridger"
+  },
+  {
+    "name": "ストームトルーパー",
+    "character_base_id": "STORMTROOPER_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_trooperstorm.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/STORMTROOPER_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "C-3PO&チューイ",
+    "character_base_id": "C3POCHEWBACCA",
+    "src": "/charui/tex.charui_chewbacca_c3po.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "ドロイド",
+      "反乱軍",
+      "ウーキー"
+    ],
+    "abbreviation": "3Bacca 3bacca Chewpio 3バカ ３バカ 3バッカ チューピオ",
+    "skill": [
+      "回復",
+      "暗闇",
+      "スタック可能"
+    ],
+    "url": "/characters/Threepio-Chewie"
+  },
+  {
+    "name": "レンジ・トルーパー",
+    "character_base_id": "RANGETROOPER",
+    "src": "/charui/tex.charui_trooperranger.png",
+    "property": [
+      "サポート",
+      "ダークサイド",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "Renge Trooper renge trooper",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/Renge-Trooper"
+  },
+  {
+    "name": "レンジ・トルーパー",
+    "character_base_id": "RANGETROOPER_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_trooperranger.png",
+    "property": [
+      "サポート",
+      "ダークサイド",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/RANGETROOPER_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "ジェダイ・ナイト・ルーク・スカイウォーカー",
+    "character_base_id": "JEDIKNIGHTLUKE_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_luke_jediknight.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ジェダイ",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ジェダイ・ナイト",
+      "スタック可能"
+    ],
+    "url": "/characters/JEDIKNIGHTLUKE_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "カルテル・ブルーザー",
+    "character_base_id": "CARTELBRUISER_GLE_INHERIT",
+    "src": "/charui/tex.charui_jabbasenforcer.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/CARTELBRUISER_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ウェッジ・アンティリーズ",
+    "character_base_id": "WEDGEANTILLES",
+    "src": "/charui/tex.charui_rebelpilot_wedge.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍",
+      "反乱軍ファイター"
+    ],
+    "abbreviation": "Wedge Antilles wedge antilles",
+    "skill": [
+      "防御力低下",
+      "回復"
+    ],
+    "url": "/characters/Wedge-Antilles"
+  },
+  {
+    "name": "ルーク(ストームトルーパー)",
+    "character_base_id": "STORMTROOPERLUKE",
+    "src": "/charui/tex.charui_stormtrooperluke.png",
+    "property": [
+      "サポート",
+      "リーダー",
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ボーナスターン",
+      "アシスト",
+      "ステルス"
+    ],
+    "url": "/characters/STORMTROOPERLUKE"
+  },
+  {
+    "name": "レイア・オーガナ",
+    "character_base_id": "GLLEIA_GLE_INHERIT_STANDARD",
+    "src": "/charui/tex.charui_leiaendor.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "報復",
+      "報復効果",
+      "阻止不可",
+      "耐性発揮",
+      "不意打ち",
+      "プロテクション上昇",
+      "ボーナスプロテクション",
+      "待ち伏せ",
+      "クリティカルダメージ低下",
+      "クリティカル率低下",
+      "固定ダメージ",
+      "耐性発揮不可",
+      "抵抗力低下",
+      "防御力低下",
+      "無防備",
+      "有効性低下",
+      "炎上",
+      "回復",
+      "スタック可能",
+      "ダメージ耐性",
+      "復活",
+      "ボーナスターン",
+      "アシスト",
+      "エクスポーズ",
+      "恐れ知らず",
+      "ステルス",
+      "チャージ",
+      "大ダメージ",
+      "カウンター",
+      "行動喚起",
+      "抵抗力上昇",
+      "破砕"
+    ],
+    "url": "/characters/GLLEIA_GLE_INHERIT_STANDARD",
+    "is_event_variant": true
+  },
+  {
+    "name": "タロン・マリコス",
+    "character_base_id": "TARONMALICOS",
+    "src": "/charui/tex.charui_taronmalicos.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "Tron Malicos tron malicos",
+    "skill": [
+      "カウンター",
+      "狂気の刃",
+      "阻止不可",
+      "溢れる狂気",
+      "スタック可能",
+      "耐性発揮",
+      "耐性発揮不可",
+      "ボーナスターン",
+      "復活"
+    ],
+    "url": "/characters/Tron-Malicos"
+  },
+  {
+    "name": "オビ＝ワン(パダワン)",
+    "character_base_id": "PADAWANOBIWAN",
+    "src": "/charui/tex.charui_padawanobiwan.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Padawan Obi-Wan Kenobi ケノービ Kenobi obi wan",
+    "skill": [
+      "回復",
+      "攻撃力上昇",
+      "時間経過回復",
+      "スタック可能",
+      "フォアサイト",
+      "防御突破力上昇",
+      "有効性低下",
+      "クリティカル率上昇",
+      "防御力低下",
+      "アシスト",
+      "カウンター",
+      "規律",
+      "時間経過プロテクション",
+      "耐性発揮",
+      "耐性発揮不可",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Padawan-Obi-Wan"
+  },
+  {
+    "name": "テック",
+    "character_base_id": "BADBATCHTECH",
+    "src": "/charui/tex.charui_bb_tech.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "バッド・バッチ",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "Tech tech Bad Batch BB bad batch bb",
+    "skill": [
+      "ターゲットロック",
+      "回復",
+      "ステルス",
+      "通訳",
+      "有効性上昇",
+      "抵抗力上昇"
+    ],
+    "url": "/characters/Tech"
+  },
+  {
+    "name": "モブ・エンフォーサー",
+    "character_base_id": "HUMANTHUG_GLE_INHERIT",
+    "src": "/charui/tex.charui_thug_female_01.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "サーマル・デトネーター"
+    ],
+    "url": "/characters/HUMANTHUG_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "アミリン・ホルド",
+    "character_base_id": "AMILYNHOLDO_RADDUS",
+    "src": "/charui/tex.charui_holdo.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "レジスタンス"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "フォアサイト",
+      "回復"
+    ],
+    "url": "/characters/AMILYNHOLDO_RADDUS"
+  },
+  {
+    "name": "ビスタン",
+    "character_base_id": "BISTAN",
+    "src": "/charui/tex.charui_bistan.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ローグ・ワン"
+    ],
+    "abbreviation": "Bistan bistan",
+    "skill": [
+      "時間経過ダメージ",
+      "フレンジー"
+    ],
+    "url": "/characters/Bistan"
+  },
+  {
+    "name": "IG-11",
+    "character_base_id": "IG11",
+    "src": "/charui/tex.charui_ig11_nurse.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー",
+      "ドロイド",
+      "ならず者"
+    ],
+    "abbreviation": "IG11 ig11",
+    "skill": [
+      "回復",
+      "アシスト"
+    ],
+    "url": "/characters/IG-11"
+  },
+  {
+    "name": "IG-12 & グローグー",
+    "character_base_id": "IG12",
+    "src": "/charui/tex.charui_ig12.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー",
+      "マンダロリアン"
+    ],
+    "abbreviation": "IG12 ig-12 Grogu grogu",
+    "skill": [
+      "アシスト",
+      "回復",
+      "回復無効",
+      "耐性発揮",
+      "耐性発揮不可",
+      "回避不可",
+      "暗闇",
+      "逃走",
+      "ベスカー・アーマー"
+    ],
+    "url": "/characters/IG-12-Grogu"
+  },
+  {
+    "name": "ファースト・オーダー・エクセキューショナー",
+    "character_base_id": "FIRSTORDEREXECUTIONER",
+    "src": "/charui/tex.charui_firstorder_executioner.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ファースト・オーダー"
+    ],
+    "abbreviation": "First Order Executioner first order executioner FOE foe FOX fox",
+    "skill": [
+      "スタック可能"
+    ],
+    "url": "/characters/First-Order-Executioner"
+  },
+  {
+    "name": "マンダロリアン",
+    "character_base_id": "THEMANDALORIAN",
+    "src": "/charui/tex.charui_mandalorian.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "マンダロリアン",
+      "ならず者"
+    ],
+    "abbreviation": "The Mandalorian the mandalorian Mando mando This is the way",
+    "skill": [
+      "アシスト",
+      "決意",
+      "賞金稼ぎの決意",
+      "回避不可",
+      "クリティカルダメージ上昇",
+      "クリティカル率上昇",
+      "ダメージ上昇",
+      "復活"
+    ],
+    "url": "/characters/The-Mandalorian"
+  },
+  {
+    "name": "ガモーリアン・ガード",
+    "character_base_id": "GAMORREANGUARD_GLE_INHERIT",
+    "src": "/charui/tex.charui_gamorreanguard.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "ハット・カルテル",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "時間経過ダメージ",
+      "ガード",
+      "報復",
+      "報復効果",
+      "エクスポーズ"
+    ],
+    "url": "/characters/GAMORREANGUARD_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "ダッシュ・レンダー",
+    "character_base_id": "DASHRENDAR",
+    "src": "/charui/tex.charui_dashrendar.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "ならず者"
+    ],
+    "abbreviation": "Dash Rendar dash rander",
+    "skill": [
+      "準備万端"
+    ],
+    "url": "/characters/Dash-Rendar"
+  },
+  {
+    "name": "ダース・タロン",
+    "character_base_id": "DARTHTALON",
+    "src": "/charui/tex.charui_darthtalon.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "シス"
+    ],
+    "abbreviation": "Darth Talon darth talon",
+    "skill": [
+      "ステルス",
+      "クールダウン状態から開始",
+      "回復"
+    ],
+    "url": "/characters/Darth-Talon"
+  },
+  {
+    "name": "ナイト・トルーパー",
+    "character_base_id": "NIGHTTROOPER",
+    "src": "/charui/tex.charui_nighttrooper_a.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "インペリアル・レムナント",
+      "ナイトシスター"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回避不可",
+      "回復",
+      "固定ダメージ",
+      "衰退",
+      "耐性発揮",
+      "耐性発揮不可",
+      "アシスト"
+    ],
+    "url": "/characters/NIGHTTROOPER"
+  },
+  {
+    "name": "レイア・オーガナ(反乱軍オフィサー)",
+    "character_base_id": "HOTHLEIA",
+    "src": "/charui/tex.charui_leiahoth.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "ROLO rolo ホスレイア Rebel Officer Leia Organa",
+    "skill": [
+      "強化無効",
+      "カウンター",
+      "カウンター不可",
+      "フォアサイト",
+      "耐性発揮"
+    ],
+    "url": "/characters/Rebel-Officer-Leia-Organa"
+  },
+  {
+    "name": "ジャンゴ・フェット",
+    "character_base_id": "JANGOFETT",
+    "src": "/charui/tex.charui_jangofett.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "マンダロリアン",
+      "ならず者",
+      "分離主義者"
+    ],
+    "abbreviation": "Jango Fett jango fett ﾌｪｯ!!",
+    "skill": [
+      "回復",
+      "回復無効",
+      "炎上",
+      "ボーナスターン",
+      "決意",
+      "賞金稼ぎの決意",
+      "復活"
+    ],
+    "url": "/characters/Jango-Fett"
+  },
+  {
+    "name": "グリーヴァス将軍",
+    "character_base_id": "GRIEVOUS",
+    "src": "/charui/tex.charui_grievous.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "ドロイド",
+      "分離主義者",
+      "艦隊司令官"
+    ],
+    "abbreviation": "GG General Grievous general grievous gg ゴキブリーヴァス将軍 容赦なき前進",
+    "skill": [
+      "回復",
+      "回復無効",
+      "カウンター",
+      "ターゲットロック",
+      "耐性発揮",
+      "耐性発揮不可",
+      "マーク状態",
+      "スタック可能"
+    ],
+    "url": "/characters/General-Grievous"
+  },
+  {
+    "name": "ジャワ・エンジニア",
+    "character_base_id": "JAWAENGINEER",
+    "src": "/charui/tex.charui_jawa_engineer.png",
+    "property": [
+      "ライトサイド",
+      "ヒーラー"
+    ],
+    "abbreviation": "Jawa Engineer jawa engineer",
+    "skill": [
+      "回復",
+      "復活"
+    ],
+    "url": "/characters/Jawa-Engineer"
+  },
+  {
+    "name": "タスケン・レイダー",
+    "character_base_id": "TUSKENRAIDER",
+    "src": "/charui/tex.charui_tuskenraider.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "タスケン"
+    ],
+    "abbreviation": "Tusken Raider tusken raider",
+    "skill": [
+      "アシスト"
+    ],
+    "url": "/characters/Tusken-Raider"
+  },
+  {
+    "name": "クロスヘア(傷跡)",
+    "character_base_id": "CROSSHAIRS3",
+    "src": "/charui/tex.charui_crosshair_scarred.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "バッド・バッチ"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "エクスポーズ",
+      "耐性発揮",
+      "耐性発揮不可",
+      "アシスト",
+      "射撃訓練"
+    ],
+    "url": "/characters/CROSSHAIRS3"
+  },
+  {
+    "name": "シス帝国トルーパー",
+    "character_base_id": "SITHTROOPER",
+    "src": "/charui/tex.charui_sithtrooper.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "シス",
+      "シス帝国"
+    ],
+    "abbreviation": "Sith Empire Troper sith empire trooper SE SET",
+    "skill": [
+      "防御力上昇",
+      "報復",
+      "報復効果"
+    ],
+    "url": "/characters/Sith-Empire-Troper"
+  },
+  {
+    "name": "アソーカ・タノ(フルクラム)",
+    "character_base_id": "FULCRUMAHSOKA",
+    "src": "/charui/tex.charui_ahsokaadult.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "反乱軍",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "ATF Ahsoka Tano Fulcrum ahsoka tano fulcrum atf",
+    "skill": [
+      "フォアサイト",
+      "回復",
+      "時間経過ダメージ"
+    ],
+    "url": "/characters/Ahsoka-Tano-Fulcrum"
+  },
+  {
+    "name": "チョッパー",
+    "character_base_id": "CHOPPERS3",
+    "src": "/charui/tex.charui_chopper.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ドロイド",
+      "フェニックス",
+      "反乱軍"
+    ],
+    "abbreviation": "Chopper chopper",
+    "skill": [
+      "攻撃力上昇",
+      "スピード上昇",
+      "防御力上昇",
+      "回避不可",
+      "回復",
+      "プロテクション上昇"
+    ],
+    "url": "/characters/Chopper"
+  },
+  {
+    "name": "グランドマスター・ヨーダ",
+    "character_base_id": "GRANDMASTERYODA",
+    "src": "/charui/tex.charui_yodagrandmaster.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ",
+      "反乱軍"
+    ],
+    "abbreviation": "GMY gmy Grand Master Yoda grand master yoda",
+    "skill": [
+      "フォアサイト",
+      "コピー不可",
+      "耐性発揮",
+      "ステルス",
+      "抵抗力上昇",
+      "プロテクション上昇"
+    ],
+    "url": "/characters/Grand-Master-Yoda"
+  },
+  {
+    "name": "ダース・トレイヤ",
+    "character_base_id": "DARTHTRAYA",
+    "src": "/charui/tex.charui_traya.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "シス"
+    ],
+    "abbreviation": "Darth Traya darth traya トラヤ",
+    "skill": [
+      "回復",
+      "回復無効",
+      "耐性発揮",
+      "スタック可能",
+      "ボーナスプロテクション"
+    ],
+    "url": "/characters/Darth-Traya"
+  },
+  {
+    "name": "カイロ・レン最高指導者",
+    "character_base_id": "SUPREMELEADERKYLOREN",
+    "src": "/charui/tex.charui_kyloren_tros.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "ファースト・オーダー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "SLKR slkr GL Galactic Legends galactic legends Supreme Leader Kylo Ren supreme leader kylo ren",
+    "skill": [
+      "強化無効",
+      "サイフォン",
+      "アドバンテージ",
+      "スタック可能",
+      "耐性発揮",
+      "耐性発揮不可",
+      "ボーナスターン",
+      "大ダメージ",
+      "回避不可",
+      "チャージ"
+    ],
+    "url": "/characters/Supreme-Leader-kylo-Ren"
+  },
+  {
+    "name": "マラ・ジェイド(皇帝の手)",
+    "character_base_id": "MARAJADE",
+    "src": "/charui/tex.charui_marajade.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "帝国軍",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "MJ mj Mara Jade, The Empeor's Hand mara jade the emprors hand",
+    "skill": [
+      "抵抗力低下",
+      "無防備",
+      "攻撃力低下",
+      "よろめき",
+      "解除不可",
+      "有用なコマ",
+      "ロイヤルハンド"
+    ],
+    "url": "/characters/Mara-Jade-The-Empeors-Hand"
+  },
+  {
+    "name": "カース・オナシ",
+    "character_base_id": "CARTHONASI",
+    "src": "/charui/tex.charui_carth.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "旧共和国"
+    ],
+    "abbreviation": "Carth Onasi carth onasi",
+    "skill": [
+      "時間経過ダメージ",
+      "アシスト",
+      "スタック可能"
+    ],
+    "url": "/characters/Carth-Onasi"
+  },
+  {
+    "name": "カイロ・レン(マスクなし)",
+    "character_base_id": "KYLORENUNMASKED",
+    "src": "/charui/tex.charui_kylo_unmasked.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "ファースト・オーダー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "KRU マスク無し Kylo Ren Unmasked unmasked kylo ren ",
+    "skill": [
+      "回復",
+      "アドバンテージ",
+      "カウンター"
+    ],
+    "url": "/characters/Kylo-Ren-Unmasked"
+  },
+  {
+    "name": "キャプテン・シルヴォ",
+    "character_base_id": "CAPTAINSILVO",
+    "src": "/charui/tex.charui_captainsilvo.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "ならず者",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回避力低下",
+      "よろめき",
+      "回復",
+      "時間経過回復",
+      "耐性発揮",
+      "恩恵"
+    ],
+    "url": "/characters/CAPTAINSILVO"
+  },
+  {
+    "name": "ヴィアーズ将軍",
+    "character_base_id": "VEERS_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_veers.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/VEERS_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "4-LOM",
+    "character_base_id": "4LOM",
+    "src": "/charui/tex.charui_4lom.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "賞金稼ぎ",
+      "ドロイド",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復",
+      "固定ダメージ",
+      "耐性発揮",
+      "耐性発揮不可",
+      "通訳"
+    ],
+    "url": "/characters/4LOM"
+  },
+  {
+    "name": "ジェダイ・ナイト・ルーク・スカイウォーカー",
+    "character_base_id": "JEDIKNIGHTLUKE_ENDOR_GLE_INHERIT",
+    "src": "/charui/tex.charui_luke_jediknight.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ジェダイ"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/JEDIKNIGHTLUKE_ENDOR_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "モフ・ギデオン",
+    "character_base_id": "MOFFGIDEONS1_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_moffgideon.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "戦意喪失",
+      "耐性発揮"
+    ],
+    "url": "/characters/MOFFGIDEONS1_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "ジェダイ・ナイト・ガーディアン",
+    "character_base_id": "JEDIKNIGHTGUARDIAN",
+    "src": "/charui/tex.charui_jedi_guardian_01.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Jedi Knight Guardian jedi knight guardian ",
+    "skill": [
+      "ジェダイ・ナイト",
+      "回復"
+    ],
+    "url": "/characters/Jedi-Knight-Guardian"
+  },
+  {
+    "name": "BT-1",
+    "character_base_id": "BT1",
+    "src": "/charui/tex.charui_bt1.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "ドロイド",
+      "ならず者"
+    ],
+    "abbreviation": "BT1 bt-1",
+    "skill": [
+      "ボーナスターン"
+    ],
+    "url": "/characters/BT-1"
+  },
+  {
+    "name": "ダース・マルガス",
+    "character_base_id": "DARTHMALGUS",
+    "src": "/charui/tex.charui_darthmalgus.png",
+    "property": [
+      "ダークサイド",
+      "タンク",
+      "リーダー",
+      "シス",
+      "シス帝国"
+    ],
+    "abbreviation": "Darth Malgus darth malgus gus",
+    "skill": [
+      "暗闇",
+      "ショック",
+      "回復",
+      "疑心",
+      "プロテクション上昇",
+      "ボーナスターン"
+    ],
+    "url": "/characters/Darth-Malgus"
+  },
+  {
+    "name": "スターク大佐",
+    "character_base_id": "COLONELSTARCK_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_colonel_stark.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "回復"
+    ],
+    "url": "/characters/COLONELSTARCK_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "サナ・スタロス",
+    "character_base_id": "SANASTARROS",
+    "src": "/charui/tex.charui_sanastarros.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "ならず者"
+    ],
+    "abbreviation": "Sana Strarros sana strarros",
+    "skill": [
+      "ステルス",
+      "回避不可",
+      "ターゲットロック",
+      "恩恵",
+      "カウンター",
+      "疑惑",
+      "クリティカル率上昇",
+      "耐性発揮",
+      "耐性発揮不可"
+    ],
+    "url": "/characters/Sana-Starros"
+  },
+  {
+    "name": "ヨーダ(ハーミット)",
+    "character_base_id": "HERMITYODA",
+    "src": "/charui/tex.charui_yodahermit.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "ジェダイ"
+    ],
+    "abbreviation": "Hoda HYoda HY hoda hyoda hy 隠者 Hermit Yoda hermit yoda",
+    "skill": [
+      "回復",
+      "アシスト",
+      "ステルス",
+      "阻止不可",
+      "マスターの訓練",
+      "HP均一化",
+      "回復無効",
+      "逃走"
+    ],
+    "url": "/characters/Hermit-Yoda"
+  },
+  {
+    "name": "カレラン・ベク",
+    "character_base_id": "KELLERANBEQ",
+    "src": "/charui/tex.charui_kelleranbeq.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Kelleran Beq kelleran beq",
+    "skill": [
+      "攻撃力上昇",
+      "固定ダメージ",
+      "カウンター",
+      "パダワンの訓戒",
+      "フォアサイト"
+    ],
+    "url": "/characters/Kelleran-Beq"
+  },
+  {
+    "name": "HK-47",
+    "character_base_id": "HK47",
+    "src": "/charui/tex.charui_hk47.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "ドロイド",
+      "シス帝国",
+      "賞金稼ぎ"
+    ],
+    "abbreviation": "hk47 HK47 hk-47",
+    "skill": [
+      "カウンター",
+      "カウンター不可",
+      "クリティカルヒット不可",
+      "固定ダメージ",
+      "クールダウン状態から開始",
+      "デスマーク",
+      "回復"
+    ],
+    "url": "/characters/HK-47"
+  },
+  {
+    "name": "メリン",
+    "character_base_id": "MERRIN",
+    "src": "/charui/tex.charui_merrin.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "ナイトシスター"
+    ],
+    "abbreviation": "Merrin merrin",
+    "skill": [
+      "感染",
+      "阻止不可",
+      "復活"
+    ],
+    "url": "/characters/Merrin"
+  },
+  {
+    "name": "スローン大提督",
+    "character_base_id": "GRANDADMIRALTHRAWN",
+    "src": "/charui/tex.charui_thrawn.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍",
+      "艦隊司令官"
+    ],
+    "abbreviation": "GAT gat Grand Admiral Thrawn grand admiral thrawn",
+    "skill": [
+      "スピード上昇",
+      "耐性発揮",
+      "防御力低下",
+      "解除不可",
+      "カウンター",
+      "スピード低下",
+      "破砕",
+      "ボーナス攻撃",
+      "ボーナスターン",
+      "回復"
+    ],
+    "url": "/characters/Grand-Admiral-Thrawn"
+  },
+  {
+    "name": "イース・コス",
+    "character_base_id": "EETHKOTH",
+    "src": "/charui/tex.charui_eethkoth.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "abbreviation": "Eeth Koth eeth koth",
+    "skill": [],
+    "url": "/characters/Eeth-Koth"
+  },
+  {
+    "name": "アサージ・ヴェントレス(ダーク・ディサイプル)",
+    "character_base_id": "ASAJJDARKDISCIPLE",
+    "src": "/charui/tex.charui_asajjdarkdisciple.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "賞金稼ぎ",
+      "ナイトシスター",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "有効性上昇",
+      "クリティカル率上昇",
+      "攻撃力上昇",
+      "ダメージ耐性",
+      "復活",
+      "スタック可能",
+      "ボーナスプロテクション"
+    ],
+    "url": "/characters/ASAJJDARKDISCIPLE"
+  },
+  {
+    "name": "レイア・オーガナ",
+    "character_base_id": "GLLEIA_GLE_INHERIT",
+    "src": "/charui/tex.charui_leiaendor.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "反乱軍"
+    ],
+    "abbreviation": "",
+    "skill": [],
+    "url": "/characters/GLLEIA_GLE_INHERIT",
+    "is_event_variant": true
+  },
+  {
+    "name": "アソーカ・タノ",
+    "character_base_id": "GLAHSOKATANO",
+    "src": "/charui/tex.charui_ahsokatanogray.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "非同盟のフォースの使い手"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "耐性発揮",
+      "耐性発揮不可",
+      "解除不可",
+      "チャージ",
+      "ボーナスターン",
+      "流浪",
+      "カウンター",
+      "ダメージ耐性",
+      "大ダメージ",
+      "回復",
+      "ステルス",
+      "阻止不可"
+    ],
+    "url": "/characters/GLAHSOKATANO"
+  },
+  {
+    "name": "タリア",
+    "character_base_id": "TALIA",
+    "src": "/charui/tex.charui_nightsister_talia.png",
+    "property": [
+      "ダークサイド",
+      "ヒーラー",
+      "リーダー",
+      "ナイトシスター"
+    ],
+    "abbreviation": "Talia talia",
+    "skill": [
+      "回復",
+      "時間経過ダメージ",
+      "よろめき"
+    ],
+    "url": "/characters/Talia"
+  },
+  {
+    "name": "アイデン・ヴェルシオ",
+    "character_base_id": "IDENVERSIOEMPIRE_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_idenversioempire.png",
+    "property": [
+      "ダークサイド",
+      "アタッカー",
+      "リーダー",
+      "帝国軍",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "カウンター",
+      "無防備",
+      "プロテクション上昇"
+    ],
+    "url": "/characters/IDENVERSIOEMPIRE_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "ジュアニ",
+    "character_base_id": "JUHANI",
+    "src": "/charui/tex.charui_juhani.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "ジェダイ",
+      "旧共和国"
+    ],
+    "abbreviation": "Juhani juhani ジュハニ",
+    "skill": [
+      "回避不可",
+      "回復",
+      "カウンター"
+    ],
+    "url": "/characters/JUHANI"
+  },
+  {
+    "name": "ターフル",
+    "character_base_id": "TARFFUL",
+    "src": "/charui/tex.charui_tarfful.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "ウーキー"
+    ],
+    "abbreviation": "Tarfful tarfful",
+    "skill": [
+      "スタック可能",
+      "有効性上昇"
+    ],
+    "url": "/characters/Tarfful"
+  },
+  {
+    "name": "ピエット提督",
+    "character_base_id": "ADMIRALPIETT_SPEEDERBIKERAID",
+    "src": "/charui/tex.charui_piett.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍",
+      "帝国軍トルーパー",
+      "艦隊司令官"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "カウンター"
+    ],
+    "url": "/characters/ADMIRALPIETT_SPEEDERBIKERAID",
+    "is_event_variant": true
+  },
+  {
+    "name": "CT-5555 “ファイブス”",
+    "character_base_id": "CT5555",
+    "src": "/charui/tex.charui_trooperclone_fives.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "リーダー",
+      "第501軍団",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "abbreviation": "Fives fives 5s",
+    "skill": [
+      "アシスト",
+      "カウンター",
+      "回復"
+    ],
+    "url": "/characters/CT-5555-Fives"
+  },
+  {
+    "name": "カーラ・デューン",
+    "character_base_id": "CARADUNE_MANDALORIAN_EVENT",
+    "src": "/charui/tex.charui_caradune.png",
+    "property": [
+      "ライトサイド",
+      "タンク",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ならず者"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "ステルス",
+      "クリティカルヒット耐性"
+    ],
+    "url": "/characters/CARADUNE_MANDALORIAN_EVENT",
+    "is_event_variant": true
+  },
+  {
+    "name": "キャシアン・アンドー",
+    "character_base_id": "CASSIANANDOR",
+    "src": "/charui/tex.charui_cassian.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "反乱軍",
+      "反乱軍ファイター",
+      "ローグ・ワン"
+    ],
+    "abbreviation": "Cassian Andor cassian andor",
+    "skill": [
+      "強化無効",
+      "アシスト",
+      "エクスポーズ",
+      "回復",
+      "回復無効",
+      "攻撃力低下",
+      "スピード低下",
+      "防御力低下",
+      "抵抗力上昇",
+      "防御力上昇",
+      "有効性上昇"
+    ],
+    "url": "/characters/Cassian-Andor"
+  },
+  {
+    "name": "スカウト・トルーパー",
+    "character_base_id": "SCOUTTROOPER_V3",
+    "src": "/charui/tex.charui_trooperscout.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "帝国軍",
+      "インペリアル・レムナント",
+      "帝国軍トルーパー"
+    ],
+    "abbreviation": "Scout Trooper scout trooper",
+    "skill": [
+      "ステルス",
+      "精度低下",
+      "スピード低下",
+      "耐性発揮",
+      "アシスト",
+      "回復"
+    ],
+    "url": "/characters/Scout-Trooper"
+  },
+  {
+    "name": "ルーク・スカイウォーカー(農民)",
+    "character_base_id": "LUKESKYWALKER",
+    "src": "/charui/tex.charui_luke_ep4.png",
+    "property": [
+      "ライトサイド",
+      "アタッカー",
+      "リーダー",
+      "反乱軍"
+    ],
+    "abbreviation": "Luke Skywalker (Farmboy) luke skywalker farmboy 農民ルーク",
+    "skill": [
+      "時間経過ダメージ"
+    ],
+    "url": "/characters/Luke-Skywalker-Farmboy"
+  },
+  {
+    "name": "バスティラ・シャン",
+    "character_base_id": "BASTILASHAN",
+    "src": "/charui/tex.charui_bastilashan.png",
+    "property": [
+      "ライトサイド",
+      "サポート",
+      "リーダー",
+      "ジェダイ",
+      "旧共和国"
+    ],
+    "abbreviation": "Bastila bastila Shan shan BS bs Bast bast",
+    "skill": [
+      "アシスト",
+      "解除不可",
+      "カウンター",
+      "伝説の戦闘瞑想",
+      "ジェダイ・ナイト"
+    ],
+    "url": "/characters/Bastila-Shan"
+  },
+  {
+    "name": "パータガス少佐",
+    "character_base_id": "MAJORPARTAGAZ",
+    "src": "/charui/tex.charui_majorpartagaz.png",
+    "property": [
+      "ダークサイド",
+      "サポート",
+      "リーダー",
+      "帝国軍"
+    ],
+    "abbreviation": "",
+    "skill": [
+      "スピード低下",
+      "ボーナスプロテクション",
+      "有効性低下",
+      "アシスト",
+      "回復",
+      "耐性発揮",
+      "逃走"
+    ],
+    "url": "/characters/MAJORPARTAGAZ"
+  }
+]

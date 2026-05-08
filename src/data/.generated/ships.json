@@ -1,0 +1,1466 @@
+[
+  {
+    "name": "皇帝のシャトル",
+    "base_id": "EMPERORSSHUTTLE",
+    "src": "/charui/tex.charui_imperialshuttle.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍",
+      "シス"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/emperorsshuttle",
+    "pilot": "パルパティーン皇帝",
+    "description_jp": "敵に弱体効果を与えながら帝国軍とシスの生存力を強める万能サポート",
+    "crew_base_ids": [
+      "EMPERORPALPATINE",
+      "ROYALGUARD"
+    ]
+  },
+  {
+    "name": "反乱軍Bウイング",
+    "base_id": "BWINGREBEL",
+    "src": "/charui/tex.charui_bwingrebel.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/bwingrebel",
+    "pilot": "キャプテン・ドロガン",
+    "description_jp": "増援によって戦局を変える強力な反乱軍アタッカー",
+    "crew_base_ids": [
+      "CAPTAINDROGAN"
+    ]
+  },
+  {
+    "name": "ネゴシエーター",
+    "base_id": "CAPITALNEGOTIATOR",
+    "src": "/charui/tex.charui_negotiator.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalnegotiator",
+    "pilot": "ケノービ将軍",
+    "description_jp": "武勇で味方の攻撃力とスピードを上昇させる攻撃的なジェダイの主力シップ",
+    "crew_base_ids": [
+      "GENERALKENOBI"
+    ]
+  },
+  {
+    "name": "サン・ファクのジオノージアン・スターファイター",
+    "base_id": "GEONOSIANSTARFIGHTER1",
+    "src": "/charui/tex.charui_geonosis_fighter_sunfac.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ジオノージアン"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/geonosianstarfighter1",
+    "pilot": "サン・ファク",
+    "description_jp": "強力な分離主義者のタンク。強化発生中の敵に対し、自動的に挑発を行う",
+    "crew_base_ids": [
+      "SUNFAC"
+    ]
+  },
+  {
+    "name": "ジオノージアン兵士のスターファイター",
+    "base_id": "GEONOSIANSTARFIGHTER2",
+    "src": "/charui/tex.charui_geonosis_fighter_soldier.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ジオノージアン"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/geonosianstarfighter2",
+    "pilot": "ジオノージアン兵士",
+    "description_jp": "攻撃的な分離主義者のアタッカー。自動的に味方のアシストを行う",
+    "crew_base_ids": [
+      "GEONOSIANSOLDIER"
+    ]
+  },
+  {
+    "name": "サイス",
+    "base_id": "SCYTHE",
+    "src": "/charui/tex.charui_scythe.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/scythe",
+    "pilot": "大尋問官",
+    "description_jp": "強力な強化効果とTIEファイターの召集で、帝国軍シップを援護するサポートシャトル",
+    "crew_base_ids": [
+      "GRANDINQUISITOR",
+      "FIFTHBROTHER"
+    ]
+  },
+  {
+    "name": "アウトライダー",
+    "base_id": "OUTRIDER",
+    "src": "/charui/tex.charui_outrider.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "ならず者"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/outrider",
+    "pilot": "ダッシュ・レンダー",
+    "description_jp": "味方シップのダウンロード進捗を上昇する勇敢な反乱軍サポート",
+    "crew_base_ids": [
+      "DASHRENDAR"
+    ]
+  },
+  {
+    "name": "ジオノージアン・スパイのスターファイター",
+    "base_id": "GEONOSIANSTARFIGHTER3",
+    "src": "/charui/tex.charui_geonosis_fighter_spy.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ジオノージアン"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/geonosianstarfighter3",
+    "pilot": "ジオノージアン・スパイ",
+    "description_jp": "回避に優れた分離主義者のアタッカー。ステルスを駆使した攻撃・防御を行う",
+    "crew_base_ids": [
+      "GEONOSIANSPY"
+    ]
+  },
+  {
+    "name": "レジスタンスXウイング",
+    "base_id": "XWINGRESISTANCE",
+    "src": "/charui/tex.charui_xwing_resistance.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/xwingresistance",
+    "pilot": "レジスタンス・パイロット",
+    "description_jp": "攻撃的なレジスタンス・サポート。エクスポーズ、ターゲットロック、めまい効果で敵を追い詰める",
+    "crew_base_ids": [
+      "RESISTANCEPILOT"
+    ]
+  },
+  {
+    "name": "ハウンズ・トゥース",
+    "base_id": "HOUNDSTOOTH",
+    "src": "/charui/tex.charui_houndstooth.png",
+    "faction": [
+      "ダークサイド",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/houndstooth",
+    "pilot": "ボスク",
+    "description_jp": "敵に弱体を発生させる耐久力の高い賞金稼ぎタンク",
+    "crew_base_ids": [
+      "BOSSK"
+    ]
+  },
+  {
+    "name": "クローン・サージェントのARC-170",
+    "base_id": "ARC170CLONESERGEANT",
+    "src": "/charui/tex.charui_arc170.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "クローン・トルーパー"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/arc170clonesergeant",
+    "pilot": "クローン・サージェント(フェーズⅠ)",
+    "description_jp": "頼りになるクローン・タンク。敵をターゲットロック状態にし、さらにその効果を利用する",
+    "crew_base_ids": [
+      "CLONESERGEANTPHASEI"
+    ]
+  },
+  {
+    "name": "ファースト・オーダーTIEファイター",
+    "base_id": "TIEFIGHTERFIRSTORDER",
+    "src": "/charui/tex.charui_firstorder_tiefighter.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/tiefighterfirstorder",
+    "pilot": "ファースト・オーダーTIEパイロット",
+    "description_jp": "攻撃的なファースト・オーダー・アタッカー。強力なターゲットロック能力と特殊スキルの速射攻撃を駆使する",
+    "crew_base_ids": [
+      "FIRSTORDERTIEPILOT"
+    ]
+  },
+  {
+    "name": "ジェダイ・コンシュラーのスターファイター",
+    "base_id": "JEDISTARFIGHTERCONSULAR",
+    "src": "/charui/tex.charui_jedi_fighter.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/jedistarfighterconsular",
+    "pilot": "ジェダイ・コンシュラー",
+    "description_jp": "防御に長けたジェダイ・サポート。素早く味方のプロテクション回復を行う",
+    "crew_base_ids": [
+      "JEDIKNIGHTCONSULAR"
+    ]
+  },
+  {
+    "name": "マレボランス",
+    "base_id": "CAPITALMALEVOLENCE",
+    "src": "/charui/tex.charui_malevolence.png",
+    "faction": [
+      "ダークサイド",
+      "ドロイド",
+      "分離主義者"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalmalevolence",
+    "pilot": "グリーヴァス将軍",
+    "description_jp": "分離主義者とドロイドの両方を強化し、敵艦隊を完全にシャットダウンする分離主義者の主力シップ",
+    "crew_base_ids": [
+      "GRIEVOUS"
+    ]
+  },
+  {
+    "name": "シス・ファイター",
+    "base_id": "SITHFIGHTER",
+    "src": "/charui/tex.charui_sithfighter.png",
+    "faction": [
+      "ダークサイド",
+      "シス",
+      "シス帝国"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/sithfighter",
+    "pilot": "シス・アサシン",
+    "description_jp": "敵の防御を無効化する機敏なシスのアタッカー",
+    "crew_base_ids": [
+      "SITHASSASSIN"
+    ]
+  },
+  {
+    "name": "ザナドゥ・ブラッド",
+    "base_id": "XANADUBLOOD",
+    "src": "/charui/tex.charui_xanadublood.png",
+    "faction": [
+      "ダークサイド",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/xanadublood",
+    "pilot": "キャド・ベイン",
+    "description_jp": "敵の攻撃力を封じ込める、弱体化が得意な賞金稼ぎサポート",
+    "crew_base_ids": [
+      "CADBANE"
+    ]
+  },
+  {
+    "name": "フューリー級インターセプター",
+    "base_id": "FURYCLASSINTERCEPTOR",
+    "src": "/charui/tex.charui_furyclassinterceptor.png",
+    "faction": [
+      "ダークサイド",
+      "シス",
+      "シス帝国"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/furyclassinterceptor",
+    "pilot": "ダース・マルガス",
+    "description_jp": "味方に強力な防御ボーナスを与え、敵に強力な弱体化効果を発生させるシスのサポートシップ",
+    "crew_base_ids": [
+      "DARTHMALGUS"
+    ]
+  },
+  {
+    "name": "キメラ",
+    "base_id": "CAPITALCHIMAERA",
+    "src": "/charui/tex.charui_chimaera.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalchimaera",
+    "pilot": "スローン大提督",
+    "description_jp": "帝国軍の戦術主力シップ。敵の主力シップを排除し、戦況を巧みに支配する",
+    "crew_base_ids": [
+      "GRANDADMIRALTHRAWN"
+    ]
+  },
+  {
+    "name": "パニッシング・ワン",
+    "base_id": "PUNISHINGONE",
+    "src": "/charui/tex.charui_punishingone.png",
+    "faction": [
+      "ダークサイド",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/punishingone",
+    "pilot": "デンガー",
+    "description_jp": "スピードに優れる賞金稼ぎシップ。搭載している兵器で大物賞金首を弱らせることができる",
+    "crew_base_ids": [
+      "DENGAR"
+    ]
+  },
+  {
+    "name": "マークVIインターセプター",
+    "base_id": "SITHSUPREMACYCLASS",
+    "src": "/charui/tex.charui_sithsupremacyclass.png",
+    "faction": [
+      "ダークサイド",
+      "シス",
+      "シス帝国"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/sithsupremacyclass",
+    "pilot": "シス帝国トルーパー",
+    "description_jp": "戦闘不能になるまで敵に群がるよう要請される、増援アタッカーシップ",
+    "crew_base_ids": [
+      "SITHTROOPER"
+    ]
+  },
+  {
+    "name": "B-28エクスティンクション級ボマー",
+    "base_id": "SITHBOMBER",
+    "src": "/charui/tex.charui_b28extinctionclassbomber.png",
+    "faction": [
+      "ダークサイド",
+      "シス",
+      "シス帝国"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/sithbomber",
+    "pilot": "シス・マローダー",
+    "description_jp": "攻撃的なシスタンク。条件発動型の挑発と自衛戦略を駆使して戦う",
+    "crew_base_ids": [
+      "SITHMARAUDER"
+    ]
+  },
+  {
+    "name": "TIEサイレンサー",
+    "base_id": "TIESILENCER",
+    "src": "/charui/tex.charui_tie_silencer.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/tiesilencer",
+    "pilot": "カイロ・レン(マスクなし)",
+    "description_jp": "優れたファースト・オーダーアタッカー。スピードを上昇させ続け、大ダメージを与える",
+    "crew_base_ids": [
+      "KYLORENUNMASKED"
+    ]
+  },
+  {
+    "name": "TIEリーパー",
+    "base_id": "TIEREAPER",
+    "src": "/charui/tex.charui_tiereaper.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/tiereaper",
+    "pilot": "デス・トルーパー",
+    "description_jp": "防御に長けた帝国軍のサポート。効果の解除、クールダウンの延長、敵主力シップのターンメーター減少を行う",
+    "crew_base_ids": [
+      "DEATHTROOPER",
+      "SHORETROOPER"
+    ]
+  },
+  {
+    "name": "ビスタンのUウイング",
+    "base_id": "UWINGSCARIF",
+    "src": "/charui/tex.charui_uwing.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "ローグ・ワン"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/uwingscarif",
+    "pilot": "ビスタン",
+    "description_jp": "回避に優れた反乱軍サポート。ステルスとターゲットロックを駆使しながら、味方のターンメーターを上昇させる",
+    "crew_base_ids": [
+      "BISTAN",
+      "SCARIFREBEL"
+    ]
+  },
+  {
+    "name": "リヴァイアサン",
+    "base_id": "CAPITALLEVIATHAN",
+    "src": "/charui/tex.charui_leviathan.png",
+    "faction": [
+      "ダークサイド",
+      "シス",
+      "シス帝国"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalleviathan",
+    "pilot": "ダース・レヴァン",
+    "description_jp": "戦闘中に敵主力シップを乗っ取るシス主力シップ",
+    "crew_base_ids": [
+      "DARTHREVAN"
+    ]
+  },
+  {
+    "name": "ガントレット・スターファイター",
+    "base_id": "GAUNTLETSTARFIGHTER",
+    "src": "/charui/tex.charui_gauntlet.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/gauntletstarfighter",
+    "pilot": "ガー・サクソン",
+    "description_jp": "頼りになる帝国軍サポート。味方の弱体を解除し敵の強化を阻止する",
+    "crew_base_ids": [
+      "GARSAXON",
+      "IMPERIALSUPERCOMMANDO"
+    ]
+  },
+  {
+    "name": "バルチャー・ドロイド",
+    "base_id": "VULTUREDROID",
+    "src": "/charui/tex.charui_vulturedroid.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ドロイド"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/vulturedroid",
+    "description_jp": "バズ・ドロイドを発生させ、戦闘不能時には代わりを見つける不屈の分離主義者アタッカー"
+  },
+  {
+    "name": "エンデュアランス",
+    "base_id": "CAPITALJEDICRUISER",
+    "src": "/charui/tex.charui_venator.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitaljedicruiser",
+    "pilot": "メイス・ウィンドゥ",
+    "description_jp": "防御に長けたジェダイの主力シップ。武勇効果により、スピード面で優位に立てる",
+    "crew_base_ids": [
+      "MACEWINDU"
+    ]
+  },
+  {
+    "name": "ラダス",
+    "base_id": "CAPITALRADDUS",
+    "src": "/charui/tex.charui_raddus.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalraddus",
+    "pilot": "アミリン・ホルド",
+    "description_jp": "艦隊を守るために自己犠牲もするレジスタンスのサポート主力シップ",
+    "crew_base_ids": [
+      "AMILYNHOLDO"
+    ]
+  },
+  {
+    "name": "レックスのARC-170",
+    "base_id": "ARC170REX",
+    "src": "/charui/tex.charui_arc170_02.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "クローン・トルーパー"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/arc170rex",
+    "pilot": "CT-7567 “レックス”",
+    "description_jp": "防御に長けたクローン・タンク。敵をターゲットロック状態にし、味方のプロテクションと抵抗力を強化できる",
+    "crew_base_ids": [
+      "CT7567"
+    ]
+  },
+  {
+    "name": "IG-2000",
+    "base_id": "IG2000",
+    "src": "/charui/tex.charui_ig2000.png",
+    "faction": [
+      "ダークサイド",
+      "賞金稼ぎ",
+      "ならず者",
+      "ドロイド"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/ig2000",
+    "pilot": "IG-88",
+    "description_jp": "破損状態の敵に大ダメージを与えるアグレッシブな賞金稼ぎアタッカー",
+    "crew_base_ids": [
+      "IG88"
+    ]
+  },
+  {
+    "name": "プロファンディティ",
+    "base_id": "CAPITALPROFUNDITY",
+    "src": "/charui/tex.charui_profundity.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalprofundity",
+    "pilot": "ラダス提督",
+    "description_jp": "戦略的なシナジー効果で盗まれた設計図を確保する反乱軍主力シップ",
+    "crew_base_ids": [
+      "ADMIRALRADDUS"
+    ]
+  },
+  {
+    "name": "BTL-B Yウイング・スターファイター",
+    "base_id": "YWINGCLONEWARS",
+    "src": "/charui/tex.charui_ywing_btlb.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/ywingclonewars",
+    "description_jp": "大ダメージにも耐えられ、味方が必要とする時に挑発をおこなう銀河共和国タンク"
+  },
+  {
+    "name": "TIEダガー",
+    "base_id": "TIEDAGGER",
+    "src": "/charui/tex.charui_tiedagger.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー",
+      "シス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/tiedagger",
+    "pilot": "シス・トルーパー",
+    "description_jp": "復讐を使って敵の防御力を低下させる報復的なアタッカー",
+    "crew_base_ids": [
+      "FOSITHTROOPER"
+    ]
+  },
+  {
+    "name": "カマパンス",
+    "base_id": "COMEUPPANCE",
+    "src": "/charui/tex.charui_comeuppance.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス",
+      "ならず者"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/comeuppance",
+    "pilot": "ゾリ・ブリス",
+    "description_jp": "ドラマチックな登場で味方レジスタンスを強化する強力なサポートシップ。",
+    "crew_base_ids": [
+      "ZORIIBLISS_V2"
+    ]
+  },
+  {
+    "name": "ホーム・ワン",
+    "base_id": "CAPITALMONCALAMARICRUISER",
+    "src": "/charui/tex.charui_moncalamarilibertycruiser.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalmoncalamaricruiser",
+    "pilot": "アクバー提督",
+    "description_jp": "多才な反乱軍の主力シップ。アドバンテージと追加攻撃を駆使して戦局を一変させる",
+    "crew_base_ids": [
+      "ADMIRALACKBAR"
+    ]
+  },
+  {
+    "name": "ファースト・オーダー特殊部隊TIEファイター",
+    "base_id": "TIEFIGHTERFOSF",
+    "src": "/charui/tex.charui_fosf_tie_fighter.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/tiefighterfosf",
+    "pilot": "ファースト・オーダー特殊部隊TIEパイロット",
+    "description_jp": "優れたファースト・オーダーアタッカー。複数の攻撃的能力を持ち、様々な弱体を発生させる",
+    "crew_base_ids": [
+      "FIRSTORDERSPECIALFORCESPILOT"
+    ]
+  },
+  {
+    "name": "ランドのミレニアム・ファルコン",
+    "base_id": "MILLENNIUMFALCONPRISTINE",
+    "src": "/charui/tex.charui_mil_fal_pristine.png",
+    "faction": [
+      "ライトサイド",
+      "ならず者"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/millenniumfalconpristine",
+    "pilot": "ヤング・ランド・カルリジアン",
+    "description_jp": "恐ろしいならず者アタッカー。味方が増援を呼ぶたびに強くなっていく",
+    "crew_base_ids": [
+      "YOUNGLANDO",
+      "L3_37"
+    ]
+  },
+  {
+    "name": "ポー・ダメロンのXウイング",
+    "base_id": "XWINGBLACKONE",
+    "src": "/charui/tex.charui_xwing_blackone.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/xwingblackone",
+    "pilot": "ポー・ダメロン",
+    "description_jp": "英雄的なレジスタンス・アタッカー。ターンメーターを巧みに利用し、プロテクションのない敵を苦しめる",
+    "crew_base_ids": [
+      "POE"
+    ]
+  },
+  {
+    "name": "マローダー",
+    "base_id": "MARAUDER",
+    "src": "/charui/tex.charui_marauder.png",
+    "faction": [
+      "ライトサイド",
+      "クローン・トルーパー",
+      "銀河共和国"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/marauder",
+    "pilot": "テック",
+    "description_jp": "ダメージと強化効果を組み合わせて戦場を支配するステルスサポートシップ",
+    "crew_base_ids": [
+      "BADBATCHTECH",
+      "BADBATCHHUNTER",
+      "BADBATCHWRECKER"
+    ]
+  },
+  {
+    "name": "TIEアドバンストX1",
+    "base_id": "TIEADVANCED",
+    "src": "/charui/tex.charui_tieadvanced.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍",
+      "シス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/tieadvanced",
+    "pilot": "ダース・ベイダー",
+    "description_jp": "恐ろしい帝国軍アタッカー。強化解除を重ね、ターゲットロックを発生させ続けて敵を撃破する",
+    "crew_base_ids": [
+      "VADER"
+    ]
+  },
+  {
+    "name": "TIEディフェンダー",
+    "base_id": "TIEDEFENDER",
+    "src": "/charui/tex.charui_tiedefender.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/tiedefender",
+    "pilot": "アイデン・ヴェルシオ",
+    "description_jp": "敵をスタンさせ、味方(特にTIEファイター)を強化できる、強力な増援帝国軍アタッカー",
+    "crew_base_ids": [
+      "IDENVERSIOEMPIRE"
+    ]
+  },
+  {
+    "name": "ファントムII",
+    "base_id": "PHANTOM2",
+    "src": "/charui/tex.charui_phantom2.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "フェニックス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/phantom2",
+    "pilot": "サビーヌ・レン",
+    "description_jp": "回避に長けた反乱軍アタッカー。ゴーストのおとりの役割を果たし、味方に強化を付与する",
+    "crew_base_ids": [
+      "SABINEWRENS3",
+      "EZRABRIDGERS3",
+      "CHOPPERS3"
+    ]
+  },
+  {
+    "name": "帝国軍TIEボマー",
+    "base_id": "TIEBOMBERIMPERIAL",
+    "src": "/charui/tex.charui_tiebomber.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/tiebomberimperial",
+    "description_jp": "炎上や敵の攻撃力を下げるだけでなく、高い防御力も兼ね備えた敵を弱らせる帝国軍タンク。"
+  },
+  {
+    "name": "アナキンのEta-2スターファイター",
+    "base_id": "JEDISTARFIGHTERANAKIN",
+    "src": "/charui/tex.charui_jedi_fighter_anakin.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/jedistarfighteranakin",
+    "pilot": "ジェダイ・ナイト・アナキン",
+    "description_jp": "攻撃力を増強し、味方がピンチに陥ると報復攻撃を与えるアグレッシブなジェダイアタッカー",
+    "crew_base_ids": [
+      "ANAKINKNIGHT"
+    ]
+  },
+  {
+    "name": "ゴースト",
+    "base_id": "GHOST",
+    "src": "/charui/tex.charui_ghost.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "フェニックス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/ghost",
+    "pilot": "ヘラ・シンドゥーラ",
+    "description_jp": "捕らえにくい反乱軍アタッカー。敵の有効性を低下させ、味方反乱軍と共に猛攻を仕掛ける",
+    "crew_base_ids": [
+      "HERASYNDULLAS3",
+      "KANANJARRUSS3",
+      "ZEBS3"
+    ]
+  },
+  {
+    "name": "ハンのミレニアム・ファルコン",
+    "base_id": "MILLENNIUMFALCON",
+    "src": "/charui/tex.charui_mfalcon.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "ならず者"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/millenniumfalcon",
+    "pilot": "ハン・ソロ",
+    "description_jp": "大幅に改造された反乱軍アタッカー。アシストに特化し、抜群のタイミングで駆けつける",
+    "crew_base_ids": [
+      "HANSOLO",
+      "CHEWBACCALEGENDARY"
+    ]
+  },
+  {
+    "name": "エグゼキュートリクス",
+    "base_id": "CAPITALSTARDESTROYER",
+    "src": "/charui/tex.charui_stardestroyer.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalstardestroyer",
+    "pilot": "グランドモフ・ターキン",
+    "description_jp": "攻撃的な帝国軍の主力シップ。弱体した敵を追い詰める",
+    "crew_base_ids": [
+      "GRANDMOFFTARKIN"
+    ]
+  },
+  {
+    "name": "レイヴンズ・クロウ",
+    "base_id": "RAVENSCLAW",
+    "src": "/charui/tex.charui_ravensclaw.png",
+    "faction": [
+      "ライトサイド",
+      "ジェダイ",
+      "反乱軍"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/ravensclaw",
+    "pilot": "カイル・カターン",
+    "description_jp": "戦闘の形勢を操れる、カイル・カターン操縦の反乱軍シップ。",
+    "crew_base_ids": [
+      "KYLEKATARN"
+    ]
+  },
+  {
+    "name": "ウェッジ・アンティリーズのXウイング",
+    "base_id": "XWINGRED2",
+    "src": "/charui/tex.charui_xwing_red2.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/xwingred2",
+    "pilot": "ウェッジ・アンティリーズ",
+    "description_jp": "攻撃的な反乱軍アタッカー。弱体効果で敵を苦しめる",
+    "crew_base_ids": [
+      "WEDGEANTILLES"
+    ]
+  },
+  {
+    "name": "ハイエナ・ボマー",
+    "base_id": "HYENABOMBER",
+    "src": "/charui/tex.charui_hyenabomber.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ドロイド"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/hyenabomber",
+    "description_jp": "バズ･ドロイドを発生させて味方を守る頑丈な分離主義者タンク"
+  },
+  {
+    "name": "ビッグズ・ダークライターのXウイング",
+    "base_id": "XWINGRED3",
+    "src": "/charui/tex.charui_xwing_red3.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/xwingred3",
+    "pilot": "ビッグズ・ダークライター",
+    "description_jp": "英雄的な反乱軍タンク。ターゲットロックを活用して挑発とアシストを行う",
+    "crew_base_ids": [
+      "BIGGSDARKLIGHTER"
+    ]
+  },
+  {
+    "name": "レイザークレスト",
+    "base_id": "RAZORCREST",
+    "src": "/charui/tex.charui_razorcrest.png",
+    "faction": [
+      "ライトサイド",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/razorcrest",
+    "pilot": "マンダロリアン(ベスカー・アーマー)",
+    "description_jp": "破損のシナジー効果を持つ頑強な賞金稼ぎアタッカー",
+    "crew_base_ids": [
+      "THEMANDALORIANBESKARARMOR"
+    ]
+  },
+  {
+    "name": "MG-100スターフォートレスSF-17",
+    "base_id": "MG100STARFORTRESSSF17",
+    "src": "/charui/tex.charui_mg100.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/mg100starfortresssf17",
+    "pilot": "ローズ・ティコ",
+    "description_jp": "敵を圧倒する攻撃力を持ち、耐久力に優れたレジスタンスタンク",
+    "crew_base_ids": [
+      "ROSETICO",
+      "RESISTANCETROOPER"
+    ]
+  },
+  {
+    "name": "ラダス",
+    "base_id": "CAPITALRADDUS_EVENT",
+    "src": "/charui/tex.charui_raddus.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalraddus_event",
+    "pilot": "AMILYNHOLDO_RADDUS",
+    "description_jp": "艦隊を守るために自己犠牲もするレジスタンスのサポート主力シップ",
+    "crew_base_ids": [
+      "AMILYNHOLDO_RADDUS"
+    ],
+    "is_event_variant": true
+  },
+  {
+    "name": "エボン・ホーク",
+    "base_id": "EBONHAWK",
+    "src": "/charui/tex.charui_ebonhawk.png",
+    "faction": [
+      "ライトサイド",
+      "旧共和国"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/ebonhawk",
+    "pilot": "カース・オナシ",
+    "description_jp": "敵の強化効果を解除し、ターゲットロックを無効化する耐久力の高い旧共和国サポート",
+    "crew_base_ids": [
+      "CARTHONASI",
+      "T3_M4"
+    ]
+  },
+  {
+    "name": "レイのミレニアム・ファルコン",
+    "base_id": "MILLENNIUMFALCONEP7",
+    "src": "/charui/tex.charui_mfalcon_ep7.png",
+    "faction": [
+      "ライトサイド",
+      "レジスタンス"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/millenniumfalconep7",
+    "pilot": "レイ",
+    "description_jp": "大胆不敵なレジスタンス・ファイター。強化を代償にして戦況を一変させる",
+    "crew_base_ids": [
+      "REY",
+      "FINN"
+    ]
+  },
+  {
+    "name": "デヴァステーター",
+    "base_id": "FOTF_DEVASTATOR",
+    "src": "/charui/tex.charui_stardestroyer_vader.png",
+    "faction": [
+      "帝国軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/fotf_devastator",
+    "pilot": "FOTF_VADER",
+    "description_jp": "冷酷な帝国の主力シップ。弱体発生中の敵に大ダメージを与え、増援がバトルに参加すると敵の強化効果を解除する",
+    "crew_base_ids": [
+      "FOTF_VADER"
+    ]
+  },
+  {
+    "name": "ファイナライザー",
+    "base_id": "CAPITALFINALIZER",
+    "src": "/charui/tex.charui_finalizer.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalfinalizer",
+    "pilot": "ハックス将軍",
+    "description_jp": "ファースト・オーダー艦隊に早い段階で強化効果を付与し、敵を執拗に追跡するファースト・オーダーの主力シップ。",
+    "crew_base_ids": [
+      "GENERALHUX"
+    ]
+  },
+  {
+    "name": "ローグ・ワン",
+    "base_id": "ROGUEONESHIP",
+    "src": "/charui/tex.charui_rogueoneship.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "ローグ・ワン"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/rogueoneship",
+    "pilot": "ボーディー・ルック",
+    "description_jp": "敵の戦線をくぐり抜けて味方を強化する、隠れた反乱軍のサポートシップ。",
+    "crew_base_ids": [
+      "BODHIROOK",
+      "PAO"
+    ]
+  },
+  {
+    "name": "プロ・クーンのジェダイ・スターファイター",
+    "base_id": "BLADEOFDORIN",
+    "src": "/charui/tex.charui_jedi_fighter_bladeofdorin.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/bladeofdorin",
+    "pilot": "プロ・クーン",
+    "description_jp": "多才なジェダイ・サポート。共和国に強力な強化を発生させ、指定した味方に挑発を行わせる",
+    "crew_base_ids": [
+      "PLOKOON"
+    ]
+  },
+  {
+    "name": "ファイナライザー",
+    "base_id": "CAPITALFINALIZER_EVENT",
+    "src": "/charui/tex.charui_finalizer.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalfinalizer_event",
+    "pilot": "GENERALHUX_EVENT",
+    "description_jp": "ファースト・オーダー艦隊に早い段階で強化効果を付与し、敵を執拗に追跡するファースト・オーダーの主力シップ。",
+    "crew_base_ids": [
+      "GENERALHUX_EVENT"
+    ],
+    "is_event_variant": true
+  },
+  {
+    "name": "帝国軍TIEファイター",
+    "base_id": "TIEFIGHTERIMPERIAL",
+    "src": "/charui/tex.charui_tiefighter.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/tiefighterimperial",
+    "pilot": "TIEファイター・パイロット",
+    "description_jp": "回避に長けた帝国軍アタッカー。ターゲットロックを発生させてその効果を利用する",
+    "crew_base_ids": [
+      "TIEFIGHTERPILOT"
+    ]
+  },
+  {
+    "name": "TIEエシュロン",
+    "base_id": "FIRSTORDERTIEECHELON",
+    "src": "/charui/tex.charui_firstordertieechelon.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/firstordertieechelon",
+    "pilot": "ファースト・オーダー・オフィサー",
+    "description_jp": "味方にステルス効果を与えて守るファースト・オーダーのタンク",
+    "crew_base_ids": [
+      "FIRSTORDEROFFICERMALE"
+    ]
+  },
+  {
+    "name": "TIE/INインターセプタープロトタイプ",
+    "base_id": "TIEINTERCEPTOR",
+    "src": "/charui/tex.charui_tie_interceptor_prototype.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/tieinterceptor",
+    "pilot": "セカンド・シスター",
+    "description_jp": "帝国軍の高速戦闘機で、戦闘力と機動性に優れる。セカンド・シスターは自身のフォースの力により、驚くほど自在にその機体を操ることができた。",
+    "crew_base_ids": [
+      "SECONDSISTER"
+    ]
+  },
+  {
+    "name": "キャシアンのUウイング",
+    "base_id": "UWINGROGUEONE",
+    "src": "/charui/tex.charui_uwing_hero.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍",
+      "ローグ・ワン"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/uwingrogueone",
+    "pilot": "キャシアン・アンドー",
+    "description_jp": "回避力の高い反乱軍のサポートシップ。ステルスとターンメーター操作を駆使して戦局を覆す",
+    "crew_base_ids": [
+      "CASSIANANDOR",
+      "JYNERSO",
+      "K2SO"
+    ]
+  },
+  {
+    "name": "反乱軍Yウイング",
+    "base_id": "YWINGREBEL",
+    "src": "/charui/tex.charui_ywing.png",
+    "faction": [
+      "ライトサイド",
+      "反乱軍"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/ywingrebel",
+    "description_jp": "敵のプロテクションを無効化できる不屈の反乱軍タンク"
+  },
+  {
+    "name": "GR-75",
+    "base_id": "JKL_GR75",
+    "src": "/charui/tex.charui_gr75.png",
+    "faction": [
+      "反乱軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/jkl_gr75",
+    "pilot": "JKL_PILOT",
+    "description_jp": "味方の防御に優れる反乱軍の輸送シップ",
+    "crew_base_ids": [
+      "JKL_PILOT"
+    ]
+  },
+  {
+    "name": "スレーヴI",
+    "base_id": "SLAVE1",
+    "src": "/charui/tex.charui_slave1.png",
+    "faction": [
+      "ダークサイド",
+      "賞金稼ぎ",
+      "ならず者"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/slave1",
+    "pilot": "ボバ・フェット",
+    "description_jp": "危険な賞金稼ぎのアタッカー。敵をターゲットロック状態にし、その効果で強力な範囲攻撃を行う",
+    "crew_base_ids": [
+      "BOBAFETT"
+    ]
+  },
+  {
+    "name": "バルチャー・ドロイド",
+    "base_id": "VULTUREDROID_tb",
+    "src": "/charui/tex.charui_vulturedroid.png",
+    "faction": [
+      "ダークサイド",
+      "分離主義者",
+      "ドロイド"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/vulturedroid_tb",
+    "description_jp": "バズ･ドロイドで敵の自由を奪う無人の分離主義者アタッカー",
+    "is_event_variant": true
+  },
+  {
+    "name": "カイロ・レンのコマンド・シャトル",
+    "base_id": "COMMANDSHUTTLE",
+    "src": "/charui/tex.charui_upsilon_shuttle_kylo.png",
+    "faction": [
+      "ダークサイド",
+      "ファースト・オーダー"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/commandshuttle",
+    "pilot": "カイロ・レン",
+    "description_jp": "耐久力のあるファースト・オーダー・サポート。圧倒的な味方ターンメーター操作能力を持つ",
+    "crew_base_ids": [
+      "KYLOREN",
+      "PHASMA",
+      "FIRSTORDERTROOPER"
+    ]
+  },
+  {
+    "name": "エグゼクター",
+    "base_id": "CAPITALEXECUTOR",
+    "src": "/charui/tex.charui_executor.png",
+    "faction": [
+      "ダークサイド",
+      "帝国軍"
+    ],
+    "role": [
+      "キャピタルシップ"
+    ],
+    "abbreviation": "",
+    "url": "/ships/capitalexecutor",
+    "pilot": "ピエット提督",
+    "description_jp": "賞金稼ぎと強力なシナジー効果を発揮する帝国軍の主力シップ",
+    "crew_base_ids": [
+      "ADMIRALPIETT"
+    ]
+  },
+  {
+    "name": "アソーカ・タノのジェダイ・スターファイター",
+    "base_id": "JEDISTARFIGHTERAHSOKATANO",
+    "src": "/charui/tex.charui_jedi_fighter_ahsoka.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "ジェダイ"
+    ],
+    "role": [
+      "アタッカー"
+    ],
+    "abbreviation": "",
+    "url": "/ships/jedistarfighterahsokatano",
+    "pilot": "アソーカ・タノ",
+    "description_jp": "多才なジェダイ・アタッカー。効果の無効化と強化を駆使して戦況に対応する",
+    "crew_base_ids": [
+      "AHSOKATANO"
+    ]
+  },
+  {
+    "name": "シミター",
+    "base_id": "SITHINFILTRATOR",
+    "src": "/charui/tex.charui_sithinfiltrator.png",
+    "faction": [
+      "ダークサイド",
+      "シス"
+    ],
+    "role": [
+      "サポート"
+    ],
+    "abbreviation": "",
+    "url": "/ships/sithinfiltrator",
+    "pilot": "ダース・モール",
+    "description_jp": "恐ろしいシス・サポート。味方にステルス効果を発生させ、強力な攻撃に繋げる",
+    "crew_base_ids": [
+      "MAUL"
+    ]
+  },
+  {
+    "name": "アンバラン・スターファイター",
+    "base_id": "UMBARANSTARFIGHTER",
+    "src": "/charui/tex.charui_umbaran_star_fighter.png",
+    "faction": [
+      "ライトサイド",
+      "銀河共和国",
+      "クローン・トルーパー"
+    ],
+    "role": [
+      "タンク"
+    ],
+    "abbreviation": "",
+    "url": "/ships/umbaranstarfighter",
+    "pilot": "CT-5555 “ファイブス”",
+    "description_jp": "リスキーなクローン・タンク。敵に大ダメージを与え弱体も発生させられるが、敵のターンメーターを上昇させる",
+    "crew_base_ids": [
+      "CT5555"
+    ]
+  }
+]
