@@ -60,54 +60,97 @@ export default function PrivacyPolicy() {
                 </h2> */}
       </div>
 
-      <h2 className="m-2 text-2xl">個人情報の収集方法について</h2>
+      <h2 className="m-2 text-2xl">アクセス解析・Cookieの利用について</h2>
       <div>
-        <h3 className="text-xl">Vercel Web Analytics (提供者: Vercel Inc.)</h3>
-        <div>
-          <p>利用目的：サイトの利用状況分析</p>
-          <p>
-            収集する情報 :
-            Webサイト内の閲覧情報、閲覧時の位置情報(IPアドレス)、ブラウザ、端末、参照元等
-          </p>
-          <p>
-            プライバシー :
-            匿名化されたデータのみを保存し、個人を特定する情報は保存しません。またこのサイトはcookieを使用しています。
-          </p>
-        </div>
-      </div>
-      <div>
-        <h2 className="m-2 text-2xl">広告配信について</h2>
+        <h3 className="m-2 text-xl">
+          Vercel Web Analytics（提供者: Vercel Inc.）
+        </h3>
         <p className="m-2">
-          当サイトでは、将来的に第三者配信の広告サービス（Google AdSense
-          など）を利用する可能性があります。
-          これらの広告配信事業者は、ユーザーの興味に基づいた商品・サービスの広告を表示するため、
-          当サイトや他サイトへのアクセス情報「Cookie（氏名、住所、メールアドレス、電話番号は含まれません）」を使用することがあります。
-        </p>
-        <p className="m-2">
-          Google AdSense および DoubleClick Cookie
-          については、以下のリンクから無効化することができます。
-          <br />
+          当サイトはサイト改善のために Vercel Web Analytics
+          を利用しています。Vercel
+          はページビュー数、参照元、デバイス種別、おおよその地域（IPアドレスから推定）等を集計しますが、
+          IPアドレスは保存前に匿名化され、個人を特定するために用いられません。
+          詳細は{" "}
           <a
-            href="https://www.google.com/settings/ads"
+            href="https://vercel.com/docs/analytics/privacy-policy"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
           >
-            広告のカスタマイズ設定（Google）
+            Vercel Web Analytics プライバシーポリシー
           </a>
+          をご確認ください。
+        </p>
+        <h3 className="m-2 text-xl">Cookieの利用について</h3>
+        <p className="m-2">
+          当サイトはログインセッションの維持等の目的でCookieを使用します。
+          ブラウザの設定からCookieを無効化することができますが、その場合一部機能が利用できなくなることがあります。
+        </p>
+      </div>
+      <div>
+        <h2 className="m-2 text-2xl">広告配信について</h2>
+        <p className="m-2">
+          当サイトでは将来的に、第三者配信事業者である Google
+          が提供する広告サービス（Google AdSense
+          を含む）を利用する可能性があります。Google
+          を含む第三者配信事業者は、Cookie を使用して、ユーザーが当サイトや他のサイトに
+          過去アクセスした情報に基づき、ユーザーの興味に応じた広告を配信することがあります。
         </p>
         <p className="m-2">
-          第三者配信事業者がCookieを使用することにより、ユーザーがそのサイトや他のサイトに過去にアクセスした際の情報に基づいて広告を配信することがあります。
-          AdSenseの仕組みや、ユーザーがパーソナライズ広告に使用される情報を管理する方法については、
+          Google AdSense は、広告配信のために「DoubleClick DART
+          Cookie」と呼ばれる仕組みを利用する場合があります。Cookie
+          を介して収集される情報には氏名、住所、メールアドレス、電話番号等の個人を直接特定する情報は含まれません。
+        </p>
+        <p className="m-2">
+          ユーザーは以下のリンクから、広告のパーソナライズを無効化することができます。
+        </p>
+        <ul className="m-2 list-disc pl-6">
+          <li>
+            <a
+              href="https://www.google.com/settings/ads"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              広告設定（Google アカウント）
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://optout.aboutads.info/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              YourAdChoices オプトアウトページ（aboutads.info）
+            </a>
+          </li>
+        </ul>
+        <p className="m-2">
+          Google
+          のパーソナライズ広告の仕組みや、ユーザーが自身のデータを管理する方法の詳細については
+          {" "}
           <a
             href="https://policies.google.com/technologies/ads"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
           >
-            Googleの広告ポリシー
+            Google の広告ポリシー
+          </a>
+          {" "}
+          および{" "}
+          <a
+            href="https://policies.google.com/technologies/partner-sites"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            広告主としての Google
           </a>
           をご確認ください。
+          ブラウザによっては、サードパーティ Cookie
+          をブロックする設定により広告のパーソナライズを停止できます。
         </p>
       </div>
       <div>
@@ -139,7 +182,9 @@ export default function PrivacyPolicy() {
           </p>
         </div>
       </div>
-      <p className="my-2 text-2xl">制定日： 2024年 2 月 07 日</p>
+      <p className="my-2 text-2xl">
+        制定日： 2024 年 2 月 7 日 / 改定日： 2026 年 5 月 9 日
+      </p>
     </div>
   );
 }
