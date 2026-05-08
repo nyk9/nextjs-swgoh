@@ -11,8 +11,8 @@ import {
   MenubarContent,
   MenubarItem,
   MenubarMenu,
+  MenubarTrigger,
 } from "@/components/ui/menubar";
-import { MenubarTrigger } from "@radix-ui/react-menubar";
 
 export default function HeaderClient({
   user,
