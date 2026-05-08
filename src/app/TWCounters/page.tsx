@@ -1,11 +1,16 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import prisma from "@/lib/prisma/prismaClient";
+import { auth } from "@/auth";
 
 export const dynamic = "force-dynamic";
 
 export default async function TWCounter() {
-  const counters = await prisma.counter.findMany();
+  const [counters, session] = await Promise.all([
+    prisma.counter.findMany(),
+    auth(),
+  ]);
+  const isLoggedIn = !!session?.user;
 
   return (
     <div className="min-h-screen px-4 py-8">
@@ -27,19 +32,23 @@ export default async function TWCounter() {
 
         {/* Actions */}
         <div className="flex gap-2 mb-6">
-          <Link href="/TWCounters/login">
-            <Button
-              variant="outline"
-              className="border-[hsl(220,12%,18%)] bg-transparent text-[hsl(220,14%,82%)] hover:bg-[hsl(220,14%,14%)] text-sm"
-            >
-              ログイン
-            </Button>
-          </Link>
-          <Link href="/TWCounters/forms">
-            <Button className="bg-[hsl(220,14%,82%)] text-[hsl(220,16%,6%)] hover:bg-white text-sm font-medium">
-              入力フォーム
-            </Button>
-          </Link>
+          {!session?.user && (
+            <Link href="/TWCounters/login">
+              <Button
+                variant="outline"
+                className="border-[hsl(220,12%,18%)] bg-transparent text-[hsl(220,14%,82%)] hover:bg-[hsl(220,14%,14%)] text-sm"
+              >
+                ログイン
+              </Button>
+            </Link>
+          )}
+          {isLoggedIn && (
+            <Link href="/TWCounters/forms">
+              <Button className="bg-[hsl(220,14%,82%)] text-[hsl(220,16%,6%)] hover:bg-white text-sm font-medium">
+                入力フォーム
+              </Button>
+            </Link>
+          )}
         </div>
 
         {/* Counter List */}
