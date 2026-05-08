@@ -3,6 +3,7 @@ import shipsRaw from "@/data/.generated/ships.json";
 import units from "@/data/.generated/units.json";
 import type { Characters } from "@/types/characters/characters";
 import type { Ship } from "@/types/ships/ships";
+import { getAllGuides } from "@/lib/guides";
 
 const BASE_URL = "https://swgoh4jp.com";
 
@@ -95,5 +96,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  return [...staticRoutes, ...characterRoutes, ...shipRoutes];
+  const guideRoutes: MetadataRoute.Sitemap = getAllGuides().map((g) => ({
+    url: `${BASE_URL}/guides/${g.slug}`,
+    lastModified: new Date(g.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+  guideRoutes.unshift({
+    url: `${BASE_URL}/guides`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  });
+
+  return [...staticRoutes, ...guideRoutes, ...characterRoutes, ...shipRoutes];
 }

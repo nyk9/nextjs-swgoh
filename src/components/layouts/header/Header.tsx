@@ -45,6 +45,11 @@ export const Header = () => {
                   育成アドバイザー
                 </MenubarItem>
               </Link>
+              <Link href="/guides">
+                <MenubarItem className="cursor-pointer text-sm py-2 hover:bg-[hsl(220,14%,14%)] focus:bg-[hsl(220,14%,14%)]">
+                  攻略ガイド
+                </MenubarItem>
+              </Link>
               <MenubarItem disabled className="opacity-40 cursor-not-allowed text-sm py-2">
                 Ships<span className="ml-2 text-[10px] text-[hsl(220,8%,36%)]">準備中</span>
               </MenubarItem>
