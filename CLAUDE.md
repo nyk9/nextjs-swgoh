@@ -56,8 +56,9 @@ Vercel の利用規約上、**Pro プラン（$20/月）に加入するまで収
   - `ShipCard` を `<Link>` で詳細ページに接続、sitemap に shipRoutes を追加
   - 詳細ページで乗員 → キャラ詳細への内部リンクを生成（艦船 → キャラの片方向のみ）
 - [ ] Phase 3: MDX ガイド記事でロングテール獲得（`/guides/[slug]`）
-- [ ] OGP 画像の日本語表示（Noto Sans JP の OTF/TTF を埋め込み、現在は Latin のみ）
-- [ ] Privacy policy に AdSense Cookie 文言追加（Phase 4 申請前まで）
+- [ ] OGP 画像の日本語表示（Noto Sans JP の OTF/TTF を埋め込み、現在は Latin のみ）※ per-page 動的 OGP 実装時に対応
+- [x] Privacy policy に AdSense Cookie 文言追加（Phase 4 申請前まで）→ 既に対応済み（`src/app/privacy-policy/page.tsx:79-111`）
+- [ ] favicon・サイトロゴ・アイコン画像の刷新（現状は Next.js デフォルト favicon）— 生成 AI プロンプトを先に設計する
 
 ### SSR 化メモ（2026-05-03）
 - 一覧ページは Suspense でラップして `useSearchParams()` を使用 → 静的事前レンダリング（○ Static）が維持される
