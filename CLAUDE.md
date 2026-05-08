@@ -22,6 +22,7 @@
 - **Package manager**: Bun（`packageManager: bun@1.1.34`）
 - **Styling**: Tailwind CSS + shadcn/ui 系コンポーネント
 - **DB**: PostgreSQL + Prisma 6
+- **Auth**: Auth.js (`next-auth` v5 beta) + Prisma Adapter
 - **AI**: Vercel AI SDK 6 + Google Gemini / Anthropic
 - **Content**: MDX（`@next/mdx` + `gray-matter`）
 
@@ -69,6 +70,11 @@ COMLINK_URL=http://localhost:5001 bun run sync:units
 DATABASE_URL=                         # Prisma / PostgreSQL
 COMLINK_URL=                          # Comlink backend。未設定時は http://localhost:5001 想定
 REDIS_URL=                            # advice API の rate limit 用
+AUTH_SECRET=                          # Auth.js cookie / session 暗号化用
+AUTH_GITHUB_ID=                       # GitHub OAuth（任意）
+AUTH_GITHUB_SECRET=                   # GitHub OAuth（任意）
+AUTH_GOOGLE_ID=                       # Google OAuth（任意）
+AUTH_GOOGLE_SECRET=                   # Google OAuth（任意）
 GOOGLE_GENERATIVE_AI_API_KEY=         # Google Gemini
 ANTHROPIC_API_KEY=                    # Anthropic を使う場合
 DEEPL_API_KEY=                        # 既存の翻訳系用途
@@ -92,8 +98,10 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=        # 同上
 | `/guides` | `src/app/guides/page.tsx` | `content/guides/*.mdx` の一覧 |
 | `/guides/[slug]` | SSG + dynamic MDX import | frontmatter から metadata 生成 |
 | `/advisor` | Client page | アライコード → モード → 目的 → チャット |
+| `/login` | Server + client child | Auth.js OAuth login。robots noindex |
 | `/TWCounters` | Server Component | Prisma 参照。`dynamic = "force-dynamic"` 必須 |
-| `/TWCounters/forms` | Client page | カウンター登録フォーム |
+| `/TWCounters/forms` | Server guard + client child | ログイン済みユーザー全員がアクセス可能なカウンター登録フォーム |
+| `/TWCounters/login` | Redirect | 旧導線。`/login?callbackUrl=/TWCounters/forms` へ転送 |
 | `/about` | Static page | サイト紹介 |
 | `/privacy-policy` | Static page | Vercel Analytics / 将来の広告 Cookie 文言あり |
 
@@ -103,7 +111,8 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=        # 同上
 |---|---|
 | `GET /api/characters` | 公開キャラ JSON。event variant は除外 |
 | `GET /api/counters` | Prisma `counter` 一覧 |
-| `POST /api/counters` | Prisma `counter` 登録 |
+| `POST /api/counters` | Prisma `counter` 登録。ログイン必須 |
+| `GET/POST /api/auth/[...nextauth]` | Auth.js handlers |
 | `GET /api/advice/player?allycode=...` | Comlink からプレイヤーデータ取得・整形 |
 | `POST /api/advice/chat` | Comlink データ + AI SDK でチャット応答 |
 | `GET /api/swgohgg/characters` | swgoh.gg proxy。現行主導線では未使用 |
@@ -170,6 +179,7 @@ src/hooks/
 src/lib/
   guides.ts                      # MDX frontmatter 読み込み
   rateLimit.ts                   # Redis rate limit
+  auth/guards.ts                 # server-only auth / role guard
   prisma/prismaClient.ts         # Prisma singleton
   swgoh/
     advisor/                     # AI prompt / client / providers
@@ -282,12 +292,34 @@ tags: ["..."]
 - UI 上の RotE purpose は 5 種類あるが、`/api/advice/chat` は現在 `guild_rewards` だけを許可し、それ以外は `guild_rewards` にフォールバックする
 - `userNote` state は UI に存在するが、現行 API body / prompt には実質渡っていない
 
+#### 今後の実装予定（アドバイザー）
+
+- **ログイン必須化**: `/advisor` へのアクセスを `requireAuth` で保護する
+- **会話履歴の保存**: Prisma に `ChatSession` / `ChatMessage` モデルを追加し、ユーザーごとの会話を DB 保存する
+- **履歴閲覧 UI**: `/advisor/history` または `/advisor/[sessionId]` で過去の会話を閲覧できるようにする
+- データ設計の要点:
+  - `ChatSession`: `userId`, `allycode`, `purpose`, `createdAt`
+  - `ChatMessage`: `sessionId`, `role` (`user` / `assistant`), `content`, `createdAt`
+  - ユーザーは自分の会話のみ参照可（Row-level isolation は `where: { userId }` で実装）
+
 ### TW カウンター
 
 - DB model は `counter`
 - `/TWCounters` は Prisma を直接読むため `export const dynamic = "force-dynamic"`
-- `/api/counters` は GET / POST を持つ
-- `/TWCounters/forms` は client form。認証・編集・削除は未整備
+- `/api/counters` は GET / POST を持つ。POST はログイン必須（role 不問）
+- `/TWCounters/forms` は server page で `requireAuth("/TWCounters/forms")` してから client form を描画
+- 未ログイン → `/login?callbackUrl=/TWCounters/forms` にリダイレクト。ログイン後フォームへ戻る
+- 認証方針の詳細は `docs/auth-implementation-plan-2026-05-08.md`
+
+### 認証
+
+- Auth.js 設定は `src/auth.ts`
+- Auth.js route handler は `src/app/api/auth/[...nextauth]/route.ts`
+- Prisma Adapter で `User` / `Account` / `Session` / `VerificationToken` を NeonDB に保存する
+- `User.role` は `USER` / `ADMIN`
+- server-only guard は `src/lib/auth/guards.ts`
+- Middleware / Proxy は認可の唯一の防御線にしない。Route Handler / Server Component / Server Action のデータ操作直前で guard する
+- 初期実装は OAuth のみ。Credentials provider はパスワードハッシュ・リセット・rate limit の責務が増えるため未導入
 
 ---
 
@@ -312,6 +344,8 @@ model counter {
   description       String?
 }
 ```
+
+Auth.js 用に `UserRole`, `User`, `Account`, `Session`, `VerificationToken` も定義している。
 
 ---
 
@@ -341,7 +375,7 @@ model counter {
 - `README.md` は古い記述が混ざっている。作業時は `CLAUDE.md` と現コードを優先する。
 - `src/app/ships/page.tsx` は event variant を除外していない。意図と違う可能性があるため、関連作業時に確認する。
 - `src/app/advisor/page.tsx` の purpose UI と `/api/advice/chat` の許可 purpose に差がある。
-- `src/app/TWCounters/page.tsx` には `/TWCounters/login` へのリンクがあるが、該当 route は存在しない。
+- `/TWCounters/login` は `/login?callbackUrl=/TWCounters/forms` へのリダイレクト route として実装済み。
 - `next.config.mjs` は `/character/:baseId*` → `/characters/:baseId*` の 301 redirect を持つ。
 - `src/app/api/swgohgg/*` は現行主導線では未使用。削除するなら参照確認してから行う。
 - Turbopack / `.next` キャッシュ起因の不整合が疑われる場合は、ユーザー確認のうえ `.next` 削除を検討する。
