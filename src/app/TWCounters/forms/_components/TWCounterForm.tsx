@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
+import { track } from "@vercel/analytics";
 import { useState } from "react";
 
 export default function TWCounterForm() {
@@ -34,7 +35,7 @@ export default function TWCounterForm() {
   };
 
   const addCounters = async () => {
-    console.log("called");
+    track("tw_counter_submit_clicked");
     if (
       !alliedCharacters.includes("自軍リーダー") &&
       !enemyCharacters.includes("敵軍リーダー")

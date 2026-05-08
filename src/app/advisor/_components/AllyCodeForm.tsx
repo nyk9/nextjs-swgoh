@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 
 interface PlayerInfo {
   name: string;
@@ -47,6 +48,7 @@ export default function AllyCodeForm({ onPlayerLoaded }: AllyCodeFormProps) {
         return;
       }
 
+      track("advisor_allycode_loaded");
       onPlayerLoaded(data, clean);
     } catch {
       setError("通信エラーが発生しました。しばらくしてから再試行してください。");

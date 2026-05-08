@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { track } from "@vercel/analytics";
 import AllyCodeForm from "./AllyCodeForm";
 import ModeSelector from "./ModeSelector";
 import PurposeSelector from "./PurposeSelector";
@@ -119,6 +120,7 @@ export default function AdvisorClient() {
   };
 
   const handleModeSelected = (selectedMode: GameMode) => {
+    track("advisor_mode_selected", { mode: selectedMode });
     setMode(selectedMode);
     setPurpose(null);
     setStep("purpose");
@@ -159,6 +161,11 @@ export default function AdvisorClient() {
         { role: "user", content: initialMessage },
         { role: "assistant", content: data.reply },
       ];
+
+      track("advisor_chat_started", {
+        mode,
+        purpose: purpose ?? "none",
+      });
 
       setChatHistory(initialHistory);
       setSessionId(typeof data.sessionId === "string" ? data.sessionId : null);
