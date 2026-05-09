@@ -9,6 +9,7 @@
  */
 
 import { ComlinkError, type ComlinkClientConfig } from "./client";
+import { normalizeBaseUrl } from "./url";
 
 const DEFAULT_COMLINK_URL = process.env.COMLINK_URL ?? "http://localhost:5001";
 
@@ -78,7 +79,7 @@ export interface ComlinkGameDataSegment0 {
 export async function fetchGameDataMetadata(
   config: ComlinkClientConfig = {},
 ): Promise<ComlinkGameDataMetadata> {
-  const baseUrl = config.baseUrl ?? DEFAULT_COMLINK_URL;
+  const baseUrl = normalizeBaseUrl(config.baseUrl ?? DEFAULT_COMLINK_URL);
   const url = `${baseUrl}/metadata`;
 
   let response: Response;
@@ -150,7 +151,7 @@ export async function fetchUnitsAndSkills(
   version: string,
   config: ComlinkClientConfig = {},
 ): Promise<ComlinkGameDataSegment0> {
-  const baseUrl = config.baseUrl ?? DEFAULT_COMLINK_URL;
+  const baseUrl = normalizeBaseUrl(config.baseUrl ?? DEFAULT_COMLINK_URL);
   const url = `${baseUrl}/data`;
 
   const body = {

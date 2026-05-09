@@ -4,6 +4,7 @@
  */
 
 import type { ComlinkPlayerResponse, ComlinkGuildResponse } from "./types";
+import { normalizeBaseUrl } from "./url";
 
 // -------------------------------------------------------
 // 設定
@@ -67,7 +68,7 @@ export async function fetchPlayerData(
   allyCode: string,
   config: ComlinkClientConfig = {},
 ): Promise<ComlinkPlayerResponse> {
-  const baseUrl = config.baseUrl ?? DEFAULT_COMLINK_URL;
+  const baseUrl = normalizeBaseUrl(config.baseUrl ?? DEFAULT_COMLINK_URL);
   const url = `${baseUrl}/player`;
 
   const body: PlayerRequestBody = {
@@ -121,7 +122,7 @@ export async function fetchPlayerDataById(
   playerId: string,
   config: ComlinkClientConfig = {},
 ): Promise<ComlinkPlayerResponse> {
-  const baseUrl = config.baseUrl ?? DEFAULT_COMLINK_URL;
+  const baseUrl = normalizeBaseUrl(config.baseUrl ?? DEFAULT_COMLINK_URL);
   const url = `${baseUrl}/player`;
 
   const body: PlayerRequestBody = { payload: { playerId }, enums: false };
@@ -171,7 +172,7 @@ export async function fetchGuildData(
   guildId: string,
   config: ComlinkClientConfig = {},
 ): Promise<ComlinkGuildResponse> {
-  const baseUrl = config.baseUrl ?? DEFAULT_COMLINK_URL;
+  const baseUrl = normalizeBaseUrl(config.baseUrl ?? DEFAULT_COMLINK_URL);
   const url = `${baseUrl}/guild`;
 
   const body: GuildRequestBody = {

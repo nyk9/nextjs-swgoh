@@ -4,6 +4,7 @@
  */
 
 import { ComlinkError, type ComlinkClientConfig } from "./client";
+import { normalizeBaseUrl } from "./url";
 
 const DEFAULT_COMLINK_URL = process.env.COMLINK_URL ?? "http://localhost:5001";
 
@@ -21,7 +22,7 @@ export async function fetchJapaneseLocalization(
   localizationVersion: string,
   config: ComlinkClientConfig = {},
 ): Promise<string> {
-  const baseUrl = config.baseUrl ?? DEFAULT_COMLINK_URL;
+  const baseUrl = normalizeBaseUrl(config.baseUrl ?? DEFAULT_COMLINK_URL);
   const url = `${baseUrl}/localization`;
 
   const body = {
