@@ -47,6 +47,16 @@ export type RateLimitResult =
   | { ok: false; limit: number; remaining: number; reset: number; retryAfter: number };
 
 export async function checkRateLimit(request: Request): Promise<RateLimitResult> {
+  // dev では rate limit を bypass（5 req/24h だと検証が回らないため）
+  if (process.env.NODE_ENV !== "production") {
+    return {
+      ok: true,
+      limit: POINTS,
+      remaining: POINTS,
+      reset: Math.floor(Date.now() / 1000) + TTL_SECONDS,
+    };
+  }
+
   const ip = getClientIp(request);
   const key = `${KEY_PREFIX}:${ip}`;
   const client = await getRedis();

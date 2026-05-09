@@ -97,7 +97,9 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=        # 同上
 | `/ships/[shipId]` | SSG | `base_id.toLowerCase()` を slug として使用 |
 | `/guides` | `src/app/guides/page.tsx` | `content/guides/*.mdx` の一覧 |
 | `/guides/[slug]` | SSG + dynamic MDX import | frontmatter から metadata 生成 |
-| `/advisor` | Client page | アライコード → モード → 目的 → チャット |
+| `/advisor` | Server guard + client child | ログイン必須。アライコード → モード → 目的 → チャット |
+| `/advisor/history` | Server Component | ログイン必須。直近 50 件の `ChatSession` 一覧 |
+| `/advisor/[sessionId]` | Server Component + client child | ログイン必須。保存済みセッションの会話を表示し継続できる |
 | `/login` | Server + client child | Auth.js OAuth login。robots noindex |
 | `/TWCounters` | Server Component | Prisma 参照。`dynamic = "force-dynamic"` 必須 |
 | `/TWCounters/forms` | Server guard + client child | ログイン済みユーザー全員がアクセス可能なカウンター登録フォーム |
@@ -113,8 +115,8 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=        # 同上
 | `GET /api/counters` | Prisma `counter` 一覧 |
 | `POST /api/counters` | Prisma `counter` 登録。ログイン必須 |
 | `GET/POST /api/auth/[...nextauth]` | Auth.js handlers |
-| `GET /api/advice/player?allycode=...` | Comlink からプレイヤーデータ取得・整形 |
-| `POST /api/advice/chat` | Comlink データ + AI SDK でチャット応答 |
+| `GET /api/advice/player?allycode=...` | Comlink からプレイヤーデータ取得・整形。ログイン必須 |
+| `POST /api/advice/chat` | Comlink データ + AI SDK でチャット応答。ログイン必須。`ChatSession` / `ChatMessage` に保存し response に `sessionId` を返す |
 | `GET /api/swgohgg/characters` | swgoh.gg proxy。現行主導線では未使用 |
 | `GET /api/swgohgg/abilities` | swgoh.gg proxy。現行主導線では未使用 |
 
@@ -272,15 +274,28 @@ tags: ["..."]
 フロー:
 
 ```text
-/advisor
-  → GET /api/advice/player?allycode=...
-  → POST /api/advice/chat
+/advisor                 (ログイン必須)
+  → GET /api/advice/player?allycode=...   (ログイン必須 / 401)
+  → POST /api/advice/chat                 (ログイン必須 / 401)
       → fetchPlayerData(COMLINK_URL)
       → formatPlayer / getUnitsAboveMinRelic(player, 5)
       → buildSystemPrompt
       → continueChat（AI SDK）
+      → ChatSession / ChatMessage を upsert / 追記
+      → response に sessionId を返す
 ```
 
+- 認証 / 認可
+  - `/advisor`, `/advisor/history`, `/advisor/[sessionId]` は server page で `requireAuth("/advisor...")` を呼ぶ
+  - `POST /api/advice/chat` と `GET /api/advice/player` は handler 内で `getCurrentUser()` ガード。未ログインは 401
+  - 既存セッションの取得は必ず `where: { id, userId }` で行い、他人のセッション ID を弾く
+- 会話の永続化
+  - リクエストの `sessionId?: string` が無ければ新規 `ChatSession` を作成、最初のユーザーメッセージから `title` を切り出す（最大 80 文字）
+  - 各リクエストで user / assistant メッセージを `ChatMessage` に追加し `ChatSession.updatedAt` を更新
+  - クライアント (`AdvisorChat`) は response の `sessionId` を保持し、次回以降の POST に乗せる
+- 履歴 UI
+  - `/advisor/history`: ログインユーザー自身の `ChatSession` を `updatedAt desc` で 50 件
+  - `/advisor/[sessionId]`: 該当セッションの `ChatMessage` を時系列で読み込み `AdvisorChat` に流し込んで継続
 - rate limit は `src/lib/rateLimit.ts`
   - Redis 必須（`REDIS_URL`）
   - IP ごとに 5 requests / 24h
@@ -291,16 +306,6 @@ tags: ["..."]
   - Anthropic default: `claude-sonnet-4-20250514`
 - UI 上の RotE purpose は 5 種類あるが、`/api/advice/chat` は現在 `guild_rewards` だけを許可し、それ以外は `guild_rewards` にフォールバックする
 - `userNote` state は UI に存在するが、現行 API body / prompt には実質渡っていない
-
-#### 今後の実装予定（アドバイザー）
-
-- **ログイン必須化**: `/advisor` へのアクセスを `requireAuth` で保護する
-- **会話履歴の保存**: Prisma に `ChatSession` / `ChatMessage` モデルを追加し、ユーザーごとの会話を DB 保存する
-- **履歴閲覧 UI**: `/advisor/history` または `/advisor/[sessionId]` で過去の会話を閲覧できるようにする
-- データ設計の要点:
-  - `ChatSession`: `userId`, `allycode`, `purpose`, `createdAt`
-  - `ChatMessage`: `sessionId`, `role` (`user` / `assistant`), `content`, `createdAt`
-  - ユーザーは自分の会話のみ参照可（Row-level isolation は `where: { userId }` で実装）
 
 ### TW カウンター
 
@@ -343,9 +348,35 @@ model counter {
   enemy_characters  String
   description       String?
 }
+
+model ChatSession {
+  id        String        @id @default(cuid())
+  userId    String
+  allycode  String
+  mode      String        // "rote" | "tw" | "gac"
+  purpose   String?       // RotePurpose（rote 以外は null）
+  title     String?       // 最初のユーザーメッセージから切り出した一覧表示用タイトル
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  user      User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages  ChatMessage[]
+
+  @@index([userId, updatedAt])
+}
+
+model ChatMessage {
+  id        String      @id @default(cuid())
+  sessionId String
+  role      String      // "user" | "assistant"
+  content   String      @db.Text
+  createdAt DateTime    @default(now())
+  session   ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@index([sessionId, createdAt])
+}
 ```
 
-Auth.js 用に `UserRole`, `User`, `Account`, `Session`, `VerificationToken` も定義している。
+Auth.js 用に `UserRole`, `User`, `Account`, `Session`, `VerificationToken` も定義している。`User` には `chatSessions ChatSession[]` の relation がある。
 
 ---
 
@@ -374,7 +405,7 @@ Auth.js 用に `UserRole`, `User`, `Account`, `Session`, `VerificationToken` も
 
 - `README.md` は古い記述が混ざっている。作業時は `CLAUDE.md` と現コードを優先する。
 - `src/app/ships/page.tsx` は event variant を除外していない。意図と違う可能性があるため、関連作業時に確認する。
-- `src/app/advisor/page.tsx` の purpose UI と `/api/advice/chat` の許可 purpose に差がある。
+- `src/app/advisor/_components/AdvisorClient.tsx` の purpose UI と `/api/advice/chat` の許可 purpose に差がある（`guild_rewards` 以外はフォールバック）。
 - `/TWCounters/login` は `/login?callbackUrl=/TWCounters/forms` へのリダイレクト route として実装済み。
 - `next.config.mjs` は `/character/:baseId*` → `/characters/:baseId*` の 301 redirect を持つ。
 - `src/app/api/swgohgg/*` は現行主導線では未使用。削除するなら参照確認してから行う。

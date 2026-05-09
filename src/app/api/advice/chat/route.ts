@@ -8,6 +8,8 @@ import { createModel, DEFAULT_PROVIDER } from "@/lib/swgoh/advisor/providers";
 import { buildSystemPrompt } from "@/lib/swgoh/advisor/prompt";
 import type { ModeSelection, RotePurpose } from "@/lib/swgoh/advisor/prompt";
 import { checkRateLimit, rateLimitHeaders } from "@/lib/rateLimit";
+import { getCurrentUser } from "@/lib/auth/guards";
+import prisma from "@/lib/prisma/prismaClient";
 
 interface ChatRequestBody {
   allycode: string;
@@ -15,9 +17,27 @@ interface ChatRequestBody {
   purpose?: string;
   message: string;
   history?: ChatMessage[];
+  sessionId?: string;
+}
+
+const SESSION_TITLE_MAX = 80;
+
+function deriveTitle(message: string): string {
+  const single = message.replace(/\s+/g, " ").trim();
+  return single.length > SESSION_TITLE_MAX
+    ? `${single.slice(0, SESSION_TITLE_MAX - 1)}…`
+    : single;
 }
 
 export async function POST(request: NextRequest) {
+  const user = await getCurrentUser();
+  if (!user) {
+    return NextResponse.json(
+      { error: "ログインが必要です" },
+      { status: 401 },
+    );
+  }
+
   const rl = await checkRateLimit(request);
   if (!rl.ok) {
     return NextResponse.json(
@@ -36,7 +56,7 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const { allycode, mode, purpose, message, history = [] } = body;
+  const { allycode, mode, purpose, message, history = [], sessionId } = body;
 
   if (!allycode || !mode || !message) {
     return NextResponse.json(
@@ -75,6 +95,21 @@ export async function POST(request: NextRequest) {
     selection = { mode: "gac" };
   }
 
+  // セッションを取得 or 新規作成（保存は AI 応答取得後に実行）
+  let chatSession = sessionId
+    ? await prisma.chatSession.findFirst({
+        where: { id: sessionId, userId: user.id },
+        select: { id: true },
+      })
+    : null;
+
+  if (sessionId && !chatSession) {
+    return NextResponse.json(
+      { error: "指定されたセッションが見つかりません" },
+      { status: 404 },
+    );
+  }
+
   try {
     // プレイヤーデータを取得・整形
     const raw = await fetchPlayerData(cleanAllycode);
@@ -109,7 +144,43 @@ export async function POST(request: NextRequest) {
       { model },
     );
 
-    return NextResponse.json({ reply }, { headers: rateLimitHeaders(rl) });
+    // DB に保存
+    if (!chatSession) {
+      chatSession = await prisma.chatSession.create({
+        data: {
+          userId: user.id,
+          allycode: cleanAllycode,
+          mode,
+          purpose: selection.mode === "rote" ? selection.purpose : null,
+          title: deriveTitle(message),
+          messages: {
+            create: [
+              { role: "user", content: message },
+              { role: "assistant", content: reply },
+            ],
+          },
+        },
+        select: { id: true },
+      });
+    } else {
+      await prisma.chatSession.update({
+        where: { id: chatSession.id },
+        data: {
+          updatedAt: new Date(),
+          messages: {
+            create: [
+              { role: "user", content: message },
+              { role: "assistant", content: reply },
+            ],
+          },
+        },
+      });
+    }
+
+    return NextResponse.json(
+      { reply, sessionId: chatSession.id },
+      { headers: rateLimitHeaders(rl) },
+    );
   } catch (error) {
     if (error instanceof ComlinkError) {
       return NextResponse.json(

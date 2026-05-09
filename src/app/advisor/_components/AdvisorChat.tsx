@@ -13,6 +13,8 @@ interface AdvisorChatProps {
   purpose: string | null;
   initialMessage: string;
   initialHistory: ChatMessage[];
+  sessionId: string | null;
+  onSessionIdChange?: (id: string) => void;
 }
 
 export default function AdvisorChat({
@@ -21,6 +23,8 @@ export default function AdvisorChat({
   purpose,
   initialMessage,
   initialHistory,
+  sessionId,
+  onSessionIdChange,
 }: AdvisorChatProps) {
   const [messages, setMessages] = useState<ChatMessage[]>(initialHistory);
   const [input, setInput] = useState("");
@@ -58,6 +62,7 @@ export default function AdvisorChat({
           message: text,
           // history は今回のユーザーメッセージを除いた過去履歴
           history: messages,
+          sessionId: sessionId ?? undefined,
         }),
       });
 
@@ -67,6 +72,10 @@ export default function AdvisorChat({
         setError(data.error ?? "エラーが発生しました");
         // ユーザーメッセージは残す（再送できるように）
         return;
+      }
+
+      if (typeof data.sessionId === "string" && onSessionIdChange) {
+        onSessionIdChange(data.sessionId);
       }
 
       setMessages([
