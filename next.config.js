@@ -12,15 +12,6 @@ const nextConfig = {
       },
     ],
   },
-  async redirects() {
-    return [
-      {
-        source: "/character/:baseId",
-        destination: "/characters/:baseId",
-        permanent: true,
-      },
-    ];
-  },
 };
 
 module.exports = {
